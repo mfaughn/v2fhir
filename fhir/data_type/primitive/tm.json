@@ -1,0 +1,57 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "TM"
+  "meta" : {
+    "profile" : [ "http://hl7.org/v2/StructureDefinition/Primitive-Profile" ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "FIXME"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString" : "FIXME.DataTypes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "normative"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode" : "4.0.0"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "inm"
+    }
+  ],
+  "url" : "http://hl7.org/v2/StructureDefinition/TM",
+  "version" : "0.0.1",
+  "name" : "V2_TM_Data_Type",
+  "title" : "V2 TM Data Type",
+  "todo" : {
+    [ "how can we specify a regex that value must conform to? /^([01][0-9]|2[0-3])([0-5]\d([0-5]\d(\.\d{1,4})?)?)?([+-][01]\d[034][05])?$/. note: regex is for recognized UTC offsets.  more relaxed would be /^([01][0-9]|2[0-3])([0-5]\d([0-5]\d(\.\d{1,4})?)?)?([+-][01]\d{3})?/"
+    ]
+  }
+  "status" : "active",
+  "experimental" : "true",
+  "date" : "2024-06-01T12:00:00+11:00"
+  "description" : "FIXME",
+  "kind" : "primitive-type",
+  "abstract" : false,
+  "type" : "string",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/string",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "string.id",
+      "path" : "string.id",
+      "max" : "0"
+    },{
+      "id" : "string.extension",
+      "path" : "string.extension",
+      "max" : "0"
+    }]
+  }
+}

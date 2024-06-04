@@ -1,0 +1,57 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "DT"
+  "meta" : {
+    "profile" : [ "http://hl7.org/v2/StructureDefinition/DataType-Profile" ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "FIXME"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString" : "FIXME.DataTypes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "normative"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode" : "4.0.0"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "inm"
+    }
+  ],
+  "url" : "http://hl7.org/v2/StructureDefinition/DT",
+  "version" : "0.0.1",
+  "name" : "V2_DT_Data_Type",
+  "title" : "V2 DT Data Type",
+  "todo" : {
+    [ "how can we specify a regex that value must conform to? /^\d{4}([01]\d([0123]\d)?)?$/"
+    ]
+  }
+  "status" : "active",
+  "experimental" : "true",
+  "date" : "2024-06-01T12:00:00+11:00"
+  "description" : "FIXME",
+  "kind" : "primitive-type",
+  "abstract" : false,
+  "type" : "date",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/date",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "date.id",
+      "path" : "date.id",
+      "max" : "0"
+    },{
+      "id" : "date.extension",
+      "path" : "date.extension",
+      "max" : "0"
+    }]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "url" : "http://hl7.org/v2/CodeSystem/PrimitiveTypes",
+  "status" : "active",
+  "content" : "complete",
+  "concept" : [{
+    "code" : "http://hl7.org/v2/StructureDefinition/DT",
+    "display" : "Date"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/DTM",
+    "display" : "Date Time"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/FT",
+    "display" : "Formatted Text"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/GTS",
+    "display" : "General Timing Specification"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/ID",
+    "display" : "Coded Value"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/IS",
+    "display" : "Coded Value"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/NM",
+    "display" : "Numeric"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/SI",
+    "display" : "Sequence ID"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/SNM",
+    "display" : "Telephone Number"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/ST",
+    "display" : "String"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/TM",
+    "display" : "Time"
+  },{
+    "code" : "http://hl7.org/v2/StructureDefinition/TX",
+    "display" : "Text"
+  }]
+}

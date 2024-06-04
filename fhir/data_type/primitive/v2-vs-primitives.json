@@ -1,0 +1,10 @@
+{
+  "resourceType" : "ValueSet",
+  "url" : "http://hl7.org/v2/ValueSet/PrimitiveTypes",
+  "status" : "active",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/v2/CodeSystem/PrimitiveTypes"
+    }]
+  }
+}

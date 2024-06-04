@@ -1,0 +1,864 @@
+{
+    "element" : [{
+      "id" : "Account",
+      "path" : "Account",
+      "short" : "Tracks balance, charges, for patient or cost center",
+      "definition" : "A financial tool for tracking value accrued for a particular purpose.  In the healthcare field, used to track charges for a patient, cost centers, etc.",
+      "alias" : ["Cost center",
+      "Record"],
+      "min" : 0,
+      "max" : "*",
+      "mustSupport" : false,
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "financial.support"
+      },
+      {
+        "identity" : "rim",
+        "map" : "Account"
+      }]
+    },
+    {
+      "id" : "Account.identifier",
+      "path" : "Account.identifier",
+      "short" : "Account number",
+      "definition" : "Unique identifier used to reference the account.  Might or might not be intended for human use (e.g. credit card number).",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "FiveWs.identifier"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".id"
+      }]
+    },
+    {
+      "id" : "Account.status",
+      "path" : "Account.status",
+      "short" : "active | inactive | entered-in-error | on-hold | unknown",
+      "definition" : "Indicates whether the account is presently used/usable or not.",
+      "comment" : "This element is labeled as a modifier because the status contains the codes inactive and entered-in-error that mark the Account as not currently valid.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mustSupport" : false,
+      "isModifier" : true,
+      "isModifierReason" : "This element is labelled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid",
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AccountStatus"
+        }],
+        "strength" : "required",
+        "description" : "Indicates whether the account is available to be used.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/account-status|6.0.0-cibuild"
+      },
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "FiveWs.status"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".statusCode"
+      }]
+    },
+    {
+      "id" : "Account.billingStatus",
+      "path" : "Account.billingStatus",
+      "short" : "Tracks the lifecycle of the account through the billing process",
+      "definition" : "The BillingStatus tracks the lifecycle of the account through the billing process. It indicates how transactions are treated when they are allocated to the account.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AccountBillingStatus"
+        }],
+        "strength" : "example",
+        "description" : "Indicates whether the account is available to be used for billing purposes.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/account-billing-status"
+      }
+    },
+    {
+      "id" : "Account.type",
+      "path" : "Account.type",
+      "short" : "E.g. patient, expense, depreciation",
+      "definition" : "Categorizes the account for reporting and searching purposes.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AccountType"
+        }],
+        "strength" : "example",
+        "description" : "The usage type of this account, permits categorization of accounts.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/account-type"
+      },
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "FiveWs.class"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".code"
+      }]
+    },
+    {
+      "id" : "Account.name",
+      "path" : "Account.name",
+      "short" : "Human-readable label",
+      "definition" : "Name used for the account when displaying it to humans in reports, etc.",
+      "alias" : ["Title"],
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "FiveWs.what[x]"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".title"
+      }]
+    },
+    {
+      "id" : "Account.subject",
+      "path" : "Account.subject",
+      "short" : "The entity that caused the expenses",
+      "definition" : "Identifies the entity which incurs the expenses. While the immediate recipients of services or goods might be entities related to the subject, the expenses were ultimately incurred by the subject of the Account.",
+      "comment" : "Accounts can be applied to non-patients for tracking other non-patient related activities, such as group services (patients not tracked, and costs charged to another body), or might not be allocated.",
+      "alias" : ["target"],
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/Device",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+        "http://hl7.org/fhir/StructureDefinition/Location",
+        "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+        "http://hl7.org/fhir/StructureDefinition/Organization"]
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "FiveWs.subject[x]"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".subject"
+      }]
+    },
+    {
+      "id" : "Account.servicePeriod",
+      "path" : "Account.servicePeriod",
+      "short" : "Transaction window",
+      "definition" : "The date range of services associated with this account.",
+      "comment" : "It is possible for transactions to be posted outside the service period, as long as the service was provided within the defined service period.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "w5",
+        "map" : "FiveWs.done[x]"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".coverage.insurancePolicy.effectiveTime"
+      }]
+    },
+    {
+      "id" : "Account.covers",
+      "path" : "Account.covers",
+      "short" : "Episodic account covering these encounters/episodes of care",
+      "definition" : "An account that collects the charges for a specific set of services offered over a limited time period.  For example, a hospital account might contain all charges related to a given admission, including any inpatient appointments, and possibly re-admissions, of the billing for those re-admissions should be grouped with the initial admission for the purpose of claim submission.",
+      "comment" : "Episode Accounts often exist for the duration of a relatively short billing cycle (for example, a month, or possibly a quarter).  One a given billing cycle ends, the associated Episodic Account would close, and a new account would open for the next billing cycle.  A patient that is admitted for 6 months, where the billing cycle is monthly, would have 6 episodic accounts each covering one month.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter",
+        "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"]
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true
+    },
+    {
+      "id" : "Account.coverage",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+        "valueString" : "Coverage"
+      }],
+      "path" : "Account.coverage",
+      "short" : "The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account",
+      "definition" : "The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account.",
+      "comment" : "Typically. this may be some form of insurance, internal charges, or self-pay.\n\nLocal or jurisdictional business rules may determine which coverage covers which types of billable items charged to the account, and in which order.\nWhere the order is important, a local/jurisdictional extension may be defined to specify the order for the type of charge.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".coverage"
+      }]
+    },
+    {
+      "id" : "Account.coverage.coverage",
+      "path" : "Account.coverage.coverage",
+      "short" : "The party(s), such as insurances, that may contribute to the payment of this account",
+      "definition" : "The party(s) that contribute to payment (or part of) of the charges applied to this account (including self-pay).\n\nA coverage may only be responsible for specific types of charges, and the sequence of the coverages in the account could be important when processing billing.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Coverage"]
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".coverage.insurancePolicy.author"
+      }]
+    },
+    {
+      "id" : "Account.coverage.priority",
+      "path" : "Account.coverage.priority",
+      "short" : "The priority of the coverage in the context of this account",
+      "definition" : "The priority of the coverage in the context of this account.",
+      "comment" : "It is common in some jurisdictions for there to be multiple coverages allocated to an account, and a sequence is required to order the settling of the account (often with insurance claiming).",
+      "alias" : ["coordination of benefit priority"],
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "positiveInt"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".coverage.sequenceNumber"
+      }]
+    },
+    {
+      "id" : "Account.owner",
+      "path" : "Account.owner",
+      "short" : "Entity managing the Account",
+      "definition" : "Indicates the service area, hospital, department, etc. with responsibility for managing the Account.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".holder"
+      }]
+    },
+    {
+      "id" : "Account.description",
+      "path" : "Account.description",
+      "short" : "Explanation of purpose/use",
+      "definition" : "Provides additional information about what the account tracks and how it is used.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "markdown"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".subjectOf.observationEvent[code=\"annotation\"].value"
+      }]
+    },
+    {
+      "id" : "Account.guarantor",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+        "valueString" : "Guarantor"
+      }],
+      "path" : "Account.guarantor",
+      "short" : "The parties ultimately responsible for balancing the Account",
+      "definition" : "The parties responsible for balancing the account if other payment options fall short.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".holder.guarantorRole"
+      }]
+    },
+    {
+      "id" : "Account.guarantor.party",
+      "path" : "Account.guarantor.party",
+      "short" : "Responsible entity",
+      "definition" : "The entity who is responsible.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+        "http://hl7.org/fhir/StructureDefinition/Organization"]
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".holder.guarantorRole[guarantorPerson|guarantorOrganization]"
+      }]
+    },
+    {
+      "id" : "Account.guarantor.onHold",
+      "path" : "Account.guarantor.onHold",
+      "short" : "Credit or other hold applied",
+      "definition" : "A guarantor may be placed on credit hold or otherwise have their role temporarily suspended.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".holder.guarantorRole.statusCode"
+      }]
+    },
+    {
+      "id" : "Account.guarantor.period",
+      "path" : "Account.guarantor.period",
+      "short" : "Guarantee account during",
+      "definition" : "The timeframe during which the guarantor accepts responsibility for the account.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : ".holder.guarantorRole.effectiveTime"
+      }]
+    },
+    {
+      "id" : "Account.diagnosis",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "trial-use"
+      }],
+      "path" : "Account.diagnosis",
+      "short" : "The list of diagnoses relevant to this account",
+      "definition" : "When using an account for billing a specific Encounter the set of diagnoses that are relevant for billing are stored here on the account where they are able to be sequenced appropriately prior to processing to produce claim(s).",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "act-1",
+        "severity" : "error",
+        "human" : "The dateOfDiagnosis is not valid when using a reference to a diagnosis",
+        "expression" : "condition.reference.empty().not() implies dateOfDiagnosis.empty()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Account"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true
+    },
+    {
+      "id" : "Account.diagnosis.sequence",
+      "path" : "Account.diagnosis.sequence",
+      "short" : "Ranking of the diagnosis (for each type)",
+      "definition" : "Ranking of the diagnosis (for each type).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "positiveInt"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Account.diagnosis.condition",
+      "path" : "Account.diagnosis.condition",
+      "short" : "The diagnosis relevant to the account",
+      "definition" : "The diagnosis relevant to the account.",
+      "alias" : ["indication"],
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableReference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Condition"]
+      }],
+      "condition" : ["act-1"],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "condition-code"
+        }],
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code"
+      }
+    },
+    {
+      "id" : "Account.diagnosis.dateOfDiagnosis",
+      "path" : "Account.diagnosis.dateOfDiagnosis",
+      "short" : "Date of the diagnosis (when coded diagnosis)",
+      "definition" : "Ranking of the diagnosis (for each type).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "condition" : ["act-1"],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Account.diagnosis.type",
+      "path" : "Account.diagnosis.type",
+      "short" : "Type that this diagnosis has relevant to the account (e.g. admission, billing, discharge …)",
+      "definition" : "Type that this diagnosis has relevant to the account (e.g. admission, billing, discharge …).",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "DiagnosisUse"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+          "valueBoolean" : true
+        }],
+        "strength" : "preferred",
+        "description" : "The type of diagnosis this condition represents.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-diagnosis-use"
+      }
+    },
+    {
+      "id" : "Account.diagnosis.onAdmission",
+      "path" : "Account.diagnosis.onAdmission",
+      "short" : "Diagnosis present on Admission",
+      "definition" : "Was the Diagnosis present on Admission in the related Encounter.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Account.diagnosis.packageCode",
+      "path" : "Account.diagnosis.packageCode",
+      "short" : "Package Code specific for billing",
+      "definition" : "The package code can be used to group diagnoses that may be priced or delivered as a single product. Such as DRGs.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "diagnosis-package-code"
+        }],
+        "strength" : "example",
+        "description" : "Local or Regional package codes, e.g. DRGs"
+      }
+    },
+    {
+      "id" : "Account.procedure",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+        "valueCode" : "trial-use"
+      }],
+      "path" : "Account.procedure",
+      "short" : "The list of procedures relevant to this account",
+      "definition" : "When using an account for billing a specific Encounter the set of procedures that are relevant for billing are stored here on the account where they are able to be sequenced appropriately prior to processing to produce claim(s).",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "act-2",
+        "severity" : "error",
+        "human" : "The dateOfService is not valid when using a reference to a procedure",
+        "expression" : "code.reference.empty().not() implies dateOfService.empty()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Account"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true
+    },
+    {
+      "id" : "Account.procedure.sequence",
+      "path" : "Account.procedure.sequence",
+      "short" : "Ranking of the procedure (for each type)",
+      "definition" : "Ranking of the procedure (for each type).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "positiveInt"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Account.procedure.code",
+      "path" : "Account.procedure.code",
+      "short" : "The procedure relevant to the account",
+      "definition" : "The procedure relevant to the account.",
+      "alias" : ["indication"],
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableReference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure"]
+      }],
+      "condition" : ["act-2"],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/procedure-code"
+      }
+    },
+    {
+      "id" : "Account.procedure.dateOfService",
+      "path" : "Account.procedure.dateOfService",
+      "short" : "Date of the procedure (when coded procedure)",
+      "definition" : "Date of the procedure when using a coded procedure. If using a reference to a procedure, then the date on the procedure should be used.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "condition" : ["act-2"],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Account.procedure.type",
+      "path" : "Account.procedure.type",
+      "short" : "How this procedure value should be used in charging the account",
+      "definition" : "How this procedure value should be used in charging the account.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "procedure-type"
+        }],
+        "strength" : "example",
+        "description" : "Usage for the specific procedure - e.g. billing"
+      }
+    },
+    {
+      "id" : "Account.procedure.packageCode",
+      "path" : "Account.procedure.packageCode",
+      "short" : "Package Code specific for billing",
+      "definition" : "The package code can be used to group procedures that may be priced or delivered as a single product. Such as DRGs.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "procedure-package-code"
+        }],
+        "strength" : "example",
+        "description" : "Local or Regional package codes, e.g. DRGs"
+      }
+    },
+    {
+      "id" : "Account.procedure.device",
+      "path" : "Account.procedure.device",
+      "short" : "Any devices that were associated with the procedure",
+      "definition" : "Any devices that were associated with the procedure relevant to the account.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true
+    },
+    {
+      "id" : "Account.relatedAccount",
+      "path" : "Account.relatedAccount",
+      "short" : "Other associated accounts related to this account",
+      "definition" : "Other associated accounts related to this account.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Account.relatedAccount.relationship",
+      "path" : "Account.relatedAccount.relationship",
+      "short" : "Relationship of the associated Account",
+      "definition" : "Relationship of the associated Account.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AccountRelationship"
+        }],
+        "strength" : "example",
+        "description" : "Indicates the relationship between the accounts",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/account-relationship"
+      }
+    },
+    {
+      "id" : "Account.relatedAccount.account",
+      "path" : "Account.relatedAccount.account",
+      "short" : "Reference to an associated Account",
+      "definition" : "Reference to an associated Account.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+          "valueBoolean" : false
+        }],
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Account"]
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Account.currency",
+      "path" : "Account.currency",
+      "short" : "The base or default currency",
+      "definition" : "The default currency for the account.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AccountCurrency"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+          "valueBoolean" : true
+        }],
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/currencies|6.0.0-cibuild"
+      }
+    },
+    {
+      "id" : "Account.balance",
+      "path" : "Account.balance",
+      "short" : "Calculated account balance(s)",
+      "definition" : "The calculated account balances - these are calculated and processed by the finance system.\r\rThe balances with a `term` that is not current are usually generated/updated by an invoicing or similar process.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Account.balance.aggregate",
+      "path" : "Account.balance.aggregate",
+      "short" : "Who is expected to pay this part of the balance",
+      "definition" : "Who is expected to pay this part of the balance.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AccountAggregate"
+        }],
+        "strength" : "extensible",
+        "description" : "Indicates the balance was outstanding at the given age.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/account-aggregate"
+      }
+    },
+    {
+      "id" : "Account.balance.term",
+      "path" : "Account.balance.term",
+      "short" : "current | 30 | 60 | 90 | 120",
+      "definition" : "The term of the account balances - The balance value is the amount that was outstanding for this age.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AccountBalanceTerm"
+        }],
+        "strength" : "extensible",
+        "description" : "Indicates the balance was outstanding at the given age.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/account-balance-term"
+      }
+    },
+    {
+      "id" : "Account.balance.estimate",
+      "path" : "Account.balance.estimate",
+      "short" : "Estimated balance",
+      "definition" : "The amount is only an estimated value - this is likely common for `current` term balances, but not with known terms (that were generated by a backend process).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Account.balance.amount",
+      "path" : "Account.balance.amount",
+      "short" : "Calculated amount",
+      "definition" : "The actual balance value calculated for the age defined in the term property.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Money"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "id" : "Account.calculatedAt",
+      "path" : "Account.calculatedAt",
+      "short" : "Time the balance amount was calculated",
+      "definition" : "Time the balance amount was calculated.",
+      "comment" : "The total(s) are not typically updated using the restful API but more often by back-end processes included in a typical finance system.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "instant"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    }]
+  }

@@ -1,0 +1,61 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "NM"
+  "meta" : {
+    "profile" : [ "http://hl7.org/v2/StructureDefinition/Primitive-Profile" ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "FIXME"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString" : "FIXME.DataTypes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "normative"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode" : "4.0.0"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "inm"
+    }
+  ],
+  "url" : "http://hl7.org/v2/StructureDefinition/NM",
+  "version" : "0.0.1",
+  "name" : "NM",
+  "title" : "V2 NM Data Type",
+  "status" : "active",
+  "experimental" : "true",
+  "date" : "2024-06-01T12:00:00+11:00"
+  "description" : "FIXME add from v2",
+  "kind" : "primitive-type",
+  "abstract" : false,
+  "type" : "NM",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/PrimitiveType",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "NM",
+      "path" : "NM",
+      "min" : 1,
+      "max" : 1
+    }]
+  }
+  "differential" : {
+    "element" : [{
+      "id" : "NM.id",
+      "path" : "NM.id",
+      "max" : "0"
+    },{
+      "id" : "NM.extension",
+      "path" : "NM.extension",
+      "max" : "0"
+    }]
+  }
+}

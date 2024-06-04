@@ -1,0 +1,75 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "SI"
+  "meta" : {
+    "profile" : [ "http://hl7.org/v2/StructureDefinition/Primitive-Profile" ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "FIXME"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString" : "FIXME.DataTypes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "normative"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode" : "4.0.0"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "inm"
+    }
+  ],
+  "url" : "http://hl7.org/v2/StructureDefinition/SI",
+  "version" : "0.0.1",
+  "name" : "SI",
+  "title" : "V2 SI Primtive Type",
+  "status" : "active",
+  "experimental" : "true",
+  "date" : "2024-06-01T12:00:00+11:00"
+  "description" : "FIXME add from v2",
+  "kind" : "primitive-type",
+  "abstract" : false,
+  "type" : "string",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/integer",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "integer",
+        "path" : "integer",
+        "constraint" : {
+          "key" : "si-1",
+          "severity" : "error",
+          "human" : {
+            "value" : "The value must be greater than or equal to 0 and less than 10000"
+          },
+          "expression" : "integer.value >= 0 and integer.value < 10000"
+        }   
+      },
+      {
+        "id" : "integer.id",
+        "path" : "integer.id",
+        "max" : "0"
+      },
+      {
+        "id" : "integer.extension",
+        "path" : "integer.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "integer.value",
+        "path" : "integer.value",
+        "condition" : {
+          "value" : "si-1"
+        }
+      }
+    ]
+  }
+}

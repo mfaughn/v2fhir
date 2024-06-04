@@ -1,0 +1,73 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "ST"
+  "meta" : {
+    "profile" : [ "http://hl7.org/v2/StructureDefinition/Primitive-Profile" ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "FIXME"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString" : "FIXME.DataTypes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "normative"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode" : "4.0.0"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "inm"
+    }
+  ],
+  "url" : "http://hl7.org/v2/StructureDefinition/ST",
+  "version" : "0.0.1",
+  "name" : "ST",
+  "title" : "V2 String Primitive Type",
+  "status" : "active",
+  "experimental" : "true",
+  "date" : "2024-06-01T12:00:00+11:00"
+  "description" : "FIXME add from v2",
+  "kind" : "primitive-type",
+  "abstract" : false,
+  "type" : "string",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/string",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "string",
+        "path" : "string",
+        "constraint" : {
+          "key" : "st-1",
+          "severity" : "error",
+          "human" : {
+            "value" : "The value must include at least one non-whitespace character. Leading whitespace is forbidden."
+          },
+          "expression" : "string.value.matches('^\S.*')"
+        }
+      },
+      {
+        "id" : "string.id",
+        "path" : "string.id",
+        "max" : "0"
+      },{
+        "id" : "string.extension",
+        "path" : "string.extension",
+        "max" : "0"
+      },{
+        "id" : "string.value",
+        "path" : "string.value",
+        "condition" : {
+          "value" : "st-1"
+        } 
+      }
+    ]
+  }
+}

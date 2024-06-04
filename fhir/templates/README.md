@@ -1,0 +1,1 @@
+These templates are not part of the v2 spec.  The exist only for developer convenience.

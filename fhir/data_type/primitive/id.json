@@ -1,0 +1,57 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "ID"
+  "meta" : {
+    "profile" : [ "http://hl7.org/v2/StructureDefinition/Primitive-Profile" ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "FIXME"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString" : "FIXME.DataTypes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "normative"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode" : "4.0.0"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "inm"
+    }
+  ],
+  "url" : "http://hl7.org/v2/StructureDefinition/ID",
+  "version" : "0.0.1",
+  "name" : "V2_ID_Data_Type",
+  "title" : "V2 ID Data Type",
+  "todo" : {
+    [ "can we specify that the value must come from an HL7 code system?"
+    ]
+  }
+  "status" : "active",
+  "experimental" : "true",
+  "date" : "2024-06-01T12:00:00+11:00"
+  "description" : "FIXME",
+  "kind" : "primitive-type",
+  "abstract" : false,
+  "type" : "code",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/code",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "code.id",
+      "path" : "code.id",
+      "max" : "0"
+    },{
+      "id" : "code.extension",
+      "path" : "code.extension",
+      "max" : "0"
+    }]
+  }
+}
