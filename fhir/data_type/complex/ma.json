@@ -1,0 +1,95 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MA",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "name": "MA",
+  "title": "V2 DTCODE Data Type",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/v2/StructureDefinition/MA",
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MA.1",
+        "path": "MA.1",
+        "short": "Sample Y From Channel 1",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/NM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "MA.2",
+        "path": "MA.2",
+        "short": "Sample Y From Channel 2",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/NM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "MA.3",
+        "path": "MA.3",
+        "short": "Sample Y From Channel 3",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/NM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "MA.4",
+        "path": "MA.4",
+        "short": "Sample Y From Channel 4",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/NM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "MA"
+}

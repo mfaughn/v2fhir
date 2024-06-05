@@ -1,0 +1,118 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "V2Length",
+  "text" : {
+    "status" : "extensions",
+    "div" : "FIXME"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "v2"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-bind"
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/v2-length",
+  "name" : "V2Length",
+  "title" : "V2 Length Extension",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-04-21T19:47:28+00:00",
+  "publisher" : "HL7 International / V2 Management",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/v2management"
+    }]
+  }],
+  "description" : "Species the minimum and maximum number of characters that a value must contain",
+  "fhirVersion" : "5.0.0",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "ComplexDataType"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  
+  
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Minimum and maximum number of characters a value must have",
+      "min" : 0,
+      "max" : "1",
+      "constraint" : [{
+        "key" : "v2l-0",
+        "severity" : "error",
+        "human" : "The maximum length must be greater than or equal to the minimum length",
+        "expression" : "extension:max >= extension:min",
+      }
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/v2Length"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "2"
+    },
+    {
+      "id" : "Extension.extension:min",
+      "path" : "Extension.extension",
+      "sliceName" : "min",
+      "short" : "Minimum number of characters a value must have",
+      "definition" : "Minimum number of characters a value must have",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:min.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+
+    {
+      "id" : "Extension.extension:min.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "Extension.extension:max",
+      "path" : "Extension.extension",
+      "sliceName" : "max",
+      "short" : "Maximum number of characters a value must have",
+      "definition" : "Maximum number of characters a value must have",
+      "min" : 1,
+      "max" : "1",
+      "condition" : ["v2l-0"],
+    },
+    {
+      "id" : "Extension.extension:max.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+
+    {
+      "id" : "Extension.extension:max.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "integer"
+      }]
+    }
+  }
+}

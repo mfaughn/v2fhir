@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/AUI",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "name": "AUI",
+  "title": "V2 DTCODE Data Type",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/v2/StructureDefinition/AUI",
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "AUI.1",
+        "path": "AUI.1",
+        "short": "Authorization Number",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "30"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AUI.2",
+        "path": "AUI.2",
+        "short": "Date",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DT"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "AUI.3",
+        "path": "AUI.3",
+        "short": "Source",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "199"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "id": "AUI"
+}

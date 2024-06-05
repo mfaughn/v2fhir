@@ -1,0 +1,76 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OCD",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "name": "OCD",
+  "title": "V2 DTCODE Data Type",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/v2/StructureDefinition/OCD",
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OCD.1",
+        "path": "OCD.1",
+        "short": "Occurrence Code",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0350"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "OCD.2",
+        "path": "OCD.2",
+        "short": "Occurrence Date",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DT"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "8"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "id": "OCD"
+}

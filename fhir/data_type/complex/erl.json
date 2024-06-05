@@ -1,0 +1,144 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ERL",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "name": "ERL",
+  "title": "V2 DTCODE Data Type",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/v2/StructureDefinition/ERL",
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "ERL.1",
+        "path": "ERL.1",
+        "short": "Segment ID",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 3
+              },
+              {
+                "url": "max",
+                "valueInteger": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ERL.2",
+        "path": "ERL.2",
+        "short": "Segment Sequence",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/SI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "ERL.3",
+        "path": "ERL.3",
+        "short": "Field Position",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/SI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          }
+        ]
+      },
+      {
+        "id": "ERL.4",
+        "path": "ERL.4",
+        "short": "Field Repetition",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/SI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "ERL.5",
+        "path": "ERL.5",
+        "short": "Component Number",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/SI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          }
+        ]
+      },
+      {
+        "id": "ERL.6",
+        "path": "ERL.6",
+        "short": "Sub-Component Number",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/SI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "ERL"
+}

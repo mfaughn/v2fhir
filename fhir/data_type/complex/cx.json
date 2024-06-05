@@ -1,0 +1,333 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CX",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "name": "CX",
+  "title": "V2 DTCODE Data Type",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/v2/StructureDefinition/CX",
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CX.1",
+        "path": "CX.1",
+        "short": "ID Number",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "15"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CX.2",
+        "path": "CX.2",
+        "short": "Identifier Check Digit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "4"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CX.3",
+        "path": "CX.3",
+        "short": "Check Digit Scheme",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0061"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 3
+              },
+              {
+                "url": "max",
+                "valueInteger": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CX.4",
+        "path": "CX.4",
+        "short": "Assigning Authority",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/HD"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0363"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          }
+        ]
+      },
+      {
+        "id": "CX.5",
+        "path": "CX.5",
+        "short": "Identifier Type Code",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0203"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 2
+              },
+              {
+                "url": "max",
+                "valueInteger": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CX.6",
+        "path": "CX.6",
+        "short": "Assigning Facility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/HD"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "CX.7",
+        "path": "CX.7",
+        "short": "Effective Date",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DT"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "CX.8",
+        "path": "CX.8",
+        "short": "Expiration Date",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DT"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "CX.9",
+        "path": "CX.9",
+        "short": "Assigning Jurisdiction",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          }
+        ]
+      },
+      {
+        "id": "CX.10",
+        "path": "CX.10",
+        "short": "Assigning Agency or Department",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          }
+        ]
+      },
+      {
+        "id": "CX.11",
+        "path": "CX.11",
+        "short": "Security Check",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "4"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CX.12",
+        "path": "CX.12",
+        "short": "Security Check Scheme",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0904"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 3
+              },
+              {
+                "url": "max",
+                "valueInteger": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "id": "CX"
+}

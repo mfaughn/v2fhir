@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/DIN",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "name": "DIN",
+  "title": "V2 DTCODE Data Type",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/v2/StructureDefinition/DIN",
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DIN.1",
+        "path": "DIN.1",
+        "short": "Date",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "DIN.2",
+        "path": "DIN.2",
+        "short": "Institution Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0531"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "DIN"
+}

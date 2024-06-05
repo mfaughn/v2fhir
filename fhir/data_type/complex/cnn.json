@@ -1,0 +1,380 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CNN",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "name": "CNN",
+  "title": "V2 DTCODE Data Type",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/v2/StructureDefinition/CNN",
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "CNN.1",
+        "path": "CNN.1",
+        "short": "ID Number",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "15"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CNN.2",
+        "path": "CNN.2",
+        "short": "Family Name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "50"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CNN.3",
+        "path": "CNN.3",
+        "short": "Given Name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "30"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CNN.4",
+        "path": "CNN.4",
+        "short": "Second and Further Given Names or Initials Thereof",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "30"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CNN.5",
+        "path": "CNN.5",
+        "short": "Suffix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "20"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CNN.6",
+        "path": "CNN.6",
+        "short": "Prefix",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "20"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CNN.7",
+        "path": "CNN.7",
+        "short": "Degree",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/IS"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0360"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "6"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CNN.8",
+        "path": "CNN.8",
+        "short": "Source Table",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/IS"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0297"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "4"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CNN.9",
+        "path": "CNN.9",
+        "short": "Assigning Authority - Namespace ID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/IS"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0363"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "20"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CNN.10",
+        "path": "CNN.10",
+        "short": "Assigning Authority - Universal ID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "199"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CNN.11",
+        "path": "CNN.11",
+        "short": "Assigning Authority - Universal ID Type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0301"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 6
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "id": "CNN"
+}

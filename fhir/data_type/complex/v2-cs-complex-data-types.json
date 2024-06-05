@@ -1,0 +1,292 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://hl7.org/v2/CodeSystem/ComplexDataTypes",
+  "status": "active",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/AD",
+      "display": "address"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/AUI",
+      "display": "authorization information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CCD",
+      "display": "charge code and date"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CCP",
+      "display": "channel calibration parameters"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CD",
+      "display": "channel definition"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CF",
+      "display": "coded element with formatted values"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CNE",
+      "display": "coded with no exceptions"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CNN",
+      "display": "composite ID number and name simplified"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CP",
+      "display": "composite price"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CQ",
+      "display": "composite quantity with units"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CSU",
+      "display": "channel sensitivity and units"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CWE",
+      "display": "coded with exceptions"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CX",
+      "display": "extended composite ID with check digit"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DDI",
+      "display": "daily deductible information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DIN",
+      "display": "date and institution name"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DLD",
+      "display": "discharge to location and date"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DLN",
+      "display": "driver’s license number"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DLT",
+      "display": "delta"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DR",
+      "display": "date/time range"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DTN",
+      "display": "day type and number"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ED",
+      "display": "encapsulated data"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EI",
+      "display": "entity identifier"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EIP",
+      "display": "entity identifier pair"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ERL",
+      "display": "Message location"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/FC",
+      "display": "financial class"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/FN",
+      "display": "family name"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/HD",
+      "display": "hierarchic designator"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ICD",
+      "display": "insurance certification definition"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/JCC",
+      "display": "job code/class"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MA",
+      "display": "multiplexed array"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MO",
+      "display": "money"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MOC",
+      "display": "money and charge code"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MOP",
+      "display": "money or percentage"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MSG",
+      "display": "message type"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NA",
+      "display": "numeric array"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NDL",
+      "display": "name with date and location"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NR",
+      "display": "numeric range"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OCD",
+      "display": "occurrence code and date"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OG",
+      "display": "observation grouper"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OSP",
+      "display": "occurrence span code and date"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PIP",
+      "display": "practitioner institutional privileges"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PL",
+      "display": "person location"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PLN",
+      "display": "practitioner license or other Id number"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PPN",
+      "display": "performing person time stamp"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PRL",
+      "display": "parent result link"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PT",
+      "display": "processing type"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PTA",
+      "display": "policy type and amount"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QIP",
+      "display": "query input parameter list"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QSC",
+      "display": "query selection criteria"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RCD",
+      "display": "row column definition"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RFR",
+      "display": "reference range"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RI",
+      "display": "repeat interval"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RMC",
+      "display": "room coverage"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RP",
+      "display": "reference pointer"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RPT",
+      "display": "repeat pattern"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SAD",
+      "display": "street address"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SCV",
+      "display": "scheduling class value pair"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SN",
+      "display": "structured numeric"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SPD",
+      "display": "specialty description"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SRT",
+      "display": "sort order"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/UVC",
+      "display": "UB value code and amount"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/VH",
+      "display": "visiting hours"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/VID",
+      "display": "version identifier"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/VR",
+      "display": "value range"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/WVI",
+      "display": "channel identifier"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/WVS",
+      "display": "waveform source"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/XAD",
+      "display": "extended address"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/XCN",
+      "display": "extended composite ID number and name for persons"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/XON",
+      "display": "extended composite name and identification number for organizations"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/XPN",
+      "display": "extended person name"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/XTN",
+      "display": "extended telecommunication number"
+    }
+  ]
+}

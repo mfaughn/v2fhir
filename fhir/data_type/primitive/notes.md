@@ -16,7 +16,7 @@
 
 - NM doesn't precisely map to any FHIR primitive.  Additionally, it isn't clear what the length restriction is since Ch2's definition of length applies to strings, not numerics.  E.g., are we talking about the string representation when we talk about length, in which case the minus sign and decimal point take space OR are we talking about bit sizes?  Presumably we are talking about the former, in which case we can represent larger positive integers than negative integers by 1 order of magnitude.  The same is true for integers vs. decimal values.
 
-- SI also doesn't have an analog.  This is a whole number from 0-9999.  You would use FHIR int
+- SI also doesn't have a direct analog.  This is a whole number from 0-9999.  You would use FHIR int
 
 - SNM - derived from string.  `/^[\+0-9]+$/`  ...though I think they really mean `/^\+?\d+$/`
 

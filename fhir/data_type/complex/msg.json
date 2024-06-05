@@ -1,0 +1,128 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MSG",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "name": "MSG",
+  "title": "V2 DTCODE Data Type",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://hl7.org/v2/StructureDefinition/MSG",
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MSG.1",
+        "path": "MSG.1",
+        "short": "Message Code",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0076"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 3
+              },
+              {
+                "url": "max",
+                "valueInteger": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MSG.2",
+        "path": "MSG.2",
+        "short": "Trigger Event",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0003"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 3
+              },
+              {
+                "url": "max",
+                "valueInteger": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MSG.3",
+        "path": "MSG.3",
+        "short": "Message Structure",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0354"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 3
+              },
+              {
+                "url": "max",
+                "valueInteger": 7
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "id": "MSG"
+}

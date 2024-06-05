@@ -44,14 +44,8 @@
       {
         "id" : "integer",
         "path" : "integer",
-        "constraint" : {
-          "key" : "si-1",
-          "severity" : "error",
-          "human" : {
-            "value" : "The value must be greater than or equal to 0 and less than 10000"
-          },
-          "expression" : "integer.value >= 0 and integer.value < 10000"
-        }   
+        "minValueInteger" : 0,
+        "maxValueInteger" : 9999   
       },
       {
         "id" : "integer.id",
@@ -62,13 +56,6 @@
         "id" : "integer.extension",
         "path" : "integer.extension",
         "max" : "0"
-      },
-      {
-        "id" : "integer.value",
-        "path" : "integer.value",
-        "condition" : {
-          "value" : "si-1"
-        }
       }
     ]
   }

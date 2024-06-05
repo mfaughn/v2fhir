@@ -1,0 +1,36 @@
+{
+  "resourceType" : "CodeSystem",
+  "url" : "http://hl7.org/v2/CodeSystem/Optionality",
+  "status" : "active",
+  "content" : "complete",
+  "concept" : [
+    {
+      "code" : "R",
+      "display" : "Required"
+    },
+    {
+      "code" : "RE",
+      "display" : "Required but MAY be empty."
+    },
+    {
+      "code" : "O",
+      "display" : "Optional"
+    },
+    {
+      "code" : "C",
+      "display" : "Conditional"
+    },
+    {
+      "code" : "X",
+      "display" : "not used with this trigger event"
+    },
+    {
+      "code" : "B",
+      "display" : "left in for backward compatibility"
+    },
+    {
+      "code" : "W",
+      "display" : "Withdrawn"
+    }
+  ]
+}

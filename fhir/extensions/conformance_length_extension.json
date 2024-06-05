@@ -1,0 +1,108 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "V2ConformanceLength",
+  "text" : {
+    "status" : "extensions",
+    "div" : "FIXME"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "v2"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-bind"
+  }],
+  "url" : "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+  "name" : "V2ConformanceLength",
+  "title" : "V2 Conformance Length Extension",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-04-21T19:47:28+00:00",
+  "publisher" : "HL7 International / V2 Management",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/v2management"
+    }]
+  }],
+  "description" : "Specifies the minimum length that applications must be able to store. Conformant applications SHALL NOT truncate a value that is shorter than the length specified. The conformance length is also the minimum value that SHOULD be assigned to maximum length in an implementation profile. If indicated, applications SHALL NOT truncate the value, otherwise the data type of the value determines whether trucation is acceptable.",
+  "fhirVersion" : "5.0.0",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "ComplexDataType"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Conformance Length",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/v2ConformanceLength"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "2"
+    },
+    {
+      "id" : "Extension.extension:length",
+      "path" : "Extension.extension",
+      "sliceName" : "length",
+      "short" : "Minimum number of characters application must be able to store",
+      "definition" : "Minimum number of characters application must be able to store",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Extension.extension:min.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+
+    {
+      "id" : "Extension.extension:length.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "Extension.extension:noTruncate",
+      "path" : "Extension.extension",
+      "sliceName" : "noTruncate",
+      "short" : "Whether truncation is forbidden",
+      "definition" : "Whether truncation is forbidden",
+      "min" : 0    },
+    {
+      "id" : "Extension.extension:noTruncate.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+
+    {
+      "id" : "Extension.extension:noTruncate.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "boolean"
+      }]
+    }
+  }
+}

@@ -1,3 +1,5 @@
+Resources in this directory were authored by Grahame Grieve
+
 This directory contains the test cases for the base definitions of v2 as a set of FHIR Logical models
 
 How these work:
