@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/Segment-Profile"
+    ]
+  },
+  "resourceType": "StructureDefinition",
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/Segment",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EQP.1",
+        "path": "EQP.1",
+        "short": " - EQP",
+        "definition": "Definition: This field identifies the type of event of the message. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70450[HL7 Table 0450 – Event Type] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1430
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0450"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "EQP.2",
+        "path": "EQP.2",
+        "short": " - EQP",
+        "definition": "Definition: This field is the physical file name that is being used to store information about the transmitted log and/or service event.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1431
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "20"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EQP.3",
+        "path": "EQP.3",
+        "short": " - EQP",
+        "definition": "Definition: This field is the date/time that the event started.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1202
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "EQP.4",
+        "path": "EQP.4",
+        "short": " - EQP",
+        "definition": "Definition: This field is the date/time that the event was completed.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1432
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "EQP.5",
+        "path": "EQP.5",
+        "short": " - EQP",
+        "definition": "Definition: This field is the data that the log and/or service event was about and is to be logged.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1433
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/FT"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "EQP",
+  "title": "HL7 v2 EQP Segment Definition",
+  "url": "http://hl7.org/v2/StructureDefinition/EQP",
+  "name": "EQP",
+  "type": "http://hl7.org/v2/StructureDefinition/EQP"
+}

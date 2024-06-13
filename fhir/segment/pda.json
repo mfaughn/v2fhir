@@ -1,0 +1,308 @@
+{
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/Segment-Profile"
+    ]
+  },
+  "resourceType": "StructureDefinition",
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/Segment",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PDA.1",
+        "path": "PDA.1",
+        "short": " - PDA",
+        "definition": "Definition: This field is valued with the reason of the death.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1574
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "PDA.2",
+        "path": "PDA.2",
+        "short": " - PDA",
+        "definition": "Definition: This field is valued with the place the death occurred.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1575
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/PL"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "PDA.3",
+        "path": "PDA.3",
+        "short": " - PDA",
+        "definition": "Definition: This field indicates whether a death was officially certified or not. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/No Indicator_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1576
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0136"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PDA.4",
+        "path": "PDA.4",
+        "short": " - PDA",
+        "definition": "Definition: This field is valued with the date and time the death certificate was signed.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1577
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "PDA.5",
+        "path": "PDA.5",
+        "short": " - PDA",
+        "definition": "Definition: This field is valued with the person who signed the death certificate.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1578
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "PDA.6",
+        "path": "PDA.6",
+        "short": " - PDA",
+        "definition": "Definition: This field indicates whether an autopsy was performed. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/No Indicator_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1579
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0136"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PDA.7",
+        "path": "PDA.7",
+        "short": " - PDA",
+        "definition": "Definition: If an autopsy is performed, this field is valued with the date and time the autopsy was begun and completed",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1580
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DR"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "PDA.8",
+        "path": "PDA.8",
+        "short": " - PDA",
+        "definition": "Definition: This field is valued with the authority who performed the autopsy.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1581
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "PDA.9",
+        "path": "PDA.9",
+        "short": " - PDA",
+        "definition": "Definition: This flag indicates whether the case/death has been assigned to the coroner/medical examiner for investigative purposed. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/No Indicator_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1582
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0136"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "id": "PDA",
+  "title": "HL7 v2 PDA Segment Definition",
+  "url": "http://hl7.org/v2/StructureDefinition/PDA",
+  "name": "PDA",
+  "type": "http://hl7.org/v2/StructureDefinition/PDA"
+}

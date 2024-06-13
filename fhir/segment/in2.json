@@ -1,0 +1,2271 @@
+{
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/Segment-Profile"
+    ]
+  },
+  "resourceType": "StructureDefinition",
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/Segment",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "IN2.1",
+        "path": "IN2.1",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the employee ID of the insured. The assigning authority and identifier type code are strongly recommended for all CX data types.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 472
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CX"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.2",
+        "path": "IN2.2",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the social security number of the insured.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 473
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "11"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.3",
+        "path": "IN2.3",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the name and ID of the insured's employer or the person who purchased the insurance for the insured, if the employer is a person. Multiple names and identifiers for the same person may be sent in this field, not multiple persons Specification of meaning based on sequence is deprecated. When the employer is an organization use link:#in2-70-insured-employer-organization-name-and-id-xon-00810[_IN2-70 - Insured Employer Organization Name and ID_].",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 474
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.4",
+        "path": "IN2.4",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the required employer information data for UB82 form locator 71. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70139[_User-defined Table 0139 - Employer Information Data_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 475
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0139"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.5",
+        "path": "IN2.5",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the party to which the claim should be mailed. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70137[_User-defined Table 0137 - Mail Claim Party_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 476
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0137"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.6",
+        "path": "IN2.6",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the Medicare Health Insurance Number (HIN), defined by CMS or other regulatory agencies.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 477
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "15"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.7",
+        "path": "IN2.7",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the Medicaid case name, defined by CMS or other regulatory agencies. Multiple names for the same person may be sent in this field. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 478
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.8",
+        "path": "IN2.8",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the Medicaid case number, defined by CMS or other regulatory agencies which can be used to group household members for Medicaid service eligibility.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 479
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "15"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.9",
+        "path": "IN2.9",
+        "short": " - IN2",
+        "definition": "Definition: This field is defined by CMS or other regulatory agencies. Multiple names for the same person may be sent in this field. Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 480
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.10",
+        "path": "IN2.10",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the military ID number, defined by CMS or other regulatory agencies, which uniquely identifies a patient's military policy.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 481
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "20"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.11",
+        "path": "IN2.11",
+        "short": " - IN2",
+        "definition": "Definition: This field is defined by CMS or other regulatory agencies. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70342[_User-defined Table 0342 - Military Recipient_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 482
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0342"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.12",
+        "path": "IN2.12",
+        "short": " - IN2",
+        "definition": "Definition: This field is defined by CMS or other regulatory agencies.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 483
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "25"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.13",
+        "path": "IN2.13",
+        "short": " - IN2",
+        "definition": "Definition: This field is defined by CMS or other regulatory agencies.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 484
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "25"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.14",
+        "path": "IN2.14",
+        "short": " - IN2",
+        "definition": "Definition: This field is defined by CMS or other regulatory agencies and refers to the military branch of service. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70140[_User-defined Table 0140 - Military_ _Servic__e_] in Chapter 2C, Code Tables, for suggested values. The UB codes listed may not represent a complete list; refer to a UB specification for additional information.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 485
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0140"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.15",
+        "path": "IN2.15",
+        "short": " - IN2",
+        "definition": "Definition: This user-defined field identifies the military rank/grade of the insured. Refer to E:\\\\V2\\\\V29_CH02C_Tables.docx#HL70141[_User-defined Table 0141 - Military Rank/Grade_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 486
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0141"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.16",
+        "path": "IN2.16",
+        "short": " - IN2",
+        "definition": "Definition: This field is defined by CMS or other regulatory agencies. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70142[_User-defined Table 0142 - Military Status_] in Chapter 2C, Code Tables, for suggested values. The UB codes listed may not represent a complete list; refer to a UB specification for additional information",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 487
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0142"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.17",
+        "path": "IN2.17",
+        "short": " - IN2",
+        "definition": "Definition: This field is defined by CMS or other regulatory agencies.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 488
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DT"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.18",
+        "path": "IN2.18",
+        "short": " - IN2",
+        "definition": "Definition: Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 489
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0136"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.19",
+        "path": "IN2.19",
+        "short": " - IN2",
+        "definition": "Definition: Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 490
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0136"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.20",
+        "path": "IN2.20",
+        "short": " - IN2",
+        "definition": "Definition: Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 491
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0136"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.21",
+        "path": "IN2.21",
+        "short": " - IN2",
+        "definition": "Definition: Use this field instead of link:#ub1-2-blood-deductible-00531[_UB1-2 - Blood Deductible_], as the blood deductible can be associated with the specific insurance plan via this field.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 492
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "1"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.22",
+        "path": "IN2.22",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the name of the individual who approves any special coverage. Multiple names for the same person may be sent in this field. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 493
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.23",
+        "path": "IN2.23",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the title of the person who approves special coverage.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 494
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "30"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.24",
+        "path": "IN2.24",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the code that describes why a service is not covered. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70143[_User-defined Table 0143 - Non-covered Insu__rance Code_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 495
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0143"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.25",
+        "path": "IN2.25",
+        "short": " - IN2",
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 496
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CX"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.26",
+        "path": "IN2.26",
+        "short": " - IN2",
+        "definition": "Definition: Subscriber Identifier assigned by the Payer.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 497
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CX"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.27",
+        "path": "IN2.27",
+        "short": " - IN2",
+        "definition": "Definition: Identifies the source of information about the insured's eligibility for benefits. Refer to User-defined Table 0144 - Eligibility Source in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 498
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0144"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.28",
+        "path": "IN2.28",
+        "short": " - IN2",
+        "definition": "Definition: Use this field instead of link:#in1-40-room-rate-semiprivate-00465[_IN1-40 - Room Rate - Semi-Private_] and link:#in1-41-room-rate-private-00466[_IN1-41 - Room Rate - Private_]. This field contains room type (e.g., private, semi-private), amount type (e.g., limit, percentage) and amount covered by the insurance.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 499
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/RMC"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.29",
+        "path": "IN2.29",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the policy type (e.g., ancillary, major medical) and amount (e.g., amount, percentage, limit) covered by the insurance. Use this field instead of link:#in1-38-policy-limit-amount-00463[_IN1-38 - Policy Limit - Amount_].",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 500
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/PTA"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.30",
+        "path": "IN2.30",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the number of days after which the daily deductible begins, the amount of the deductible, and the number of days to apply the deductible.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 501
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DDI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.31",
+        "path": "IN2.31",
+        "short": " - IN2",
+        "definition": "Definition: This field identifies the specific living conditions for the insured. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70223[_User-defined Table 0223 - Living Dependency_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 755
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0223"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.32",
+        "path": "IN2.32",
+        "short": " - IN2",
+        "definition": "Definition: This field identifies the insured's state of mobility. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70009[_User-defined Table 0009 - Ambulatory Status_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 145
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0009"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.33",
+        "path": "IN2.33",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the code that identifies the insured's citizenship. HL7 recommends using ISO table 3166 as the suggested values in _file:///E:\\V2\\V29_CH02C_Tables.docx#HL70171[User-defined Table 0171 - Citizenship]_ defined in Chapter 2C, Code Tables.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 129
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0171"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.34",
+        "path": "IN2.34",
+        "short": " - IN2",
+        "definition": "Definition: This field identifies the insured's primary speaking language. HL7 recommends using ISO table 639 as the suggested values in _file:///E:\\V2\\V29_CH02C_Tables.docx#HL70296[User-defined Table 0296 - Primary Language]_ defined in Chapter 2C, Code Tables.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 118
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0296"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.35",
+        "path": "IN2.35",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the situation in which the insured person lives at his primary residence. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70220[_User-defined Table 0220 - Living Arrangement_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 742
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0220"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.36",
+        "path": "IN2.36",
+        "short": " - IN2",
+        "definition": "Definition: This field contains a user-defined code indicating what level of publicity is allowed (e.g., No Publicity, Family Only) for the insured. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70215[_User-defined Table 0215 - Publicity Code_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 743
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0215"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.37",
+        "path": "IN2.37",
+        "short": " - IN2",
+        "definition": "Definition: This field identifies the insured's protection, which determines whether or not access to information about this enrollee should be restricted from users who do not have adequate authority. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 744
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0136"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.38",
+        "path": "IN2.38",
+        "short": " - IN2",
+        "definition": "Definition: This field identifies whether the insured is currently a student or not, and whether the insured is a full-time or a part-time student. This field does not indicate the degree level (high school, college) of student, or his/her field of study (accounting, engineering, etc.). Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70231[_User-defined Table 0231 - Student Status_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 745
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0231"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.39",
+        "path": "IN2.39",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the type of religion practiced by the insured. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70006[_User-defined Table 0006 - Religion_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 120
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0006"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.40",
+        "path": "IN2.40",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the insured's mother's maiden name.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 109
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.41",
+        "path": "IN2.41",
+        "short": " - IN2",
+        "definition": "Definition: This field contains a code that identifies the nation or national grouping to which the insured person belongs. This information may be different from a person's citizenship in countries in which multiple nationalities are recognized (for example, Spain: Basque, Catalan, etc.). HL7 recommends using ISO table 3166 as the suggested values in file:///E:\\V2\\V29_CH02C_Tables.docx#HL70212[_User-defined Table 0212 - Nationality_] in Chapter 2C, Code Tables.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 739
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0212"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.42",
+        "path": "IN2.42",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the insured's ethnic group. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70189[_User-defined Table 0189 - Ethnic Group_] in Chapter 2C, Code Tables, for suggested values. The second triplet of the CE data type for ethnic group (alternate identifier, alternate text, and name of alternate coding system) is reserved for governmentally assigned codes. In the US, a current use is to report ethnicity in line with US federal standards for Hispanic origin.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 125
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0189"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.43",
+        "path": "IN2.43",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the insured's marital status. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70002[_User-defined Table 0002 - Marital Status_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 119
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0002"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.44",
+        "path": "IN2.44",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the date on which the insured's employment with a particular employer began.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 787
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DT"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.45",
+        "path": "IN2.45",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the date on which the person's employment with a particular employer ended.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 783
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DT"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.46",
+        "path": "IN2.46",
+        "short": " - IN2",
+        "definition": "Definition: This field contains a descriptive name for the insured's occupation (for example, Sr. Systems Analyst, Sr. Accountant).",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 785
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "20"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.47",
+        "path": "IN2.47",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates a code that identifies the insured's job code (for example, programmer, analyst, doctor, etc.).",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 786
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/JCC"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.48",
+        "path": "IN2.48",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates a code that identifies the insured's current job status. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70311[_User-defined Table 0311 - Job Status_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 752
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0311"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.49",
+        "path": "IN2.49",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the name of the contact person that should be contacted at the insured's place of employment. (Joe Smith is the insured. He works at GTE. Contact Sue Jones at GTE regarding Joe Smith's policy). Multiple names for the same person may be sent in this sequence. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 789
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.50",
+        "path": "IN2.50",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the telecommunications contact for the employer contact person. Multiple phone numbers for the same contact person may be sent in this sequence, not multiple contacts. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 790
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.51",
+        "path": "IN2.51",
+        "short": " - IN2",
+        "definition": "Definition: Definition: This field contains the reason(s) that employer contact person should be contacted on behalf of the employee. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70222[_User-defined Table 0222 - Contact Reason_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 791
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0222"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.52",
+        "path": "IN2.52",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the contact person for the insured.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 792
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.53",
+        "path": "IN2.53",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the telephone number for the contact person for the insured. Multiple phone numbers for the same person may be sent in this contact, not multiple contacts. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 793
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.54",
+        "path": "IN2.54",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the reason(s) the person should be contacted regarding the insured. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70222[_User-defined Table 0222 - Contact Reason_] in Chapter 2C, Code Tables, for suggested values",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 794
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0222"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.55",
+        "path": "IN2.55",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the date on which the insured's patient relationship (defined in link:#in1-17-insureds-relationship-to-patient-cwe-00442[_IN1-17 - Insured's Relationship to Patient_]) became effective (began).",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 795
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DT"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.56",
+        "path": "IN2.56",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the date after which the relationship (defined in link:#in1-17-insureds-relationship-to-patient-cwe-00442[_IN1-17 - Insured's Relationship to Patient_]) is no longer effective.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 796
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DT"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.57",
+        "path": "IN2.57",
+        "short": " - IN2",
+        "definition": "Definition: This field contains a user-defined code that specifies how the contact should be used. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70232[_User-defined Table 0232 - Insurance Company Contact Reason_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 797
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0232"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.58",
+        "path": "IN2.58",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the telephone number of the person who should be contacted at the insurance company for questions regarding an insurance policy/claim, etc. Multiple phone numbers for the insurance company may be sent in this sequence. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 798
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.59",
+        "path": "IN2.59",
+        "short": " - IN2",
+        "definition": "Definition: This field contains a user-defined code designating the extent of the coverage for a participating member (e.g., \"single,\" \"family,\" etc). Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70312[_User-defined Table 0312 - Policy Scope_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 799
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0312"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.60",
+        "path": "IN2.60",
+        "short": " - IN2",
+        "definition": "Definition: This user-defined field identifies how the policy information got established. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70313[_User-defined Table 0313 - Policy Source_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 800
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0313"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.61",
+        "path": "IN2.61",
+        "short": " - IN2",
+        "definition": "Definition: This field contains an identifying number assigned by the payor for each individual covered by the insurance policy issued to the insured. For example, each individual family member may have a different member number from the insurance policy number issued to the head of household. The assigning authority and identifier type code are strongly recommended for all CX data types.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 801
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CX"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.62",
+        "path": "IN2.62",
+        "short": " - IN2",
+        "definition": "Definition: This field specifies the relationship of the guarantor to the insurance subscriber. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70063[_User-defined Table 0063 - Relationship_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 802
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0063"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.63",
+        "path": "IN2.63",
+        "short": " - IN2",
+        "definition": "Definition: The value of this field represents the insured's telephone number. Multiple phone numbers may be sent in this sequence. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 803
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.64",
+        "path": "IN2.64",
+        "short": " - IN2",
+        "definition": "Definition: The value of this field represents the insured's employer's telephone number. Multiple phone numbers may be sent in this sequence. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 804
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.65",
+        "path": "IN2.65",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the military program for the handicapped in which the patient is enrolled. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70343[_User-defined Table 0343 - Military Handicapped Program Code_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 805
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0343"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.66",
+        "path": "IN2.66",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates whether charges should be suspended for a patient. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 806
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0136"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.67",
+        "path": "IN2.67",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates if the patient has reached the co-pay limit so that no more co-pay charges should be calculated for the patient. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 807
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0136"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.68",
+        "path": "IN2.68",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates if the patient has reached the stoploss limit established in the Contract Master. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 808
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0136"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "IN2.69",
+        "path": "IN2.69",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the name of the insured if the insured/subscriber is an organization. Multiple names for the insured may be sent in this sequence, not multiple insured people Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 809
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XON"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.70",
+        "path": "IN2.70",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the name of the insured's employer, or the organization that purchased the insurance for the insured, if the employer is an organization. Multiple names and identifiers for the same organization may be sent in this field, not multiple organizations. Specification of meaning based on sequence is deprecated.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 810
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XON"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.71",
+        "path": "IN2.71",
+        "short": " - IN2",
+        "definition": "Definition: Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70005[_User-defined Table 0005 - Race_] in Chapter 2C, Code Tables, for suggested values. The second triplet of the CE data type for race (alternate identifier, alternate text, and name of alternate coding system) is reserved for governmentally assigned codes.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 113
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0005"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.72",
+        "path": "IN2.72",
+        "short": " - IN2",
+        "definition": "Definition: This field indicates the relationship of the patient to the insured, as defined by CMS or other regulatory agencies. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70344[_User-defined Table 0344 - Patient's Relati__onship to Insured_] in Chapter 2C, Code Tables, for suggested values. The UB codes listed may not represent a complete list; refer to a UB specification for additional information.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 811
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0344"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "IN2.73",
+        "path": "IN2.73",
+        "short": " - IN2",
+        "definition": "Definition: This field contains the patient's Co-pay amount for visit.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1620
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CP"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "IN2",
+  "title": "HL7 v2 IN2 Segment Definition",
+  "url": "http://hl7.org/v2/StructureDefinition/IN2",
+  "name": "IN2",
+  "type": "http://hl7.org/v2/StructureDefinition/IN2"
+}

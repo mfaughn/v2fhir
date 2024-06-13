@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/Segment-Profile"
+    ]
+  },
+  "resourceType": "StructureDefinition",
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/Segment",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "PMT.1",
+        "path": "PMT.1",
+        "short": " - PMT",
+        "definition": "Definition: Unique Payment/Remittance Advice number for the sending Network Application ID.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2018
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/EI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "PMT.2",
+        "path": "PMT.2",
+        "short": " - PMT",
+        "definition": "Definition: [ Start ] Date/Time for this Payment/Remittance Advice.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2019
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "PMT.3",
+        "path": "PMT.3",
+        "short": " - PMT",
+        "definition": "Definition: [ End ] Date/Time for this Payment/Remittance Advice.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2020
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "PMT.4",
+        "path": "PMT.4",
+        "short": " - PMT",
+        "definition": "Definition: Code identifying the method for the movement of payment. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70570[_User-defined Table 0570 – Payment Method Code_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2021
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0570"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "PMT.5",
+        "path": "PMT.5",
+        "short": " - PMT",
+        "definition": "Definition: Date Payment/Remittance Advice was paid, which might not be the same as Date/Time of Message on MSH.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2022
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "PMT.6",
+        "path": "PMT.6",
+        "short": " - PMT",
+        "definition": "Definition: Sum total of all Product/Service Paid Amount on PSL for this Payment/Remittance Advice, net of any Adjustments to Payee.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2023
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CP"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "PMT.7",
+        "path": "PMT.7",
+        "short": " - PMT",
+        "definition": "Definition: Unique check number from the Payer's application system.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2024
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/EI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "PMT.8",
+        "path": "PMT.8",
+        "short": " - PMT",
+        "definition": "Definition: Identification of Payee's financial contact, e.g., name of the bank .",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2025
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XON"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "PMT.9",
+        "path": "PMT.9",
+        "short": " - PMT",
+        "definition": "Definition: Personal ID of the payee used in financial transaction.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2026
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "4"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PMT.10",
+        "path": "PMT.10",
+        "short": " - PMT",
+        "definition": "Definition: Id of Payee's Bank account.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2027
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CX"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "PMT.11",
+        "path": "PMT.11",
+        "short": " - PMT",
+        "definition": "Definition: Organization identifier that made the Payment/Remittance Advice; could be a Payer, Insurance Company, TPA, Drug Company.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2028
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XON"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "PMT.12",
+        "path": "PMT.12",
+        "short": " - PMT",
+        "definition": "Definition: Invoice Reference used with electronic banking methods.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2029
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "100"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "id": "PMT",
+  "title": "HL7 v2 PMT Segment Definition",
+  "url": "http://hl7.org/v2/StructureDefinition/PMT",
+  "name": "PMT",
+  "type": "http://hl7.org/v2/StructureDefinition/PMT"
+}

@@ -1,0 +1,776 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://hl7.org/v2/CodeSystem/Segments",
+  "status": "active",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADD",
+      "display": "Addendum"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BHS",
+      "display": "Batch Header"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BTS",
+      "display": "Batch Trailer"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DSC",
+      "display": "Continuation Pointer"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ERR",
+      "display": "Error"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/FHS",
+      "display": "File Header"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/FTS",
+      "display": "File Trailer"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MSA",
+      "display": "Message Acknowledgment"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MSH",
+      "display": "Message Header"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NTE",
+      "display": "Notes and Comments"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OVR",
+      "display": "Override"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SFT",
+      "display": "Software"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SGH",
+      "display": "Segment Group Header"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SGT",
+      "display": "Segment Group Trailer"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/UAC",
+      "display": "User Authentication Credential"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/...",
+      "display": "Variable"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/Hxx",
+      "display": "Any segment or segment group"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EVN",
+      "display": "Event Type"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PID",
+      "display": "Patient Identification"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PV1",
+      "display": "Patient Visit"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PV2",
+      "display": "Patient Visit - Additional Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NK1",
+      "display": "Next of Kin / Associated Parties"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/AL1",
+      "display": "Patient Allergy Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/IAM",
+      "display": "Patient Adverse Reaction Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/IAR",
+      "display": "Allergy Reaction"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NPU",
+      "display": "Bed Status Update"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MRG",
+      "display": "Merge Patient Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PD1",
+      "display": "Patient Additional Demographic"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DB1",
+      "display": "Disability"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PDA",
+      "display": "Patient Death and Autopsy"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ARV",
+      "display": "Access Restrictions"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OH1",
+      "display": "Person Employment Status"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OH2",
+      "display": "Past or Present Job"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OH3",
+      "display": "Usual Work"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OH4",
+      "display": "Combat Zone Work"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/GSP",
+      "display": "Person Gender and Sex"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/GSR",
+      "display": "Recorded Gender and Sex"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/GSC",
+      "display": "Sex Parameter for Clinical Use"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORC",
+      "display": "Common Order"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BLG",
+      "display": "Billing"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OBR",
+      "display": "Observation Request"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/TQ1",
+      "display": "Timing/Quantity"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/TQ2",
+      "display": "Timing/Quantity Relationship"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/IPC",
+      "display": "Imaging Procedure Control"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ODS",
+      "display": "dietary orders, supplements, and preferences"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ODT",
+      "display": "diet tray instructions"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RQD",
+      "display": "Requisition Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RQ1",
+      "display": "Requisition Detail-1"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BPO",
+      "display": "Blood Product Order"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BPX",
+      "display": "Blood Product Dispense Status"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BTX",
+      "display": "Blood Product Transfusion/Disposition"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DON",
+      "display": "Donation"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BUI",
+      "display": "Blood Unit information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RXO",
+      "display": "Pharmacy/Treatment Order"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RXR",
+      "display": "Pharmacy/Treatment Route"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RXC",
+      "display": "Pharmacy/Treatment Component Order"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RXE",
+      "display": "Pharmacy/Treatment Encoded Order"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RXD",
+      "display": "Pharmacy/Treatment Dispense"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RXG",
+      "display": "Pharmacy/Treatment Give"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RXA",
+      "display": "Pharmacy/Treatment Administration"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RXV",
+      "display": "Pharmacy/Treatment Infusion"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CDO",
+      "display": "Cumulative Dosage"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DSP",
+      "display": "Display Data"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QAK",
+      "display": "Query Acknowledgment"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QID",
+      "display": "Query Identification"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QPD",
+      "display": "Query Parameter Definition"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QRI",
+      "display": "Query Response Instance"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RCP",
+      "display": "Response Control Parameter"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDF",
+      "display": "Table Row Definition"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDT",
+      "display": "Table Row Data"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/FT1",
+      "display": "Financial Transaction"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DG1",
+      "display": "Diagnosis"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DRG",
+      "display": "Diagnosis Related Group"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PR1",
+      "display": "Procedures"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/GT1",
+      "display": "Guarantor"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/IN1",
+      "display": "Insurance"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/IN2",
+      "display": "Insurance Additional Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/IN3",
+      "display": "Insurance Additional Information, Certification"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACC",
+      "display": "Accident"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/UB1",
+      "display": "Uniform Billing 1"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/UB2",
+      "display": "UB92 Data"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ABS",
+      "display": "Abstract"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BLC",
+      "display": "Blood Code"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RMI",
+      "display": "Risk Management Incident"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/GP1",
+      "display": "Grouping/Reimbursement - Visit"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/GP2",
+      "display": "Grouping/Reimbursement - Procedure Line Item"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OBX",
+      "display": "Observation/Result"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SPM",
+      "display": "Specimen"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PRT",
+      "display": "Participation Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CSR",
+      "display": "Clinical Study Registration"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CSP",
+      "display": "Clinical Study Phase"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CSS",
+      "display": "Clinical Study Data Schedule"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CTI",
+      "display": "Clinical Trial Identification"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PES",
+      "display": "Product Experience Sender"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PEO",
+      "display": "Product Experience Observation"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PCR",
+      "display": "Possible Causal Relationship"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PSH",
+      "display": "Product Summary Header"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PDC",
+      "display": "Product Detail Country"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/FAC",
+      "display": "Facility"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SHP",
+      "display": "Shipment"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PAC",
+      "display": "Shipment Package"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFI",
+      "display": "Master File Identification"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFE",
+      "display": "Master File Entry"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFA",
+      "display": "Master File Acknowledgment"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OM1",
+      "display": "General"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OM2",
+      "display": "Numeric Observation"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OM3",
+      "display": "Categorical Service/Test/Observation"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OM4",
+      "display": "Observations That Require Specimens"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OM5",
+      "display": "Observation Batteries (Sets)"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OM6",
+      "display": "Observations that are Calculated from Other Observations"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OM7",
+      "display": "Additional Basic Attributes"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OMC",
+      "display": "Supporting Clinical Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PM1",
+      "display": "Payer Master File"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MCP",
+      "display": "Master File Coverage Policy"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DPS",
+      "display": "Diagnosis and Procedure Code"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/LOC",
+      "display": "Location Identification"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/LCH",
+      "display": "Location Characteristic"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/LRL",
+      "display": "Location Relationship"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/LDP",
+      "display": "Location Department"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/LCC",
+      "display": "Location Charge Code"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CDM",
+      "display": "Charge Description Master"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PRC",
+      "display": "Pricing"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CM0",
+      "display": "Clinical Study Master"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CM1",
+      "display": "Clinical Study Phase Master"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CM2",
+      "display": "Clinical Study Schedule Master"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DMI",
+      "display": "DRG Master File Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CTR",
+      "display": "Contract Master Outbound"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CON",
+      "display": "Consent"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/TXA",
+      "display": "Transcription Document Header"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ARQ",
+      "display": "Appointment Request"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SCH",
+      "display": "Schedule Activity Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RGS",
+      "display": "Resource Group"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/AIS",
+      "display": "Appointment Information - Service"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/AIG",
+      "display": "Appointment Information - General Resource"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/AIL",
+      "display": "Appointment Information - Location Resource"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/AIP",
+      "display": "Appointment Information - Personnel Resource"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/APR",
+      "display": "Appointment Preferences"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RF1",
+      "display": "Referral Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/AUT",
+      "display": "Authorization Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PRD",
+      "display": "provider data"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CTD",
+      "display": "Contact Data"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/GOL",
+      "display": "Goal Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PRB",
+      "display": "Problem Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PTH",
+      "display": "Pathway"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/VAR",
+      "display": "Variance"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/REL",
+      "display": "Clinical Relationship"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EQU",
+      "display": "Equipment Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ISD",
+      "display": "Interaction Status Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SAC",
+      "display": "Specimen Container Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/INV",
+      "display": "Inventory Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ECD",
+      "display": "Equipment Command"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ECR",
+      "display": "Equipment Command Response"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NDS",
+      "display": "Notification Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CNS",
+      "display": "Clear Notification"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/TCC",
+      "display": "Test Code Configuration"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/TCD",
+      "display": "Test Code Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SID",
+      "display": "Substance Identifier"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EQP",
+      "display": "Equipment Log/Service"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DST",
+      "display": "Transport Destination"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NCK",
+      "display": "System Clock"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NSC",
+      "display": "Application Status Change"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NST",
+      "display": "Application Control-Level Statistics"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/AFF",
+      "display": "Professional Affiliation"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CER",
+      "display": "Certificate Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EDU",
+      "display": "Educational Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/LAN",
+      "display": "Language Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORG",
+      "display": "Practitioner Organization Unit"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PRA",
+      "display": "Practitioner Detail"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ROL",
+      "display": "Role"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/STF",
+      "display": "Staff Identification"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RFI",
+      "display": "Request for Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/IVC",
+      "display": "Invoice"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PYE",
+      "display": "Payee Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PSS",
+      "display": "Product/Service Section"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PSG",
+      "display": "Product/Service Group"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PSL",
+      "display": "Product/Service Line Item"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADJ",
+      "display": "Adjustment"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PMT",
+      "display": "Payment Information"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/IPR",
+      "display": "Invoice Processing Results"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/IIM",
+      "display": "Inventory Item Master"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ITM",
+      "display": "Material Item"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/STZ",
+      "display": "Sterilization Parameter"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/VND",
+      "display": "Purchasing Vendor"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PKG",
+      "display": "Packaging"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PCE",
+      "display": "Patient Charge Cost Center Exception"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/IVT",
+      "display": "Material Location"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ILT",
+      "display": "Material Lot"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SCP",
+      "display": "Sterilizer Configuration"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SLT",
+      "display": "Sterilization Lot"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SDD",
+      "display": "Sterilization Device Data"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SCD",
+      "display": "Anti-Microbial Cycle Data"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DEV",
+      "display": "Device"
+    }
+  ]
+}

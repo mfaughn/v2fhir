@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/Segment-Profile"
+    ]
+  },
+  "resourceType": "StructureDefinition",
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/Segment",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RMI.1",
+        "path": "RMI.1",
+        "short": " - RMI",
+        "definition": "Definition: A code depicting the incident that occurred during a patient's stay. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70427[_User-defined Table 0427 - Risk Management Incident Code_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1530
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0427"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "RMI.2",
+        "path": "RMI.2",
+        "short": " - RMI",
+        "definition": "Definition: This field contains the date and time the Risk Management Incident identified in link:#rmi-1-risk-management-incident-code-cwe-01530[_RMI-1 - Risk Management Incident Code_] occurred.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1531
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "RMI.3",
+        "path": "RMI.3",
+        "short": " - RMI",
+        "definition": "Definition: A code depicting a classification of the incident type. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70428[_User-defined Table 0428 - Incident Type Code_] in Chapter 2C, Code Tables, for suggested values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1533
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0428"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "RMI",
+  "title": "HL7 v2 RMI Segment Definition",
+  "url": "http://hl7.org/v2/StructureDefinition/RMI",
+  "name": "RMI",
+  "type": "http://hl7.org/v2/StructureDefinition/RMI"
+}

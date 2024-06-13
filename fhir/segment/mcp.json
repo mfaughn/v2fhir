@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/Segment-Profile"
+    ]
+  },
+  "resourceType": "StructureDefinition",
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/Segment",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "MCP.1",
+        "path": "MCP.1",
+        "short": " - MCP",
+        "definition": "Definition: _MCP-1 - set ID - MCP_ contains the number that identifies this transaction. For the first occurrence the sequence number shall be 1, for the second occurrence it shall be 2, etc. The Set ID in the MCP segment is used to uniquely identify the segment. There are likely multiple instances of Universal Service Identifier, Diagnosis and Procedure code.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 3468
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/SI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MCP.2",
+        "path": "MCP.2",
+        "short": " - MCP",
+        "definition": "Definition: This field contains the producer's usual or preferred identification of the test or observation. Only three components should be included: <ID code>^<service text name/description>^<source list of code>. All components should be non-null.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 587
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "MCP.3",
+        "path": "MCP.3",
+        "short": " - MCP",
+        "definition": "Definition: Specifies the lowest price for the Universal Service that needs to be disclosed on the payer notification to the patient (for example Medicare ABN). If there is a single price for this Universal Service Identifier, MCP-3 is not valued.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 3469
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/MO"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "MCP.4",
+        "path": "MCP.4",
+        "short": " - MCP",
+        "definition": "Definition: Specifies the highest price for the Universal Service that needs to be disclosed on the payer notification to the patient (for example Medicare ABN). If there is a single price for this Universal Service Identifier, it is valued in this field.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 3470
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/MO"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "MCP.5",
+        "path": "MCP.5",
+        "short": " - MCP",
+        "definition": "Definition: Specifies the reason for the interval between the lowest and the highest price for the Universal Service, for example additional testing (reflex test) that is added based on values of the initial test. There maybe some instances when the value between MCP-3 and MCP-4 is not significant enough to warrant a reason as defined by health authorities.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 3471
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "MCP",
+  "title": "HL7 v2 MCP Segment Definition",
+  "url": "http://hl7.org/v2/StructureDefinition/MCP",
+  "name": "MCP",
+  "type": "http://hl7.org/v2/StructureDefinition/MCP"
+}

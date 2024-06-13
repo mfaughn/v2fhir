@@ -1,0 +1,1077 @@
+{
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/Segment-Profile"
+    ]
+  },
+  "resourceType": "StructureDefinition",
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/Segment",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "OBX.1",
+        "path": "OBX.1",
+        "short": " - OBX",
+        "definition": "Definition: This field contains the sequence number. For compatibility with ASTM.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 569
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/SI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OBX.2",
+        "path": "OBX.2",
+        "short": " - OBX",
+        "definition": "Definition: This field defines the data type of OBX-5, Observation Value. If OBX-5, Observation Value, is valued then OBX-2, Value Type, SHALL be valued. When OBX-5, Observation Value, is not valued, OBX-2 Value Type MAY be valued to represent a data type used to value the observation expressed in OBX-3, Observation Identifier. See https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmcmail.mayo.edu%2Fowa%2FUrlBlockedError.aspx&data=02%7C01%7CHans.Buitendijk%40Cerner.com%7C94563515a95347b47e2a08d56ca7de79%7C0ffca1dc22de4c19b786f0dbf79a3c2e%7C0%7C0%7C636534390612534684&sdata=98cL%2B7xxtWw9ruy81%2FrxSZUwPIHr2uRIsEX2zsmJT%2BI%3D&reserved=0[_HL7 Table 0125 – Value Types_] for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 570
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0125"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 2
+              },
+              {
+                "url": "max",
+                "valueInteger": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OBX.3",
+        "path": "OBX.3",
+        "short": " - OBX",
+        "definition": "Definition: This field contains a unique identifier for the observation. The format is that of the Coded Element (CWE). Example: \"8625-6^P-R interval^LN\". Refer to Table 0622 - Observation Identifier in Chapter 2C for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 571
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0622"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          }
+        ]
+      },
+      {
+        "id": "OBX.4",
+        "path": "OBX.4",
+        "short": " - OBX",
+        "definition": "Definition: This field is used to distinguish between multiple OBX segments with the same observation ID organized under one OBR. Starting with V2.8.2 the data type was changed from ST to OG to enable improved structured grouping of observation segments. In this enhanced mode, the first component provides backwards compatibility with existing grouping schemes, while the additional components can be used for improved structures as defined in specific conformance profiles. For example, a chest X-ray report might include three separate diagnostic impressions. The standard requires three OBX segments, one for each impression. By putting a 1 in the Sub-ID of the first of these OBX segments, 2 in the second, and 3 in the third, we can uniquely identify each OBX segment for editing or replacement.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 572
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/OG"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "20"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OBX.5",
+        "path": "OBX.5",
+        "short": " - OBX",
+        "definition": "Definition: This field contains the value observed by the observation producer. _OBX-2-value type_ contains the data type for this field according to which observation value is formatted. It is not a required field because some systems will report only the Interpretation Codes (_OBX-8_), especially in product experience reporting. The length of the observation field is variable, depending upon _OBX-2-value type_. This field may repeat for multipart, single answer results.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 573
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/Varies"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          }
+        ]
+      },
+      {
+        "id": "OBX.6",
+        "path": "OBX.6",
+        "short": " - OBX",
+        "definition": "Definition: This field contains the units of measurement for the value in _OBX-5, Observation Value_. Coding system from which the values may be drawn include, UCUM, ISO+, ANSI X3.50 - 1986 and site specific (local) coding systems. Considering Version 3 direction and consistent use of V2 and V3 messages/documents within an organization, use of UCUM is strongly recommended. Refer to Table 0623 - Units in Chapter 2C for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 574
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0623"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.7",
+        "path": "OBX.7",
+        "short": " - OBX",
+        "definition": "Definition: When the observation quantifies the amount of a toxic substance, then the upper limit of the range identifies the toxic limit. If the observation quantifies a drug, the lower limits identify the lower therapeutic bounds and the upper limits represent the upper therapeutic bounds above which toxic side effects are common.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 575
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "60"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OBX.8",
+        "path": "OBX.8",
+        "short": " - OBX",
+        "definition": "Definition: One or more codes specifying a categorical assessment of the observation value (OBX.5), such as \"Normal\", \"Abnormal\", \"Positive\", \"Negative\", \"Resistant\", \"Susceptible\", etc.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 576
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0078"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.9",
+        "path": "OBX.9",
+        "short": " - OBX",
+        "definition": "Definition: This field contains the probability of a result being true for results with categorical values. It mainly applies to discrete coded results. It is a decimal number represented as an ASCII string that must be between 0 and 1, inclusive.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 577
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/NM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "5"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OBX.10",
+        "path": "OBX.10",
+        "short": " - OBX",
+        "definition": "Definition: This field contains the nature of the abnormal test. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70080[_HL7 Table 0080 - Nature of abnormal testing_] for valid values. As many of the codes as apply may be included, separated by repeat delimiters. For example, normal values based on age, sex, and race would be codes as \"A~S~R\".",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 578
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0080"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OBX.11",
+        "path": "OBX.11",
+        "short": " - OBX",
+        "definition": "Definition: This field contains the observation result status. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70085[_HL7 table 0085 - Observation result status codes interpretation_] for valid values. This field reflects the current completion status of the results for one Observation Identifier.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 579
+          }
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0085"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "R"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OBX.12",
+        "path": "OBX.12",
+        "short": " - OBX",
+        "definition": "Definition: This field contains the date (and, optionally, the time) on which the values in _OBX-7-reference range_ went into effect.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 580
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.13",
+        "path": "OBX.13",
+        "short": " - OBX",
+        "definition": "Definition: This field permits the producer to record results-dependent codes for classifying the observation at the receiving system. This field should be needed only rarely, because most classifications are fixed attributes of the observation ID and can be defined in the associated observation master file (see description in Chapter 8).",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 581
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ST"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-conformance-length",
+            "extension": [
+              {
+                "url": "length",
+                "valueInteger": "20"
+              },
+              {
+                "url": "noTruncate",
+                "valueInteger": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OBX.14",
+        "path": "OBX.14",
+        "short": " - OBX",
+        "definition": "Definition: This field is needed in two circumstances. The first is when the observations reported beneath one report header (OBR) have different dates/times. This could occur in the case of queries, timed test sequences, or clearance studies where one measurement within a battery may have a different time than another measurement.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 582
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.15",
+        "path": "OBX.15",
+        "short": " - OBX",
+        "definition": "Definition: *_Retained for backwards compatibility as of v 2.7 only. This field is now represented through the PRT segment._* This field contains a unique identifier of the responsible producing service. It should be reported explicitly when the test results are produced at outside laboratories, for example. When this field is null, the receiving system assumes that the observations were produced by the sending organization. This information supports CLIA regulations in the US. The code for producer ID is recorded as a CWE data type. In the US, the Medicare number of the producing service is suggested as the identifier. Refer to Table 0624 - Producer's ID in Chapter 2C for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 583
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0624"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "B"
+          }
+        ]
+      },
+      {
+        "id": "OBX.16",
+        "path": "OBX.16",
+        "short": " - OBX",
+        "definition": "Definition: *_Retained for backwards compatibility as of v 2.7 only. This field is now represented through the PRT segment._* When required, this field contains the identifier of the individual directly responsible for the observation (i.e., the person who either performed or verified it). In a nursing service, the observer is usually the professional who performed the observation (e.g., took the blood pressure). In a laboratory, the observer is the technician who performed or verified the analysis. The code for the observer is recorded as a CWE data type. If the code is sent as a local code, it should be unique and unambiguous when combined with _OBX-15-producer ID_.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 584
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "B"
+          }
+        ]
+      },
+      {
+        "id": "OBX.17",
+        "path": "OBX.17",
+        "short": " - OBX",
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 936
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0626"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.18",
+        "path": "OBX.18",
+        "short": " - OBX",
+        "definition": "Definition: *_Retained for backwards compatibility as of v 2.7 only. This field is now represented through the PRT segment._* This field identifies the Equipment Instance (e.g., Analyzer, Analyzer module, group of Analyzers, etc.) responsible for the production of the observation. This is the identifier from an institution's master list of equipment, where the institution is specified by the _namespace ID_ or if it is blank, then by the \"Producer's ID\" (OBX-15). It should be possible to retrieve from this master list the equipment type, serial number, etc., however it is not planned to transfer this information with every OBX. The repeating of this field allows for the hierarchical representation of the equipment (lowest level first), e.g., module of an instrument, instrument consisting of modules, cluster of multiple instruments, etc.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1479
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/EI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "B"
+          }
+        ]
+      },
+      {
+        "id": "OBX.19",
+        "path": "OBX.19",
+        "short": " - OBX",
+        "definition": "Definition: This field is used to transfer the time stamp associated with generation of the analytical result by the instrument specified in Equipment Instance Identifier (see above).",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 1480
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.20",
+        "path": "OBX.20",
+        "short": " - OBX",
+        "definition": "Definition: This field typically contains the body site(s) where the measurement being reported was obtained. This field should not be used for a specimen source or specimen collection site.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2179
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0163"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.21",
+        "path": "OBX.21",
+        "short": " - OBX",
+        "definition": "Definition: This field contains a unique identifier for this observation. This instance identifier is persistent between messages.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2180
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/EI"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.22",
+        "path": "OBX.22",
+        "short": " - OBX",
+        "definition": "Definition: This field identifies the actuality of the observation (e.g., intent, request, promise, event). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70725[HL7 Table 0725 – Mood Codes] for valid values. This field may only be used with new trigger events and new messages from v 2.6 onward. When this field is not valued in a message that qualifies, then the Value is assumed to be 'EVN'.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2182
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0725"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          }
+        ]
+      },
+      {
+        "id": "OBX.23",
+        "path": "OBX.23",
+        "short": " - OBX",
+        "definition": "Definition: *_Retained for backwards compatibility as of v 2.7 only. This field is now represented through the PRT segment._* This field contains the name of the organization/service responsible for performing the service. When this field is null, the receiving system assumes that the observations were produced by the sending organization. The information for performing organization is recorded as an XON data type. In the US, the Medicare number of the performing organization is suggested as the identifier (component 10).",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2283
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XON"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "B"
+          }
+        ]
+      },
+      {
+        "id": "OBX.24",
+        "path": "OBX.24",
+        "short": " - OBX",
+        "definition": "Definition: *_Retained for backwards compatibility as of v 2.7 only. This field is now represented through the PRT segment._* This field contains the address of the organization/service responsible for performing the service.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2284
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "B"
+          }
+        ]
+      },
+      {
+        "id": "OBX.25",
+        "path": "OBX.25",
+        "short": " - OBX",
+        "definition": "Definition: *_Retained for backwards compatibility as of v 2.7 only. This field is now represented through the PRT segment._* This field contains the medical director of the organization/service responsible for performing the service.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2285
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "B"
+          }
+        ]
+      },
+      {
+        "id": "OBX.26",
+        "path": "OBX.26",
+        "short": " - OBX",
+        "definition": "Definition: This field contains instructions on whether to share the results with the patient, and if so how.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2313
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0909"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 10
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OBX.27",
+        "path": "OBX.27",
+        "short": " - OBX",
+        "definition": "Definition: This element contains the reason code indicating the root cause for the reissue of a previously released lab report. This element is used in conjunction with _OBX-11 Observation Result Status_ to define the root cause for a reissued laboratory result in the case of a corrected, amended, appended, or revised result. For example, if the laboratory result was reissued due to an equipment malfunction.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 3308
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0914"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.28",
+        "path": "OBX.28",
+        "short": " - OBX",
+        "definition": "Definition: This element contains information intended to be used for locally defined processing, particularly process control/status type information. It is defined as repeating and as a CWE data type to provide flexibility. The specific use may be specified in a message profile or implementation guide (see Chapter 2.B), or use may be specified by local agreement internally within an organization.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 3309
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0915"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.29",
+        "path": "OBX.29",
+        "short": " - OBX",
+        "definition": "Definition: This field indicates the type of observation to enable systems to distinguish between observations sent along with an order, versus observations sent as the result to an order. See file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70936[_HL7 Table 0936 – Observation Type_] in Chapter 2C, Code Tables, for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 3432
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0936"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.30",
+        "path": "OBX.30",
+        "short": " - OBX",
+        "definition": "Definition: The result sub-type provides further classification of OBX-29 Observation Type. This may aid in the grouping of OBX-segments. See file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70937[_HL7-defined Table 0937 – Observation Sub-Type_] in Chapter 2C, Code Tables, for a set of valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 3475
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0937"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      },
+      {
+        "id": "OBX.31",
+        "path": "OBX.31",
+        "short": " - OBX",
+        "definition": "Definition: This field reveals the intent of the message. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[_HL7 Table 0206 - Segment Action Code_] for valid values.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 816
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/ID"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0206"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-length",
+            "extension": [
+              {
+                "url": "min",
+                "valueInteger": 1
+              },
+              {
+                "url": "max",
+                "valueInteger": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OBX.32",
+        "path": "OBX.32",
+        "short": " - OBX",
+        "definition": "Definition: This field reports the reason(s) why there is no value reported in the Observation Value (OBX-5) field. This field can be used when _OBX-5-Observation Value_ is empty.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 3510
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+          }
+        ],
+        "binding": {
+          "strength": "TBD",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0960"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "C"
+          }
+        ]
+      },
+      {
+        "id": "OBX.33",
+        "path": "OBX.33",
+        "short": " - OBX",
+        "definition": "Definition: This field contains the unique identifier for the specimen as referenced by the Placer application, the Filler application, or both in the SPM segment that describes the specimen this observation is related to, allowing an explicit linkage between the two.",
+        "description": null,
+        "code": [
+          {
+            "system": "http://hl7.org/v2/CodeSystem/DataElements",
+            "code": 2454
+          }
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/v2/StructureDefinition/EIP"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/v2-optionality",
+            "valueCode": "O"
+          }
+        ]
+      }
+    ]
+  },
+  "id": "OBX",
+  "title": "HL7 v2 OBX Segment Definition",
+  "url": "http://hl7.org/v2/StructureDefinition/OBX",
+  "name": "OBX",
+  "type": "http://hl7.org/v2/StructureDefinition/OBX"
+}
