@@ -8,7 +8,7 @@
   },
   "version": "0.0.1",
   "name": "NA",
-  "title": "V2 DTCODE Data Type",
+  "title": "HL7 v2 NA Data Type",
   "status": "active",
   "kind": "logical",
   "abstract": false,

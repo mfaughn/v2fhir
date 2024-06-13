@@ -8,7 +8,7 @@
   },
   "version": "0.0.1",
   "name": "MA",
-  "title": "V2 DTCODE Data Type",
+  "title": "HL7 v2 MA Data Type",
   "status": "active",
   "kind": "logical",
   "abstract": false,
