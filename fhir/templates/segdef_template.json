@@ -1,0 +1,15 @@
+{
+  "meta" : {
+    "profile" : [ "http://hl7.org/v2/StructureDefinition/Segment-Profile" ]
+  },
+  "resourceType" : "StructureDefinition",
+  "version" : "0.0.1",
+  "status" : "active",
+  "kind" : "logical",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/v2/StructureDefinition/Segment",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : []
+  }
+}
