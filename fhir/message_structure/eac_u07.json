@@ -1,0 +1,269 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/EAC_U07",
+  "id": "EAC_U07",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "EAC_U07.1-MSH",
+          "path": "EAC_U07.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EAC_U07.2-SFT",
+          "path": "EAC_U07.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EAC_U07.3-UAC",
+          "path": "EAC_U07.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EAC_U07.4-EQU",
+          "path": "EAC_U07.4-EQU",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EQU"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EAC_U07.5-COMMAND",
+          "path": "EAC_U07.5-COMMAND",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "EAC_U07.5-COMMAND.1-ECD",
+              "path": "EAC_U07.5-COMMAND.1-ECD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ECD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EAC_U07.5-COMMAND.2-TQ1",
+              "path": "EAC_U07.5-COMMAND.2-TQ1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER",
+              "path": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.1-SAC",
+                  "path": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.1-SAC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/SAC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.2-ORDER_FOR_SPECIMEN_CONTAINER",
+                  "path": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.2-ORDER_FOR_SPECIMEN_CONTAINER",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.2-ORDER_FOR_SPECIMEN_CONTAINER.1-OBR",
+                      "path": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.2-ORDER_FOR_SPECIMEN_CONTAINER.1-OBR",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.2-ORDER_FOR_SPECIMEN_CONTAINER.2-PRT",
+                      "path": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.2-ORDER_FOR_SPECIMEN_CONTAINER.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.3-SPM",
+                  "path": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.3-SPM",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/SPM"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.4-DST",
+                  "path": "EAC_U07.5-COMMAND.3-SPECIMEN_CONTAINER.4-DST",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/DST"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "EAC_U07.5-COMMAND.4-CNS",
+              "path": "EAC_U07.5-COMMAND.4-CNS",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CNS"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "EAC_U07.6-ROL",
+          "path": "EAC_U07.6-ROL",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 EAC_U07 Segment Definition",
+  "name": "EAC_U07",
+  "type": "http://hl7.org/v2/StructureDefinition/EAC_U07"
+}

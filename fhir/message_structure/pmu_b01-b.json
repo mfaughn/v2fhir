@@ -1,0 +1,310 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PMU_B01-B",
+  "id": "PMU_B01-B",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "PMU_B01-B.1-MSH",
+          "path": "PMU_B01-B.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.2-SFT",
+          "path": "PMU_B01-B.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.3-UAC",
+          "path": "PMU_B01-B.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.4-EVN",
+          "path": "PMU_B01-B.4-EVN",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EVN"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.5-STF",
+          "path": "PMU_B01-B.5-STF",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/STF"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.6-GSP",
+          "path": "PMU_B01-B.6-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.7-GSR",
+          "path": "PMU_B01-B.7-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.8-PRA",
+          "path": "PMU_B01-B.8-PRA",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.9-ORG",
+          "path": "PMU_B01-B.9-ORG",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ORG"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.10-AFF",
+          "path": "PMU_B01-B.10-AFF",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/AFF"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.11-LAN",
+          "path": "PMU_B01-B.11-LAN",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/LAN"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.12-EDU",
+          "path": "PMU_B01-B.12-EDU",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EDU"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.13-CER",
+          "path": "PMU_B01-B.13-CER",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/CER"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.14-NEXT_OF_KIN",
+          "path": "PMU_B01-B.14-NEXT_OF_KIN",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PMU_B01-B.14-NEXT_OF_KIN.1-NK1",
+              "path": "PMU_B01-B.14-NEXT_OF_KIN.1-NK1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PMU_B01-B.14-NEXT_OF_KIN.2-GSP",
+              "path": "PMU_B01-B.14-NEXT_OF_KIN.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PMU_B01-B.14-NEXT_OF_KIN.3-GSR",
+              "path": "PMU_B01-B.14-NEXT_OF_KIN.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "PMU_B01-B.15-PRT",
+          "path": "PMU_B01-B.15-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B01-B.16-ROL",
+          "path": "PMU_B01-B.16-ROL",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 PMU_B01-B Segment Definition",
+  "name": "PMU_B01-B",
+  "type": "http://hl7.org/v2/StructureDefinition/PMU_B01-B"
+}

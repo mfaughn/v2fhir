@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ARQ",
+  "id": "ARQ",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ARQ.1",
         "path": "ARQ.1",
-        "short": " - ARQ",
+        "short": "- ARQ.1 - ",
         "definition": "Definition: This field contains placer application's permanent identifier for the appointment request (and the scheduled appointment itself, when confirmed as booked by the filler application). This is a composite field. The first component is a string that identifies an individual appointment request, or booked appointment. It is assigned by the placer application, and it identifies an appointment request, and the subsequent scheduled appointment, uniquely among all such requests and/or booked appointments from a particular requesting application. If the placer appointment ID identifies a parent of a repeating schedule request, then the individual scheduled child appointments can be uniquely identified either by a new placer appointment ID or the parent's placer appointment ID plus an occurrence number, specified in _ARQ-3-Occurrence number._",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "ARQ.2",
         "path": "ARQ.2",
-        "short": " - ARQ",
+        "short": "- ARQ.2 - ",
         "definition": "Definition: This field contains the filler application's permanent identifier for the appointment request (and the scheduled appointment itself, when confirmed as a booked slot by the filler application). This is a composite field. The first component is a string that identifies an individual appointment request, or booked appointment. It is assigned by the filler application, and it identifies an appointment request and the subsequent scheduled appointment, uniquely among all such requests and/or booked appointments from a particular processing application. If the filler appointment ID identifies a parent of a repeating schedule request, then the individual scheduled child appointments can be uniquely identified either by a new filler appointment ID or the parent's filler appointment ID plus an occurrence number, specified in _ARQ-3-Occurrence number_.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -68,7 +70,7 @@
       {
         "id": "ARQ.3",
         "path": "ARQ.3",
-        "short": " - ARQ",
+        "short": "- ARQ.3 - ",
         "definition": "Definition: This field is used in conjunction with the placer appointment ID and/or the filler appointment ID to uniquely identify an individual occurrence (a child) of a parent repeating schedule appointment.",
         "description": null,
         "code": [
@@ -81,7 +83,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -107,7 +109,7 @@
       {
         "id": "ARQ.4",
         "path": "ARQ.4",
-        "short": " - ARQ",
+        "short": "- ARQ.4 - ",
         "definition": "Definition: This field contains a unique identifier for the Placer Group as referenced by the Placer application. A Placer Order Group is a set of appointments grouped together by the placer application, and subsequently identified by the placer application.",
         "description": null,
         "code": [
@@ -120,7 +122,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -133,7 +135,7 @@
       {
         "id": "ARQ.5",
         "path": "ARQ.5",
-        "short": " - ARQ",
+        "short": "- ARQ.5 - ",
         "definition": "Definition: This field contains an identifier code for the schedule in which this appointment should be (or is) booked. This field is provided for situations in which filler applications maintain multiple schedules, and in which a particular resource or set of resources is controlled by more than one of those schedules.",
         "description": null,
         "code": [
@@ -146,7 +148,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -159,7 +161,7 @@
       {
         "id": "ARQ.6",
         "path": "ARQ.6",
-        "short": " - ARQ",
+        "short": "- ARQ.6 - ",
         "definition": "Definition: This field contains the identifier code for the reason that the request event is being triggered. This field may contain a code describing the cancel reason, the delete reason, the discontinue reason, the add reason, or any other code describing the reason that a specific event is occurring.",
         "description": null,
         "code": [
@@ -172,7 +174,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -185,7 +187,7 @@
       {
         "id": "ARQ.7",
         "path": "ARQ.7",
-        "short": " - ARQ",
+        "short": "- ARQ.7 - ",
         "definition": "Definition: This field contains the identifier code for the reason that the appointment is to take place. This field may contain a Universal Service ID describing the observation/test/battery/procedure or other activity that is to be performed during the requested appointment, similar to the Universal Service ID defined for the OBR segment in Chapter 4 on Order Entry. It may also contain a site-specific code describing a pre-defined set of reasons that an appointment may be set to occur. This code can be based on local and/or universal codes. The use of universal codes is recommended. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70276[_User-defined Table 0276 - Appointment reason codes_] in Chapter 2C, Code Tables, for suggested values. This table provides codes for appointment reasons such as routine appointment, previously unscheduled walk-in visit, etc.",
         "description": null,
         "code": [
@@ -198,7 +200,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -215,7 +217,7 @@
       {
         "id": "ARQ.8",
         "path": "ARQ.8",
-        "short": " - ARQ",
+        "short": "- ARQ.8 - ",
         "definition": "Definition: This field contains an identifier code for the type of appointment being requested. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70277[_User-Defined Table 0277 - Appointment Type Codes_] in Chapter 2C, Code Tables, for suggested values. This table provides codes for appointment types such as routine schedule request, request for a tentative appointment, etc.",
         "description": null,
         "code": [
@@ -228,7 +230,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -245,7 +247,7 @@
       {
         "id": "ARQ.9",
         "path": "ARQ.9",
-        "short": " - ARQ",
+        "short": "- ARQ.9 - ",
         "definition": "Definition: This field contains the amount of time being requested for the appointment. In cases of requests for repeating appointments, this field describes the duration of one instance of the appointment. If this field is unvalued, then the institution's standard duration for the type of appointment requested will be assumed.",
         "description": null,
         "code": [
@@ -258,7 +260,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -284,7 +286,7 @@
       {
         "id": "ARQ.10",
         "path": "ARQ.10",
-        "short": " - ARQ",
+        "short": "- ARQ.10 - ",
         "definition": "Definition: This field contains a code describing the units of time used in expressing the _ARQ-9-Appointment duration_ field. This field should be valued according to the recommendations in Chapters 2 and 7. If this component is not valued, the ISO base unit of seconds (code \"_s_\") will be assumed. Refer to Chapter 7, Figures 7-6 through 7-9, for a list of ISO and ANSI+ unit codes.",
         "description": null,
         "code": [
@@ -297,7 +299,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "extension": [
@@ -310,7 +312,7 @@
       {
         "id": "ARQ.11",
         "path": "ARQ.11",
-        "short": " - ARQ",
+        "short": "- ARQ.11 - ",
         "definition": "Definition: This field contains the date and time that the appointment is requested to begin, in the form of a date/time range. The first component contains the earliest date and time that the appointment may be scheduled to begin. The second component contains the latest date and time that the appointment may be scheduled to begin.",
         "description": null,
         "code": [
@@ -323,7 +325,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DR"
+            "code": "DR"
           }
         ],
         "extension": [
@@ -336,7 +338,7 @@
       {
         "id": "ARQ.12",
         "path": "ARQ.12",
-        "short": " - ARQ",
+        "short": "- ARQ.12 - ",
         "definition": "Definition: This field contains the urgency of the request. The definition of this field is equivalent to the definition of TQ1-9 in the Order Entry chapter (Chapter 4), \"Priority\" component.\"",
         "description": null,
         "code": [
@@ -349,7 +351,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -375,7 +377,7 @@
       {
         "id": "ARQ.13",
         "path": "ARQ.13",
-        "short": " - ARQ",
+        "short": "- ARQ.13 - ",
         "definition": "Definition: This field contains the interval between repeating appointments. The default setting indicates that the appointment should occur once, if the component is not valued. If an explicit time interval is specified for the repeat pattern, then it specifies the actual time(s) at which the appointment should be scheduled. The _ARQ-11-Requested Start Date/Time Range_ ought to indicate the first repetition that should occur.",
         "description": null,
         "code": [
@@ -388,7 +390,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/RI"
+            "code": "RI"
           }
         ],
         "extension": [
@@ -401,7 +403,7 @@
       {
         "id": "ARQ.14",
         "path": "ARQ.14",
-        "short": " - ARQ",
+        "short": "- ARQ.14 - ",
         "definition": "Definition: This field indicates how long the appointment repetitions should continue, once they have begun. The default setting indicates that the appointment should occur once. If the Interval Duration is defined as indefinitely repeating, the repetition of this appointment can only be stopped by using a discontinue event.",
         "description": null,
         "code": [
@@ -414,7 +416,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -440,7 +442,7 @@
       {
         "id": "ARQ.15",
         "path": "ARQ.15",
-        "short": " - ARQ",
+        "short": "- ARQ.15 - ",
         "definition": "Definition: This field identifies the person responsible for requesting the scheduling of a requested appointment. This person could be the same person responsible for executing the actual appointment, or it could be the provider requesting that an appointment be made on behalf of the patient, with another provider.",
         "description": null,
         "code": [
@@ -453,7 +455,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -466,7 +468,7 @@
       {
         "id": "ARQ.16",
         "path": "ARQ.16",
-        "short": " - ARQ",
+        "short": "- ARQ.16 - ",
         "definition": "Definition: This field contains the phone number used to contact the placer contact person.",
         "description": null,
         "code": [
@@ -479,7 +481,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -492,7 +494,7 @@
       {
         "id": "ARQ.17",
         "path": "ARQ.17",
-        "short": " - ARQ",
+        "short": "- ARQ.17 - ",
         "definition": "Definition: This field contains the address used to contact the placer contact person.",
         "description": null,
         "code": [
@@ -505,7 +507,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -518,7 +520,7 @@
       {
         "id": "ARQ.18",
         "path": "ARQ.18",
-        "short": " - ARQ",
+        "short": "- ARQ.18 - ",
         "definition": "Definition: This field contains a code that identifies the location of the placer contact person.",
         "description": null,
         "code": [
@@ -531,7 +533,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -544,7 +546,7 @@
       {
         "id": "ARQ.19",
         "path": "ARQ.19",
-        "short": " - ARQ",
+        "short": "- ARQ.19 - ",
         "definition": "Definition: This field identifies the person responsible for entering the request for the scheduling of an appointment. It is included to provide an audit trail of persons responsible for the request. This person may be someone other than the placer contact person, who is responsible for entering orders and requests.",
         "description": null,
         "code": [
@@ -557,7 +559,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -570,7 +572,7 @@
       {
         "id": "ARQ.20",
         "path": "ARQ.20",
-        "short": " - ARQ",
+        "short": "- ARQ.20 - ",
         "definition": "Definition: This field contains the phone number used to contact the _ARQ-19-Entered by Person_.",
         "description": null,
         "code": [
@@ -583,7 +585,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -596,7 +598,7 @@
       {
         "id": "ARQ.21",
         "path": "ARQ.21",
-        "short": " - ARQ",
+        "short": "- ARQ.21 - ",
         "definition": "Definition: This field contains a code that identifies the location of the entered by person.",
         "description": null,
         "code": [
@@ -609,7 +611,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -622,7 +624,7 @@
       {
         "id": "ARQ.22",
         "path": "ARQ.22",
-        "short": " - ARQ",
+        "short": "- ARQ.22 - ",
         "definition": "Definition: This field relates a child to its parent, when a parent-child relationship exists. It contains the placer application's permanent identifier for the parent of the appointment request. This is a composite field.",
         "description": null,
         "code": [
@@ -635,7 +637,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -648,7 +650,7 @@
       {
         "id": "ARQ.23",
         "path": "ARQ.23",
-        "short": " - ARQ",
+        "short": "- ARQ.23 - ",
         "definition": "Definition: This field relates a child to its parent, when a parent-child relationship exists. It contains the filler application's permanent identifier for the parent of the appointment request. This is a composite field.",
         "description": null,
         "code": [
@@ -661,7 +663,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -674,7 +676,7 @@
       {
         "id": "ARQ.24",
         "path": "ARQ.24",
-        "short": " - ARQ",
+        "short": "- ARQ.24 - ",
         "definition": "Definition: This field is the placer application's order number for the order associated with this scheduling request.",
         "description": null,
         "code": [
@@ -687,7 +689,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -700,7 +702,7 @@
       {
         "id": "ARQ.25",
         "path": "ARQ.25",
-        "short": " - ARQ",
+        "short": "- ARQ.25 - ",
         "definition": "Definition: This field is the order number assigned by the filler application for the order associated with this scheduling request.",
         "description": null,
         "code": [
@@ -713,7 +715,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -726,7 +728,7 @@
       {
         "id": "ARQ.26",
         "path": "ARQ.26",
-        "short": " - ARQ",
+        "short": "- ARQ.26 - ",
         "definition": "Definition: This field contains a unique identifier for the Placer Group as referenced by the Placer application, the Filler application, or both. A Placer Group is a set of appointments grouped together by the placer application, and subsequently identified by the placer application and/or by the filler application.",
         "description": null,
         "code": [
@@ -739,7 +741,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EIP"
+            "code": "EIP"
           }
         ],
         "extension": [
@@ -751,9 +753,7 @@
       }
     ]
   },
-  "id": "ARQ",
   "title": "HL7 v2 ARQ Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ARQ",
   "name": "ARQ",
-  "type": "http://hl7.org/v2/StructureDefinition/ARQ"
+  "type": "ARQ"
 }

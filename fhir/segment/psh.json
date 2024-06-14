@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PSH",
+  "id": "PSH",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "PSH.1",
         "path": "PSH.1",
-        "short": " - PSH",
+        "short": "- PSH.1 - ",
         "definition": "Definition: This field contains the name, title, or other description of the report. Typically, the field will include the agency name (e.g., FDA), agency component if applicable (e.g., CDRH) and the report type (e.g., Medical Device Reporting Baseline Report).",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "PSH.2",
         "path": "PSH.2",
-        "short": " - PSH",
+        "short": "- PSH.2 - ",
         "definition": "Definition: This field contains the form descriptor which describes the report. Typically, the field will include the agency name (e.g., FDA), agency component if applicable (e.g., CDRH) and the form number (e.g., 3417).",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "PSH.3",
         "path": "PSH.3",
-        "short": " - PSH",
+        "short": "- PSH.3 - ",
         "definition": "Definition: This field contains the date as assigned by the sender.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -120,7 +122,7 @@
       {
         "id": "PSH.4",
         "path": "PSH.4",
-        "short": " - PSH",
+        "short": "- PSH.4 - ",
         "definition": "Definition: This field contains the date that marks the beginning of the time interval covered by the current report.",
         "description": null,
         "code": [
@@ -133,7 +135,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -146,7 +148,7 @@
       {
         "id": "PSH.5",
         "path": "PSH.5",
-        "short": " - PSH",
+        "short": "- PSH.5 - ",
         "definition": "Definition: This field contains the date which marks the inclusive end of the time interval covered by the current report.",
         "description": null,
         "code": [
@@ -159,7 +161,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -172,7 +174,7 @@
       {
         "id": "PSH.6",
         "path": "PSH.6",
-        "short": " - PSH",
+        "short": "- PSH.6 - ",
         "definition": "Definition: This field is used to send the number of units of the product manufactured during the reporting interval. The second component can be used to specify the units for the quantity.",
         "description": null,
         "code": [
@@ -185,7 +187,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -198,7 +200,7 @@
       {
         "id": "PSH.7",
         "path": "PSH.7",
-        "short": " - PSH",
+        "short": "- PSH.7 - ",
         "definition": "Definition: This field is used to send the number of units of the product which was distributed during the reporting interval. The second component can be used to specify the units for the quantity.",
         "description": null,
         "code": [
@@ -211,7 +213,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -224,7 +226,7 @@
       {
         "id": "PSH.8",
         "path": "PSH.8",
-        "short": " - PSH",
+        "short": "- PSH.8 - ",
         "definition": "Definition: This field is used for measuring the quantity distributed. An explanation of the method used for estimation can be included in _PSH-9 Quantity Distributed Comment_. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70329[_HL7 Table 0329 - Quantity Method_] for valid values.",
         "description": null,
         "code": [
@@ -237,7 +239,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -267,7 +269,7 @@
       {
         "id": "PSH.9",
         "path": "PSH.9",
-        "short": " - PSH",
+        "short": "- PSH.9 - ",
         "definition": "Definition: This field is used for any explanatory text needed but in particular should provide a description of the estimation method used. If referring to the description used in a previous report, the comment should include the product identifier and data of that report.",
         "description": null,
         "code": [
@@ -280,7 +282,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/FT"
+            "code": "FT"
           }
         ],
         "extension": [
@@ -306,7 +308,7 @@
       {
         "id": "PSH.10",
         "path": "PSH.10",
-        "short": " - PSH",
+        "short": "- PSH.10 - ",
         "definition": "Definition: This field is used to send the number of units of the product which were in use during the reporting interval. The second component can be used to specify the units for the quantity.",
         "description": null,
         "code": [
@@ -319,7 +321,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -332,7 +334,7 @@
       {
         "id": "PSH.11",
         "path": "PSH.11",
-        "short": " - PSH",
+        "short": "- PSH.11 - ",
         "definition": "Definition: This field contains the method used for measuring the quantity in use. An explanation of the method used for estimation can be included in _PSH-12-quantity in use comment_. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70329[_HL7 Table 0329 - Quantity Method_] for valid values.",
         "description": null,
         "code": [
@@ -345,7 +347,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -375,7 +377,7 @@
       {
         "id": "PSH.12",
         "path": "PSH.12",
-        "short": " - PSH",
+        "short": "- PSH.12 - ",
         "definition": "Definition: This field can be used for any explanatory text needed but in particular should provide a description of the estimation method used. If referring to the description used in a previous report, the comment should include the product identifier and data of the report.",
         "description": null,
         "code": [
@@ -388,7 +390,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/FT"
+            "code": "FT"
           }
         ],
         "extension": [
@@ -414,7 +416,7 @@
       {
         "id": "PSH.13",
         "path": "PSH.13",
-        "short": " - PSH",
+        "short": "- PSH.13 - ",
         "definition": "Definition: The field contains the number of product experience reports filed by facility.",
         "description": null,
         "code": [
@@ -427,7 +429,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -453,7 +455,7 @@
       {
         "id": "PSH.14",
         "path": "PSH.14",
-        "short": " - PSH",
+        "short": "- PSH.14 - ",
         "definition": "Definition: This field contains the number of product experience reports filed by distributor.",
         "description": null,
         "code": [
@@ -466,7 +468,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -491,9 +493,7 @@
       }
     ]
   },
-  "id": "PSH",
   "title": "HL7 v2 PSH Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/PSH",
   "name": "PSH",
-  "type": "http://hl7.org/v2/StructureDefinition/PSH"
+  "type": "PSH"
 }

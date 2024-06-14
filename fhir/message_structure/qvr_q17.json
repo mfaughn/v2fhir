@@ -1,0 +1,145 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/QVR_Q17",
+  "id": "QVR_Q17",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "QVR_Q17.1-MSH",
+          "path": "QVR_Q17.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "QVR_Q17.2-SFT",
+          "path": "QVR_Q17.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "QVR_Q17.3-UAC",
+          "path": "QVR_Q17.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "QVR_Q17.4-QPD",
+          "path": "QVR_Q17.4-QPD",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QPD"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "QVR_Q17.5-QBP",
+          "path": "QVR_Q17.5-QBP",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "QVR_Q17.5-QBP.1-...",
+              "path": "QVR_Q17.5-QBP.1-...",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/..."
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "QVR_Q17.6-RCP",
+          "path": "QVR_Q17.6-RCP",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/RCP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "QVR_Q17.7-DSC",
+          "path": "QVR_Q17.7-DSC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DSC"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 QVR_Q17 Segment Definition",
+  "name": "QVR_Q17",
+  "type": "http://hl7.org/v2/StructureDefinition/QVR_Q17"
+}

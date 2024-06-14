@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ORG",
+  "id": "ORG",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ORG.1",
         "path": "ORG.1",
-        "short": " - ORG",
+        "short": "- ORG.1 - ",
         "definition": "Definition: This field contains the number that identifies this transaction. For the first occurrence of the segment, the sequence number shall be one; for the second occurrence, the sequence number shall be two; etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "ORG.2",
         "path": "ORG.2",
-        "short": " - ORG",
+        "short": "- ORG.2 - ",
         "definition": "Definition: This field contains the hierarchical components of the organization unit, as defined by the institution. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70405[_User-defined Table 0405 - Organization Unit_] for suggested values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "ORG.3",
         "path": "ORG.3",
-        "short": " - ORG",
+        "short": "- ORG.3 - ",
         "definition": "Definition: This field contains a code indicating the classification of the organization unit. HL7 suggests using values in file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70474[_User-defined Table 0474 - Organization Unit Type_].",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -115,7 +117,7 @@
       {
         "id": "ORG.4",
         "path": "ORG.4",
-        "short": " - ORG",
+        "short": "- ORG.4 - ",
         "definition": "Definition: This field contains an indicator for whether this organization unit is the primary organization unit for this practitioner. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] for valid values.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -158,7 +160,7 @@
       {
         "id": "ORG.5",
         "path": "ORG.5",
-        "short": " - ORG",
+        "short": "- ORG.5 - ",
         "definition": "Definition: This field contains an identification code used by the institution to identify this person at this specific organization unit. If the person is identified with the same code at all organization units, then this data should be coded in _STF-2 Staff ID Codes_.",
         "description": null,
         "code": [
@@ -171,7 +173,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -184,7 +186,7 @@
       {
         "id": "ORG.6",
         "path": "ORG.6",
-        "short": " - ORG",
+        "short": "- ORG.6 - ",
         "definition": "Definition: This field contains the major grouping of the service or occupation of the practitioner at a specific organization unit, for example, Behavioral Health & Social Service. HL7 suggests using values derived from the ANSI ASC X12 Health Care Provider Taxonomy, Level 1 - Type.",
         "description": null,
         "code": [
@@ -197,7 +199,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -214,7 +216,7 @@
       {
         "id": "ORG.7",
         "path": "ORG.7",
-        "short": " - ORG",
+        "short": "- ORG.7 - ",
         "definition": "Definition: This field contains the more specific service or occupation within the health care provider type of the practitioner at a specific organization unit, for example, Counselor. HL7 suggests using values derived from the ANSI ASC X12 Health Care Provider Taxonomy, Level 2 – Classification.",
         "description": null,
         "code": [
@@ -227,7 +229,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -244,7 +246,7 @@
       {
         "id": "ORG.8",
         "path": "ORG.8",
-        "short": " - ORG",
+        "short": "- ORG.8 - ",
         "definition": "Definition: This field contains the segment of the population that a health care provider chooses to service, a specific medical service, a specialization in treating a specific disease, or any other descriptive characteristic about the provider's practice relating to the services rendered of the practitioner at a specific organization unit, for example, Mental Health. HL7 suggests using values derived from the ANSI ASC X12 Health Care Provider Taxonomy, Level 3 - specialization.",
         "description": null,
         "code": [
@@ -257,7 +259,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -274,7 +276,7 @@
       {
         "id": "ORG.9",
         "path": "ORG.9",
-        "short": " - ORG",
+        "short": "- ORG.9 - ",
         "definition": "Definition: This field contains the date range in which the practitioner started and ended working at the specific organization unit in the specific practicing specialty category.",
         "description": null,
         "code": [
@@ -287,7 +289,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DR"
+            "code": "DR"
           }
         ],
         "extension": [
@@ -300,7 +302,7 @@
       {
         "id": "ORG.10",
         "path": "ORG.10",
-        "short": " - ORG",
+        "short": "- ORG.10 - ",
         "definition": "Definition: This field contains a code indicating the working relationship of the practitioner at this organization unit. It may be different than the work status specified in _STF-20_. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70066[_User-defined Table 0066 - Employment Status_], in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -313,7 +315,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -330,7 +332,7 @@
       {
         "id": "ORG.11",
         "path": "ORG.11",
-        "short": " - ORG",
+        "short": "- ORG.11 - ",
         "definition": "Definition: This field contains an indicator for whether this practice specialty requires board approval. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] for valid values.",
         "description": null,
         "code": [
@@ -343,7 +345,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -373,7 +375,7 @@
       {
         "id": "ORG.12",
         "path": "ORG.12",
-        "short": " - ORG",
+        "short": "- ORG.12 - ",
         "definition": "Definition: This field contains an indicator for whether this practice specialty may act as a primary care physician (PCP). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] for valid values.",
         "description": null,
         "code": [
@@ -386,7 +388,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -416,7 +418,7 @@
       {
         "id": "ORG.13",
         "path": "ORG.13",
-        "short": " - ORG",
+        "short": "- ORG.13 - ",
         "definition": "Definition: This field contains the cost center name or code assigned to this organization unit. Refer to _file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70539[HL7 User-defined Table 0539 – Cost Center Code]_ for valid values.",
         "description": null,
         "code": [
@@ -429,7 +431,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -445,9 +447,7 @@
       }
     ]
   },
-  "id": "ORG",
   "title": "HL7 v2 ORG Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ORG",
   "name": "ORG",
-  "type": "http://hl7.org/v2/StructureDefinition/ORG"
+  "type": "ORG"
 }

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/BTS",
+  "id": "BTS",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "BTS.1",
         "path": "BTS.1",
-        "short": " - BTS",
+        "short": "- BTS.1 - ",
         "definition": "Definition: This field contains the count of the individual messages contained within the batch.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "BTS.2",
         "path": "BTS.2",
-        "short": " - BTS",
+        "short": "- BTS.2 - ",
         "definition": "Definition: This field is a comment field that is not further defined in the HL7 protocol.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "BTS.3",
         "path": "BTS.3",
-        "short": " - BTS",
+        "short": "- BTS.3 - ",
         "definition": "Definition: We encourage new users of this field to use the HL7 Version 2.3 data type of NM and to define it as \"repeating.\" This field contains the batch total. If more than a single batch total exists, this field MAY be repeated.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -119,9 +121,7 @@
       }
     ]
   },
-  "id": "BTS",
   "title": "HL7 v2 BTS Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/BTS",
   "name": "BTS",
-  "type": "http://hl7.org/v2/StructureDefinition/BTS"
+  "type": "BTS"
 }

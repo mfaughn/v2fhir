@@ -1,6 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "url": "http://hl7.org/v2/StructureDefinition/SRT",
+  "id": "SRT",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
@@ -12,7 +13,7 @@
   "status": "active",
   "kind": "logical",
   "abstract": false,
-  "type": "http://hl7.org/v2/StructureDefinition/SRT",
+  "type": "SRT",
   "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
   "derivation": "specialization",
   "differential": {
@@ -84,6 +85,5 @@
         ]
       }
     ]
-  },
-  "id": "SRT"
+  }
 }

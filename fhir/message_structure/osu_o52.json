@@ -1,0 +1,237 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OSU_O52",
+  "id": "OSU_O52",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "OSU_O52.1-MSH",
+          "path": "OSU_O52.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSU_O52.2-MSA",
+          "path": "OSU_O52.2-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSU_O52.3-ARV",
+          "path": "OSU_O52.3-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSU_O52.4-ERR",
+          "path": "OSU_O52.4-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSU_O52.5-SFT",
+          "path": "OSU_O52.5-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSU_O52.6-UAC",
+          "path": "OSU_O52.6-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSU_O52.7-NTE",
+          "path": "OSU_O52.7-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSU_O52.8-PATIENT",
+          "path": "OSU_O52.8-PATIENT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "OSU_O52.8-PATIENT.1-PID",
+              "path": "OSU_O52.8-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OSU_O52.8-PATIENT.2-PRT",
+              "path": "OSU_O52.8-PATIENT.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "OSU_O52.9-ARV",
+          "path": "OSU_O52.9-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSU_O52.10-ORDER_STATUS",
+          "path": "OSU_O52.10-ORDER_STATUS",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "OSU_O52.10-ORDER_STATUS.1-ORC",
+              "path": "OSU_O52.10-ORDER_STATUS.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OSU_O52.10-ORDER_STATUS.2-PRT",
+              "path": "OSU_O52.10-ORDER_STATUS.2-PRT",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 OSU_O52 Segment Definition",
+  "name": "OSU_O52",
+  "type": "http://hl7.org/v2/StructureDefinition/OSU_O52"
+}

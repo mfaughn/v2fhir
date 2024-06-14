@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/UAC",
+  "id": "UAC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "UAC.1",
         "path": "UAC.1",
-        "short": " - UAC",
+        "short": "- UAC.1 - ",
         "definition": "Definition: This an identifier code for the type of user authentication credential. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70615[_HL7 Table 0615 – User Authentication Credential Type Code_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "UAC.2",
         "path": "UAC.2",
-        "short": " - UAC",
+        "short": "- UAC.2 - ",
         "definition": "Definition: This is user credential data as supplied by the sender's operating platform. The content and structure of this is defined by other standards and contain no HL7-relevant data.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ED"
+            "code": "ED"
           }
         ],
         "extension": [
@@ -71,9 +73,7 @@
       }
     ]
   },
-  "id": "UAC",
   "title": "HL7 v2 UAC Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/UAC",
   "name": "UAC",
-  "type": "http://hl7.org/v2/StructureDefinition/UAC"
+  "type": "UAC"
 }

@@ -1,0 +1,340 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/EHC_E12",
+  "id": "EHC_E12",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "EHC_E12.1-MSH",
+          "path": "EHC_E12.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.2-SFT",
+          "path": "EHC_E12.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.3-UAC",
+          "path": "EHC_E12.3-UAC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.4-RFI",
+          "path": "EHC_E12.4-RFI",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/RFI"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.5-CTD",
+          "path": "EHC_E12.5-CTD",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/CTD"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.6-IVC",
+          "path": "EHC_E12.6-IVC",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/IVC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.7-PSS",
+          "path": "EHC_E12.7-PSS",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PSS"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.8-PSG",
+          "path": "EHC_E12.8-PSG",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PSG"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.9-PID",
+          "path": "EHC_E12.9-PID",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.10-GSP",
+          "path": "EHC_E12.10-GSP",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.11-GSR",
+          "path": "EHC_E12.11-GSR",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.12-GSC",
+          "path": "EHC_E12.12-GSC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.13-PRT",
+          "path": "EHC_E12.13-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.14-PSL",
+          "path": "EHC_E12.14-PSL",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PSL"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E12.15-REQUEST",
+          "path": "EHC_E12.15-REQUEST",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "EHC_E12.15-REQUEST.1-CTD",
+              "path": "EHC_E12.15-REQUEST.1-CTD",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E12.15-REQUEST.2-OBR",
+              "path": "EHC_E12.15-REQUEST.2-OBR",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E12.15-REQUEST.3-PRT",
+              "path": "EHC_E12.15-REQUEST.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E12.15-REQUEST.4-NTE",
+              "path": "EHC_E12.15-REQUEST.4-NTE",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E12.15-REQUEST.5-OBX",
+              "path": "EHC_E12.15-REQUEST.5-OBX",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E12.15-REQUEST.6-PRT",
+              "path": "EHC_E12.15-REQUEST.6-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 EHC_E12 Segment Definition",
+  "name": "EHC_E12",
+  "type": "http://hl7.org/v2/StructureDefinition/EHC_E12"
+}

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OM6",
+  "id": "OM6",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "OM6.1",
         "path": "OM6.1",
-        "short": " - OM6",
+        "short": "- OM6.1 - ",
         "definition": "Definition: This field contains the same value as the sequence number of the associated OM1 segment.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "OM6.2",
         "path": "OM6.2",
-        "short": " - OM6",
+        "short": "- OM6.2 - ",
         "definition": "Definition: This field is used when there are patient variables that are derived from one or more other patient variables (e.g., creatinine clearance, ideal weight, maximum daily temperature, average glucose, framingham risk). This field contains the rules for deriving the value of this variable (i.e., nature code C, as given in _OM1-18 - Nature of Service/Test/Observation_). These can be described in terms of humanly understandable formulas or descriptions.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -80,9 +82,7 @@
       }
     ]
   },
-  "id": "OM6",
   "title": "HL7 v2 OM6 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/OM6",
   "name": "OM6",
-  "type": "http://hl7.org/v2/StructureDefinition/OM6"
+  "type": "OM6"
 }

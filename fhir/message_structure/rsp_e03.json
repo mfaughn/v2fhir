@@ -1,0 +1,177 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RSP_E03",
+  "id": "RSP_E03",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RSP_E03.1-MSH",
+          "path": "RSP_E03.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_E03.2-SFT",
+          "path": "RSP_E03.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_E03.3-UAC",
+          "path": "RSP_E03.3-UAC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_E03.4-MSA",
+          "path": "RSP_E03.4-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_E03.5-ERR",
+          "path": "RSP_E03.5-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_E03.6-QUERY_ACK_IPR",
+          "path": "RSP_E03.6-QUERY_ACK_IPR",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RSP_E03.6-QUERY_ACK_IPR.1",
+              "path": "RSP_E03.6-QUERY_ACK_IPR.1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RSP_E03.6-QUERY_ACK_IPR.1.1-QAK",
+                  "path": "RSP_E03.6-QUERY_ACK_IPR.1.1-QAK",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/QAK"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_E03.6-QUERY_ACK_IPR.1.2-QPD",
+                  "path": "RSP_E03.6-QUERY_ACK_IPR.1.2-QPD",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/QPD"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_E03.6-QUERY_ACK_IPR.1.3-IPR",
+                  "path": "RSP_E03.6-QUERY_ACK_IPR.1.3-IPR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IPR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 RSP_E03 Segment Definition",
+  "name": "RSP_E03",
+  "type": "http://hl7.org/v2/StructureDefinition/RSP_E03"
+}

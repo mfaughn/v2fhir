@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/LRL",
+  "id": "LRL",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "LRL.1",
         "path": "LRL.1",
-        "short": " - LRL",
+        "short": "- LRL.1 - ",
         "definition": "Definition: This field contains the institution's identification code for the location. The identifying key value. This field has the same components as the patient location fields in the PV1 segment (except that bed status is not included here). At least the first component of this field is required. The contents of this field must exactly match the content of its preceding MFE (_MFE-4 - Primary Key Value - MFE_), its preceding LOC (_LOC-1 - Primary Key Value - LOC_), and its preceding LDP (_LDP-1 - Primary Key Value - LDP_).",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "LRL.2",
         "path": "LRL.2",
-        "short": " - LRL",
+        "short": "- LRL.2 - ",
         "definition": "Definition: This field indicates whether this repetition of the segment is being added, changed or deleted. The action code adds a validation check to indicate, from the point of view of the sending system, whether this repetition of a segment is being added, changed or deleted. This and the following field are used to implement the \"unique key\" mode of updating repeating segments. (See Chapter 2, section 2.10.4.2, \"Action code/unique identifier mode update definition.\") Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[HL7 Table 0206 - Segment Action Code] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "LRL.3",
         "path": "LRL.3",
-        "short": " - LRL",
+        "short": "- LRL.3 - ",
         "definition": "Definition: This field contains a unique identifier for one of the multiple repetitions of this segment, to be used in conjunction with the preceding field. Each of the repetitions of the segment will be uniquely identified by this unique key field for the purposes of updates.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "LRL.4",
         "path": "LRL.4",
-        "short": " - LRL",
+        "short": "- LRL.4 - ",
         "definition": "Definition: This field contains an identifier code to show WHICH relationship is being communicated with this segment. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70325[User-defined Table 0325 - Location Relationship ID] for suggested values.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -141,7 +143,7 @@
       {
         "id": "LRL.5",
         "path": "LRL.5",
-        "short": " - LRL",
+        "short": "- LRL.5 - ",
         "definition": "Definition: This field is conditional on the value of _LRL-4 - Location Relationship ID_. When _LRL-4 -Location Relationship ID_ contains \"RX\"- Nearest Pharmacy, \"RX2\"- Other Pharmacy, \"LAB\"- Nearest Lab, \"LB2\"- Other Lab, or \"DTY\"- Dietary, this field holds that organization's extended name, i.e., the value of this field is conditional on the value of _LRL-4 - Location Relationship ID_. For example, for an inpatient location, this could be an in-house department ID code using only the third component of this data type. For an outpatient location, this could be the nearest external pharmacy.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -167,7 +169,7 @@
       {
         "id": "LRL.6",
         "path": "LRL.6",
-        "short": " - LRL",
+        "short": "- LRL.6 - ",
         "definition": "Definition: This field is conditional on the value of _LRL-4 - Location Relationship ID_. When _LRL-4 -Location Relationship ID_ contains \"ALI\"- Location aliases or \"PAR\"- Parent location this field holds the value of the associated patient location.",
         "description": null,
         "code": [
@@ -180,7 +182,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -192,9 +194,7 @@
       }
     ]
   },
-  "id": "LRL",
   "title": "HL7 v2 LRL Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/LRL",
   "name": "LRL",
-  "type": "http://hl7.org/v2/StructureDefinition/LRL"
+  "type": "LRL"
 }

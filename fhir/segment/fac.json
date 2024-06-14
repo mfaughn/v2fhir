@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/FAC",
+  "id": "FAC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "FAC.1",
         "path": "FAC.1",
-        "short": " - FAC",
+        "short": "- FAC.1 - ",
         "definition": "Definition: This field contains the facility identifier.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "FAC.2",
         "path": "FAC.2",
-        "short": " - FAC",
+        "short": "- FAC.2 - ",
         "definition": "Definition: This field contains the type of facility. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70331[_HL7 Table 0331 - Facility Type_] for valid values.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "FAC.3",
         "path": "FAC.3",
-        "short": " - FAC",
+        "short": "- FAC.3 - ",
         "definition": "Definition: This field contains the facility's address.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "FAC.4",
         "path": "FAC.4",
-        "short": " - FAC",
+        "short": "- FAC.4 - ",
         "definition": "Definition: This field contains the facility's telecommunication information.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -137,7 +139,7 @@
       {
         "id": "FAC.5",
         "path": "FAC.5",
-        "short": " - FAC",
+        "short": "- FAC.5 - ",
         "definition": "Definition: This field contains the primary contact person's name.",
         "description": null,
         "code": [
@@ -150,7 +152,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -163,7 +165,7 @@
       {
         "id": "FAC.6",
         "path": "FAC.6",
-        "short": " - FAC",
+        "short": "- FAC.6 - ",
         "definition": "Definition: This field contains the primary contact person's title.",
         "description": null,
         "code": [
@@ -176,7 +178,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -202,7 +204,7 @@
       {
         "id": "FAC.7",
         "path": "FAC.7",
-        "short": " - FAC",
+        "short": "- FAC.7 - ",
         "definition": "Definition: This field contains the primary contact person's address.",
         "description": null,
         "code": [
@@ -215,7 +217,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -228,7 +230,7 @@
       {
         "id": "FAC.8",
         "path": "FAC.8",
-        "short": " - FAC",
+        "short": "- FAC.8 - ",
         "definition": "Definition: This field contains the primary contact person's telecommunication information.",
         "description": null,
         "code": [
@@ -241,7 +243,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -254,7 +256,7 @@
       {
         "id": "FAC.9",
         "path": "FAC.9",
-        "short": " - FAC",
+        "short": "- FAC.9 - ",
         "definition": "Definition: This field contains the name of the individual with signature authority or who is responsible for the report.",
         "description": null,
         "code": [
@@ -267,7 +269,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -280,7 +282,7 @@
       {
         "id": "FAC.10",
         "path": "FAC.10",
-        "short": " - FAC",
+        "short": "- FAC.10 - ",
         "definition": "Definition: This field contains the title of the individual with signature authority or who is responsible for this report.",
         "description": null,
         "code": [
@@ -293,7 +295,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -319,7 +321,7 @@
       {
         "id": "FAC.11",
         "path": "FAC.11",
-        "short": " - FAC",
+        "short": "- FAC.11 - ",
         "definition": "Definition: This field contains the address of the individual with signature authority or who is responsible for this report.",
         "description": null,
         "code": [
@@ -332,7 +334,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -345,7 +347,7 @@
       {
         "id": "FAC.12",
         "path": "FAC.12",
-        "short": " - FAC",
+        "short": "- FAC.12 - ",
         "definition": "Definition: This field contains the telecommunication information of the individual with signature authority of who is responsible for this report.",
         "description": null,
         "code": [
@@ -358,7 +360,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -370,9 +372,7 @@
       }
     ]
   },
-  "id": "FAC",
   "title": "HL7 v2 FAC Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/FAC",
   "name": "FAC",
-  "type": "http://hl7.org/v2/StructureDefinition/FAC"
+  "type": "FAC"
 }

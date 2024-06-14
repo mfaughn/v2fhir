@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PCE",
+  "id": "PCE",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "PCE.1",
         "path": "PCE.1",
-        "short": " - PCE",
+        "short": "- PCE.1 - ",
         "definition": "Definition: This field contains a sequential number that identifies this segment within a given material item segment group. For the first occurrence of the segment in a given group, the sequence number shall be one; for the second occurrence, the sequence number shall be two; etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "PCE.2",
         "path": "PCE.2",
-        "short": " - PCE",
+        "short": "- PCE.2 - ",
         "definition": "Definition: This field would contain the specific general ledger cost center account number associated with a department that may issue or charge for this item. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70319[_HL7 Table 0319 – Department Cost Center_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "PCE.3",
         "path": "PCE.3",
-        "short": " - PCE",
+        "short": "- PCE.3 - ",
         "definition": "Definition: This field contains a code that is used by a billing system to charge for the inventory supply item, the descriptive name of the patient charge for that system (as it may appear on a patient's bill or charge labels) and the name of the coding system that assigned the charge code. Refer to _file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70132[User-defined Table 0132 – Transaction Codes]_ in Chapter 6, Financial Management, for suggested values.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -115,7 +117,7 @@
       {
         "id": "PCE.4",
         "path": "PCE.4",
-        "short": " - PCE",
+        "short": "- PCE.4 - ",
         "definition": "Definition: The price that a department charges to a patient for this inventory supply item when using the Patient Charge Billing code present in this segment.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -140,9 +142,7 @@
       }
     ]
   },
-  "id": "PCE",
   "title": "HL7 v2 PCE Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/PCE",
   "name": "PCE",
-  "type": "http://hl7.org/v2/StructureDefinition/PCE"
+  "type": "PCE"
 }

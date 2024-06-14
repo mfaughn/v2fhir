@@ -1,6 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "url": "http://hl7.org/v2/StructureDefinition/QSC",
+  "id": "QSC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
@@ -12,7 +13,7 @@
   "status": "active",
   "kind": "logical",
   "abstract": false,
-  "type": "http://hl7.org/v2/StructureDefinition/QSC",
+  "type": "QSC",
   "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
   "derivation": "specialization",
   "differential": {
@@ -137,6 +138,5 @@
         ]
       }
     ]
-  },
-  "id": "QSC"
+  }
 }

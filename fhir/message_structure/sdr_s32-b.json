@@ -1,0 +1,132 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SDR_S32-B",
+  "id": "SDR_S32-B",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "SDR_S32-B.1-MSH",
+          "path": "SDR_S32-B.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SDR_S32-B.2-SFT",
+          "path": "SDR_S32-B.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SDR_S32-B.3-UAC",
+          "path": "SDR_S32-B.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SDR_S32-B.4-ANTI-MICROBIAL_DEVICE_CYCLE_DATA",
+          "path": "SDR_S32-B.4-ANTI-MICROBIAL_DEVICE_CYCLE_DATA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "SDR_S32-B.4-ANTI-MICROBIAL_DEVICE_CYCLE_DATA.1",
+              "path": "SDR_S32-B.4-ANTI-MICROBIAL_DEVICE_CYCLE_DATA.1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SDR_S32-B.4-ANTI-MICROBIAL_DEVICE_CYCLE_DATA.1.1-SDD",
+                  "path": "SDR_S32-B.4-ANTI-MICROBIAL_DEVICE_CYCLE_DATA.1.1-SDD",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/SDD"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SDR_S32-B.4-ANTI-MICROBIAL_DEVICE_CYCLE_DATA.1.2-SCD",
+                  "path": "SDR_S32-B.4-ANTI-MICROBIAL_DEVICE_CYCLE_DATA.1.2-SCD",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/SCD"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 SDR_S32-B Segment Definition",
+  "name": "SDR_S32-B",
+  "type": "http://hl7.org/v2/StructureDefinition/SDR_S32-B"
+}

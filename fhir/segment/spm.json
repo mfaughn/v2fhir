@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SPM",
+  "id": "SPM",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "SPM.1",
         "path": "SPM.1",
-        "short": " - SPM",
+        "short": "- SPM.1 - ",
         "definition": "Definition: This field contains the sequence number. This field is used to identify SPM segment instances in message structures where the SPM segment repeats.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "SPM.2",
         "path": "SPM.2",
-        "short": " - SPM",
+        "short": "- SPM.2 - ",
         "definition": "Definition: This field contains a unique identifier for the specimen as referenced by the Placer application, the Filler application, or both.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EIP"
+            "code": "EIP"
           }
         ],
         "extension": [
@@ -81,7 +83,7 @@
       {
         "id": "SPM.3",
         "path": "SPM.3",
-        "short": " - SPM",
+        "short": "- SPM.3 - ",
         "definition": "Definition: This field contains the identifiers for the specimen or specimens that contributed to the specimen that is described by the segment instance.",
         "description": null,
         "code": [
@@ -94,7 +96,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EIP"
+            "code": "EIP"
           }
         ],
         "extension": [
@@ -107,7 +109,7 @@
       {
         "id": "SPM.4",
         "path": "SPM.4",
-        "short": " - SPM",
+        "short": "- SPM.4 - ",
         "definition": "Definition: This field describes the precise nature of the entity that will be the source material for the observation.",
         "description": null,
         "code": [
@@ -120,7 +122,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -137,7 +139,7 @@
       {
         "id": "SPM.5",
         "path": "SPM.5",
-        "short": " - SPM",
+        "short": "- SPM.5 - ",
         "definition": "Definition: This field contains modifying or qualifying description(s) about the specimen type",
         "description": null,
         "code": [
@@ -150,7 +152,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -167,7 +169,7 @@
       {
         "id": "SPM.6",
         "path": "SPM.6",
-        "short": " - SPM",
+        "short": "- SPM.6 - ",
         "definition": "Definition: This field identifies any additives introduced to the specimen before or at the time of collection. These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70371[_HL7 Table 0371 – Additive/Preservative_] for valid values. When multiple additives are introduced and valid individual additive codes exist but a valid value for the combination does not exist, repeating the field with individual values is most appropriate.",
         "description": null,
         "code": [
@@ -180,7 +182,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -197,7 +199,7 @@
       {
         "id": "SPM.7",
         "path": "SPM.7",
-        "short": " - SPM",
+        "short": "- SPM.7 - ",
         "definition": "Definition: Describes the procedure or process by which the specimen was collected.",
         "description": null,
         "code": [
@@ -210,7 +212,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -227,7 +229,7 @@
       {
         "id": "SPM.8",
         "path": "SPM.8",
-        "short": " - SPM",
+        "short": "- SPM.8 - ",
         "definition": "Definition: specifies the source from which the specimen was obtained. For example, in the case where a liver biopsy is obtained via a percutaneous needle, the source would be 'liver'. Refer to Table 0784 - Specimen Source Site in Chapter 2C for valid values.Any nationally recognized coding system might be used for this field including SNOMED; alternatively the file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70163[_HL7 Table 0163 – Body Site_] may be used. Veterinary medicine may choose the tables supported for the components of this field as decided by their industry.",
         "description": null,
         "code": [
@@ -240,7 +242,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -257,7 +259,7 @@
       {
         "id": "SPM.9",
         "path": "SPM.9",
-        "short": " - SPM",
+        "short": "- SPM.9 - ",
         "definition": "Definition: This field contains modifying or qualifying description(s) about the specimen source site",
         "description": null,
         "code": [
@@ -270,7 +272,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -287,7 +289,7 @@
       {
         "id": "SPM.10",
         "path": "SPM.10",
-        "short": " - SPM",
+        "short": "- SPM.10 - ",
         "definition": "Definition: This field differs from _SPM-8-Specimen Source Site_ in those cases where the source site must be approached via a particular site (e.g., anatomic location). For example, in the case where a liver biopsy is obtained via a percutaneous needle, the collection site would be the point of entry of the needle. For venous blood collected from the left radial vein, the collection site could be \"antecubital fossa\".",
         "description": null,
         "code": [
@@ -300,7 +302,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -317,7 +319,7 @@
       {
         "id": "SPM.11",
         "path": "SPM.11",
-        "short": " - SPM",
+        "short": "- SPM.11 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -328,7 +330,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -345,7 +347,7 @@
       {
         "id": "SPM.12",
         "path": "SPM.12",
-        "short": " - SPM",
+        "short": "- SPM.12 - ",
         "definition": "Definition: This field specifies the volume or mass of the collected specimen. For laboratory tests, the collection volume is the volume of a specimen. Specifically, units should be expressed in the ISO Standard unit abbreviations (ISO‑2955, 1977). This is a results-only field except when the placer or a party has already drawn the specimen. Use of UCUM is strongly recommended as one of the delivered units (could be in addition to the local units). (See Chapter 7 Section 7.4.2.6 for a full discussion regarding units.)",
         "description": null,
         "code": [
@@ -358,7 +360,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -371,7 +373,7 @@
       {
         "id": "SPM.13",
         "path": "SPM.13",
-        "short": " - SPM",
+        "short": "- SPM.13 - ",
         "definition": "Definition: This field refers to the number of individual specimens of a particular type represented by this instance of a specimen. The use of this field is restricted to specimens upon which all specimen related attributes are identical. This field would only be valued if SPM-11 Specimen Role has the value \"G\" or “L”.",
         "description": null,
         "code": [
@@ -384,7 +386,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -410,7 +412,7 @@
       {
         "id": "SPM.14",
         "path": "SPM.14",
-        "short": " - SPM",
+        "short": "- SPM.14 - ",
         "definition": "Definition: This is a text field that allows additional information *specifically about the specimen* to be sent in the message",
         "description": null,
         "code": [
@@ -423,7 +425,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -436,7 +438,7 @@
       {
         "id": "SPM.15",
         "path": "SPM.15",
-        "short": " - SPM",
+        "short": "- SPM.15 - ",
         "definition": "Definition: This describes how the specimen and/or container need to be handled from the time of collection through the initiation of testing. As this field is not required, no assumptions can be made as to meaning when this field is not populated.",
         "description": null,
         "code": [
@@ -449,7 +451,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -466,7 +468,7 @@
       {
         "id": "SPM.16",
         "path": "SPM.16",
-        "short": " - SPM",
+        "short": "- SPM.16 - ",
         "definition": "Definition: This field contains any known or suspected specimen hazards, e.g., exceptionally infectious agent or blood from a hepatitis patient. Either code and/or text may be absent. However, the code is always placed in the first component position and any free text in the second component. Thus, a component delimiter must precede free text without a code. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70489[_User-defined Table 0489 – Risk Codes_] for suggested entries",
         "description": null,
         "code": [
@@ -479,7 +481,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -496,7 +498,7 @@
       {
         "id": "SPM.17",
         "path": "SPM.17",
-        "short": " - SPM",
+        "short": "- SPM.17 - ",
         "definition": "Definition: The date and time when the specimen was acquired from the source. The use of the Date Range data type allows for description of specimens collected over a period of time, for example, 24-hour urine collection. For specimens collected at a point in time, only the first component (start date/time) will be populated.",
         "description": null,
         "code": [
@@ -509,7 +511,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DR"
+            "code": "DR"
           }
         ],
         "extension": [
@@ -522,7 +524,7 @@
       {
         "id": "SPM.18",
         "path": "SPM.18",
-        "short": " - SPM",
+        "short": "- SPM.18 - ",
         "definition": "Definition: The specimen received date/time is the time that the specimen is received at the diagnostic service facility. The actual time that is recorded is based on how specimen receipt is managed and may correspond to the time the sample is logged in. This is fundamentally different from _SPM-17 Specimen Collection date/time_.",
         "description": null,
         "code": [
@@ -535,7 +537,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -548,7 +550,7 @@
       {
         "id": "SPM.19",
         "path": "SPM.19",
-        "short": " - SPM",
+        "short": "- SPM.19 - ",
         "definition": "Definition: This field is the date and time the specimen can no longer be used for the purpose implied by the order. For example, in the Blood Banking environment the specimen can no longer be used for pre-transfusion compatibility testing. The specimen segment will include a _SPM-21-Specimen Reject Reason_ of 'EX' indicating 'Expired' for message instances created after this date and time.",
         "description": null,
         "code": [
@@ -561,7 +563,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -574,7 +576,7 @@
       {
         "id": "SPM.20",
         "path": "SPM.20",
-        "short": " - SPM",
+        "short": "- SPM.20 - ",
         "definition": "Definition: This describes whether the specimen, as it exists, is currently available to use in an analysis. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 – Yes/No Indicator_] for valid values.",
         "description": null,
         "code": [
@@ -587,7 +589,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -617,7 +619,7 @@
       {
         "id": "SPM.21",
         "path": "SPM.21",
-        "short": " - SPM",
+        "short": "- SPM.21 - ",
         "definition": "Definition: This describes one or more reasons the specimen is rejected for the specified observation/result/analysis. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70490[_HL7 Table 0490 – Specimen Reject Reason_] for valid values.",
         "description": null,
         "code": [
@@ -630,7 +632,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -647,7 +649,7 @@
       {
         "id": "SPM.22",
         "path": "SPM.22",
-        "short": " - SPM",
+        "short": "- SPM.22 - ",
         "definition": "Definition: The degree or grade of excellence of the specimen at receipt. The filler populates this attribute. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70491[_User-defined Table 0491 – Specimen Quality_] for suggested entries.",
         "description": null,
         "code": [
@@ -660,7 +662,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -677,7 +679,7 @@
       {
         "id": "SPM.23",
         "path": "SPM.23",
-        "short": " - SPM",
+        "short": "- SPM.23 - ",
         "definition": "Definition: The suitability of the specimen for the particular planned use as determined by the filler. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70492[_User-defined Table 0492 – Specimen Appropriateness_] for suggested entries.",
         "description": null,
         "code": [
@@ -690,7 +692,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -707,7 +709,7 @@
       {
         "id": "SPM.24",
         "path": "SPM.24",
-        "short": " - SPM",
+        "short": "- SPM.24 - ",
         "definition": "Definition: A mode or state of being that describes the nature of the specimen. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70493[_User-defined Table 0493 – Specimen Condition_] for suggested entries.",
         "description": null,
         "code": [
@@ -720,7 +722,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -737,7 +739,7 @@
       {
         "id": "SPM.25",
         "path": "SPM.25",
-        "short": " - SPM",
+        "short": "- SPM.25 - ",
         "definition": "Definition: This attributes contains the amount of specimen that currently exists or is available for use in further testing.",
         "description": null,
         "code": [
@@ -750,7 +752,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -763,7 +765,7 @@
       {
         "id": "SPM.26",
         "path": "SPM.26",
-        "short": " - SPM",
+        "short": "- SPM.26 - ",
         "definition": "Definition: This field identifies the number of containers for a given sample. For sample receipt verification purposes; may be different from the total number of samples that accompany the order.",
         "description": null,
         "code": [
@@ -776,7 +778,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -802,7 +804,7 @@
       {
         "id": "SPM.27",
         "path": "SPM.27",
-        "short": " - SPM",
+        "short": "- SPM.27 - ",
         "definition": "Definition: The container in or on which a specimen is transported. Refer to Table 0785 - Container Type in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -815,7 +817,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -832,7 +834,7 @@
       {
         "id": "SPM.28",
         "path": "SPM.28",
-        "short": " - SPM",
+        "short": "- SPM.28 - ",
         "definition": "Definition: In chain of custody cases where specimens are moved from lab to lab, the status of the container that the specimen is shipped in must be recorded at each receipt. If the container is compromised in any way (seal broken, container cracked or leaking, etc) then this needs to be recorded for legal reasons.",
         "description": null,
         "code": [
@@ -845,7 +847,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -862,7 +864,7 @@
       {
         "id": "SPM.29",
         "path": "SPM.29",
-        "short": " - SPM",
+        "short": "- SPM.29 - ",
         "definition": "Definition: For child specimens, this field identifies the relationship between this specimen and the parent specimen. If this field is populated, then _SPM-3-Specimen Parent ID_ must be populated. This field differs from _SPM-15-Specimen Role_ in that this field refers to the role of this specimen relative to a parent role rather than the role of this specimen to the ordered service.",
         "description": null,
         "code": [
@@ -875,7 +877,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -892,7 +894,7 @@
       {
         "id": "SPM.30",
         "path": "SPM.30",
-        "short": " - SPM",
+        "short": "- SPM.30 - ",
         "definition": "Definition: This field contains accession identifier(s) associated with the specimen. In many cases, applications involved in the collection, transportation or testing of the specimen will assign their own accession identifiers. This field allows communication of these accession identifiers.",
         "description": null,
         "code": [
@@ -905,7 +907,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -918,7 +920,7 @@
       {
         "id": "SPM.31",
         "path": "SPM.31",
-        "short": " - SPM",
+        "short": "- SPM.31 - ",
         "definition": "Definition: This field contains other identifier(s) for the specimen as referenced in an application. Normally this field is used to carry additional identifiers for the specimen in addition to those identified in _SPM-2, Specimen ID_. In may cases other applications involved in the collection, transportation or testing of the specimen will assign additional specimen identifiers. This field allows communication of those other specimen identifiers.",
         "description": null,
         "code": [
@@ -931,7 +933,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -944,7 +946,7 @@
       {
         "id": "SPM.32",
         "path": "SPM.32",
-        "short": " - SPM",
+        "short": "- SPM.32 - ",
         "definition": "Definition: The shipment identifier is the identifier assigned by the shipment transportation provider that uniquely identifies this shipment from all other shipments by the same provider. The addressee for the shipment should be able to use this identifier to match a physical shipment with the electronic manifest for the shipment.",
         "description": null,
         "code": [
@@ -957,7 +959,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -970,7 +972,7 @@
       {
         "id": "SPM.33",
         "path": "SPM.33",
-        "short": " - SPM",
+        "short": "- SPM.33 - ",
         "definition": "Definition: The Culture Start date/time is the time that the specimen is plated, or inoculated to selective and differential growth mediums that are used in organism identification in microbiology. This is the start of differential diagnosis and is a clinically relevant date and time. The actual time that is recorded is based on when specimen is directly inoculated onto growth media and may correspond to the time the sample is logged in or received.",
         "description": null,
         "code": [
@@ -983,7 +985,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -996,7 +998,7 @@
       {
         "id": "SPM.34",
         "path": "SPM.34",
-        "short": " - SPM",
+        "short": "- SPM.34 - ",
         "definition": "Definition: The Culture Final date/time is the time in which the order filler is communicating to the clinician that all work on a cultured specimen is completed and no further updates will be received. All work, including determination of growth, Organism Identification, and sensitivity testing are completed. The clinician should expect no further updates on this cultured specimen.",
         "description": null,
         "code": [
@@ -1009,7 +1011,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -1022,7 +1024,7 @@
       {
         "id": "SPM.35",
         "path": "SPM.35",
-        "short": " - SPM",
+        "short": "- SPM.35 - ",
         "definition": "Definition: This field reveals the intent of the message. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[_HL7 Table 0206 - Segment Action Code_] for valid values.",
         "description": null,
         "code": [
@@ -1035,7 +1037,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -1064,9 +1066,7 @@
       }
     ]
   },
-  "id": "SPM",
   "title": "HL7 v2 SPM Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/SPM",
   "name": "SPM",
-  "type": "http://hl7.org/v2/StructureDefinition/SPM"
+  "type": "SPM"
 }

@@ -1,6 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "url": "http://hl7.org/v2/StructureDefinition/DIN",
+  "id": "DIN",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
@@ -12,7 +13,7 @@
   "status": "active",
   "kind": "logical",
   "abstract": false,
-  "type": "http://hl7.org/v2/StructureDefinition/DIN",
+  "type": "DIN",
   "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
   "derivation": "specialization",
   "differential": {
@@ -58,6 +59,5 @@
         ]
       }
     ]
-  },
-  "id": "DIN"
+  }
 }

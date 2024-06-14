@@ -1,0 +1,83 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SLR_S28-D",
+  "id": "SLR_S28-D",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "SLR_S28-D.1-MSH",
+          "path": "SLR_S28-D.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SLR_S28-D.2-SFT",
+          "path": "SLR_S28-D.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SLR_S28-D.3-UAC",
+          "path": "SLR_S28-D.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SLR_S28-D.4-SLT",
+          "path": "SLR_S28-D.4-SLT",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SLT"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 SLR_S28-D Segment Definition",
+  "name": "SLR_S28-D",
+  "type": "http://hl7.org/v2/StructureDefinition/SLR_S28-D"
+}

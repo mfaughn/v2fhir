@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/IPR",
+  "id": "IPR",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "IPR.1",
         "path": "IPR.1",
-        "short": " - IPR",
+        "short": "- IPR.1 - ",
         "definition": "Definition: Unique IPR Number assigned by the Payer Application.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "IPR.2",
         "path": "IPR.2",
-        "short": " - IPR",
+        "short": "- IPR.2 - ",
         "definition": "Definition: Cross reference to Provider Product/Service Group Number or Provider Product/Service Line Item Number from original Invoice.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -68,7 +70,7 @@
       {
         "id": "IPR.3",
         "path": "IPR.3",
-        "short": " - IPR",
+        "short": "- IPR.3 - ",
         "definition": "Definition: Cross reference to Payer Product/Service Group Number or Payer Product/Service Line Item Number from original Invoice.",
         "description": null,
         "code": [
@@ -81,7 +83,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "IPR.4",
         "path": "IPR.4",
-        "short": " - IPR",
+        "short": "- IPR.4 - ",
         "definition": "Definition: Processing status for the Product/Service Group (if Adjudicate as Group = \"Y\") or Product/Service Line Item. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70571[_User-defined Table 0571 – Invoice Processing Results Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -124,7 +126,7 @@
       {
         "id": "IPR.5",
         "path": "IPR.5",
-        "short": " - IPR",
+        "short": "- IPR.5 - ",
         "definition": "Definition: Date/Time IPR was created.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -150,7 +152,7 @@
       {
         "id": "IPR.6",
         "path": "IPR.6",
-        "short": " - IPR",
+        "short": "- IPR.6 - ",
         "definition": "Definition: Adjudicated Amount for the Product/Service Group or Product/Service Line Item, which could be 0 = sum of all Payer adjustments (Adjustment Amount on ADJ).",
         "description": null,
         "code": [
@@ -163,7 +165,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -176,7 +178,7 @@
       {
         "id": "IPR.7",
         "path": "IPR.7",
-        "short": " - IPR",
+        "short": "- IPR.7 - ",
         "definition": "Definition: Date payment is expected for this IPR.",
         "description": null,
         "code": [
@@ -189,7 +191,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -202,7 +204,7 @@
       {
         "id": "IPR.8",
         "path": "IPR.8",
-        "short": " - IPR",
+        "short": "- IPR.8 - ",
         "definition": "Definition: Conditional, if Status = \"Accepted\", then Required, else Not Permitted.",
         "description": null,
         "code": [
@@ -215,7 +217,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -240,9 +242,7 @@
       }
     ]
   },
-  "id": "IPR",
   "title": "HL7 v2 IPR Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/IPR",
   "name": "IPR",
-  "type": "http://hl7.org/v2/StructureDefinition/IPR"
+  "type": "IPR"
 }

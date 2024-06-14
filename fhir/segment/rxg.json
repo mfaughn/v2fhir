@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RXG",
+  "id": "RXG",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "RXG.1",
         "path": "RXG.1",
-        "short": " - RXG",
+        "short": "- RXG.1 - ",
         "definition": "Definition: Use if this RXG segment carries information about a single administration. This field must contain a unique number for the placer order number. This field along with the placer order number provides a unique reference to the specific scheduled give date/time transmitted by the pharmacy/treatment supplier for this order.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "RXG.2",
         "path": "RXG.2",
-        "short": " - RXG",
+        "short": "- RXG.2 - ",
         "definition": "Definition: This is the dispense sub-ID to which this give message is related.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "RXG.3",
         "path": "RXG.3",
-        "short": " - RXG",
+        "short": "- RXG.3 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -113,7 +115,7 @@
       {
         "id": "RXG.4",
         "path": "RXG.4",
-        "short": " - RXG",
+        "short": "- RXG.4 - ",
         "definition": "Definition: This field is the identifier of the medical substance/treatment ordered to be given to the patient; it is equivalent to _OBR-4-Universal service ID_ in function. See the RXE segment for a complete definition of the _RXE-2-Give code_. If the substance given is a vaccine, CVX codes may be used to code this field (see file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70292[_HL7 Table 0292 - Vaccines administered_] in Chapter 2C, Code Tables).",
         "description": null,
         "code": [
@@ -126,7 +128,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -143,7 +145,7 @@
       {
         "id": "RXG.5",
         "path": "RXG.5",
-        "short": " - RXG",
+        "short": "- RXG.5 - ",
         "definition": "Definition: This field contains the ordered amount as encoded by the pharmacy/treatment supplier. In a variable dose order, this is the minimum ordered amount. In a non-varying dose order, this is the exact amount of the order.",
         "description": null,
         "code": [
@@ -156,7 +158,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -169,7 +171,7 @@
       {
         "id": "RXG.6",
         "path": "RXG.6",
-        "short": " - RXG",
+        "short": "- RXG.6 - ",
         "definition": "Definition: In a variable dose order, this is the maximum ordered amount. In a non-varying dose order, this field is not used.",
         "description": null,
         "code": [
@@ -182,7 +184,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -195,7 +197,7 @@
       {
         "id": "RXG.7",
         "path": "RXG.7",
-        "short": " - RXG",
+        "short": "- RXG.7 - ",
         "definition": "Definition: This field contains the units for the give amount. Refer to Table 0735 - Give Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -208,7 +210,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -225,7 +227,7 @@
       {
         "id": "RXG.8",
         "path": "RXG.8",
-        "short": " - RXG",
+        "short": "- RXG.8 - ",
         "definition": "Definition: The dosage form indicates the manner in which the medication/treatment is aggregated for dispensing, e.g., tablets, capsules, suppositories. In some cases, this information is implied by the give code in _RXG-4-Give Code_. Use this field when the give code does not specify the dosage form. Refer to Table 0736 - Give Dosage Form in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -238,7 +240,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -255,7 +257,7 @@
       {
         "id": "RXG.9",
         "path": "RXG.9",
-        "short": " - RXG",
+        "short": "- RXG.9 - ",
         "definition": "Definition: This field contains notes to the person administering the medication/treatment (may include the ordering provider's original notes, as well as any notes from the formulary or the pharmacy or treatment supplier). If coded, a user-defined table must be used. If free text, place a null in the first component and the text in the second, e.g., |^this is a free text administration note|. Refer to Table 0737 - Administration Notes in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -268,7 +270,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -285,7 +287,7 @@
       {
         "id": "RXG.10",
         "path": "RXG.10",
-        "short": " - RXG",
+        "short": "- RXG.10 - ",
         "definition": "Definition: Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70167[_HL7 Table 0167 - Substitution Status_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -298,7 +300,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -328,7 +330,7 @@
       {
         "id": "RXG.11",
         "path": "RXG.11",
-        "short": " - RXG",
+        "short": "- RXG.11 - ",
         "definition": "Definition: *_This field is retained for backward compatibility only as of v 2.6 and removed from the standard as of v 2.8._* The reader is referred to RXG-27 and RXG-28.",
         "description": null,
         "code": [
@@ -349,7 +351,7 @@
       {
         "id": "RXG.12",
         "path": "RXG.12",
-        "short": " - RXG",
+        "short": "- RXG.12 - ",
         "definition": "Definition: Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/No Indicator_] for valid values. The values have the following meaning for this field:",
         "description": null,
         "code": [
@@ -362,7 +364,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -392,7 +394,7 @@
       {
         "id": "RXG.13",
         "path": "RXG.13",
-        "short": " - RXG",
+        "short": "- RXG.13 - ",
         "definition": "Definition: This field contains pharmacy/treatment supplier-generated special instructions to the provider administering the order. Refer to Table 0738 - Special Administration Instructions in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -405,7 +407,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -435,7 +437,7 @@
       {
         "id": "RXG.14",
         "path": "RXG.14",
-        "short": " - RXG",
+        "short": "- RXG.14 - ",
         "definition": "Definition: This field contains the time unit to use to calculate the rate at which the pharmaceutical/treatment is to be administered.",
         "description": null,
         "code": [
@@ -448,7 +450,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -474,7 +476,7 @@
       {
         "id": "RXG.15",
         "path": "RXG.15",
-        "short": " - RXG",
+        "short": "- RXG.15 - ",
         "definition": "Definition: This field contains the amount (number) of substance/treatment to be administered.",
         "description": null,
         "code": [
@@ -487,7 +489,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -513,7 +515,7 @@
       {
         "id": "RXG.16",
         "path": "RXG.16",
-        "short": " - RXG",
+        "short": "- RXG.16 - ",
         "definition": "Definition: This field contains the units for _RXG-15-give rate amount_. May be composite. The ratio of the _RXG-15-give rate amount_ and _RXG-16-give rate units_ fields define the actual rate of administration. Thus, if _RXG-15-give rate amount_ = 100 and _RXG-16-give rate units_ = ml/hr, the requested rate of administration is 100 ml/hr. Refer to Table 0740 - Give Rate Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -526,7 +528,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -543,7 +545,7 @@
       {
         "id": "RXG.17",
         "path": "RXG.17",
-        "short": " - RXG",
+        "short": "- RXG.17 - ",
         "definition": "Definition: Use when _RXG-4-Give code_ does not specify the strength. This is the numeric part of the strength, used in combination with _RXG-18-Give strength units_.",
         "description": null,
         "code": [
@@ -556,7 +558,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -569,7 +571,7 @@
       {
         "id": "RXG.18",
         "path": "RXG.18",
-        "short": " - RXG",
+        "short": "- RXG.18 - ",
         "definition": "Definition: Use when _RXG-4-Give Code_ does not specify the strength. This is the unit of the strength, used in combination with _RXG-17-Give Strength_. Refer to Table 0741 - Give Strength Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -582,7 +584,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -599,7 +601,7 @@
       {
         "id": "RXG.19",
         "path": "RXG.19",
-        "short": " - RXG",
+        "short": "- RXG.19 - ",
         "definition": "Definition: This field contains the lot number of the medical substance administered.",
         "description": null,
         "code": [
@@ -612,7 +614,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -638,7 +640,7 @@
       {
         "id": "RXG.20",
         "path": "RXG.20",
-        "short": " - RXG",
+        "short": "- RXG.20 - ",
         "definition": "Definition: This field contains the expiration date of the medical substance administered.",
         "description": null,
         "code": [
@@ -651,7 +653,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -664,7 +666,7 @@
       {
         "id": "RXG.21",
         "path": "RXG.21",
-        "short": " - RXG",
+        "short": "- RXG.21 - ",
         "definition": "Definition: This field contains the manufacturer of the medical substance administered.",
         "description": null,
         "code": [
@@ -677,7 +679,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -690,7 +692,7 @@
       {
         "id": "RXG.22",
         "path": "RXG.22",
-        "short": " - RXG",
+        "short": "- RXG.22 - ",
         "definition": "Definition: This field contains the identifier of the condition or problem for which the drug/treatment was prescribed. May repeat if multiple indications are relevant. Refer to Table 0743 - Indication in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -703,7 +705,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -720,7 +722,7 @@
       {
         "id": "RXG.23",
         "path": "RXG.23",
-        "short": " - RXG",
+        "short": "- RXG.23 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -731,7 +733,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -757,7 +759,7 @@
       {
         "id": "RXG.24",
         "path": "RXG.24",
-        "short": " - RXG",
+        "short": "- RXG.24 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -768,7 +770,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -785,7 +787,7 @@
       {
         "id": "RXG.25",
         "path": "RXG.25",
-        "short": " - RXG",
+        "short": "- RXG.25 - ",
         "definition": "Definition: This field contains the pharmacy system's assigned barcode number for the give occurrence. For IV orders, many pharmacy systems generate a barcode number to identify a specific bag/bottle of the order. This number can be an instance identifier; unique for the patient, drug combination, and schedule instance or it may be just a drug identifier. Refer to Table 0745 - Give Barcode Identifier in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -798,7 +800,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -815,7 +817,7 @@
       {
         "id": "RXG.26",
         "path": "RXG.26",
-        "short": " - RXG",
+        "short": "- RXG.26 - ",
         "definition": "Definition: The Pharmacy Order Type field defines the general category of pharmacy order which may be used to determine the processing path the order will take. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70480[_HL7 Table 0480 Pharmacy Order Types_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -828,7 +830,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -858,7 +860,7 @@
       {
         "id": "RXG.27",
         "path": "RXG.27",
-        "short": " - RXG",
+        "short": "- RXG.27 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -877,7 +879,7 @@
       {
         "id": "RXG.28",
         "path": "RXG.28",
-        "short": " - RXG",
+        "short": "- RXG.28 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -896,7 +898,7 @@
       {
         "id": "RXG.29",
         "path": "RXG.29",
-        "short": " - RXG",
+        "short": "- RXG.29 - ",
         "definition": "Definition: This field specifies the location of the patient to whom the pharmaceutical substance is to be delivered.",
         "description": null,
         "code": [
@@ -909,7 +911,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -922,7 +924,7 @@
       {
         "id": "RXG.30",
         "path": "RXG.30",
-        "short": " - RXG",
+        "short": "- RXG.30 - ",
         "definition": "Definition: This field specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.",
         "description": null,
         "code": [
@@ -935,7 +937,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -948,7 +950,7 @@
       {
         "id": "RXG.31",
         "path": "RXG.31",
-        "short": " - RXG",
+        "short": "- RXG.31 - ",
         "definition": "Definition: This field contains an identifier for the individual product instance for the dispense occurrence. This may represent a barcode, RFID or other means of automatically-readable product instance. Repetitions represent the same instance where more than one barcode, RFID or other identification is present.",
         "description": null,
         "code": [
@@ -961,7 +963,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -974,7 +976,7 @@
       {
         "id": "RXG.32",
         "path": "RXG.32",
-        "short": " - RXG",
+        "short": "- RXG.32 - ",
         "definition": "Definition: This field contains the amount to be dispensed as encoded by the pharmacy or treatment supplier.",
         "description": null,
         "code": [
@@ -987,7 +989,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -1000,7 +1002,7 @@
       {
         "id": "RXG.33",
         "path": "RXG.33",
-        "short": " - RXG",
+        "short": "- RXG.33 - ",
         "definition": "Definition: This field contains the units for the dispense amount as encoded by the pharmacy or treatment supplier. This field is required if the units are not implied by the actual dispense code. This must be in simple units that reflect the actual quantity of the substance dispensed. It does not include compound units. Refer to Table 0746 - Dispense Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -1013,7 +1015,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1029,9 +1031,7 @@
       }
     ]
   },
-  "id": "RXG",
   "title": "HL7 v2 RXG Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/RXG",
   "name": "RXG",
-  "type": "http://hl7.org/v2/StructureDefinition/RXG"
+  "type": "RXG"
 }

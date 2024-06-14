@@ -1,0 +1,748 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RCV_O59",
+  "id": "RCV_O59",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RCV_O59.1-MSH",
+          "path": "RCV_O59.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RCV_O59.2-SFT",
+          "path": "RCV_O59.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RCV_O59.3-UAC",
+          "path": "RCV_O59.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RCV_O59.4-NTE",
+          "path": "RCV_O59.4-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RCV_O59.5-PATIENT",
+          "path": "RCV_O59.5-PATIENT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RCV_O59.5-PATIENT.1-PID",
+              "path": "RCV_O59.5-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.5-PATIENT.2-PD1",
+              "path": "RCV_O59.5-PATIENT.2-PD1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.5-PATIENT.3-PRT",
+              "path": "RCV_O59.5-PATIENT.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.5-PATIENT.4-NTE",
+              "path": "RCV_O59.5-PATIENT.4-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.5-PATIENT.5-AL1",
+              "path": "RCV_O59.5-PATIENT.5-AL1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.5-PATIENT.6-PATIENT_VISIT",
+              "path": "RCV_O59.5-PATIENT.6-PATIENT_VISIT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RCV_O59.5-PATIENT.6-PATIENT_VISIT.1-PV1",
+                  "path": "RCV_O59.5-PATIENT.6-PATIENT_VISIT.1-PV1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RCV_O59.5-PATIENT.6-PATIENT_VISIT.2-PV2",
+                  "path": "RCV_O59.5-PATIENT.6-PATIENT_VISIT.2-PV2",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RCV_O59.5-PATIENT.6-PATIENT_VISIT.3-PRT",
+                  "path": "RCV_O59.5-PATIENT.6-PATIENT_VISIT.3-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RCV_O59.6-ORDER",
+          "path": "RCV_O59.6-ORDER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RCV_O59.6-ORDER.1-ORC",
+              "path": "RCV_O59.6-ORDER.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.2-TIMING",
+              "path": "RCV_O59.6-ORDER.2-TIMING",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.2-TIMING.1-TQ1",
+                  "path": "RCV_O59.6-ORDER.2-TIMING.1-TQ1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.2-TIMING.2-TQ2",
+                  "path": "RCV_O59.6-ORDER.2-TIMING.2-TQ2",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.3-ORDER_DETAIL",
+              "path": "RCV_O59.6-ORDER.3-ORDER_DETAIL",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.3-ORDER_DETAIL.1-RXO",
+                  "path": "RCV_O59.6-ORDER.3-ORDER_DETAIL.1-RXO",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXO"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT",
+                  "path": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT.1-NTE",
+                      "path": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT.1-NTE",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT.2-RXR",
+                      "path": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT.2-RXR",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT.3-COMPONENT",
+                      "path": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT.3-COMPONENT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT.3-COMPONENT.1-RXC",
+                          "path": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT.3-COMPONENT.1-RXC",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT.3-COMPONENT.2-NTE",
+                          "path": "RCV_O59.6-ORDER.3-ORDER_DETAIL.2-ORDER_DETAIL_SUPPLEMENT.3-COMPONENT.2-NTE",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.4-PRT",
+              "path": "RCV_O59.6-ORDER.4-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.5-ENCODING",
+              "path": "RCV_O59.6-ORDER.5-ENCODING",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.5-ENCODING.1-RXE",
+                  "path": "RCV_O59.6-ORDER.5-ENCODING.1-RXE",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.5-ENCODING.2-PRT",
+                  "path": "RCV_O59.6-ORDER.5-ENCODING.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.5-ENCODING.3-NTE",
+                  "path": "RCV_O59.6-ORDER.5-ENCODING.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.5-ENCODING.4-TIMING_ENCODED",
+                  "path": "RCV_O59.6-ORDER.5-ENCODING.4-TIMING_ENCODED",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RCV_O59.6-ORDER.5-ENCODING.4-TIMING_ENCODED.1-TQ1",
+                      "path": "RCV_O59.6-ORDER.5-ENCODING.4-TIMING_ENCODED.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RCV_O59.6-ORDER.5-ENCODING.4-TIMING_ENCODED.2-TQ2",
+                      "path": "RCV_O59.6-ORDER.5-ENCODING.4-TIMING_ENCODED.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.5-ENCODING.5-RXR",
+                  "path": "RCV_O59.6-ORDER.5-ENCODING.5-RXR",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.5-ENCODING.6-RXC",
+                  "path": "RCV_O59.6-ORDER.5-ENCODING.6-RXC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.6-RXD",
+              "path": "RCV_O59.6-ORDER.6-RXD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/RXD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.7-PRT",
+              "path": "RCV_O59.6-ORDER.7-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.8-NTE",
+              "path": "RCV_O59.6-ORDER.8-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.9-RXR",
+              "path": "RCV_O59.6-ORDER.9-RXR",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.10-RXC",
+              "path": "RCV_O59.6-ORDER.10-RXC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.11-OBSERVATION",
+              "path": "RCV_O59.6-ORDER.11-OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.11-OBSERVATION.1-OBX",
+                  "path": "RCV_O59.6-ORDER.11-OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.11-OBSERVATION.2-PRT",
+                  "path": "RCV_O59.6-ORDER.11-OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RCV_O59.6-ORDER.11-OBSERVATION.3-NTE",
+                  "path": "RCV_O59.6-ORDER.11-OBSERVATION.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RCV_O59.6-ORDER.12-FT1",
+              "path": "RCV_O59.6-ORDER.12-FT1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/FT1"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 RCV_O59 Segment Definition",
+  "name": "RCV_O59",
+  "type": "http://hl7.org/v2/StructureDefinition/RCV_O59"
+}

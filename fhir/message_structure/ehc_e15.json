@@ -1,0 +1,352 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/EHC_E15",
+  "id": "EHC_E15",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "EHC_E15.1-MSH",
+          "path": "EHC_E15.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E15.2-SFT",
+          "path": "EHC_E15.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E15.3-UAC",
+          "path": "EHC_E15.3-UAC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E15.4-PAYMENT_REMITTANCE_HEADER_INFO",
+          "path": "EHC_E15.4-PAYMENT_REMITTANCE_HEADER_INFO",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "EHC_E15.4-PAYMENT_REMITTANCE_HEADER_INFO.1",
+              "path": "EHC_E15.4-PAYMENT_REMITTANCE_HEADER_INFO.1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "EHC_E15.4-PAYMENT_REMITTANCE_HEADER_INFO.1.1-PMT",
+                  "path": "EHC_E15.4-PAYMENT_REMITTANCE_HEADER_INFO.1.1-PMT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PMT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EHC_E15.4-PAYMENT_REMITTANCE_HEADER_INFO.1.2-PYE",
+                  "path": "EHC_E15.4-PAYMENT_REMITTANCE_HEADER_INFO.1.2-PYE",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PYE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO",
+          "path": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.1-IPR",
+              "path": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.1-IPR",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IPR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.2-IVC",
+              "path": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.2-IVC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IVC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION",
+              "path": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.1-PSS",
+                  "path": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.1-PSS",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PSS"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP",
+                  "path": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.1-PSG",
+                      "path": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.1-PSG",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PSG"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PSL_ITEM_INFO",
+                      "path": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PSL_ITEM_INFO",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PSL_ITEM_INFO.1-PSL",
+                          "path": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PSL_ITEM_INFO.1-PSL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PSL"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PSL_ITEM_INFO.2-ADJ",
+                          "path": "EHC_E15.5-PAYMENT_REMITTANCE_DETAIL_INFO.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PSL_ITEM_INFO.2-ADJ",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ADJ"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "EHC_E15.6-ADJUSTMENT_PAYEE",
+          "path": "EHC_E15.6-ADJUSTMENT_PAYEE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "EHC_E15.6-ADJUSTMENT_PAYEE.1-ADJ",
+              "path": "EHC_E15.6-ADJUSTMENT_PAYEE.1-ADJ",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ADJ"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E15.6-ADJUSTMENT_PAYEE.2-PRT",
+              "path": "EHC_E15.6-ADJUSTMENT_PAYEE.2-PRT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E15.6-ADJUSTMENT_PAYEE.3-ROL",
+              "path": "EHC_E15.6-ADJUSTMENT_PAYEE.3-ROL",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 EHC_E15 Segment Definition",
+  "name": "EHC_E15",
+  "type": "http://hl7.org/v2/StructureDefinition/EHC_E15"
+}

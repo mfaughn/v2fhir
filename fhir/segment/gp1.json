@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/GP1",
+  "id": "GP1",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "GP1.1",
         "path": "GP1.1",
-        "short": " - GP1",
+        "short": "- GP1.1 - ",
         "definition": "Definition: This field is the same as UB92 Form Locator 4 \"Type of Bill\". Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70455[_Us__er-defi__ned Table_ _0455 - Type_ _of Bi__ll Code_] in Chapter 2C, Code Tables, for suggested values. Refer to a UB specification for additional information. This field is defined by CMS or other regulatory agencies. It is a code indicating the specific type of bill with digit 1 showing type of facility, digit 2 showing bill classification, and digit 3 showing frequency.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "GP1.2",
         "path": "GP1.2",
-        "short": " - GP1",
+        "short": "- GP1.2 - ",
         "definition": "Definition: This field is the same as UB92 Form Locator 42 \"Revenue Code\". Refer to E:\\\\V2\\\\V29_CH02C_Tables.docx#HL70456[_User-__defined Table 0456 - Revenue Code_] in Chapter 2C, Code Tables, for suggested values. This field identifies revenue codes that are not linked to a HCPCS/CPT code. It is used for claiming for non-medical services such as telephone, TV or cafeteria charges, etc. There can be many per visit or claim. This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -76,7 +78,7 @@
       {
         "id": "GP1.3",
         "path": "GP1.3",
-        "short": " - GP1",
+        "short": "- GP1.3 - ",
         "definition": "Definition: This field identifies the final status of the claim. The codes listed as examples are not an exhaustive or current list, refer to OPPS Final Rule. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70457[_User-define__d Table 04__57 - Overall Claim Disposition_] _Code_ in Chapter 2C, Code Tables, for suggested values. This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -89,7 +91,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -106,7 +108,7 @@
       {
         "id": "GP1.4",
         "path": "GP1.4",
-        "short": " - GP1",
+        "short": "- GP1.4 - ",
         "definition": "Definition: This field contains the edits that result from processing the HCPCS/CPT procedures for a record after evaluating all the codes, revenue codes, and modifiers. The codes listed as examples are not an exhaustive or current list, refer to OPPS Final Rule. OCE (Outpatient Code Editor) edits also exist at the pre-procedure level. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70458[_User-defined Table 0458 - OCE_ _Edit Code_] in Chapter 2C, Code Tables, for suggested values. This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -119,7 +121,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -136,7 +138,7 @@
       {
         "id": "GP1.5",
         "path": "GP1.5",
-        "short": " - GP1",
+        "short": "- GP1.5 - ",
         "definition": "Definition: This field contains the amount that exceeds the outlier limitation as defined by APC regulations. This field is analogous to link:#drg-7-outlier-cost-cp-00387[_DRG-7 - Outlier Cost_]; however, the definition in this field note supersedes the DRG-7 definition.",
         "description": null,
         "code": [
@@ -149,7 +151,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -161,9 +163,7 @@
       }
     ]
   },
-  "id": "GP1",
   "title": "HL7 v2 GP1 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/GP1",
   "name": "GP1",
-  "type": "http://hl7.org/v2/StructureDefinition/GP1"
+  "type": "GP1"
 }

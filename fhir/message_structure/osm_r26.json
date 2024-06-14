@@ -1,0 +1,754 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OSM_R26",
+  "id": "OSM_R26",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "OSM_R26.1-MSH",
+          "path": "OSM_R26.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSM_R26.2-ARV",
+          "path": "OSM_R26.2-ARV",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSM_R26.3-SFT",
+          "path": "OSM_R26.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSM_R26.4-UAC",
+          "path": "OSM_R26.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OSM_R26.5-SHIPMENT",
+          "path": "OSM_R26.5-SHIPMENT",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "OSM_R26.5-SHIPMENT.1-SHP",
+              "path": "OSM_R26.5-SHIPMENT.1-SHP",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/SHP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OSM_R26.5-SHIPMENT.2-PRT",
+              "path": "OSM_R26.5-SHIPMENT.2-PRT",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OSM_R26.5-SHIPMENT.3-SHIPPING_OBSERVATION",
+              "path": "OSM_R26.5-SHIPMENT.3-SHIPPING_OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "OSM_R26.5-SHIPMENT.3-SHIPPING_OBSERVATION.1-OBX",
+                  "path": "OSM_R26.5-SHIPMENT.3-SHIPPING_OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OSM_R26.5-SHIPMENT.3-SHIPPING_OBSERVATION.2-PRT",
+                  "path": "OSM_R26.5-SHIPMENT.3-SHIPPING_OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE",
+              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.1-PAC",
+                  "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.1-PAC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PAC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.2-PRT",
+                  "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN",
+                  "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.1-SPM",
+                      "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.1-SPM",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/SPM"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.2-PRT",
+                      "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.3-SPECIMEN_OBSERVATION",
+                      "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.3-SPECIMEN_OBSERVATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.3-SPECIMEN_OBSERVATION.1-OBX",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.3-SPECIMEN_OBSERVATION.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.3-SPECIMEN_OBSERVATION.2-PRT",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.3-SPECIMEN_OBSERVATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.4-CONTAINER",
+                      "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.4-CONTAINER",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.4-CONTAINER.1-SAC",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.4-CONTAINER.1-SAC",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/SAC"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.4-CONTAINER.2-CONTAINER_OBSERVATION",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.4-CONTAINER.2-CONTAINER_OBSERVATION",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.4-CONTAINER.2-CONTAINER_OBSERVATION.1-OBX",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.4-CONTAINER.2-CONTAINER_OBSERVATION.1-OBX",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.4-CONTAINER.2-CONTAINER_OBSERVATION.2-PRT",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.4-CONTAINER.2-CONTAINER_OBSERVATION.2-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION",
+                      "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.1-PID",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.1-PID",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PID"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.2-PRT",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.3-ARV",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.3-ARV",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.4-PATIENT_OBSERVATION",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.4-PATIENT_OBSERVATION",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.4-PATIENT_OBSERVATION.1-OBX",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.4-PATIENT_OBSERVATION.1-OBX",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.4-PATIENT_OBSERVATION.2-PRT",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.4-PATIENT_OBSERVATION.2-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.5-NEXT_OF_KIN",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.5-NEXT_OF_KIN",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.5-NEXT_OF_KIN.1-NK1",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.5-NEXT_OF_KIN.1-NK1",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.5-NEXT_OF_KIN.2-GSP",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.5-NEXT_OF_KIN.2-GSP",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.5-NEXT_OF_KIN.3-GSR",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.5-SUBJECT_PERSON_OR_ANIMAL_IDENTIFICATION.5-NEXT_OF_KIN.3-GSR",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION",
+                      "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.1-PV1",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.1-PV1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.2-PRT",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.3-PATIENT_VISIT_OBSERVATION",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.3-PATIENT_VISIT_OBSERVATION",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.3-PATIENT_VISIT_OBSERVATION.1-OBX",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.3-PATIENT_VISIT_OBSERVATION.1-OBX",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.3-PATIENT_VISIT_OBSERVATION.2-PRT",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.3-PATIENT_VISIT_OBSERVATION.2-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.4-PID",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.4-PID",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PID"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.5-PRT",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.5-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.6-NEXT_OF_KIN",
+                          "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.6-NEXT_OF_KIN",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.6-NEXT_OF_KIN.1-NK1",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.6-NEXT_OF_KIN.1-NK1",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.6-NEXT_OF_KIN.2-GSP",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.6-NEXT_OF_KIN.2-GSP",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.6-NEXT_OF_KIN.3-GSR",
+                              "path": "OSM_R26.5-SHIPMENT.4-PACKAGE.3-SPECIMEN.6-SUBJECT_POPULATION_OR_LOCATION_IDENTIFICATION.6-NEXT_OF_KIN.3-GSR",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 OSM_R26 Segment Definition",
+  "name": "OSM_R26",
+  "type": "http://hl7.org/v2/StructureDefinition/OSM_R26"
+}

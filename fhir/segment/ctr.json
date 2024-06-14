@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CTR",
+  "id": "CTR",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "CTR.1",
         "path": "CTR.1",
-        "short": " - CTR",
+        "short": "- CTR.1 - ",
         "definition": "Definition: The Contract Identifier is a unique code assigned to the contract by the manufacturer or distributor to identify the contract.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "CTR.2",
         "path": "CTR.2",
-        "short": " - CTR",
+        "short": "- CTR.2 - ",
         "definition": "Definition: The Contract Description is a description of the contract identified in CTR-1.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -81,7 +83,7 @@
       {
         "id": "CTR.3",
         "path": "CTR.3",
-        "short": " - CTR",
+        "short": "- CTR.3 - ",
         "definition": "Definition: The status (useful for determining whether the contract price should be used for ordering) that applies to the contract. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70536[_User-defined Table 0536 – Certificate Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -94,7 +96,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -111,7 +113,7 @@
       {
         "id": "CTR.4",
         "path": "CTR.4",
-        "short": " - CTR",
+        "short": "- CTR.4 - ",
         "definition": "Definition: The Effective Date is the date that the contract becomes available to purchase from.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -137,7 +139,7 @@
       {
         "id": "CTR.5",
         "path": "CTR.5",
-        "short": " - CTR",
+        "short": "- CTR.5 - ",
         "definition": "Definition: Definition: The Expiration Date is the date that the contract becomes unavailable to purchase from.",
         "description": null,
         "code": [
@@ -150,7 +152,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -163,7 +165,7 @@
       {
         "id": "CTR.6",
         "path": "CTR.6",
-        "short": " - CTR",
+        "short": "- CTR.6 - ",
         "definition": "Definition: This field contains the name of the person who manages the contract.",
         "description": null,
         "code": [
@@ -176,7 +178,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -189,7 +191,7 @@
       {
         "id": "CTR.7",
         "path": "CTR.7",
-        "short": " - CTR",
+        "short": "- CTR.7 - ",
         "definition": "Definition: This field contains the name of the person who created the contract.",
         "description": null,
         "code": [
@@ -202,7 +204,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -215,7 +217,7 @@
       {
         "id": "CTR.8",
         "path": "CTR.8",
-        "short": " - CTR",
+        "short": "- CTR.8 - ",
         "definition": "Definition: This field contains the type of supplier associated to the contract. Suggested values ‘Distributor’ or ‘Manufacturer’.",
         "description": null,
         "code": [
@@ -228,7 +230,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -245,7 +247,7 @@
       {
         "id": "CTR.9",
         "path": "CTR.9",
-        "short": " - CTR",
+        "short": "- CTR.9 - ",
         "definition": "Definition: The Contract Type is an identifier of the contract which designates the source of the contract. Suggested values: L=Local, G=Global, and values can be defined by the source (user defined) such as the GPO or the distributor. Refer to User Defined Table 0965 – Contract Types in Chapter 2 C for examples.",
         "description": null,
         "code": [
@@ -258,7 +260,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -275,7 +277,7 @@
       {
         "id": "CTR.10",
         "path": "CTR.10",
-        "short": " - CTR",
+        "short": "- CTR.10 - ",
         "definition": "Definition: This field indicates whether or not Free On Board freight terms are applicable to the contract.",
         "description": null,
         "code": [
@@ -288,7 +290,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -305,7 +307,7 @@
       {
         "id": "CTR.11",
         "path": "CTR.11",
-        "short": " - CTR",
+        "short": "- CTR.11 - ",
         "definition": "Definition: This field contains the date through which the contract item prices are protected by an agreement with the vendor.",
         "description": null,
         "code": [
@@ -318,7 +320,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -331,7 +333,7 @@
       {
         "id": "CTR.12",
         "path": "CTR.12",
-        "short": " - CTR",
+        "short": "- CTR.12 - ",
         "definition": "Definition: This field indicates whether the items selected for the contract are purchased at the price indicated in the Contract Price or not. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70532[HL7 Table 0532 - Expanded Yes/no Indicator] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -344,7 +346,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -361,7 +363,7 @@
       {
         "id": "CTR.13",
         "path": "CTR.13",
-        "short": " - CTR",
+        "short": "- CTR.13 - ",
         "definition": "Definition: This field contains the identifier which identifies the GPO organization.",
         "description": null,
         "code": [
@@ -374,7 +376,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -387,7 +389,7 @@
       {
         "id": "CTR.14",
         "path": "CTR.14",
-        "short": " - CTR",
+        "short": "- CTR.14 - ",
         "definition": "Definition: This field contains the highest percentage that can be applied to each item’s Product Cost.",
         "description": null,
         "code": [
@@ -400,7 +402,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MOP"
+            "code": "MOP"
           }
         ],
         "extension": [
@@ -413,7 +415,7 @@
       {
         "id": "CTR.15",
         "path": "CTR.15",
-        "short": " - CTR",
+        "short": "- CTR.15 - ",
         "definition": "Definition: This field contains the actual percentage (markup or discount) applied to each item’s Product Cost.",
         "description": null,
         "code": [
@@ -426,7 +428,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MOP"
+            "code": "MOP"
           }
         ],
         "extension": [
@@ -439,7 +441,7 @@
       {
         "id": "CTR.16",
         "path": "CTR.16",
-        "short": " - CTR",
+        "short": "- CTR.16 - ",
         "definition": "Definition: This field contains a corporation identifier (code and name) of the entity allowed to purchase from this contract.",
         "description": null,
         "code": [
@@ -452,7 +454,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -465,7 +467,7 @@
       {
         "id": "CTR.17",
         "path": "CTR.17",
-        "short": " - CTR",
+        "short": "- CTR.17 - ",
         "definition": "Definition: This field contains the parent of the corporation sent in CTR-17 such as an integrated delivery network.",
         "description": null,
         "code": [
@@ -478,7 +480,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -491,7 +493,7 @@
       {
         "id": "CTR.18",
         "path": "CTR.18",
-        "short": " - CTR",
+        "short": "- CTR.18 - ",
         "definition": "Definition: This field contains the tier level at which this contract is priced. Pricing Tier level determines the price of the item on the contract. Tier Level can be assigned to an IDN or at a corporation level and is typically based on volume purchased (determined by $ or a %). The larger the volume purchased, the lower priced tier level is assigned to the contract. This value can change over the life of the contract if purchasing volume changes after initial contract signing. Example 01^Tier One, 02^Tier 2, etc. Refer to User Defined Table 0966 – Pricing Tier Level in Chapter2C for examples.",
         "description": null,
         "code": [
@@ -504,7 +506,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -521,7 +523,7 @@
       {
         "id": "CTR.19",
         "path": "CTR.19",
-        "short": " - CTR",
+        "short": "- CTR.19 - ",
         "definition": "Definition: This field contains the a value which represents the priority of this contract. In some cases there are multiple contracts associated to a given supply item, each needs a priority to determine which price to default to when ordering items on this contract. This field could be text or numeric.",
         "description": null,
         "code": [
@@ -534,7 +536,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -547,7 +549,7 @@
       {
         "id": "CTR.20",
         "path": "CTR.20",
-        "short": " - CTR",
+        "short": "- CTR.20 - ",
         "definition": "Definition: This field contains an indicator signifying whether the purchasing channel such as a hospital or retail, etc.",
         "description": null,
         "code": [
@@ -560,7 +562,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -577,7 +579,7 @@
       {
         "id": "CTR.21",
         "path": "CTR.21",
-        "short": " - CTR",
+        "short": "- CTR.21 - ",
         "definition": "Definition: This field contains an indicator signifying contract IDs of related contracts. An example is a vendor contract which (supplier type = D) could be associated to a manufacturer (supplier type = M) contract; this field would contain the manufacturer contract ID.",
         "description": null,
         "code": [
@@ -590,7 +592,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -602,9 +604,7 @@
       }
     ]
   },
-  "id": "CTR",
   "title": "HL7 v2 CTR Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/CTR",
   "name": "CTR",
-  "type": "http://hl7.org/v2/StructureDefinition/CTR"
+  "type": "CTR"
 }

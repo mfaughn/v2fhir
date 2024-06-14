@@ -1,0 +1,207 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MFN_M10",
+  "id": "MFN_M10",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "MFN_M10.1-MSH",
+          "path": "MFN_M10.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M10.2-SFT",
+          "path": "MFN_M10.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M10.3-UAC",
+          "path": "MFN_M10.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M10.4-MFI",
+          "path": "MFN_M10.4-MFI",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MFI"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M10.5-MF_TEST_BATTERIES",
+          "path": "MFN_M10.5-MF_TEST_BATTERIES",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "MFN_M10.5-MF_TEST_BATTERIES.1-MFE",
+              "path": "MFN_M10.5-MF_TEST_BATTERIES.1-MFE",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/MFE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M10.5-MF_TEST_BATTERIES.2-OM1",
+              "path": "MFN_M10.5-MF_TEST_BATTERIES.2-OM1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OM1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M10.5-MF_TEST_BATTERIES.3-OMC",
+              "path": "MFN_M10.5-MF_TEST_BATTERIES.3-OMC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OMC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M10.5-MF_TEST_BATTERIES.4-PRT",
+              "path": "MFN_M10.5-MF_TEST_BATTERIES.4-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M10.5-MF_TEST_BATTERIES.5-MF_TEST_BATT_DETAIL",
+              "path": "MFN_M10.5-MF_TEST_BATTERIES.5-MF_TEST_BATT_DETAIL",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "MFN_M10.5-MF_TEST_BATTERIES.5-MF_TEST_BATT_DETAIL.1-OM5",
+                  "path": "MFN_M10.5-MF_TEST_BATTERIES.5-MF_TEST_BATT_DETAIL.1-OM5",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OM5"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "MFN_M10.5-MF_TEST_BATTERIES.5-MF_TEST_BATT_DETAIL.2-OM4",
+                  "path": "MFN_M10.5-MF_TEST_BATTERIES.5-MF_TEST_BATT_DETAIL.2-OM4",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OM4"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 MFN_M10 Segment Definition",
+  "name": "MFN_M10",
+  "type": "http://hl7.org/v2/StructureDefinition/MFN_M10"
+}

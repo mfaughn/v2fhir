@@ -1,0 +1,701 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/REF_I12",
+  "id": "REF_I12",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "REF_I12.1-MSH",
+          "path": "REF_I12.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.2-SFT",
+          "path": "REF_I12.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.3-UAC",
+          "path": "REF_I12.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.4-RF1",
+          "path": "REF_I12.4-RF1",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/RF1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.5-AUTHORIZATION_CONTACT2",
+          "path": "REF_I12.5-AUTHORIZATION_CONTACT2",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "REF_I12.5-AUTHORIZATION_CONTACT2.1-AUT",
+              "path": "REF_I12.5-AUTHORIZATION_CONTACT2.1-AUT",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AUT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.5-AUTHORIZATION_CONTACT2.2-CTD",
+              "path": "REF_I12.5-AUTHORIZATION_CONTACT2.2-CTD",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "REF_I12.6-PROVIDER_CONTACT",
+          "path": "REF_I12.6-PROVIDER_CONTACT",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "REF_I12.6-PROVIDER_CONTACT.1-PRD",
+              "path": "REF_I12.6-PROVIDER_CONTACT.1-PRD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.6-PROVIDER_CONTACT.2-CTD",
+              "path": "REF_I12.6-PROVIDER_CONTACT.2-CTD",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "REF_I12.7-PID",
+          "path": "REF_I12.7-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.8-GSP",
+          "path": "REF_I12.8-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.9-GSR",
+          "path": "REF_I12.9-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.10-GSC",
+          "path": "REF_I12.10-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.11-NEXT_OF_KIN",
+          "path": "REF_I12.11-NEXT_OF_KIN",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "REF_I12.11-NEXT_OF_KIN.1-NK1",
+              "path": "REF_I12.11-NEXT_OF_KIN.1-NK1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.11-NEXT_OF_KIN.2-GSP",
+              "path": "REF_I12.11-NEXT_OF_KIN.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.11-NEXT_OF_KIN.3-GSR",
+              "path": "REF_I12.11-NEXT_OF_KIN.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "REF_I12.12-GT1",
+          "path": "REF_I12.12-GT1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GT1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.13-INSURANCE",
+          "path": "REF_I12.13-INSURANCE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "REF_I12.13-INSURANCE.1-IN1",
+              "path": "REF_I12.13-INSURANCE.1-IN1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.13-INSURANCE.2-IN2",
+              "path": "REF_I12.13-INSURANCE.2-IN2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.13-INSURANCE.3-IN3",
+              "path": "REF_I12.13-INSURANCE.3-IN3",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN3"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "REF_I12.14-ACC",
+          "path": "REF_I12.14-ACC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ACC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.15-DG1",
+          "path": "REF_I12.15-DG1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DG1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.16-DRG",
+          "path": "REF_I12.16-DRG",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DRG"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.17-AL1",
+          "path": "REF_I12.17-AL1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/AL1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "REF_I12.18-PROCEDURE",
+          "path": "REF_I12.18-PROCEDURE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "REF_I12.18-PROCEDURE.1-PR1",
+              "path": "REF_I12.18-PROCEDURE.1-PR1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PR1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.18-PROCEDURE.2-AUTHORIZATION_CONTACT2",
+              "path": "REF_I12.18-PROCEDURE.2-AUTHORIZATION_CONTACT2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "REF_I12.18-PROCEDURE.2-AUTHORIZATION_CONTACT2.1-AUT",
+                  "path": "REF_I12.18-PROCEDURE.2-AUTHORIZATION_CONTACT2.1-AUT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AUT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "REF_I12.18-PROCEDURE.2-AUTHORIZATION_CONTACT2.2-CTD",
+                  "path": "REF_I12.18-PROCEDURE.2-AUTHORIZATION_CONTACT2.2-CTD",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "REF_I12.19-OBSERVATION",
+          "path": "REF_I12.19-OBSERVATION",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "REF_I12.19-OBSERVATION.1-OBR",
+              "path": "REF_I12.19-OBSERVATION.1-OBR",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.19-OBSERVATION.2-PRT",
+              "path": "REF_I12.19-OBSERVATION.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.19-OBSERVATION.3-NTE",
+              "path": "REF_I12.19-OBSERVATION.3-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.19-OBSERVATION.4-RESULTS_NOTES",
+              "path": "REF_I12.19-OBSERVATION.4-RESULTS_NOTES",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "REF_I12.19-OBSERVATION.4-RESULTS_NOTES.1-OBX",
+                  "path": "REF_I12.19-OBSERVATION.4-RESULTS_NOTES.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "REF_I12.19-OBSERVATION.4-RESULTS_NOTES.2-PRT",
+                  "path": "REF_I12.19-OBSERVATION.4-RESULTS_NOTES.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "REF_I12.19-OBSERVATION.4-RESULTS_NOTES.3-NTE",
+                  "path": "REF_I12.19-OBSERVATION.4-RESULTS_NOTES.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "REF_I12.20-PATIENT_VISIT",
+          "path": "REF_I12.20-PATIENT_VISIT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "REF_I12.20-PATIENT_VISIT.1-PV1",
+              "path": "REF_I12.20-PATIENT_VISIT.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "REF_I12.20-PATIENT_VISIT.2-PV2",
+              "path": "REF_I12.20-PATIENT_VISIT.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "REF_I12.21-NTE",
+          "path": "REF_I12.21-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 REF_I12 Segment Definition",
+  "name": "REF_I12",
+  "type": "http://hl7.org/v2/StructureDefinition/REF_I12"
+}

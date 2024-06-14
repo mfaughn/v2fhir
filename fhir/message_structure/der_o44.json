@@ -1,0 +1,361 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/DER_O44",
+  "id": "DER_O44",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "DER_O44.1-MSH",
+          "path": "DER_O44.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DER_O44.2-ARV",
+          "path": "DER_O44.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DER_O44.3-SFT",
+          "path": "DER_O44.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DER_O44.4-UAC",
+          "path": "DER_O44.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DER_O44.5-DONOR",
+          "path": "DER_O44.5-DONOR",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "DER_O44.5-DONOR.1-PID",
+              "path": "DER_O44.5-DONOR.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DER_O44.5-DONOR.2-PD1",
+              "path": "DER_O44.5-DONOR.2-PD1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DER_O44.5-DONOR.3-PRT",
+              "path": "DER_O44.5-DONOR.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DER_O44.5-DONOR.4-DONOR_OBSERVATIONS",
+              "path": "DER_O44.5-DONOR.4-DONOR_OBSERVATIONS",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DER_O44.5-DONOR.4-DONOR_OBSERVATIONS.1-OBX",
+                  "path": "DER_O44.5-DONOR.4-DONOR_OBSERVATIONS.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DER_O44.5-DONOR.4-DONOR_OBSERVATIONS.2-PRT",
+                  "path": "DER_O44.5-DONOR.4-DONOR_OBSERVATIONS.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "DER_O44.5-DONOR.5-NTE",
+              "path": "DER_O44.5-DONOR.5-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DER_O44.5-DONOR.6-AL1",
+              "path": "DER_O44.5-DONOR.6-AL1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DER_O44.5-DONOR.7-ARV",
+              "path": "DER_O44.5-DONOR.7-ARV",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DER_O44.5-DONOR.8-DONOR_REGISTRATION",
+              "path": "DER_O44.5-DONOR.8-DONOR_REGISTRATION",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DER_O44.5-DONOR.8-DONOR_REGISTRATION.1-PV1",
+                  "path": "DER_O44.5-DONOR.8-DONOR_REGISTRATION.1-PV1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DER_O44.5-DONOR.8-DONOR_REGISTRATION.2-PRT",
+                  "path": "DER_O44.5-DONOR.8-DONOR_REGISTRATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DER_O44.5-DONOR.8-DONOR_REGISTRATION.3-NTE",
+                  "path": "DER_O44.5-DONOR.8-DONOR_REGISTRATION.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "DER_O44.6-DONOR_ORDER",
+          "path": "DER_O44.6-DONOR_ORDER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "DER_O44.6-DONOR_ORDER.1-OBR",
+              "path": "DER_O44.6-DONOR_ORDER.1-OBR",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DER_O44.6-DONOR_ORDER.2-PRT",
+              "path": "DER_O44.6-DONOR_ORDER.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DER_O44.6-DONOR_ORDER.3-NTE",
+              "path": "DER_O44.6-DONOR_ORDER.3-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 DER_O44 Segment Definition",
+  "name": "DER_O44",
+  "type": "http://hl7.org/v2/StructureDefinition/DER_O44"
+}

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SID",
+  "id": "SID",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "SID.1",
         "path": "SID.1",
-        "short": " - SID",
+        "short": "- SID.1 - ",
         "definition": "Definition: This field identifies the application/method used for the analysis. Refer to Table 0783 - Application/Method Identifier in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "SID.2",
         "path": "SID.2",
-        "short": " - SID",
+        "short": "- SID.2 - ",
         "definition": "Definition: This field specifies the lot number assigned by the manufacturer during production of the substance.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -85,7 +87,7 @@
       {
         "id": "SID.3",
         "path": "SID.3",
-        "short": " - SID",
+        "short": "- SID.3 - ",
         "definition": "Definition: This field specifies the container assigned by the manufacturer during production of the substance. This identifier should be unique within specific lot of specific application / method.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -124,7 +126,7 @@
       {
         "id": "SID.4",
         "path": "SID.4",
-        "short": " - SID",
+        "short": "- SID.4 - ",
         "definition": "Definition: This field identifies the manufacturer of this substance. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70385[_User-defined Table 0385 - Manufacturer Identifier_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -153,9 +155,7 @@
       }
     ]
   },
-  "id": "SID",
   "title": "HL7 v2 SID Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/SID",
   "name": "SID",
-  "type": "http://hl7.org/v2/StructureDefinition/SID"
+  "type": "SID"
 }

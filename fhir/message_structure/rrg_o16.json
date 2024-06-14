@@ -1,0 +1,410 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RRG_O16",
+  "id": "RRG_O16",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RRG_O16.1-MSH",
+          "path": "RRG_O16.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRG_O16.2-MSA",
+          "path": "RRG_O16.2-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRG_O16.3-ERR",
+          "path": "RRG_O16.3-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRG_O16.4-SFT",
+          "path": "RRG_O16.4-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRG_O16.5-UAC",
+          "path": "RRG_O16.5-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRG_O16.6-NTE",
+          "path": "RRG_O16.6-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRG_O16.7-RESPONSE",
+          "path": "RRG_O16.7-RESPONSE",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RRG_O16.7-RESPONSE.1-PATIENT",
+              "path": "RRG_O16.7-RESPONSE.1-PATIENT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RRG_O16.7-RESPONSE.1-PATIENT.1-PID",
+                  "path": "RRG_O16.7-RESPONSE.1-PATIENT.1-PID",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRG_O16.7-RESPONSE.1-PATIENT.2-PRT",
+                  "path": "RRG_O16.7-RESPONSE.1-PATIENT.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRG_O16.7-RESPONSE.1-PATIENT.3-NTE",
+                  "path": "RRG_O16.7-RESPONSE.1-PATIENT.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RRG_O16.7-RESPONSE.2-ORDER",
+              "path": "RRG_O16.7-RESPONSE.2-ORDER",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RRG_O16.7-RESPONSE.2-ORDER.1-ORC",
+                  "path": "RRG_O16.7-RESPONSE.2-ORDER.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRG_O16.7-RESPONSE.2-ORDER.2-PRT",
+                  "path": "RRG_O16.7-RESPONSE.2-ORDER.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRG_O16.7-RESPONSE.2-ORDER.3-TIMING",
+                  "path": "RRG_O16.7-RESPONSE.2-ORDER.3-TIMING",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RRG_O16.7-RESPONSE.2-ORDER.3-TIMING.1-TQ1",
+                      "path": "RRG_O16.7-RESPONSE.2-ORDER.3-TIMING.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RRG_O16.7-RESPONSE.2-ORDER.3-TIMING.2-TQ2",
+                      "path": "RRG_O16.7-RESPONSE.2-ORDER.3-TIMING.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE",
+                  "path": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.1-RXG",
+                      "path": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.1-RXG",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXG"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.2-PRT",
+                      "path": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.3-TIMING_GIVE",
+                      "path": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.3-TIMING_GIVE",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.3-TIMING_GIVE.1-TQ1",
+                          "path": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.3-TIMING_GIVE.1-TQ1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.3-TIMING_GIVE.2-TQ2",
+                          "path": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.3-TIMING_GIVE.2-TQ2",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.4-RXR",
+                      "path": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.4-RXR",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.5-RXC",
+                      "path": "RRG_O16.7-RESPONSE.2-ORDER.4-GIVE.5-RXC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 RRG_O16 Segment Definition",
+  "name": "RRG_O16",
+  "type": "http://hl7.org/v2/StructureDefinition/RRG_O16"
+}

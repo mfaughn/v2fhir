@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/QRI",
+  "id": "QRI",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "QRI.1",
         "path": "QRI.1",
-        "short": " - QRI",
+        "short": "- QRI.1 - ",
         "definition": "Definition: This field contains a numeric value indicating the match weight or confidence level associated with the record.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "QRI.2",
         "path": "QRI.2",
-        "short": " - QRI",
+        "short": "- QRI.2 - ",
         "definition": "Definition: This field contains a coded value indicating what search components (e.g., name, birth date, social security number) of the record returned matched the original query where the responding system does not assign numeric match weights or confidence levels. In short, it provides a method for passing a descriptive indication of why a particular record was found.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -98,7 +100,7 @@
       {
         "id": "QRI.3",
         "path": "QRI.3",
-        "short": " - QRI",
+        "short": "- QRI.3 - ",
         "definition": "Definition: This field contains a text value indicating the name or identity of the specific search algorithm to which the _RCP-5 Search confidence threshold_ and the _QRI-1 Candidate confidence_ refer. Note that there are sometimes significant differences among the algorithms in their numeric scales (e.g., one is 0-100, another might be 10 – 20) as well as their meanings of the same value (two algorithms with an 80% match might not return the same records). Refer to _file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70393[User-defined Table 0393 – Match algorithms]_ in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -111,7 +113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -127,9 +129,7 @@
       }
     ]
   },
-  "id": "QRI",
   "title": "HL7 v2 QRI Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/QRI",
   "name": "QRI",
-  "type": "http://hl7.org/v2/StructureDefinition/QRI"
+  "type": "QRI"
 }

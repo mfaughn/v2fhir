@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ROL",
+  "id": "ROL",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ROL.1",
         "path": "ROL.1",
-        "short": " - ROL",
+        "short": "- ROL.1 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -27,7 +29,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -40,7 +42,7 @@
       {
         "id": "ROL.2",
         "path": "ROL.2",
-        "short": " - ROL",
+        "short": "- ROL.2 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -51,7 +53,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -81,7 +83,7 @@
       {
         "id": "ROL.3",
         "path": "ROL.3",
-        "short": " - ROL",
+        "short": "- ROL.3 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -92,7 +94,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -109,7 +111,7 @@
       {
         "id": "ROL.4",
         "path": "ROL.4",
-        "short": " - ROL",
+        "short": "- ROL.4 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -120,7 +122,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -133,7 +135,7 @@
       {
         "id": "ROL.5",
         "path": "ROL.5",
-        "short": " - ROL",
+        "short": "- ROL.5 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -144,7 +146,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -157,7 +159,7 @@
       {
         "id": "ROL.6",
         "path": "ROL.6",
-        "short": " - ROL",
+        "short": "- ROL.6 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -168,7 +170,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -181,7 +183,7 @@
       {
         "id": "ROL.7",
         "path": "ROL.7",
-        "short": " - ROL",
+        "short": "- ROL.7 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -192,7 +194,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -205,7 +207,7 @@
       {
         "id": "ROL.8",
         "path": "ROL.8",
-        "short": " - ROL",
+        "short": "- ROL.8 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -216,7 +218,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -229,7 +231,7 @@
       {
         "id": "ROL.9",
         "path": "ROL.9",
-        "short": " - ROL",
+        "short": "- ROL.9 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -240,7 +242,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -253,7 +255,7 @@
       {
         "id": "ROL.10",
         "path": "ROL.10",
-        "short": " - ROL",
+        "short": "- ROL.10 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -264,7 +266,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -281,7 +283,7 @@
       {
         "id": "ROL.11",
         "path": "ROL.11",
-        "short": " - ROL",
+        "short": "- ROL.11 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -292,7 +294,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -305,7 +307,7 @@
       {
         "id": "ROL.12",
         "path": "ROL.12",
-        "short": " - ROL",
+        "short": "- ROL.12 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -316,7 +318,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -329,7 +331,7 @@
       {
         "id": "ROL.13",
         "path": "ROL.13",
-        "short": " - ROL",
+        "short": "- ROL.13 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -340,7 +342,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -353,7 +355,7 @@
       {
         "id": "ROL.14",
         "path": "ROL.14",
-        "short": " - ROL",
+        "short": "- ROL.14 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -364,7 +366,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -376,9 +378,7 @@
       }
     ]
   },
-  "id": "ROL",
   "title": "HL7 v2 ROL Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ROL",
   "name": "ROL",
-  "type": "http://hl7.org/v2/StructureDefinition/ROL"
+  "type": "ROL"
 }

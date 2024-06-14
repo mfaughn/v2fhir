@@ -1,0 +1,966 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PEX_P07",
+  "id": "PEX_P07",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "PEX_P07.1-MSH",
+          "path": "PEX_P07.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.2-ARV",
+          "path": "PEX_P07.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.3-SFT",
+          "path": "PEX_P07.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.4-UAC",
+          "path": "PEX_P07.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.5-EVN",
+          "path": "PEX_P07.5-EVN",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EVN"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.6-PID",
+          "path": "PEX_P07.6-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.7-PD1",
+          "path": "PEX_P07.7-PD1",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PD1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.8-GSP",
+          "path": "PEX_P07.8-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.9-GSR",
+          "path": "PEX_P07.9-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.10-GSC",
+          "path": "PEX_P07.10-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.11-PRT",
+          "path": "PEX_P07.11-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.12-ARV",
+          "path": "PEX_P07.12-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.13-NTE",
+          "path": "PEX_P07.13-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PEX_P07.14-VISIT",
+          "path": "PEX_P07.14-VISIT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PEX_P07.14-VISIT.1-PV1",
+              "path": "PEX_P07.14-VISIT.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PEX_P07.14-VISIT.2-PV2",
+              "path": "PEX_P07.14-VISIT.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PEX_P07.14-VISIT.3-PRT",
+              "path": "PEX_P07.14-VISIT.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "PEX_P07.15-EXPERIENCE",
+          "path": "PEX_P07.15-EXPERIENCE",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PEX_P07.15-EXPERIENCE.1-PES",
+              "path": "PEX_P07.15-EXPERIENCE.1-PES",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PES"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION",
+              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.1-PEO",
+                  "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.1-PEO",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PEO"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE",
+                  "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.1-PCR",
+                      "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.1-PCR",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PCR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER",
+                      "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.1-RXE",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.1-RXE",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RXE"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.2-PRT",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.3-TIMING_QTY",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.3-TIMING_QTY",
+                          "min": 0,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.3-TIMING_QTY.1-TQ1",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.3-TIMING_QTY.1-TQ1",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.3-TIMING_QTY.2-TQ2",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.3-TIMING_QTY.2-TQ2",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.4-RXR",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.2-RX_ORDER.4-RXR",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.3-RX_ADMINISTRATION",
+                      "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.3-RX_ADMINISTRATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.3-RX_ADMINISTRATION.1-RXA",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.3-RX_ADMINISTRATION.1-RXA",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RXA"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.3-RX_ADMINISTRATION.2-RXR",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.3-RX_ADMINISTRATION.2-RXR",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.3-RX_ADMINISTRATION.3-PRT",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.3-RX_ADMINISTRATION.3-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.4-PRB",
+                      "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.4-PRB",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRB"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.5-OBSERVATION",
+                      "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.5-OBSERVATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.5-OBSERVATION.1-OBX",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.5-OBSERVATION.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.5-OBSERVATION.2-PRT",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.5-OBSERVATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.6-NTE",
+                      "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.6-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON",
+                      "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.1-NK1",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.1-NK1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.2-GSP",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.2-GSP",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.3-GSR",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.3-GSR",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.1-RXE",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.1-RXE",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/RXE"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.2-PRT",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.2-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.3-NK1_TIMING_QTY",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.3-NK1_TIMING_QTY",
+                              "min": 0,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "BackboneElement"
+                                }
+                              ]
+                            },
+                            [
+                              [
+                                {
+                                  "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.3-NK1_TIMING_QTY.1-TQ1",
+                                  "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.3-NK1_TIMING_QTY.1-TQ1",
+                                  "min": 0,
+                                  "max": "1",
+                                  "definition": "1",
+                                  "short": "1",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                                    }
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.3-NK1_TIMING_QTY.2-TQ2",
+                                  "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.3-NK1_TIMING_QTY.2-TQ2",
+                                  "min": 1,
+                                  "max": "*",
+                                  "definition": "*",
+                                  "short": "*",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          ],
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.4-RXR",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.4-ASSOCIATED_RX_ORDER.4-RXR",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.5-ASSOCIATED_RX_ADMIN",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.5-ASSOCIATED_RX_ADMIN",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.5-ASSOCIATED_RX_ADMIN.1-RXA",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.5-ASSOCIATED_RX_ADMIN.1-RXA",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/RXA"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.5-ASSOCIATED_RX_ADMIN.2-RXR",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.5-ASSOCIATED_RX_ADMIN.2-RXR",
+                              "min": 1,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.5-ASSOCIATED_RX_ADMIN.3-PRT",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.5-ASSOCIATED_RX_ADMIN.3-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.6-PRB",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.6-PRB",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRB"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.7-ASSOCIATED_OBSERVATION",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.7-ASSOCIATED_OBSERVATION",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.7-ASSOCIATED_OBSERVATION.1-OBX",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.7-ASSOCIATED_OBSERVATION.1-OBX",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.7-ASSOCIATED_OBSERVATION.2-PRT",
+                              "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.7-ASSOCIATED_PERSON.7-ASSOCIATED_OBSERVATION.2-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.8-STUDY",
+                      "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.8-STUDY",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.8-STUDY.1-CSR",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.8-STUDY.1-CSR",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/CSR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.8-STUDY.2-CSP",
+                          "path": "PEX_P07.15-EXPERIENCE.2-PEX_OBSERVATION.2-PEX_CAUSE.8-STUDY.2-CSP",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/CSP"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 PEX_P07 Segment Definition",
+  "name": "PEX_P07",
+  "type": "http://hl7.org/v2/StructureDefinition/PEX_P07"
+}

@@ -1,0 +1,98 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ESR_U02",
+  "id": "ESR_U02",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "ESR_U02.1-MSH",
+          "path": "ESR_U02.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ESR_U02.2-SFT",
+          "path": "ESR_U02.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ESR_U02.3-UAC",
+          "path": "ESR_U02.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ESR_U02.4-EQU",
+          "path": "ESR_U02.4-EQU",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EQU"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ESR_U02.5-ROL",
+          "path": "ESR_U02.5-ROL",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 ESR_U02 Segment Definition",
+  "name": "ESR_U02",
+  "type": "http://hl7.org/v2/StructureDefinition/ESR_U02"
+}

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/NPU",
+  "id": "NPU",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "NPU.1",
         "path": "NPU.1",
-        "short": " - NPU",
+        "short": "- NPU.1 - ",
         "definition": "Definition: This field contains the bed location that is a valid bed location.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "NPU.2",
         "path": "NPU.2",
-        "short": " - NPU",
+        "short": "- NPU.2 - ",
         "definition": "Definition: This field contains the bed status. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70116[_User-defined Table 0116 - Bed Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -71,9 +73,7 @@
       }
     ]
   },
-  "id": "NPU",
   "title": "HL7 v2 NPU Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/NPU",
   "name": "NPU",
-  "type": "http://hl7.org/v2/StructureDefinition/NPU"
+  "type": "NPU"
 }

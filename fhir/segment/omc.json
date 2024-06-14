@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OMC",
+  "id": "OMC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "OMC.1",
         "path": "OMC.1",
-        "short": " - OMC",
+        "short": "- OMC.1 - ",
         "definition": "Definition: This field contains the same value as the sequence number of the associated OM1 segment.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "OMC.2",
         "path": "OMC.2",
-        "short": " - OMC",
+        "short": "- OMC.2 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -66,7 +68,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -96,7 +98,7 @@
       {
         "id": "OMC.3",
         "path": "OMC.3",
-        "short": " - OMC",
+        "short": "- OMC.3 - ",
         "definition": "Definition: This field contains a unique identifier for one of the multiple repetitions of this segment, to be used in conjunction with the preceding field. Each of the repetitions of the segment will be uniquely identified by this unique key field for the purposes of updates.",
         "description": null,
         "code": [
@@ -109,7 +111,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -122,7 +124,7 @@
       {
         "id": "OMC.4",
         "path": "OMC.4",
-        "short": " - OMC",
+        "short": "- OMC.4 - ",
         "definition": "Definition: This field contains a variable that the diagnostic service needs to interpret the results of an ordered study. Where the observations specified here should be sent is specified in the OMC-6 (Communication Location). Refer to Table 0664 - Clinical Information Request in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -135,7 +137,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -152,7 +154,7 @@
       {
         "id": "OMC.5",
         "path": "OMC.5",
-        "short": " - OMC",
+        "short": "- OMC.5 - ",
         "definition": "Definition: This field indicates by when in the ordering process or workflow this information must be collected. Limit indicates must be done by X point in the workflow. Refer to _HL7 Table 0938 – Collection Even/Process Step Limit_ for valid values.",
         "description": null,
         "code": [
@@ -165,7 +167,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -182,7 +184,7 @@
       {
         "id": "OMC.6",
         "path": "OMC.6",
-        "short": " - OMC",
+        "short": "- OMC.6 - ",
         "definition": "Definition: This field indicates where in the message this information is expected to be communicated, e.g. PID, OBR, and SPM). Refer to _HL7 Table 0939 – Communication Loction_ for valid values.",
         "description": null,
         "code": [
@@ -195,7 +197,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -212,7 +214,7 @@
       {
         "id": "OMC.7",
         "path": "OMC.7",
-        "short": " - OMC",
+        "short": "- OMC.7 - ",
         "definition": "Definition: Must the question be answered, or just displayed and can be blank. Refer to _HL7 Table 0136 – Yes/no Indicator_ for valid values.",
         "description": null,
         "code": [
@@ -225,7 +227,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -242,7 +244,7 @@
       {
         "id": "OMC.8",
         "path": "OMC.8",
-        "short": " - OMC",
+        "short": "- OMC.8 - ",
         "definition": "Definition: This field gives guidance to the provider on how to answer the question.",
         "description": null,
         "code": [
@@ -255,7 +257,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -268,7 +270,7 @@
       {
         "id": "OMC.9",
         "path": "OMC.9",
-        "short": " - OMC",
+        "short": "- OMC.9 - ",
         "definition": "Definition: This field contains the allowed datatype for answers, and is drawn from file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70125[HL7 Table 0125 – Value Type] for valid values. Type of answers include: numeric, date, coded, text, etc.",
         "description": null,
         "code": [
@@ -281,7 +283,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -298,7 +300,7 @@
       {
         "id": "OMC.10",
         "path": "OMC.10",
-        "short": " - OMC",
+        "short": "- OMC.10 - ",
         "definition": "Definition: This field indicates if multiple answers are allowed, which may impact EHR system display and selection functionality. Refer to _HL7 Table 0136 – Yes/no Indicator_ for valid values.",
         "description": null,
         "code": [
@@ -311,7 +313,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -328,7 +330,7 @@
       {
         "id": "OMC.11",
         "path": "OMC.11",
-        "short": " - OMC",
+        "short": "- OMC.11 - ",
         "definition": "Definition: Allowed coded answers to be sent in HL7 file (CWE.1) and/or display Text for Ordering system to present to provider (CWE.2). Refer to Table 0665 - Answer Choices in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -341,7 +343,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -358,7 +360,7 @@
       {
         "id": "OMC.12",
         "path": "OMC.12",
-        "short": " - OMC",
+        "short": "- OMC.12 - ",
         "definition": "Definition: Total number of characters allowed. Required for numeric and (long) text answers.",
         "description": null,
         "code": [
@@ -371,7 +373,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -384,7 +386,7 @@
       {
         "id": "OMC.13",
         "path": "OMC.13",
-        "short": " - OMC",
+        "short": "- OMC.13 - ",
         "definition": "Definition: For numeric answers the number of digits after the decimal.",
         "description": null,
         "code": [
@@ -397,7 +399,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -409,9 +411,7 @@
       }
     ]
   },
-  "id": "OMC",
   "title": "HL7 v2 OMC Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/OMC",
   "name": "OMC",
-  "type": "http://hl7.org/v2/StructureDefinition/OMC"
+  "type": "OMC"
 }

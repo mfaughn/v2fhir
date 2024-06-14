@@ -1,6 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "url": "http://hl7.org/v2/StructureDefinition/FC",
+  "id": "FC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
@@ -12,7 +13,7 @@
   "status": "active",
   "kind": "logical",
   "abstract": false,
-  "type": "http://hl7.org/v2/StructureDefinition/FC",
+  "type": "FC",
   "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
   "derivation": "specialization",
   "differential": {
@@ -58,6 +59,5 @@
         ]
       }
     ]
-  },
-  "id": "FC"
+  }
 }

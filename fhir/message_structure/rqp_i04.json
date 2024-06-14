@@ -1,0 +1,267 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RQP_I04",
+  "id": "RQP_I04",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RQP_I04.1-MSH",
+          "path": "RQP_I04.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RQP_I04.2-SFT",
+          "path": "RQP_I04.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RQP_I04.3-UAC",
+          "path": "RQP_I04.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RQP_I04.4-PROVIDER",
+          "path": "RQP_I04.4-PROVIDER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RQP_I04.4-PROVIDER.1-PRD",
+              "path": "RQP_I04.4-PROVIDER.1-PRD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RQP_I04.4-PROVIDER.2-CTD",
+              "path": "RQP_I04.4-PROVIDER.2-CTD",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RQP_I04.5-PID",
+          "path": "RQP_I04.5-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RQP_I04.6-GSP",
+          "path": "RQP_I04.6-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RQP_I04.7-GSR",
+          "path": "RQP_I04.7-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RQP_I04.8-GSC",
+          "path": "RQP_I04.8-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RQP_I04.9-NEXT_OF_KIN",
+          "path": "RQP_I04.9-NEXT_OF_KIN",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RQP_I04.9-NEXT_OF_KIN.1-NK1",
+              "path": "RQP_I04.9-NEXT_OF_KIN.1-NK1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RQP_I04.9-NEXT_OF_KIN.2-GSP",
+              "path": "RQP_I04.9-NEXT_OF_KIN.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RQP_I04.9-NEXT_OF_KIN.3-GSR",
+              "path": "RQP_I04.9-NEXT_OF_KIN.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RQP_I04.10-GT1",
+          "path": "RQP_I04.10-GT1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GT1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RQP_I04.11-NTE",
+          "path": "RQP_I04.11-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 RQP_I04 Segment Definition",
+  "name": "RQP_I04",
+  "type": "http://hl7.org/v2/StructureDefinition/RQP_I04"
+}

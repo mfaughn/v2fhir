@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/IN2",
+  "id": "IN2",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "IN2.1",
         "path": "IN2.1",
-        "short": " - IN2",
+        "short": "- IN2.1 - ",
         "definition": "Definition: This field contains the employee ID of the insured. The assigning authority and identifier type code are strongly recommended for all CX data types.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "IN2.2",
         "path": "IN2.2",
-        "short": " - IN2",
+        "short": "- IN2.2 - ",
         "definition": "Definition: This field contains the social security number of the insured.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -81,7 +83,7 @@
       {
         "id": "IN2.3",
         "path": "IN2.3",
-        "short": " - IN2",
+        "short": "- IN2.3 - ",
         "definition": "Definition: This field contains the name and ID of the insured's employer or the person who purchased the insurance for the insured, if the employer is a person. Multiple names and identifiers for the same person may be sent in this field, not multiple persons Specification of meaning based on sequence is deprecated. When the employer is an organization use link:#in2-70-insured-employer-organization-name-and-id-xon-00810[_IN2-70 - Insured Employer Organization Name and ID_].",
         "description": null,
         "code": [
@@ -94,7 +96,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -107,7 +109,7 @@
       {
         "id": "IN2.4",
         "path": "IN2.4",
-        "short": " - IN2",
+        "short": "- IN2.4 - ",
         "definition": "Definition: This field contains the required employer information data for UB82 form locator 71. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70139[_User-defined Table 0139 - Employer Information Data_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -120,7 +122,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -137,7 +139,7 @@
       {
         "id": "IN2.5",
         "path": "IN2.5",
-        "short": " - IN2",
+        "short": "- IN2.5 - ",
         "definition": "Definition: This field contains the party to which the claim should be mailed. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70137[_User-defined Table 0137 - Mail Claim Party_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -150,7 +152,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -167,7 +169,7 @@
       {
         "id": "IN2.6",
         "path": "IN2.6",
-        "short": " - IN2",
+        "short": "- IN2.6 - ",
         "definition": "Definition: This field contains the Medicare Health Insurance Number (HIN), defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -180,7 +182,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -206,7 +208,7 @@
       {
         "id": "IN2.7",
         "path": "IN2.7",
-        "short": " - IN2",
+        "short": "- IN2.7 - ",
         "definition": "Definition: This field contains the Medicaid case name, defined by CMS or other regulatory agencies. Multiple names for the same person may be sent in this field. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -219,7 +221,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -232,7 +234,7 @@
       {
         "id": "IN2.8",
         "path": "IN2.8",
-        "short": " - IN2",
+        "short": "- IN2.8 - ",
         "definition": "Definition: This field contains the Medicaid case number, defined by CMS or other regulatory agencies which can be used to group household members for Medicaid service eligibility.",
         "description": null,
         "code": [
@@ -245,7 +247,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -271,7 +273,7 @@
       {
         "id": "IN2.9",
         "path": "IN2.9",
-        "short": " - IN2",
+        "short": "- IN2.9 - ",
         "definition": "Definition: This field is defined by CMS or other regulatory agencies. Multiple names for the same person may be sent in this field. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -284,7 +286,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -297,7 +299,7 @@
       {
         "id": "IN2.10",
         "path": "IN2.10",
-        "short": " - IN2",
+        "short": "- IN2.10 - ",
         "definition": "Definition: This field contains the military ID number, defined by CMS or other regulatory agencies, which uniquely identifies a patient's military policy.",
         "description": null,
         "code": [
@@ -310,7 +312,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -336,7 +338,7 @@
       {
         "id": "IN2.11",
         "path": "IN2.11",
-        "short": " - IN2",
+        "short": "- IN2.11 - ",
         "definition": "Definition: This field is defined by CMS or other regulatory agencies. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70342[_User-defined Table 0342 - Military Recipient_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -349,7 +351,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -366,7 +368,7 @@
       {
         "id": "IN2.12",
         "path": "IN2.12",
-        "short": " - IN2",
+        "short": "- IN2.12 - ",
         "definition": "Definition: This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -379,7 +381,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -405,7 +407,7 @@
       {
         "id": "IN2.13",
         "path": "IN2.13",
-        "short": " - IN2",
+        "short": "- IN2.13 - ",
         "definition": "Definition: This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -418,7 +420,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -444,7 +446,7 @@
       {
         "id": "IN2.14",
         "path": "IN2.14",
-        "short": " - IN2",
+        "short": "- IN2.14 - ",
         "definition": "Definition: This field is defined by CMS or other regulatory agencies and refers to the military branch of service. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70140[_User-defined Table 0140 - Military_ _Servic__e_] in Chapter 2C, Code Tables, for suggested values. The UB codes listed may not represent a complete list; refer to a UB specification for additional information.",
         "description": null,
         "code": [
@@ -457,7 +459,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -474,7 +476,7 @@
       {
         "id": "IN2.15",
         "path": "IN2.15",
-        "short": " - IN2",
+        "short": "- IN2.15 - ",
         "definition": "Definition: This user-defined field identifies the military rank/grade of the insured. Refer to E:\\\\V2\\\\V29_CH02C_Tables.docx#HL70141[_User-defined Table 0141 - Military Rank/Grade_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -487,7 +489,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -504,7 +506,7 @@
       {
         "id": "IN2.16",
         "path": "IN2.16",
-        "short": " - IN2",
+        "short": "- IN2.16 - ",
         "definition": "Definition: This field is defined by CMS or other regulatory agencies. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70142[_User-defined Table 0142 - Military Status_] in Chapter 2C, Code Tables, for suggested values. The UB codes listed may not represent a complete list; refer to a UB specification for additional information",
         "description": null,
         "code": [
@@ -517,7 +519,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -534,7 +536,7 @@
       {
         "id": "IN2.17",
         "path": "IN2.17",
-        "short": " - IN2",
+        "short": "- IN2.17 - ",
         "definition": "Definition: This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -547,7 +549,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -560,7 +562,7 @@
       {
         "id": "IN2.18",
         "path": "IN2.18",
-        "short": " - IN2",
+        "short": "- IN2.18 - ",
         "definition": "Definition: Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -573,7 +575,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -603,7 +605,7 @@
       {
         "id": "IN2.19",
         "path": "IN2.19",
-        "short": " - IN2",
+        "short": "- IN2.19 - ",
         "definition": "Definition: Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -616,7 +618,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -646,7 +648,7 @@
       {
         "id": "IN2.20",
         "path": "IN2.20",
-        "short": " - IN2",
+        "short": "- IN2.20 - ",
         "definition": "Definition: Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -659,7 +661,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -689,7 +691,7 @@
       {
         "id": "IN2.21",
         "path": "IN2.21",
-        "short": " - IN2",
+        "short": "- IN2.21 - ",
         "definition": "Definition: Use this field instead of link:#ub1-2-blood-deductible-00531[_UB1-2 - Blood Deductible_], as the blood deductible can be associated with the specific insurance plan via this field.",
         "description": null,
         "code": [
@@ -702,7 +704,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -728,7 +730,7 @@
       {
         "id": "IN2.22",
         "path": "IN2.22",
-        "short": " - IN2",
+        "short": "- IN2.22 - ",
         "definition": "Definition: This field contains the name of the individual who approves any special coverage. Multiple names for the same person may be sent in this field. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -741,7 +743,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -754,7 +756,7 @@
       {
         "id": "IN2.23",
         "path": "IN2.23",
-        "short": " - IN2",
+        "short": "- IN2.23 - ",
         "definition": "Definition: This field contains the title of the person who approves special coverage.",
         "description": null,
         "code": [
@@ -767,7 +769,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -793,7 +795,7 @@
       {
         "id": "IN2.24",
         "path": "IN2.24",
-        "short": " - IN2",
+        "short": "- IN2.24 - ",
         "definition": "Definition: This field contains the code that describes why a service is not covered. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70143[_User-defined Table 0143 - Non-covered Insu__rance Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -806,7 +808,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -823,7 +825,7 @@
       {
         "id": "IN2.25",
         "path": "IN2.25",
-        "short": " - IN2",
+        "short": "- IN2.25 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -834,7 +836,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -847,7 +849,7 @@
       {
         "id": "IN2.26",
         "path": "IN2.26",
-        "short": " - IN2",
+        "short": "- IN2.26 - ",
         "definition": "Definition: Subscriber Identifier assigned by the Payer.",
         "description": null,
         "code": [
@@ -860,7 +862,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -873,7 +875,7 @@
       {
         "id": "IN2.27",
         "path": "IN2.27",
-        "short": " - IN2",
+        "short": "- IN2.27 - ",
         "definition": "Definition: Identifies the source of information about the insured's eligibility for benefits. Refer to User-defined Table 0144 - Eligibility Source in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -886,7 +888,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -903,7 +905,7 @@
       {
         "id": "IN2.28",
         "path": "IN2.28",
-        "short": " - IN2",
+        "short": "- IN2.28 - ",
         "definition": "Definition: Use this field instead of link:#in1-40-room-rate-semiprivate-00465[_IN1-40 - Room Rate - Semi-Private_] and link:#in1-41-room-rate-private-00466[_IN1-41 - Room Rate - Private_]. This field contains room type (e.g., private, semi-private), amount type (e.g., limit, percentage) and amount covered by the insurance.",
         "description": null,
         "code": [
@@ -916,7 +918,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/RMC"
+            "code": "RMC"
           }
         ],
         "extension": [
@@ -929,7 +931,7 @@
       {
         "id": "IN2.29",
         "path": "IN2.29",
-        "short": " - IN2",
+        "short": "- IN2.29 - ",
         "definition": "Definition: This field contains the policy type (e.g., ancillary, major medical) and amount (e.g., amount, percentage, limit) covered by the insurance. Use this field instead of link:#in1-38-policy-limit-amount-00463[_IN1-38 - Policy Limit - Amount_].",
         "description": null,
         "code": [
@@ -942,7 +944,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PTA"
+            "code": "PTA"
           }
         ],
         "extension": [
@@ -955,7 +957,7 @@
       {
         "id": "IN2.30",
         "path": "IN2.30",
-        "short": " - IN2",
+        "short": "- IN2.30 - ",
         "definition": "Definition: This field contains the number of days after which the daily deductible begins, the amount of the deductible, and the number of days to apply the deductible.",
         "description": null,
         "code": [
@@ -968,7 +970,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DDI"
+            "code": "DDI"
           }
         ],
         "extension": [
@@ -981,7 +983,7 @@
       {
         "id": "IN2.31",
         "path": "IN2.31",
-        "short": " - IN2",
+        "short": "- IN2.31 - ",
         "definition": "Definition: This field identifies the specific living conditions for the insured. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70223[_User-defined Table 0223 - Living Dependency_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -994,7 +996,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1011,7 +1013,7 @@
       {
         "id": "IN2.32",
         "path": "IN2.32",
-        "short": " - IN2",
+        "short": "- IN2.32 - ",
         "definition": "Definition: This field identifies the insured's state of mobility. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70009[_User-defined Table 0009 - Ambulatory Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1024,7 +1026,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1041,7 +1043,7 @@
       {
         "id": "IN2.33",
         "path": "IN2.33",
-        "short": " - IN2",
+        "short": "- IN2.33 - ",
         "definition": "Definition: This field contains the code that identifies the insured's citizenship. HL7 recommends using ISO table 3166 as the suggested values in _file:///E:\\V2\\V29_CH02C_Tables.docx#HL70171[User-defined Table 0171 - Citizenship]_ defined in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -1054,7 +1056,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1071,7 +1073,7 @@
       {
         "id": "IN2.34",
         "path": "IN2.34",
-        "short": " - IN2",
+        "short": "- IN2.34 - ",
         "definition": "Definition: This field identifies the insured's primary speaking language. HL7 recommends using ISO table 639 as the suggested values in _file:///E:\\V2\\V29_CH02C_Tables.docx#HL70296[User-defined Table 0296 - Primary Language]_ defined in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -1084,7 +1086,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1101,7 +1103,7 @@
       {
         "id": "IN2.35",
         "path": "IN2.35",
-        "short": " - IN2",
+        "short": "- IN2.35 - ",
         "definition": "Definition: This field indicates the situation in which the insured person lives at his primary residence. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70220[_User-defined Table 0220 - Living Arrangement_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1114,7 +1116,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1131,7 +1133,7 @@
       {
         "id": "IN2.36",
         "path": "IN2.36",
-        "short": " - IN2",
+        "short": "- IN2.36 - ",
         "definition": "Definition: This field contains a user-defined code indicating what level of publicity is allowed (e.g., No Publicity, Family Only) for the insured. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70215[_User-defined Table 0215 - Publicity Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1144,7 +1146,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1161,7 +1163,7 @@
       {
         "id": "IN2.37",
         "path": "IN2.37",
-        "short": " - IN2",
+        "short": "- IN2.37 - ",
         "definition": "Definition: This field identifies the insured's protection, which determines whether or not access to information about this enrollee should be restricted from users who do not have adequate authority. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -1174,7 +1176,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -1204,7 +1206,7 @@
       {
         "id": "IN2.38",
         "path": "IN2.38",
-        "short": " - IN2",
+        "short": "- IN2.38 - ",
         "definition": "Definition: This field identifies whether the insured is currently a student or not, and whether the insured is a full-time or a part-time student. This field does not indicate the degree level (high school, college) of student, or his/her field of study (accounting, engineering, etc.). Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70231[_User-defined Table 0231 - Student Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1217,7 +1219,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1234,7 +1236,7 @@
       {
         "id": "IN2.39",
         "path": "IN2.39",
-        "short": " - IN2",
+        "short": "- IN2.39 - ",
         "definition": "Definition: This field indicates the type of religion practiced by the insured. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70006[_User-defined Table 0006 - Religion_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1247,7 +1249,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1264,7 +1266,7 @@
       {
         "id": "IN2.40",
         "path": "IN2.40",
-        "short": " - IN2",
+        "short": "- IN2.40 - ",
         "definition": "Definition: This field indicates the insured's mother's maiden name.",
         "description": null,
         "code": [
@@ -1277,7 +1279,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -1290,7 +1292,7 @@
       {
         "id": "IN2.41",
         "path": "IN2.41",
-        "short": " - IN2",
+        "short": "- IN2.41 - ",
         "definition": "Definition: This field contains a code that identifies the nation or national grouping to which the insured person belongs. This information may be different from a person's citizenship in countries in which multiple nationalities are recognized (for example, Spain: Basque, Catalan, etc.). HL7 recommends using ISO table 3166 as the suggested values in file:///E:\\V2\\V29_CH02C_Tables.docx#HL70212[_User-defined Table 0212 - Nationality_] in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -1303,7 +1305,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1320,7 +1322,7 @@
       {
         "id": "IN2.42",
         "path": "IN2.42",
-        "short": " - IN2",
+        "short": "- IN2.42 - ",
         "definition": "Definition: This field indicates the insured's ethnic group. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70189[_User-defined Table 0189 - Ethnic Group_] in Chapter 2C, Code Tables, for suggested values. The second triplet of the CE data type for ethnic group (alternate identifier, alternate text, and name of alternate coding system) is reserved for governmentally assigned codes. In the US, a current use is to report ethnicity in line with US federal standards for Hispanic origin.",
         "description": null,
         "code": [
@@ -1333,7 +1335,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1350,7 +1352,7 @@
       {
         "id": "IN2.43",
         "path": "IN2.43",
-        "short": " - IN2",
+        "short": "- IN2.43 - ",
         "definition": "Definition: This field contains the insured's marital status. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70002[_User-defined Table 0002 - Marital Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1363,7 +1365,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1380,7 +1382,7 @@
       {
         "id": "IN2.44",
         "path": "IN2.44",
-        "short": " - IN2",
+        "short": "- IN2.44 - ",
         "definition": "Definition: This field indicates the date on which the insured's employment with a particular employer began.",
         "description": null,
         "code": [
@@ -1393,7 +1395,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -1406,7 +1408,7 @@
       {
         "id": "IN2.45",
         "path": "IN2.45",
-        "short": " - IN2",
+        "short": "- IN2.45 - ",
         "definition": "Definition: This field indicates the date on which the person's employment with a particular employer ended.",
         "description": null,
         "code": [
@@ -1419,7 +1421,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -1432,7 +1434,7 @@
       {
         "id": "IN2.46",
         "path": "IN2.46",
-        "short": " - IN2",
+        "short": "- IN2.46 - ",
         "definition": "Definition: This field contains a descriptive name for the insured's occupation (for example, Sr. Systems Analyst, Sr. Accountant).",
         "description": null,
         "code": [
@@ -1445,7 +1447,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -1471,7 +1473,7 @@
       {
         "id": "IN2.47",
         "path": "IN2.47",
-        "short": " - IN2",
+        "short": "- IN2.47 - ",
         "definition": "Definition: This field indicates a code that identifies the insured's job code (for example, programmer, analyst, doctor, etc.).",
         "description": null,
         "code": [
@@ -1484,7 +1486,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/JCC"
+            "code": "JCC"
           }
         ],
         "extension": [
@@ -1497,7 +1499,7 @@
       {
         "id": "IN2.48",
         "path": "IN2.48",
-        "short": " - IN2",
+        "short": "- IN2.48 - ",
         "definition": "Definition: This field indicates a code that identifies the insured's current job status. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70311[_User-defined Table 0311 - Job Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1510,7 +1512,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1527,7 +1529,7 @@
       {
         "id": "IN2.49",
         "path": "IN2.49",
-        "short": " - IN2",
+        "short": "- IN2.49 - ",
         "definition": "Definition: This field contains the name of the contact person that should be contacted at the insured's place of employment. (Joe Smith is the insured. He works at GTE. Contact Sue Jones at GTE regarding Joe Smith's policy). Multiple names for the same person may be sent in this sequence. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -1540,7 +1542,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -1553,7 +1555,7 @@
       {
         "id": "IN2.50",
         "path": "IN2.50",
-        "short": " - IN2",
+        "short": "- IN2.50 - ",
         "definition": "Definition: This field contains the telecommunications contact for the employer contact person. Multiple phone numbers for the same contact person may be sent in this sequence, not multiple contacts. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -1566,7 +1568,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -1579,7 +1581,7 @@
       {
         "id": "IN2.51",
         "path": "IN2.51",
-        "short": " - IN2",
+        "short": "- IN2.51 - ",
         "definition": "Definition: Definition: This field contains the reason(s) that employer contact person should be contacted on behalf of the employee. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70222[_User-defined Table 0222 - Contact Reason_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1592,7 +1594,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1609,7 +1611,7 @@
       {
         "id": "IN2.52",
         "path": "IN2.52",
-        "short": " - IN2",
+        "short": "- IN2.52 - ",
         "definition": "Definition: This field contains the contact person for the insured.",
         "description": null,
         "code": [
@@ -1622,7 +1624,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -1635,7 +1637,7 @@
       {
         "id": "IN2.53",
         "path": "IN2.53",
-        "short": " - IN2",
+        "short": "- IN2.53 - ",
         "definition": "Definition: This field contains the telephone number for the contact person for the insured. Multiple phone numbers for the same person may be sent in this contact, not multiple contacts. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -1648,7 +1650,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -1661,7 +1663,7 @@
       {
         "id": "IN2.54",
         "path": "IN2.54",
-        "short": " - IN2",
+        "short": "- IN2.54 - ",
         "definition": "Definition: This field contains the reason(s) the person should be contacted regarding the insured. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70222[_User-defined Table 0222 - Contact Reason_] in Chapter 2C, Code Tables, for suggested values",
         "description": null,
         "code": [
@@ -1674,7 +1676,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1691,7 +1693,7 @@
       {
         "id": "IN2.55",
         "path": "IN2.55",
-        "short": " - IN2",
+        "short": "- IN2.55 - ",
         "definition": "Definition: This field indicates the date on which the insured's patient relationship (defined in link:#in1-17-insureds-relationship-to-patient-cwe-00442[_IN1-17 - Insured's Relationship to Patient_]) became effective (began).",
         "description": null,
         "code": [
@@ -1704,7 +1706,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -1717,7 +1719,7 @@
       {
         "id": "IN2.56",
         "path": "IN2.56",
-        "short": " - IN2",
+        "short": "- IN2.56 - ",
         "definition": "Definition: This field indicates the date after which the relationship (defined in link:#in1-17-insureds-relationship-to-patient-cwe-00442[_IN1-17 - Insured's Relationship to Patient_]) is no longer effective.",
         "description": null,
         "code": [
@@ -1730,7 +1732,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -1743,7 +1745,7 @@
       {
         "id": "IN2.57",
         "path": "IN2.57",
-        "short": " - IN2",
+        "short": "- IN2.57 - ",
         "definition": "Definition: This field contains a user-defined code that specifies how the contact should be used. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70232[_User-defined Table 0232 - Insurance Company Contact Reason_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1756,7 +1758,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1773,7 +1775,7 @@
       {
         "id": "IN2.58",
         "path": "IN2.58",
-        "short": " - IN2",
+        "short": "- IN2.58 - ",
         "definition": "Definition: This field contains the telephone number of the person who should be contacted at the insurance company for questions regarding an insurance policy/claim, etc. Multiple phone numbers for the insurance company may be sent in this sequence. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -1786,7 +1788,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -1799,7 +1801,7 @@
       {
         "id": "IN2.59",
         "path": "IN2.59",
-        "short": " - IN2",
+        "short": "- IN2.59 - ",
         "definition": "Definition: This field contains a user-defined code designating the extent of the coverage for a participating member (e.g., \"single,\" \"family,\" etc). Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70312[_User-defined Table 0312 - Policy Scope_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1812,7 +1814,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1829,7 +1831,7 @@
       {
         "id": "IN2.60",
         "path": "IN2.60",
-        "short": " - IN2",
+        "short": "- IN2.60 - ",
         "definition": "Definition: This user-defined field identifies how the policy information got established. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70313[_User-defined Table 0313 - Policy Source_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1842,7 +1844,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1859,7 +1861,7 @@
       {
         "id": "IN2.61",
         "path": "IN2.61",
-        "short": " - IN2",
+        "short": "- IN2.61 - ",
         "definition": "Definition: This field contains an identifying number assigned by the payor for each individual covered by the insurance policy issued to the insured. For example, each individual family member may have a different member number from the insurance policy number issued to the head of household. The assigning authority and identifier type code are strongly recommended for all CX data types.",
         "description": null,
         "code": [
@@ -1872,7 +1874,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -1885,7 +1887,7 @@
       {
         "id": "IN2.62",
         "path": "IN2.62",
-        "short": " - IN2",
+        "short": "- IN2.62 - ",
         "definition": "Definition: This field specifies the relationship of the guarantor to the insurance subscriber. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70063[_User-defined Table 0063 - Relationship_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1898,7 +1900,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1915,7 +1917,7 @@
       {
         "id": "IN2.63",
         "path": "IN2.63",
-        "short": " - IN2",
+        "short": "- IN2.63 - ",
         "definition": "Definition: The value of this field represents the insured's telephone number. Multiple phone numbers may be sent in this sequence. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -1928,7 +1930,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -1941,7 +1943,7 @@
       {
         "id": "IN2.64",
         "path": "IN2.64",
-        "short": " - IN2",
+        "short": "- IN2.64 - ",
         "definition": "Definition: The value of this field represents the insured's employer's telephone number. Multiple phone numbers may be sent in this sequence. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -1954,7 +1956,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -1967,7 +1969,7 @@
       {
         "id": "IN2.65",
         "path": "IN2.65",
-        "short": " - IN2",
+        "short": "- IN2.65 - ",
         "definition": "Definition: This field indicates the military program for the handicapped in which the patient is enrolled. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70343[_User-defined Table 0343 - Military Handicapped Program Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1980,7 +1982,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1997,7 +1999,7 @@
       {
         "id": "IN2.66",
         "path": "IN2.66",
-        "short": " - IN2",
+        "short": "- IN2.66 - ",
         "definition": "Definition: This field indicates whether charges should be suspended for a patient. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -2010,7 +2012,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -2040,7 +2042,7 @@
       {
         "id": "IN2.67",
         "path": "IN2.67",
-        "short": " - IN2",
+        "short": "- IN2.67 - ",
         "definition": "Definition: This field indicates if the patient has reached the co-pay limit so that no more co-pay charges should be calculated for the patient. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -2053,7 +2055,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -2083,7 +2085,7 @@
       {
         "id": "IN2.68",
         "path": "IN2.68",
-        "short": " - IN2",
+        "short": "- IN2.68 - ",
         "definition": "Definition: This field indicates if the patient has reached the stoploss limit established in the Contract Master. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -2096,7 +2098,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -2126,7 +2128,7 @@
       {
         "id": "IN2.69",
         "path": "IN2.69",
-        "short": " - IN2",
+        "short": "- IN2.69 - ",
         "definition": "Definition: This field indicates the name of the insured if the insured/subscriber is an organization. Multiple names for the insured may be sent in this sequence, not multiple insured people Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -2139,7 +2141,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -2152,7 +2154,7 @@
       {
         "id": "IN2.70",
         "path": "IN2.70",
-        "short": " - IN2",
+        "short": "- IN2.70 - ",
         "definition": "Definition: This field indicates the name of the insured's employer, or the organization that purchased the insurance for the insured, if the employer is an organization. Multiple names and identifiers for the same organization may be sent in this field, not multiple organizations. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -2165,7 +2167,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -2178,7 +2180,7 @@
       {
         "id": "IN2.71",
         "path": "IN2.71",
-        "short": " - IN2",
+        "short": "- IN2.71 - ",
         "definition": "Definition: Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70005[_User-defined Table 0005 - Race_] in Chapter 2C, Code Tables, for suggested values. The second triplet of the CE data type for race (alternate identifier, alternate text, and name of alternate coding system) is reserved for governmentally assigned codes.",
         "description": null,
         "code": [
@@ -2191,7 +2193,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -2208,7 +2210,7 @@
       {
         "id": "IN2.72",
         "path": "IN2.72",
-        "short": " - IN2",
+        "short": "- IN2.72 - ",
         "definition": "Definition: This field indicates the relationship of the patient to the insured, as defined by CMS or other regulatory agencies. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70344[_User-defined Table 0344 - Patient's Relati__onship to Insured_] in Chapter 2C, Code Tables, for suggested values. The UB codes listed may not represent a complete list; refer to a UB specification for additional information.",
         "description": null,
         "code": [
@@ -2221,7 +2223,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -2238,7 +2240,7 @@
       {
         "id": "IN2.73",
         "path": "IN2.73",
-        "short": " - IN2",
+        "short": "- IN2.73 - ",
         "definition": "Definition: This field contains the patient's Co-pay amount for visit.",
         "description": null,
         "code": [
@@ -2251,7 +2253,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -2263,9 +2265,7 @@
       }
     ]
   },
-  "id": "IN2",
   "title": "HL7 v2 IN2 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/IN2",
   "name": "IN2",
-  "type": "http://hl7.org/v2/StructureDefinition/IN2"
+  "type": "IN2"
 }

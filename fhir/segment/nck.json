@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/NCK",
+  "id": "NCK",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "NCK.1",
         "path": "NCK.1",
-        "short": " - NCK",
+        "short": "- NCK.1 - ",
         "definition": "Definition: This field contains an HL7 time stamp. It is strongly recommended that seconds be included. If the message contains an NST or NSC segment, the NCK segment is optional. If the NCK segment is present, this field is required. If present in the NMQ message, or the unsolicited NMD message, it contains the system date/time of the sending system. If present in the NMR response message, it contains the responding system's date/time.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -54,9 +56,7 @@
       }
     ]
   },
-  "id": "NCK",
   "title": "HL7 v2 NCK Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/NCK",
   "name": "NCK",
-  "type": "http://hl7.org/v2/StructureDefinition/NCK"
+  "type": "NCK"
 }

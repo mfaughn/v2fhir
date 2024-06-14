@@ -1,0 +1,1484 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/DFT_P11",
+  "id": "DFT_P11",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "DFT_P11.1-MSH",
+          "path": "DFT_P11.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.2-SFT",
+          "path": "DFT_P11.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.3-UAC",
+          "path": "DFT_P11.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.4-EVN",
+          "path": "DFT_P11.4-EVN",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EVN"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.5-PID",
+          "path": "DFT_P11.5-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.6-PRT",
+          "path": "DFT_P11.6-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.7-PD1",
+          "path": "DFT_P11.7-PD1",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PD1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.8-GSP",
+          "path": "DFT_P11.8-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.9-GSR",
+          "path": "DFT_P11.9-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.10-GSC",
+          "path": "DFT_P11.10-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.11-PRT",
+          "path": "DFT_P11.11-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.12-ROL",
+          "path": "DFT_P11.12-ROL",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.13-VISIT",
+          "path": "DFT_P11.13-VISIT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "DFT_P11.13-VISIT.1-PV1",
+              "path": "DFT_P11.13-VISIT.1-PV1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.13-VISIT.2-PV2",
+              "path": "DFT_P11.13-VISIT.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.13-VISIT.3-PRT",
+              "path": "DFT_P11.13-VISIT.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.13-VISIT.4-ROL",
+              "path": "DFT_P11.13-VISIT.4-ROL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "DFT_P11.14-DB1",
+          "path": "DFT_P11.14-DB1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DB1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.15-COMMON[.underline]#_#ORDER",
+          "path": "DFT_P11.15-COMMON[.underline]#_#ORDER",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.1-ORC",
+              "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.2-PRT",
+              "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.3-TIMING[.underline]#_#QUANTITY",
+              "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.3-TIMING[.underline]#_#QUANTITY",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.3-TIMING[.underline]#_#QUANTITY.1-TQ1",
+                  "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.3-TIMING[.underline]#_#QUANTITY.1-TQ1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.3-TIMING[.underline]#_#QUANTITY.2-TQ2",
+                  "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.3-TIMING[.underline]#_#QUANTITY.2-TQ2",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.4-ORDER",
+              "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.4-ORDER",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.4-ORDER.1-OBR",
+                  "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.4-ORDER.1-OBR",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.4-ORDER.2-PRT",
+                  "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.4-ORDER.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.4-ORDER.3-NTE",
+                  "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.4-ORDER.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.5-OBSERVATION",
+              "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.5-OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.5-OBSERVATION.1-OBX",
+                  "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.5-OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.5-OBSERVATION.2-PRT",
+                  "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.5-OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.15-COMMON[.underline]#_#ORDER.5-OBSERVATION.3-NTE",
+                  "path": "DFT_P11.15-COMMON[.underline]#_#ORDER.5-OBSERVATION.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "DFT_P11.16-DIAGNOSIS",
+          "path": "DFT_P11.16-DIAGNOSIS",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "DFT_P11.16-DIAGNOSIS.1-DG1",
+              "path": "DFT_P11.16-DIAGNOSIS.1-DG1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/DG1"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "DFT_P11.17-DRG",
+          "path": "DFT_P11.17-DRG",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DRG"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.18-GT1",
+          "path": "DFT_P11.18-GT1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GT1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.19-GSP",
+          "path": "DFT_P11.19-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.20-GSR",
+          "path": "DFT_P11.20-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.21-INSURANCE",
+          "path": "DFT_P11.21-INSURANCE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "DFT_P11.21-INSURANCE.1-IN1",
+              "path": "DFT_P11.21-INSURANCE.1-IN1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.21-INSURANCE.2-GSP",
+              "path": "DFT_P11.21-INSURANCE.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.21-INSURANCE.3-GSR",
+              "path": "DFT_P11.21-INSURANCE.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.21-INSURANCE.4-IN2",
+              "path": "DFT_P11.21-INSURANCE.4-IN2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.21-INSURANCE.5-IN3",
+              "path": "DFT_P11.21-INSURANCE.5-IN3",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN3"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.21-INSURANCE.6-PRT",
+              "path": "DFT_P11.21-INSURANCE.6-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.21-INSURANCE.7-ROL",
+              "path": "DFT_P11.21-INSURANCE.7-ROL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "DFT_P11.22-ACC",
+          "path": "DFT_P11.22-ACC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ACC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "DFT_P11.23-FINANCIAL",
+          "path": "DFT_P11.23-FINANCIAL",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.1-FT1",
+              "path": "DFT_P11.23-FINANCIAL.1-FT1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/FT1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.2-NTE",
+              "path": "DFT_P11.23-FINANCIAL.2-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.3-PRT",
+              "path": "DFT_P11.23-FINANCIAL.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.4-FINANCIAL[.underline]#_#PROCEDURE",
+              "path": "DFT_P11.23-FINANCIAL.4-FINANCIAL[.underline]#_#PROCEDURE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.4-FINANCIAL[.underline]#_#PROCEDURE.1-PR1",
+                  "path": "DFT_P11.23-FINANCIAL.4-FINANCIAL[.underline]#_#PROCEDURE.1-PR1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PR1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.4-FINANCIAL[.underline]#_#PROCEDURE.2-PRT",
+                  "path": "DFT_P11.23-FINANCIAL.4-FINANCIAL[.underline]#_#PROCEDURE.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.4-FINANCIAL[.underline]#_#PROCEDURE.3-ROL",
+                  "path": "DFT_P11.23-FINANCIAL.4-FINANCIAL[.underline]#_#PROCEDURE.3-ROL",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.5-FINANCIAL_OBSERVATION_STANDALONE",
+              "path": "DFT_P11.23-FINANCIAL.5-FINANCIAL_OBSERVATION_STANDALONE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.5-FINANCIAL_OBSERVATION_STANDALONE.1-OBX",
+                  "path": "DFT_P11.23-FINANCIAL.5-FINANCIAL_OBSERVATION_STANDALONE.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.5-FINANCIAL_OBSERVATION_STANDALONE.2-PRT",
+                  "path": "DFT_P11.23-FINANCIAL.5-FINANCIAL_OBSERVATION_STANDALONE.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.5-FINANCIAL_OBSERVATION_STANDALONE.3-NTE",
+                  "path": "DFT_P11.23-FINANCIAL.5-FINANCIAL_OBSERVATION_STANDALONE.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE",
+              "path": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.1-OBR",
+                  "path": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.1-OBR",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.2-PRT",
+                  "path": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.3-NTE",
+                  "path": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.4-FINANCIAL_OBSERVATION",
+                  "path": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.4-FINANCIAL_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.4-FINANCIAL_OBSERVATION.1-OBX",
+                      "path": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.4-FINANCIAL_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.4-FINANCIAL_OBSERVATION.2-PRT",
+                      "path": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.4-FINANCIAL_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.4-FINANCIAL_OBSERVATION.3-NTE",
+                      "path": "DFT_P11.23-FINANCIAL.6-FINANCIAL_ORDER_STANDALONE.4-FINANCIAL_OBSERVATION.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER",
+              "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.1-ORC",
+                  "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.2-PRT",
+                  "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.3-FINANCIAL[.underline]#_#TIMING[.underline]#_#QUANTITY",
+                  "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.3-FINANCIAL[.underline]#_#TIMING[.underline]#_#QUANTITY",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.3-FINANCIAL[.underline]#_#TIMING[.underline]#_#QUANTITY.1-TQ1",
+                      "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.3-FINANCIAL[.underline]#_#TIMING[.underline]#_#QUANTITY.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.3-FINANCIAL[.underline]#_#TIMING[.underline]#_#QUANTITY.2-TQ2",
+                      "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.3-FINANCIAL[.underline]#_#TIMING[.underline]#_#QUANTITY.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.4-FINANCIAL[.underline]#_#ORDER",
+                  "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.4-FINANCIAL[.underline]#_#ORDER",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.4-FINANCIAL[.underline]#_#ORDER.1-OBR",
+                      "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.4-FINANCIAL[.underline]#_#ORDER.1-OBR",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.4-FINANCIAL[.underline]#_#ORDER.2-PRT",
+                      "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.4-FINANCIAL[.underline]#_#ORDER.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.4-FINANCIAL[.underline]#_#ORDER.3-NTE",
+                      "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.4-FINANCIAL[.underline]#_#ORDER.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.5-FINANCIAL[.underline]#_#OBSERVATION",
+                  "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.5-FINANCIAL[.underline]#_#OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.5-FINANCIAL[.underline]#_#OBSERVATION.1-OBX",
+                      "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.5-FINANCIAL[.underline]#_#OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.5-FINANCIAL[.underline]#_#OBSERVATION.2-PRT",
+                      "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.5-FINANCIAL[.underline]#_#OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.5-FINANCIAL[.underline]#_#OBSERVATION.3-NTE",
+                      "path": "DFT_P11.23-FINANCIAL.7-FINANCIAL[.underline]#_#COMMON[.underline]#_#ORDER.5-FINANCIAL[.underline]#_#OBSERVATION.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.8-DIAGNOSIS_FT1",
+              "path": "DFT_P11.23-FINANCIAL.8-DIAGNOSIS_FT1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.8-DIAGNOSIS_FT1.1-DG1",
+                  "path": "DFT_P11.23-FINANCIAL.8-DIAGNOSIS_FT1.1-DG1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/DG1"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.9-DRG",
+              "path": "DFT_P11.23-FINANCIAL.9-DRG",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/DRG"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.10-GT1",
+              "path": "DFT_P11.23-FINANCIAL.10-GT1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GT1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.11-GSP",
+              "path": "DFT_P11.23-FINANCIAL.11-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.12-GSR",
+              "path": "DFT_P11.23-FINANCIAL.12-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE",
+              "path": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.1-IN1",
+                  "path": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.1-IN1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.2-GSP",
+                  "path": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.2-GSP",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.3-GSR",
+                  "path": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.3-GSR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.4-IN2",
+                  "path": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.4-IN2",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.5-IN3",
+                  "path": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.5-IN3",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IN3"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.6-PRT",
+                  "path": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.6-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.7-ROL",
+                  "path": "DFT_P11.23-FINANCIAL.13-FINANCIAL[.underline]#_#INSURANCE.7-ROL",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 DFT_P11 Segment Definition",
+  "name": "DFT_P11",
+  "type": "http://hl7.org/v2/StructureDefinition/DFT_P11"
+}

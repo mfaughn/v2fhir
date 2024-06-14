@@ -1,0 +1,145 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SSR_U04",
+  "id": "SSR_U04",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "SSR_U04.1-MSH",
+          "path": "SSR_U04.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SSR_U04.2-SFT",
+          "path": "SSR_U04.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SSR_U04.3-UAC",
+          "path": "SSR_U04.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SSR_U04.4-EQU",
+          "path": "SSR_U04.4-EQU",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EQU"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SSR_U04.5-SPECIMEN_CONTAINER",
+          "path": "SSR_U04.5-SPECIMEN_CONTAINER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "SSR_U04.5-SPECIMEN_CONTAINER.1-SAC",
+              "path": "SSR_U04.5-SPECIMEN_CONTAINER.1-SAC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/SAC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SSR_U04.5-SPECIMEN_CONTAINER.2-SPM",
+              "path": "SSR_U04.5-SPECIMEN_CONTAINER.2-SPM",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/SPM"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "SSR_U04.6-ROL",
+          "path": "SSR_U04.6-ROL",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 SSR_U04 Segment Definition",
+  "name": "SSR_U04",
+  "type": "http://hl7.org/v2/StructureDefinition/SSR_U04"
+}

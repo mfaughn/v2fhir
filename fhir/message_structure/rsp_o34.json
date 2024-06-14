@@ -1,0 +1,453 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RSP_O34",
+  "id": "RSP_O34",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RSP_O34.1-MSH",
+          "path": "RSP_O34.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_O34.2-ARV",
+          "path": "RSP_O34.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_O34.3-SFT",
+          "path": "RSP_O34.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_O34.4-UAC",
+          "path": "RSP_O34.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_O34.5-MSA",
+          "path": "RSP_O34.5-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_O34.6-ERR",
+          "path": "RSP_O34.6-ERR",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_O34.7-QAK",
+          "path": "RSP_O34.7-QAK",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QAK"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_O34.8-QPD",
+          "path": "RSP_O34.8-QPD",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QPD"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_O34.9-DONOR",
+          "path": "RSP_O34.9-DONOR",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RSP_O34.9-DONOR.1-PID",
+              "path": "RSP_O34.9-DONOR.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_O34.9-DONOR.2-PD1",
+              "path": "RSP_O34.9-DONOR.2-PD1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_O34.9-DONOR.3-PRT",
+              "path": "RSP_O34.9-DONOR.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_O34.9-DONOR.4-DONOR_OBSERVATIONS",
+              "path": "RSP_O34.9-DONOR.4-DONOR_OBSERVATIONS",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RSP_O34.9-DONOR.4-DONOR_OBSERVATIONS.1-OBX",
+                  "path": "RSP_O34.9-DONOR.4-DONOR_OBSERVATIONS.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_O34.9-DONOR.4-DONOR_OBSERVATIONS.2-PRT",
+                  "path": "RSP_O34.9-DONOR.4-DONOR_OBSERVATIONS.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RSP_O34.9-DONOR.5-NTE",
+              "path": "RSP_O34.9-DONOR.5-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_O34.9-DONOR.6-AL1",
+              "path": "RSP_O34.9-DONOR.6-AL1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_O34.9-DONOR.7-ARV",
+              "path": "RSP_O34.9-DONOR.7-ARV",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_O34.9-DONOR.8-DONOR_REGISTRATION",
+              "path": "RSP_O34.9-DONOR.8-DONOR_REGISTRATION",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RSP_O34.9-DONOR.8-DONOR_REGISTRATION.1-PV1",
+                  "path": "RSP_O34.9-DONOR.8-DONOR_REGISTRATION.1-PV1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_O34.9-DONOR.8-DONOR_REGISTRATION.2-PRT",
+                  "path": "RSP_O34.9-DONOR.8-DONOR_REGISTRATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_O34.9-DONOR.8-DONOR_REGISTRATION.3-NTE",
+                  "path": "RSP_O34.9-DONOR.8-DONOR_REGISTRATION.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RSP_O34.10-DONATION",
+          "path": "RSP_O34.10-DONATION",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RSP_O34.10-DONATION.1-DON",
+              "path": "RSP_O34.10-DONATION.1-DON",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/DON"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_O34.10-DONATION.2-DONOR_OBSERVATIONS",
+              "path": "RSP_O34.10-DONATION.2-DONOR_OBSERVATIONS",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RSP_O34.10-DONATION.2-DONOR_OBSERVATIONS.1-OBX",
+                  "path": "RSP_O34.10-DONATION.2-DONOR_OBSERVATIONS.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_O34.10-DONATION.2-DONOR_OBSERVATIONS.2-PRT",
+                  "path": "RSP_O34.10-DONATION.2-DONOR_OBSERVATIONS.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RSP_O34.10-DONATION.3-NTE",
+              "path": "RSP_O34.10-DONATION.3-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 RSP_O34 Segment Definition",
+  "name": "RSP_O34",
+  "type": "http://hl7.org/v2/StructureDefinition/RSP_O34"
+}

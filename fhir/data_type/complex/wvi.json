@@ -1,6 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "url": "http://hl7.org/v2/StructureDefinition/WVI",
+  "id": "WVI",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/ComplexDataType-Profile"
@@ -12,7 +13,7 @@
   "status": "active",
   "kind": "logical",
   "abstract": false,
-  "type": "http://hl7.org/v2/StructureDefinition/WVI",
+  "type": "WVI",
   "baseDefinition": "http://hl7.org/v2/StructureDefinition/ComplexDataType",
   "derivation": "specialization",
   "differential": {
@@ -80,6 +81,5 @@
         ]
       }
     ]
-  },
-  "id": "WVI"
+  }
 }

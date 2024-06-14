@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RQ1",
+  "id": "RQ1",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "RQ1.1",
         "path": "RQ1.1",
-        "short": " - RQ1",
+        "short": "- RQ1.1 - ",
         "definition": "Definition: This field contains the reference price for the requisition unit of measure that is known to the requisition application. It may or may not be the actual cost of acquiring the item from a supplier. It is also not the price charged to the patient.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "RQ1.2",
         "path": "RQ1.2",
-        "short": " - RQ1",
+        "short": "- RQ1.2 - ",
         "definition": "Definition: This field contains the unique code that identifies the manufacturer on the application receiving the requisition. This field is conditional because either RQ1-2-manufacturer ID and RQ1-3-manufacturer's catalog or RQ1-4-vendor ID and RQ1-5-vendor catalog must be valued.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "RQ1.3",
         "path": "RQ1.3",
-        "short": " - RQ1",
+        "short": "- RQ1.3 - ",
         "definition": "Definition: This field is the manufacturer's catalog number or code for this item. This field is conditional because either RQ1-2-manufacturer ID and RQ1-3-manufacturer's catalog or RQ1-4-vendor ID and RQ1-5-vendor catalog must be valued.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -124,7 +126,7 @@
       {
         "id": "RQ1.4",
         "path": "RQ1.4",
-        "short": " - RQ1",
+        "short": "- RQ1.4 - ",
         "definition": "Definition: This field is the unique code that identifies the vendor on the application receiving the requisition. This field is conditional because either RQ1-2-manufacturer ID and RQ1-3-manufacturer's catalog or RQ1-4-vendor ID and RQ1-5-vendor catalog must be valued. Refer to Table 0683 - Vendor ID in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -154,7 +156,7 @@
       {
         "id": "RQ1.5",
         "path": "RQ1.5",
-        "short": " - RQ1",
+        "short": "- RQ1.5 - ",
         "definition": "Definition: This field is the vendor's catalog number, name, or code for this item. This field is conditional because either RQ1-2-manufacturer ID and RQ1-3-manufacturer's catalog or RQ1-4-vendor ID and RQ1-5-vendor catalog must be valued.",
         "description": null,
         "code": [
@@ -167,7 +169,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -193,7 +195,7 @@
       {
         "id": "RQ1.6",
         "path": "RQ1.6",
-        "short": " - RQ1",
+        "short": "- RQ1.6 - ",
         "definition": "Definition: This field indicates whether this item is subject to tax.",
         "description": null,
         "code": [
@@ -206,7 +208,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -236,7 +238,7 @@
       {
         "id": "RQ1.7",
         "path": "RQ1.7",
-        "short": " - RQ1",
+        "short": "- RQ1.7 - ",
         "definition": "Definition: This field indicates whether the ancillary department may substitute an equivalent version of the item(s) ordered. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[HL7 Table 0136 - Yes/No Indicator] as defined in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -249,7 +251,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -278,9 +280,7 @@
       }
     ]
   },
-  "id": "RQ1",
   "title": "HL7 v2 RQ1 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/RQ1",
   "name": "RQ1",
-  "type": "http://hl7.org/v2/StructureDefinition/RQ1"
+  "type": "RQ1"
 }

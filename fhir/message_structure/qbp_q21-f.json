@@ -1,0 +1,24 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/QBP_Q21-F",
+  "id": "QBP_Q21-F",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+
+    ]
+  },
+  "title": "HL7 v2 QBP_Q21-F Segment Definition",
+  "name": "QBP_Q21-F",
+  "type": "http://hl7.org/v2/StructureDefinition/QBP_Q21-F"
+}

@@ -1,0 +1,222 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MFN_M05",
+  "id": "MFN_M05",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "MFN_M05.1-MSH",
+          "path": "MFN_M05.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M05.2-SFT",
+          "path": "MFN_M05.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M05.3-UAC",
+          "path": "MFN_M05.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M05.4-MFI",
+          "path": "MFN_M05.4-MFI",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MFI"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M05.5-MF_LOCATION",
+          "path": "MFN_M05.5-MF_LOCATION",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "MFN_M05.5-MF_LOCATION.1-MFE",
+              "path": "MFN_M05.5-MF_LOCATION.1-MFE",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/MFE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M05.5-MF_LOCATION.2-LOC",
+              "path": "MFN_M05.5-MF_LOCATION.2-LOC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/LOC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M05.5-MF_LOCATION.3-LCH",
+              "path": "MFN_M05.5-MF_LOCATION.3-LCH",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/LCH"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M05.5-MF_LOCATION.4-LRL",
+              "path": "MFN_M05.5-MF_LOCATION.4-LRL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/LRL"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M05.5-MF_LOCATION.5-MF_LOC_DEPT",
+              "path": "MFN_M05.5-MF_LOCATION.5-MF_LOC_DEPT",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "MFN_M05.5-MF_LOCATION.5-MF_LOC_DEPT.1-LDP",
+                  "path": "MFN_M05.5-MF_LOCATION.5-MF_LOC_DEPT.1-LDP",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/LDP"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "MFN_M05.5-MF_LOCATION.5-MF_LOC_DEPT.2-LCH",
+                  "path": "MFN_M05.5-MF_LOCATION.5-MF_LOC_DEPT.2-LCH",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/LCH"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "MFN_M05.5-MF_LOCATION.5-MF_LOC_DEPT.3-LCC",
+                  "path": "MFN_M05.5-MF_LOCATION.5-MF_LOC_DEPT.3-LCC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/LCC"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 MFN_M05 Segment Definition",
+  "name": "MFN_M05",
+  "type": "http://hl7.org/v2/StructureDefinition/MFN_M05"
+}

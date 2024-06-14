@@ -1,0 +1,158 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RDY_K15-A",
+  "id": "RDY_K15-A",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RDY_K15-A.1-MSH",
+          "path": "RDY_K15-A.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RDY_K15-A.2-SFT",
+          "path": "RDY_K15-A.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RDY_K15-A.3-UAC",
+          "path": "RDY_K15-A.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RDY_K15-A.4-MSA",
+          "path": "RDY_K15-A.4-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RDY_K15-A.5-ERR",
+          "path": "RDY_K15-A.5-ERR",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RDY_K15-A.6-QAK",
+          "path": "RDY_K15-A.6-QAK",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QAK"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RDY_K15-A.7-QPD",
+          "path": "RDY_K15-A.7-QPD",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QPD"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RDY_K15-A.8-DSP",
+          "path": "RDY_K15-A.8-DSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RDY_K15-A.9-DSC",
+          "path": "RDY_K15-A.9-DSC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DSC"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 RDY_K15-A Segment Definition",
+  "name": "RDY_K15-A",
+  "type": "http://hl7.org/v2/StructureDefinition/RDY_K15-A"
+}

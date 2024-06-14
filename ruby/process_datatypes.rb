@@ -5,7 +5,8 @@ def create_cdt_code_system(dts)
   # create code system of complex data types
   concept = []
   dts.each do |dt|
-    concept << { code:"http://hl7.org/v2/StructureDefinition/#{dt.code}", display:dt.name }
+    # concept << { code:"http://hl7.org/v2/StructureDefinition/#{dt.code}", display:dt.name }
+    concept << { code:dt.code, display:dt.name }
   end
 
   path = File.expand_path("~/projects/v2fhir/fhir/data_type/complex/v2-cs-complex-data-types.json")
@@ -31,7 +32,8 @@ def create_cdt_structure_definitions(dts)
     json['title'] = "HL7 v2 #{code} Data Type"
     json['url']   = "http://hl7.org/v2/StructureDefinition/#{code}"
     json['name']  = code
-    json['type']  = "http://hl7.org/v2/StructureDefinition/#{code}"
+    # json['type']  = "http://hl7.org/v2/StructureDefinition/#{code}"
+    json['type']  = code
     elements = []
     dt.components.each do |comp|
       el = {}
@@ -111,5 +113,5 @@ def create_cdt_structure_definitions(dts)
     File.open(path, 'w+') { |f| f.puts JSON.pretty_generate(json) }
   end  
 end
-# create_cdt_code_system(dts)
+create_cdt_code_system(dts)
 create_cdt_structure_definitions(dts)

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SFT",
+  "id": "SFT",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "SFT.1",
         "path": "SFT.1",
-        "short": " - SFT",
+        "short": "- SFT.1 - ",
         "definition": "Definition: Organization identification information for the software vendor that created this transaction. The purpose of this field, along with the remaining fields in this segment, is to provide a more complete picture of applications that are sending HL7 messages. The Software Vendor Organization field would allow the identification of the vendor who is responsible for maintaining the application.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "SFT.2",
         "path": "SFT.2",
-        "short": " - SFT",
+        "short": "- SFT.2 - ",
         "definition": "Definition: Latest software version number of the sending system that has been compliance tested and accepted. Software Certified Version or Release Number helps to provide a complete picture of the application that is sending/receiving HL7 messages. Versions are important in identifying a specific 'release' of an application. In some situations, the receiving application validates the Software Certified Version or Release Number against a list of \"certified\" versions/releases of the particular software to determine if the sending application adheres to specific business rules required by the receiving application.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -81,7 +83,7 @@
       {
         "id": "SFT.3",
         "path": "SFT.3",
-        "short": " - SFT",
+        "short": "- SFT.3 - ",
         "definition": "Definition: The name of the software product that submitted the transaction. A key component in the identification of an application is its Software Product Name. This is a key piece of information in identifying an application.",
         "description": null,
         "code": [
@@ -94,7 +96,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -120,7 +122,7 @@
       {
         "id": "SFT.4",
         "path": "SFT.4",
-        "short": " - SFT",
+        "short": "- SFT.4 - ",
         "definition": "Definition: Issued by a vendor for each unique software version instance to distinguish between like versions of the same software e.g., a checksum.",
         "description": null,
         "code": [
@@ -133,7 +135,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -159,7 +161,7 @@
       {
         "id": "SFT.5",
         "path": "SFT.5",
-        "short": " - SFT",
+        "short": "- SFT.5 - ",
         "definition": "Definition: Software identification information that can be supplied by a software vendor with their transaction. Might include configuration settings, etc.",
         "description": null,
         "code": [
@@ -172,7 +174,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -185,7 +187,7 @@
       {
         "id": "SFT.6",
         "path": "SFT.6",
-        "short": " - SFT",
+        "short": "- SFT.6 - ",
         "definition": "Definition: Date the submitting software was installed at the sending site.",
         "description": null,
         "code": [
@@ -198,7 +200,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -210,9 +212,7 @@
       }
     ]
   },
-  "id": "SFT",
   "title": "HL7 v2 SFT Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/SFT",
   "name": "SFT",
-  "type": "http://hl7.org/v2/StructureDefinition/SFT"
+  "type": "SFT"
 }

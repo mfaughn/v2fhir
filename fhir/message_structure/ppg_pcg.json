@@ -1,0 +1,955 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PPG_PCG",
+  "id": "PPG_PCG",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "PPG_PCG.1-MSH",
+          "path": "PPG_PCG.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPG_PCG.2-SFT",
+          "path": "PPG_PCG.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPG_PCG.3-UAC",
+          "path": "PPG_PCG.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPG_PCG.4-PID",
+          "path": "PPG_PCG.4-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPG_PCG.5-GSP",
+          "path": "PPG_PCG.5-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPG_PCG.6-GSR",
+          "path": "PPG_PCG.6-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPG_PCG.7-GSC",
+          "path": "PPG_PCG.7-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPG_PCG.8-PROVIDER",
+          "path": "PPG_PCG.8-PROVIDER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PPG_PCG.8-PROVIDER.1-PRD",
+              "path": "PPG_PCG.8-PROVIDER.1-PRD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PPG_PCG.8-PROVIDER.2-CTD",
+              "path": "PPG_PCG.8-PROVIDER.2-CTD",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "PPG_PCG.9-PATIENT_VISIT",
+          "path": "PPG_PCG.9-PATIENT_VISIT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PPG_PCG.9-PATIENT_VISIT.1-PV1",
+              "path": "PPG_PCG.9-PATIENT_VISIT.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PPG_PCG.9-PATIENT_VISIT.2-PV2",
+              "path": "PPG_PCG.9-PATIENT_VISIT.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "PPG_PCG.10-PATHWAY",
+          "path": "PPG_PCG.10-PATHWAY",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PPG_PCG.10-PATHWAY.1-PTH",
+              "path": "PPG_PCG.10-PATHWAY.1-PTH",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PTH"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PPG_PCG.10-PATHWAY.2-NTE",
+              "path": "PPG_PCG.10-PATHWAY.2-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PPG_PCG.10-PATHWAY.3-VAR",
+              "path": "PPG_PCG.10-PATHWAY.3-VAR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PPG_PCG.10-PATHWAY.4-PATHWAY_PARTICIPATION",
+              "path": "PPG_PCG.10-PATHWAY.4-PATHWAY_PARTICIPATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "PPG_PCG.10-PATHWAY.4-PATHWAY_PARTICIPATION.1-ROL",
+                  "path": "PPG_PCG.10-PATHWAY.4-PATHWAY_PARTICIPATION.1-ROL",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PPG_PCG.10-PATHWAY.4-PATHWAY_PARTICIPATION.2-PRT",
+                  "path": "PPG_PCG.10-PATHWAY.4-PATHWAY_PARTICIPATION.2-PRT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PPG_PCG.10-PATHWAY.4-PATHWAY_PARTICIPATION.3-VAR",
+                  "path": "PPG_PCG.10-PATHWAY.4-PATHWAY_PARTICIPATION.3-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "PPG_PCG.10-PATHWAY.5-GOAL",
+              "path": "PPG_PCG.10-PATHWAY.5-GOAL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "PPG_PCG.10-PATHWAY.5-GOAL.1-GOL",
+                  "path": "PPG_PCG.10-PATHWAY.5-GOAL.1-GOL",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GOL"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PPG_PCG.10-PATHWAY.5-GOAL.2-NTE",
+                  "path": "PPG_PCG.10-PATHWAY.5-GOAL.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PPG_PCG.10-PATHWAY.5-GOAL.3-VAR",
+                  "path": "PPG_PCG.10-PATHWAY.5-GOAL.3-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PPG_PCG.10-PATHWAY.5-GOAL.4-GOAL_PARTICIPATION",
+                  "path": "PPG_PCG.10-PATHWAY.5-GOAL.4-GOAL_PARTICIPATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.4-GOAL_PARTICIPATION.1-ROL",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.4-GOAL_PARTICIPATION.1-ROL",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.4-GOAL_PARTICIPATION.2-PRT",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.4-GOAL_PARTICIPATION.2-PRT",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.4-GOAL_PARTICIPATION.3-VAR",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.4-GOAL_PARTICIPATION.3-VAR",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "PPG_PCG.10-PATHWAY.5-GOAL.5-GOAL_OBSERVATION",
+                  "path": "PPG_PCG.10-PATHWAY.5-GOAL.5-GOAL_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.5-GOAL_OBSERVATION.1-OBX",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.5-GOAL_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.5-GOAL_OBSERVATION.2-PRT",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.5-GOAL_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.5-GOAL_OBSERVATION.3-NTE",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.5-GOAL_OBSERVATION.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM",
+                  "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.1-PRB",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.1-PRB",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRB"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.2-NTE",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.2-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.3-VAR",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.3-VAR",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.4-PROBLEM_PARTICIPATION",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.4-PROBLEM_PARTICIPATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.4-PROBLEM_PARTICIPATION.1-ROL",
+                          "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.4-PROBLEM_PARTICIPATION.1-ROL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.4-PROBLEM_PARTICIPATION.2-PRT",
+                          "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.4-PROBLEM_PARTICIPATION.2-PRT",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.4-PROBLEM_PARTICIPATION.3-VAR",
+                          "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.4-PROBLEM_PARTICIPATION.3-VAR",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.5-PROBLEM_OBSERVATION",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.5-PROBLEM_OBSERVATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.5-PROBLEM_OBSERVATION.1-OBX",
+                          "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.5-PROBLEM_OBSERVATION.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.5-PROBLEM_OBSERVATION.2-PRT",
+                          "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.5-PROBLEM_OBSERVATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.5-PROBLEM_OBSERVATION.3-NTE",
+                          "path": "PPG_PCG.10-PATHWAY.5-GOAL.6-PROBLEM.5-PROBLEM_OBSERVATION.3-NTE",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER",
+                  "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.1-ORC",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.1-ORC",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL",
+                      "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.1-CHOICE",
+                          "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.1-CHOICE",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.1-CHOICE.1",
+                              "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.1-CHOICE.1",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "BackboneElement"
+                                }
+                              ]
+                            },
+                            [
+                              [
+                                {
+                                  "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.1-CHOICE.1.1-OBR",
+                                  "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.1-CHOICE.1.1-OBR",
+                                  "min": 0,
+                                  "max": "1",
+                                  "definition": "1",
+                                  "short": "1",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          ],
+                          [
+                            {
+                              "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.1-CHOICE.2",
+                              "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.1-CHOICE.2",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "BackboneElement"
+                                }
+                              ]
+                            },
+                            [
+                              [
+                                {
+                                  "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.1-CHOICE.2.1-Hxx",
+                                  "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.1-CHOICE.2.1-Hxx",
+                                  "min": 0,
+                                  "max": "1",
+                                  "definition": "1",
+                                  "short": "1",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/Hxx"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.2-NTE",
+                          "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.2-NTE",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.3-VAR",
+                          "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.3-VAR",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION",
+                          "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.1-OBX",
+                              "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.1-OBX",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.2-PRT",
+                              "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.2-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.3-NTE",
+                              "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.3-NTE",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.4-VAR",
+                              "path": "PPG_PCG.10-PATHWAY.5-GOAL.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.4-VAR",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 PPG_PCG Segment Definition",
+  "name": "PPG_PCG",
+  "type": "http://hl7.org/v2/StructureDefinition/PPG_PCG"
+}

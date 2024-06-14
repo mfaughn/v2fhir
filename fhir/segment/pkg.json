@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PKG",
+  "id": "PKG",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "PKG.1",
         "path": "PKG.1",
-        "short": " - PKG",
+        "short": "- PKG.1 - ",
         "definition": "Definition: This field contains a sequential number that identifies this segment within a given Purchasing Vendor segment group. For the first occurrence of the segment, the sequence number shall be one; for the second occurrence, the sequence number shall be two; etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "PKG.2",
         "path": "PKG.2",
-        "short": " - PKG",
+        "short": "- PKG.2 - ",
         "definition": "Definition: This field contains the packaging unit that this inventory supply item can be ordered or issued in when purchased from the vendor in the related vendor segment. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70818[_User-defined Table 0818 – Package_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "PKG.3",
         "path": "PKG.3",
-        "short": " - PKG",
+        "short": "- PKG.3 - ",
         "definition": "Definition: This field contains an indicator that determines whether or not the unit of measure present in the PKG-2 is considered the default Order unit of measure. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70532[_HL7 Table 0532 - Expanded Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -115,7 +117,7 @@
       {
         "id": "PKG.4",
         "path": "PKG.4",
-        "short": " - PKG",
+        "short": "- PKG.4 - ",
         "definition": "Definition: This field contains the number of units present within a unit of measure.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -154,7 +156,7 @@
       {
         "id": "PKG.5",
         "path": "PKG.5",
-        "short": " - PKG",
+        "short": "- PKG.5 - ",
         "definition": "Definition: This field contains the price of the item when purchased from the vendor in the associated VND segment, for the unit of measure present in this PKG segment.",
         "description": null,
         "code": [
@@ -167,7 +169,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -180,7 +182,7 @@
       {
         "id": "PKG.6",
         "path": "PKG.6",
-        "short": " - PKG",
+        "short": "- PKG.6 - ",
         "definition": "Definition: This field contains a future price for the item based on the packaging unit in PKG-2.",
         "description": null,
         "code": [
@@ -193,7 +195,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -206,7 +208,7 @@
       {
         "id": "PKG.7",
         "path": "PKG.7",
-        "short": " - PKG",
+        "short": "- PKG.7 - ",
         "definition": "Definition: This field contains the date and time that a price change for the item becomes effective.",
         "description": null,
         "code": [
@@ -219,7 +221,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -232,7 +234,7 @@
       {
         "id": "PKG.8",
         "path": "PKG.8",
-        "short": " - PKG",
+        "short": "- PKG.8 - ",
         "definition": "Definition: This field contains the GTIN assigned to an item by the item manufacturer used for unique supply item identification by unit of measure within the GS1 standard.",
         "description": null,
         "code": [
@@ -245,7 +247,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -258,7 +260,7 @@
       {
         "id": "PKG.9",
         "path": "PKG.9",
-        "short": " - PKG",
+        "short": "- PKG.9 - ",
         "definition": "Definition: This field contains the contract price of this item UOM for the vendor sent in VND.",
         "description": null,
         "code": [
@@ -271,7 +273,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MO"
+            "code": "MO"
           }
         ],
         "extension": [
@@ -284,7 +286,7 @@
       {
         "id": "PKG.10",
         "path": "PKG.10",
-        "short": " - PKG",
+        "short": "- PKG.10 - ",
         "definition": "Definition: This field contains the Quantity of the lowest UOM in the UOM sent in sequence 3 (Default Order Unit of Measure).",
         "description": null,
         "code": [
@@ -297,7 +299,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -310,7 +312,7 @@
       {
         "id": "PKG.11",
         "path": "PKG.11",
-        "short": " - PKG",
+        "short": "- PKG.11 - ",
         "definition": "Definition: This field contains the vendor catalog number of the item UM sent in sequence 3 (Default Order Unit of Measure).",
         "description": null,
         "code": [
@@ -323,7 +325,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -335,9 +337,7 @@
       }
     ]
   },
-  "id": "PKG",
   "title": "HL7 v2 PKG Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/PKG",
   "name": "PKG",
-  "type": "http://hl7.org/v2/StructureDefinition/PKG"
+  "type": "PKG"
 }

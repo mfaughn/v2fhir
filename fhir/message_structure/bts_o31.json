@@ -1,0 +1,453 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/BTS_O31",
+  "id": "BTS_O31",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "BTS_O31.1-MSH",
+          "path": "BTS_O31.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BTS_O31.2-ARV",
+          "path": "BTS_O31.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BTS_O31.3-SFT",
+          "path": "BTS_O31.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BTS_O31.4-UAC",
+          "path": "BTS_O31.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BTS_O31.5-NTE",
+          "path": "BTS_O31.5-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BTS_O31.6-PATIENT",
+          "path": "BTS_O31.6-PATIENT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "BTS_O31.6-PATIENT.1-PID",
+              "path": "BTS_O31.6-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.6-PATIENT.2-PD1",
+              "path": "BTS_O31.6-PATIENT.2-PD1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.6-PATIENT.3-GSP",
+              "path": "BTS_O31.6-PATIENT.3-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.6-PATIENT.4-GSR",
+              "path": "BTS_O31.6-PATIENT.4-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.6-PATIENT.5-GSC",
+              "path": "BTS_O31.6-PATIENT.5-GSC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.6-PATIENT.6-PRT",
+              "path": "BTS_O31.6-PATIENT.6-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.6-PATIENT.7-NTE",
+              "path": "BTS_O31.6-PATIENT.7-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.6-PATIENT.8-PATIENT_VISIT",
+              "path": "BTS_O31.6-PATIENT.8-PATIENT_VISIT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "BTS_O31.6-PATIENT.8-PATIENT_VISIT.1-PV1",
+                  "path": "BTS_O31.6-PATIENT.8-PATIENT_VISIT.1-PV1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BTS_O31.6-PATIENT.8-PATIENT_VISIT.2-PV2",
+                  "path": "BTS_O31.6-PATIENT.8-PATIENT_VISIT.2-PV2",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BTS_O31.6-PATIENT.8-PATIENT_VISIT.3-PRT",
+                  "path": "BTS_O31.6-PATIENT.8-PATIENT_VISIT.3-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "BTS_O31.7-ORDER",
+          "path": "BTS_O31.7-ORDER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "BTS_O31.7-ORDER.1-ORC",
+              "path": "BTS_O31.7-ORDER.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.7-ORDER.2-PRT",
+              "path": "BTS_O31.7-ORDER.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.7-ORDER.3-TIMING",
+              "path": "BTS_O31.7-ORDER.3-TIMING",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "BTS_O31.7-ORDER.3-TIMING.1-TQ1",
+                  "path": "BTS_O31.7-ORDER.3-TIMING.1-TQ1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BTS_O31.7-ORDER.3-TIMING.2-TQ2",
+                  "path": "BTS_O31.7-ORDER.3-TIMING.2-TQ2",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "BTS_O31.7-ORDER.4-BPO",
+              "path": "BTS_O31.7-ORDER.4-BPO",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/BPO"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.7-ORDER.5-NTE",
+              "path": "BTS_O31.7-ORDER.5-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BTS_O31.7-ORDER.6-PRODUCT_STATUS",
+              "path": "BTS_O31.7-ORDER.6-PRODUCT_STATUS",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "BTS_O31.7-ORDER.6-PRODUCT_STATUS.1-BTX",
+                  "path": "BTS_O31.7-ORDER.6-PRODUCT_STATUS.1-BTX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/BTX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BTS_O31.7-ORDER.6-PRODUCT_STATUS.2-NTE",
+                  "path": "BTS_O31.7-ORDER.6-PRODUCT_STATUS.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 BTS_O31 Segment Definition",
+  "name": "BTS_O31",
+  "type": "http://hl7.org/v2/StructureDefinition/BTS_O31"
+}

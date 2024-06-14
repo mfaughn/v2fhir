@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/AUT",
+  "id": "AUT",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "AUT.1",
         "path": "AUT.1",
-        "short": " - AUT",
+        "short": "- AUT.1 - ",
         "definition": "Definition: This field contains the ID of the coverage plan authorizing treatment. Values should be entries in a locally defined table of plan codes. file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70072[_User_ _defined Table 0072- Insurance Plan ID_] is used as the HL7 identifier for the user-defined table of values for this field.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "AUT.2",
         "path": "AUT.2",
-        "short": " - AUT",
+        "short": "- AUT.2 - ",
         "definition": "Definition: This field contains the ID of the insurance company or other entity that administers the authorizing coverage plan. Values may be entries in a locally defined table of payor codes__. file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70285[User-defined Table 0285 - Insurance Company ID Codes]__ is used as the HL7 identifier for the user-defined table of values for this field.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -76,7 +78,7 @@
       {
         "id": "AUT.3",
         "path": "AUT.3",
-        "short": " - AUT",
+        "short": "- AUT.3 - ",
         "definition": "Definition: This field contains the name of the insurance company or other entity that administers the authorizing coverage plan.",
         "description": null,
         "code": [
@@ -89,7 +91,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -115,7 +117,7 @@
       {
         "id": "AUT.4",
         "path": "AUT.4",
-        "short": " - AUT",
+        "short": "- AUT.4 - ",
         "definition": "Definition: This field contains the effective date of the authorization.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -141,7 +143,7 @@
       {
         "id": "AUT.5",
         "path": "AUT.5",
-        "short": " - AUT",
+        "short": "- AUT.5 - ",
         "definition": "Definition: This field contains the expiration date after which the authorization to treat will no longer be in effect from the perspective of the coverage plan.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -167,7 +169,7 @@
       {
         "id": "AUT.6",
         "path": "AUT.6",
-        "short": " - AUT",
+        "short": "- AUT.6 - ",
         "definition": "Definition: This field contains the coverage application's permanent identifier assigned to track the authorization and all related billing documents. This field is conditionally required. It is not required when authorization information is being requested. However, it is required when this segment is contained in a message which is responding to a request and contains the authorization information. This is a composite field.",
         "description": null,
         "code": [
@@ -180,7 +182,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -193,7 +195,7 @@
       {
         "id": "AUT.7",
         "path": "AUT.7",
-        "short": " - AUT",
+        "short": "- AUT.7 - ",
         "definition": "Definition: This field contains the dollar limit for reimbursement specified by the coverage plan for the authorized treatment.",
         "description": null,
         "code": [
@@ -206,7 +208,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -219,7 +221,7 @@
       {
         "id": "AUT.8",
         "path": "AUT.8",
-        "short": " - AUT",
+        "short": "- AUT.8 - ",
         "definition": "Definition: This field contains the _requested_ number of times that the treatment may be administered to the patient without obtaining additional authorization.",
         "description": null,
         "code": [
@@ -232,7 +234,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -245,7 +247,7 @@
       {
         "id": "AUT.9",
         "path": "AUT.9",
-        "short": " - AUT",
+        "short": "- AUT.9 - ",
         "definition": "Definition: This field contains the number of times that the authorized treatment may be administered to the patient without obtaining additional authorization.",
         "description": null,
         "code": [
@@ -258,7 +260,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -271,7 +273,7 @@
       {
         "id": "AUT.10",
         "path": "AUT.10",
-        "short": " - AUT",
+        "short": "- AUT.10 - ",
         "definition": "Definition: This field contains the date that the authorization originated with the authorizing party.",
         "description": null,
         "code": [
@@ -284,7 +286,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -297,7 +299,7 @@
       {
         "id": "AUT.11",
         "path": "AUT.11",
-        "short": " - AUT",
+        "short": "- AUT.11 - ",
         "definition": "Definition: Discipline – The scope of medical service(s) for which reimbursement for services rendered is requested. Examples include Physiotherapy, Occupational Therapy, Speech, etc. This field contains the requested discipline(s). Refer to Table 0522 - Requested Discipline(s) in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -310,7 +312,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -327,7 +329,7 @@
       {
         "id": "AUT.12",
         "path": "AUT.12",
-        "short": " - AUT",
+        "short": "- AUT.12 - ",
         "definition": "Definition: Discipline – The scope of medical service(s) for which reimbursement for services rendered is authorized. Examples include Physiotherapy, Occupational Therapy, Speech, etc. This field contains the authorized discipline(s). Refer to Table 0546 - Authorized Discipline(s) in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -340,7 +342,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -357,7 +359,7 @@
       {
         "id": "AUT.13",
         "path": "AUT.13",
-        "short": " - AUT",
+        "short": "- AUT.13 - ",
         "definition": "Definition: The authorization/referral type distinguishes the content of the segment as pertaining to an authorization vs a referral vs other types. Refer to Table 0551 - Authorization Referral Type in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -370,7 +372,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -400,7 +402,7 @@
       {
         "id": "AUT.14",
         "path": "AUT.14",
-        "short": " - AUT",
+        "short": "- AUT.14 - ",
         "definition": "Definition: The authorization/referral approval status indicates that status of an authorization. Refer to Table 0563 - Approval Status in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -413,7 +415,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -443,7 +445,7 @@
       {
         "id": "AUT.15",
         "path": "AUT.15",
-        "short": " - AUT",
+        "short": "- AUT.15 - ",
         "definition": "Definition: The authorization planned treatment stop date is the date that the patient's treatment from this authorization is expected to complete, based on procedural protocols. This value can be used to indicate that an extension to an authorization is necessary, if the treatment continues longer than expected.",
         "description": null,
         "code": [
@@ -456,7 +458,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -482,7 +484,7 @@
       {
         "id": "AUT.16",
         "path": "AUT.16",
-        "short": " - AUT",
+        "short": "- AUT.16 - ",
         "definition": "Definition: The authorization clinical service provides a means of categorizing the authorization. This is especially valuable for differentiating authorizations that do not have specific procedure codes associated with them. Refer to Table 0573 - Clinical Service in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -495,7 +497,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -525,7 +527,7 @@
       {
         "id": "AUT.17",
         "path": "AUT.17",
-        "short": " - AUT",
+        "short": "- AUT.17 - ",
         "definition": "Definition: The authorization reason is a free text field allowing a user to capture, in a non-coded format, the reason for the authorization. Typically this would describe the patient's condition or illness for which the authorization is recorded.",
         "description": null,
         "code": [
@@ -538,7 +540,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -564,7 +566,7 @@
       {
         "id": "AUT.18",
         "path": "AUT.18",
-        "short": " - AUT",
+        "short": "- AUT.18 - ",
         "definition": "Definition: The authorized duration is the amount of time, in days or visits, that the patient has been authorized for treatment by this authorization. The duration of \"days\" is reserved for inpatient authorizations.",
         "description": null,
         "code": [
@@ -577,7 +579,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -603,7 +605,7 @@
       {
         "id": "AUT.19",
         "path": "AUT.19",
-        "short": " - AUT",
+        "short": "- AUT.19 - ",
         "definition": "Definition: The used duration is the amount of time, in days or visits that the patient has used of the originally authorized duration. The duration of \"days\" is reserved for inpatient authorizations.",
         "description": null,
         "code": [
@@ -616,7 +618,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -642,7 +644,7 @@
       {
         "id": "AUT.20",
         "path": "AUT.20",
-        "short": " - AUT",
+        "short": "- AUT.20 - ",
         "definition": "Definition: The scheduled treatments is the amount of time, in days or visits that the patient has planned treatments scheduled The duration of \"days\" is reserved for inpatient authorizations.",
         "description": null,
         "code": [
@@ -655,7 +657,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -681,7 +683,7 @@
       {
         "id": "AUT.21",
         "path": "AUT.21",
-        "short": " - AUT",
+        "short": "- AUT.21 - ",
         "definition": "Definition: The authorization encounter type provides a means of specifying the environment for the performance of the authorized services. For example, it is common for a procedure to be authorized only for an outpatient environment. If something causes the procedure to be performed in an inpatient environment, a new authorization would be needed. Refer to Table 0574 - Encounter Type in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -694,7 +696,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -724,7 +726,7 @@
       {
         "id": "AUT.22",
         "path": "AUT.22",
-        "short": " - AUT",
+        "short": "- AUT.22 - ",
         "definition": "Definition: The authorization benefit amount is the amount remaining from the insurance company related to this authorization.",
         "description": null,
         "code": [
@@ -737,7 +739,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MO"
+            "code": "MO"
           }
         ],
         "extension": [
@@ -763,7 +765,7 @@
       {
         "id": "AUT.23",
         "path": "AUT.23",
-        "short": " - AUT",
+        "short": "- AUT.23 - ",
         "definition": "Definition: This represents the organization to which the patient was referred, or that is authorized to perform the procedure(s). The authorized provider represents the organization recognized by the insurance carrier that is authorized to perform the services for the patient specified on the authorization.",
         "description": null,
         "code": [
@@ -776,7 +778,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -802,7 +804,7 @@
       {
         "id": "AUT.24",
         "path": "AUT.24",
-        "short": " - AUT",
+        "short": "- AUT.24 - ",
         "definition": "Definition: The authorized HP represents the specific health professional being authorized to perform the services for the patient. This is a less frequently used field, as most often the authorization is for a group/organization and not a specific HP within that group.",
         "description": null,
         "code": [
@@ -815,7 +817,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -841,7 +843,7 @@
       {
         "id": "AUT.25",
         "path": "AUT.25",
-        "short": " - AUT",
+        "short": "- AUT.25 - ",
         "definition": "Definition: The authorization source text allows a user to capture information (such as the name) of the person contacted regarding the specific authorization.",
         "description": null,
         "code": [
@@ -854,7 +856,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -880,7 +882,7 @@
       {
         "id": "AUT.26",
         "path": "AUT.26",
-        "short": " - AUT",
+        "short": "- AUT.26 - ",
         "definition": "Definition: The authorization source date allows a user to capture the date the person was contacted regarding the specific authorization.",
         "description": null,
         "code": [
@@ -893,7 +895,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -919,7 +921,7 @@
       {
         "id": "AUT.27",
         "path": "AUT.27",
-        "short": " - AUT",
+        "short": "- AUT.27 - ",
         "definition": "Definition: The authorization source phone number allows a user to capture the phone number of the person contacted regarding the specific authorization.",
         "description": null,
         "code": [
@@ -932,7 +934,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -958,7 +960,7 @@
       {
         "id": "AUT.28",
         "path": "AUT.28",
-        "short": " - AUT",
+        "short": "- AUT.28 - ",
         "definition": "Definition: The authorization notes allow for a free text capture of any notes the user wishes to capture related to the authorization. This is a single notes field that allows the user to add additional text over time, or replace the text that already exists.",
         "description": null,
         "code": [
@@ -971,7 +973,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -997,7 +999,7 @@
       {
         "id": "AUT.29",
         "path": "AUT.29",
-        "short": " - AUT",
+        "short": "- AUT.29 - ",
         "definition": "Definition: This field defines the action to be taken for this authorization. Refer to HL7 Table 0206 - Segment Action Code in Chapter 2C for valid values. When this field is valued, the AUT segment is not in \"snapshot mode\", rather in \"action mode\".",
         "description": null,
         "code": [
@@ -1010,7 +1012,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -1039,9 +1041,7 @@
       }
     ]
   },
-  "id": "AUT",
   "title": "HL7 v2 AUT Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/AUT",
   "name": "AUT",
-  "type": "http://hl7.org/v2/StructureDefinition/AUT"
+  "type": "AUT"
 }

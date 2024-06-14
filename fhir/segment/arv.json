@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ARV",
+  "id": "ARV",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ARV.1",
         "path": "ARV.1",
-        "short": " - ARV",
+        "short": "- ARV.1 - ",
         "definition": "Definition: This field contains the number that identifies this segment. For the first occurrence of the segment, the sequence number shall be one, for the second occurrence, the sequence number shall be two, etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "ARV.2",
         "path": "ARV.2",
-        "short": " - ARV",
+        "short": "- ARV.2 - ",
         "definition": "Definition: This field contains a code defining the action to be taken for this segment. It allows access restriction information to be sent to delete or update previously sent access restrictions. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[_HL7 Table 0206 - Segment Action Code_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -98,7 +100,7 @@
       {
         "id": "ARV.3",
         "path": "ARV.3",
-        "short": " - ARV",
+        "short": "- ARV.3 - ",
         "definition": "Definition: This field specifies the information to which access to sensitive information is restricted by applicable jurisdictional, organizational, patient privacy policy or law. This field is used to identify overarching context, for example specific policy defined data elements or message groups when applicable to ALL groups in the message. For example, under a specific minor’s right to consent for healthcare law coded in ARV-3, all of the minor’s demographic data coded in ARV-4 is sensitive, which may be conveyed in several segments (PID, PD1, PD2)). To a specific element, access may be restricted at the field level by employing the specific HL7 field location in ARV-9. For example, when only some of the demographic data is considered sensitive under a particular minor’s consent coded in ARV-3. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70717[_User-defined Table 0717 – Access Restriction Value_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -111,7 +113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -128,7 +130,7 @@
       {
         "id": "ARV.4",
         "path": "ARV.4",
-        "short": " - ARV",
+        "short": "- ARV.4 - ",
         "definition": "Definition: This field is used to convey the reason for the restricted access. Repeat of the Access Restriction Reason is allowed to accommodate communication of multiple reasons for an access restriction. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70719[_User-defined Table 0719 – Access Restriction Reason Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -141,7 +143,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -158,7 +160,7 @@
       {
         "id": "ARV.5",
         "path": "ARV.5",
-        "short": " - ARV",
+        "short": "- ARV.5 - ",
         "definition": "Definition: Used to convey specific instructions about the protection of the patient's information which must be rendered to end users in accordance with patient consent directive, organizational policy, or jurisdictional law. For example, in US law 42 CFR Part 2, disclosed information made with patient consent must include a renderable “Prohibition on re-disclosure” warning (§ 2.32[multiblock footnote omitted]) In addition, organizational policy may require that some or all of the ARV field privacy tag values be rendered to end users, e.g., marking a consult note with “Restricted Confidentiality” or with sensitivity tags such as “VIP” or “EMP” for employee of the organization.",
         "description": null,
         "code": [
@@ -171,7 +173,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -197,7 +199,7 @@
       {
         "id": "ARV.6",
         "path": "ARV.6",
-        "short": " - ARV",
+        "short": "- ARV.6 - ",
         "definition": "Definition: This element defines the date from which an access restriction commences until the date it is specifically rescinded.",
         "description": null,
         "code": [
@@ -210,7 +212,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DR"
+            "code": "DR"
           }
         ],
         "extension": [
@@ -223,7 +225,7 @@
       {
         "id": "ARV.7",
         "path": "ARV.7",
-        "short": " - ARV",
+        "short": "- ARV.7 - ",
         "definition": "Definition: This field defines the security classification (as defined by ISO/IEC 2382-8:1998(E/F)/ T-REC-X.812-1995) of an IT resource, in this case the message, which may be used to make access control decisions. Use of this field supports the business requirement for increasing or decreasing the level of confidentiality (classification or declassification) for a given message.",
         "description": null,
         "code": [
@@ -236,7 +238,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -253,7 +255,7 @@
       {
         "id": "ARV.8",
         "path": "ARV.8",
-        "short": " - ARV",
+        "short": "- ARV.8 - ",
         "definition": "Definition: This field is repeatable and conveys instructions to users and receivers for secure distribution, transmission, and storage; dictates obligations or mandated actions; specifies any action prohibited by refrain policy such as dissemination controls; and stipulates the permissible purpose of use of an IT resource. It is used where MSH-27 or MSH-28, which may be the compliation of all Security Handling Instructions across all labels, are used, but differ from the appliable ones for the data identified in this ARV segment.",
         "description": null,
         "code": [
@@ -266,7 +268,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -283,7 +285,7 @@
       {
         "id": "ARV.9",
         "path": "ARV.9",
-        "short": " - ARV",
+        "short": "- ARV.9 - ",
         "definition": "Definition: This field is optional and repeating and identifies the location in a message related to the identified access restricted data. If multiple repetitions are present, the listed access restrictions apply to all listed places.",
         "description": null,
         "code": [
@@ -296,7 +298,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ERL"
+            "code": "ERL"
           }
         ],
         "extension": [
@@ -309,7 +311,7 @@
       {
         "id": "ARV.10",
         "path": "ARV.10",
-        "short": " - ARV",
+        "short": "- ARV.10 - ",
         "definition": "Definition: This field carries the unique identifier for this access restriction and is conditionally required when ARV-2 is NOT valued ‘S’ to support the use of action code for tracking changes when using dynamic mode. This instance identifier is persistent between messages. Implementation guides may restrict what mode to use, which will affect the effective optionality of this field.",
         "description": null,
         "code": [
@@ -322,7 +324,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -334,9 +336,7 @@
       }
     ]
   },
-  "id": "ARV",
   "title": "HL7 v2 ARV Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ARV",
   "name": "ARV",
-  "type": "http://hl7.org/v2/StructureDefinition/ARV"
+  "type": "ARV"
 }

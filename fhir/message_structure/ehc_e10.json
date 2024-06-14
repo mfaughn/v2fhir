@@ -1,0 +1,346 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/EHC_E10",
+  "id": "EHC_E10",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "EHC_E10.1-MSH",
+          "path": "EHC_E10.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E10.2-SFT",
+          "path": "EHC_E10.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E10.3-UAC",
+          "path": "EHC_E10.3-UAC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E10.4-MSA",
+          "path": "EHC_E10.4-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E10.5-ERR",
+          "path": "EHC_E10.5-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO",
+          "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.1-IPR",
+              "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.1-IPR",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IPR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.2-NTE",
+              "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.2-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.3-PYE",
+              "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.3-PYE",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PYE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.4-IN1",
+              "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.4-IN1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.5-GSP",
+              "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.5-GSP",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.6-GSR",
+              "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.6-GSR",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.7-IN2",
+              "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.7-IN2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.8-IVC",
+              "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.8-IVC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IVC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION",
+              "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.1-PSS",
+                  "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.1-PSS",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PSS"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP",
+                  "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.1-PSG",
+                      "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.1-PSG",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PSG"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PRODUCT_SERVICE_LINE_INFO",
+                      "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PRODUCT_SERVICE_LINE_INFO",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PRODUCT_SERVICE_LINE_INFO.1-PSL",
+                          "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PRODUCT_SERVICE_LINE_INFO.1-PSL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PSL"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PRODUCT_SERVICE_LINE_INFO.2-ADJ",
+                          "path": "EHC_E10.6-INVOICE_PROCESSING_RESULTS_INFO.9-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PRODUCT_SERVICE_LINE_INFO.2-ADJ",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ADJ"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 EHC_E10 Segment Definition",
+  "name": "EHC_E10",
+  "type": "http://hl7.org/v2/StructureDefinition/EHC_E10"
+}

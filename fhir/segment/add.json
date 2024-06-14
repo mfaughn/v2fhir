@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ADD",
+  "id": "ADD",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ADD.1",
         "path": "ADD.1",
-        "short": " - ADD",
+        "short": "- ADD.1 - ",
         "definition": "Definition: This field is used to define the continuation of the prior segment in a continuation message. See section _2.9.2_, \"_Continuation messages and segments_\" for details. When the ADD is sent after the segment being continued, it contains no fields. It is only a marker that the previous segment is being continued in a subsequent message. Thus fields 1‑N are not present. The sequence designation, 1‑N, means the remainder of the fields in the segment being continued. These remainder of the segment being continued fields are present only when the ADD is sent with a continuation message.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -41,9 +43,7 @@
       }
     ]
   },
-  "id": "ADD",
   "title": "HL7 v2 ADD Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ADD",
   "name": "ADD",
-  "type": "http://hl7.org/v2/StructureDefinition/ADD"
+  "type": "ADD"
 }

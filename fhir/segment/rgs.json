@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RGS",
+  "id": "RGS",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "RGS.1",
         "path": "RGS.1",
-        "short": " - RGS",
+        "short": "- RGS.1 - ",
         "definition": "Definition: This field contains a number that uniquely identifies the information represented by this segment in this transaction for the purposes of addition, change or deletion.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "RGS.2",
         "path": "RGS.2",
-        "short": " - RGS",
+        "short": "- RGS.2 - ",
         "definition": "Definition: This field contains the action to be taken when updating or modifying information in this segment from previously sent interface transactions. Refer to _file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[HL7 Table 0206 - Segment Action Code]_ in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -98,7 +100,7 @@
       {
         "id": "RGS.3",
         "path": "RGS.3",
-        "short": " - RGS",
+        "short": "- RGS.3 - ",
         "definition": "Definition: This field contains an identifier code describing the group of resources following this RGS segment.",
         "description": null,
         "code": [
@@ -111,7 +113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -123,9 +125,7 @@
       }
     ]
   },
-  "id": "RGS",
   "title": "HL7 v2 RGS Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/RGS",
   "name": "RGS",
-  "type": "http://hl7.org/v2/StructureDefinition/RGS"
+  "type": "RGS"
 }

@@ -1,0 +1,502 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SRR_S01",
+  "id": "SRR_S01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "SRR_S01.1-MSH",
+          "path": "SRR_S01.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SRR_S01.2-MSA",
+          "path": "SRR_S01.2-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SRR_S01.3-ERR",
+          "path": "SRR_S01.3-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SRR_S01.4-SCHEDULE",
+          "path": "SRR_S01.4-SCHEDULE",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "SRR_S01.4-SCHEDULE.1-SCH",
+              "path": "SRR_S01.4-SCHEDULE.1-SCH",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/SCH"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRR_S01.4-SCHEDULE.2-TQ1",
+              "path": "SRR_S01.4-SCHEDULE.2-TQ1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRR_S01.4-SCHEDULE.3-NTE",
+              "path": "SRR_S01.4-SCHEDULE.3-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRR_S01.4-SCHEDULE.4-PATIENT",
+              "path": "SRR_S01.4-SCHEDULE.4-PATIENT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.4-PATIENT.1-PID",
+                  "path": "SRR_S01.4-SCHEDULE.4-PATIENT.1-PID",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.4-PATIENT.2-GSP",
+                  "path": "SRR_S01.4-SCHEDULE.4-PATIENT.2-GSP",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.4-PATIENT.3-GSR",
+                  "path": "SRR_S01.4-SCHEDULE.4-PATIENT.3-GSR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.4-PATIENT.4-GSC",
+                  "path": "SRR_S01.4-SCHEDULE.4-PATIENT.4-GSC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.4-PATIENT.5-PRT",
+                  "path": "SRR_S01.4-SCHEDULE.4-PATIENT.5-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.4-PATIENT.6-PV1",
+                  "path": "SRR_S01.4-SCHEDULE.4-PATIENT.6-PV1",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.4-PATIENT.7-PV2",
+                  "path": "SRR_S01.4-SCHEDULE.4-PATIENT.7-PV2",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.4-PATIENT.8-PRT",
+                  "path": "SRR_S01.4-SCHEDULE.4-PATIENT.8-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.4-PATIENT.9-DG1",
+                  "path": "SRR_S01.4-SCHEDULE.4-PATIENT.9-DG1",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/DG1"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "SRR_S01.4-SCHEDULE.5-RESOURCES",
+              "path": "SRR_S01.4-SCHEDULE.5-RESOURCES",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.1-RGS",
+                  "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.1-RGS",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RGS"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.2-SERVICE",
+                  "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.2-SERVICE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.2-SERVICE.1-AIS",
+                      "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.2-SERVICE.1-AIS",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/AIS"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.2-SERVICE.2-NTE",
+                      "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.2-SERVICE.2-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.3-GENERAL_RESOURCE",
+                  "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.3-GENERAL_RESOURCE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.3-GENERAL_RESOURCE.1-AIG",
+                      "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.3-GENERAL_RESOURCE.1-AIG",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/AIG"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.3-GENERAL_RESOURCE.2-NTE",
+                      "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.3-GENERAL_RESOURCE.2-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.4-LOCATION_RESOURCE",
+                  "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.4-LOCATION_RESOURCE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.4-LOCATION_RESOURCE.1-AIL",
+                      "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.4-LOCATION_RESOURCE.1-AIL",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/AIL"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.4-LOCATION_RESOURCE.2-NTE",
+                      "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.4-LOCATION_RESOURCE.2-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.5-PERSONNEL_RESOURCE",
+                  "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.5-PERSONNEL_RESOURCE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.5-PERSONNEL_RESOURCE.1-AIP",
+                      "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.5-PERSONNEL_RESOURCE.1-AIP",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/AIP"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "SRR_S01.4-SCHEDULE.5-RESOURCES.5-PERSONNEL_RESOURCE.2-NTE",
+                      "path": "SRR_S01.4-SCHEDULE.5-RESOURCES.5-PERSONNEL_RESOURCE.2-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 SRR_S01 Segment Definition",
+  "name": "SRR_S01",
+  "type": "http://hl7.org/v2/StructureDefinition/SRR_S01"
+}

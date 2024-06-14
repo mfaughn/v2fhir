@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RXA",
+  "id": "RXA",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "RXA.1",
         "path": "RXA.1",
-        "short": " - RXA",
+        "short": "- RXA.1 - ",
         "definition": "Definition: Use this field if matching this RXA segment to its corresponding RXG segment. If the two applications are not matching RXG and RXA segments, this field's value is zero (0).",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "RXA.2",
         "path": "RXA.2",
-        "short": " - RXA",
+        "short": "- RXA.2 - ",
         "definition": "Definition: This field starts with 1 the first time that medication/treatment is administered for this order. Increments by one with each additional administration of the medication/treatment.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "RXA.3",
         "path": "RXA.3",
-        "short": " - RXA",
+        "short": "- RXA.3 - ",
         "definition": "Definition: If the order is for a continuous administration (such as an IV), and the rate is changed at a certain time after the start, an RAS message can be issued to record the change. For such an RAS message, this field records the time the rate was changed to the new value recorded in the _RXA-12-Administered Per (time unit)_ of the same message.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -120,7 +122,7 @@
       {
         "id": "RXA.4",
         "path": "RXA.4",
-        "short": " - RXA",
+        "short": "- RXA.4 - ",
         "definition": "Definition: If null, the date/time of _RXA-3-Date/Time Start of Administration_ is assumed.",
         "description": null,
         "code": [
@@ -133,7 +135,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -146,7 +148,7 @@
       {
         "id": "RXA.5",
         "path": "RXA.5",
-        "short": " - RXA",
+        "short": "- RXA.5 - ",
         "definition": "Definition: This field contains the identifier of the medical substance/treatment administered. It is equivalent to _OBR-4-universal service ID_ in function. If the substance administered is a vaccine, CVX codes may be used to code this field (see link:#HL70292[_HL7 Table 0292 - Vaccines Administered_]). If CVX code is used to identify vaccines, the coding system component (RXA-5.3) should be valued as \"CVX\", not as \"HL70292.\"",
         "description": null,
         "code": [
@@ -159,7 +161,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -176,7 +178,7 @@
       {
         "id": "RXA.6",
         "path": "RXA.6",
-        "short": " - RXA",
+        "short": "- RXA.6 - ",
         "definition": "Definition: This field contains the amount administered.",
         "description": null,
         "code": [
@@ -189,7 +191,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -202,7 +204,7 @@
       {
         "id": "RXA.7",
         "path": "RXA.7",
-        "short": " - RXA",
+        "short": "- RXA.7 - ",
         "definition": "Definition: This field is conditional because it is required if the administered amount code does not imply units. This field must be in simple units that reflect the actual quantity of the substance administered. It does not include compound units. Refer to Table 0689 - Administered Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -215,7 +217,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -232,7 +234,7 @@
       {
         "id": "RXA.8",
         "path": "RXA.8",
-        "short": " - RXA",
+        "short": "- RXA.8 - ",
         "definition": "Definition: The dosage form indicates the manner in which the medication/treatment is aggregated for dispensing, e.g., tablets, capsules, suppositories. In some cases, this information is implied by the dispense/give code in _RXA-5-Administered Code_. Use this field when the administered code does not specify the dosage form. Refer to Table 0690 - Administered Dosage Form in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -245,7 +247,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -262,7 +264,7 @@
       {
         "id": "RXA.9",
         "path": "RXA.9",
-        "short": " - RXA",
+        "short": "- RXA.9 - ",
         "definition": "Definition: This field contains notes from the provider administering the medication/treatment. If coded, requires a user-defined table. If free text (describing a custom IV, mixture, or salve, for example) place a null in the first component and the text in the second, e.g., |^this is a free text administration note|. Refer to Table 0691 - Administration Notes in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -275,7 +277,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -292,7 +294,7 @@
       {
         "id": "RXA.10",
         "path": "RXA.10",
-        "short": " - RXA",
+        "short": "- RXA.10 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -311,7 +313,7 @@
       {
         "id": "RXA.11",
         "path": "RXA.11",
-        "short": " - RXA",
+        "short": "- RXA.11 - ",
         "definition": "Definition: *_This field is retained for backward compatibility only as of v 2.6 and withdrawn from the standard as of v 2.8_*. The reader is referred to RXA-27 and RXA-28._._",
         "description": null,
         "code": [
@@ -332,7 +334,7 @@
       {
         "id": "RXA.12",
         "path": "RXA.12",
-        "short": " - RXA",
+        "short": "- RXA.12 - ",
         "definition": "Definition: This field contains the rate at which this medication/treatment was administered as calculated by using _RXA-6-administered amount_ and _RXA-7-administered units_. This field is conditional because it is required when a treatment is administered continuously at a prescribed rate, e.g., certain IV solutions.",
         "description": null,
         "code": [
@@ -345,7 +347,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -371,7 +373,7 @@
       {
         "id": "RXA.13",
         "path": "RXA.13",
-        "short": " - RXA",
+        "short": "- RXA.13 - ",
         "definition": "Definition: Use when _RXA-5-Administered Code_ does not specify the strength. This is the numeric part of the strength, used in combination with _RXA-14-Administered Strength Units_.",
         "description": null,
         "code": [
@@ -384,7 +386,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -397,7 +399,7 @@
       {
         "id": "RXA.14",
         "path": "RXA.14",
-        "short": " - RXA",
+        "short": "- RXA.14 - ",
         "definition": "Definition: Use when _RXA-5-Administered Code_ does not specify the strength. This is the unit of the strength, used in combination with _RXA-13-Administered Strength_. Refer to Table 0692 - Administered Strength Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -410,7 +412,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -427,7 +429,7 @@
       {
         "id": "RXA.15",
         "path": "RXA.15",
-        "short": " - RXA",
+        "short": "- RXA.15 - ",
         "definition": "Definition: This field contains the lot number of the medical substance administered.",
         "description": null,
         "code": [
@@ -440,7 +442,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -466,7 +468,7 @@
       {
         "id": "RXA.16",
         "path": "RXA.16",
-        "short": " - RXA",
+        "short": "- RXA.16 - ",
         "definition": "Definition: This field contains the expiration date of the medical substance administered.",
         "description": null,
         "code": [
@@ -479,7 +481,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -492,7 +494,7 @@
       {
         "id": "RXA.17",
         "path": "RXA.17",
-        "short": " - RXA",
+        "short": "- RXA.17 - ",
         "definition": "Definition: This field contains the manufacturer of the medical substance administered.",
         "description": null,
         "code": [
@@ -505,7 +507,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -518,7 +520,7 @@
       {
         "id": "RXA.18",
         "path": "RXA.18",
-        "short": " - RXA",
+        "short": "- RXA.18 - ",
         "definition": "Definition: This field contains the reason the patient refused the medical substance/treatment. Any entry in the field indicates that the patient did not take the substance. Refer to Table 0693 - Substance/Treatment Refusal Reason in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -531,7 +533,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -548,7 +550,7 @@
       {
         "id": "RXA.19",
         "path": "RXA.19",
-        "short": " - RXA",
+        "short": "- RXA.19 - ",
         "definition": "Definition: This field contains the identifier of the condition or problem for which the drug/treatment was prescribed. May repeat if multiple indications are relevant. Refer to Table 0694 - Indication in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -561,7 +563,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -578,7 +580,7 @@
       {
         "id": "RXA.20",
         "path": "RXA.20",
-        "short": " - RXA",
+        "short": "- RXA.20 - ",
         "definition": "Definition: Status of treatment administration event. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70322[_HL7 Table 0322 - Completion Status_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -591,7 +593,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -621,7 +623,7 @@
       {
         "id": "RXA.21",
         "path": "RXA.21",
-        "short": " - RXA",
+        "short": "- RXA.21 - ",
         "definition": "Definition: Status of record. The information in this field enables the use of the RXA in the vaccine messages.",
         "description": null,
         "code": [
@@ -634,7 +636,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -664,7 +666,7 @@
       {
         "id": "RXA.22",
         "path": "RXA.22",
-        "short": " - RXA",
+        "short": "- RXA.22 - ",
         "definition": "Definition: Date/time the administration information was entered into the source system. This field is used to detect instances where treatment administration information is inadvertently entered multiple times by providing a unique identification field. Under usual circumstances, this field would be provided automatically by the computer system rather than being entered by a person.",
         "description": null,
         "code": [
@@ -677,7 +679,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -690,7 +692,7 @@
       {
         "id": "RXA.23",
         "path": "RXA.23",
-        "short": " - RXA",
+        "short": "- RXA.23 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -701,7 +703,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -727,7 +729,7 @@
       {
         "id": "RXA.24",
         "path": "RXA.24",
-        "short": " - RXA",
+        "short": "- RXA.24 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -738,7 +740,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -755,7 +757,7 @@
       {
         "id": "RXA.25",
         "path": "RXA.25",
-        "short": " - RXA",
+        "short": "- RXA.25 - ",
         "definition": "Definition: This field contains the pharmacy system's assigned barcode number for the give occurrence. For IV orders, many pharmacy systems generate a barcode number to identify a specific bag/bottle of the order. This number can be an instance identifier; unique for the patient, drug combination, and schedule instance or it may be just a drug identifier. Refer to Table 0696 - Administered Barcode Identifier in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -768,7 +770,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -785,7 +787,7 @@
       {
         "id": "RXA.26",
         "path": "RXA.26",
-        "short": " - RXA",
+        "short": "- RXA.26 - ",
         "definition": "Definition: The Pharmacy Order Type field defines the general category of pharmacy order which may be used to determine the processing path the order will take. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70480[_HL7 Table 0480 - Pharmacy Order Types_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -798,7 +800,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -828,7 +830,7 @@
       {
         "id": "RXA.27",
         "path": "RXA.27",
-        "short": " - RXA",
+        "short": "- RXA.27 - ",
         "definition": "Definition: This field specifies the location where the drug or treatment was administered.",
         "description": null,
         "code": [
@@ -841,7 +843,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -854,7 +856,7 @@
       {
         "id": "RXA.28",
         "path": "RXA.28",
-        "short": " - RXA",
+        "short": "- RXA.28 - ",
         "definition": "Definition: This field specifies the address of the location where the drug or treatment was administered.",
         "description": null,
         "code": [
@@ -867,7 +869,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -880,7 +882,7 @@
       {
         "id": "RXA.29",
         "path": "RXA.29",
-        "short": " - RXA",
+        "short": "- RXA.29 - ",
         "definition": "Definition: This field contains an identifier for the individual product instance for the dispense occurrence. This may represent a barcode, RFID or other means of automatically-readable product instance. Repetitions represent the same instance where more than one barcode, RFID or other identification is present.",
         "description": null,
         "code": [
@@ -893,7 +895,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -905,9 +907,7 @@
       }
     ]
   },
-  "id": "RXA",
   "title": "HL7 v2 RXA Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/RXA",
   "name": "RXA",
-  "type": "http://hl7.org/v2/StructureDefinition/RXA"
+  "type": "RXA"
 }

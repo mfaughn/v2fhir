@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/DPS",
+  "id": "DPS",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "DPS.1",
         "path": "DPS.1",
-        "short": " - DPS",
+        "short": "- DPS.1 - ",
         "definition": "Definition: DPS-1 contains the diagnosis code assigned to this diagnosis. Refer to E:\\\\V2\\\\v2.9 final Nov from Frank\\\\V29_CH02C_Tables.docx#HL70051[User-defined Table 0051 - Diagnosis Code] for suggested values. This field is a CWE data type for compatibility with clinical and ancillary systems. Either _DPS-1.1-Identifier_ or _DPS-1.2-Text_ is required. When a code is used in _DPS-1.1-Identifier_, a coding system is required in _DPS-1.3-Name of Coding System_.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "DPS.2",
         "path": "DPS.2",
-        "short": " - DPS",
+        "short": "- DPS.2 - ",
         "definition": "Definition: This field contains the procedure code for procedure, if any, associated with this charge description. Repeating field allows for different procedure coding systems such as CPT4, ASTM, ICD9. Coded entry made up of code plus coding schema. See Externally Defined Table 0941 – Procedure Code.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -76,7 +78,7 @@
       {
         "id": "DPS.3",
         "path": "DPS.3",
-        "short": " - DPS",
+        "short": "- DPS.3 - ",
         "definition": "Definition: An optional effective date/time can be included for the record-level action specified. It is the date/time the originating system expects that the event is to have been completed on the receiving system. If this field is not present, the effective date/time should default to the current date/time (when the message is received).",
         "description": null,
         "code": [
@@ -89,7 +91,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -102,7 +104,7 @@
       {
         "id": "DPS.4",
         "path": "DPS.4",
-        "short": " - DPS",
+        "short": "- DPS.4 - ",
         "definition": "Definition: An optional expiration date/time can be included for the record-level action specified. It is the date/time the originating system expects that the event is to have been completed on the receiving system.",
         "description": null,
         "code": [
@@ -115,7 +117,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -128,7 +130,7 @@
       {
         "id": "DPS.5",
         "path": "DPS.5",
-        "short": " - DPS",
+        "short": "- DPS.5 - ",
         "definition": "Definition: This field contains the type of limitations as determined by the Payer. This field has a defined value set that may need to be extended. See HL7 Table 0940 - Limitation Type Codes, in Chapter 2C, Code Tables for valid values.",
         "description": null,
         "code": [
@@ -141,7 +143,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -157,9 +159,7 @@
       }
     ]
   },
-  "id": "DPS",
   "title": "HL7 v2 DPS Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/DPS",
   "name": "DPS",
-  "type": "http://hl7.org/v2/StructureDefinition/DPS"
+  "type": "DPS"
 }

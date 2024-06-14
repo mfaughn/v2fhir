@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CSR",
+  "id": "CSR",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "CSR.1",
         "path": "CSR.1",
-        "short": " - CSR",
+        "short": "- CSR.1 - ",
         "definition": "Definition: The field contains the universal identifier for the clinical trial. Since many clinical trials are collaborative and multi‑centered, and since one goal of these standards is to promote automated data exchange among sites, the primary identifier should come from the sponsor. The coding system component may reference the sponsor. Example:",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "CSR.2",
         "path": "CSR.2",
-        "short": " - CSR",
+        "short": "- CSR.2 - ",
         "definition": "Definition: This field contains an alternate identifier that may be used as agreed upon by messaging parties. For example, the sending application may code its internal study number here.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -68,7 +70,7 @@
       {
         "id": "CSR.3",
         "path": "CSR.3",
-        "short": " - CSR",
+        "short": "- CSR.3 - ",
         "definition": "Definition: This field distinguishes the institution where registration occurred. The legal approval to give patients access to a trial lies with the Internal Review Board for the institution. Universal healthcare provider facility codes should be used when they exist. Currently coding systems must be devised by users. Refer to Table 0589 - Institution Registering the Patient in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -81,7 +83,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -98,7 +100,7 @@
       {
         "id": "CSR.4",
         "path": "CSR.4",
-        "short": " - CSR",
+        "short": "- CSR.4 - ",
         "definition": "Definition: This field contains the main patient identification for the study. The sponsor patient ID allows automation of records on patients treated at various institutions. The sponsor patient ID should be unique for each patient participating on the study identified in _CSR-1 Sponsor Study ID_.",
         "description": null,
         "code": [
@@ -111,7 +113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -124,7 +126,7 @@
       {
         "id": "CSR.5",
         "path": "CSR.5",
-        "short": " - CSR",
+        "short": "- CSR.5 - ",
         "definition": "Definition: This field may be the sending application's patient identification. Coding conventions may be used as agreed upon by users.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -150,7 +152,7 @@
       {
         "id": "CSR.6",
         "path": "CSR.6",
-        "short": " - CSR",
+        "short": "- CSR.6 - ",
         "definition": "Definition: This field containing the date of the patient registration is mandatory. The time component is optional. The time stamp for a registration may be useful. For example, patients may be randomized at the pharmacy according to the order in which they were registered.",
         "description": null,
         "code": [
@@ -163,7 +165,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -176,7 +178,7 @@
       {
         "id": "CSR.7",
         "path": "CSR.7",
-        "short": " - CSR",
+        "short": "- CSR.7 - ",
         "definition": "Definition: This field contains the healthcare facility employee who actually phoned, submitted a form, or interactively registered the patient on the clinical trial. This is generally done under authorization from the attending physician or a principal or collaborating investigator.",
         "description": null,
         "code": [
@@ -189,7 +191,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -202,7 +204,7 @@
       {
         "id": "CSR.8",
         "path": "CSR.8",
-        "short": " - CSR",
+        "short": "- CSR.8 - ",
         "definition": "Definition: This field contains the healthcare provider, generally the attending physician, who is accountable that the patient is eligible for the trial and has signed an informed consent. National standard healthcare provider codes should be used when they exist. This field is required for the patient registration trigger event (C01).",
         "description": null,
         "code": [
@@ -215,7 +217,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -228,7 +230,7 @@
       {
         "id": "CSR.9",
         "path": "CSR.9",
-        "short": " - CSR",
+        "short": "- CSR.9 - ",
         "definition": "Definition: This field contains the consent form signing date is collected to provide a checkpoint that the consent form was obtained. Since many trials involve unapproved drugs and other treatment modalities, the consent form is highly important to document and store. This field is required for the patient registration trigger event (C01). The time component is optional.",
         "description": null,
         "code": [
@@ -241,7 +243,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -254,7 +256,7 @@
       {
         "id": "CSR.10",
         "path": "CSR.10",
-        "short": " - CSR",
+        "short": "- CSR.10 - ",
         "definition": "Definition: This field indicates whether the patient was an appropriate candidate for the trial. It is important for quality control and data analysis. The code set will vary among clinical trials. An example answer set is: *_Yes, No, By Approval, Not Assessed, Unknown_*. This field is required for the patient registration trigger event (C01). Refer to Table 0590 - Patient Study Eligibility Status in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -267,7 +269,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -284,7 +286,7 @@
       {
         "id": "CSR.11",
         "path": "CSR.11",
-        "short": " - CSR",
+        "short": "- CSR.11 - ",
         "definition": "Definition: This field contains the date the patient was randomized. The time component is optional. Up to three randomizations are supported. Sequential randomizations are listed in chronological order.",
         "description": null,
         "code": [
@@ -297,7 +299,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -310,7 +312,7 @@
       {
         "id": "CSR.12",
         "path": "CSR.12",
-        "short": " - CSR",
+        "short": "- CSR.12 - ",
         "definition": "Definition: This field contains codes that must be developed by users. The blind treatment assignment may be communicated as a dummy text: *^blind* or if a coded treatment assignment must also be communicated**: 1^blind^local_code**. If more than one randomization occurs, the second and third repetitions will correspond to the second and third repetitions of _CSR-11 Study Randomization Date/Time_, if they exist. Refer to Table 0591 - Randomized Study Arm in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -323,7 +325,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -340,7 +342,7 @@
       {
         "id": "CSR.13",
         "path": "CSR.13",
-        "short": " - CSR",
+        "short": "- CSR.13 - ",
         "definition": "Definition: Many studies have stratified randomization schemas. The strata codes must be developed for each clinical trial. This field is important for statistical analysis of the study results. The second and third repetitions will correspond to the second and third repetitions of _CSR-11 Study Randomization Date/Time_ and _CSR-12 Randomized Study Arm_, if they exist. Refer to Table 0592 - Stratum for Study Randomization in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -353,7 +355,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -370,7 +372,7 @@
       {
         "id": "CSR.14",
         "path": "CSR.14",
-        "short": " - CSR",
+        "short": "- CSR.14 - ",
         "definition": "Definition: This field categorizes the inclusion of this patient's data for various analyses. The patient's data may be evaluable for analysis of adverse events but not for outcomes. Or it may be evaluable for some outcomes and not others. The coding systems will vary among trials. This field is required for the off‑study trigger event (C04). Refer to Table 0593 - Patient Evaluability Status in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -383,7 +385,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -400,7 +402,7 @@
       {
         "id": "CSR.15",
         "path": "CSR.15",
-        "short": " - CSR",
+        "short": "- CSR.15 - ",
         "definition": "Definition: This field contains the date the patient completes or is otherwise removed from the study. This field is required for the off‑study event (C04). The time component is optional.",
         "description": null,
         "code": [
@@ -413,7 +415,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -426,7 +428,7 @@
       {
         "id": "CSR.16",
         "path": "CSR.16",
-        "short": " - CSR",
+        "short": "- CSR.16 - ",
         "definition": "Definition: This information is important for quality control and data analysis. The coding systems will vary among trials. An example answer set is: *Adverse Events, Completed Trial, Death, Drug Resistance, Intercurrent Illness, Lost to Follow up, No Response to Therapy, Noncompliance, Progression of Disease, Protocol Violation, Refused Further Therapy.* This field is required for the off‑study trigger event (C04). Refer to Table 0594 - Reason Ended Study in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -439,7 +441,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -456,7 +458,7 @@
       {
         "id": "CSR.17",
         "path": "CSR.17",
-        "short": " - CSR",
+        "short": "- CSR.17 - ",
         "definition": "Definition: This field reveals the intent of the message. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[_HL7 Table 0206 - Segment Action Code_] for valid values.",
         "description": null,
         "code": [
@@ -469,7 +471,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -498,9 +500,7 @@
       }
     ]
   },
-  "id": "CSR",
   "title": "HL7 v2 CSR Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/CSR",
   "name": "CSR",
-  "type": "http://hl7.org/v2/StructureDefinition/CSR"
+  "type": "CSR"
 }

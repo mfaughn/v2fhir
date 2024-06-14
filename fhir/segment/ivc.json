@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/IVC",
+  "id": "IVC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "IVC.1",
         "path": "IVC.1",
-        "short": " - IVC",
+        "short": "- IVC.1 - ",
         "definition": "Definition: Unique Invoice Number assigned by the Provider Application.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "IVC.2",
         "path": "IVC.2",
-        "short": " - IVC",
+        "short": "- IVC.2 - ",
         "definition": "Definition: Unique Invoice Number assigned by the Payer Application.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -68,7 +70,7 @@
       {
         "id": "IVC.3",
         "path": "IVC.3",
-        "short": " - IVC",
+        "short": "- IVC.3 - ",
         "definition": "Definition: Contract/agreement number issued by Payer which must be specified in some circumstances by the Provider.",
         "description": null,
         "code": [
@@ -81,7 +83,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "IVC.4",
         "path": "IVC.4",
-        "short": " - IVC",
+        "short": "- IVC.4 - ",
         "definition": "Definition: Code indicating what action is being performed by this message. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70553[_User-defined Table 0553 – Invoice Control Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -124,7 +126,7 @@
       {
         "id": "IVC.5",
         "path": "IVC.5",
-        "short": " - IVC",
+        "short": "- IVC.5 - ",
         "definition": "Definition: Code describing reason for this Invoice. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70554[_User-defined Table 0554 – Invoice Reason Codes_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -154,7 +156,7 @@
       {
         "id": "IVC.6",
         "path": "IVC.6",
-        "short": " - IVC",
+        "short": "- IVC.6 - ",
         "definition": "Definition: Code indicating the type of Invoice. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70555[_User-defined Table 0555 – Invoice Type_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -167,7 +169,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -184,7 +186,7 @@
       {
         "id": "IVC.7",
         "path": "IVC.7",
-        "short": " - IVC",
+        "short": "- IVC.7 - ",
         "definition": "Definition: Date Invoice was created.",
         "description": null,
         "code": [
@@ -197,7 +199,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -210,7 +212,7 @@
       {
         "id": "IVC.8",
         "path": "IVC.8",
-        "short": " - IVC",
+        "short": "- IVC.8 - ",
         "definition": "Definition: Sum total of Product/Service Billed Amount on PSL for all Product/Service Line Items for this Invoice.",
         "description": null,
         "code": [
@@ -223,7 +225,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -236,7 +238,7 @@
       {
         "id": "IVC.9",
         "path": "IVC.9",
-        "short": " - IVC",
+        "short": "- IVC.9 - ",
         "definition": "Definition: Terms for Payer payment of Invoice (e.g., 24% net 30 days).",
         "description": null,
         "code": [
@@ -249,7 +251,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -275,7 +277,7 @@
       {
         "id": "IVC.10",
         "path": "IVC.10",
-        "short": " - IVC",
+        "short": "- IVC.10 - ",
         "definition": "Definition: Business organization that is responsible for the invoice (e.g., Provider organization, clinic organization).",
         "description": null,
         "code": [
@@ -288,7 +290,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -301,7 +303,7 @@
       {
         "id": "IVC.11",
         "path": "IVC.11",
-        "short": " - IVC",
+        "short": "- IVC.11 - ",
         "definition": "Definition: The business organization that is designated as Payer for this Invoice. This Payer may be the primary, secondary, tertiary Payer, depending on Insurance Information specified in the Invoice",
         "description": null,
         "code": [
@@ -314,7 +316,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -327,7 +329,7 @@
       {
         "id": "IVC.12",
         "path": "IVC.12",
-        "short": " - IVC",
+        "short": "- IVC.12 - ",
         "definition": "Definition: Attention to individual in Payer Organization who needs to review this Invoice.",
         "description": null,
         "code": [
@@ -340,7 +342,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -353,7 +355,7 @@
       {
         "id": "IVC.13",
         "path": "IVC.13",
-        "short": " - IVC",
+        "short": "- IVC.13 - ",
         "definition": "Definition: Can be set to indicate that this is the last Invoice for a particular Case, Claim and/or Encounter (1). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 – Yes/No Indicator_] for suggested values.",
         "description": null,
         "code": [
@@ -366,7 +368,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -396,7 +398,7 @@
       {
         "id": "IVC.14",
         "path": "IVC.14",
-        "short": " - IVC",
+        "short": "- IVC.14 - ",
         "definition": "Definition: Period in which the invoice must be booked.",
         "description": null,
         "code": [
@@ -409,7 +411,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -422,7 +424,7 @@
       {
         "id": "IVC.15",
         "path": "IVC.15",
-        "short": " - IVC",
+        "short": "- IVC.15 - ",
         "definition": "Definition: Responsible Person for this specific invoice. For more structured output use CTD-Segment instead.",
         "description": null,
         "code": [
@@ -435,7 +437,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -461,7 +463,7 @@
       {
         "id": "IVC.16",
         "path": "IVC.16",
-        "short": " - IVC",
+        "short": "- IVC.16 - ",
         "definition": "Definition: Fixed Amount for this invoice.",
         "description": null,
         "code": [
@@ -474,7 +476,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -487,7 +489,7 @@
       {
         "id": "IVC.17",
         "path": "IVC.17",
-        "short": " - IVC",
+        "short": "- IVC.17 - ",
         "definition": "Definition: Special costs for this invoice.",
         "description": null,
         "code": [
@@ -500,7 +502,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -513,7 +515,7 @@
       {
         "id": "IVC.18",
         "path": "IVC.18",
-        "short": " - IVC",
+        "short": "- IVC.18 - ",
         "definition": "Definition: Special amount for doctor's treatment.",
         "description": null,
         "code": [
@@ -526,7 +528,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -539,7 +541,7 @@
       {
         "id": "IVC.19",
         "path": "IVC.19",
-        "short": " - IVC",
+        "short": "- IVC.19 - ",
         "definition": "Definition: Doctor who is responsible for this invoice.",
         "description": null,
         "code": [
@@ -552,7 +554,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -565,7 +567,7 @@
       {
         "id": "IVC.20",
         "path": "IVC.20",
-        "short": " - IVC",
+        "short": "- IVC.20 - ",
         "definition": "Definition: Cost centers are organizational units or activities that provide goods and services. In this context, it would be the department which delivered the Service/Product Line Item, e.g., Radiology, Emergency Room.",
         "description": null,
         "code": [
@@ -578,7 +580,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -591,7 +593,7 @@
       {
         "id": "IVC.21",
         "path": "IVC.21",
-        "short": " - IVC",
+        "short": "- IVC.21 - ",
         "definition": "Definition: Deposit paid to the service Provider prior to admission",
         "description": null,
         "code": [
@@ -604,7 +606,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -617,7 +619,7 @@
       {
         "id": "IVC.22",
         "path": "IVC.22",
-        "short": " - IVC",
+        "short": "- IVC.22 - ",
         "definition": "Definition: Total amount of Invoice without the prepaid deposit (IV-8 minus IVC-21).",
         "description": null,
         "code": [
@@ -630,7 +632,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -643,7 +645,7 @@
       {
         "id": "IVC.23",
         "path": "IVC.23",
-        "short": " - IVC",
+        "short": "- IVC.23 - ",
         "definition": "Definition: Total Amount of VAT included in the Total Invoice Amount (IVC-8)",
         "description": null,
         "code": [
@@ -656,7 +658,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -669,7 +671,7 @@
       {
         "id": "IVC.24",
         "path": "IVC.24",
-        "short": " - IVC",
+        "short": "- IVC.24 - ",
         "definition": "Definition: Applied VAT Rates on Invoice. Multiple VAT-rates may be applied according to the type of service",
         "description": null,
         "code": [
@@ -682,7 +684,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -708,7 +710,7 @@
       {
         "id": "IVC.25",
         "path": "IVC.25",
-        "short": " - IVC",
+        "short": "- IVC.25 - ",
         "definition": "Definition: Code indicating the Benefit group. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70556[_User-defined Table 0556 – Benefit Group_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -721,7 +723,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -738,7 +740,7 @@
       {
         "id": "IVC.26",
         "path": "IVC.26",
-        "short": " - IVC",
+        "short": "- IVC.26 - ",
         "definition": "Definition: The Tax ID of the Provider (general Tax identification number or VAT number).",
         "description": null,
         "code": [
@@ -751,7 +753,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -777,7 +779,7 @@
       {
         "id": "IVC.27",
         "path": "IVC.27",
-        "short": " - IVC",
+        "short": "- IVC.27 - ",
         "definition": "Definition: The Tax ID of the Payer (general Tax identification number or VAT number)",
         "description": null,
         "code": [
@@ -790,7 +792,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -816,7 +818,7 @@
       {
         "id": "IVC.28",
         "path": "IVC.28",
-        "short": " - IVC",
+        "short": "- IVC.28 - ",
         "definition": "Definition: Code indicating the tax status of the provider. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70572[_User-defined Table 0572 – Tax status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -829,7 +831,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -846,7 +848,7 @@
       {
         "id": "IVC.29",
         "path": "IVC.29",
-        "short": " - IVC",
+        "short": "- IVC.29 - ",
         "definition": "Definition: Code indicating the tax status of the payer. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70572[_User-defined Table 0572 – Tax status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -859,7 +861,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -876,7 +878,7 @@
       {
         "id": "IVC.30",
         "path": "IVC.30",
-        "short": " - IVC",
+        "short": "- IVC.30 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -887,7 +889,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -912,9 +914,7 @@
       }
     ]
   },
-  "id": "IVC",
   "title": "HL7 v2 IVC Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/IVC",
   "name": "IVC",
-  "type": "http://hl7.org/v2/StructureDefinition/IVC"
+  "type": "IVC"
 }

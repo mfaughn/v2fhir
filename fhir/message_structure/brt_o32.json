@@ -1,0 +1,331 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/BRT_O32",
+  "id": "BRT_O32",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "BRT_O32.1-MSH",
+          "path": "BRT_O32.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BRT_O32.2-MSA",
+          "path": "BRT_O32.2-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BRT_O32.3-ARV",
+          "path": "BRT_O32.3-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BRT_O32.4-ERR",
+          "path": "BRT_O32.4-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BRT_O32.5-SFT",
+          "path": "BRT_O32.5-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BRT_O32.6-UAC",
+          "path": "BRT_O32.6-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BRT_O32.7-NTE",
+          "path": "BRT_O32.7-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BRT_O32.8-RESPONSE",
+          "path": "BRT_O32.8-RESPONSE",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "BRT_O32.8-RESPONSE.1-PATIENT",
+              "path": "BRT_O32.8-RESPONSE.1-PATIENT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "BRT_O32.8-RESPONSE.1-PATIENT.1-PID",
+                  "path": "BRT_O32.8-RESPONSE.1-PATIENT.1-PID",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BRT_O32.8-RESPONSE.1-PATIENT.2-PRT",
+                  "path": "BRT_O32.8-RESPONSE.1-PATIENT.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BRT_O32.8-RESPONSE.1-PATIENT.3-ARV",
+                  "path": "BRT_O32.8-RESPONSE.1-PATIENT.3-ARV",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "BRT_O32.8-RESPONSE.2-ORDER",
+              "path": "BRT_O32.8-RESPONSE.2-ORDER",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "BRT_O32.8-RESPONSE.2-ORDER.1-ORC",
+                  "path": "BRT_O32.8-RESPONSE.2-ORDER.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BRT_O32.8-RESPONSE.2-ORDER.2-PRT",
+                  "path": "BRT_O32.8-RESPONSE.2-ORDER.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BRT_O32.8-RESPONSE.2-ORDER.3-TIMING",
+                  "path": "BRT_O32.8-RESPONSE.2-ORDER.3-TIMING",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "BRT_O32.8-RESPONSE.2-ORDER.3-TIMING.1-TQ1",
+                      "path": "BRT_O32.8-RESPONSE.2-ORDER.3-TIMING.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "BRT_O32.8-RESPONSE.2-ORDER.3-TIMING.2-TQ2",
+                      "path": "BRT_O32.8-RESPONSE.2-ORDER.3-TIMING.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "BRT_O32.8-RESPONSE.2-ORDER.4-BPO",
+                  "path": "BRT_O32.8-RESPONSE.2-ORDER.4-BPO",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/BPO"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BRT_O32.8-RESPONSE.2-ORDER.5-BTX",
+                  "path": "BRT_O32.8-RESPONSE.2-ORDER.5-BTX",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/BTX"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 BRT_O32 Segment Definition",
+  "name": "BRT_O32",
+  "type": "http://hl7.org/v2/StructureDefinition/BRT_O32"
+}

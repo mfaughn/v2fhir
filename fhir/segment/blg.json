@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/BLG",
+  "id": "BLG",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "BLG.1",
         "path": "BLG.1",
-        "short": " - BLG",
+        "short": "- BLG.1 - ",
         "definition": "Definition: This field specifies when to charge for the ordered service. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70100[HL7 Table 0100 – Invocation event] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CCD"
+            "code": "CCD"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "BLG.2",
         "path": "BLG.2",
-        "short": " - BLG",
+        "short": "- BLG.2 - ",
         "definition": "Definition: This field identifies someone or something other than the patient to be billed for this service. It is used in conjunction with BLG-3-account ID. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70122[HL7 Table 0122 – Charge Type] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -89,7 +91,7 @@
       {
         "id": "BLG.3",
         "path": "BLG.3",
-        "short": " - BLG",
+        "short": "- BLG.3 - ",
         "definition": "Definition: This field identifies the account to be billed. It is used in conjunction with BLG-2-charge type. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70061[HL7 Table 0061 – Check digit scheme] in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -102,7 +104,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -115,7 +117,7 @@
       {
         "id": "BLG.4",
         "path": "BLG.4",
-        "short": " - BLG",
+        "short": "- BLG.4 - ",
         "definition": "Definition: This field explains the choice of and provides the clinical rationale for the selected charge type identified in BLG-2. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70475[User-defined Table 0475 – Charge Type Reason] in Chapter 2C, code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -144,9 +146,7 @@
       }
     ]
   },
-  "id": "BLG",
   "title": "HL7 v2 BLG Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/BLG",
   "name": "BLG",
-  "type": "http://hl7.org/v2/StructureDefinition/BLG"
+  "type": "BLG"
 }

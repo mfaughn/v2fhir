@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/DST",
+  "id": "DST",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "DST.1",
         "path": "DST.1",
-        "short": " - DST",
+        "short": "- DST.1 - ",
         "definition": "Definition: This field identifies the destination for transport of a specific container. Refer to User-defined Table _0943 –_ _Transport Destination_ in Chapter 2C, Code Tables; there are no suggested values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "DST.2",
         "path": "DST.2",
-        "short": " - DST",
+        "short": "- DST.2 - ",
         "definition": "Definition: This field identifies the route for transport of a specific container. . Refer to _User-defined Table 0944 – Transport Route_ in Chapter 2C, Code Tables; there are no suggested values.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -75,9 +77,7 @@
       }
     ]
   },
-  "id": "DST",
   "title": "HL7 v2 DST Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/DST",
   "name": "DST",
-  "type": "http://hl7.org/v2/StructureDefinition/DST"
+  "type": "DST"
 }

@@ -1,0 +1,37 @@
+{
+  "resourceType" : "StructureDefinition",
+  "url" : "http://hl7.org/v2/StructureDefinition/THIS_GETS_OVERWRITTEN",
+  "id" : "THIS_GETS_OVERWRITTEN",
+  "meta" : {
+    "profile" : [ "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile" ]
+  },
+  "version" : "0.0.1",
+  "status" : "active",
+  "kind" : "logical",
+  "abstract" : false,
+  "baseDefinition" : "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "MessageStructure.segments",
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+          "valueString" : "Segments"
+        }],
+        "path" : "CodeSystem.segments",
+        "short" : "Segments within a MessageStructure",
+        "definition" : "FIXME",
+        "min" : 0,
+        "max" : "*",
+        "type" : [{
+          "code" : "BackboneElement"
+        }],
+        "condition" : ["csd-1"],
+        "mustSupport" : false,
+        "isModifier" : false,
+        "isSummary" : false
+      }
+    ]
+  }
+}

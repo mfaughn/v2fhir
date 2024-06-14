@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ILT",
+  "id": "ILT",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ILT.1",
         "path": "ILT.1",
-        "short": " - ILT",
+        "short": "- ILT.1 - ",
         "definition": "Definition: This field contains the number that identifies this transaction. For the first occurrence of the segment, the sequence number shall be one; for the second occurrence, the sequence number shall be two; etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "ILT.2",
         "path": "ILT.2",
-        "short": " - ILT",
+        "short": "- ILT.2 - ",
         "definition": "Definition: This field contains the lot number of the service item in inventory.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "ILT.3",
         "path": "ILT.3",
-        "short": " - ILT",
+        "short": "- ILT.3 - ",
         "definition": "Definition: This field contains the expiration date of the service item in inventory.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -120,7 +122,7 @@
       {
         "id": "ILT.4",
         "path": "ILT.4",
-        "short": " - ILT",
+        "short": "- ILT.4 - ",
         "definition": "Definition: This field contains the most recent date that the product in question was received into inventory.",
         "description": null,
         "code": [
@@ -133,7 +135,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -146,7 +148,7 @@
       {
         "id": "ILT.5",
         "path": "ILT.5",
-        "short": " - ILT",
+        "short": "- ILT.5 - ",
         "definition": "Definition: This field contains the quantity of this inventory item that was received on the date specific in _ILT-4 Inventory Received Date_ field.",
         "description": null,
         "code": [
@@ -159,7 +161,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -185,7 +187,7 @@
       {
         "id": "ILT.6",
         "path": "ILT.6",
-        "short": " - ILT",
+        "short": "- ILT.6 - ",
         "definition": "Definition: This field specifies the unit for the _Inventory Received Quantity_. See file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70818[_User-defined Table 0818 – Package_] as described in _PKG-2 Packaging Units_ and as presented in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -198,7 +200,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -215,7 +217,7 @@
       {
         "id": "ILT.7",
         "path": "ILT.7",
-        "short": " - ILT",
+        "short": "- ILT.7 - ",
         "definition": "Definition: This field contains the per-unit cost of the inventory item at the time of receipt. _ILT-6 Inventory Received Quantity Unit_ field specifies the per-unit basis of this field.",
         "description": null,
         "code": [
@@ -228,7 +230,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MO"
+            "code": "MO"
           }
         ],
         "extension": [
@@ -241,7 +243,7 @@
       {
         "id": "ILT.8",
         "path": "ILT.8",
-        "short": " - ILT",
+        "short": "- ILT.8 - ",
         "definition": "Definition: This field specifies the most recent date that an inventory count was performed for the inventory item.",
         "description": null,
         "code": [
@@ -254,7 +256,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -267,7 +269,7 @@
       {
         "id": "ILT.9",
         "path": "ILT.9",
-        "short": " - ILT",
+        "short": "- ILT.9 - ",
         "definition": "Definition: This field contains the quantity of this inventory item that was available for issue/use as of the date specified in _ILT-8 Inventory on Hand Date_ field. No adjustment has been made for subsequent use.",
         "description": null,
         "code": [
@@ -280,7 +282,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -306,7 +308,7 @@
       {
         "id": "ILT.10",
         "path": "ILT.10",
-        "short": " - ILT",
+        "short": "- ILT.10 - ",
         "definition": "Definition: This field contains the quantity of this inventory item that was available for issue/use as of the date specified in _ILT-8 Inventory on Hand Date_ field. No adjustment has been made for subsequent use. See file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70818[_User-defined Table 0818 – Package_] as described in _PKG-2 Packaging Units_ and as presented in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -319,7 +321,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -335,9 +337,7 @@
       }
     ]
   },
-  "id": "ILT",
   "title": "HL7 v2 ILT Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ILT",
   "name": "ILT",
-  "type": "http://hl7.org/v2/StructureDefinition/ILT"
+  "type": "ILT"
 }

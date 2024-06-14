@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MFE",
+  "id": "MFE",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "MFE.1",
         "path": "MFE.1",
-        "short": " - MFE",
+        "short": "- MFE.1 - ",
         "definition": "Definition: This field defines the record-level event for the master file record identified by the MFI segment and the primary key field in this segment. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70180[HL7 Table 0180 - Record Level Event Code] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -59,7 +61,7 @@
       {
         "id": "MFE.2",
         "path": "MFE.2",
-        "short": " - MFE",
+        "short": "- MFE.2 - ",
         "definition": "Definition: A number or other identifier that uniquely identifies this change to this record from the point of view of the originating system. When returned to the originating system via the MFA segment, this field allows the target system to precisely identify which change to this record is being acknowledged. It is only required if the MFI response level code requires responses at the record level (any value other than NE).",
         "description": null,
         "code": [
@@ -72,7 +74,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -98,7 +100,7 @@
       {
         "id": "MFE.3",
         "path": "MFE.3",
-        "short": " - MFE",
+        "short": "- MFE.3 - ",
         "definition": "Definition: An optional effective date/time can be included for the record-level action specified. It is the date/time the originating system expects that the event is to have been completed on the receiving system. If this field is not present, the effective date/time should default to the current date/time (when the message is received).",
         "description": null,
         "code": [
@@ -111,7 +113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -124,7 +126,7 @@
       {
         "id": "MFE.4",
         "path": "MFE.4",
-        "short": " - MFE",
+        "short": "- MFE.4 - ",
         "definition": "Definition: This field uniquely identifies the record of the master file (identified in the MFI segment) to be changed (as defined by the record-level event code). The data type of field is defined by the value of _MFE-5 - Value Type_, and may take on the format of any of the HL7 data types defined in file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70355[HL7 Table 0355 - Primary Key Value Type] in Chapter 2C, Code Tables. The PL data type is used only on Location master transactions. Refer to Table 0608 - Primary Key Value - MFE in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/Varies"
+            "code": "Varies"
           }
         ],
         "binding": {
@@ -154,7 +156,7 @@
       {
         "id": "MFE.5",
         "path": "MFE.5",
-        "short": " - MFE",
+        "short": "- MFE.5 - ",
         "definition": "Definition: This field contains the HL7 data type of _MFE-4 - Primary Key Value - MFE_. The valid values for the data type of a primary key are listed in file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70355[HL7 Table 0355 - Primary Key Value Type] in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -167,7 +169,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -197,7 +199,7 @@
       {
         "id": "MFE.6",
         "path": "MFE.6",
-        "short": " - MFE",
+        "short": "- MFE.6 - ",
         "definition": "Definition: This field contains the date and time of the last change of the record.",
         "description": null,
         "code": [
@@ -210,7 +212,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -223,7 +225,7 @@
       {
         "id": "MFE.7",
         "path": "MFE.7",
-        "short": " - MFE",
+        "short": "- MFE.7 - ",
         "definition": "Definition: This field contains the identity of the person who actually keyed the master file entry into the application. It provides an audit trail in case the request is entered incorrectly and the ancillary department needs to clarify the request.",
         "description": null,
         "code": [
@@ -236,7 +238,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -248,9 +250,7 @@
       }
     ]
   },
-  "id": "MFE",
   "title": "HL7 v2 MFE Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/MFE",
   "name": "MFE",
-  "type": "http://hl7.org/v2/StructureDefinition/MFE"
+  "type": "MFE"
 }

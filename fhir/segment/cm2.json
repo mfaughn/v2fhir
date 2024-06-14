@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CM2",
+  "id": "CM2",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "CM2.1",
         "path": "CM2.1",
-        "short": " - CM2",
+        "short": "- CM2.1 - ",
         "definition": "Definition: This field contains a number that uniquely identifies this transaction for the purpose of adding, changing, or deleting the transaction. For those messages that permit segments to repeat, the Set ID field is used to identify the repetitions.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "CM2.2",
         "path": "CM2.2",
-        "short": " - CM2",
+        "short": "- CM2.2 - ",
         "definition": "Definition: This field should correspond to the scheduled time point coding system in Chapter 7, section 7.8.3.1, \"Study scheduled time point.\"",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -81,7 +83,7 @@
       {
         "id": "CM2.3",
         "path": "CM2.3",
-        "short": " - CM2",
+        "short": "- CM2.3 - ",
         "definition": "Definition: This field contains a brief explanation so recipients will understand what the time point represents.",
         "description": null,
         "code": [
@@ -94,7 +96,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -120,7 +122,7 @@
       {
         "id": "CM2.4",
         "path": "CM2.4",
-        "short": " - CM2",
+        "short": "- CM2.4 - ",
         "definition": "Definition: This field contains a study-specific event. Coding systems may be developed for this field or applications may use facility-wide or standardized orders and procedures coding systems. This enables integration of procedures or events ordered for clinical trials with medical order entry systems.",
         "description": null,
         "code": [
@@ -133,7 +135,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -145,9 +147,7 @@
       }
     ]
   },
-  "id": "CM2",
   "title": "HL7 v2 CM2 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/CM2",
   "name": "CM2",
-  "type": "http://hl7.org/v2/StructureDefinition/CM2"
+  "type": "CM2"
 }

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OH4",
+  "id": "OH4",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "OH4.1",
         "path": "OH4.1",
-        "short": " - OH4",
+        "short": "- OH4.1 - ",
         "definition": "Definition: This field contains the sequence number used to identify the OH4 segment instances in message structures where the OH4 segment repeats. For the first occurrence of the segment, the sequence number shall be one, for the second occurrence, the sequence number shall be two, etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "OH4.2",
         "path": "OH4.2",
-        "short": " - OH4",
+        "short": "- OH4.2 - ",
         "definition": "Definition: This field contains a code defining the action to be taken for this segment. It allows this segment to be sent to delete or update, for example, previously sent information. Refer to file:///D:\\Eigene%20Dateien\\2018\\HL7\\Standards\\v2.9%20Jan%202019\\v29%20CH2C%20Table%200206[*_HL7 Table 0206 – Segment Action Code_*] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "OH4.3",
         "path": "OH4.3",
-        "short": " - OH4",
+        "short": "- OH4.3 - ",
         "definition": "Definition: This field asserts when the combat zone duty began.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "OH4.4",
         "path": "OH4.4",
-        "short": " - OH4",
+        "short": "- OH4.4 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -122,7 +124,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -135,7 +137,7 @@
       {
         "id": "OH4.5",
         "path": "OH4.5",
-        "short": " - OH4",
+        "short": "- OH4.5 - ",
         "definition": "Definition: This field records the date that the information was entered into the patient record.",
         "description": null,
         "code": [
@@ -148,7 +150,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -161,7 +163,7 @@
       {
         "id": "OH4.6",
         "path": "OH4.6",
-        "short": " - OH4",
+        "short": "- OH4.6 - ",
         "definition": "Definition: This field contains a value the uniquely identifies a single combat zone for a person.",
         "description": null,
         "code": [
@@ -174,7 +176,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -186,9 +188,7 @@
       }
     ]
   },
-  "id": "OH4",
   "title": "HL7 v2 OH4 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/OH4",
   "name": "OH4",
-  "type": "http://hl7.org/v2/StructureDefinition/OH4"
+  "type": "OH4"
 }

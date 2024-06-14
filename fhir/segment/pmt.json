@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PMT",
+  "id": "PMT",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "PMT.1",
         "path": "PMT.1",
-        "short": " - PMT",
+        "short": "- PMT.1 - ",
         "definition": "Definition: Unique Payment/Remittance Advice number for the sending Network Application ID.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "PMT.2",
         "path": "PMT.2",
-        "short": " - PMT",
+        "short": "- PMT.2 - ",
         "definition": "Definition: [ Start ] Date/Time for this Payment/Remittance Advice.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -68,7 +70,7 @@
       {
         "id": "PMT.3",
         "path": "PMT.3",
-        "short": " - PMT",
+        "short": "- PMT.3 - ",
         "definition": "Definition: [ End ] Date/Time for this Payment/Remittance Advice.",
         "description": null,
         "code": [
@@ -81,7 +83,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "PMT.4",
         "path": "PMT.4",
-        "short": " - PMT",
+        "short": "- PMT.4 - ",
         "definition": "Definition: Code identifying the method for the movement of payment. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70570[_User-defined Table 0570 – Payment Method Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -124,7 +126,7 @@
       {
         "id": "PMT.5",
         "path": "PMT.5",
-        "short": " - PMT",
+        "short": "- PMT.5 - ",
         "definition": "Definition: Date Payment/Remittance Advice was paid, which might not be the same as Date/Time of Message on MSH.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -150,7 +152,7 @@
       {
         "id": "PMT.6",
         "path": "PMT.6",
-        "short": " - PMT",
+        "short": "- PMT.6 - ",
         "definition": "Definition: Sum total of all Product/Service Paid Amount on PSL for this Payment/Remittance Advice, net of any Adjustments to Payee.",
         "description": null,
         "code": [
@@ -163,7 +165,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -176,7 +178,7 @@
       {
         "id": "PMT.7",
         "path": "PMT.7",
-        "short": " - PMT",
+        "short": "- PMT.7 - ",
         "definition": "Definition: Unique check number from the Payer's application system.",
         "description": null,
         "code": [
@@ -189,7 +191,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -202,7 +204,7 @@
       {
         "id": "PMT.8",
         "path": "PMT.8",
-        "short": " - PMT",
+        "short": "- PMT.8 - ",
         "definition": "Definition: Identification of Payee's financial contact, e.g., name of the bank .",
         "description": null,
         "code": [
@@ -215,7 +217,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -228,7 +230,7 @@
       {
         "id": "PMT.9",
         "path": "PMT.9",
-        "short": " - PMT",
+        "short": "- PMT.9 - ",
         "definition": "Definition: Personal ID of the payee used in financial transaction.",
         "description": null,
         "code": [
@@ -241,7 +243,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -267,7 +269,7 @@
       {
         "id": "PMT.10",
         "path": "PMT.10",
-        "short": " - PMT",
+        "short": "- PMT.10 - ",
         "definition": "Definition: Id of Payee's Bank account.",
         "description": null,
         "code": [
@@ -280,7 +282,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -293,7 +295,7 @@
       {
         "id": "PMT.11",
         "path": "PMT.11",
-        "short": " - PMT",
+        "short": "- PMT.11 - ",
         "definition": "Definition: Organization identifier that made the Payment/Remittance Advice; could be a Payer, Insurance Company, TPA, Drug Company.",
         "description": null,
         "code": [
@@ -306,7 +308,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -319,7 +321,7 @@
       {
         "id": "PMT.12",
         "path": "PMT.12",
-        "short": " - PMT",
+        "short": "- PMT.12 - ",
         "definition": "Definition: Invoice Reference used with electronic banking methods.",
         "description": null,
         "code": [
@@ -332,7 +334,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -357,9 +359,7 @@
       }
     ]
   },
-  "id": "PMT",
   "title": "HL7 v2 PMT Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/PMT",
   "name": "PMT",
-  "type": "http://hl7.org/v2/StructureDefinition/PMT"
+  "type": "PMT"
 }

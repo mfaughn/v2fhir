@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CON",
+  "id": "CON",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "CON.1",
         "path": "CON.1",
-        "short": " - CON",
+        "short": "- CON.1 - ",
         "definition": "Definition: This field contains the number that identifies this segment instance within the message. For the first occurrence of the segment, the sequence number shall be one; for the second occurrence, the sequence number shall be two; etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "CON.2",
         "path": "CON.2",
-        "short": " - CON",
+        "short": "- CON.2 - ",
         "definition": "Definition: This field describes what the subject is consenting to, i.e., what type of service, surgical procedure, information access/release or other event. For values see file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70496[_User-Defined Table 0496 – Consent Type._]",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "CON.3",
         "path": "CON.3",
-        "short": " - CON",
+        "short": "- CON.3 - ",
         "definition": "Definition: Identifies a specific version of a consent form used to record the consent. A given version of a consent form implies a particular set of wording that appears on the form.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "CON.4",
         "path": "CON.4",
-        "short": " - CON",
+        "short": "- CON.4 - ",
         "definition": "Definition: Uniquely identifies a specific recorded consent. This may be the number assigned to an electronic consent, or may be the number on a printed consent form.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -137,7 +139,7 @@
       {
         "id": "CON.5",
         "path": "CON.5",
-        "short": " - CON",
+        "short": "- CON.5 - ",
         "definition": "Definition: Describes the specific procedures/information releases/events the subject is consenting to.",
         "description": null,
         "code": [
@@ -150,7 +152,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/FT"
+            "code": "FT"
           }
         ],
         "extension": [
@@ -163,7 +165,7 @@
       {
         "id": "CON.6",
         "path": "CON.6",
-        "short": " - CON",
+        "short": "- CON.6 - ",
         "definition": "Definition: Describes any additions or variations to the standard procedures/information releases/events from a standard consent that are applicable to the subject whose consent is sought.",
         "description": null,
         "code": [
@@ -176,7 +178,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/FT"
+            "code": "FT"
           }
         ],
         "extension": [
@@ -189,7 +191,7 @@
       {
         "id": "CON.7",
         "path": "CON.7",
-        "short": " - CON",
+        "short": "- CON.7 - ",
         "definition": "Definition: Describes any additional information relating to the procedure/information release/event that needs to be understood by the subject for informed consent. May include the reason for the service, the expected benefit, risks, etc.",
         "description": null,
         "code": [
@@ -202,7 +204,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/FT"
+            "code": "FT"
           }
         ],
         "extension": [
@@ -215,7 +217,7 @@
       {
         "id": "CON.8",
         "path": "CON.8",
-        "short": " - CON",
+        "short": "- CON.8 - ",
         "definition": "Definition: Describes any additions or variations to the standard additional information that needs to be understood by the patient for informed consent. May include a description of benefits and risks that are specific to the subject from whom consent is sought. May also include an indication that there are *no* subject-specific risks/benefits.",
         "description": null,
         "code": [
@@ -228,7 +230,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/FT"
+            "code": "FT"
           }
         ],
         "extension": [
@@ -241,7 +243,7 @@
       {
         "id": "CON.9",
         "path": "CON.9",
-        "short": " - CON",
+        "short": "- CON.9 - ",
         "definition": "Definition: Describes any restrictions or limitations placed on their consent by the subject.",
         "description": null,
         "code": [
@@ -254,7 +256,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/FT"
+            "code": "FT"
           }
         ],
         "extension": [
@@ -267,7 +269,7 @@
       {
         "id": "CON.10",
         "path": "CON.10",
-        "short": " - CON",
+        "short": "- CON.10 - ",
         "definition": "Definition: The method in which a subject provides consent. For values see file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70497[_HL7 Table 0497 – Consent Mode._]",
         "description": null,
         "code": [
@@ -280,7 +282,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -297,7 +299,7 @@
       {
         "id": "CON.11",
         "path": "CON.11",
-        "short": " - CON",
+        "short": "- CON.11 - ",
         "definition": "Definition: Indicates whether consent has been sought and granted. For values see file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70498[_HL7 Table 0498 – Consent Status_].",
         "description": null,
         "code": [
@@ -310,7 +312,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -327,7 +329,7 @@
       {
         "id": "CON.12",
         "path": "CON.12",
-        "short": " - CON",
+        "short": "- CON.12 - ",
         "definition": "Definition: Identifies the time when consent was discussed with the subject. This should only be specified if this differs from the time the consent decision is made.",
         "description": null,
         "code": [
@@ -340,7 +342,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -353,7 +355,7 @@
       {
         "id": "CON.13",
         "path": "CON.13",
-        "short": " - CON",
+        "short": "- CON.13 - ",
         "definition": "Definition: Identifies the time when the decision to grant/refuse consent was made. In the case of written consent, this is the time the consent form is signed.",
         "description": null,
         "code": [
@@ -366,7 +368,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -379,7 +381,7 @@
       {
         "id": "CON.14",
         "path": "CON.14",
-        "short": " - CON",
+        "short": "- CON.14 - ",
         "definition": "Definition: The time the consent becomes/became effective. This only needs to be specified if the time differs from the Consent Decision Date/Time",
         "description": null,
         "code": [
@@ -392,7 +394,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -405,7 +407,7 @@
       {
         "id": "CON.15",
         "path": "CON.15",
-        "short": " - CON",
+        "short": "- CON.15 - ",
         "definition": "Definition: The time the consent becomes ineffective. If not specified, the consent is assumed to be indefinite. For consents relating to information release, the end date/time is the date by which the released information must be returned/destroyed.",
         "description": null,
         "code": [
@@ -418,7 +420,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -431,7 +433,7 @@
       {
         "id": "CON.16",
         "path": "CON.16",
-        "short": " - CON",
+        "short": "- CON.16 - ",
         "definition": "Definition: Identifies whether the subject was deemed competent to provide consent. Refer to table file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 – Yes/No Indicator._]",
         "description": null,
         "code": [
@@ -444,7 +446,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -474,7 +476,7 @@
       {
         "id": "CON.17",
         "path": "CON.17",
-        "short": " - CON",
+        "short": "- CON.17 - ",
         "definition": "Definition: Identifies whether translation was (or will be) required to obtain informed consent from the subject. Refer to table file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 – Yes/No Indicator._]",
         "description": null,
         "code": [
@@ -487,7 +489,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -517,7 +519,7 @@
       {
         "id": "CON.18",
         "path": "CON.18",
-        "short": " - CON",
+        "short": "- CON.18 - ",
         "definition": "Definition: Identifies the language the consent material must be translated to. Refer to _file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70296[User Defined table 0296 – Primary Language]_ which contains no suggested values. This table may be populated with values similar to those that may be found in _ISO table 639 – Language Codes._",
         "description": null,
         "code": [
@@ -530,7 +532,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -547,7 +549,7 @@
       {
         "id": "CON.19",
         "path": "CON.19",
-        "short": " - CON",
+        "short": "- CON.19 - ",
         "definition": "Definition: Identifies whether additional educational or reference material was provided to the subject as part of the consent process. Refer to table file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 – Yes/No Indicator._]",
         "description": null,
         "code": [
@@ -560,7 +562,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -590,7 +592,7 @@
       {
         "id": "CON.20",
         "path": "CON.20",
-        "short": " - CON",
+        "short": "- CON.20 - ",
         "definition": "Definition: Identifies why the subject's consent was not sought. This field must be populated when _CON-11 - Consent Status_ is B – Bypassed. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70499[_User Defined table 0499 – Consent Bypass Reason_] for suggested values.",
         "description": null,
         "code": [
@@ -603,7 +605,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -620,7 +622,7 @@
       {
         "id": "CON.21",
         "path": "CON.21",
-        "short": " - CON",
+        "short": "- CON.21 - ",
         "definition": "Definition: Identifies how much information was disclosed to the subject as part of the informed consent process. Refer to table file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70500[_HL7 Table 0500 – Consent Disclosure Level_].",
         "description": null,
         "code": [
@@ -633,7 +635,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -663,7 +665,7 @@
       {
         "id": "CON.22",
         "path": "CON.22",
-        "short": " - CON",
+        "short": "- CON.22 - ",
         "definition": "Definition: Identifies why the subject did not receive full disclosure. . Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70501[_User-Defined Table 0501 – Consent Non-Disclosure Reason_] for suggested values.",
         "description": null,
         "code": [
@@ -676,7 +678,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -693,7 +695,7 @@
       {
         "id": "CON.23",
         "path": "CON.23",
-        "short": " - CON",
+        "short": "- CON.23 - ",
         "definition": "Definition: Identifies why consent was granted by a person other than the subject of the consent. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70502[_User-defined Table 0502 – Non-Subject Consenter Reason_] for suggested values.",
         "description": null,
         "code": [
@@ -706,7 +708,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -723,7 +725,7 @@
       {
         "id": "CON.24",
         "path": "CON.24",
-        "short": " - CON",
+        "short": "- CON.24 - ",
         "definition": "Definition: Identification of the individual(s) who is (are) consenting.",
         "description": null,
         "code": [
@@ -736,7 +738,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -749,7 +751,7 @@
       {
         "id": "CON.25",
         "path": "CON.25",
-        "short": " - CON",
+        "short": "- CON.25 - ",
         "definition": "Definition: Identification of the relationship of the consenter to the subject. Receivers are required to inspect the Coding System component of the CWE data type to accurately interpret the meaning of the code. Senders transmitting messages to Receivers on earlier version of the standard may elect to negotiate business rules to ensure that expected data is not lost. HL7 does not assign positional meaning to user-defined codes. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70548[_User-Defined Table 0548 – Signatory's Relationship to Subject_] for suggested values.",
         "description": null,
         "code": [
@@ -762,7 +764,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -778,9 +780,7 @@
       }
     ]
   },
-  "id": "CON",
   "title": "HL7 v2 CON Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/CON",
   "name": "CON",
-  "type": "http://hl7.org/v2/StructureDefinition/CON"
+  "type": "CON"
 }

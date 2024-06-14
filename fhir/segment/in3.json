@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/IN3",
+  "id": "IN3",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "IN3.1",
         "path": "IN3.1",
-        "short": " - IN3",
+        "short": "- IN3.1 - ",
         "definition": "Definition: _IN3-1 - Set ID - IN3_ contains the number that identifies this transaction. For the first occurrence of the segment the sequence number shall be 1, for the second occurrence it shall be 2, etc. The set ID in the IN3 segment is used when there are multiple certifications for the insurance plan identified in IN1-2. The set ID in the IN3 segment is provided because there can be multiple repetitions of the IN3 segment if there are multiple certifications for the same insurance plan, e.g., IN1 (Set ID 1), IN2, IN3 (Set ID 1), IN3 (Set ID 2), IN3 (Set ID 3). Further details are provided in 6.5.6.1.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "IN3.2",
         "path": "IN3.2",
-        "short": " - IN3",
+        "short": "- IN3.2 - ",
         "definition": "Definition: This field contains the number assigned by the certification agency. The assigning authority and identifier type code are strongly recommended for all CX data types.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -81,7 +83,7 @@
       {
         "id": "IN3.3",
         "path": "IN3.3",
-        "short": " - IN3",
+        "short": "- IN3.3 - ",
         "definition": "Definition: This field contains the party that approved the certification. Multiple names and identifiers for the same person may be sent in this sequence Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -94,7 +96,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -107,7 +109,7 @@
       {
         "id": "IN3.4",
         "path": "IN3.4",
-        "short": " - IN3",
+        "short": "- IN3.4 - ",
         "definition": "Definition: This field indicates whether certification is required. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -120,7 +122,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -150,7 +152,7 @@
       {
         "id": "IN3.5",
         "path": "IN3.5",
-        "short": " - IN3",
+        "short": "- IN3.5 - ",
         "definition": "Definition: This field contains the penalty, in dollars or a percentage that will be assessed if the pre-certification is not performed.",
         "description": null,
         "code": [
@@ -163,7 +165,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MOP"
+            "code": "MOP"
           }
         ],
         "extension": [
@@ -176,7 +178,7 @@
       {
         "id": "IN3.6",
         "path": "IN3.6",
-        "short": " - IN3",
+        "short": "- IN3.6 - ",
         "definition": "Definition: This field contains the date and time stamp that indicates when insurance was certified to exist for the patient.",
         "description": null,
         "code": [
@@ -189,7 +191,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -202,7 +204,7 @@
       {
         "id": "IN3.7",
         "path": "IN3.7",
-        "short": " - IN3",
+        "short": "- IN3.7 - ",
         "definition": "Definition: This field contains the date/time that the certification was modified.",
         "description": null,
         "code": [
@@ -215,7 +217,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -228,7 +230,7 @@
       {
         "id": "IN3.8",
         "path": "IN3.8",
-        "short": " - IN3",
+        "short": "- IN3.8 - ",
         "definition": "Definition: This field contains the name party who is responsible for sending this certification information. Multiple names for the same person may be sent in this sequence. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -241,7 +243,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -254,7 +256,7 @@
       {
         "id": "IN3.9",
         "path": "IN3.9",
-        "short": " - IN3",
+        "short": "- IN3.9 - ",
         "definition": "Definition: This field contains the date that this certification begins.",
         "description": null,
         "code": [
@@ -267,7 +269,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -280,7 +282,7 @@
       {
         "id": "IN3.10",
         "path": "IN3.10",
-        "short": " - IN3",
+        "short": "- IN3.10 - ",
         "definition": "Definition: This field contains date that this certification ends.",
         "description": null,
         "code": [
@@ -293,7 +295,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -306,7 +308,7 @@
       {
         "id": "IN3.11",
         "path": "IN3.11",
-        "short": " - IN3",
+        "short": "- IN3.11 - ",
         "definition": "Definition: This field contains the number of days for which this certification is valid. This field applies to denied, pending, or approved days.",
         "description": null,
         "code": [
@@ -319,7 +321,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTN"
+            "code": "DTN"
           }
         ],
         "extension": [
@@ -332,7 +334,7 @@
       {
         "id": "IN3.12",
         "path": "IN3.12",
-        "short": " - IN3",
+        "short": "- IN3.12 - ",
         "definition": "Definition: This field contains the non-concur code and description for a denied request. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70233[_User-defined Table 0233 - Non-Concur Code/Description_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -345,7 +347,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -362,7 +364,7 @@
       {
         "id": "IN3.13",
         "path": "IN3.13",
-        "short": " - IN3",
+        "short": "- IN3.13 - ",
         "definition": "Definition: This field contains the effective date of the non-concurrence classification.",
         "description": null,
         "code": [
@@ -375,7 +377,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -388,7 +390,7 @@
       {
         "id": "IN3.14",
         "path": "IN3.14",
-        "short": " - IN3",
+        "short": "- IN3.14 - ",
         "definition": "Definition: This field contains the physician who works with and reviews cases that are pending physician review for the certification agency. Multiple names for the same person may be sent in this sequence. Specification of meaning based on sequence is deprecated. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70010[_U__ser-defined Table 0010 - Physician ID_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -401,7 +403,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "binding": {
@@ -418,7 +420,7 @@
       {
         "id": "IN3.15",
         "path": "IN3.15",
-        "short": " - IN3",
+        "short": "- IN3.15 - ",
         "definition": "Definition: This field contains the name of the party contacted at the certification agency who granted the certification and communicated the certification number.",
         "description": null,
         "code": [
@@ -431,7 +433,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -457,7 +459,7 @@
       {
         "id": "IN3.16",
         "path": "IN3.16",
-        "short": " - IN3",
+        "short": "- IN3.16 - ",
         "definition": "Definition: This field contains the phone number of the certification contact. Multiple phone numbers for the same certification contact may be sent in this sequence. As of v 2.7, no assumptions can be made based on position or sequence. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -470,7 +472,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -483,7 +485,7 @@
       {
         "id": "IN3.17",
         "path": "IN3.17",
-        "short": " - IN3",
+        "short": "- IN3.17 - ",
         "definition": "Definition: This field contains the reason that an appeal was made on a non-concur for certification. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70345[_User-defined Table 0345 - Appeal Reason_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -496,7 +498,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -513,7 +515,7 @@
       {
         "id": "IN3.18",
         "path": "IN3.18",
-        "short": " - IN3",
+        "short": "- IN3.18 - ",
         "definition": "Definition: This field contains the certification agency. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70346[_User-defined Table 0346 - Certification Agency_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -526,7 +528,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -543,7 +545,7 @@
       {
         "id": "IN3.19",
         "path": "IN3.19",
-        "short": " - IN3",
+        "short": "- IN3.19 - ",
         "definition": "Definition: This field contains the phone number of the certification agency.",
         "description": null,
         "code": [
@@ -556,7 +558,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -569,7 +571,7 @@
       {
         "id": "IN3.20",
         "path": "IN3.20",
-        "short": " - IN3",
+        "short": "- IN3.20 - ",
         "definition": "Definition: This field indicates whether pre-certification is required for particular patient types, and the time window for obtaining the certification. The following components of this field are defined as follows:",
         "description": null,
         "code": [
@@ -582,7 +584,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ICD"
+            "code": "ICD"
           }
         ],
         "binding": {
@@ -599,7 +601,7 @@
       {
         "id": "IN3.21",
         "path": "IN3.21",
-        "short": " - IN3",
+        "short": "- IN3.21 - ",
         "definition": "Definition: This field contains the name of the entity, which is handling this particular patient's case (e.g., UR nurse, or a specific healthcare facility location).",
         "description": null,
         "code": [
@@ -612,7 +614,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -638,7 +640,7 @@
       {
         "id": "IN3.22",
         "path": "IN3.22",
-        "short": " - IN3",
+        "short": "- IN3.22 - ",
         "definition": "Definition: This field contains the date that the second opinion was obtained.",
         "description": null,
         "code": [
@@ -651,7 +653,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -664,7 +666,7 @@
       {
         "id": "IN3.23",
         "path": "IN3.23",
-        "short": " - IN3",
+        "short": "- IN3.23 - ",
         "definition": "Definition: This field contains the code that represents the status of the second opinion. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70151[_User-defined Table 0151 - Second Opinion Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -677,7 +679,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -694,7 +696,7 @@
       {
         "id": "IN3.24",
         "path": "IN3.24",
-        "short": " - IN3",
+        "short": "- IN3.24 - ",
         "definition": "Definition: Use this field if accompanying documentation has been received by the provider. Refer to _file:///E:\\V2\\V29_CH02C_Tables.docx#HL70152[User-defined Table 0152 - Second Opinion Documentation Received]_ in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -707,7 +709,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -724,7 +726,7 @@
       {
         "id": "IN3.25",
         "path": "IN3.25",
-        "short": " - IN3",
+        "short": "- IN3.25 - ",
         "definition": "Definition: This field contains an identifier and name of the physician who provided the second opinion. Multiple names and identifiers for the same person may be sent in this sequence. Specification of meaning based on sequence is deprecated. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70010[_User-defined Table 0010 - Physician ID_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -737,7 +739,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "binding": {
@@ -754,7 +756,7 @@
       {
         "id": "IN3.26",
         "path": "IN3.26",
-        "short": " - IN3",
+        "short": "- IN3.26 - ",
         "definition": "Definition: This field contains the certification type code for a specific certification. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70921[_User-defined Table 0921 – Certification Type Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -767,7 +769,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -784,7 +786,7 @@
       {
         "id": "IN3.27",
         "path": "IN3.27",
-        "short": " - IN3",
+        "short": "- IN3.27 - ",
         "definition": "Definition: This field contains the certification category code for a specific certification. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70922[_User-defined Table 0922 – Certification Category Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -797,7 +799,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -814,7 +816,7 @@
       {
         "id": "IN3.28",
         "path": "IN3.28",
-        "short": " - IN3",
+        "short": "- IN3.28 - ",
         "definition": "Definition: This field contains the timestamp of the online verification of the insurance information.",
         "description": null,
         "code": [
@@ -827,7 +829,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -840,7 +842,7 @@
       {
         "id": "IN3.29",
         "path": "IN3.29",
-        "short": " - IN3",
+        "short": "- IN3.29 - ",
         "definition": "Definition: This field contains the result of the online verification. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70970[_User-defined Table 0970 – Online Verification Result_] in Chapter 2C, Code Tables, for suggested values. This field is required if IN3-28 is populated.",
         "description": null,
         "code": [
@@ -853,7 +855,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -870,7 +872,7 @@
       {
         "id": "IN3.30",
         "path": "IN3.30",
-        "short": " - IN3",
+        "short": "- IN3.30 - ",
         "definition": "Definition: This field contains the error code for the result of the online verification. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70791[_User-defined Table 0791 – Online Verification Result Error Code_] in Chapter 2C, Code Tables, for suggested values. This field is required if IN3-28 is populated and an error status is returned.",
         "description": null,
         "code": [
@@ -883,7 +885,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -900,7 +902,7 @@
       {
         "id": "IN3.31",
         "path": "IN3.31",
-        "short": " - IN3",
+        "short": "- IN3.31 - ",
         "definition": "Definition: This field contains the check digit for the online verification of the insurance information. This field is required if IN3-28 is populated.",
         "description": null,
         "code": [
@@ -913,7 +915,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -925,9 +927,7 @@
       }
     ]
   },
-  "id": "IN3",
   "title": "HL7 v2 IN3 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/IN3",
   "name": "IN3",
-  "type": "http://hl7.org/v2/StructureDefinition/IN3"
+  "type": "IN3"
 }

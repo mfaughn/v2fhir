@@ -1,8 +1,10 @@
 {
+  "resourceType" : "StructureDefinition",
+  "url" : "http://hl7.org/v2/StructureDefinition/THIS_GETS_OVERWRITTEN",
+  "id" : "THIS_GETS_OVERWRITTEN",
   "meta" : {
     "profile" : [ "http://hl7.org/v2/StructureDefinition/Segment-Profile" ]
   },
-  "resourceType" : "StructureDefinition",
   "version" : "0.0.1",
   "status" : "active",
   "kind" : "logical",

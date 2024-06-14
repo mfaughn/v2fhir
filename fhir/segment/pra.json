@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PRA",
+  "id": "PRA",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "PRA.1",
         "path": "PRA.1",
-        "short": " - PRA",
+        "short": "- PRA.1 - ",
         "definition": "Definition: For MFN Master File Notification, this field is required and must match _MFE-4 Primary Key Value_ to identify which entry is being referenced. For all other messages, this field should not be used. Refer to Table 0681 - Primary Key Value - PRA in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "PRA.2",
         "path": "PRA.2",
-        "short": " - PRA",
+        "short": "- PRA.2 - ",
         "definition": "Definition: This field contains the name and/or code of a group of practitioners to which this practitioner belongs. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70358[_User-defined Table 0358 Practitioner Group_] for suggested values.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -76,7 +78,7 @@
       {
         "id": "PRA.3",
         "path": "PRA.3",
-        "short": " - PRA",
+        "short": "- PRA.3 - ",
         "definition": "Definition: This field contains the category of practitioner. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70186[_User-defined Table 0186 - Practitioner Category_] for suggested values. Values may include codes for staff physician, courtesy physician, resident, physician assistant, physical therapist, psychiatrist, psychologist, pharmacist, registered nurse, licensed practical nurse, licensed vocational nurse, nurse practitioner, etc. If the provider works in different Practitioner Categories in different organization units, then this information should be recorded separately in ORG-6,7,8.",
         "description": null,
         "code": [
@@ -89,7 +91,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -106,7 +108,7 @@
       {
         "id": "PRA.4",
         "path": "PRA.4",
-        "short": " - PRA",
+        "short": "- PRA.4 - ",
         "definition": "Definition: This field indicates how provider services are billed. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70187[_HL7 Table 0187 - Provider Billing_] for valid values.",
         "description": null,
         "code": [
@@ -119,7 +121,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -149,7 +151,7 @@
       {
         "id": "PRA.5",
         "path": "PRA.5",
-        "short": " - PRA",
+        "short": "- PRA.5 - ",
         "definition": "Definition: This repeating field is made up of multiple components to record the practitioner's specialties. The multiple components of each specialty are: (1) specialty name or abbreviation, identifies provider's specialty, (2) name of specialty governing board, (3) Certification Status, (4) certified date contains the date of certification, if certified. Refer to E:\\\\V2\\\\v2.9 final Nov from Frank\\\\V29_CH02C_Tables.docx#HL70337[_HL7 Table 0337 – Certification Status_] for valid values.",
         "description": null,
         "code": [
@@ -162,7 +164,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SPD"
+            "code": "SPD"
           }
         ],
         "binding": {
@@ -179,7 +181,7 @@
       {
         "id": "PRA.6",
         "path": "PRA.6",
-        "short": " - PRA",
+        "short": "- PRA.6 - ",
         "definition": "Definition: *_As of version 2.5, this field has been retained for backward compatibility only._* Practitioner ID numbers should be contained in _STF-2 Staff Identifier List_. This repeating field contains this practitioner's license numbers and other ID numbers. This is a field made up of the following components: (1) the ID number, and (2) the type of number, and optionally (3) the state or province in which it is valid, if relevant, or other qualifying information. It is recommended that state qualifications use the abbreviations from the postal service of the country. The practitioner ID number type (component 2) is a user-defined table (file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70338[_User-defined Table 0338 – Practitioner ID Number_] in Chapter 2C, Code Tables).",
         "description": null,
         "code": [
@@ -192,7 +194,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PLN"
+            "code": "PLN"
           }
         ],
         "binding": {
@@ -209,7 +211,7 @@
       {
         "id": "PRA.7",
         "path": "PRA.7",
-        "short": " - PRA",
+        "short": "- PRA.7 - ",
         "definition": "Definition: This field contains the institutional privileges which this provider may exercise. Depends upon institutional needs. For example, admit, transfer, discharge, place orders, verify orders, review results, etc. Can also be used for privileges other than patient services. This is a repeating field, with each privilege made up of the following components: (1) privilege; (2) privilege class; (3) privilege expiration date, if any; (4) privilege activation date, if any, and (5) facility. Note that the privilege and privilege class components are CWE data types, and thus they are encoded with the subcomponent delimiter (&) rather than the component delimiter (^). The facility component is an EI data type specifying the facility to which the privilege applies and is encoded with the subcomponent delimiter (&) rather than the component delimiter (^). The facility component is an EI data type specifying the facility to which the privilege applies and is encoded with the subcomponent delimiter (&) rather than the component delimiter (^).",
         "description": null,
         "code": [
@@ -222,7 +224,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PIP"
+            "code": "PIP"
           }
         ],
         "extension": [
@@ -235,7 +237,7 @@
       {
         "id": "PRA.8",
         "path": "PRA.8",
-        "short": " - PRA",
+        "short": "- PRA.8 - ",
         "definition": "Definition: This field contains the date the practitioner began practicing at the present institution (e.g., at hospital, at physician organization, at managed care network).",
         "description": null,
         "code": [
@@ -248,7 +250,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -261,7 +263,7 @@
       {
         "id": "PRA.9",
         "path": "PRA.9",
-        "short": " - PRA",
+        "short": "- PRA.9 - ",
         "definition": "Definition: This field contains the institution the practitioner began or intends to begin practicing at (e.g., at hospital, at physician organization, at managed care network). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70537[_User-defined Table 0537 - Institution_] for valid values.",
         "description": null,
         "code": [
@@ -274,7 +276,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -291,7 +293,7 @@
       {
         "id": "PRA.10",
         "path": "PRA.10",
-        "short": " - PRA",
+        "short": "- PRA.10 - ",
         "definition": "Definition: This field contains the date the practitioner ended or intends to end practicing at the given institution (e.g., at hospital, at physician organization, at managed care network).",
         "description": null,
         "code": [
@@ -304,7 +306,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -317,7 +319,7 @@
       {
         "id": "PRA.11",
         "path": "PRA.11",
-        "short": " - PRA",
+        "short": "- PRA.11 - ",
         "definition": "Definition: This field contains a code that indicates the agency that the practitioner is authorized to bill for medical services. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70401[_User-defined Table 0401 – Government Reimbursement Program_] in Chapter 2C, Code Tables,for valid values. This table contains the associated code values for medicaid and medical. This is a repeating field.",
         "description": null,
         "code": [
@@ -330,7 +332,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -347,7 +349,7 @@
       {
         "id": "PRA.12",
         "path": "PRA.12",
-        "short": " - PRA",
+        "short": "- PRA.12 - ",
         "definition": "Definition: For all messages except the Staff/Practitioner Master File Notification, this field is required and contains the number that identifies this transaction. For the first occurrence of the segment, the sequence number shall be one; for the second occurrence, the sequence number shall be two; etc. For the Staff/Practitioner Master File Notification message, this field should not be used.",
         "description": null,
         "code": [
@@ -360,7 +362,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -385,9 +387,7 @@
       }
     ]
   },
-  "id": "PRA",
   "title": "HL7 v2 PRA Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/PRA",
   "name": "PRA",
-  "type": "http://hl7.org/v2/StructureDefinition/PRA"
+  "type": "PRA"
 }

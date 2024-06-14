@@ -6,7 +6,8 @@ def create_segment_code_system(segs)
   concept = []
   segs.each do |s|
     # puts "#{s.code} - #{s.name}"
-    concept << { code:"http://hl7.org/v2/StructureDefinition/#{s.code}", display:s.name }
+    # concept << { code:"http://hl7.org/v2/StructureDefinition/#{s.code}", display:s.name }
+    concept << { code:s.code, display:s.name }
   end
 
   path = File.expand_path("~/projects/v2fhir/fhir/segment/v2-cs-segments.json")
@@ -33,28 +34,18 @@ def create_segment_structure_definitions(segs)
     json['title'] = "HL7 v2 #{code} Segment Definition"
     json['url']  = "http://hl7.org/v2/StructureDefinition/#{code}"
     json['name'] = code
-    json['type'] = "http://hl7.org/v2/StructureDefinition/#{code}"
+    # json['type'] = "http://hl7.org/v2/StructureDefinition/#{code}"
+    json['type'] = code
     elements = []
     seg.fields.each do |field|
       de = field.data_element
-      # {
-      #   "id" : "PID.1",
-      #   "path" : "PID.1",
-      #   "code" : [ { "system" : "http://hl7.org/v2/CodeSystem/Items", "code" : "00104" }],
-      #   "short" : "Set ID - PID",
-      #   "definition" : "This field contains the number that identifies this transaction. For the first occurrence of the segment, the sequence number shall be one, for the second occurrence, the sequence number shall be two, etc.",
-      #   "min" : 0,
-      #   "max" : "1",
-      #   "type" : [{ "code" : "http://hl7.org/v2/StructureDefinition/SI"}],
-      #   "maxLength" : 4
-      # },
       # puts field.class.properties.keys.sort
       # puts
-      # puts field.data_element.class.properties.keys.sort
+      # puts de.class.properties.keys.sort
       el = {}
       el[:id]    = "#{code}.#{field.sequence_number}"
       el[:path]  = el[:id]
-      el[:short] = "#{field.name} - #{code}"
+      el[:short] = "- #{code}.#{field.sequence_number} - #{de.name}"
       el[:definition]  = field.definition_text.definition_content  if field.definition
       el[:description] = field.definition_text.description_content if field.definition
       el[:code]  = [ { system:"http://hl7.org/v2/CodeSystem/DataElements", code:de.item_number } ]
@@ -79,7 +70,8 @@ def create_segment_structure_definitions(segs)
         puts "#{code}.#{field.sequence_number} in #{seg.origin} has data element with no type"
         raise
       end
-      el[:type] = [{ code: "http://hl7.org/v2/StructureDefinition/#{de.type&.code}"}] if de.type&.code
+      # el[:type] = [{ code: "http://hl7.org/v2/StructureDefinition/#{de.type&.code}"}] if de.type&.code
+      el[:type] = [{ code:de.type.code }] if de.type&.code # Won't have a type if it is Withdrawn
       # TODO we have to parse Ch2 first in order to have the binding strength for all the tables readily available.  How fun...
       # FIXME what if we have multiple tables????
       tbl = de.vocab ? de.vocab.code_systems.first.table_id.to_s.rjust(4, '0') : nil
@@ -133,7 +125,7 @@ def create_segment_structure_definitions(segs)
   
     path = File.expand_path("~/projects/v2fhir/fhir/segment/#{seg.code.downcase}.json")
     File.open(path, 'w+') { |f| f.puts JSON.pretty_generate(json) }
-    puts "#{seg.code} written"
+    # puts "#{seg.code} written"
   end  
 end
 create_segment_code_system(segs)

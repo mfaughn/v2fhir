@@ -1,0 +1,130 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MFN_M15",
+  "id": "MFN_M15",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "MFN_M15.1-MSH",
+          "path": "MFN_M15.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M15.2-SFT",
+          "path": "MFN_M15.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M15.3-UAC",
+          "path": "MFN_M15.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M15.4-MFI",
+          "path": "MFN_M15.4-MFI",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MFI"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M15.5-MF_INV_ITEM",
+          "path": "MFN_M15.5-MF_INV_ITEM",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "MFN_M15.5-MF_INV_ITEM.1-MFE",
+              "path": "MFN_M15.5-MF_INV_ITEM.1-MFE",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/MFE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M15.5-MF_INV_ITEM.2-IIM",
+              "path": "MFN_M15.5-MF_INV_ITEM.2-IIM",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IIM"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 MFN_M15 Segment Definition",
+  "name": "MFN_M15",
+  "type": "http://hl7.org/v2/StructureDefinition/MFN_M15"
+}

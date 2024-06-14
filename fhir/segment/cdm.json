@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CDM",
+  "id": "CDM",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "CDM.1",
         "path": "CDM.1",
-        "short": " - CDM",
+        "short": "- CDM.1 - ",
         "definition": "Definition: The key field of the entry. Must match _MFE-4 - Primary Key Value - MFE_. This field contains the code assigned by the institution for the purpose of uniquely identifying the thing that can be charged. For example, this field would be used to uniquely identify a procedure, item, or test for charging purposes. Probably the same set of values as used in _FT1-7- Transaction Code_ in financial messages (refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70132[User-defined Table 0132 - Transaction Code] in Chapter 2C, Code Tables, for suggested values). See Chapter 7 for discussion of the universal service ID.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "CDM.2",
         "path": "CDM.2",
-        "short": " - CDM",
+        "short": "- CDM.2 - ",
         "definition": "Definition: This field contains an alternative charge code. For example, points to another charge description master entry in cases where one code supersedes or overrides another code. Repeating field allows for different codes used by different systems which should be handled as if they were the same; for example, the general ledger code may differ from the billing code. Or, in a multi-facility environment which does facility-specific pricing, there may be more than one of these master file entries for one charge description, each with a different facility. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70132[User-defined Table 0132 - Transaction Code] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -76,7 +78,7 @@
       {
         "id": "CDM.3",
         "path": "CDM.3",
-        "short": " - CDM",
+        "short": "- CDM.3 - ",
         "definition": "Definition: This field contains the text abbreviations or code that is associated with this CDM entry.",
         "description": null,
         "code": [
@@ -89,7 +91,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -115,7 +117,7 @@
       {
         "id": "CDM.4",
         "path": "CDM.4",
-        "short": " - CDM",
+        "short": "- CDM.4 - ",
         "definition": "Definition: This field contains the full text description of this CDM entry.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -154,7 +156,7 @@
       {
         "id": "CDM.5",
         "path": "CDM.5",
-        "short": " - CDM",
+        "short": "- CDM.5 - ",
         "definition": "Definition: This field indicates whether this CDM entry's description can be overridden. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70268[User-defined Table 0268 - Override] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -167,7 +169,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -197,7 +199,7 @@
       {
         "id": "CDM.6",
         "path": "CDM.6",
-        "short": " - CDM",
+        "short": "- CDM.6 - ",
         "definition": "Definition: This field contains the repeating occurrences for a list of other CDM entry charge codes identifying the other charges which should be generated from this CDM entry. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70132[User-defined Table 0132 - Transaction Code] in Chapter 2C, Code Tables, for suggested values. If non-null, posting a charge to this CDM entry should result in posting the charges identified here. These are sometimes called \"linked items.\"",
         "description": null,
         "code": [
@@ -210,7 +212,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -227,7 +229,7 @@
       {
         "id": "CDM.7",
         "path": "CDM.7",
-        "short": " - CDM",
+        "short": "- CDM.7 - ",
         "definition": "Definition: This field contains the procedure code for procedure, if any, associated with this charge description. Repeating field allows for different procedure coding systems such as CPT4, ICD9. Coded entry made up of code plus coding schema. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70088[Externally-defined Table 0088 - Procedure Code] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -240,7 +242,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -257,7 +259,7 @@
       {
         "id": "CDM.8",
         "path": "CDM.8",
-        "short": " - CDM",
+        "short": "- CDM.8 - ",
         "definition": "Definition: This field indicates whether this is a usable CDM entry. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70183[HL7 Table 0183 - Active/Inactive] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -270,7 +272,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -300,7 +302,7 @@
       {
         "id": "CDM.9",
         "path": "CDM.9",
-        "short": " - CDM",
+        "short": "- CDM.9 - ",
         "definition": "Definition: This optional field contains an identifying stock number, if any, which might be used, for example, as a cross reference for materials management. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70463[User-defined Table 0463 - Inventory number] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -313,7 +315,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -330,7 +332,7 @@
       {
         "id": "CDM.10",
         "path": "CDM.10",
-        "short": " - CDM",
+        "short": "- CDM.10 - ",
         "definition": "Definition: This field contains the Relative Value Unit (RVU) minutes and ATS, a factor related to CPT4 coding and to pricing structure for physical billing.",
         "description": null,
         "code": [
@@ -343,7 +345,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -369,7 +371,7 @@
       {
         "id": "CDM.11",
         "path": "CDM.11",
-        "short": " - CDM",
+        "short": "- CDM.11 - ",
         "definition": "Definition: This field contains any contract number pertaining to this chargeable item; for example, supplier contract or service contract.",
         "description": null,
         "code": [
@@ -382,7 +384,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -395,7 +397,7 @@
       {
         "id": "CDM.12",
         "path": "CDM.12",
-        "short": " - CDM",
+        "short": "- CDM.12 - ",
         "definition": "Definition: This field contains the organization with which there is a contractual arrangement for providing the service or material used for this chargeable item.",
         "description": null,
         "code": [
@@ -408,7 +410,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -421,7 +423,7 @@
       {
         "id": "CDM.13",
         "path": "CDM.13",
-        "short": " - CDM",
+        "short": "- CDM.13 - ",
         "definition": "Definition: This field contains a room fee indicator. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[HL7 Table 0136 - Yes/no Indicator] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -434,7 +436,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -463,9 +465,7 @@
       }
     ]
   },
-  "id": "CDM",
   "title": "HL7 v2 CDM Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/CDM",
   "name": "CDM",
-  "type": "http://hl7.org/v2/StructureDefinition/CDM"
+  "type": "CDM"
 }

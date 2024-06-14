@@ -1,0 +1,175 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RSP_K11",
+  "id": "RSP_K11",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RSP_K11.1-MSH",
+          "path": "RSP_K11.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K11.2-SFT",
+          "path": "RSP_K11.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K11.3-UAC",
+          "path": "RSP_K11.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K11.4-MSA",
+          "path": "RSP_K11.4-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K11.5-ERR",
+          "path": "RSP_K11.5-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K11.6-QAK",
+          "path": "RSP_K11.6-QAK",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QAK"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K11.7-QPD",
+          "path": "RSP_K11.7-QPD",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QPD"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K11.8-SEGMENT_PATTERN",
+          "path": "RSP_K11.8-SEGMENT_PATTERN",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RSP_K11.8-SEGMENT_PATTERN.1-...",
+              "path": "RSP_K11.8-SEGMENT_PATTERN.1-...",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/..."
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RSP_K11.9-DSC",
+          "path": "RSP_K11.9-DSC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DSC"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 RSP_K11 Segment Definition",
+  "name": "RSP_K11",
+  "type": "http://hl7.org/v2/StructureDefinition/RSP_K11"
+}

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OVR",
+  "id": "OVR",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "OVR.1",
         "path": "OVR.1",
-        "short": " - OVR",
+        "short": "- OVR.1 - ",
         "definition": "Definition: Identifies what type of business rule override is being performed. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70518[_User-defined Table 0518 - Override Type_] in Chapter 2C, Code Tables, for suggested values. Given that an application provides end users with the ability to override business rules, there must be a way to communicate what business rule is being overridden.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "OVR.2",
         "path": "OVR.2",
-        "short": " - OVR",
+        "short": "- OVR.2 - ",
         "definition": "Definition: Indicates the reason for the business rule override. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70521[_User-defined Table 0521 – Override Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -76,7 +78,7 @@
       {
         "id": "OVR.3",
         "path": "OVR.3",
-        "short": " - OVR",
+        "short": "- OVR.3 - ",
         "definition": "Definition: Additional descriptive comments detailing the circumstances of the override.",
         "description": null,
         "code": [
@@ -89,7 +91,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -115,7 +117,7 @@
       {
         "id": "OVR.4",
         "path": "OVR.4",
-        "short": " - OVR",
+        "short": "- OVR.4 - ",
         "definition": "Definition: Identifies the user entering the override in the system.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -141,7 +143,7 @@
       {
         "id": "OVR.5",
         "path": "OVR.5",
-        "short": " - OVR",
+        "short": "- OVR.5 - ",
         "definition": "Definition: Identifies the health services provider who accepts professional responsibility for overriding the business rule. This field SHOULD be left empty if the recording and responsible health care provider is the same as who entered the override.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -166,9 +168,7 @@
       }
     ]
   },
-  "id": "OVR",
   "title": "HL7 v2 OVR Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/OVR",
   "name": "OVR",
-  "type": "http://hl7.org/v2/StructureDefinition/OVR"
+  "type": "OVR"
 }

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MRG",
+  "id": "MRG",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "MRG.1",
         "path": "MRG.1",
-        "short": " - MRG",
+        "short": "- MRG.1 - ",
         "definition": "Definition: This field contains the prior patient identifier list. This field contains a list of potential \"old\" numbers to match. Only one old number can be merged with one new number in a transaction. Refer to _file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70061[HL7 Table 0061 - Check Digit Schem]e_ for valid values. The assigning authority and identifier type code are strongly recommended for all CX data types.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "MRG.2",
         "path": "MRG.2",
-        "short": " - MRG",
+        "short": "- MRG.2 - ",
         "definition": "Definition: *The MRG-2 field was retained for backward compatibility only as of v 2.3.1 and withdrawn as of v 2.7. The reader is referred to section _3.4.10.1_, _MRG-1 Prior Patient Identifier List_* (CX) 00211**, instead.**",
         "description": null,
         "code": [
@@ -67,7 +69,7 @@
       {
         "id": "MRG.3",
         "path": "MRG.3",
-        "short": " - MRG",
+        "short": "- MRG.3 - ",
         "definition": "Definition: This field contains the prior patient account number. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70061[_HL7 Table 0061 - Check Digit Scheme_] for valid values. The assigning authority and identifier type code are strongly recommended for all CX data types.",
         "description": null,
         "code": [
@@ -80,7 +82,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "binding": {
@@ -97,7 +99,7 @@
       {
         "id": "MRG.4",
         "path": "MRG.4",
-        "short": " - MRG",
+        "short": "- MRG.4 - ",
         "definition": "Definition: *The MRG-4 field was retained for backward compatibility only as of v 2.3.1 and withdrawn as of v 2.7. The reader is referred to section _3.4.10.1_, _MRG-1 Prior Patient Identifier List_* (CX) 00211**, instead.**",
         "description": null,
         "code": [
@@ -118,7 +120,7 @@
       {
         "id": "MRG.5",
         "path": "MRG.5",
-        "short": " - MRG",
+        "short": "- MRG.5 - ",
         "definition": "Definition: This field contains the prior visit number. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70061[_HL7 Table 0061 - Check Digit Scheme_] for valid values. The assigning authority and identifier type code are strongly recommended for all CX data types.",
         "description": null,
         "code": [
@@ -131,7 +133,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "binding": {
@@ -148,7 +150,7 @@
       {
         "id": "MRG.6",
         "path": "MRG.6",
-        "short": " - MRG",
+        "short": "- MRG.6 - ",
         "definition": "Definition: This field contains the prior alternate visit number. Multiple alternate identifiers may be sent. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70061[_HL7 Table 0061 - Check Digit Scheme_] in Chapter 2C, Code Tables, for valid values. The assigning authority and identifier type code are strongly recommended for all CX data types.",
         "description": null,
         "code": [
@@ -161,7 +163,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "binding": {
@@ -178,7 +180,7 @@
       {
         "id": "MRG.7",
         "path": "MRG.7",
-        "short": " - MRG",
+        "short": "- MRG.7 - ",
         "definition": "Definition: This field contains the prior name of the patient. This field is not used to change a patient name. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70200[_HL7 Table 0200 - Name Type_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -191,7 +193,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "binding": {
@@ -207,9 +209,7 @@
       }
     ]
   },
-  "id": "MRG",
   "title": "HL7 v2 MRG Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/MRG",
   "name": "MRG",
-  "type": "http://hl7.org/v2/StructureDefinition/MRG"
+  "type": "MRG"
 }

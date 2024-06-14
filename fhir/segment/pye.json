@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PYE",
+  "id": "PYE",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "PYE.1",
         "path": "PYE.1",
-        "short": " - PYE",
+        "short": "- PYE.1 - ",
         "definition": "Definition: Sequence Number.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "PYE.2",
         "path": "PYE.2",
-        "short": " - PYE",
+        "short": "- PYE.2 - ",
         "definition": "Definition: Type of Payee (e.g., Organization, Person). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70557[_User-defined Table 0557 – Payee Type_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "PYE.3",
         "path": "PYE.3",
-        "short": " - PYE",
+        "short": "- PYE.3 - ",
         "definition": "Definition: Conditional or empty: if Payee Type in list (\"PERS\", \"PPER\"), then Required, else Not Permitted.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -115,7 +117,7 @@
       {
         "id": "PYE.4",
         "path": "PYE.4",
-        "short": " - PYE",
+        "short": "- PYE.4 - ",
         "definition": "Definition: Conditional or empty: if Payee Type in list (\"PPER\", \"ORG\"), then Required, else Not Permitted.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -141,7 +143,7 @@
       {
         "id": "PYE.5",
         "path": "PYE.5",
-        "short": " - PYE",
+        "short": "- PYE.5 - ",
         "definition": "Definition: Conditional or empty: if Payee Type = (\"PERS\", \"PPER), then Required, else Not Permitted.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -167,7 +169,7 @@
       {
         "id": "PYE.6",
         "path": "PYE.6",
-        "short": " - PYE",
+        "short": "- PYE.6 - ",
         "definition": "Definition: Conditional or empty: if Payee Type = (\"PERS\", \"PPER), then Required, else Not Permitted.",
         "description": null,
         "code": [
@@ -180,7 +182,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -193,7 +195,7 @@
       {
         "id": "PYE.7",
         "path": "PYE.7",
-        "short": " - PYE",
+        "short": "- PYE.7 - ",
         "definition": "Definition: For Payee organizations that have more than one payment method.",
         "description": null,
         "code": [
@@ -206,7 +208,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -222,9 +224,7 @@
       }
     ]
   },
-  "id": "PYE",
   "title": "HL7 v2 PYE Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/PYE",
   "name": "PYE",
-  "type": "http://hl7.org/v2/StructureDefinition/PYE"
+  "type": "PYE"
 }

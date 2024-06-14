@@ -1,0 +1,207 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MFN_M11",
+  "id": "MFN_M11",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "MFN_M11.1-MSH",
+          "path": "MFN_M11.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M11.2-SFT",
+          "path": "MFN_M11.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M11.3-UAC",
+          "path": "MFN_M11.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M11.4-MFI",
+          "path": "MFN_M11.4-MFI",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MFI"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M11.5-MF_TEST_CALCULATED",
+          "path": "MFN_M11.5-MF_TEST_CALCULATED",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "MFN_M11.5-MF_TEST_CALCULATED.1-MFE",
+              "path": "MFN_M11.5-MF_TEST_CALCULATED.1-MFE",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/MFE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M11.5-MF_TEST_CALCULATED.2-OM1",
+              "path": "MFN_M11.5-MF_TEST_CALCULATED.2-OM1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OM1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M11.5-MF_TEST_CALCULATED.3-OMC",
+              "path": "MFN_M11.5-MF_TEST_CALCULATED.3-OMC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OMC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M11.5-MF_TEST_CALCULATED.4-PRT",
+              "path": "MFN_M11.5-MF_TEST_CALCULATED.4-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M11.5-MF_TEST_CALCULATED.5-MF_TEST_CALC_DETAIL",
+              "path": "MFN_M11.5-MF_TEST_CALCULATED.5-MF_TEST_CALC_DETAIL",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "MFN_M11.5-MF_TEST_CALCULATED.5-MF_TEST_CALC_DETAIL.1-OM6",
+                  "path": "MFN_M11.5-MF_TEST_CALCULATED.5-MF_TEST_CALC_DETAIL.1-OM6",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OM6"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "MFN_M11.5-MF_TEST_CALCULATED.5-MF_TEST_CALC_DETAIL.2-OM2",
+                  "path": "MFN_M11.5-MF_TEST_CALCULATED.5-MF_TEST_CALC_DETAIL.2-OM2",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OM2"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 MFN_M11 Segment Definition",
+  "name": "MFN_M11",
+  "type": "http://hl7.org/v2/StructureDefinition/MFN_M11"
+}

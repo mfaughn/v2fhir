@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/GP2",
+  "id": "GP2",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "GP2.1",
         "path": "GP2.1",
-        "short": " - GP2",
+        "short": "- GP2.1 - ",
         "definition": "Definition: This field identifies a specific ancillary service for each HCPC/CPT This field is the same as UB92 Form Locator 42 \"Revenue Code\". Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70456[_User-defined Table_ _0456 - Rev__enue Code_] in Chapter 2C, Code Tables, for suggested values. This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "GP2.2",
         "path": "GP2.2",
-        "short": " - GP2",
+        "short": "- GP2.2 - ",
         "definition": "Definition: This field contains the quantitative count of units for each HCPC/CPT. This field is the same as UB92 Form Locator 46 \"Units of Service\". This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -85,7 +87,7 @@
       {
         "id": "GP2.3",
         "path": "GP2.3",
-        "short": " - GP2",
+        "short": "- GP2.3 - ",
         "definition": "Definition: This field contains the amount charged for the specific individual line item (HCPC/CPT). This field is the same as UB92 Form Locator 56. This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "GP2.4",
         "path": "GP2.4",
-        "short": " - GP2",
+        "short": "- GP2.4 - ",
         "definition": "Definition: This field identifies the action to be taken during reimbursement calculations. If valued, this code overrides the value in link:#gp2-6-oce-edit-code-cwe-01608[_GP2-6 - OCE Edit Code_]. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70459[_Us__er-defined Table 0459 - Reimbursement Action Code_] in Chapter 2C, Code Tables, for suggested values. This field is defined by CMS or other regulatory agencies",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -141,7 +143,7 @@
       {
         "id": "GP2.5",
         "path": "GP2.5",
-        "short": " - GP2",
+        "short": "- GP2.5 - ",
         "definition": "Definition: This field determines the OCE status of the line item. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70460[_User-defined table 0460 - Denial or Rejection Code_] in Chapter 2C, Code Tables, for suggested values. This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -171,7 +173,7 @@
       {
         "id": "GP2.6",
         "path": "GP2.6",
-        "short": " - GP2",
+        "short": "- GP2.6 - ",
         "definition": "Definition: This field contains the edit that results from the processing of HCPCS/CPT procedures for a line item HCPCS/CPT, after evaluating all the codes, revenue codes, and modifiers. Refer to E:\\\\V2\\\\V29_CH02C_Tables.docx#HL70458[_User-defined Table 0458 -_ _OCE Edit Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -184,7 +186,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -201,7 +203,7 @@
       {
         "id": "GP2.7",
         "path": "GP2.7",
-        "short": " - GP2",
+        "short": "- GP2.7 - ",
         "definition": "Definition: This field contains the derived APC code. This is the APC code used for payment, which is the same as the assigned APC, for all situations except partial hospitalization. If partial hospitalization is billed in this visit, the assigned APC will differ from the APC used for payment. Partial hospitalization is the only time an assigned APC differs from the APC used for payment. The payment APC is used for billing and should be displayed in this field. The first component contains the APC identifier. The second component reports the text description for the APC group. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70466[_User-defined table 0466 - Ambulatory Payment Classification Code_] in Chapter 2C, Code Tables, for suggested values. This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -214,7 +216,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -231,7 +233,7 @@
       {
         "id": "GP2.8",
         "path": "GP2.8",
-        "short": " - GP2",
+        "short": "- GP2.8 - ",
         "definition": "Definition: This field contains calculated edits of the modifiers for each line or HCPCS/CPT. This field can be repeated up to five times, one edit for each of the modifiers present. This field relates to the values in link:#pr1-16-procedure-code-modifier-cne-01316[_PR1-16 - Procedure Code Modifier_]. Each repetition corresponds positionally to the order of the PR1-16 modifier codes. If no modifier code exists, use the code \"U\" (modifier edit code unknown) as a placeholder. The repetitions of Modifier Edit Codes must match the repetitions of Procedure Code Modifiers. For example, if link:#pr1-16-procedure-code-modifier-cne-01316[_PR1-16 - Procedure Code Modifier_] reports ...|01~02~03~04|... as modifier codes, and modifier code 03 modifier status code is unknown, _GP2-8 - Modifier Edit Code_ would report ...|1~1~U~1|... Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70467[_User-defined table 0467 -_ _Modifier Edit Code_] in Chapter 2C, Code Tables, for suggested values. This field is defined by CMS or other regulatory agencies",
         "description": null,
         "code": [
@@ -244,7 +246,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -261,7 +263,7 @@
       {
         "id": "GP2.9",
         "path": "GP2.9",
-        "short": " - GP2",
+        "short": "- GP2.9 - ",
         "definition": "Definition: This field contains any payment adjustment due to drugs or medical devices. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70468[_User-defined Table 0468 - Payment Adjustment Code_] in Chapter 2C, Code Tables, for suggested values. This field is defined by CMS or other regulatory agencies",
         "description": null,
         "code": [
@@ -274,7 +276,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -291,7 +293,7 @@
       {
         "id": "GP2.10",
         "path": "GP2.10",
-        "short": " - GP2",
+        "short": "- GP2.10 - ",
         "definition": "Definition: This field contains the packaging status of the service. A status indicator of N may accompany this, unless it is part of a partial hospitalization. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70469[_User-defined (CMS) Table 0469 - Packaging Status Code_] in Chapter 2C, Code Tables, for suggested values. This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -304,7 +306,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -321,7 +323,7 @@
       {
         "id": "GP2.11",
         "path": "GP2.11",
-        "short": " - GP2",
+        "short": "- GP2.11 - ",
         "definition": "Definition: This field contains the calculated dollar amount that CMS is expected to pay for the line item.",
         "description": null,
         "code": [
@@ -334,7 +336,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -347,7 +349,7 @@
       {
         "id": "GP2.12",
         "path": "GP2.12",
-        "short": " - GP2",
+        "short": "- GP2.12 - ",
         "definition": "Definition: This field contains the fee schedule reimbursement type applied to the line item. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70470[_User-define__d Table 0470 - Reimbursement Type Code_] in Chapter 2C, Code Tables, for suggested values. This field is defined by CMS or other regulatory agencies.",
         "description": null,
         "code": [
@@ -360,7 +362,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -377,7 +379,7 @@
       {
         "id": "GP2.13",
         "path": "GP2.13",
-        "short": " - GP2",
+        "short": "- GP2.13 - ",
         "definition": "Definition: This field contains the patient's Co-pay amount for the line item.",
         "description": null,
         "code": [
@@ -390,7 +392,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -403,7 +405,7 @@
       {
         "id": "GP2.14",
         "path": "GP2.14",
-        "short": " - GP2",
+        "short": "- GP2.14 - ",
         "definition": "Definition: This field contains the calculated rate, or multiplying factor, for each service unit for the line item.",
         "description": null,
         "code": [
@@ -416,7 +418,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -441,9 +443,7 @@
       }
     ]
   },
-  "id": "GP2",
   "title": "HL7 v2 GP2 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/GP2",
   "name": "GP2",
-  "type": "http://hl7.org/v2/StructureDefinition/GP2"
+  "type": "GP2"
 }

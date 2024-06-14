@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/NST",
+  "id": "NST",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "NST.1",
         "path": "NST.1",
-        "short": " - NST",
+        "short": "- NST.1 - ",
         "definition": "Definition: This field indicates the availability of statistics. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -59,7 +61,7 @@
       {
         "id": "NST.2",
         "path": "NST.2",
-        "short": " - NST",
+        "short": "- NST.2 - ",
         "definition": "Definition: This field identifies a particular lower level link (e.g., a port number).",
         "description": null,
         "code": [
@@ -72,7 +74,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -85,7 +87,7 @@
       {
         "id": "NST.3",
         "path": "NST.3",
-        "short": " - NST",
+        "short": "- NST.3 - ",
         "definition": "Definition: This field identifies (in certain systems) whether a lower level source identifier is an initiate or accept type. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70332[_HL7 Table 033__2 – Sou__rce Type_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -115,7 +117,7 @@
       {
         "id": "NST.4",
         "path": "NST.4",
-        "short": " - NST",
+        "short": "- NST.4 - ",
         "definition": "Definition: This field contains the date/time stamp of the start of the collection of the statistics reported in fields 6‑15 of this segment. It is strongly recommended that this value include seconds.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -141,7 +143,7 @@
       {
         "id": "NST.5",
         "path": "NST.5",
-        "short": " - NST",
+        "short": "- NST.5 - ",
         "definition": "Definition: This field contains the date/time stamp of the end of the statistics collection period reported in fields 6‑15 of this segment. It is strongly recommended that this value include seconds.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -167,7 +169,7 @@
       {
         "id": "NST.6",
         "path": "NST.6",
-        "short": " - NST",
+        "short": "- NST.6 - ",
         "definition": "Definition: This field contains the number of characters received.",
         "description": null,
         "code": [
@@ -180,7 +182,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -193,7 +195,7 @@
       {
         "id": "NST.7",
         "path": "NST.7",
-        "short": " - NST",
+        "short": "- NST.7 - ",
         "definition": "Definition: This field contains the number of characters sent.",
         "description": null,
         "code": [
@@ -206,7 +208,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -219,7 +221,7 @@
       {
         "id": "NST.8",
         "path": "NST.8",
-        "short": " - NST",
+        "short": "- NST.8 - ",
         "definition": "Definition: This field contains the number of messages received.",
         "description": null,
         "code": [
@@ -232,7 +234,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -245,7 +247,7 @@
       {
         "id": "NST.9",
         "path": "NST.9",
-        "short": " - NST",
+        "short": "- NST.9 - ",
         "definition": "Definition: This field contains the number of messages sent.",
         "description": null,
         "code": [
@@ -258,7 +260,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -271,7 +273,7 @@
       {
         "id": "NST.10",
         "path": "NST.10",
-        "short": " - NST",
+        "short": "- NST.10 - ",
         "definition": "Definition: This field contains the number of messages received with checksum errors.",
         "description": null,
         "code": [
@@ -284,7 +286,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -297,7 +299,7 @@
       {
         "id": "NST.11",
         "path": "NST.11",
-        "short": " - NST",
+        "short": "- NST.11 - ",
         "definition": "Definition: This field contains the number of messages received with length errors.",
         "description": null,
         "code": [
@@ -310,7 +312,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -323,7 +325,7 @@
       {
         "id": "NST.12",
         "path": "NST.12",
-        "short": " - NST",
+        "short": "- NST.12 - ",
         "definition": "Definition: This field contains the number of \"other\" invalid messages received (excluding length and checksum errors).",
         "description": null,
         "code": [
@@ -336,7 +338,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -349,7 +351,7 @@
       {
         "id": "NST.13",
         "path": "NST.13",
-        "short": " - NST",
+        "short": "- NST.13 - ",
         "definition": "Definition: This field contains the number of connect timeout errors.",
         "description": null,
         "code": [
@@ -362,7 +364,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -375,7 +377,7 @@
       {
         "id": "NST.14",
         "path": "NST.14",
-        "short": " - NST",
+        "short": "- NST.14 - ",
         "definition": "Definition: This field contains the number of timeouts while waiting for a response to an initiated message.",
         "description": null,
         "code": [
@@ -388,7 +390,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -401,7 +403,7 @@
       {
         "id": "NST.15",
         "path": "NST.15",
-        "short": " - NST",
+        "short": "- NST.15 - ",
         "definition": "Definition: This field contains the number of application control-level errors in response to an initiated message.",
         "description": null,
         "code": [
@@ -414,7 +416,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -426,9 +428,7 @@
       }
     ]
   },
-  "id": "NST",
   "title": "HL7 v2 NST Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/NST",
   "name": "NST",
-  "type": "http://hl7.org/v2/StructureDefinition/NST"
+  "type": "NST"
 }

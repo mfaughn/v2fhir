@@ -1,0 +1,720 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RSP_Z86",
+  "id": "RSP_Z86",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RSP_Z86.1-MSH",
+          "path": "RSP_Z86.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z86.2-SFT",
+          "path": "RSP_Z86.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z86.3-UAC",
+          "path": "RSP_Z86.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z86.4-MSA",
+          "path": "RSP_Z86.4-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z86.5-ERR",
+          "path": "RSP_Z86.5-ERR",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z86.6-QAK",
+          "path": "RSP_Z86.6-QAK",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QAK"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z86.7-QPD",
+          "path": "RSP_Z86.7-QPD",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QPD"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z86.8-QUERY_RESPONSE",
+          "path": "RSP_Z86.8-QUERY_RESPONSE",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RSP_Z86.8-QUERY_RESPONSE.1-PATIENT",
+              "path": "RSP_Z86.8-QUERY_RESPONSE.1-PATIENT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.1-PATIENT.1-PID",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.1-PATIENT.1-PID",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.1-PATIENT.2-PD1",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.1-PATIENT.2-PD1",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.1-PATIENT.3-NTE",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.1-PATIENT.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.1-PATIENT.4-AL1",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.1-PATIENT.4-AL1",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER",
+              "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.1-ORC",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.2-TIMING",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.2-TIMING",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.2-TIMING.1-TQ1",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.2-TIMING.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.2-TIMING.2-TQ2",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.2-TIMING.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.3-ORDER_DETAIL",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.3-ORDER_DETAIL",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.3-ORDER_DETAIL.1-RXO",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.3-ORDER_DETAIL.1-RXO",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXO"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.3-ORDER_DETAIL.2-RXR",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.3-ORDER_DETAIL.2-RXR",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.3-ORDER_DETAIL.3-RXC",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.3-ORDER_DETAIL.3-RXC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.1-RXE",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.1-RXE",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.2-TIMING_ENCODED",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.2-TIMING_ENCODED",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.2-TIMING_ENCODED.1-TQ1",
+                          "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.2-TIMING_ENCODED.1-TQ1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.2-TIMING_ENCODED.2-TQ2",
+                          "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.2-TIMING_ENCODED.2-TQ2",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.3-RXR",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.3-RXR",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.4-RXC",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.4-ENCODED_ORDER.4-RXC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.5-DISPENSE",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.5-DISPENSE",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.5-DISPENSE.1-RXD",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.5-DISPENSE.1-RXD",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXD"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.5-DISPENSE.2-RXR",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.5-DISPENSE.2-RXR",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.5-DISPENSE.3-RXC",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.5-DISPENSE.3-RXC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.6-GIVE",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.6-GIVE",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.6-GIVE.1-RXG",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.6-GIVE.1-RXG",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXG"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.6-GIVE.2-RXR",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.6-GIVE.2-RXR",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.6-GIVE.3-RXC",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.6-GIVE.3-RXC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.7-ADMINISTRATION",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.7-ADMINISTRATION",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.7-ADMINISTRATION.1-RXA",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.7-ADMINISTRATION.1-RXA",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXA"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.7-ADMINISTRATION.2-RXR",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.7-ADMINISTRATION.2-RXR",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.7-ADMINISTRATION.3-RXC",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.7-ADMINISTRATION.3-RXC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.8-OBSERVATION",
+                  "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.8-OBSERVATION",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.8-OBSERVATION.1-OBX",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.8-OBSERVATION.1-OBX",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.8-OBSERVATION.2-NTE",
+                      "path": "RSP_Z86.8-QUERY_RESPONSE.2-COMMON_ORDER.8-OBSERVATION.2-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RSP_Z86.9-DSC",
+          "path": "RSP_Z86.9-DSC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DSC"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 RSP_Z86 Segment Definition",
+  "name": "RSP_Z86",
+  "type": "http://hl7.org/v2/StructureDefinition/RSP_Z86"
+}

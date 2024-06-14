@@ -1,0 +1,500 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SIU_S12",
+  "id": "SIU_S12",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "SIU_S12.1-MSH",
+          "path": "SIU_S12.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SIU_S12.2-SCH",
+          "path": "SIU_S12.2-SCH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SCH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SIU_S12.3-TQ1",
+          "path": "SIU_S12.3-TQ1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SIU_S12.4-NTE",
+          "path": "SIU_S12.4-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SIU_S12.5-PATIENT",
+          "path": "SIU_S12.5-PATIENT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.1-PID",
+              "path": "SIU_S12.5-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.2-PD1",
+              "path": "SIU_S12.5-PATIENT.2-PD1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.3-GSP",
+              "path": "SIU_S12.5-PATIENT.3-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.4-GSR",
+              "path": "SIU_S12.5-PATIENT.4-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.5-GSC",
+              "path": "SIU_S12.5-PATIENT.5-GSC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.6-PRT",
+              "path": "SIU_S12.5-PATIENT.6-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.7-PV1",
+              "path": "SIU_S12.5-PATIENT.7-PV1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.8-PV2",
+              "path": "SIU_S12.5-PATIENT.8-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.9-PRT",
+              "path": "SIU_S12.5-PATIENT.9-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.10-OBX",
+              "path": "SIU_S12.5-PATIENT.10-OBX",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.11-PRT",
+              "path": "SIU_S12.5-PATIENT.11-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.5-PATIENT.12-DG1",
+              "path": "SIU_S12.5-PATIENT.12-DG1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/DG1"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "SIU_S12.6-RESOURCES",
+          "path": "SIU_S12.6-RESOURCES",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "SIU_S12.6-RESOURCES.1-RGS",
+              "path": "SIU_S12.6-RESOURCES.1-RGS",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/RGS"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SIU_S12.6-RESOURCES.2-SERVICE",
+              "path": "SIU_S12.6-RESOURCES.2-SERVICE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SIU_S12.6-RESOURCES.2-SERVICE.1-AIS",
+                  "path": "SIU_S12.6-RESOURCES.2-SERVICE.1-AIS",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AIS"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SIU_S12.6-RESOURCES.2-SERVICE.2-NTE",
+                  "path": "SIU_S12.6-RESOURCES.2-SERVICE.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "SIU_S12.6-RESOURCES.3-GENERAL_RESOURCE",
+              "path": "SIU_S12.6-RESOURCES.3-GENERAL_RESOURCE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SIU_S12.6-RESOURCES.3-GENERAL_RESOURCE.1-AIG",
+                  "path": "SIU_S12.6-RESOURCES.3-GENERAL_RESOURCE.1-AIG",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AIG"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SIU_S12.6-RESOURCES.3-GENERAL_RESOURCE.2-NTE",
+                  "path": "SIU_S12.6-RESOURCES.3-GENERAL_RESOURCE.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "SIU_S12.6-RESOURCES.4-LOCATION_RESOURCE",
+              "path": "SIU_S12.6-RESOURCES.4-LOCATION_RESOURCE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SIU_S12.6-RESOURCES.4-LOCATION_RESOURCE.1-AIL",
+                  "path": "SIU_S12.6-RESOURCES.4-LOCATION_RESOURCE.1-AIL",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AIL"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SIU_S12.6-RESOURCES.4-LOCATION_RESOURCE.2-NTE",
+                  "path": "SIU_S12.6-RESOURCES.4-LOCATION_RESOURCE.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "SIU_S12.6-RESOURCES.5-PERSONNEL_RESOURCE",
+              "path": "SIU_S12.6-RESOURCES.5-PERSONNEL_RESOURCE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SIU_S12.6-RESOURCES.5-PERSONNEL_RESOURCE.1-AIP",
+                  "path": "SIU_S12.6-RESOURCES.5-PERSONNEL_RESOURCE.1-AIP",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AIP"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SIU_S12.6-RESOURCES.5-PERSONNEL_RESOURCE.2-NTE",
+                  "path": "SIU_S12.6-RESOURCES.5-PERSONNEL_RESOURCE.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 SIU_S12 Segment Definition",
+  "name": "SIU_S12",
+  "type": "http://hl7.org/v2/StructureDefinition/SIU_S12"
+}

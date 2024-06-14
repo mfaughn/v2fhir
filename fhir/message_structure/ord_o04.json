@@ -1,0 +1,470 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ORD_O04",
+  "id": "ORD_O04",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "ORD_O04.1-MSH",
+          "path": "ORD_O04.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORD_O04.2-MSA",
+          "path": "ORD_O04.2-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORD_O04.3-ARV",
+          "path": "ORD_O04.3-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORD_O04.4-ERR",
+          "path": "ORD_O04.4-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORD_O04.5-SFT",
+          "path": "ORD_O04.5-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORD_O04.6-UAC",
+          "path": "ORD_O04.6-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORD_O04.7-NTE",
+          "path": "ORD_O04.7-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORD_O04.8-RESPONSE",
+          "path": "ORD_O04.8-RESPONSE",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ORD_O04.8-RESPONSE.1-PATIENT",
+              "path": "ORD_O04.8-RESPONSE.1-PATIENT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.1-PATIENT.1-PID",
+                  "path": "ORD_O04.8-RESPONSE.1-PATIENT.1-PID",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.1-PATIENT.2-PRT",
+                  "path": "ORD_O04.8-RESPONSE.1-PATIENT.2-PRT",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.1-PATIENT.3-ARV",
+                  "path": "ORD_O04.8-RESPONSE.1-PATIENT.3-ARV",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.1-PATIENT.4-NTE",
+                  "path": "ORD_O04.8-RESPONSE.1-PATIENT.4-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "ORD_O04.8-RESPONSE.2-ORDER_DIET",
+              "path": "ORD_O04.8-RESPONSE.2-ORDER_DIET",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.2-ORDER_DIET.1-ORC",
+                  "path": "ORD_O04.8-RESPONSE.2-ORDER_DIET.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.2-ORDER_DIET.2-PRT",
+                  "path": "ORD_O04.8-RESPONSE.2-ORDER_DIET.2-PRT",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.2-ORDER_DIET.3-TIMING_DIET",
+                  "path": "ORD_O04.8-RESPONSE.2-ORDER_DIET.3-TIMING_DIET",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORD_O04.8-RESPONSE.2-ORDER_DIET.3-TIMING_DIET.1-TQ1",
+                      "path": "ORD_O04.8-RESPONSE.2-ORDER_DIET.3-TIMING_DIET.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORD_O04.8-RESPONSE.2-ORDER_DIET.3-TIMING_DIET.2-TQ2",
+                      "path": "ORD_O04.8-RESPONSE.2-ORDER_DIET.3-TIMING_DIET.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.2-ORDER_DIET.4-ODS",
+                  "path": "ORD_O04.8-RESPONSE.2-ORDER_DIET.4-ODS",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ODS"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.2-ORDER_DIET.5-NTE",
+                  "path": "ORD_O04.8-RESPONSE.2-ORDER_DIET.5-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "ORD_O04.8-RESPONSE.3-ORDER_TRAY",
+              "path": "ORD_O04.8-RESPONSE.3-ORDER_TRAY",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.1-ORC",
+                  "path": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.2-PRT",
+                  "path": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.2-PRT",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.3-TIMING_TRAY",
+                  "path": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.3-TIMING_TRAY",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.3-TIMING_TRAY.1-TQ1",
+                      "path": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.3-TIMING_TRAY.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.3-TIMING_TRAY.2-TQ2",
+                      "path": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.3-TIMING_TRAY.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.4-ODT",
+                  "path": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.4-ODT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ODT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.5-NTE",
+                  "path": "ORD_O04.8-RESPONSE.3-ORDER_TRAY.5-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 ORD_O04 Segment Definition",
+  "name": "ORD_O04",
+  "type": "http://hl7.org/v2/StructureDefinition/ORD_O04"
+}

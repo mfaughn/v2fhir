@@ -1,0 +1,440 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RRE_O50",
+  "id": "RRE_O50",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RRE_O50.1-MSH",
+          "path": "RRE_O50.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRE_O50.2-MSA",
+          "path": "RRE_O50.2-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRE_O50.3-ERR",
+          "path": "RRE_O50.3-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRE_O50.4-SFT",
+          "path": "RRE_O50.4-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRE_O50.5-UAC",
+          "path": "RRE_O50.5-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRE_O50.6-NTE",
+          "path": "RRE_O50.6-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRE_O50.7-RESPONSE",
+          "path": "RRE_O50.7-RESPONSE",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RRE_O50.7-RESPONSE.1-PATIENT",
+              "path": "RRE_O50.7-RESPONSE.1-PATIENT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RRE_O50.7-RESPONSE.1-PATIENT.1-PID",
+                  "path": "RRE_O50.7-RESPONSE.1-PATIENT.1-PID",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRE_O50.7-RESPONSE.1-PATIENT.2-PRT",
+                  "path": "RRE_O50.7-RESPONSE.1-PATIENT.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRE_O50.7-RESPONSE.1-PATIENT.3-NTE",
+                  "path": "RRE_O50.7-RESPONSE.1-PATIENT.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RRE_O50.7-RESPONSE.2-ORDER",
+              "path": "RRE_O50.7-RESPONSE.2-ORDER",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RRE_O50.7-RESPONSE.2-ORDER.1-ORC",
+                  "path": "RRE_O50.7-RESPONSE.2-ORDER.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRE_O50.7-RESPONSE.2-ORDER.2-PRT",
+                  "path": "RRE_O50.7-RESPONSE.2-ORDER.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRE_O50.7-RESPONSE.2-ORDER.3-TIMING",
+                  "path": "RRE_O50.7-RESPONSE.2-ORDER.3-TIMING",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RRE_O50.7-RESPONSE.2-ORDER.3-TIMING.1-TQ1",
+                      "path": "RRE_O50.7-RESPONSE.2-ORDER.3-TIMING.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RRE_O50.7-RESPONSE.2-ORDER.3-TIMING.2-TQ2",
+                      "path": "RRE_O50.7-RESPONSE.2-ORDER.3-TIMING.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING",
+                  "path": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.1-RXE",
+                      "path": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.1-RXE",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.2-PRT",
+                      "path": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.3-NTE",
+                      "path": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.4-TIMING_ENCODED",
+                      "path": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.4-TIMING_ENCODED",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.4-TIMING_ENCODED.1-TQ1",
+                          "path": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.4-TIMING_ENCODED.1-TQ1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.4-TIMING_ENCODED.2-TQ2",
+                          "path": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.4-TIMING_ENCODED.2-TQ2",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.5-RXR",
+                      "path": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.5-RXR",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.6-RXC",
+                      "path": "RRE_O50.7-RESPONSE.2-ORDER.4-ENCODING.6-RXC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RRE_O50.7-RESPONSE.2-ORDER.5-PRT",
+                  "path": "RRE_O50.7-RESPONSE.2-ORDER.5-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 RRE_O50 Segment Definition",
+  "name": "RRE_O50",
+  "type": "http://hl7.org/v2/StructureDefinition/RRE_O50"
+}

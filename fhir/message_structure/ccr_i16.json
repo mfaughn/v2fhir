@@ -1,0 +1,2775 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CCR_I16",
+  "id": "CCR_I16",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "CCR_I16.1-MSH",
+          "path": "CCR_I16.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CCR_I16.2-SFT",
+          "path": "CCR_I16.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CCR_I16.3-UAC",
+          "path": "CCR_I16.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CCR_I16.4-RF1",
+          "path": "CCR_I16.4-RF1",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/RF1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CCR_I16.5-PROVIDER_CONTACT",
+          "path": "CCR_I16.5-PROVIDER_CONTACT",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.5-PROVIDER_CONTACT.1-PRD",
+              "path": "CCR_I16.5-PROVIDER_CONTACT.1-PRD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.5-PROVIDER_CONTACT.2-CTD",
+              "path": "CCR_I16.5-PROVIDER_CONTACT.2-CTD",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.6-CLINICAL_ORDER",
+          "path": "CCR_I16.6-CLINICAL_ORDER",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.6-CLINICAL_ORDER.1-ORC",
+              "path": "CCR_I16.6-CLINICAL_ORDER.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.6-CLINICAL_ORDER.2-CLINICAL_ORDER_TIMING",
+              "path": "CCR_I16.6-CLINICAL_ORDER.2-CLINICAL_ORDER_TIMING",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.6-CLINICAL_ORDER.2-CLINICAL_ORDER_TIMING.1-TQ1",
+                  "path": "CCR_I16.6-CLINICAL_ORDER.2-CLINICAL_ORDER_TIMING.1-TQ1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.6-CLINICAL_ORDER.2-CLINICAL_ORDER_TIMING.2-TQ2",
+                  "path": "CCR_I16.6-CLINICAL_ORDER.2-CLINICAL_ORDER_TIMING.2-TQ2",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL",
+              "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT",
+                  "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.1",
+                      "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.1.1-OBR",
+                          "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.1.1-OBR",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.1.2-PRT",
+                          "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.1.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.2",
+                      "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.2.1-RXO",
+                          "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.2.1-RXO",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RXO"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.2.2-PRT",
+                          "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.2.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.3",
+                      "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.3.1-ODS",
+                          "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.3.1-ODS",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ODS"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.4",
+                      "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.4",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.4.1-PR1",
+                          "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.1-CLINICAL_ORDER_OBJECT.4.1-PR1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PR1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.2-CLINICAL_ORDER_OBSERVATION",
+                  "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.2-CLINICAL_ORDER_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.2-CLINICAL_ORDER_OBSERVATION.1-OBX",
+                      "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.2-CLINICAL_ORDER_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.2-CLINICAL_ORDER_OBSERVATION.2-PRT",
+                      "path": "CCR_I16.6-CLINICAL_ORDER.3-CLINICAL_ORDER_DETAIL.2-CLINICAL_ORDER_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCR_I16.6-CLINICAL_ORDER.4-CTI",
+              "path": "CCR_I16.6-CLINICAL_ORDER.4-CTI",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTI"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.7-PATIENT",
+          "path": "CCR_I16.7-PATIENT",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.7-PATIENT.1-PID",
+              "path": "CCR_I16.7-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.7-PATIENT.2-PD1",
+              "path": "CCR_I16.7-PATIENT.2-PD1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.7-PATIENT.3-GSP",
+              "path": "CCR_I16.7-PATIENT.3-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.7-PATIENT.4-GSR",
+              "path": "CCR_I16.7-PATIENT.4-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.7-PATIENT.5-GSC",
+              "path": "CCR_I16.7-PATIENT.5-GSC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.8-NEXT_OF_KIN",
+          "path": "CCR_I16.8-NEXT_OF_KIN",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.8-NEXT_OF_KIN.1-NK1",
+              "path": "CCR_I16.8-NEXT_OF_KIN.1-NK1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.8-NEXT_OF_KIN.2-GSP",
+              "path": "CCR_I16.8-NEXT_OF_KIN.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.8-NEXT_OF_KIN.3-GSR",
+              "path": "CCR_I16.8-NEXT_OF_KIN.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.9-INSURANCE",
+          "path": "CCR_I16.9-INSURANCE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.9-INSURANCE.1-IN1",
+              "path": "CCR_I16.9-INSURANCE.1-IN1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.9-INSURANCE.2-IN2",
+              "path": "CCR_I16.9-INSURANCE.2-IN2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.9-INSURANCE.3-IN3",
+              "path": "CCR_I16.9-INSURANCE.3-IN3",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN3"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.10-APPOINTMENT_HISTORY",
+          "path": "CCR_I16.10-APPOINTMENT_HISTORY",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.10-APPOINTMENT_HISTORY.1-SCH",
+              "path": "CCR_I16.10-APPOINTMENT_HISTORY.1-SCH",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/SCH"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES",
+              "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.1-RGS",
+                  "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.1-RGS",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RGS"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL",
+                  "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT",
+                      "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.1",
+                          "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.1.1-AIS",
+                              "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.1.1-AIS",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/AIS"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.2",
+                          "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.2",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.2.1-AIG",
+                              "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.2.1-AIG",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/AIG"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.3",
+                          "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.3",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.3.1-AIL",
+                              "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.3.1-AIL",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/AIL"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.4",
+                          "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.4",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.4.1-AIP",
+                              "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.4.1-AIP",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/AIP"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION",
+                      "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION.1-OBX",
+                          "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION.2-PRT",
+                          "path": "CCR_I16.10-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.11-CLINICAL_HISTORY",
+          "path": "CCR_I16.11-CLINICAL_HISTORY",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.11-CLINICAL_HISTORY.1-ORC",
+              "path": "CCR_I16.11-CLINICAL_HISTORY.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL",
+              "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT",
+                  "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1.1-OBR",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1.1-OBR",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1.2-PRT",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.2",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.2.1-ODS",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.2.1-ODS",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ODS"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.3",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.3.1-PR1",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.3.1-PR1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PR1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.4",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.4",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.4.1-RF1",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.4.1-RF1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RF1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.5",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.5",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.5.1-AL1",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.5.1-AL1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.6",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.6",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.6.1-IAM",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.6.1-IAM",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/IAM"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.7",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.7",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.7.1-ACC",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.7.1-ACC",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ACC"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.8",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.8",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.8.1-RMI",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.8.1-RMI",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RMI"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.9",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.9",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.9.1-DB1",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.9.1-DB1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/DB1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.10",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.10",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.10.1-DG1",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.10.1-DG1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/DG1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.11",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.11",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.11.1-DRG",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.11.1-DRG",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/DRG"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION",
+                  "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION.1-OBX",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION.2-PRT",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY",
+              "path": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT",
+                  "path": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.1",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.1.1-ROL",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.1.1-ROL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.2",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.2.1-PRT",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.2.1-PRT",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.3",
+                      "path": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.3.1-PRD",
+                          "path": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.3.1-PRD",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.2-VAR",
+                  "path": "CCR_I16.11-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.2-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCR_I16.11-CLINICAL_HISTORY.4-CTI",
+              "path": "CCR_I16.11-CLINICAL_HISTORY.4-CTI",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTI"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.12-PATIENT_VISITS",
+          "path": "CCR_I16.12-PATIENT_VISITS",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.12-PATIENT_VISITS.1-PV1",
+              "path": "CCR_I16.12-PATIENT_VISITS.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.12-PATIENT_VISITS.2-PV2",
+              "path": "CCR_I16.12-PATIENT_VISITS.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.13-MEDICATION_HISTORY",
+          "path": "CCR_I16.13-MEDICATION_HISTORY",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.13-MEDICATION_HISTORY.1-ORC",
+              "path": "CCR_I16.13-MEDICATION_HISTORY.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL",
+              "path": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.1-RXO",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.1-RXO",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXO"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.2-PRT",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.3-RXR",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.3-RXR",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.4-RXC",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.4-RXC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION.1-OBX",
+                      "path": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION.2-PRT",
+                      "path": "CCR_I16.13-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL",
+              "path": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.1-RXE",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.1-RXE",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.2-PRT",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.3-RXR",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.3-RXR",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.4-RXC",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.4-RXC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION.1-OBX",
+                      "path": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION.2-PRT",
+                      "path": "CCR_I16.13-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL",
+              "path": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.1-RXA",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.1-RXA",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXA"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.2-PRT",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.3-RXR",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.3-RXR",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION",
+                  "path": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION.1-OBX",
+                      "path": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION.2-PRT",
+                      "path": "CCR_I16.13-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCR_I16.13-MEDICATION_HISTORY.5-CTI",
+              "path": "CCR_I16.13-MEDICATION_HISTORY.5-CTI",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTI"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.14-PROBLEM",
+          "path": "CCR_I16.14-PROBLEM",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.14-PROBLEM.1-PRB",
+              "path": "CCR_I16.14-PROBLEM.1-PRB",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRB"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.14-PROBLEM.2-VAR",
+              "path": "CCR_I16.14-PROBLEM.2-VAR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM",
+              "path": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT",
+                  "path": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.1",
+                      "path": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.1.1-ROL",
+                          "path": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.1.1-ROL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.2",
+                      "path": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.2.1-PRT",
+                          "path": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.2.1-PRT",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.3",
+                      "path": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.3.1-PRD",
+                          "path": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.3.1-PRD",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.2-VAR",
+                  "path": "CCR_I16.14-PROBLEM.3-PARTICIPATION_PROBLEM.2-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCR_I16.14-PROBLEM.4-PARTICIPATION_OBSERVATION",
+              "path": "CCR_I16.14-PROBLEM.4-PARTICIPATION_OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.14-PROBLEM.4-PARTICIPATION_OBSERVATION.1-OBX",
+                  "path": "CCR_I16.14-PROBLEM.4-PARTICIPATION_OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.14-PROBLEM.4-PARTICIPATION_OBSERVATION.2-PRT",
+                  "path": "CCR_I16.14-PROBLEM.4-PARTICIPATION_OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.15-GOAL",
+          "path": "CCR_I16.15-GOAL",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.15-GOAL.1-GOL",
+              "path": "CCR_I16.15-GOAL.1-GOL",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GOL"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.15-GOAL.2-VAR",
+              "path": "CCR_I16.15-GOAL.2-VAR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL",
+              "path": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT",
+                  "path": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.1",
+                      "path": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.1.1-ROL",
+                          "path": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.1.1-ROL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.2",
+                      "path": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.2.1-PRT",
+                          "path": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.2.1-PRT",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.3",
+                      "path": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.3.1-PRD",
+                          "path": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.3.1-PRD",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.2-VAR",
+                  "path": "CCR_I16.15-GOAL.3-PARTICIPATION_GOAL.2-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCR_I16.15-GOAL.4-GOAL_OBSERVATION",
+              "path": "CCR_I16.15-GOAL.4-GOAL_OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.15-GOAL.4-GOAL_OBSERVATION.1-OBX",
+                  "path": "CCR_I16.15-GOAL.4-GOAL_OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.15-GOAL.4-GOAL_OBSERVATION.2-PRT",
+                  "path": "CCR_I16.15-GOAL.4-GOAL_OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.16-PATHWAY",
+          "path": "CCR_I16.16-PATHWAY",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCR_I16.16-PATHWAY.1-PTH",
+              "path": "CCR_I16.16-PATHWAY.1-PTH",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PTH"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.16-PATHWAY.2-VAR",
+              "path": "CCR_I16.16-PATHWAY.2-VAR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY",
+              "path": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT",
+                  "path": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.1",
+                      "path": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.1.1-ROL",
+                          "path": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.1.1-ROL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.2",
+                      "path": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.2.1-PRT",
+                          "path": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.2.1-PRT",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.3",
+                      "path": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.3.1-PRD",
+                          "path": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.3.1-PRD",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.2-VAR",
+                  "path": "CCR_I16.16-PATHWAY.3-PARTICIPATION_PATHWAY.2-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCR_I16.16-PATHWAY.4-PATHWAY_OBSERVATION",
+              "path": "CCR_I16.16-PATHWAY.4-PATHWAY_OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCR_I16.16-PATHWAY.4-PATHWAY_OBSERVATION.1-OBX",
+                  "path": "CCR_I16.16-PATHWAY.4-PATHWAY_OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCR_I16.16-PATHWAY.4-PATHWAY_OBSERVATION.2-PRT",
+                  "path": "CCR_I16.16-PATHWAY.4-PATHWAY_OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCR_I16.17-REL",
+          "path": "CCR_I16.17-REL",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/REL"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 CCR_I16 Segment Definition",
+  "name": "CCR_I16",
+  "type": "http://hl7.org/v2/StructureDefinition/CCR_I16"
+}

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/DSC",
+  "id": "DSC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "DSC.1",
         "path": "DSC.1",
-        "short": " - DSC",
+        "short": "- DSC.1 - ",
         "definition": "Definition: This field contains the continuation pointer. In an initial query, this field is not present. If the responder returns a value of delete indicator or not present, then there is no more data to fulfill any future continuation requests. For use with continuations of unsolicited messages, see chapter 5 and section _2.9.2_, \"_Continuation messages and segments_.\" Note that continuation protocols work with both display- and record-oriented messages.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "DSC.2",
         "path": "DSC.2",
-        "short": " - DSC",
+        "short": "- DSC.2 - ",
         "definition": "Definition: Indicates whether this is a fragmented message (see Section _2.9.2_, \"_Continuation messages and segments_\"), or if it is part of an interactive continuation message (see Section 5.6.3, \"Interactive continuation of response messages\").",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -97,9 +99,7 @@
       }
     ]
   },
-  "id": "DSC",
   "title": "HL7 v2 DSC Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/DSC",
   "name": "DSC",
-  "type": "http://hl7.org/v2/StructureDefinition/DSC"
+  "type": "DSC"
 }

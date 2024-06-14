@@ -1,0 +1,361 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ORN_O08",
+  "id": "ORN_O08",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "ORN_O08.1-MSH",
+          "path": "ORN_O08.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORN_O08.2-MSA",
+          "path": "ORN_O08.2-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORN_O08.3-ARV",
+          "path": "ORN_O08.3-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORN_O08.4-ERR",
+          "path": "ORN_O08.4-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORN_O08.5-SFT",
+          "path": "ORN_O08.5-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORN_O08.6-UAC",
+          "path": "ORN_O08.6-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORN_O08.7-NTE",
+          "path": "ORN_O08.7-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORN_O08.8-RESPONSE",
+          "path": "ORN_O08.8-RESPONSE",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ORN_O08.8-RESPONSE.1-PATIENT",
+              "path": "ORN_O08.8-RESPONSE.1-PATIENT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ORN_O08.8-RESPONSE.1-PATIENT.1-PID",
+                  "path": "ORN_O08.8-RESPONSE.1-PATIENT.1-PID",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORN_O08.8-RESPONSE.1-PATIENT.2-PRT",
+                  "path": "ORN_O08.8-RESPONSE.1-PATIENT.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORN_O08.8-RESPONSE.1-PATIENT.3-ARV",
+                  "path": "ORN_O08.8-RESPONSE.1-PATIENT.3-ARV",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORN_O08.8-RESPONSE.1-PATIENT.4-NTE",
+                  "path": "ORN_O08.8-RESPONSE.1-PATIENT.4-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "ORN_O08.8-RESPONSE.2-ORDER",
+              "path": "ORN_O08.8-RESPONSE.2-ORDER",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ORN_O08.8-RESPONSE.2-ORDER.1-ORC",
+                  "path": "ORN_O08.8-RESPONSE.2-ORDER.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORN_O08.8-RESPONSE.2-ORDER.2-PRT",
+                  "path": "ORN_O08.8-RESPONSE.2-ORDER.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORN_O08.8-RESPONSE.2-ORDER.3-TIMING",
+                  "path": "ORN_O08.8-RESPONSE.2-ORDER.3-TIMING",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORN_O08.8-RESPONSE.2-ORDER.3-TIMING.1-TQ1",
+                      "path": "ORN_O08.8-RESPONSE.2-ORDER.3-TIMING.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORN_O08.8-RESPONSE.2-ORDER.3-TIMING.2-TQ2",
+                      "path": "ORN_O08.8-RESPONSE.2-ORDER.3-TIMING.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORN_O08.8-RESPONSE.2-ORDER.4-RQD",
+                  "path": "ORN_O08.8-RESPONSE.2-ORDER.4-RQD",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RQD"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORN_O08.8-RESPONSE.2-ORDER.5-RQ1",
+                  "path": "ORN_O08.8-RESPONSE.2-ORDER.5-RQ1",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RQ1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORN_O08.8-RESPONSE.2-ORDER.6-NTE",
+                  "path": "ORN_O08.8-RESPONSE.2-ORDER.6-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 ORN_O08 Segment Definition",
+  "name": "ORN_O08",
+  "type": "http://hl7.org/v2/StructureDefinition/ORN_O08"
+}

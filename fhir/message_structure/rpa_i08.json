@@ -1,0 +1,716 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RPA_I08",
+  "id": "RPA_I08",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RPA_I08.1-MSH",
+          "path": "RPA_I08.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.2-SFT",
+          "path": "RPA_I08.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.3-UAC",
+          "path": "RPA_I08.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.4-MSA",
+          "path": "RPA_I08.4-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.5-RF1",
+          "path": "RPA_I08.5-RF1",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/RF1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.6-AUTHORIZATION",
+          "path": "RPA_I08.6-AUTHORIZATION",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RPA_I08.6-AUTHORIZATION.1-AUT",
+              "path": "RPA_I08.6-AUTHORIZATION.1-AUT",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AUT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.6-AUTHORIZATION.2-CTD",
+              "path": "RPA_I08.6-AUTHORIZATION.2-CTD",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RPA_I08.7-PROVIDER",
+          "path": "RPA_I08.7-PROVIDER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RPA_I08.7-PROVIDER.1-PRD",
+              "path": "RPA_I08.7-PROVIDER.1-PRD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.7-PROVIDER.2-CTD",
+              "path": "RPA_I08.7-PROVIDER.2-CTD",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RPA_I08.8-PID",
+          "path": "RPA_I08.8-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.9-GSP",
+          "path": "RPA_I08.9-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.10-GSR",
+          "path": "RPA_I08.10-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.11-GSC",
+          "path": "RPA_I08.11-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.12-NEXT_OF_KIN",
+          "path": "RPA_I08.12-NEXT_OF_KIN",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RPA_I08.12-NEXT_OF_KIN.1-NK1",
+              "path": "RPA_I08.12-NEXT_OF_KIN.1-NK1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.12-NEXT_OF_KIN.2-GSP",
+              "path": "RPA_I08.12-NEXT_OF_KIN.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.12-NEXT_OF_KIN.3-GSR",
+              "path": "RPA_I08.12-NEXT_OF_KIN.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RPA_I08.13-GT1",
+          "path": "RPA_I08.13-GT1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GT1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.14-INSURANCE",
+          "path": "RPA_I08.14-INSURANCE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RPA_I08.14-INSURANCE.1-IN1",
+              "path": "RPA_I08.14-INSURANCE.1-IN1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.14-INSURANCE.2-IN2",
+              "path": "RPA_I08.14-INSURANCE.2-IN2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.14-INSURANCE.3-IN3",
+              "path": "RPA_I08.14-INSURANCE.3-IN3",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN3"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RPA_I08.15-ACC",
+          "path": "RPA_I08.15-ACC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ACC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.16-DG1",
+          "path": "RPA_I08.16-DG1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DG1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.17-DRG",
+          "path": "RPA_I08.17-DRG",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DRG"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.18-AL1",
+          "path": "RPA_I08.18-AL1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/AL1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RPA_I08.19-PROCEDURE",
+          "path": "RPA_I08.19-PROCEDURE",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RPA_I08.19-PROCEDURE.1-PR1",
+              "path": "RPA_I08.19-PROCEDURE.1-PR1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PR1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.19-PROCEDURE.2-AUTHORIZATION",
+              "path": "RPA_I08.19-PROCEDURE.2-AUTHORIZATION",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RPA_I08.19-PROCEDURE.2-AUTHORIZATION.1-AUT",
+                  "path": "RPA_I08.19-PROCEDURE.2-AUTHORIZATION.1-AUT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AUT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RPA_I08.19-PROCEDURE.2-AUTHORIZATION.2-CTD",
+                  "path": "RPA_I08.19-PROCEDURE.2-AUTHORIZATION.2-CTD",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RPA_I08.20-OBSERVATION",
+          "path": "RPA_I08.20-OBSERVATION",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RPA_I08.20-OBSERVATION.1-OBR",
+              "path": "RPA_I08.20-OBSERVATION.1-OBR",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.20-OBSERVATION.2-PRT",
+              "path": "RPA_I08.20-OBSERVATION.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.20-OBSERVATION.3-NTE",
+              "path": "RPA_I08.20-OBSERVATION.3-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.20-OBSERVATION.4-RESULTS",
+              "path": "RPA_I08.20-OBSERVATION.4-RESULTS",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RPA_I08.20-OBSERVATION.4-RESULTS.1-OBX",
+                  "path": "RPA_I08.20-OBSERVATION.4-RESULTS.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RPA_I08.20-OBSERVATION.4-RESULTS.2-PRT",
+                  "path": "RPA_I08.20-OBSERVATION.4-RESULTS.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RPA_I08.20-OBSERVATION.4-RESULTS.3-NTE",
+                  "path": "RPA_I08.20-OBSERVATION.4-RESULTS.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RPA_I08.21-VISIT",
+          "path": "RPA_I08.21-VISIT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RPA_I08.21-VISIT.1-PV1",
+              "path": "RPA_I08.21-VISIT.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RPA_I08.21-VISIT.2-PV2",
+              "path": "RPA_I08.21-VISIT.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RPA_I08.22-NTE",
+          "path": "RPA_I08.22-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 RPA_I08 Segment Definition",
+  "name": "RPA_I08",
+  "type": "http://hl7.org/v2/StructureDefinition/RPA_I08"
+}

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PSG",
+  "id": "PSG",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "PSG.1",
         "path": "PSG.1",
-        "short": " - PSG",
+        "short": "- PSG.1 - ",
         "definition": "Definition: Unique Product/Service Group Number assigned by the Provider Application.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "PSG.2",
         "path": "PSG.2",
-        "short": " - PSG",
+        "short": "- PSG.2 - ",
         "definition": "Definition: Unique Product/Service Group Number assigned by the Payer Application",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -68,7 +70,7 @@
       {
         "id": "PSG.3",
         "path": "PSG.3",
-        "short": " - PSG",
+        "short": "- PSG.3 - ",
         "definition": "Definition: Unique sequence number for the Product/Service Group (3) – starts with 1, then 2, etc. for each unique Product/Service Group in this Invoice.",
         "description": null,
         "code": [
@@ -81,7 +83,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -107,7 +109,7 @@
       {
         "id": "PSG.4",
         "path": "PSG.4",
-        "short": " - PSG",
+        "short": "- PSG.4 - ",
         "definition": "Definition: Adjudicate all Product/Service Line Items together as a group (IPRs will be reported against the Product/Service Group). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 – Yes/No Indicator_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -120,7 +122,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -150,7 +152,7 @@
       {
         "id": "PSG.5",
         "path": "PSG.5",
-        "short": " - PSG",
+        "short": "- PSG.5 - ",
         "definition": "Definition: Sum of all Product/Service Billed Amounts for all Product/Service Line Items for this Product/Service Group.",
         "description": null,
         "code": [
@@ -163,7 +165,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -176,7 +178,7 @@
       {
         "id": "PSG.6",
         "path": "PSG.6",
-        "short": " - PSG",
+        "short": "- PSG.6 - ",
         "definition": "Definition: Product/Service Group description or heading",
         "description": null,
         "code": [
@@ -189,7 +191,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -214,9 +216,7 @@
       }
     ]
   },
-  "id": "PSG",
   "title": "HL7 v2 PSG Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/PSG",
   "name": "PSG",
-  "type": "http://hl7.org/v2/StructureDefinition/PSG"
+  "type": "PSG"
 }

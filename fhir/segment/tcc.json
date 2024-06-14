@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/TCC",
+  "id": "TCC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "TCC.1",
         "path": "TCC.1",
-        "short": " - TCC",
+        "short": "- TCC.1 - ",
         "definition": "Definition: This field identifies the test code that information is being transmitted about. The alternate elements represent the test code identifier that has been assigned by the manufacturer to this particular test code. Refer to Table 0787 - Universal Service Identifier in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "TCC.2",
         "path": "TCC.2",
-        "short": " - TCC",
+        "short": "- TCC.2 - ",
         "definition": "Definition: This field identifies the test application code assigned by the manufacturer of the equipment or reagents and associated with performing of the particular test specified by the Universal Test Identifier.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -72,7 +74,7 @@
       {
         "id": "TCC.3",
         "path": "TCC.3",
-        "short": " - TCC",
+        "short": "- TCC.3 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -91,7 +93,7 @@
       {
         "id": "TCC.4",
         "path": "TCC.4",
-        "short": " - TCC",
+        "short": "- TCC.4 - ",
         "definition": "Definition: This field is the value that is to be used as the default factor for automatically diluting a specimen by an instrument for this particular test code. (See examples in definition of _13.3.3.29_, \"_SAC-29 Dilution Factor_ (SN) 01356\" in, \"Specimen Container Detail Segment.\")",
         "description": null,
         "code": [
@@ -104,7 +106,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SN"
+            "code": "SN"
           }
         ],
         "extension": [
@@ -117,7 +119,7 @@
       {
         "id": "TCC.5",
         "path": "TCC.5",
-        "short": " - TCC",
+        "short": "- TCC.5 - ",
         "definition": "Definition: This field is the value that is to be used as the default factor for automatically diluting a specimen in case of rerun for this particular test code.",
         "description": null,
         "code": [
@@ -130,7 +132,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SN"
+            "code": "SN"
           }
         ],
         "extension": [
@@ -143,7 +145,7 @@
       {
         "id": "TCC.6",
         "path": "TCC.6",
-        "short": " - TCC",
+        "short": "- TCC.6 - ",
         "definition": "Definition: This field is the value that is to be used as the default factor for a specimen that is delivered to the laboratory automation system as pre-diluted for this particular test code.",
         "description": null,
         "code": [
@@ -156,7 +158,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SN"
+            "code": "SN"
           }
         ],
         "extension": [
@@ -169,7 +171,7 @@
       {
         "id": "TCC.7",
         "path": "TCC.7",
-        "short": " - TCC",
+        "short": "- TCC.7 - ",
         "definition": "Definition: This field represents a baseline value for the measured test that is inherently contained in the diluent. In the calculation of the actual result for the measured test, this baseline value is normally considered.",
         "description": null,
         "code": [
@@ -182,7 +184,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SN"
+            "code": "SN"
           }
         ],
         "extension": [
@@ -195,7 +197,7 @@
       {
         "id": "TCC.8",
         "path": "TCC.8",
-        "short": " - TCC",
+        "short": "- TCC.8 - ",
         "definition": "Definition: This field is the value that is to be used as the threshold for initiating inventory warning-level messages.",
         "description": null,
         "code": [
@@ -208,7 +210,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -234,7 +236,7 @@
       {
         "id": "TCC.9",
         "path": "TCC.9",
-        "short": " - TCC",
+        "short": "- TCC.9 - ",
         "definition": "Definition: This field identifies whether or not automatic reruns are to be initiated on specimens for this particular test code. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 -Yes/no Indicator_] for valid values.",
         "description": null,
         "code": [
@@ -247,7 +249,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -277,7 +279,7 @@
       {
         "id": "TCC.10",
         "path": "TCC.10",
-        "short": " - TCC",
+        "short": "- TCC.10 - ",
         "definition": "Definition: This field identifies whether or not automatic repeat testing is to be initiated on specimens for this particular test code. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 -Yes/no Indicator_] for valid values.",
         "description": null,
         "code": [
@@ -290,7 +292,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -320,7 +322,7 @@
       {
         "id": "TCC.11",
         "path": "TCC.11",
-        "short": " - TCC",
+        "short": "- TCC.11 - ",
         "definition": "Definition: This field identifies whether or not automatic or manual reflex testing is to be initiated on specimens for this particular test code. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 -Yes/no Indicator_] for valid values.",
         "description": null,
         "code": [
@@ -333,7 +335,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -363,7 +365,7 @@
       {
         "id": "TCC.12",
         "path": "TCC.12",
-        "short": " - TCC",
+        "short": "- TCC.12 - ",
         "definition": "Definition: This is the range over which the equipment can produce results.",
         "description": null,
         "code": [
@@ -376,7 +378,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SN"
+            "code": "SN"
           }
         ],
         "extension": [
@@ -389,7 +391,7 @@
       {
         "id": "TCC.13",
         "path": "TCC.13",
-        "short": " - TCC",
+        "short": "- TCC.13 - ",
         "definition": "Definition: This field is the units that have a data type of CWE. The default coding system for the units codes consists of the ISO+ abbreviation for a single case unit (ISO 2955‑83) plus extensions, that do not collide with ISO abbreviations (see Chapter 7, section 7.4.2.6). We designate this coding system as ISO+. Both the ISO unit's abbreviations and the extensions are defined in Chapter 7, section 7.4.2.6.2 and listed in Figure 7-9. The ISO+ abbreviations are the codes for the default coding system. Consequently, when ISO+ units are being used, only ISO+ abbreviations need be sent, and the contents of the units field will be backward compatible to HL7 Version 2.1. For more information on this field see reference Chapter 7, section 7.4.2.6.",
         "description": null,
         "code": [
@@ -402,7 +404,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -419,7 +421,7 @@
       {
         "id": "TCC.14",
         "path": "TCC.14",
-        "short": " - TCC",
+        "short": "- TCC.14 - ",
         "definition": "Definition: This field identifies the processing type that applies to this test code. If this attribute is omitted, then regular production is the default. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70388[_HL7 Table 0388 – Processing Type_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -432,7 +434,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -449,7 +451,7 @@
       {
         "id": "TCC.15",
         "path": "TCC.15",
-        "short": " - TCC",
+        "short": "- TCC.15 - ",
         "definition": "Definition: This field identifies the test the Test Criticality. The values in this field are used for decisions, which tests should be performed, in case of, e.g., insufficient specimen volume. +\n\nThe data type is CWE because its meaning is a coded value. However, in order to make the processing decisions easy the content can be a sequential number of the test sorted according to the criticality assigned by the lab. The lower numbers are more critical than higher numbers.",
         "description": null,
         "code": [
@@ -462,7 +464,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -487,9 +489,7 @@
       }
     ]
   },
-  "id": "TCC",
   "title": "HL7 v2 TCC Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/TCC",
   "name": "TCC",
-  "type": "http://hl7.org/v2/StructureDefinition/TCC"
+  "type": "TCC"
 }

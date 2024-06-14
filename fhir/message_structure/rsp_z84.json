@@ -1,0 +1,190 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RSP_Z84",
+  "id": "RSP_Z84",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RSP_Z84.1-MSH",
+          "path": "RSP_Z84.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z84.2-SFT",
+          "path": "RSP_Z84.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z84.3-UAC",
+          "path": "RSP_Z84.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z84.4-MSA",
+          "path": "RSP_Z84.4-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z84.5-ERR",
+          "path": "RSP_Z84.5-ERR",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z84.6-QAK",
+          "path": "RSP_Z84.6-QAK",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QAK"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z84.7-QPD",
+          "path": "RSP_Z84.7-QPD",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QPD"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_Z84.8-ROW_DEFINITION",
+          "path": "RSP_Z84.8-ROW_DEFINITION",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RSP_Z84.8-ROW_DEFINITION.1-RDF",
+              "path": "RSP_Z84.8-ROW_DEFINITION.1-RDF",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/RDF"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_Z84.8-ROW_DEFINITION.2-RDT",
+              "path": "RSP_Z84.8-ROW_DEFINITION.2-RDT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/RDT"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RSP_Z84.9-DSC",
+          "path": "RSP_Z84.9-DSC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DSC"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 RSP_Z84 Segment Definition",
+  "name": "RSP_Z84",
+  "type": "http://hl7.org/v2/StructureDefinition/RSP_Z84"
+}

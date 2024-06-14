@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/NTE",
+  "id": "NTE",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "NTE.1",
         "path": "NTE.1",
-        "short": " - NTE",
+        "short": "- NTE.1 - ",
         "definition": "Definition: This field MAY be used where multiple NTE segments are included in a message. Their numbering must be described in the application message definition.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "NTE.2",
         "path": "NTE.2",
-        "short": " - NTE",
+        "short": "- NTE.2 - ",
         "definition": "Definition: This field is used when source of comment must be identified. This table MAY be extended locally during implementation. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70105[_HL7 Table 0105 - Source of Com__ment_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "NTE.3",
         "path": "NTE.3",
-        "short": " - NTE",
+        "short": "- NTE.3 - ",
         "definition": "Definition: This field contains the comment contained in the segment.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/FT"
+            "code": "FT"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "NTE.4",
         "path": "NTE.4",
-        "short": " - NTE",
+        "short": "- NTE.4 - ",
         "definition": "Definition: This field contains a value to identify the type of comment text being sent in the specific comment record. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70364[_User-Defined Table 0364 - Comment Type_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -141,7 +143,7 @@
       {
         "id": "NTE.5",
         "path": "NTE.5",
-        "short": " - NTE",
+        "short": "- NTE.5 - ",
         "definition": "Definition: This field contains the identity of the person who actually keyed the comment into the application. It provides an audit trail in case the comment is entered incorrectly and the ancillary department needs to clarify the comment. By local agreement, either the ID number or name component MAY be omitted.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -167,7 +169,7 @@
       {
         "id": "NTE.6",
         "path": "NTE.6",
-        "short": " - NTE",
+        "short": "- NTE.6 - ",
         "definition": "Definition: This field contains the actual date the comment was keyed into the application.",
         "description": null,
         "code": [
@@ -180,7 +182,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -193,7 +195,7 @@
       {
         "id": "NTE.7",
         "path": "NTE.7",
-        "short": " - NTE",
+        "short": "- NTE.7 - ",
         "definition": "Definition: This field contains the date the comment becomes or became effective.",
         "description": null,
         "code": [
@@ -206,7 +208,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -219,7 +221,7 @@
       {
         "id": "NTE.8",
         "path": "NTE.8",
-        "short": " - NTE",
+        "short": "- NTE.8 - ",
         "definition": "Definition: This field contains the date the comment becomes or became non-effective.",
         "description": null,
         "code": [
@@ -232,7 +234,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -245,7 +247,7 @@
       {
         "id": "NTE.9",
         "path": "NTE.9",
-        "short": " - NTE",
+        "short": "- NTE.9 - ",
         "definition": "Definition: This field contains a value to identify a codified comment being sent in the specific comment record. If this field is valued, NTE-3 will be populated with text from this field. In support of backwards compatibility, when NTE-9 is populated, the sending system SHALL also populate a human-readable version of the comment in NTE-3. Refer to Table 0611 - Coded Comment in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -258,7 +260,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -274,9 +276,7 @@
       }
     ]
   },
-  "id": "NTE",
   "title": "HL7 v2 NTE Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/NTE",
   "name": "NTE",
-  "type": "http://hl7.org/v2/StructureDefinition/NTE"
+  "type": "NTE"
 }

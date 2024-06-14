@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ECR",
+  "id": "ECR",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ECR.1",
         "path": "ECR.1",
-        "short": " - ECR",
+        "short": "- ECR.1 - ",
         "definition": "Definition: This field identifies the response of the previously issued command. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70387[_User-defined Table 0387 – Command Response_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "ECR.2",
         "path": "ECR.2",
-        "short": " - ECR",
+        "short": "- ECR.2 - ",
         "definition": "Definition: This field contains the date and time that the receiving component completed the requested command.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -72,7 +74,7 @@
       {
         "id": "ECR.3",
         "path": "ECR.3",
-        "short": " - ECR",
+        "short": "- ECR.3 - ",
         "definition": "Definition: This field identifies any associated parameters that relate to the returned response command message.",
         "description": null,
         "code": [
@@ -85,7 +87,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -97,9 +99,7 @@
       }
     ]
   },
-  "id": "ECR",
   "title": "HL7 v2 ECR Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ECR",
   "name": "ECR",
-  "type": "http://hl7.org/v2/StructureDefinition/ECR"
+  "type": "ECR"
 }

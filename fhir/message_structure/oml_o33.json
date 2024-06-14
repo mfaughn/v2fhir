@@ -1,0 +1,1578 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OML_O33",
+  "id": "OML_O33",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "OML_O33.1-MSH",
+          "path": "OML_O33.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OML_O33.2-ARV",
+          "path": "OML_O33.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OML_O33.3-SFT",
+          "path": "OML_O33.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OML_O33.4-UAC",
+          "path": "OML_O33.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OML_O33.5-NTE",
+          "path": "OML_O33.5-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OML_O33.6-PATIENT",
+          "path": "OML_O33.6-PATIENT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "OML_O33.6-PATIENT.1-PID",
+              "path": "OML_O33.6-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.2-PD1",
+              "path": "OML_O33.6-PATIENT.2-PD1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.3-GSP",
+              "path": "OML_O33.6-PATIENT.3-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.4-GSR",
+              "path": "OML_O33.6-PATIENT.4-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.5-GSC",
+              "path": "OML_O33.6-PATIENT.5-GSC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.6-PRT",
+              "path": "OML_O33.6-PATIENT.6-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.7-OCCUPATIONAL_DATA_FOR_HEALTH",
+              "path": "OML_O33.6-PATIENT.7-OCCUPATIONAL_DATA_FOR_HEALTH",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.7-OCCUPATIONAL_DATA_FOR_HEALTH.1-OH1",
+                  "path": "OML_O33.6-PATIENT.7-OCCUPATIONAL_DATA_FOR_HEALTH.1-OH1",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OH1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.7-OCCUPATIONAL_DATA_FOR_HEALTH.2-OH2",
+                  "path": "OML_O33.6-PATIENT.7-OCCUPATIONAL_DATA_FOR_HEALTH.2-OH2",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OH2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.7-OCCUPATIONAL_DATA_FOR_HEALTH.3-OH3",
+                  "path": "OML_O33.6-PATIENT.7-OCCUPATIONAL_DATA_FOR_HEALTH.3-OH3",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OH3"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.7-OCCUPATIONAL_DATA_FOR_HEALTH.4-OH4",
+                  "path": "OML_O33.6-PATIENT.7-OCCUPATIONAL_DATA_FOR_HEALTH.4-OH4",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OH4"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.8-NTE",
+              "path": "OML_O33.6-PATIENT.8-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.9-NEXT_OF_KIN",
+              "path": "OML_O33.6-PATIENT.9-NEXT_OF_KIN",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.9-NEXT_OF_KIN.1-NK1",
+                  "path": "OML_O33.6-PATIENT.9-NEXT_OF_KIN.1-NK1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.9-NEXT_OF_KIN.2-GSP",
+                  "path": "OML_O33.6-PATIENT.9-NEXT_OF_KIN.2-GSP",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.9-NEXT_OF_KIN.3-GSR",
+                  "path": "OML_O33.6-PATIENT.9-NEXT_OF_KIN.3-GSR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.9-NEXT_OF_KIN.4-OH2",
+                  "path": "OML_O33.6-PATIENT.9-NEXT_OF_KIN.4-OH2",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OH2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.9-NEXT_OF_KIN.5-OH3",
+                  "path": "OML_O33.6-PATIENT.9-NEXT_OF_KIN.5-OH3",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OH3"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.10-ARV",
+              "path": "OML_O33.6-PATIENT.10-ARV",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.11-PATIENT_VISIT",
+              "path": "OML_O33.6-PATIENT.11-PATIENT_VISIT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.11-PATIENT_VISIT.1-PV1",
+                  "path": "OML_O33.6-PATIENT.11-PATIENT_VISIT.1-PV1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.11-PATIENT_VISIT.2-PV2",
+                  "path": "OML_O33.6-PATIENT.11-PATIENT_VISIT.2-PV2",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.11-PATIENT_VISIT.3-PRT",
+                  "path": "OML_O33.6-PATIENT.11-PATIENT_VISIT.3-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.12-INSURANCE",
+              "path": "OML_O33.6-PATIENT.12-INSURANCE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.12-INSURANCE.1-IN1",
+                  "path": "OML_O33.6-PATIENT.12-INSURANCE.1-IN1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.12-INSURANCE.2-IN2",
+                  "path": "OML_O33.6-PATIENT.12-INSURANCE.2-IN2",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.6-PATIENT.12-INSURANCE.3-IN3",
+                  "path": "OML_O33.6-PATIENT.12-INSURANCE.3-IN3",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IN3"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.13-GT1",
+              "path": "OML_O33.6-PATIENT.13-GT1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GT1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.6-PATIENT.14-AL1",
+              "path": "OML_O33.6-PATIENT.14-AL1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "OML_O33.7-SPECIMEN",
+          "path": "OML_O33.7-SPECIMEN",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "OML_O33.7-SPECIMEN.1-SPM",
+              "path": "OML_O33.7-SPECIMEN.1-SPM",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/SPM"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.7-SPECIMEN.2-NTE",
+              "path": "OML_O33.7-SPECIMEN.2-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.7-SPECIMEN.3-SPECIMEN_OBSERVATION",
+              "path": "OML_O33.7-SPECIMEN.3-SPECIMEN_OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.3-SPECIMEN_OBSERVATION.1-OBX",
+                  "path": "OML_O33.7-SPECIMEN.3-SPECIMEN_OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.3-SPECIMEN_OBSERVATION.2-PRT",
+                  "path": "OML_O33.7-SPECIMEN.3-SPECIMEN_OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "OML_O33.7-SPECIMEN.4-SPECIMEN_CONTAINER",
+              "path": "OML_O33.7-SPECIMEN.4-SPECIMEN_CONTAINER",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.4-SPECIMEN_CONTAINER.1-SAC",
+                  "path": "OML_O33.7-SPECIMEN.4-SPECIMEN_CONTAINER.1-SAC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/SAC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.4-SPECIMEN_CONTAINER.2-NTE",
+                  "path": "OML_O33.7-SPECIMEN.4-SPECIMEN_CONTAINER.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "OML_O33.7-SPECIMEN.5-ORDER",
+              "path": "OML_O33.7-SPECIMEN.5-ORDER",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.5-ORDER.1-ORC",
+                  "path": "OML_O33.7-SPECIMEN.5-ORDER.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.5-ORDER.2-NTE",
+                  "path": "OML_O33.7-SPECIMEN.5-ORDER.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.5-ORDER.3-PRT",
+                  "path": "OML_O33.7-SPECIMEN.5-ORDER.3-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.5-ORDER.4-TIMING",
+                  "path": "OML_O33.7-SPECIMEN.5-ORDER.4-TIMING",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.4-TIMING.1-TQ1",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.4-TIMING.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.4-TIMING.2-TQ2",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.4-TIMING.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST",
+                  "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.1-OBR",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.1-OBR",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.2-TCD",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.2-TCD",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TCD"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.3-NTE",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.4-PRT",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.4-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.5-DG1",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.5-DG1",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/DG1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.6-REL",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.6-REL",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/REL"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.7-OBSERVATION",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.7-OBSERVATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.7-OBSERVATION.1-OBX",
+                          "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.7-OBSERVATION.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.7-OBSERVATION.2-PRT",
+                          "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.7-OBSERVATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.7-OBSERVATION.3-TCD",
+                          "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.7-OBSERVATION.3-TCD",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/TCD"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.7-OBSERVATION.4-NTE",
+                          "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.7-OBSERVATION.4-NTE",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.8-IPC",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.8-IPC",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/IPC"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.9-SGH",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.9-SGH",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/SGH"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR",
+                          "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.1-PID",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.1-PID",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.2-PD1",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.2-PD1",
+                              "min": 1,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.3-GSP",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.3-GSP",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.4-GSR",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.4-GSR",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.5-GSC",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.5-GSC",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.6-PRT",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.6-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.7-ARV",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.1-PATIENT_PRIOR.7-ARV",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.2-PATIENT_VISIT_PRIOR",
+                          "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.2-PATIENT_VISIT_PRIOR",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.2-PATIENT_VISIT_PRIOR.1-PV1",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.2-PATIENT_VISIT_PRIOR.1-PV1",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.2-PATIENT_VISIT_PRIOR.2-PV2",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.2-PATIENT_VISIT_PRIOR.2-PV2",
+                              "min": 1,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.2-PATIENT_VISIT_PRIOR.3-PRT",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.2-PATIENT_VISIT_PRIOR.3-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.3-AL1",
+                          "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.3-AL1",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR",
+                          "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR",
+                          "min": 0,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.1-ORC",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.1-ORC",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.2-PRT",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.2-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.3-OBR",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.3-OBR",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.4-NTE",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.4-NTE",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.5-OBSERVATION_PARTICIPATION_PRIOR",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.5-OBSERVATION_PARTICIPATION_PRIOR",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "BackboneElement"
+                                }
+                              ]
+                            },
+                            [
+                              [
+                                {
+                                  "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.5-OBSERVATION_PARTICIPATION_PRIOR.1-PRT",
+                                  "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.5-OBSERVATION_PARTICIPATION_PRIOR.1-PRT",
+                                  "min": 0,
+                                  "max": "1",
+                                  "definition": "1",
+                                  "short": "1",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                    }
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.5-OBSERVATION_PARTICIPATION_PRIOR.2-DEV",
+                                  "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.5-OBSERVATION_PARTICIPATION_PRIOR.2-DEV",
+                                  "min": 1,
+                                  "max": "*",
+                                  "definition": "*",
+                                  "short": "*",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/DEV"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.6-TIMING_PRIOR",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.6-TIMING_PRIOR",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "BackboneElement"
+                                }
+                              ]
+                            },
+                            [
+                              [
+                                {
+                                  "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.6-TIMING_PRIOR.1-TQ1",
+                                  "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.6-TIMING_PRIOR.1-TQ1",
+                                  "min": 0,
+                                  "max": "1",
+                                  "definition": "1",
+                                  "short": "1",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                                    }
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.6-TIMING_PRIOR.2-TQ2",
+                                  "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.6-TIMING_PRIOR.2-TQ2",
+                                  "min": 1,
+                                  "max": "*",
+                                  "definition": "*",
+                                  "short": "*",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          ],
+                          [
+                            {
+                              "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.7-OBSERVATION_PRIOR",
+                              "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.7-OBSERVATION_PRIOR",
+                              "min": 0,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "BackboneElement"
+                                }
+                              ]
+                            },
+                            [
+                              [
+                                {
+                                  "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.7-OBSERVATION_PRIOR.1-OBX",
+                                  "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.7-OBSERVATION_PRIOR.1-OBX",
+                                  "min": 0,
+                                  "max": "1",
+                                  "definition": "1",
+                                  "short": "1",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                                    }
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.7-OBSERVATION_PRIOR.2-PRT",
+                                  "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.7-OBSERVATION_PRIOR.2-PRT",
+                                  "min": 1,
+                                  "max": "*",
+                                  "definition": "*",
+                                  "short": "*",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                    }
+                                  ]
+                                }
+                              ],
+                              [
+                                {
+                                  "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.7-OBSERVATION_PRIOR.3-NTE",
+                                  "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.10-PRIOR_RESULT.4-ORDER_PRIOR.7-OBSERVATION_PRIOR.3-NTE",
+                                  "min": 1,
+                                  "max": "*",
+                                  "definition": "*",
+                                  "short": "*",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.11-SGT",
+                      "path": "OML_O33.7-SPECIMEN.5-ORDER.5-OBSERVATION_REQUEST.11-SGT",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/SGT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.5-ORDER.6-FT1",
+                  "path": "OML_O33.7-SPECIMEN.5-ORDER.6-FT1",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/FT1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.5-ORDER.7-CTI",
+                  "path": "OML_O33.7-SPECIMEN.5-ORDER.7-CTI",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CTI"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OML_O33.7-SPECIMEN.5-ORDER.8-BLG",
+                  "path": "OML_O33.7-SPECIMEN.5-ORDER.8-BLG",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/BLG"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "OML_O33.8-DEVICE",
+          "path": "OML_O33.8-DEVICE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "OML_O33.8-DEVICE.1-DEV",
+              "path": "OML_O33.8-DEVICE.1-DEV",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/DEV"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "OML_O33.8-DEVICE.2-OBX",
+              "path": "OML_O33.8-DEVICE.2-OBX",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 OML_O33 Segment Definition",
+  "name": "OML_O33",
+  "type": "http://hl7.org/v2/StructureDefinition/OML_O33"
+}

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/IAR",
+  "id": "IAR",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "IAR.1",
         "path": "IAR.1",
-        "short": " - IAR",
+        "short": "- IAR.1 - ",
         "definition": "Definition: This field identifies the specific allergic reaction that was documented. This element may conform to some external, standard coding system, or it may conform to local, largely textual or mnemonic descriptions (e.g., convulsions, sneeze, rash, etc.).",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "IAR.2",
         "path": "IAR.2",
-        "short": " - IAR",
+        "short": "- IAR.2 - ",
         "definition": "Definition: This field indicates the general severity of the allergy. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70128[_User-defined Table 0128 - Allergy severity code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -72,7 +74,7 @@
       {
         "id": "IAR.3",
         "path": "IAR.3",
-        "short": " - IAR",
+        "short": "- IAR.3 - ",
         "definition": "Definition: This field contains the reason why the patient should not be exposed to a substance. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70436[_User-defined Table 0436 - Sensitivity to causative Agent code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -85,7 +87,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -102,7 +104,7 @@
       {
         "id": "IAR.4",
         "path": "IAR.4",
-        "short": " - IAR",
+        "short": "- IAR.4 - ",
         "definition": "Definition: This field contains a textual description of the actions that were performed in response to the reaction.",
         "description": null,
         "code": [
@@ -115,7 +117,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -140,9 +142,7 @@
       }
     ]
   },
-  "id": "IAR",
   "title": "HL7 v2 IAR Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/IAR",
   "name": "IAR",
-  "type": "http://hl7.org/v2/StructureDefinition/IAR"
+  "type": "IAR"
 }

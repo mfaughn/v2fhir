@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ODS",
+  "id": "ODS",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ODS.1",
         "path": "ODS.1",
-        "short": " - ODS",
+        "short": "- ODS.1 - ",
         "definition": "Definition: This field specifies type of diet. Refer To file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70159[HL7 Table 0159 - Diet Code Specification Type] in Chapter 2C, Code Tables, for valid entries.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -59,7 +61,7 @@
       {
         "id": "ODS.2",
         "path": "ODS.2",
-        "short": " - ODS",
+        "short": "- ODS.2 - ",
         "definition": "Definition: When blank, the modifier applies to all service periods. Diet orders, for example, typically apply to all service periods. This field usually specifies supplements. This field allows you to designate a modification for one or more of the service periods during a day by combining service specifications as needed. The service periods will be local CEs, normally numbers. Suggested are:",
         "description": null,
         "code": [
@@ -72,7 +74,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -89,7 +91,7 @@
       {
         "id": "ODS.3",
         "path": "ODS.3",
-        "short": " - ODS",
+        "short": "- ODS.3 - ",
         "definition": "Definition: This field is the identifier of the ordered item for a patient; it is equivalent to OBR-4-universal service ID in function. Since ODS is a repeating segment, multiple entities get multiple segments. Refer to Table 0628 - Diet, Supplement, or Preference Code in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -102,7 +104,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -119,7 +121,7 @@
       {
         "id": "ODS.4",
         "path": "ODS.4",
-        "short": " - ODS",
+        "short": "- ODS.4 - ",
         "definition": "Definition: This field defines the specific instructions for dietary. These instructions may address specific patient needs, such as isolation. This field provides the ordering provider's dietary instructions as free text. It can represent the full dietary instruction or indicate supplemental information.",
         "description": null,
         "code": [
@@ -132,7 +134,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -157,9 +159,7 @@
       }
     ]
   },
-  "id": "ODS",
   "title": "HL7 v2 ODS Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ODS",
   "name": "ODS",
-  "type": "http://hl7.org/v2/StructureDefinition/ODS"
+  "type": "ODS"
 }

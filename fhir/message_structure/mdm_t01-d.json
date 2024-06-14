@@ -1,0 +1,357 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MDM_T01-D",
+  "id": "MDM_T01-D",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "MDM_T01-D.1-MSH",
+          "path": "MDM_T01-D.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.2-SFT",
+          "path": "MDM_T01-D.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.3-UAC",
+          "path": "MDM_T01-D.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.4-EVN",
+          "path": "MDM_T01-D.4-EVN",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EVN"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.5-PID",
+          "path": "MDM_T01-D.5-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.6-GSP",
+          "path": "MDM_T01-D.6-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.7-GSR",
+          "path": "MDM_T01-D.7-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.8-GSC",
+          "path": "MDM_T01-D.8-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.9-PRT",
+          "path": "MDM_T01-D.9-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.10-PV1",
+          "path": "MDM_T01-D.10-PV1",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PV1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.11-PRT",
+          "path": "MDM_T01-D.11-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.12-COMMON_ORDER",
+          "path": "MDM_T01-D.12-COMMON_ORDER",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "MDM_T01-D.12-COMMON_ORDER.1-ORC",
+              "path": "MDM_T01-D.12-COMMON_ORDER.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MDM_T01-D.12-COMMON_ORDER.2-PRT",
+              "path": "MDM_T01-D.12-COMMON_ORDER.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MDM_T01-D.12-COMMON_ORDER.3-TIMING",
+              "path": "MDM_T01-D.12-COMMON_ORDER.3-TIMING",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "MDM_T01-D.12-COMMON_ORDER.3-TIMING.1-TQ1",
+                  "path": "MDM_T01-D.12-COMMON_ORDER.3-TIMING.1-TQ1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "MDM_T01-D.12-COMMON_ORDER.3-TIMING.2-TQ2",
+                  "path": "MDM_T01-D.12-COMMON_ORDER.3-TIMING.2-TQ2",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "MDM_T01-D.12-COMMON_ORDER.4-OBR",
+              "path": "MDM_T01-D.12-COMMON_ORDER.4-OBR",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MDM_T01-D.12-COMMON_ORDER.5-PRT",
+              "path": "MDM_T01-D.12-COMMON_ORDER.5-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MDM_T01-D.12-COMMON_ORDER.6-NTE",
+              "path": "MDM_T01-D.12-COMMON_ORDER.6-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "MDM_T01-D.13-TXA",
+          "path": "MDM_T01-D.13-TXA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/TXA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MDM_T01-D.14-CON",
+          "path": "MDM_T01-D.14-CON",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/CON"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 MDM_T01-D Segment Definition",
+  "name": "MDM_T01-D",
+  "type": "http://hl7.org/v2/StructureDefinition/MDM_T01-D"
+}

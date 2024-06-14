@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ACC",
+  "id": "ACC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ACC.1",
         "path": "ACC.1",
-        "short": " - ACC",
+        "short": "- ACC.1 - ",
         "definition": "Definition: This field contains the date/time of the accident.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "ACC.2",
         "path": "ACC.2",
-        "short": " - ACC",
+        "short": "- ACC.2 - ",
         "definition": "Definition: This field contains the type of accident. Refer to _file:///E:\\V2\\V29_CH02C_Tables.docx#HL70050[User-defined Table 0050 - Accident Code]_ in Chapter 2C, Code Tables, for suggested values. ICD accident codes are recommended.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -72,7 +74,7 @@
       {
         "id": "ACC.3",
         "path": "ACC.3",
-        "short": " - ACC",
+        "short": "- ACC.3 - ",
         "definition": "Definition: This field contains the location of the accident.",
         "description": null,
         "code": [
@@ -85,7 +87,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "ACC.4",
         "path": "ACC.4",
-        "short": " - ACC",
+        "short": "- ACC.4 - ",
         "definition": "Definition: *_As of Version 2.5, this field has been retained for backward compatibility only._* *_Use_* __link:\\l[ACC-11 - Accident Address] *instead of this field, *__as the state in which the accident occurred is part of the address. This field specifies the state in which the auto accident occurred. (CMS 1500 requirement in the US.) Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70347[_User-defined Table 0347 - State/Province_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -141,7 +143,7 @@
       {
         "id": "ACC.5",
         "path": "ACC.5",
-        "short": " - ACC",
+        "short": "- ACC.5 - ",
         "definition": "Definition: This field indicates if the accident was related to a job. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -184,7 +186,7 @@
       {
         "id": "ACC.6",
         "path": "ACC.6",
-        "short": " - ACC",
+        "short": "- ACC.6 - ",
         "definition": "Definition: This field indicates whether or not a patient has died as a result of an accident. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -197,7 +199,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -227,7 +229,7 @@
       {
         "id": "ACC.7",
         "path": "ACC.7",
-        "short": " - ACC",
+        "short": "- ACC.7 - ",
         "definition": "Definition: This field identifies the person entering the accident information.",
         "description": null,
         "code": [
@@ -240,7 +242,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -253,7 +255,7 @@
       {
         "id": "ACC.8",
         "path": "ACC.8",
-        "short": " - ACC",
+        "short": "- ACC.8 - ",
         "definition": "Definition: Description of the accident.",
         "description": null,
         "code": [
@@ -266,7 +268,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -292,7 +294,7 @@
       {
         "id": "ACC.9",
         "path": "ACC.9",
-        "short": " - ACC",
+        "short": "- ACC.9 - ",
         "definition": "Definition: This field identifies the person or organization that brought in the patient.",
         "description": null,
         "code": [
@@ -305,7 +307,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -331,7 +333,7 @@
       {
         "id": "ACC.10",
         "path": "ACC.10",
-        "short": " - ACC",
+        "short": "- ACC.10 - ",
         "definition": "Definition: This field indicates if the police were notified. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -344,7 +346,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -374,7 +376,7 @@
       {
         "id": "ACC.11",
         "path": "ACC.11",
-        "short": " - ACC",
+        "short": "- ACC.11 - ",
         "definition": "Definition: This field contains the address where the accident occurred.",
         "description": null,
         "code": [
@@ -387,7 +389,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -400,7 +402,7 @@
       {
         "id": "ACC.12",
         "path": "ACC.12",
-        "short": " - ACC",
+        "short": "- ACC.12 - ",
         "definition": "Definition: This field conveys the amount to which the patient is found to be liable for an accident. The numeric value is given as a percentage value.",
         "description": null,
         "code": [
@@ -413,7 +415,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -439,7 +441,7 @@
       {
         "id": "ACC.13",
         "path": "ACC.13",
-        "short": " - ACC",
+        "short": "- ACC.13 - ",
         "definition": "Definition: This field contains the identifier of the accident report assigned by a jurisdiction that is required in the insurance accident claim.",
         "description": null,
         "code": [
@@ -452,7 +454,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -464,9 +466,7 @@
       }
     ]
   },
-  "id": "ACC",
   "title": "HL7 v2 ACC Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ACC",
   "name": "ACC",
-  "type": "http://hl7.org/v2/StructureDefinition/ACC"
+  "type": "ACC"
 }

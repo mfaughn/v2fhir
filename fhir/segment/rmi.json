@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RMI",
+  "id": "RMI",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "RMI.1",
         "path": "RMI.1",
-        "short": " - RMI",
+        "short": "- RMI.1 - ",
         "definition": "Definition: A code depicting the incident that occurred during a patient's stay. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70427[_User-defined Table 0427 - Risk Management Incident Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "RMI.2",
         "path": "RMI.2",
-        "short": " - RMI",
+        "short": "- RMI.2 - ",
         "definition": "Definition: This field contains the date and time the Risk Management Incident identified in link:#rmi-1-risk-management-incident-code-cwe-01530[_RMI-1 - Risk Management Incident Code_] occurred.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -72,7 +74,7 @@
       {
         "id": "RMI.3",
         "path": "RMI.3",
-        "short": " - RMI",
+        "short": "- RMI.3 - ",
         "definition": "Definition: A code depicting a classification of the incident type. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70428[_User-defined Table 0428 - Incident Type Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -85,7 +87,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -101,9 +103,7 @@
       }
     ]
   },
-  "id": "RMI",
   "title": "HL7 v2 RMI Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/RMI",
   "name": "RMI",
-  "type": "http://hl7.org/v2/StructureDefinition/RMI"
+  "type": "RMI"
 }

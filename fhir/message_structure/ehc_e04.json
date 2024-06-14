@@ -1,0 +1,211 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/EHC_E04",
+  "id": "EHC_E04",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "EHC_E04.1-MSH",
+          "path": "EHC_E04.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E04.2-SFT",
+          "path": "EHC_E04.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E04.3-UAC",
+          "path": "EHC_E04.3-UAC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E04.4-REASSESSMENT_REQUEST_INFO",
+          "path": "EHC_E04.4-REASSESSMENT_REQUEST_INFO",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1",
+              "path": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.1-IVC",
+                  "path": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.1-IVC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IVC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.2-NTE",
+                  "path": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.3-PRODUCT_SERVICE_SECTION",
+                  "path": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.3-PRODUCT_SERVICE_SECTION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.3-PRODUCT_SERVICE_SECTION.1-PSS",
+                      "path": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.3-PRODUCT_SERVICE_SECTION.1-PSS",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PSS"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP",
+                      "path": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.1-PSG",
+                          "path": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.1-PSG",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PSG"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PSL",
+                          "path": "EHC_E04.4-REASSESSMENT_REQUEST_INFO.1.3-PRODUCT_SERVICE_SECTION.2-PRODUCT_SERVICE_GROUP.2-PSL",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PSL"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 EHC_E04 Segment Definition",
+  "name": "EHC_E04",
+  "type": "http://hl7.org/v2/StructureDefinition/EHC_E04"
+}

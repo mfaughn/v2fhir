@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PRD",
+  "id": "PRD",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "PRD.1",
         "path": "PRD.1",
-        "short": " - PRD",
+        "short": "- PRD.1 - ",
         "definition": "Definition: This field contains the contact role that defines the relationship of the person or organization described in this segment to the patient being referred. When a referral is inter-enterprise in nature, there are several important relationships that must be identified. For example, the proper identification of both the referring and the referred-to provider is critical for proper processing of a referral. In addition, some enterprises may want information regarding a consulting provider or the identity of the person who actually prepared the referral. This contact role may also expand to represent affiliated persons to whom information regarding this referral must be forwarded or copied. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70286[_User-defined Table 0286 - Provider Role_] for suggested values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "PRD.2",
         "path": "PRD.2",
-        "short": " - PRD",
+        "short": "- PRD.2 - ",
         "definition": "Definition: This field contains the name of the provider identified in this segment. Generally, this field will describe a physician associated with the referral. However, it is not limited to physicians. If the provider is an organization then _PRD-10 – Provider Organization Name and Identifier_ will be used. This field may contain the name of any valid healthcare provider associated with this referral. If this Provider Name is a physician's name, you may refer to _PRD-7-Provider identifiers_ for the physician identifier.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -72,7 +74,7 @@
       {
         "id": "PRD.3",
         "path": "PRD.3",
-        "short": " - PRD",
+        "short": "- PRD.3 - ",
         "definition": "Definition: This field contains the mailing address of the provider identified in this segment. One of the key components to completing the \"circle of care\" and provider/institution bonding is the issuance of follow‑up correspondence to the referring provider.",
         "description": null,
         "code": [
@@ -85,7 +87,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -98,7 +100,7 @@
       {
         "id": "PRD.4",
         "path": "PRD.4",
-        "short": " - PRD",
+        "short": "- PRD.4 - ",
         "definition": "Definition: This field contains the location of the provider as needed when a provider that may be external to a given enterprise must be referenced. For example, if this provider represented the referred-to physician, the _PRD-4-Provider location_ should identify the clinic of the physician or provider to whom this referral has been sent. An application and facility identifier carried in the facility field specifies the identification of the provider's location. The application ID and facility ID would be used in the same manner as their corresponding fields in the MSH segment (_MSH-3-Sending application, MSH-5-Receiving application,_ _MSH-4-Sending facility, MSH-6-Receiving facility_). That is, the facility field will contain an application identifier and facility identifier which describe the location of this provider. However, it should be noted that they may describe a different location because the provider location being referenced in this field _may not be_ the location from which the message originated, which is being described by the MSH.",
         "description": null,
         "code": [
@@ -111,7 +113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -124,7 +126,7 @@
       {
         "id": "PRD.5",
         "path": "PRD.5",
-        "short": " - PRD",
+        "short": "- PRD.5 - ",
         "definition": "Definition: This field contains information, such as the phone number or electronic mail address, used to communicate with the provider or organization.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -150,7 +152,7 @@
       {
         "id": "PRD.6",
         "path": "PRD.6",
-        "short": " - PRD",
+        "short": "- PRD.6 - ",
         "definition": "Definition: This field contains the preferred method to use when communicating with the provider. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70185[_User-defined Table 0185 - Preferred Method of Contact_] in Chapter 2C, \"Code Tables\", for suggested values.",
         "description": null,
         "code": [
@@ -163,7 +165,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -180,7 +182,7 @@
       {
         "id": "PRD.7",
         "path": "PRD.7",
-        "short": " - PRD",
+        "short": "- PRD.7 - ",
         "definition": "Definition: This repeating field contains the provider's unique identifiers such as UPIN, Medicare and Medicaid numbers. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70338[_User-defined Table 0338 - Practitioner ID Number Type_] (in Chapter 2C, \"Code Tables\") for suggested values.",
         "description": null,
         "code": [
@@ -193,7 +195,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PLN"
+            "code": "PLN"
           }
         ],
         "binding": {
@@ -210,7 +212,7 @@
       {
         "id": "PRD.8",
         "path": "PRD.8",
-        "short": " - PRD",
+        "short": "- PRD.8 - ",
         "definition": "Definition: This field contains the date that the role of the provider effectively began. For example, this date may represent the date on which a physician was assigned as a patient's primary care provider.",
         "description": null,
         "code": [
@@ -223,7 +225,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -236,7 +238,7 @@
       {
         "id": "PRD.9",
         "path": "PRD.9",
-        "short": " - PRD",
+        "short": "- PRD.9 - ",
         "definition": "Definition: This field contains the date that the role of the provider effectively ended. For example, this date may represent the date that a physician was removed as a patient's primary care provider.",
         "description": null,
         "code": [
@@ -249,7 +251,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -262,7 +264,7 @@
       {
         "id": "PRD.10",
         "path": "PRD.10",
-        "short": " - PRD",
+        "short": "- PRD.10 - ",
         "definition": "Definition: This field contains the name of the provider where the provider is an organization.",
         "description": null,
         "code": [
@@ -275,7 +277,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -288,7 +290,7 @@
       {
         "id": "PRD.11",
         "path": "PRD.11",
-        "short": " - PRD",
+        "short": "- PRD.11 - ",
         "definition": "Definition: This field contains the address of the provider if it is an organization.",
         "description": null,
         "code": [
@@ -301,7 +303,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -314,7 +316,7 @@
       {
         "id": "PRD.12",
         "path": "PRD.12",
-        "short": " - PRD",
+        "short": "- PRD.12 - ",
         "definition": "Definition: This field contains the location details of the provider if it is an organization.",
         "description": null,
         "code": [
@@ -327,7 +329,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -340,7 +342,7 @@
       {
         "id": "PRD.13",
         "path": "PRD.13",
-        "short": " - PRD",
+        "short": "- PRD.13 - ",
         "definition": "Definition: This field contains information, such as the phone number or electronic mail address, used to communicate with the provider if it is an organization.",
         "description": null,
         "code": [
@@ -353,7 +355,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -366,7 +368,7 @@
       {
         "id": "PRD.14",
         "path": "PRD.14",
-        "short": " - PRD",
+        "short": "- PRD.14 - ",
         "definition": "Definition: This field contains the preferred method to use when communicating with the provider if provider is an organization. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70185[_User-defined Table 0185 - Preferred Method of Contact_] in Chapter 2C, \"Code Tables\", for suggested values.",
         "description": null,
         "code": [
@@ -379,7 +381,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -395,9 +397,7 @@
       }
     ]
   },
-  "id": "PRD",
   "title": "HL7 v2 PRD Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/PRD",
   "name": "PRD",
-  "type": "http://hl7.org/v2/StructureDefinition/PRD"
+  "type": "PRD"
 }

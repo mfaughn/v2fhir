@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/IAM",
+  "id": "IAM",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "IAM.1",
         "path": "IAM.1",
-        "short": " - IAM",
+        "short": "- IAM.1 - ",
         "definition": "Definition: This field contains the number that identifies this transaction. For the first occurrence of the segment, the sequence number shall be one, for the second occurrence, the sequence number shall be two, etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "IAM.2",
         "path": "IAM.2",
-        "short": " - IAM",
+        "short": "- IAM.2 - ",
         "definition": "Definition: This field indicates a general allergy category (drug, food, pollen, etc.). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70127[_User-d__efined Table 0127 - Allerg__en Type_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "IAM.3",
         "path": "IAM.3",
-        "short": " - IAM",
+        "short": "- IAM.3 - ",
         "definition": "Definition: This field uniquely identifies a particular allergen. This element may conform to some external, standard coding system (that must be identified), or it may conform to local, largely textual or mnemonic descriptions.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "IAM.4",
         "path": "IAM.4",
-        "short": " - IAM",
+        "short": "- IAM.4 - ",
         "definition": "Definition: This field indicates the general severity of the allergy. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70128[_User-defined Table 0128 - Allergy Severity Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -141,7 +143,7 @@
       {
         "id": "IAM.5",
         "path": "IAM.5",
-        "short": " - IAM",
+        "short": "- IAM.5 - ",
         "definition": "Definition: This field identifies the specific allergic reaction that was documented. This element may conform to some external, standard coding system, or it may conform to local, largely textual or mnemonic descriptions (e.g., convulsions, sneeze, rash, etc.).",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -180,7 +182,7 @@
       {
         "id": "IAM.6",
         "path": "IAM.6",
-        "short": " - IAM",
+        "short": "- IAM.6 - ",
         "definition": "Definition: This field contains a code defining the status of the record. It allows allergy messages to be sent to delete or update previously sent allergy messages. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[_HL7 Table 0206 - Segment Action Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -193,7 +195,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -223,7 +225,7 @@
       {
         "id": "IAM.7",
         "path": "IAM.7",
-        "short": " - IAM",
+        "short": "- IAM.7 - ",
         "definition": "Definition: This field contains a value that uniquely identifies a single allergy for a person.",
         "description": null,
         "code": [
@@ -236,7 +238,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -249,7 +251,7 @@
       {
         "id": "IAM.8",
         "path": "IAM.8",
-        "short": " - IAM",
+        "short": "- IAM.8 - ",
         "definition": "Definition: This field contains the reason for the action indicated in the _IAM-6 - Allergy Action Code_ field.",
         "description": null,
         "code": [
@@ -262,7 +264,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -288,7 +290,7 @@
       {
         "id": "IAM.9",
         "path": "IAM.9",
-        "short": " - IAM",
+        "short": "- IAM.9 - ",
         "definition": "Definition: This field contains the reason why the patient should not be exposed to a substance. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70436[_User-defined Table 0436 - Sensitivity to Causative Agent Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -301,7 +303,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -318,7 +320,7 @@
       {
         "id": "IAM.10",
         "path": "IAM.10",
-        "short": " - IAM",
+        "short": "- IAM.10 - ",
         "definition": "Definition: This field contains the code, mnemonic, or description used to uniquely identify an allergen group when both a detailed allergy (_IAM-3 - Allergen Code/Mnemonic/Description_) and group level (_IAM-10 - Allergen Group Code/Mnemonic/Description_) need to be communicated. In cases where systems want to communicate both a specific drug allergy and the group of drugs to which the specific drug belongs (i.e., Bactrim and Sulfa drugs; Ceclor and Penicillins/Cephalosporins) then the specific drug allergy is sent in _IAM-3 - Allergen Code/Mnemonic/Description_ and the group level is sent in _IAM-10 - Allergen Group Code/Mnemonic/Description_. However, if only a group level is being communicated, then it can be sent in IAM-3 as the primary identifier of the allergy.",
         "description": null,
         "code": [
@@ -331,7 +333,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -344,7 +346,7 @@
       {
         "id": "IAM.11",
         "path": "IAM.11",
-        "short": " - IAM",
+        "short": "- IAM.11 - ",
         "definition": "Definition: This field contains the actual date of the first reaction.",
         "description": null,
         "code": [
@@ -357,7 +359,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -370,7 +372,7 @@
       {
         "id": "IAM.12",
         "path": "IAM.12",
-        "short": " - IAM",
+        "short": "- IAM.12 - ",
         "definition": "Definition: This field contains a text description of the time period of the first reaction when an exact date is not known (e.g., adolescence, childhood, spring 1990).",
         "description": null,
         "code": [
@@ -383,7 +385,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -409,7 +411,7 @@
       {
         "id": "IAM.13",
         "path": "IAM.13",
-        "short": " - IAM",
+        "short": "- IAM.13 - ",
         "definition": "Definition: This field contains the date/time the allergy was reported to a caregiver.",
         "description": null,
         "code": [
@@ -422,7 +424,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -435,7 +437,7 @@
       {
         "id": "IAM.14",
         "path": "IAM.14",
-        "short": " - IAM",
+        "short": "- IAM.14 - ",
         "definition": "Definition: This field contains the name of the person reporting the allergy to a caregiver at the time reported in _IAM-14 - Reported Date/Time_.",
         "description": null,
         "code": [
@@ -448,7 +450,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -461,7 +463,7 @@
       {
         "id": "IAM.15",
         "path": "IAM.15",
-        "short": " - IAM",
+        "short": "- IAM.15 - ",
         "definition": "Definition: This field contains the personal relationship that the person reporting the allergy has to the patient. It uses the same table as that used by NK1-3. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70063[_User-defined Table 0063 - Relationship_] in Chapter 2C, Code Tables, for suggested values. Examples include: brother, sister, mother, father, friend, spouse, etc.",
         "description": null,
         "code": [
@@ -474,7 +476,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -491,7 +493,7 @@
       {
         "id": "IAM.16",
         "path": "IAM.16",
-        "short": " - IAM",
+        "short": "- IAM.16 - ",
         "definition": "Definition: This field describes any type of allergy alert device the patient may be carrying or wearing. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70437[_User-defined Table 0437 - Alert Device_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -504,7 +506,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -521,7 +523,7 @@
       {
         "id": "IAM.17",
         "path": "IAM.17",
-        "short": " - IAM",
+        "short": "- IAM.17 - ",
         "definition": "Definition: This field indicates the verification status for the allergy. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70438[_User-defined Table 0438 - Allergy Clinical Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -534,7 +536,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -551,7 +553,7 @@
       {
         "id": "IAM.18",
         "path": "IAM.18",
-        "short": " - IAM",
+        "short": "- IAM.18 - ",
         "definition": "Definition: This field identifies the provider who assigned the clinical status to the allergy (e.g., ...| S12345^EVERYMAN^ADAM^J^III^DR^MD|...).",
         "description": null,
         "code": [
@@ -564,7 +566,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -577,7 +579,7 @@
       {
         "id": "IAM.19",
         "path": "IAM.19",
-        "short": " - IAM",
+        "short": "- IAM.19 - ",
         "definition": "Definition: This field contains the name of the organization providing the update to the allergy (e.g., Good Health Hospital).",
         "description": null,
         "code": [
@@ -590,7 +592,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -603,7 +605,7 @@
       {
         "id": "IAM.20",
         "path": "IAM.20",
-        "short": " - IAM",
+        "short": "- IAM.20 - ",
         "definition": "Definition: The date and time that this allergy was last statused by the _IAM-18 - Statused by Person_ in the _IAM-19 - Statused by Organization_.",
         "description": null,
         "code": [
@@ -616,7 +618,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -629,7 +631,7 @@
       {
         "id": "IAM.21",
         "path": "IAM.21",
-        "short": " - IAM",
+        "short": "- IAM.21 - ",
         "definition": "Definition: This field identifies the user that inactivated the record entry about the patient’s allergy",
         "description": null,
         "code": [
@@ -642,7 +644,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -655,7 +657,7 @@
       {
         "id": "IAM.22",
         "path": "IAM.22",
-        "short": " - IAM",
+        "short": "- IAM.22 - ",
         "definition": "Definition: The date and time that this allergy was inactivated by the _IAM-21 Inactivated by Person_.",
         "description": null,
         "code": [
@@ -668,7 +670,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -681,7 +683,7 @@
       {
         "id": "IAM.23",
         "path": "IAM.23",
-        "short": " - IAM",
+        "short": "- IAM.23 - ",
         "definition": "Definition: This field identifies the user that created the entry in the record stating the allergy (e.g. ...| S12345^Smith^John^J^III^DR^MD|...).",
         "description": null,
         "code": [
@@ -694,7 +696,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -707,7 +709,7 @@
       {
         "id": "IAM.24",
         "path": "IAM.24",
-        "short": " - IAM",
+        "short": "- IAM.24 - ",
         "definition": "Definition: The date and time that this allergy entry was created by the _IAM-23 Created by Person_.",
         "description": null,
         "code": [
@@ -720,7 +722,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -733,7 +735,7 @@
       {
         "id": "IAM.25",
         "path": "IAM.25",
-        "short": " - IAM",
+        "short": "- IAM.25 - ",
         "definition": "Definition: This field identifies the user that modified the allergy (e.g. ...|S12345^Smith^John^J^III^DR^MD|...).",
         "description": null,
         "code": [
@@ -746,7 +748,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -759,7 +761,7 @@
       {
         "id": "IAM.26",
         "path": "IAM.26",
-        "short": " - IAM",
+        "short": "- IAM.26 - ",
         "definition": "Definition: The date and time that this allergy was modified by the _IAM-25 Modified by Person_.",
         "description": null,
         "code": [
@@ -772,7 +774,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -785,7 +787,7 @@
       {
         "id": "IAM.27",
         "path": "IAM.27",
-        "short": " - IAM",
+        "short": "- IAM.27 - ",
         "definition": "Definition: This field identifies the clinician entered description associated to a particular allergen. This element may conform to some external, standard coding system (that must be identified), or it may conform to local, largely textual or mnemonic descriptions.",
         "description": null,
         "code": [
@@ -798,7 +800,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -811,7 +813,7 @@
       {
         "id": "IAM.28",
         "path": "IAM.28",
-        "short": " - IAM",
+        "short": "- IAM.28 - ",
         "definition": "Definition: This field contains the name of the organization that initially recorded the allergy (e.g., a General Hospital).",
         "description": null,
         "code": [
@@ -824,7 +826,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -837,7 +839,7 @@
       {
         "id": "IAM.29",
         "path": "IAM.29",
-        "short": " - IAM",
+        "short": "- IAM.29 - ",
         "definition": "Definition: This field contains the name of the organization that modified the allergy (e.g., a General Hospital).",
         "description": null,
         "code": [
@@ -850,7 +852,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -863,7 +865,7 @@
       {
         "id": "IAM.30",
         "path": "IAM.30",
-        "short": " - IAM",
+        "short": "- IAM.30 - ",
         "definition": "Definition: This field contains the name of the organization that inactivated the allergy (e.g., a General Hospital).",
         "description": null,
         "code": [
@@ -876,7 +878,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -888,9 +890,7 @@
       }
     ]
   },
-  "id": "IAM",
   "title": "HL7 v2 IAM Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/IAM",
   "name": "IAM",
-  "type": "http://hl7.org/v2/StructureDefinition/IAM"
+  "type": "IAM"
 }

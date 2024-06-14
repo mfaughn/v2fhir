@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MSA",
+  "id": "MSA",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "MSA.1",
         "path": "MSA.1",
-        "short": " - MSA",
+        "short": "- MSA.1 - ",
         "definition": "Definition: This field contains an acknowledgment code, see message processing rules. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70008[_HL7 Table 0008 - Acknowledgment Code_] for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -59,7 +61,7 @@
       {
         "id": "MSA.2",
         "path": "MSA.2",
-        "short": " - MSA",
+        "short": "- MSA.2 - ",
         "definition": "Definition: This field contains the message control ID of the message sent by the sending system. It allows the sending system to associate this response with the message for which it is intended.",
         "description": null,
         "code": [
@@ -72,7 +74,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "MSA.3",
         "path": "MSA.3",
-        "short": " - MSA",
+        "short": "- MSA.3 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -130,7 +132,7 @@
       {
         "id": "MSA.4",
         "path": "MSA.4",
-        "short": " - MSA",
+        "short": "- MSA.4 - ",
         "definition": "Definition: This optional numeric field is used in the sequence number protocol.",
         "description": null,
         "code": [
@@ -143,7 +145,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -156,7 +158,7 @@
       {
         "id": "MSA.5",
         "path": "MSA.5",
-        "short": " - MSA",
+        "short": "- MSA.5 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -175,7 +177,7 @@
       {
         "id": "MSA.6",
         "path": "MSA.6",
-        "short": " - MSA",
+        "short": "- MSA.6 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -194,7 +196,7 @@
       {
         "id": "MSA.7",
         "path": "MSA.7",
-        "short": " - MSA",
+        "short": "- MSA.7 - ",
         "definition": "Definition: If present, indicates the number of messages the Acknowledging Application has waiting on a queue for the Requesting Application. These messages would then need to be retrieved via a query. This facilitates receiving applications that cannot receive unsolicited message (i.e., polling).",
         "description": null,
         "code": [
@@ -207,7 +209,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -220,7 +222,7 @@
       {
         "id": "MSA.8",
         "path": "MSA.8",
-        "short": " - MSA",
+        "short": "- MSA.8 - ",
         "definition": "Definition: If present, indicates that the Sending Application has messages waiting on a queue for the Receiving Application. These messages would then need to be retrieved via a query. This facilitates receiving applications that cannot receive unsolicited messages (i.e., polling). The code specified identifies how important the most important waiting message is (and can govern how soon the receiving application is required to poll for the message).",
         "description": null,
         "code": [
@@ -233,7 +235,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -262,9 +264,7 @@
       }
     ]
   },
-  "id": "MSA",
   "title": "HL7 v2 MSA Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/MSA",
   "name": "MSA",
-  "type": "http://hl7.org/v2/StructureDefinition/MSA"
+  "type": "MSA"
 }

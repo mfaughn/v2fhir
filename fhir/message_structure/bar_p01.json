@@ -1,0 +1,691 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/BAR_P01",
+  "id": "BAR_P01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "BAR_P01.1-MSH",
+          "path": "BAR_P01.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.2-SFT",
+          "path": "BAR_P01.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.3-UAC",
+          "path": "BAR_P01.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.4-EVN",
+          "path": "BAR_P01.4-EVN",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EVN"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.5-PID",
+          "path": "BAR_P01.5-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.6-PD1",
+          "path": "BAR_P01.6-PD1",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PD1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.7-GSP",
+          "path": "BAR_P01.7-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.8-GSR",
+          "path": "BAR_P01.8-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.9-GSC",
+          "path": "BAR_P01.9-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.10-PRT",
+          "path": "BAR_P01.10-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.11-ROL",
+          "path": "BAR_P01.11-ROL",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "BAR_P01.12-VISIT",
+          "path": "BAR_P01.12-VISIT",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "BAR_P01.12-VISIT.1-PV1",
+              "path": "BAR_P01.12-VISIT.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.2-PV2",
+              "path": "BAR_P01.12-VISIT.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.3-PRT",
+              "path": "BAR_P01.12-VISIT.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.4-ROL",
+              "path": "BAR_P01.12-VISIT.4-ROL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.5-DB1",
+              "path": "BAR_P01.12-VISIT.5-DB1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/DB1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.6-OBX",
+              "path": "BAR_P01.12-VISIT.6-OBX",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.7-PRT",
+              "path": "BAR_P01.12-VISIT.7-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.8-AL1",
+              "path": "BAR_P01.12-VISIT.8-AL1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.9-DIAGNOSIS",
+              "path": "BAR_P01.12-VISIT.9-DIAGNOSIS",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.9-DIAGNOSIS.1-DG1",
+                  "path": "BAR_P01.12-VISIT.9-DIAGNOSIS.1-DG1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/DG1"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.10-DRG",
+              "path": "BAR_P01.12-VISIT.10-DRG",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/DRG"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.11-PROCEDURE",
+              "path": "BAR_P01.12-VISIT.11-PROCEDURE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.11-PROCEDURE.1-PR1",
+                  "path": "BAR_P01.12-VISIT.11-PROCEDURE.1-PR1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PR1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.11-PROCEDURE.2-PRT",
+                  "path": "BAR_P01.12-VISIT.11-PROCEDURE.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.11-PROCEDURE.3-ROL",
+                  "path": "BAR_P01.12-VISIT.11-PROCEDURE.3-ROL",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.12-GT1",
+              "path": "BAR_P01.12-VISIT.12-GT1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GT1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.13-GSP",
+              "path": "BAR_P01.12-VISIT.13-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.14-GSR",
+              "path": "BAR_P01.12-VISIT.14-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.15-NK1",
+              "path": "BAR_P01.12-VISIT.15-NK1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.16-GSP",
+              "path": "BAR_P01.12-VISIT.16-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.17-GSR",
+              "path": "BAR_P01.12-VISIT.17-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.18-INSURANCE",
+              "path": "BAR_P01.12-VISIT.18-INSURANCE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.18-INSURANCE.1-IN1",
+                  "path": "BAR_P01.12-VISIT.18-INSURANCE.1-IN1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.18-INSURANCE.2-GSP",
+                  "path": "BAR_P01.12-VISIT.18-INSURANCE.2-GSP",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.18-INSURANCE.3-GSR",
+                  "path": "BAR_P01.12-VISIT.18-INSURANCE.3-GSR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.18-INSURANCE.4-IN2",
+                  "path": "BAR_P01.12-VISIT.18-INSURANCE.4-IN2",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.18-INSURANCE.5-IN3",
+                  "path": "BAR_P01.12-VISIT.18-INSURANCE.5-IN3",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IN3"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.18-INSURANCE.6-PRT",
+                  "path": "BAR_P01.12-VISIT.18-INSURANCE.6-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "BAR_P01.12-VISIT.18-INSURANCE.7-ROL",
+                  "path": "BAR_P01.12-VISIT.18-INSURANCE.7-ROL",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.19-ACC",
+              "path": "BAR_P01.12-VISIT.19-ACC",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ACC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.20-UB1",
+              "path": "BAR_P01.12-VISIT.20-UB1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/UB1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "BAR_P01.12-VISIT.21-UB2",
+              "path": "BAR_P01.12-VISIT.21-UB2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/UB2"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 BAR_P01 Segment Definition",
+  "name": "BAR_P01",
+  "type": "http://hl7.org/v2/StructureDefinition/BAR_P01"
+}

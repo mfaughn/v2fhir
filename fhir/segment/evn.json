@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/EVN",
+  "id": "EVN",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "EVN.1",
         "path": "EVN.1",
-        "short": " - EVN",
+        "short": "- EVN.1 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -35,7 +37,7 @@
       {
         "id": "EVN.2",
         "path": "EVN.2",
-        "short": " - EVN",
+        "short": "- EVN.2 - ",
         "definition": "Definition: Most systems will default to the system date/time when the transaction was entered, but they should also permit an override.",
         "description": null,
         "code": [
@@ -48,7 +50,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -61,7 +63,7 @@
       {
         "id": "EVN.3",
         "path": "EVN.3",
-        "short": " - EVN",
+        "short": "- EVN.3 - ",
         "definition": "Definition: This field contains the date/time that the event is planned. We recommend that _PV2-8 - Expected Admit Date/Time_, _PV2-9 - Expected Discharge Date/Time_ or _PV2-47 - Expected LOA Return date/time_ be used whenever possible.",
         "description": null,
         "code": [
@@ -74,7 +76,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -87,7 +89,7 @@
       {
         "id": "EVN.4",
         "path": "EVN.4",
-        "short": " - EVN",
+        "short": "- EVN.4 - ",
         "definition": "Definition: This field contains the reason for this event. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70062[_User-defined Table 0062 - Eve__nt Re__ason_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -100,7 +102,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -117,7 +119,7 @@
       {
         "id": "EVN.5",
         "path": "EVN.5",
-        "short": " - EVN",
+        "short": "- EVN.5 - ",
         "definition": "Definition: This field identifies the individual responsible for triggering the event. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70188[_User-defined Table 0188 - Ope__rator ID_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -130,7 +132,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "binding": {
@@ -147,7 +149,7 @@
       {
         "id": "EVN.6",
         "path": "EVN.6",
-        "short": " - EVN",
+        "short": "- EVN.6 - ",
         "definition": "Definition: This field contains the date/time that the event actually occurred. For example, on a transfer (A02 transfer a patient), this field would contain the date/time the patient was actually transferred. On a cancellation event, this field should contain the date/time that the event being cancelled occurred.",
         "description": null,
         "code": [
@@ -160,7 +162,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -173,7 +175,7 @@
       {
         "id": "EVN.7",
         "path": "EVN.7",
-        "short": " - EVN",
+        "short": "- EVN.7 - ",
         "definition": "Definition: This field identifies the actual facility where the event occurred as differentiated from the sending facility (MSH-4). It would be the facility at which the Operator (EVN-5) has entered the event.",
         "description": null,
         "code": [
@@ -186,7 +188,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/HD"
+            "code": "HD"
           }
         ],
         "extension": [
@@ -198,9 +200,7 @@
       }
     ]
   },
-  "id": "EVN",
   "title": "HL7 v2 EVN Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/EVN",
   "name": "EVN",
-  "type": "http://hl7.org/v2/StructureDefinition/EVN"
+  "type": "EVN"
 }

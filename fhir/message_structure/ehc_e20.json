@@ -1,0 +1,530 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/EHC_E20",
+  "id": "EHC_E20",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "EHC_E20.1-MSH",
+          "path": "EHC_E20.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E20.2-SFT",
+          "path": "EHC_E20.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E20.3-UAC",
+          "path": "EHC_E20.3-UAC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EHC_E20.4-AUTHORIZATION_REQUEST",
+          "path": "EHC_E20.4-AUTHORIZATION_REQUEST",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1",
+              "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.1-IVC",
+                  "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.1-IVC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/IVC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.2-CTD",
+                  "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.2-CTD",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.3-LOC",
+                  "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.3-LOC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/LOC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.4-ROL",
+                  "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.4-ROL",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO",
+                  "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.1-PID",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.1-PID",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PID"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.2-GSP",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.2-GSP",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.3-GSR",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.3-GSR",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.4-GSC",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.4-GSC",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.5-PRT",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.5-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.6-ACC",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.6-ACC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/ACC"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.7-INSURANCE",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.7-INSURANCE",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.7-INSURANCE.1-IN1",
+                          "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.7-INSURANCE.1-IN1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.7-INSURANCE.2-GSP",
+                          "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.7-INSURANCE.2-GSP",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.7-INSURANCE.3-GSR",
+                          "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.7-INSURANCE.3-GSR",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.7-INSURANCE.4-IN2",
+                          "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.7-INSURANCE.4-IN2",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.8-DIAGNOSIS",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.8-DIAGNOSIS",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.8-DIAGNOSIS.1-DG1",
+                          "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.8-DIAGNOSIS.1-DG1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/DG1"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.8-DIAGNOSIS.2-NTE",
+                          "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.8-DIAGNOSIS.2-NTE",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.9-OBX",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.9-OBX",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.10-PRT",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.5-PAT_INFO.10-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO",
+                  "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.1-PSL",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.1-PSL",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PSL"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.2-NTE",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.2-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.3-ADJ",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.3-ADJ",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/ADJ"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.4-LOC",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.4-LOC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/LOC"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.5-PRT",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.5-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.6-ROL",
+                      "path": "EHC_E20.4-AUTHORIZATION_REQUEST.1.6-PSL_ITEM_INFO.6-ROL",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 EHC_E20 Segment Definition",
+  "name": "EHC_E20",
+  "type": "http://hl7.org/v2/StructureDefinition/EHC_E20"
+}

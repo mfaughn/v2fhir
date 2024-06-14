@@ -1,0 +1,588 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ORU_R30-B",
+  "id": "ORU_R30-B",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "ORU_R30-B.1-MSH",
+          "path": "ORU_R30-B.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.2-ARV",
+          "path": "ORU_R30-B.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.3-SFT",
+          "path": "ORU_R30-B.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.4-UAC",
+          "path": "ORU_R30-B.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.5-PID",
+          "path": "ORU_R30-B.5-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.6-PD1",
+          "path": "ORU_R30-B.6-PD1",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PD1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.7-GSP",
+          "path": "ORU_R30-B.7-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.8-GSR",
+          "path": "ORU_R30-B.8-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.9-GSC",
+          "path": "ORU_R30-B.9-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.10-PRT",
+          "path": "ORU_R30-B.10-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.11-OH1",
+          "path": "ORU_R30-B.11-OH1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/OH1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.12-OH2",
+          "path": "ORU_R30-B.12-OH2",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/OH2"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.13-OH3",
+          "path": "ORU_R30-B.13-OH3",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/OH3"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.14-OH4",
+          "path": "ORU_R30-B.14-OH4",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/OH4"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.15-ARV",
+          "path": "ORU_R30-B.15-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.16-PATIENT_OBSERVATION",
+          "path": "ORU_R30-B.16-PATIENT_OBSERVATION",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ORU_R30-B.16-PATIENT_OBSERVATION.1-OBX",
+              "path": "ORU_R30-B.16-PATIENT_OBSERVATION.1-OBX",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ORU_R30-B.16-PATIENT_OBSERVATION.2-PRT",
+              "path": "ORU_R30-B.16-PATIENT_OBSERVATION.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "ORU_R30-B.17-VISIT",
+          "path": "ORU_R30-B.17-VISIT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ORU_R30-B.17-VISIT.1-PV1",
+              "path": "ORU_R30-B.17-VISIT.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ORU_R30-B.17-VISIT.2-PV2",
+              "path": "ORU_R30-B.17-VISIT.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ORU_R30-B.17-VISIT.3-PRT",
+              "path": "ORU_R30-B.17-VISIT.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "ORU_R30-B.18-ORC",
+          "path": "ORU_R30-B.18-ORC",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ORC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.19-PRT",
+          "path": "ORU_R30-B.19-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.20-OBR",
+          "path": "ORU_R30-B.20-OBR",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/OBR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.21-NTE",
+          "path": "ORU_R30-B.21-NTE",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.22-PRT",
+          "path": "ORU_R30-B.22-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R30-B.23-TIMING_QTY",
+          "path": "ORU_R30-B.23-TIMING_QTY",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ORU_R30-B.23-TIMING_QTY.1-TQ1",
+              "path": "ORU_R30-B.23-TIMING_QTY.1-TQ1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ORU_R30-B.23-TIMING_QTY.2-TQ2",
+              "path": "ORU_R30-B.23-TIMING_QTY.2-TQ2",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "ORU_R30-B.24-OBSERVATION",
+          "path": "ORU_R30-B.24-OBSERVATION",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ORU_R30-B.24-OBSERVATION.1-OBX",
+              "path": "ORU_R30-B.24-OBSERVATION.1-OBX",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ORU_R30-B.24-OBSERVATION.2-PRT",
+              "path": "ORU_R30-B.24-OBSERVATION.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ORU_R30-B.24-OBSERVATION.3-NTE",
+              "path": "ORU_R30-B.24-OBSERVATION.3-NTE",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "ORU_R30-B.25-DEVICE",
+          "path": "ORU_R30-B.25-DEVICE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ORU_R30-B.25-DEVICE.1-DEV",
+              "path": "ORU_R30-B.25-DEVICE.1-DEV",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/DEV"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ORU_R30-B.25-DEVICE.2-OBX",
+              "path": "ORU_R30-B.25-DEVICE.2-OBX",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 ORU_R30-B Segment Definition",
+  "name": "ORU_R30-B",
+  "type": "http://hl7.org/v2/StructureDefinition/ORU_R30-B"
+}

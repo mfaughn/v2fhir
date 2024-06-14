@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/GSR",
+  "id": "GSR",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "GSR.1",
         "path": "GSR.1",
-        "short": " - GSR",
+        "short": "- GSR.1 - ",
         "definition": "Definition: This field contains the sequence number used to identify the GSR segment instances in a message.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "GSR.2",
         "path": "GSR.2",
-        "short": " - GSR",
+        "short": "- GSR.2 - ",
         "definition": "Definition: This field contains a code defining the action to be taken for this segment.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "GSR.3",
         "path": "GSR.3",
-        "short": " - GSR",
+        "short": "- GSR.3 - ",
         "definition": "Definition: This field contains the value that uniquely identifies a single GSR declaration for an individual. This field is conditionally required when the Action Code in GSR-2 indicates data is not being sent in Snapshot Mode (valued “S”).",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "GSR.4",
         "path": "GSR.4",
-        "short": " - GSR",
+        "short": "- GSR.4 - ",
         "definition": "Definition: This field contains the sex or gender property for the individual from a document or other record. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70001[_User-defined Table HL70001 –_] _Administrative Sex_ in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -141,7 +143,7 @@
       {
         "id": "GSR.5",
         "path": "GSR.5",
-        "short": " - GSR",
+        "short": "- GSR.5 - ",
         "definition": "Definition: This field contains the label of the source field on the document. From a data modeling perspective this is similar to the use of GSP-4 (Gender Harmony Concept), when there is a formal definition for the source field, for example in an EHR-s or in an electronic data exchange object. For paper documents this will be just the words and can be represented in any characters set. For example, on a Russian identity card it could be ‘Пол’, which would be populated in the original text component of the CWE datatype. Refer to User-defined table HL7 0824 - _Recorded Sex Or Gender Type_ in Chapter 2 C, for suggested values.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -171,7 +173,7 @@
       {
         "id": "GSR.6",
         "path": "GSR.6",
-        "short": " - GSR",
+        "short": "- GSR.6 - ",
         "definition": "Definition: This field contains the source document where this sex or gender property is recorded. E.g., national ID card, birth certificate, passport, patient medical record. Refer to User-defined Table _0826 Document Gender Type (for gender uses)_ for suggested values.",
         "description": null,
         "code": [
@@ -184,7 +186,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -201,7 +203,7 @@
       {
         "id": "GSR.7",
         "path": "GSR.7",
-        "short": " - GSR",
+        "short": "- GSR.7 - ",
         "definition": "Definition: This field contains the jurisdiction or organization that issued the document from which the recorded sex or gender was acquired. Refer to _User Defined HL7 Table 0827 – Jurisdiction Gender Type_ in Chapter 2C for suggested values.",
         "description": null,
         "code": [
@@ -214,7 +216,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -231,7 +233,7 @@
       {
         "id": "GSR.8",
         "path": "GSR.8",
-        "short": " - GSR",
+        "short": "- GSR.8 - ",
         "definition": "Definition: This field contains the date/time when the sex or gender value was first recorded in the system.",
         "description": null,
         "code": [
@@ -244,7 +246,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -257,7 +259,7 @@
       {
         "id": "GSR.9",
         "path": "GSR.9",
-        "short": " - GSR",
+        "short": "- GSR.9 - ",
         "definition": "Definition: This field asserts the time period during which the recorded gender or sex value in GSR-4 applies to the individual. May be just a Start Date/Time for values which are still valid.",
         "description": null,
         "code": [
@@ -270,7 +272,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DR"
+            "code": "DR"
           }
         ],
         "extension": [
@@ -283,7 +285,7 @@
       {
         "id": "GSR.10",
         "path": "GSR.10",
-        "short": " - GSR",
+        "short": "- GSR.10 - ",
         "definition": "Definition: This field contains a free text explanation about the context or source of the recorded sex or gender value.",
         "description": null,
         "code": [
@@ -296,7 +298,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -308,9 +310,7 @@
       }
     ]
   },
-  "id": "GSR",
   "title": "HL7 v2 GSR Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/GSR",
   "name": "GSR",
-  "type": "http://hl7.org/v2/StructureDefinition/GSR"
+  "type": "GSR"
 }

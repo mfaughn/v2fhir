@@ -61,7 +61,7 @@
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/v2Optionality"
+        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/v2-optionality"
       },
       {
         "id" : "Extension.extension",

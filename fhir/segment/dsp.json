@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/DSP",
+  "id": "DSP",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "DSP.1",
         "path": "DSP.1",
-        "short": " - DSP",
+        "short": "- DSP.1 - ",
         "definition": "Definition: This field is used optionally to number multiple display segments.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "DSP.2",
         "path": "DSP.2",
-        "short": " - DSP",
+        "short": "- DSP.2 - ",
         "definition": "Definition: This field contains numbering to define groups of fields as assigned by the individual sites or applications.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "DSP.3",
         "path": "DSP.3",
-        "short": " - DSP",
+        "short": "- DSP.3 - ",
         "definition": "Definition: This field contains an actual line as it should be displayed. As described for the TX data type, highlighting and other special display characteristics may be included.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -133,7 +135,7 @@
       {
         "id": "DSP.4",
         "path": "DSP.4",
-        "short": " - DSP",
+        "short": "- DSP.4 - ",
         "definition": "Definition: This field is non‑null if this line is the last line of a logical break point in the response as defined by the responding system.",
         "description": null,
         "code": [
@@ -146,7 +148,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -172,7 +174,7 @@
       {
         "id": "DSP.5",
         "path": "DSP.5",
-        "short": " - DSP",
+        "short": "- DSP.5 - ",
         "definition": "Definition: When the user selects a result ID (defined by _DSP-4-Logical break point_) from the screen display corresponding to a record in which _DSP-5-Result ID_ is non-null, the application can initiate a second query (a separate session) to the ancillary with the _QRD-10-What department data code_ filled in with this non-null value (e.g., the ancillary accession number or its equivalent). The ancillary response will contain the report referenced by this result ID (e.g., accession number). The ancillary should correlate the result ID with _DSP-4-Logical break point_ as follows: If more than one line of text is sent per result, _DSP-5-Result ID_ should be only non-null for a DSP segment that contains a non-null _DSP-4-Logical break point_. This field may be broken into components by local agreement. A common example might be to include placer order number, filler order number, and universal service identifier. Whenever such fields are used as components of the result ID, their components will be sent as subcomponents.",
         "description": null,
         "code": [
@@ -185,7 +187,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -210,9 +212,7 @@
       }
     ]
   },
-  "id": "DSP",
   "title": "HL7 v2 DSP Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/DSP",
   "name": "DSP",
-  "type": "http://hl7.org/v2/StructureDefinition/DSP"
+  "type": "DSP"
 }

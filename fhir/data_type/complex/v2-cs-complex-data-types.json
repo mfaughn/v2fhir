@@ -5,287 +5,287 @@
   "content": "complete",
   "concept": [
     {
-      "code": "http://hl7.org/v2/StructureDefinition/AD",
+      "code": "AD",
       "display": "address"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/AUI",
+      "code": "AUI",
       "display": "authorization information"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CCD",
+      "code": "CCD",
       "display": "charge code and date"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CCP",
+      "code": "CCP",
       "display": "channel calibration parameters"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CD",
+      "code": "CD",
       "display": "channel definition"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CF",
+      "code": "CF",
       "display": "coded element with formatted values"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CNE",
+      "code": "CNE",
       "display": "coded with no exceptions"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CNN",
+      "code": "CNN",
       "display": "composite ID number and name simplified"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CP",
+      "code": "CP",
       "display": "composite price"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CQ",
+      "code": "CQ",
       "display": "composite quantity with units"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CSU",
+      "code": "CSU",
       "display": "channel sensitivity and units"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CWE",
+      "code": "CWE",
       "display": "coded with exceptions"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/CX",
+      "code": "CX",
       "display": "extended composite ID with check digit"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/DDI",
+      "code": "DDI",
       "display": "daily deductible information"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/DIN",
+      "code": "DIN",
       "display": "date and institution name"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/DLD",
+      "code": "DLD",
       "display": "discharge to location and date"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/DLN",
+      "code": "DLN",
       "display": "driver’s license number"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/DLT",
+      "code": "DLT",
       "display": "delta"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/DR",
+      "code": "DR",
       "display": "date/time range"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/DTN",
+      "code": "DTN",
       "display": "day type and number"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/ED",
+      "code": "ED",
       "display": "encapsulated data"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/EI",
+      "code": "EI",
       "display": "entity identifier"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/EIP",
+      "code": "EIP",
       "display": "entity identifier pair"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/ERL",
+      "code": "ERL",
       "display": "Message location"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/FC",
+      "code": "FC",
       "display": "financial class"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/FN",
+      "code": "FN",
       "display": "family name"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/HD",
+      "code": "HD",
       "display": "hierarchic designator"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/ICD",
+      "code": "ICD",
       "display": "insurance certification definition"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/JCC",
+      "code": "JCC",
       "display": "job code/class"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/MA",
+      "code": "MA",
       "display": "multiplexed array"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/MO",
+      "code": "MO",
       "display": "money"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/MOC",
+      "code": "MOC",
       "display": "money and charge code"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/MOP",
+      "code": "MOP",
       "display": "money or percentage"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/MSG",
+      "code": "MSG",
       "display": "message type"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/NA",
+      "code": "NA",
       "display": "numeric array"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/NDL",
+      "code": "NDL",
       "display": "name with date and location"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/NR",
+      "code": "NR",
       "display": "numeric range"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/OCD",
+      "code": "OCD",
       "display": "occurrence code and date"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/OG",
+      "code": "OG",
       "display": "observation grouper"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/OSP",
+      "code": "OSP",
       "display": "occurrence span code and date"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/PIP",
+      "code": "PIP",
       "display": "practitioner institutional privileges"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/PL",
+      "code": "PL",
       "display": "person location"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/PLN",
+      "code": "PLN",
       "display": "practitioner license or other Id number"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/PPN",
+      "code": "PPN",
       "display": "performing person time stamp"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/PRL",
+      "code": "PRL",
       "display": "parent result link"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/PT",
+      "code": "PT",
       "display": "processing type"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/PTA",
+      "code": "PTA",
       "display": "policy type and amount"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/QIP",
+      "code": "QIP",
       "display": "query input parameter list"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/QSC",
+      "code": "QSC",
       "display": "query selection criteria"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/RCD",
+      "code": "RCD",
       "display": "row column definition"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/RFR",
+      "code": "RFR",
       "display": "reference range"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/RI",
+      "code": "RI",
       "display": "repeat interval"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/RMC",
+      "code": "RMC",
       "display": "room coverage"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/RP",
+      "code": "RP",
       "display": "reference pointer"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/RPT",
+      "code": "RPT",
       "display": "repeat pattern"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/SAD",
+      "code": "SAD",
       "display": "street address"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/SCV",
+      "code": "SCV",
       "display": "scheduling class value pair"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/SN",
+      "code": "SN",
       "display": "structured numeric"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/SPD",
+      "code": "SPD",
       "display": "specialty description"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/SRT",
+      "code": "SRT",
       "display": "sort order"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/UVC",
+      "code": "UVC",
       "display": "UB value code and amount"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/VH",
+      "code": "VH",
       "display": "visiting hours"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/VID",
+      "code": "VID",
       "display": "version identifier"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/VR",
+      "code": "VR",
       "display": "value range"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/WVI",
+      "code": "WVI",
       "display": "channel identifier"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/WVS",
+      "code": "WVS",
       "display": "waveform source"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/XAD",
+      "code": "XAD",
       "display": "extended address"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/XCN",
+      "code": "XCN",
       "display": "extended composite ID number and name for persons"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/XON",
+      "code": "XON",
       "display": "extended composite name and identification number for organizations"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/XPN",
+      "code": "XPN",
       "display": "extended person name"
     },
     {
-      "code": "http://hl7.org/v2/StructureDefinition/XTN",
+      "code": "XTN",
       "display": "extended telecommunication number"
     }
   ]

@@ -1,0 +1,2474 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CCU_I20",
+  "id": "CCU_I20",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "CCU_I20.1-MSH",
+          "path": "CCU_I20.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CCU_I20.2-SFT",
+          "path": "CCU_I20.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CCU_I20.3-UAC",
+          "path": "CCU_I20.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CCU_I20.4-RF1",
+          "path": "CCU_I20.4-RF1",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/RF1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CCU_I20.5-PROVIDER_CONTACT",
+          "path": "CCU_I20.5-PROVIDER_CONTACT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.5-PROVIDER_CONTACT.1-PRD",
+              "path": "CCU_I20.5-PROVIDER_CONTACT.1-PRD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.5-PROVIDER_CONTACT.2-CTD",
+              "path": "CCU_I20.5-PROVIDER_CONTACT.2-CTD",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.6-PATIENT",
+          "path": "CCU_I20.6-PATIENT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.6-PATIENT.1-PID",
+              "path": "CCU_I20.6-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.6-PATIENT.2-PD1",
+              "path": "CCU_I20.6-PATIENT.2-PD1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.6-PATIENT.3-GSP",
+              "path": "CCU_I20.6-PATIENT.3-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.6-PATIENT.4-GSR",
+              "path": "CCU_I20.6-PATIENT.4-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.6-PATIENT.5-GSC",
+              "path": "CCU_I20.6-PATIENT.5-GSC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.7-NEXT_OF_KIN",
+          "path": "CCU_I20.7-NEXT_OF_KIN",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.7-NEXT_OF_KIN.1-NK1",
+              "path": "CCU_I20.7-NEXT_OF_KIN.1-NK1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.7-NEXT_OF_KIN.2-GSP",
+              "path": "CCU_I20.7-NEXT_OF_KIN.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.7-NEXT_OF_KIN.3-GSR",
+              "path": "CCU_I20.7-NEXT_OF_KIN.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.8-INSURANCE",
+          "path": "CCU_I20.8-INSURANCE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.8-INSURANCE.1-IN1",
+              "path": "CCU_I20.8-INSURANCE.1-IN1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.8-INSURANCE.2-IN2",
+              "path": "CCU_I20.8-INSURANCE.2-IN2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.8-INSURANCE.3-IN3",
+              "path": "CCU_I20.8-INSURANCE.3-IN3",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN3"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.9-APPOINTMENT_HISTORY",
+          "path": "CCU_I20.9-APPOINTMENT_HISTORY",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.9-APPOINTMENT_HISTORY.1-SCH",
+              "path": "CCU_I20.9-APPOINTMENT_HISTORY.1-SCH",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/SCH"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES",
+              "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.1-RGS",
+                  "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.1-RGS",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RGS"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL",
+                  "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT",
+                      "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.1",
+                          "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.1.1-AIS",
+                              "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.1.1-AIS",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/AIS"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.2",
+                          "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.2",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.2.1-AIG",
+                              "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.2.1-AIG",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/AIG"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.3",
+                          "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.3",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.3.1-AIL",
+                              "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.3.1-AIL",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/AIL"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.4",
+                          "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.4",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.4.1-AIP",
+                              "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.1-RESOURCE_OBJECT.4.1-AIP",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/AIP"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION",
+                      "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION.1-OBX",
+                          "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION.2-PRT",
+                          "path": "CCU_I20.9-APPOINTMENT_HISTORY.2-RESOURCES.2-RESOURCE_DETAIL.2-RESOURCE_OBSERVATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.10-CLINICAL_HISTORY",
+          "path": "CCU_I20.10-CLINICAL_HISTORY",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.10-CLINICAL_HISTORY.1-ORC",
+              "path": "CCU_I20.10-CLINICAL_HISTORY.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL",
+              "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT",
+                  "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1.1-OBR",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1.1-OBR",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1.2-PRT",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.1.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.2",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.2.1-ODS",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.2.1-ODS",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ODS"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.3",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.3.1-PR1",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.3.1-PR1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PR1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.4",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.4",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.4.1-RF1",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.4.1-RF1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RF1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.5",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.5",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.5.1-AL1",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.5.1-AL1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.6",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.6",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.6.1-IAM",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.6.1-IAM",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/IAM"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.7",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.7",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.7.1-ACC",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.7.1-ACC",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ACC"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.8",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.8",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.8.1-RMI",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.8.1-RMI",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RMI"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.9",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.9",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.9.1-DB1",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.9.1-DB1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/DB1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.10",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.10",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.10.1-DG1",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.10.1-DG1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/DG1"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.11",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.11",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.11.1-DRG",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.11.1-DRG",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/DRG"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.12",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.12",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.12.1-PDA",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.1-CLINICAL_HISTORY_OBJECT.12.1-PDA",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PDA"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION",
+                  "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION.1-OBX",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION.2-PRT",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.2-CLINICAL_HISTORY_DETAIL.2-CLINICAL_HISTORY_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY",
+              "path": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT",
+                  "path": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.1",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.1.1-ROL",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.1.1-ROL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.2",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.2.1-PRT",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.2.1-PRT",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.3",
+                      "path": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.3.1-PRD",
+                          "path": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.1-PARTICIPATION_CLINICAL_HISTORY_OBJECT.3.1-PRD",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.2-VAR",
+                  "path": "CCU_I20.10-CLINICAL_HISTORY.3-PARTICIPATION_CLINICAL_HISTORY.2-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCU_I20.10-CLINICAL_HISTORY.4-CTI",
+              "path": "CCU_I20.10-CLINICAL_HISTORY.4-CTI",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTI"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.11-PATIENT_VISITS",
+          "path": "CCU_I20.11-PATIENT_VISITS",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.11-PATIENT_VISITS.1-PV1",
+              "path": "CCU_I20.11-PATIENT_VISITS.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.11-PATIENT_VISITS.2-PV2",
+              "path": "CCU_I20.11-PATIENT_VISITS.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.12-MEDICATION_HISTORY",
+          "path": "CCU_I20.12-MEDICATION_HISTORY",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.12-MEDICATION_HISTORY.1-ORC",
+              "path": "CCU_I20.12-MEDICATION_HISTORY.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL",
+              "path": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.1-RXO",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.1-RXO",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXO"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.2-PRT",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.3-RXR",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.3-RXR",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.4-RXC",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.4-RXC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION.1-OBX",
+                      "path": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION.2-PRT",
+                      "path": "CCU_I20.12-MEDICATION_HISTORY.2-MEDICATION_ORDER_DETAIL.5-MEDICATION_ORDER_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL",
+              "path": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.1-RXE",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.1-RXE",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.2-PRT",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.3-RXR",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.3-RXR",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.4-RXC",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.4-RXC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION.1-OBX",
+                      "path": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION.2-PRT",
+                      "path": "CCU_I20.12-MEDICATION_HISTORY.3-MEDICATION_ENCODING_DETAIL.5-MEDICATION_ENCODING_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL",
+              "path": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.1-RXA",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.1-RXA",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXA"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.2-PRT",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.3-RXR",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.3-RXR",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION",
+                  "path": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION.1-OBX",
+                      "path": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION.2-PRT",
+                      "path": "CCU_I20.12-MEDICATION_HISTORY.4-MEDICATION_ADMINISTRATION_DETAIL.4-MEDICATION_ADMINISTRATION_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCU_I20.12-MEDICATION_HISTORY.5-CTI",
+              "path": "CCU_I20.12-MEDICATION_HISTORY.5-CTI",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTI"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.13-PROBLEM",
+          "path": "CCU_I20.13-PROBLEM",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.13-PROBLEM.1-PRB",
+              "path": "CCU_I20.13-PROBLEM.1-PRB",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRB"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.13-PROBLEM.2-VAR",
+              "path": "CCU_I20.13-PROBLEM.2-VAR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM",
+              "path": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT",
+                  "path": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.1",
+                      "path": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.1.1-ROL",
+                          "path": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.1.1-ROL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.2",
+                      "path": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.2.1-PRT",
+                          "path": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.2.1-PRT",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.3",
+                      "path": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.3.1-PRD",
+                          "path": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.1-PARTICIPATION_PROBLEM_OBJECT.3.1-PRD",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.2-VAR",
+                  "path": "CCU_I20.13-PROBLEM.3-PARTICIPATION_PROBLEM.2-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCU_I20.13-PROBLEM.4-PROBLEM_OBSERVATION",
+              "path": "CCU_I20.13-PROBLEM.4-PROBLEM_OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.13-PROBLEM.4-PROBLEM_OBSERVATION.1-OBX",
+                  "path": "CCU_I20.13-PROBLEM.4-PROBLEM_OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.13-PROBLEM.4-PROBLEM_OBSERVATION.2-PRT",
+                  "path": "CCU_I20.13-PROBLEM.4-PROBLEM_OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.14-GOAL",
+          "path": "CCU_I20.14-GOAL",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.14-GOAL.1-GOL",
+              "path": "CCU_I20.14-GOAL.1-GOL",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GOL"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.14-GOAL.2-VAR",
+              "path": "CCU_I20.14-GOAL.2-VAR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL",
+              "path": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT",
+                  "path": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.1",
+                      "path": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.1.1-ROL",
+                          "path": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.1.1-ROL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.2",
+                      "path": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.2.1-PRT",
+                          "path": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.2.1-PRT",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.3",
+                      "path": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.3.1-PRD",
+                          "path": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.1-PARTICIPATION_GOAL_OBJECT.3.1-PRD",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.2-VAR",
+                  "path": "CCU_I20.14-GOAL.3-PARTICIPATION_GOAL.2-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCU_I20.14-GOAL.4-GOAL_OBSERVATION",
+              "path": "CCU_I20.14-GOAL.4-GOAL_OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.14-GOAL.4-GOAL_OBSERVATION.1-OBX",
+                  "path": "CCU_I20.14-GOAL.4-GOAL_OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.14-GOAL.4-GOAL_OBSERVATION.2-PRT",
+                  "path": "CCU_I20.14-GOAL.4-GOAL_OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.15-PATHWAY",
+          "path": "CCU_I20.15-PATHWAY",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CCU_I20.15-PATHWAY.1-PTH",
+              "path": "CCU_I20.15-PATHWAY.1-PTH",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PTH"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.15-PATHWAY.2-VAR",
+              "path": "CCU_I20.15-PATHWAY.2-VAR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY",
+              "path": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT",
+                  "path": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.1",
+                      "path": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.1.1-ROL",
+                          "path": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.1.1-ROL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.2",
+                      "path": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.2",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.2.1-PRT",
+                          "path": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.2.1-PRT",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.3",
+                      "path": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.3",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.3.1-PRD",
+                          "path": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.1-PARTICIPATION_PATHWAY_OBJECT.3.1-PRD",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.2-VAR",
+                  "path": "CCU_I20.15-PATHWAY.3-PARTICIPATION_PATHWAY.2-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CCU_I20.15-PATHWAY.4-PATHWAY_OBSERVATION",
+              "path": "CCU_I20.15-PATHWAY.4-PATHWAY_OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CCU_I20.15-PATHWAY.4-PATHWAY_OBSERVATION.1-OBX",
+                  "path": "CCU_I20.15-PATHWAY.4-PATHWAY_OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CCU_I20.15-PATHWAY.4-PATHWAY_OBSERVATION.2-PRT",
+                  "path": "CCU_I20.15-PATHWAY.4-PATHWAY_OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "CCU_I20.16-REL",
+          "path": "CCU_I20.16-REL",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/REL"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 CCU_I20 Segment Definition",
+  "name": "CCU_I20",
+  "type": "http://hl7.org/v2/StructureDefinition/CCU_I20"
+}

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ORC",
+  "id": "ORC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ORC.1",
         "path": "ORC.1",
-        "short": " - ORC",
+        "short": "- ORC.1 - ",
         "definition": "Definition: Determines the function of the order segment. Refer to E:\\\\V2\\\\v2.9 final Nov from Frank\\\\V29_CH02C_Tables.docx#HL70119[HL7 Table 0119 – Order Control Codes] in Chapter 2C, Code Tables, for valid entries. Depending on the message, the action of the control code may refer to an order or an individual service. For example, the code CA in an OMP message cancels the order. The same code in an RDS message, cancels the dispense. Very detailed explanatory notes are given at the end of this section.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -59,7 +61,7 @@
       {
         "id": "ORC.2",
         "path": "ORC.2",
-        "short": " - ORC",
+        "short": "- ORC.2 - ",
         "definition": "Definition: This field is the placer application's order number.",
         "description": null,
         "code": [
@@ -72,7 +74,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -85,7 +87,7 @@
       {
         "id": "ORC.3",
         "path": "ORC.3",
-        "short": " - ORC",
+        "short": "- ORC.3 - ",
         "definition": "Definition: This field is the order number associated with the filling application. It is a case of the Entity Identifier data type (Section 2.A.28). Its first component is a string that identifies an order detail segment (i.e., ORC segment and associated order detail segment). It is assigned by the order filler (receiving) application. This string must uniquely identify the order (as specified in the order detail segment) from other orders in a particular filling application (e.g., clinical laboratory). This uniqueness must persist over time.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "ORC.4",
         "path": "ORC.4",
-        "short": " - ORC",
+        "short": "- ORC.4 - ",
         "definition": "Definition: This field contains a unique identifier for an Order Group as referenced by the Placer application. An Order Group is a set of orders grouped together by the placer application.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -137,7 +139,7 @@
       {
         "id": "ORC.5",
         "path": "ORC.5",
-        "short": " - ORC",
+        "short": "- ORC.5 - ",
         "definition": "Definition: This field specifies the status of an order. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70038[HL7 Table 0038 – Order status] in Chapter 2C, Code Tables, for valid entries. The purpose of this field is to report the status of an order either upon request (solicited), or when the status changes (unsolicited). It does not initiate action. It is assumed that the order status always reflects the status as it is known to the sending application at the time that the message is sent. Only the filler can originate the value of this field.",
         "description": null,
         "code": [
@@ -150,7 +152,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -180,7 +182,7 @@
       {
         "id": "ORC.6",
         "path": "ORC.6",
-        "short": " - ORC",
+        "short": "- ORC.6 - ",
         "definition": "Definition: This field allows the placer (sending) application to determine the amount of information to be returned from the filler. Sometimes the requested level of response may not be possible immediately, but when it is possible, the filler (receiving) application must send the information. When the field is null, D is the default value of the field. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70121[HL7 Table 0121 – Response flag] in Chapter 2C, Code Tables, for valid entries.",
         "description": null,
         "code": [
@@ -193,7 +195,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -223,7 +225,7 @@
       {
         "id": "ORC.7",
         "path": "ORC.7",
-        "short": " - ORC",
+        "short": "- ORC.7 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -242,7 +244,7 @@
       {
         "id": "ORC.8",
         "path": "ORC.8",
-        "short": " - ORC",
+        "short": "- ORC.8 - ",
         "definition": "Definition: This field relates a child order to its parent order when a parent child order relationship exists. The parent child order mechanism is described in HL7 Table 0119 under order control code PA. This field uniquely identifies the parent order; no other information is required to link the child order with its parent order. It can be used to link the order to the results that triggered this order (e.g., a reflex order) or other order it relates to as an occurrence. This field repeats to allow linking to more than one parent, if necessary.",
         "description": null,
         "code": [
@@ -255,7 +257,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EIP"
+            "code": "EIP"
           }
         ],
         "extension": [
@@ -268,7 +270,7 @@
       {
         "id": "ORC.9",
         "path": "ORC.9",
-        "short": " - ORC",
+        "short": "- ORC.9 - ",
         "definition": "Definition: This field contains the date and time of the event that initiated the current transaction as reflected in ORC-1 Order Control Code. This field is not equivalent to MSH-7 Date and Time of Message, which reflects the date/time of message generation.",
         "description": null,
         "code": [
@@ -281,7 +283,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -294,7 +296,7 @@
       {
         "id": "ORC.10",
         "path": "ORC.10",
-        "short": " - ORC",
+        "short": "- ORC.10 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._* The reader is referred to the PRT segment described in Chapter 7.",
         "description": null,
         "code": [
@@ -315,7 +317,7 @@
       {
         "id": "ORC.11",
         "path": "ORC.11",
-        "short": " - ORC",
+        "short": "- ORC.11 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._* The reader is referred to the PRT segment described in Chapter 7.",
         "description": null,
         "code": [
@@ -336,7 +338,7 @@
       {
         "id": "ORC.12",
         "path": "ORC.12",
-        "short": " - ORC",
+        "short": "- ORC.12 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._* The reader is referred to the PRT segment described in Chapter 7.",
         "description": null,
         "code": [
@@ -357,7 +359,7 @@
       {
         "id": "ORC.13",
         "path": "ORC.13",
-        "short": " - ORC",
+        "short": "- ORC.13 - ",
         "definition": "Definition: This field specifies the location (e.g., nurse station, ancillary service location, clinic, floor) where the person who entered the request was physically located when the order was entered. Note that this refers to the current transaction as reflected in ORC-1 Order Control Code. Only those subcomponents relevant to enterer's location should be valued (commonly, nursing unit; facility; building; floor). The person who entered the request is defined in ORC-10-entered by.",
         "description": null,
         "code": [
@@ -370,7 +372,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -383,7 +385,7 @@
       {
         "id": "ORC.14",
         "path": "ORC.14",
-        "short": " - ORC",
+        "short": "- ORC.14 - ",
         "definition": "Definition: This field contains the telephone number to call for clarification of a request or other information regarding the order. ORC-14-call back phone number is the same as OBR-17-order callback phone number.",
         "description": null,
         "code": [
@@ -396,7 +398,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -409,7 +411,7 @@
       {
         "id": "ORC.15",
         "path": "ORC.15",
-        "short": " - ORC",
+        "short": "- ORC.15 - ",
         "definition": "Definition: This field focuses on when the information communicated is to take effect. It is most appropriate when used on an order that is by nature a “continuing” (or continuous) order. This field has a close relationship to ORC-9 and the TQ1, TQ2 segments in so much as the value in ORC-15 takes precedence over both. For example, an order is placed on June 1, for an activity that is to be performed over ten days as indicated in the TQ1 segment. The Filler then receives a cancel message on June 2 with the ORC-9 value of June 2, but the ORC-15 Order Effective Date/Time indicated the cancel is to be effective on June 7th. ORC-15 by taking precedence over TQ1 and ORC-9, would tell the Filler to continue to perform the order event until June 7, and cancel all remaining events (treatment, procedures etc..) after that time. If the order identified in the ORC has children, the children which have not started should be canceled; if there is a child in process, it should be discontinued; if a child has progressed beyond the point where it can be discontinued, its status is unaffected.",
         "description": null,
         "code": [
@@ -422,7 +424,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -435,7 +437,7 @@
       {
         "id": "ORC.16",
         "path": "ORC.16",
-        "short": " - ORC",
+        "short": "- ORC.16 - ",
         "definition": "Definition: This field contains the explanation (either in coded or text form) of the reason for the order event described by the order control code (file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70119[HL7 Table 0119 - Order control codes]). Whereas an NTE after the order-specific segment (e.g., RXO, ORO, OBR) would provide a comment for that specific segment, the purpose of the order control code reason is only to expand on the reason for the order event.",
         "description": null,
         "code": [
@@ -448,7 +450,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -465,7 +467,7 @@
       {
         "id": "ORC.17",
         "path": "ORC.17",
-        "short": " - ORC",
+        "short": "- ORC.17 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._* The reader is referred to the PRT segment described in Chapter 7. Refer to Table 0666 - Entering Organization in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -490,7 +492,7 @@
       {
         "id": "ORC.18",
         "path": "ORC.18",
-        "short": " - ORC",
+        "short": "- ORC.18 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._* The reader is referred to the PRT segment described in Chapter 7. Refer to Table 0668 - Entering Device in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -515,7 +517,7 @@
       {
         "id": "ORC.19",
         "path": "ORC.19",
-        "short": " - ORC",
+        "short": "- ORC.19 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._* The reader is referred to the PRT segment described in Chapter 7.",
         "description": null,
         "code": [
@@ -536,7 +538,7 @@
       {
         "id": "ORC.20",
         "path": "ORC.20",
-        "short": " - ORC",
+        "short": "- ORC.20 - ",
         "definition": "Definition: This field indicates the status of the patient's or the patient's representative's consent for responsibility to pay for potentially uninsured services. This element is introduced to satisfy CMS Medical Necessity requirements for outpatient services. This element indicates (a) whether the associated diagnosis codes for the service are subject to medical necessity procedures, (b) whether, for this type of service, the patient has been informed that they may be responsible for payment for the service, and (c) whether the patient agrees to be billed for this service. The values for this field are drawn from file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70339[User-Defined Table 0339 – Advanced Beneficiary Notice Code] in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -549,7 +551,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -566,7 +568,7 @@
       {
         "id": "ORC.21",
         "path": "ORC.21",
-        "short": " - ORC",
+        "short": "- ORC.21 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._* The reader is referred to the PRT segment described in Chapter 7.",
         "description": null,
         "code": [
@@ -587,7 +589,7 @@
       {
         "id": "ORC.22",
         "path": "ORC.22",
-        "short": " - ORC",
+        "short": "- ORC.22 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._* The reader is referred to the PRT segment described in Chapter 7.",
         "description": null,
         "code": [
@@ -608,7 +610,7 @@
       {
         "id": "ORC.23",
         "path": "ORC.23",
-        "short": " - ORC",
+        "short": "- ORC.23 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._* The reader is referred to the PRT segment described in Chapter 7.",
         "description": null,
         "code": [
@@ -629,7 +631,7 @@
       {
         "id": "ORC.24",
         "path": "ORC.24",
-        "short": " - ORC",
+        "short": "- ORC.24 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._* The reader is referred to the PRT segment described in Chapter 7.",
         "description": null,
         "code": [
@@ -650,7 +652,7 @@
       {
         "id": "ORC.25",
         "path": "ORC.25",
-        "short": " - ORC",
+        "short": "- ORC.25 - ",
         "definition": "Definition: This field is a modifier or refiner of the ORC-5-Order status field. This field may be used to provide additional levels of specificity or additional information for the defined order status codes. Unlike the Order Status field, which is controlled by an HL7 defined table, this field is a CE data type allowing applications to support an unlimited library of Order Status Modifier codes.",
         "description": null,
         "code": [
@@ -663,7 +665,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -680,7 +682,7 @@
       {
         "id": "ORC.26",
         "path": "ORC.26",
-        "short": " - ORC",
+        "short": "- ORC.26 - ",
         "definition": "Definition: This field contains the reason why the patient did not sign an Advanced Beneficiary Notice. The reason may be coded or it may be a free text entry. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70552[HL7 Table 0552 – Advanced beneficiary notice override reason] in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -693,7 +695,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -710,7 +712,7 @@
       {
         "id": "ORC.27",
         "path": "ORC.27",
-        "short": " - ORC",
+        "short": "- ORC.27 - ",
         "definition": "Definition: This field specifies the date/time the Filler expects to complete the order, e.g., have the results available, the prescription ready, etc. This is a Filler assigned field and would typically only be sent from Filler to Placer on either application level acknowledgments or order status messages. (Could be delivered with result message, but would have little relevance at that time.)",
         "description": null,
         "code": [
@@ -723,7 +725,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -736,7 +738,7 @@
       {
         "id": "ORC.28",
         "path": "ORC.28",
-        "short": " - ORC",
+        "short": "- ORC.28 - ",
         "definition": "Definition: This field contains information about the level of security and/or sensitivity surrounding the order (e.g., highly sensitive, not sensitive, sensitive, etc.). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70177[HL7 Table 0177 – Confidentiality Code] in Chapter 2C, Code Tables, for allowed values. The specific treatment of data with a particular confidentiality level is subject to site-specific negotiation.",
         "description": null,
         "code": [
@@ -749,7 +751,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -766,7 +768,7 @@
       {
         "id": "ORC.29",
         "path": "ORC.29",
-        "short": " - ORC",
+        "short": "- ORC.29 - ",
         "definition": "Definition: This field indicates whether the order is to be executed in an inpatient setting or an outpatient setting. If this field is not valued, the system default is assumed. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70482[HL7 Table 0482 – Order Type] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -779,7 +781,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -796,7 +798,7 @@
       {
         "id": "ORC.30",
         "path": "ORC.30",
-        "short": " - ORC",
+        "short": "- ORC.30 - ",
         "definition": "Definition: This field indicates the form of authorization a recorder had from the responsible practitioner to create or change an order. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70483[HL7 Table 0483 - Authorization Mode] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -809,7 +811,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -826,7 +828,7 @@
       {
         "id": "ORC.31",
         "path": "ORC.31",
-        "short": " - ORC",
+        "short": "- ORC.31 - ",
         "definition": "Definition: *_This field was retained for backward compatibility only as of v 2.7 and the detail was withdrawn and removed from the standard as of v 2.9._*",
         "description": null,
         "code": [
@@ -847,7 +849,7 @@
       {
         "id": "ORC.32",
         "path": "ORC.32",
-        "short": " - ORC",
+        "short": "- ORC.32 - ",
         "definition": "Definition: This field contains the date the patient gave consent to pay for potentially uninsured services or the date that the Advanced Beneficiary Notice Code (ORC-20) was collected.",
         "description": null,
         "code": [
@@ -860,7 +862,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -873,7 +875,7 @@
       {
         "id": "ORC.33",
         "path": "ORC.33",
-        "short": " - ORC",
+        "short": "- ORC.33 - ",
         "definition": "Definition: This field enables a shorter number to be communicated that is unique within other identifiers.",
         "description": null,
         "code": [
@@ -886,7 +888,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -899,7 +901,7 @@
       {
         "id": "ORC.34",
         "path": "ORC.34",
-        "short": " - ORC",
+        "short": "- ORC.34 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -910,7 +912,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -927,7 +929,7 @@
       {
         "id": "ORC.35",
         "path": "ORC.35",
-        "short": " - ORC",
+        "short": "- ORC.35 - ",
         "definition": "Definition: This field reveals the intent of the message. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[HL7 Table 0206 - Segment Action Code] for valid values.",
         "description": null,
         "code": [
@@ -940,7 +942,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -970,7 +972,7 @@
       {
         "id": "ORC.36",
         "path": "ORC.36",
-        "short": " - ORC",
+        "short": "- ORC.36 - ",
         "definition": "Definition: This field is a Filler assigned date/time indicating a date range that the ORC-5 Order Status is intended to be effective. For example, if the Filler recommends an alternate test, and sets the ORC-5 status to “Hold”, this date/time reflects how long the Filler will keep the order in that status (Barring additional communications from the Placer or Filler in regard to this order.) When the date is outside the specified order status date range, ORC-5 (Order Status) should be considered an unspecified status, i.e., the status represented in ORC-5 would not necessarily be reflective of the actual status anymore.",
         "description": null,
         "code": [
@@ -983,7 +985,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DR"
+            "code": "DR"
           }
         ],
         "extension": [
@@ -996,7 +998,7 @@
       {
         "id": "ORC.37",
         "path": "ORC.37",
-        "short": " - ORC",
+        "short": "- ORC.37 - ",
         "definition": "Definition: This field represents the official date/time when the order was originally created; whether as an electronic order or as an initial paper requisition. This may also be known as Prescription Date/Time. This date/time is designed to preserve the creation date/time from initial order to final result, and for all stages in-between. (Acknowledgments, Updates, Cancels, Results etc.). When ORC-1 Order Control Code is “NW” for a new order, this date/time, if valued, is typically expected to be the same as ORC-9 Date/Time of Order Event. An example where the ORC-37, Order Creation Date/Time, is not the same as ORC-9, Date/Time of Order Event, while ORC-1, Order Control Code, is “NW” is when the order originally was and signed by a physician on paper (ORC-37), but not entered in a system until some time (ORC-9) thereafter.",
         "description": null,
         "code": [
@@ -1009,7 +1011,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -1022,7 +1024,7 @@
       {
         "id": "ORC.38",
         "path": "ORC.38",
-        "short": " - ORC",
+        "short": "- ORC.38 - ",
         "definition": "Definition: This field contains a unique identifier for the Order Group as referenced by the Filler application. An Order Group is a set of orders grouped together by the placer application.",
         "description": null,
         "code": [
@@ -1035,7 +1037,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -1047,9 +1049,7 @@
       }
     ]
   },
-  "id": "ORC",
   "title": "HL7 v2 ORC Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ORC",
   "name": "ORC",
-  "type": "http://hl7.org/v2/StructureDefinition/ORC"
+  "type": "ORC"
 }

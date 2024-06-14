@@ -1,0 +1,88 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "V2SegmentStatus",
+  "text" : {
+    "status" : "extensions",
+    "div" : "FIXME"
+  },
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "v2"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "draft"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode" : "can-bind"
+    }
+  ],
+  "url" : "http://hl7.org/fhir/StructureDefinition/v2-segment-status",
+  "name" : "V2SegmentStatus",
+  "title" : "V2 Segment Status Extension",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-06-05T12:00:00+00:00",
+  "publisher" : "HL7 International / V2 Management",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/v2management"
+    }]
+  }],
+  "description" : "Specifies the status of a segment or collection of segments within a MessageStructure",
+  "fhirVersion" : "5.0.0",
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [
+    {
+      "type" : "element",
+      "expression" : "MessageStructure"
+    }
+  ],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Extension",
+        "path" : "Extension",
+        "short" : "V2 Segment Status",
+        "min" : 0,
+        "max" : "1"
+      },
+      {
+        "id" : "Extension.url",
+        "path" : "Extension.url",
+        "fixedUri" : "http://hl7.org/fhir/StructureDefinition/v2-segment-status"
+      },
+      {
+        "id" : "Extension.extension",
+        "path" : "Extension.extension",
+        "max" : "0"
+      },
+      {
+        "id" : "Extension.value[x]",
+        "path" : "Extension.value[x]",
+        "min" : 1,
+        "type" : [{
+          "code" : "code"
+        }],
+        "binding" : {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString" : "V2 Segment Status"
+            }
+          ],
+          "strength" : "required",
+          "description" : "The status of a segment or collection of segments within a MessageStructure.",
+          "valueSet" : "http://hl7.org/v2/ValueSet/SegmentStatus"
+        }
+      }
+    ]
+  }
+}

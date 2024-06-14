@@ -52,7 +52,7 @@
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/v2ConformanceLength"
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/v2-conformance-length"
     },
     {
       "id" : "Extension.extension",

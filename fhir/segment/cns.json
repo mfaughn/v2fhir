@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CNS",
+  "id": "CNS",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "CNS.1",
         "path": "CNS.1",
-        "short": " - CNS",
+        "short": "- CNS.1 - ",
         "definition": "Definition: This field contains the starting notification reference number that is to be cleared.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "CNS.2",
         "path": "CNS.2",
-        "short": " - CNS",
+        "short": "- CNS.2 - ",
         "definition": "Definition: This field contains the ending notification reference number that is to be cleared. If empty, then only notification with Starting Notification Reference Number will be cleared.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "CNS.3",
         "path": "CNS.3",
-        "short": " - CNS",
+        "short": "- CNS.3 - ",
         "definition": "Definition: This field is the starting date/time of the notifications to be cleared. If this field is empty but Ending Notification Date/Time is filled, then all notifications before Ending Notification Date/Time will be cleared.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -120,7 +122,7 @@
       {
         "id": "CNS.4",
         "path": "CNS.4",
-        "short": " - CNS",
+        "short": "- CNS.4 - ",
         "definition": "Definition: This field is the ending date/time of the notifications to be cleared. If this field is empty but Starting Notification Date/Time is filled, then all notifications after Starting Notification Date/Time will be cleared.",
         "description": null,
         "code": [
@@ -133,7 +135,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -146,7 +148,7 @@
       {
         "id": "CNS.5",
         "path": "CNS.5",
-        "short": " - CNS",
+        "short": "- CNS.5 - ",
         "definition": "Definition: This field contains the starting notification code that is to be cleared (see _13.3.7.4_, \"_NDS-4 Notification Code (CWE) 01401_\").Refer to Table 0585 - Starting Notification Code in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -159,7 +161,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -176,7 +178,7 @@
       {
         "id": "CNS.6",
         "path": "CNS.6",
-        "short": " - CNS",
+        "short": "- CNS.6 - ",
         "definition": "Definition: This field contains the ending notification code that is to be cleared (see _13.3.7.4_, \"_NDS-4 Notification Code (CWE) 01401_\"). If empty, then only notification with Starting Notification Code will be cleared. Refer to Table 0586 - Ending Notification Code in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -189,7 +191,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -205,9 +207,7 @@
       }
     ]
   },
-  "id": "CNS",
   "title": "HL7 v2 CNS Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/CNS",
   "name": "CNS",
-  "type": "http://hl7.org/v2/StructureDefinition/CNS"
+  "type": "CNS"
 }

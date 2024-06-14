@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/DMI",
+  "id": "DMI",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "DMI.1",
         "path": "DMI.1",
-        "short": " - DMI",
+        "short": "- DMI.1 - ",
         "definition": "Definition: This field contains the DRG for the transaction. Interim DRG's could be determined for an encounter. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70055[External Table 0055 – Diagnosis Related Group] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "DMI.2",
         "path": "DMI.2",
-        "short": " - DMI",
+        "short": "- DMI.2 - ",
         "definition": "Definition: This field indicates the determined Major Diagnostic Category (MDC) value. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70118[External Table 0118 – Major Diagnostic Category] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -76,7 +78,7 @@
       {
         "id": "DMI.3",
         "path": "DMI.3",
-        "short": " - DMI",
+        "short": "- DMI.3 - ",
         "definition": "Definition: This field contains the lower and upper trim points as calculated for this DRG..",
         "description": null,
         "code": [
@@ -89,7 +91,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NR"
+            "code": "NR"
           }
         ],
         "extension": [
@@ -102,7 +104,7 @@
       {
         "id": "DMI.4",
         "path": "DMI.4",
-        "short": " - DMI",
+        "short": "- DMI.4 - ",
         "definition": "Definition: This field contains the average length of stay in days, calculated as the geometric mean value, allocated to the determined DRG.",
         "description": null,
         "code": [
@@ -115,7 +117,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -141,7 +143,7 @@
       {
         "id": "DMI.5",
         "path": "DMI.5",
-        "short": " - DMI",
+        "short": "- DMI.5 - ",
         "definition": "Definition: Each DRG has its own relative weight (cost weight) which is calculated (defined) by official institutions. This value is the basis for calculating other values, e.g., the effective weight.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -179,9 +181,7 @@
       }
     ]
   },
-  "id": "DMI",
   "title": "HL7 v2 DMI Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/DMI",
   "name": "DMI",
-  "type": "http://hl7.org/v2/StructureDefinition/DMI"
+  "type": "DMI"
 }

@@ -1,0 +1,855 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RAS_O17",
+  "id": "RAS_O17",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RAS_O17.1-MSH",
+          "path": "RAS_O17.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RAS_O17.2-ARV",
+          "path": "RAS_O17.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RAS_O17.3-SFT",
+          "path": "RAS_O17.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RAS_O17.4-UAC",
+          "path": "RAS_O17.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RAS_O17.5-NTE",
+          "path": "RAS_O17.5-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RAS_O17.6-PATIENT",
+          "path": "RAS_O17.6-PATIENT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RAS_O17.6-PATIENT.1-PID",
+              "path": "RAS_O17.6-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.6-PATIENT.2-PD1",
+              "path": "RAS_O17.6-PATIENT.2-PD1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.6-PATIENT.3-GSP",
+              "path": "RAS_O17.6-PATIENT.3-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.6-PATIENT.4-GSR",
+              "path": "RAS_O17.6-PATIENT.4-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.6-PATIENT.5-GSC",
+              "path": "RAS_O17.6-PATIENT.5-GSC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.6-PATIENT.6-PRT",
+              "path": "RAS_O17.6-PATIENT.6-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.6-PATIENT.7-NTE",
+              "path": "RAS_O17.6-PATIENT.7-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.6-PATIENT.8-ARV",
+              "path": "RAS_O17.6-PATIENT.8-ARV",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.6-PATIENT.9-AL1",
+              "path": "RAS_O17.6-PATIENT.9-AL1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.6-PATIENT.10-PATIENT_VISIT",
+              "path": "RAS_O17.6-PATIENT.10-PATIENT_VISIT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RAS_O17.6-PATIENT.10-PATIENT_VISIT.1-PV1",
+                  "path": "RAS_O17.6-PATIENT.10-PATIENT_VISIT.1-PV1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.6-PATIENT.10-PATIENT_VISIT.2-PV2",
+                  "path": "RAS_O17.6-PATIENT.10-PATIENT_VISIT.2-PV2",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.6-PATIENT.10-PATIENT_VISIT.3-PRT",
+                  "path": "RAS_O17.6-PATIENT.10-PATIENT_VISIT.3-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.6-PATIENT.10-PATIENT_VISIT.4-ARV",
+                  "path": "RAS_O17.6-PATIENT.10-PATIENT_VISIT.4-ARV",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RAS_O17.7-ORDER",
+          "path": "RAS_O17.7-ORDER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RAS_O17.7-ORDER.1-ORC",
+              "path": "RAS_O17.7-ORDER.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.7-ORDER.2-PRT",
+              "path": "RAS_O17.7-ORDER.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RAS_O17.7-ORDER.3-TIMING",
+              "path": "RAS_O17.7-ORDER.3-TIMING",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.3-TIMING.1-TQ1",
+                  "path": "RAS_O17.7-ORDER.3-TIMING.1-TQ1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.3-TIMING.2-TQ2",
+                  "path": "RAS_O17.7-ORDER.3-TIMING.2-TQ2",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RAS_O17.7-ORDER.4-ORDER_DETAIL",
+              "path": "RAS_O17.7-ORDER.4-ORDER_DETAIL",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.4-ORDER_DETAIL.1-RXO",
+                  "path": "RAS_O17.7-ORDER.4-ORDER_DETAIL.1-RXO",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXO"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.4-ORDER_DETAIL.2-PRT",
+                  "path": "RAS_O17.7-ORDER.4-ORDER_DETAIL.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT",
+                  "path": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.1-NTE",
+                      "path": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.1-NTE",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.2-RXR",
+                      "path": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.2-RXR",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS",
+                      "path": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS.1-RXC",
+                          "path": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS.1-RXC",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS.2-NTE",
+                          "path": "RAS_O17.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS.2-NTE",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RAS_O17.7-ORDER.5-ENCODING",
+              "path": "RAS_O17.7-ORDER.5-ENCODING",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.5-ENCODING.1-RXE",
+                  "path": "RAS_O17.7-ORDER.5-ENCODING.1-RXE",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.5-ENCODING.2-PRT",
+                  "path": "RAS_O17.7-ORDER.5-ENCODING.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.5-ENCODING.3-NTE",
+                  "path": "RAS_O17.7-ORDER.5-ENCODING.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.5-ENCODING.4-TIMING_ENCODED",
+                  "path": "RAS_O17.7-ORDER.5-ENCODING.4-TIMING_ENCODED",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RAS_O17.7-ORDER.5-ENCODING.4-TIMING_ENCODED.1-TQ1",
+                      "path": "RAS_O17.7-ORDER.5-ENCODING.4-TIMING_ENCODED.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RAS_O17.7-ORDER.5-ENCODING.4-TIMING_ENCODED.2-TQ2",
+                      "path": "RAS_O17.7-ORDER.5-ENCODING.4-TIMING_ENCODED.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.5-ENCODING.5-RXR",
+                  "path": "RAS_O17.7-ORDER.5-ENCODING.5-RXR",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.5-ENCODING.6-RXC",
+                  "path": "RAS_O17.7-ORDER.5-ENCODING.6-RXC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.5-ENCODING.7-CDO",
+                  "path": "RAS_O17.7-ORDER.5-ENCODING.7-CDO",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CDO"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RAS_O17.7-ORDER.6-ADMINISTRATION",
+              "path": "RAS_O17.7-ORDER.6-ADMINISTRATION",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.6-ADMINISTRATION.1-RXA",
+                  "path": "RAS_O17.7-ORDER.6-ADMINISTRATION.1-RXA",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXA"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.6-ADMINISTRATION.2-PRT",
+                  "path": "RAS_O17.7-ORDER.6-ADMINISTRATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.6-ADMINISTRATION.3-RXR",
+                  "path": "RAS_O17.7-ORDER.6-ADMINISTRATION.3-RXR",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RAS_O17.7-ORDER.6-ADMINISTRATION.4-OBSERVATION",
+                  "path": "RAS_O17.7-ORDER.6-ADMINISTRATION.4-OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RAS_O17.7-ORDER.6-ADMINISTRATION.4-OBSERVATION.1-OBX",
+                      "path": "RAS_O17.7-ORDER.6-ADMINISTRATION.4-OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RAS_O17.7-ORDER.6-ADMINISTRATION.4-OBSERVATION.2-PRT",
+                      "path": "RAS_O17.7-ORDER.6-ADMINISTRATION.4-OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RAS_O17.7-ORDER.6-ADMINISTRATION.4-OBSERVATION.3-NTE",
+                      "path": "RAS_O17.7-ORDER.6-ADMINISTRATION.4-OBSERVATION.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RAS_O17.7-ORDER.7-CTI",
+              "path": "RAS_O17.7-ORDER.7-CTI",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTI"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 RAS_O17 Segment Definition",
+  "name": "RAS_O17",
+  "type": "http://hl7.org/v2/StructureDefinition/RAS_O17"
+}

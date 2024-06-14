@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CER",
+  "id": "CER",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "CER.1",
         "path": "CER.1",
-        "short": " - CER",
+        "short": "- CER.1 - ",
         "definition": "Definition: This field contains the number that identifies this transaction. For the first occurrence of the segment, the sequence number shall be one; for the second occurrence, the sequence number shall be two; etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "CER.2",
         "path": "CER.2",
-        "short": " - CER",
+        "short": "- CER.2 - ",
         "definition": "Definition: The serial number uniquely identifies the attribute certificate within the scope of its issuer. This field contains the number and/or characters that identify the certificate held by the health professional.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "CER.3",
         "path": "CER.3",
-        "short": " - CER",
+        "short": "- CER.3 - ",
         "definition": "Definition: The version number differentiates among different versions of the attribute certificate.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -133,7 +135,7 @@
       {
         "id": "CER.4",
         "path": "CER.4",
-        "short": " - CER",
+        "short": "- CER.4 - ",
         "definition": "Definition: It specifies the authority that granted the certificate to the person.",
         "description": null,
         "code": [
@@ -146,7 +148,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -159,7 +161,7 @@
       {
         "id": "CER.5",
         "path": "CER.5",
-        "short": " - CER",
+        "short": "- CER.5 - ",
         "definition": "Definition: Specifies the authority that issued the certificate to the person.",
         "description": null,
         "code": [
@@ -172,7 +174,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -185,7 +187,7 @@
       {
         "id": "CER.6",
         "path": "CER.6",
-        "short": " - CER",
+        "short": "- CER.6 - ",
         "definition": "Definition: Digital Signature of the certifying authority. The Digital Signature includes a seal concept and is verifiable.",
         "description": null,
         "code": [
@@ -198,7 +200,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ED"
+            "code": "ED"
           }
         ],
         "extension": [
@@ -211,7 +213,7 @@
       {
         "id": "CER.7",
         "path": "CER.7",
-        "short": " - CER",
+        "short": "- CER.7 - ",
         "definition": "Definition: ID of the country granting the certificate. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70399[_External Table 0399 – Country Code_] for valid values.",
         "description": null,
         "code": [
@@ -224,7 +226,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -254,7 +256,7 @@
       {
         "id": "CER.8",
         "path": "CER.8",
-        "short": " - CER",
+        "short": "- CER.8 - ",
         "definition": "Definition: State/province granting the certificate. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70347[_User-defined Table 0347 – State/Province_] for valid values (in Chapter 2)",
         "description": null,
         "code": [
@@ -267,7 +269,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -284,7 +286,7 @@
       {
         "id": "CER.9",
         "path": "CER.9",
-        "short": " - CER",
+        "short": "- CER.9 - ",
         "definition": "Definition: County/parish granting the certificate. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70289[_User-defined Table 0289 – County/Parish_] for valid values (in Chapter 2).",
         "description": null,
         "code": [
@@ -297,7 +299,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -314,7 +316,7 @@
       {
         "id": "CER.10",
         "path": "CER.10",
-        "short": " - CER",
+        "short": "- CER.10 - ",
         "definition": "Definition: This field specifies the certificate's classification, e.g., being a privilege, permission, or qualification certificate.",
         "description": null,
         "code": [
@@ -327,7 +329,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -340,7 +342,7 @@
       {
         "id": "CER.11",
         "path": "CER.11",
-        "short": " - CER",
+        "short": "- CER.11 - ",
         "definition": "Definition: This field specifies the subject area to which the certificate is applicable, e.g., administrative, medical, or nursing issues.",
         "description": null,
         "code": [
@@ -353,7 +355,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -366,7 +368,7 @@
       {
         "id": "CER.12",
         "path": "CER.12",
-        "short": " - CER",
+        "short": "- CER.12 - ",
         "definition": "Definition: This field expresses the identifier of the certificate's subject as used by the certifying body. (The subject is the owner of the certificate, e.g., person, organization, device, application, component.) If the certificate is expressed as a X.509 document this field is required.",
         "description": null,
         "code": [
@@ -379,7 +381,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -392,7 +394,7 @@
       {
         "id": "CER.13",
         "path": "CER.13",
-        "short": " - CER",
+        "short": "- CER.13 - ",
         "definition": "Definition: This field defines the name of the subject of the certificate as used by the certifying body.",
         "description": null,
         "code": [
@@ -405,7 +407,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -431,7 +433,7 @@
       {
         "id": "CER.14",
         "path": "CER.14",
-        "short": " - CER",
+        "short": "- CER.14 - ",
         "definition": "Definition: In individual identity certificates, this Subject Directory Attribute extension MAY contain a Healthcare Professional Role attribute and may contain a Qualified Certificate Statement attribute. In addition, Subject Directory Attributes MAY contain other attributes not specified by this technical specification.",
         "description": null,
         "code": [
@@ -444,7 +446,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -457,7 +459,7 @@
       {
         "id": "CER.15",
         "path": "CER.15",
-        "short": " - CER",
+        "short": "- CER.15 - ",
         "definition": "Definition: This field contains the algorithm identifier. Referred to this field, the X.509 extension field MAY contain a Subject Public Key Identifier to identify the public key used in the Subject Public Key Info.",
         "description": null,
         "code": [
@@ -470,7 +472,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -483,7 +485,7 @@
       {
         "id": "CER.16",
         "path": "CER.16",
-        "short": " - CER",
+        "short": "- CER.16 - ",
         "definition": "Definition: The Authority Key Identifier extension SHALL identify the public key to be used to verify the signature of the certificate. It enables distinct keys, used by one CA, to be distinguished (e.g., as key updating occurs).",
         "description": null,
         "code": [
@@ -496,7 +498,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -509,7 +511,7 @@
       {
         "id": "CER.17",
         "path": "CER.17",
-        "short": " - CER",
+        "short": "- CER.17 - ",
         "definition": "Definition: The Basic Constraints extension contains a boolean used to specify whether or not the subject can act as a CA (certificate authority), using the certified key to sign certificates.",
         "description": null,
         "code": [
@@ -522,7 +524,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -552,7 +554,7 @@
       {
         "id": "CER.18",
         "path": "CER.18",
-        "short": " - CER",
+        "short": "- CER.18 - ",
         "definition": "Definition: The Certificate Revocation List (CRL) Distribution Point extension SHALL identify the location of the associated CRL (or Authority Revocation List (ARL) for attribute certificates) in the PKI directory.",
         "description": null,
         "code": [
@@ -565,7 +567,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -578,7 +580,7 @@
       {
         "id": "CER.19",
         "path": "CER.19",
-        "short": " - CER",
+        "short": "- CER.19 - ",
         "definition": "Definition: This field contains the country for which the qualification is valid. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70399[_External Table 0399 – Country Code_] for valid values.",
         "description": null,
         "code": [
@@ -591,7 +593,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -621,7 +623,7 @@
       {
         "id": "CER.20",
         "path": "CER.20",
-        "short": " - CER",
+        "short": "- CER.20 - ",
         "definition": "Definition: This field contains the state for which the qualification is valid. HL7 suggests using values in file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70347[_User-defined Table 0347 – State/Province_].",
         "description": null,
         "code": [
@@ -634,7 +636,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -651,7 +653,7 @@
       {
         "id": "CER.21",
         "path": "CER.21",
-        "short": " - CER",
+        "short": "- CER.21 - ",
         "definition": "Definition: This field contains the county/parish for which the qualification is valid. HL7 suggests using values in file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70289[_User-defined Table 0289 – County/Parish_].",
         "description": null,
         "code": [
@@ -664,7 +666,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -681,7 +683,7 @@
       {
         "id": "CER.22",
         "path": "CER.22",
-        "short": " - CER",
+        "short": "- CER.22 - ",
         "definition": "Definition: This field contains the breadth/extent of the jurisdiction where the qualification is valid. HL7 suggests using values in file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70547[_User-defined Table 0547 – Jurisdictional Breadth_].",
         "description": null,
         "code": [
@@ -694,7 +696,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -711,7 +713,7 @@
       {
         "id": "CER.23",
         "path": "CER.23",
-        "short": " - CER",
+        "short": "- CER.23 - ",
         "definition": "Definition: This field contains the date when the certificate was granted.",
         "description": null,
         "code": [
@@ -724,7 +726,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -737,7 +739,7 @@
       {
         "id": "CER.24",
         "path": "CER.24",
-        "short": " - CER",
+        "short": "- CER.24 - ",
         "definition": "Definition: This field contains the date/time when the certificate was issued.",
         "description": null,
         "code": [
@@ -750,7 +752,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -763,7 +765,7 @@
       {
         "id": "CER.25",
         "path": "CER.25",
-        "short": " - CER",
+        "short": "- CER.25 - ",
         "definition": "Definition: This field contains the date/time when the certificate became or will become active.",
         "description": null,
         "code": [
@@ -776,7 +778,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -789,7 +791,7 @@
       {
         "id": "CER.26",
         "path": "CER.26",
-        "short": " - CER",
+        "short": "- CER.26 - ",
         "definition": "Definition: This field contains the date/time when the certificate became or will become inactive.",
         "description": null,
         "code": [
@@ -802,7 +804,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -815,7 +817,7 @@
       {
         "id": "CER.27",
         "path": "CER.27",
-        "short": " - CER",
+        "short": "- CER.27 - ",
         "definition": "Definition: This field contains the date/time when the certificate expires or will expire.",
         "description": null,
         "code": [
@@ -828,7 +830,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -841,7 +843,7 @@
       {
         "id": "CER.28",
         "path": "CER.28",
-        "short": " - CER",
+        "short": "- CER.28 - ",
         "definition": "Definition: This field contains the date/time when the certificate must/will/ be / has been renewed.",
         "description": null,
         "code": [
@@ -854,7 +856,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -867,7 +869,7 @@
       {
         "id": "CER.29",
         "path": "CER.29",
-        "short": " - CER",
+        "short": "- CER.29 - ",
         "definition": "Definition: This field contains the date/time when the certificate has been revoked.",
         "description": null,
         "code": [
@@ -880,7 +882,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -893,7 +895,7 @@
       {
         "id": "CER.30",
         "path": "CER.30",
-        "short": " - CER",
+        "short": "- CER.30 - ",
         "definition": "Definition: This field contains the reason for revoking the certificate (e.g., having been compromised, changes of conditions/environment, etc.)",
         "description": null,
         "code": [
@@ -906,7 +908,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -919,7 +921,7 @@
       {
         "id": "CER.31",
         "path": "CER.31",
-        "short": " - CER",
+        "short": "- CER.31 - ",
         "definition": "Definition: This field contains the state of the certificate held by the health professional, such as provisional, revoked, etc. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70536[_User-defined Table 0536 – Certificate Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -932,7 +934,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -948,9 +950,7 @@
       }
     ]
   },
-  "id": "CER",
   "title": "HL7 v2 CER Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/CER",
   "name": "CER",
-  "type": "http://hl7.org/v2/StructureDefinition/CER"
+  "type": "CER"
 }

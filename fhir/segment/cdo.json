@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CDO",
+  "id": "CDO",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "CDO.1",
         "path": "CDO.1",
-        "short": " - CDO",
+        "short": "- CDO.1 - ",
         "definition": "Definition: For the first cumulative dose specification transmitted, the sequence number shall be 1; for the second cumulative dose, it shall be 2; and so on.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "CDO.2",
         "path": "CDO.2",
-        "short": " - CDO",
+        "short": "- CDO.2 - ",
         "definition": "Definition: The Action Code indicates whether the cumulative dosage segment is intended to be added, deleted, updated, or did not change. If the field is not valued in any CDO segments for the order, the segments are considered to have been sent in snapshot mode. If some but not all CDO segments for the order do not have the action code valued, the default value is Add. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[_HL7 Table 0206 - Segment Action Code_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -98,7 +100,7 @@
       {
         "id": "CDO.3",
         "path": "CDO.3",
-        "short": " - CDO",
+        "short": "- CDO.3 - ",
         "definition": "Definition: The Cumulative Dosage indicates the total dosage that may be administered within the scope of this order or within the interval indicated in _CDO-4 Cumulative Dosage Time Interval_, if supplied",
         "description": null,
         "code": [
@@ -111,7 +113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -124,7 +126,7 @@
       {
         "id": "CDO.4",
         "path": "CDO.4",
-        "short": " - CDO",
+        "short": "- CDO.4 - ",
         "definition": "Definition: The Cumulative Dosage Time Interval indicates the interval over which the cumulative dosage in _CDO-3 Cumulative Dosage Limit_ is measured. If this field is not valued, the Cumulative Dosage Limit applies to the scope of the order.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "binding": {
@@ -153,9 +155,7 @@
       }
     ]
   },
-  "id": "CDO",
   "title": "HL7 v2 CDO Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/CDO",
   "name": "CDO",
-  "type": "http://hl7.org/v2/StructureDefinition/CDO"
+  "type": "CDO"
 }

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/DRG",
+  "id": "DRG",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "DRG.1",
         "path": "DRG.1",
-        "short": " - DRG",
+        "short": "- DRG.1 - ",
         "definition": "Definition: This field contains the DRG for the transaction. Interim DRG's could be determined for an encounter. Refer to _file:///E:\\V2\\V29_CH02C_Tables.docx#HL70055[Externally-defined Table 0055 – Diagnosis Related G]roup_ in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "DRG.2",
         "path": "DRG.2",
-        "short": " - DRG",
+        "short": "- DRG.2 - ",
         "definition": "Definition: This field contains the time stamp to indicate the date and time that the DRG was assigned.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -72,7 +74,7 @@
       {
         "id": "DRG.3",
         "path": "DRG.3",
-        "short": " - DRG",
+        "short": "- DRG.3 - ",
         "definition": "Definition: This field indicates if the DRG has been approved by a reviewing entity. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] for valid values.",
         "description": null,
         "code": [
@@ -85,7 +87,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -115,7 +117,7 @@
       {
         "id": "DRG.4",
         "path": "DRG.4",
-        "short": " - DRG",
+        "short": "- DRG.4 - ",
         "definition": "Definition: This code indicates that the grouper results have been reviewed and approved. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70056[_User-defined Table 0056 - DRG Grouper Review Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -145,7 +147,7 @@
       {
         "id": "DRG.5",
         "path": "DRG.5",
-        "short": " - DRG",
+        "short": "- DRG.5 - ",
         "definition": "Definition: Refers to the type of outlier (i.e., period of care beyond DRG-standard stay in facility) that has been paid. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70083[_User-defined Table 0083 - Outlier Type_] in Chapter 2C, code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -158,7 +160,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -175,7 +177,7 @@
       {
         "id": "DRG.6",
         "path": "DRG.6",
-        "short": " - DRG",
+        "short": "- DRG.6 - ",
         "definition": "Definition: This field contains the number of days that have been approved as an outlier payment.",
         "description": null,
         "code": [
@@ -188,7 +190,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -214,7 +216,7 @@
       {
         "id": "DRG.7",
         "path": "DRG.7",
-        "short": " - DRG",
+        "short": "- DRG.7 - ",
         "definition": "Definition: This field contains the amount of money that has been approved for an outlier payment.",
         "description": null,
         "code": [
@@ -227,7 +229,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -240,7 +242,7 @@
       {
         "id": "DRG.8",
         "path": "DRG.8",
-        "short": " - DRG",
+        "short": "- DRG.8 - ",
         "definition": "Definition: This field indicates the associated DRG Payor. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70229[_User-defined Table 0229 - DRG Payor_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -253,7 +255,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -270,7 +272,7 @@
       {
         "id": "DRG.9",
         "path": "DRG.9",
-        "short": " - DRG",
+        "short": "- DRG.9 - ",
         "definition": "Definition: Where applicable, the outlier reimbursement amount indicates the part of the total reimbursement designated for reimbursement of outlier conditions (day or cost).",
         "description": null,
         "code": [
@@ -283,7 +285,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CP"
+            "code": "CP"
           }
         ],
         "extension": [
@@ -296,7 +298,7 @@
       {
         "id": "DRG.10",
         "path": "DRG.10",
-        "short": " - DRG",
+        "short": "- DRG.10 - ",
         "definition": "Definition: This field indicates if the DRG contains a confidential diagnosis. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -309,7 +311,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -339,7 +341,7 @@
       {
         "id": "DRG.11",
         "path": "DRG.11",
-        "short": " - DRG",
+        "short": "- DRG.11 - ",
         "definition": "Definition: This field indicates the type of hospital receiving a transfer patient, which affects how a facility is reimbursed under diagnosis related group (DRG's), for example, exempt or non-exempt. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70415[_User-defined Table 0415 - DRG Transfer Type_] in Chapter 2C, code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -352,7 +354,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -369,7 +371,7 @@
       {
         "id": "DRG.12",
         "path": "DRG.12",
-        "short": " - DRG",
+        "short": "- DRG.12 - ",
         "definition": "Definition: This field holds the name of the person (\"coder\") who supervised or undertook the determination of the DRG code.",
         "description": null,
         "code": [
@@ -382,7 +384,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -395,7 +397,7 @@
       {
         "id": "DRG.13",
         "path": "DRG.13",
-        "short": " - DRG",
+        "short": "- DRG.13 - ",
         "definition": "Definition: This field indicates the grouper status in general. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70734[_Externally-defined Table 0734 - Grouper Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -408,7 +410,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -425,7 +427,7 @@
       {
         "id": "DRG.14",
         "path": "DRG.14",
-        "short": " - DRG",
+        "short": "- DRG.14 - ",
         "definition": "Definition: This field indicates the PCCL (Patient Clinical Complexity Level) value for the calculated DRG as a single value. This value is calculated based on all individual CCL values calculated so far in relation to the basic DRG. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70728[_Externally-defined Table 0728 - CCL Value_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -438,7 +440,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -455,7 +457,7 @@
       {
         "id": "DRG.15",
         "path": "DRG.15",
-        "short": " - DRG",
+        "short": "- DRG.15 - ",
         "definition": "Definition: This field contains the effective weight as calculated for this DRG. When exceeding the upper or lower trim point the effective weight is lower or higher.",
         "description": null,
         "code": [
@@ -468,7 +470,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -494,7 +496,7 @@
       {
         "id": "DRG.16",
         "path": "DRG.16",
-        "short": " - DRG",
+        "short": "- DRG.16 - ",
         "definition": "Definition: This field contains the monetary amount as calculated for this DRG, i.e., the sum of money the insurance company will pay.",
         "description": null,
         "code": [
@@ -507,7 +509,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MO"
+            "code": "MO"
           }
         ],
         "extension": [
@@ -520,7 +522,7 @@
       {
         "id": "DRG.17",
         "path": "DRG.17",
-        "short": " - DRG",
+        "short": "- DRG.17 - ",
         "definition": "Definition: This field contains the status of the patient concerning the financial aspects. It indicates whether the length of stay is normal or respectively shorter or longer than normal. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70739[_User-defined Table 0739 – DRG Status Patient_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -533,7 +535,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -550,7 +552,7 @@
       {
         "id": "DRG.18",
         "path": "DRG.18",
-        "short": " - DRG",
+        "short": "- DRG.18 - ",
         "definition": "Definition: This field contains the name of the software used for grouping.",
         "description": null,
         "code": [
@@ -563,7 +565,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -589,7 +591,7 @@
       {
         "id": "DRG.19",
         "path": "DRG.19",
-        "short": " - DRG",
+        "short": "- DRG.19 - ",
         "definition": "Definition: This field contains the version information of the software used for grouping.",
         "description": null,
         "code": [
@@ -602,7 +604,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -628,7 +630,7 @@
       {
         "id": "DRG.20",
         "path": "DRG.20",
-        "short": " - DRG",
+        "short": "- DRG.20 - ",
         "definition": "Definition: This field contains the status of the DRG calculation regarding the financial aspects. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70742[_User-defined Table 0742 – DRG Status Financial Calculation_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -641,7 +643,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -658,7 +660,7 @@
       {
         "id": "DRG.21",
         "path": "DRG.21",
-        "short": " - DRG",
+        "short": "- DRG.21 - ",
         "definition": "Definition: There will be a discount/surcharge for the calculated price due to a very short stay, early referral or a very long stay. This field contains the discount or surcharge that is included in the final price.",
         "description": null,
         "code": [
@@ -671,7 +673,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MO"
+            "code": "MO"
           }
         ],
         "extension": [
@@ -684,7 +686,7 @@
       {
         "id": "DRG.22",
         "path": "DRG.22",
-        "short": " - DRG",
+        "short": "- DRG.22 - ",
         "definition": "Definition: The basic charge is calculated as a multiplication of the relative weight with the base rate.",
         "description": null,
         "code": [
@@ -697,7 +699,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MO"
+            "code": "MO"
           }
         ],
         "extension": [
@@ -710,7 +712,7 @@
       {
         "id": "DRG.23",
         "path": "DRG.23",
-        "short": " - DRG",
+        "short": "- DRG.23 - ",
         "definition": "Definition: This field contains the total charge including surcharges or discounts.",
         "description": null,
         "code": [
@@ -723,7 +725,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MO"
+            "code": "MO"
           }
         ],
         "extension": [
@@ -736,7 +738,7 @@
       {
         "id": "DRG.24",
         "path": "DRG.24",
-        "short": " - DRG",
+        "short": "- DRG.24 - ",
         "definition": "Definition: This field contains the discount/surcharge as determined for this DRG. The addition/re­duction is indicated by _DRG-17 - Status Patient_.",
         "description": null,
         "code": [
@@ -749,7 +751,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/MO"
+            "code": "MO"
           }
         ],
         "extension": [
@@ -762,7 +764,7 @@
       {
         "id": "DRG.25",
         "path": "DRG.25",
-        "short": " - DRG",
+        "short": "- DRG.25 - ",
         "definition": "Definition: This field contains the number of days, for which a surcharge/discount has been determined. The addition/reduction is indicated by _DRG-17 - Status Patient_.",
         "description": null,
         "code": [
@@ -775,7 +777,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -801,7 +803,7 @@
       {
         "id": "DRG.26",
         "path": "DRG.26",
-        "short": " - DRG",
+        "short": "- DRG.26 - ",
         "definition": "Definition: This field contains the status of the use of the gender information for DRG determination. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70749[_User-defined Table 0749 – DRG Grouping Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -814,7 +816,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -831,7 +833,7 @@
       {
         "id": "DRG.27",
         "path": "DRG.27",
-        "short": " - DRG",
+        "short": "- DRG.27 - ",
         "definition": "Definition: This field contains the status of the use of the age information for DRG determination. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70749[_User-defined Table 0749 – DRG Grouping Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -844,7 +846,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -861,7 +863,7 @@
       {
         "id": "DRG.28",
         "path": "DRG.28",
-        "short": " - DRG",
+        "short": "- DRG.28 - ",
         "definition": "Definition: This field contains the status of the DRG calculation for the length of stay information. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70749[_User-defined Table 0749 – DRG Grouping Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -874,7 +876,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -891,7 +893,7 @@
       {
         "id": "DRG.29",
         "path": "DRG.29",
-        "short": " - DRG",
+        "short": "- DRG.29 - ",
         "definition": "Definition: This field contains the status of the use of the same day information for DRG determination. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70749[_User-defined Table 0749 – DRG Grouping Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -904,7 +906,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -921,7 +923,7 @@
       {
         "id": "DRG.30",
         "path": "DRG.30",
-        "short": " - DRG",
+        "short": "- DRG.30 - ",
         "definition": "Definition: This field contains the status of the use of the separation mode information for DRG determination. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70749[_User-defined Table 0749 – DRG Grouping Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -934,7 +936,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -951,7 +953,7 @@
       {
         "id": "DRG.31",
         "path": "DRG.31",
-        "short": " - DRG",
+        "short": "- DRG.31 - ",
         "definition": "Definition: This field contains the status of the use of the weight at birth information for DRG determination. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70755[_User-defined Table 0755 – DRG Status Weight At Birth_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -964,7 +966,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -981,7 +983,7 @@
       {
         "id": "DRG.32",
         "path": "DRG.32",
-        "short": " - DRG",
+        "short": "- DRG.32 - ",
         "definition": "Definition: This field contains the status of the use of the respiration minutes information for DRG determination. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70757[_User-defined Table 0757 – DRG Status Respiration Minutes_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -994,7 +996,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1011,7 +1013,7 @@
       {
         "id": "DRG.33",
         "path": "DRG.33",
-        "short": " - DRG",
+        "short": "- DRG.33 - ",
         "definition": "Definition: This field contains the admission status for the DRG determination. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70759[_User-defined Table 0759 – Status Admission_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1024,7 +1026,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1040,9 +1042,7 @@
       }
     ]
   },
-  "id": "DRG",
   "title": "HL7 v2 DRG Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/DRG",
   "name": "DRG",
-  "type": "http://hl7.org/v2/StructureDefinition/DRG"
+  "type": "DRG"
 }

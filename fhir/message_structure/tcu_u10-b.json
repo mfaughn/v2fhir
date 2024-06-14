@@ -1,0 +1,145 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/TCU_U10-B",
+  "id": "TCU_U10-B",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "TCU_U10-B.1-MSH",
+          "path": "TCU_U10-B.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "TCU_U10-B.2-SFT",
+          "path": "TCU_U10-B.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "TCU_U10-B.3-UAC",
+          "path": "TCU_U10-B.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "TCU_U10-B.4-EQU",
+          "path": "TCU_U10-B.4-EQU",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EQU"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "TCU_U10-B.5-TEST_CONFIGURATION",
+          "path": "TCU_U10-B.5-TEST_CONFIGURATION",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "TCU_U10-B.5-TEST_CONFIGURATION.1-SPM",
+              "path": "TCU_U10-B.5-TEST_CONFIGURATION.1-SPM",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/SPM"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "TCU_U10-B.5-TEST_CONFIGURATION.2-TCC",
+              "path": "TCU_U10-B.5-TEST_CONFIGURATION.2-TCC",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/TCC"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "TCU_U10-B.6-ROL",
+          "path": "TCU_U10-B.6-ROL",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 TCU_U10-B Segment Definition",
+  "name": "TCU_U10-B",
+  "type": "http://hl7.org/v2/StructureDefinition/TCU_U10-B"
+}

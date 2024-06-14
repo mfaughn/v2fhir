@@ -1,0 +1,1058 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ORU_R01-B",
+  "id": "ORU_R01-B",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "ORU_R01-B.1-MSH",
+          "path": "ORU_R01-B.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R01-B.2-ARV",
+          "path": "ORU_R01-B.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R01-B.3-SFT",
+          "path": "ORU_R01-B.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R01-B.4-UAC",
+          "path": "ORU_R01-B.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORU_R01-B.5-PATIENT_RESULT",
+          "path": "ORU_R01-B.5-PATIENT_RESULT",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT",
+              "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.1-PID",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.1-PID",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.2-PD1",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.2-PD1",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.3-GSP",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.3-GSP",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.4-GSR",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.4-GSR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.5-GSC",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.5-GSC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.6-PRT",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.6-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.7-OH1",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.7-OH1",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OH1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.8-OH2",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.8-OH2",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OH2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.9-OH3",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.9-OH3",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OH3"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.10-OH4",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.10-OH4",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OH4"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.11-NTE",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.11-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN.1-NK1",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN.1-NK1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN.2-GSP",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN.2-GSP",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN.3-GSR",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN.3-GSR",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN.4-OH2",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN.4-OH2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OH2"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN.5-OH3",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.12-NEXT_OF_KIN.5-OH3",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OH3"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.13-ARV",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.13-ARV",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.14-PATIENT_OBSERVATION",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.14-PATIENT_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.14-PATIENT_OBSERVATION.1-OBX",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.14-PATIENT_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.14-PATIENT_OBSERVATION.2-PRT",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.14-PATIENT_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.15-VISIT",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.15-VISIT",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.15-VISIT.1-PV1",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.15-VISIT.1-PV1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.15-VISIT.2-PV2",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.15-VISIT.2-PV2",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.15-VISIT.3-PRT",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.15-VISIT.3-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.16-INSURANCE",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.16-INSURANCE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.16-INSURANCE.1-IN1",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.16-INSURANCE.1-IN1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.16-INSURANCE.2-IN2",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.16-INSURANCE.2-IN2",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.16-INSURANCE.3-IN3",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.1-PATIENT.16-INSURANCE.3-IN3",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/IN3"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION",
+              "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.1-ORC",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.1-ORC",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.2-PRT",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.3-ORDER_DOCUMENT",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.3-ORDER_DOCUMENT",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.3-ORDER_DOCUMENT.1-OBX",
+                          "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.3-ORDER_DOCUMENT.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.3-ORDER_DOCUMENT.2-PRT",
+                          "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.3-ORDER_DOCUMENT.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.3-ORDER_DOCUMENT.3-TXA",
+                          "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.1-COMMON_ORDER.3-ORDER_DOCUMENT.3-TXA",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/TXA"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.2-OBR",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.2-OBR",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.3-NTE",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.4-OBSERVATION_PARTICIPATION",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.4-OBSERVATION_PARTICIPATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.4-OBSERVATION_PARTICIPATION.1-PRT",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.4-OBSERVATION_PARTICIPATION.1-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.4-OBSERVATION_PARTICIPATION.2-DEV",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.4-OBSERVATION_PARTICIPATION.2-DEV",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/DEV"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.5-TIMING_QTY",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.5-TIMING_QTY",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.5-TIMING_QTY.1-TQ1",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.5-TIMING_QTY.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.5-TIMING_QTY.2-TQ2",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.5-TIMING_QTY.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.6-CTD",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.6-CTD",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.7-OBSERVATION",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.7-OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.7-OBSERVATION.1-OBX",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.7-OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.7-OBSERVATION.2-PRT",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.7-OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.7-OBSERVATION.3-NTE",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.7-OBSERVATION.3-NTE",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.8-FT1",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.8-FT1",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/FT1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.9-CTI",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.9-CTI",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CTI"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.10-SPECIMEN",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.10-SPECIMEN",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.10-SPECIMEN.1-SPM",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.10-SPECIMEN.1-SPM",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/SPM"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.10-SPECIMEN.2-SPECIMEN_OBSERVATION",
+                      "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.10-SPECIMEN.2-SPECIMEN_OBSERVATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.10-SPECIMEN.2-SPECIMEN_OBSERVATION.1-OBX",
+                          "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.10-SPECIMEN.2-SPECIMEN_OBSERVATION.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.10-SPECIMEN.2-SPECIMEN_OBSERVATION.2-PRT",
+                          "path": "ORU_R01-B.5-PATIENT_RESULT.2-ORDER_OBSERVATION.10-SPECIMEN.2-SPECIMEN_OBSERVATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "ORU_R01-B.5-PATIENT_RESULT.3-DEVICE",
+              "path": "ORU_R01-B.5-PATIENT_RESULT.3-DEVICE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.3-DEVICE.1-DEV",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.3-DEVICE.1-DEV",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/DEV"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORU_R01-B.5-PATIENT_RESULT.3-DEVICE.2-OBX",
+                  "path": "ORU_R01-B.5-PATIENT_RESULT.3-DEVICE.2-OBX",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "ORU_R01-B.6-DSC",
+          "path": "ORU_R01-B.6-DSC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DSC"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 ORU_R01-B Segment Definition",
+  "name": "ORU_R01-B",
+  "type": "http://hl7.org/v2/StructureDefinition/ORU_R01-B"
+}

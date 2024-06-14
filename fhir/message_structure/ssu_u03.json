@@ -1,0 +1,237 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SSU_U03",
+  "id": "SSU_U03",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "SSU_U03.1-MSH",
+          "path": "SSU_U03.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SSU_U03.2-SFT",
+          "path": "SSU_U03.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SSU_U03.3-UAC",
+          "path": "SSU_U03.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SSU_U03.4-EQU",
+          "path": "SSU_U03.4-EQU",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EQU"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SSU_U03.5-SPECIMEN_CONTAINER",
+          "path": "SSU_U03.5-SPECIMEN_CONTAINER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "SSU_U03.5-SPECIMEN_CONTAINER.1-SAC",
+              "path": "SSU_U03.5-SPECIMEN_CONTAINER.1-SAC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/SAC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SSU_U03.5-SPECIMEN_CONTAINER.2-OBX",
+              "path": "SSU_U03.5-SPECIMEN_CONTAINER.2-OBX",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SSU_U03.5-SPECIMEN_CONTAINER.3-NTE",
+              "path": "SSU_U03.5-SPECIMEN_CONTAINER.3-NTE",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SSU_U03.5-SPECIMEN_CONTAINER.4-PRT",
+              "path": "SSU_U03.5-SPECIMEN_CONTAINER.4-PRT",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SSU_U03.5-SPECIMEN_CONTAINER.5-SPECIMEN",
+              "path": "SSU_U03.5-SPECIMEN_CONTAINER.5-SPECIMEN",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SSU_U03.5-SPECIMEN_CONTAINER.5-SPECIMEN.1-SPM",
+                  "path": "SSU_U03.5-SPECIMEN_CONTAINER.5-SPECIMEN.1-SPM",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/SPM"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SSU_U03.5-SPECIMEN_CONTAINER.5-SPECIMEN.2-OBX",
+                  "path": "SSU_U03.5-SPECIMEN_CONTAINER.5-SPECIMEN.2-OBX",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SSU_U03.5-SPECIMEN_CONTAINER.5-SPECIMEN.3-PRT",
+                  "path": "SSU_U03.5-SPECIMEN_CONTAINER.5-SPECIMEN.3-PRT",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "SSU_U03.6-ROL",
+          "path": "SSU_U03.6-ROL",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 SSU_U03 Segment Definition",
+  "name": "SSU_U03",
+  "type": "http://hl7.org/v2/StructureDefinition/SSU_U03"
+}

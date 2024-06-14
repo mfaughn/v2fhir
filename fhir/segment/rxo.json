@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RXO",
+  "id": "RXO",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "RXO.1",
         "path": "RXO.1",
-        "short": " - RXO",
+        "short": "- RXO.1 - ",
         "definition": "Definition: This field identifies the treatment product or treatment ordered to be given to the patient; it is analogous to _OBR-4-universal service ID_ in function. Examples of treatments products include medications and certain devices or supplies, e.g., inhaler spacers, blood glucose monitors, syringes, infusion sets, which might require prescription. Refer to Table 0747 - Requested Give Code in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "RXO.2",
         "path": "RXO.2",
-        "short": " - RXO",
+        "short": "- RXO.2 - ",
         "definition": "Definition: This field is the ordered amount. In a variable dose order, this is the minimum ordered amount. In a non-varying dose order, this is the exact amount of the order.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -72,7 +74,7 @@
       {
         "id": "RXO.3",
         "path": "RXO.3",
-        "short": " - RXO",
+        "short": "- RXO.3 - ",
         "definition": "Definition: In a variable dose order, this is the maximum ordered amount. In a non-varying dose order, this field is not used.",
         "description": null,
         "code": [
@@ -85,7 +87,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -98,7 +100,7 @@
       {
         "id": "RXO.4",
         "path": "RXO.4",
-        "short": " - RXO",
+        "short": "- RXO.4 - ",
         "definition": "Definition: This field indicates the units for the give amount. Refer to Table 0748 - Requested Give Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -111,7 +113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -128,7 +130,7 @@
       {
         "id": "RXO.5",
         "path": "RXO.5",
-        "short": " - RXO",
+        "short": "- RXO.5 - ",
         "definition": "Definition: This field indicates the manner in which the treatment is aggregated for dispensing, e.g., tablets, capsules suppositories. In some cases, this information is implied by the dispense/give code in _RXO-1-requested give code_ or _RXO-10-Requested dispense code_. Required when both _RXO-1-Requested give code_ and _RXO-10-Requested dispense code_ do not specify the drug/treatment form; optionally included otherwise. Refer to Table 0750 - Requested Dosage Form in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -141,7 +143,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -158,7 +160,7 @@
       {
         "id": "RXO.6",
         "path": "RXO.6",
-        "short": " - RXO",
+        "short": "- RXO.6 - ",
         "definition": "Definition: This field identifies the ordering provider's instructions to the pharmacy or the non-pharmacy treatment provider (e.g., respiratory therapy). If coded, a user-defined table must be used. If transmitted as a free text field, place a null in the first component and the text in the second, e.g., |^this is a free text treatment instruction|.Refer to Table 0751 - Provider's Pharmacy/Treatment Instructions in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -171,7 +173,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -188,7 +190,7 @@
       {
         "id": "RXO.7",
         "path": "RXO.7",
-        "short": " - RXO",
+        "short": "- RXO.7 - ",
         "definition": "Definition: This field identifies the ordering provider's instructions to the patient or to the provider administering the drug or treatment. If coded, a user-defined table must be used. If transmitted as free text, place a null in the first component and the text in the second, e.g., |^this is a free text administration instruction|.Refer to Table 0752 - Provider's Administration Instructions in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -201,7 +203,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -218,7 +220,7 @@
       {
         "id": "RXO.8",
         "path": "RXO.8",
-        "short": " - RXO",
+        "short": "- RXO.8 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -237,7 +239,7 @@
       {
         "id": "RXO.9",
         "path": "RXO.9",
-        "short": " - RXO",
+        "short": "- RXO.9 - ",
         "definition": "Definition: Coded values indicate whether substitutions are allowed, and, if yes, what type of substitutions. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70161[_HL7 Table 0161 – Allow Substitution_] in Chapter 2C, Code Tables, for valid codes.",
         "description": null,
         "code": [
@@ -250,7 +252,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -280,7 +282,7 @@
       {
         "id": "RXO.10",
         "path": "RXO.10",
-        "short": " - RXO",
+        "short": "- RXO.10 - ",
         "definition": "Definition: This field indicates what is to be/was dispensed; it is analogous to _OBR-4-universal service ID_ in function. It may be present in the order or not, depending on the application. If not present, and values are given for _RXO-11-requested dispense amount_ and _RXO-12-requested dispense units_, the _RXO-1-requested give code_ is assumed. If the requested dispense code does not include the dosage form, then _RXO-5-requested dosage form_ is required. Refer to Table 0753 - Requested Dispense Code in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -293,7 +295,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -310,7 +312,7 @@
       {
         "id": "RXO.11",
         "path": "RXO.11",
-        "short": " - RXO",
+        "short": "- RXO.11 - ",
         "definition": "Definition: This field specifies the amount to be dispensed. See above note.",
         "description": null,
         "code": [
@@ -323,7 +325,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -336,7 +338,7 @@
       {
         "id": "RXO.12",
         "path": "RXO.12",
-        "short": " - RXO",
+        "short": "- RXO.12 - ",
         "definition": "Definition: This field identifies the units for the dispense amount. This must be in simple units that reflect the actual quantity of the substance to be dispensed. It does not include compound units. See above note. Refer to Table 0754 - Requested Dispense Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -349,7 +351,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -366,7 +368,7 @@
       {
         "id": "RXO.13",
         "path": "RXO.13",
-        "short": " - RXO",
+        "short": "- RXO.13 - ",
         "definition": "Definition: This field defines the number of times the requested dispense amount can be given to the patient, subject to local regulation. Refers to outpatient only.",
         "description": null,
         "code": [
@@ -379,7 +381,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -405,7 +407,7 @@
       {
         "id": "RXO.14",
         "path": "RXO.14",
-        "short": " - RXO",
+        "short": "- RXO.14 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -424,7 +426,7 @@
       {
         "id": "RXO.15",
         "path": "RXO.15",
-        "short": " - RXO",
+        "short": "- RXO.15 - ",
         "definition": "Definition: This field is the provider ID of the pharmacist/treatment supplier verifier. Use if required by the pharmacy or treatment application or site on orders (or some subgroup of orders), in addition to _ORC-11-verified by_.",
         "description": null,
         "code": [
@@ -437,7 +439,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -450,7 +452,7 @@
       {
         "id": "RXO.16",
         "path": "RXO.16",
-        "short": " - RXO",
+        "short": "- RXO.16 - ",
         "definition": "Definition: This field uses file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/No Indicator_] in Chapter 2C, Code Tables. The values have the following meaning for this field:",
         "description": null,
         "code": [
@@ -463,7 +465,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -493,7 +495,7 @@
       {
         "id": "RXO.17",
         "path": "RXO.17",
-        "short": " - RXO",
+        "short": "- RXO.17 - ",
         "definition": "Definition: This field identifies the time unit to use to calculate the rate at which the pharmaceutical is to be administered.",
         "description": null,
         "code": [
@@ -506,7 +508,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -532,7 +534,7 @@
       {
         "id": "RXO.18",
         "path": "RXO.18",
-        "short": " - RXO",
+        "short": "- RXO.18 - ",
         "definition": "Definition: Required when RXO-1-requested give code does not specify the strength; optionally included otherwise. This is the numeric part of the strength, used in combination with _RXO-19-requested give strength units_.",
         "description": null,
         "code": [
@@ -545,7 +547,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -558,7 +560,7 @@
       {
         "id": "RXO.19",
         "path": "RXO.19",
-        "short": " - RXO",
+        "short": "- RXO.19 - ",
         "definition": "Definition: Required when both _RXO-1-requested give code_ and _RXO-10-requested dispense code_ do not specify the strength; optionally included otherwise. This is the unit of the strength, used in combination with _RXO-18-requested give strength_. Refer to Table 0756 - Requested Give Strength Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -571,7 +573,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -588,7 +590,7 @@
       {
         "id": "RXO.20",
         "path": "RXO.20",
-        "short": " - RXO",
+        "short": "- RXO.20 - ",
         "definition": "Definition: This field identifies the condition or problem for which the drug/treatment was prescribed. May repeat if multiple indications are relevant. Refer to Table 0758 - Indication in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -601,7 +603,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -618,7 +620,7 @@
       {
         "id": "RXO.21",
         "path": "RXO.21",
-        "short": " - RXO",
+        "short": "- RXO.21 - ",
         "definition": "Definition: This field contains the rate at which to administer a treatment, e.g., 150 ml/hr (for an IV) or 4 liters/min for nasal oxygen.",
         "description": null,
         "code": [
@@ -631,7 +633,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -657,7 +659,7 @@
       {
         "id": "RXO.22",
         "path": "RXO.22",
-        "short": " - RXO",
+        "short": "- RXO.22 - ",
         "definition": "Definition: This field contains the units in which _RXO-21-requested give rate amount_ is denominated. Refer to Table 0760 - Requested Give Rate Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -670,7 +672,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -687,7 +689,7 @@
       {
         "id": "RXO.23",
         "path": "RXO.23",
-        "short": " - RXO",
+        "short": "- RXO.23 - ",
         "definition": "Definition: This field contains the total daily dose for this particular pharmaceutical as expressed in terms of actual dispense units.",
         "description": null,
         "code": [
@@ -700,7 +702,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -713,7 +715,7 @@
       {
         "id": "RXO.24",
         "path": "RXO.24",
-        "short": " - RXO",
+        "short": "- RXO.24 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -724,7 +726,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -741,7 +743,7 @@
       {
         "id": "RXO.25",
         "path": "RXO.25",
-        "short": " - RXO",
+        "short": "- RXO.25 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -752,7 +754,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -778,7 +780,7 @@
       {
         "id": "RXO.26",
         "path": "RXO.26",
-        "short": " - RXO",
+        "short": "- RXO.26 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -789,7 +791,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -806,7 +808,7 @@
       {
         "id": "RXO.27",
         "path": "RXO.27",
-        "short": " - RXO",
+        "short": "- RXO.27 - ",
         "definition": "Definition: The Pharmacy Order Type field defines the general category of pharmacy order which may be used to determine the processing path the order will take. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70480[_HL7 Table 0480 — Pharmacy Order Types_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -819,7 +821,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -849,7 +851,7 @@
       {
         "id": "RXO.28",
         "path": "RXO.28",
-        "short": " - RXO",
+        "short": "- RXO.28 - ",
         "definition": "Definition: This field specifies the minimum number of days that must occur between dispensing events",
         "description": null,
         "code": [
@@ -862,7 +864,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -875,7 +877,7 @@
       {
         "id": "RXO.29",
         "path": "RXO.29",
-        "short": " - RXO",
+        "short": "- RXO.29 - ",
         "definition": "Definition: This field contains a value that uniquely identifies the medication associated with this segment. Rather than identifying the product to be given, as in _RXO-1 Requested Give Code_, this field serves to identify the medication in association with the order represented by the segment instance. This identifier is persistent within and across message instances.",
         "description": null,
         "code": [
@@ -888,7 +890,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -901,7 +903,7 @@
       {
         "id": "RXO.30",
         "path": "RXO.30",
-        "short": " - RXO",
+        "short": "- RXO.30 - ",
         "definition": "Definition: This field contains a value that uniquely identifies this segment across time and messages. This is not intended as a \"Set ID\", but as a unique identifier allowing references not only to segments of the same message, but also to segments of other messages and indirectly to the entities described in those segments if the necessary persistence was manageable by the applications. This identifier is persistent within and across message instances.",
         "description": null,
         "code": [
@@ -914,7 +916,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -927,7 +929,7 @@
       {
         "id": "RXO.31",
         "path": "RXO.31",
-        "short": " - RXO",
+        "short": "- RXO.31 - ",
         "definition": "Definition: This field represents the functional state of the order represented by this segment instance. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70725[_HL7 Table 0725 – Mood Codes_] in Chapter 2C, Code Tables, for valid values. This field may only be used with new trigger events and new messages from v2.6 onward. When this field is not valued in a message that qualifies, then the value is assumed to be 'EVN'.",
         "description": null,
         "code": [
@@ -940,7 +942,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -957,7 +959,7 @@
       {
         "id": "RXO.32",
         "path": "RXO.32",
-        "short": " - RXO",
+        "short": "- RXO.32 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -968,7 +970,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -985,7 +987,7 @@
       {
         "id": "RXO.33",
         "path": "RXO.33",
-        "short": " - RXO",
+        "short": "- RXO.33 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -996,7 +998,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -1009,7 +1011,7 @@
       {
         "id": "RXO.34",
         "path": "RXO.34",
-        "short": " - RXO",
+        "short": "- RXO.34 - ",
         "definition": "Definition: This field specifies the location of the patient to whom the pharmaceutical substance is to be delivered.",
         "description": null,
         "code": [
@@ -1022,7 +1024,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -1035,7 +1037,7 @@
       {
         "id": "RXO.35",
         "path": "RXO.35",
-        "short": " - RXO",
+        "short": "- RXO.35 - ",
         "definition": "Definition: This field specifies the address, either mailing or physical, to which the prescription should be mailed or delivered.",
         "description": null,
         "code": [
@@ -1048,7 +1050,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -1061,7 +1063,7 @@
       {
         "id": "RXO.36",
         "path": "RXO.36",
-        "short": " - RXO",
+        "short": "- RXO.36 - ",
         "definition": "Definition: This field contains the telecommunication contact information for the pharmacy. Repetitions may be supplied for various device types or use codes, or multiple instances of the same type or use. This concept also exists as RXE-45 and RXD-34 to support pharmacy contact information in the context of the order, the encoded order and the dispense.",
         "description": null,
         "code": [
@@ -1074,7 +1076,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -1086,9 +1088,7 @@
       }
     ]
   },
-  "id": "RXO",
   "title": "HL7 v2 RXO Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/RXO",
   "name": "RXO",
-  "type": "http://hl7.org/v2/StructureDefinition/RXO"
+  "type": "RXO"
 }

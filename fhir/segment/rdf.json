@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RDF",
+  "id": "RDF",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "RDF.1",
         "path": "RDF.1",
-        "short": " - RDF",
+        "short": "- RDF.1 - ",
         "definition": "Definition: This field specifies the number of data columns (and therefore the number of fields) contained within each row of returned data.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "RDF.2",
         "path": "RDF.2",
-        "short": " - RDF",
+        "short": "- RDF.2 - ",
         "definition": "Definition: Each repetition of this field consists of three components:",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/RCD"
+            "code": "RCD"
           }
         ],
         "binding": {
@@ -84,9 +86,7 @@
       }
     ]
   },
-  "id": "RDF",
   "title": "HL7 v2 RDF Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/RDF",
   "name": "RDF",
-  "type": "http://hl7.org/v2/StructureDefinition/RDF"
+  "type": "RDF"
 }

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/QID",
+  "id": "QID",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "QID.1",
         "path": "QID.1",
-        "short": " - QID",
+        "short": "- QID.1 - ",
         "definition": "Definition: This field identifies the instance of a query.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "QID.2",
         "path": "QID.2",
-        "short": " - QID",
+        "short": "- QID.2 - ",
         "definition": "Definition: This field contains the name of the query. These names are assigned by the function-specific chapters of this specification. Site-specific query names begin with the letter \"Z.\" Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70471[_User defi__ned table 0471 – Query name_] for suggested values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -84,9 +86,7 @@
       }
     ]
   },
-  "id": "QID",
   "title": "HL7 v2 QID Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/QID",
   "name": "QID",
-  "type": "http://hl7.org/v2/StructureDefinition/QID"
+  "type": "QID"
 }

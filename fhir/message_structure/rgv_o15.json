@@ -1,0 +1,887 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RGV_O15",
+  "id": "RGV_O15",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RGV_O15.1-MSH",
+          "path": "RGV_O15.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RGV_O15.2-ARV",
+          "path": "RGV_O15.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RGV_O15.3-SFT",
+          "path": "RGV_O15.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RGV_O15.4-UAC",
+          "path": "RGV_O15.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RGV_O15.5-NTE",
+          "path": "RGV_O15.5-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RGV_O15.6-PATIENT",
+          "path": "RGV_O15.6-PATIENT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RGV_O15.6-PATIENT.1-PID",
+              "path": "RGV_O15.6-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RGV_O15.6-PATIENT.2-GSP",
+              "path": "RGV_O15.6-PATIENT.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RGV_O15.6-PATIENT.3-GSR",
+              "path": "RGV_O15.6-PATIENT.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RGV_O15.6-PATIENT.4-GSC",
+              "path": "RGV_O15.6-PATIENT.4-GSC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RGV_O15.6-PATIENT.5-PRT",
+              "path": "RGV_O15.6-PATIENT.5-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RGV_O15.6-PATIENT.6-NTE",
+              "path": "RGV_O15.6-PATIENT.6-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RGV_O15.6-PATIENT.7-AL1",
+              "path": "RGV_O15.6-PATIENT.7-AL1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AL1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RGV_O15.6-PATIENT.8-ARV",
+              "path": "RGV_O15.6-PATIENT.8-ARV",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RGV_O15.6-PATIENT.9-PATIENT_VISIT",
+              "path": "RGV_O15.6-PATIENT.9-PATIENT_VISIT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RGV_O15.6-PATIENT.9-PATIENT_VISIT.1-PV1",
+                  "path": "RGV_O15.6-PATIENT.9-PATIENT_VISIT.1-PV1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.6-PATIENT.9-PATIENT_VISIT.2-PV2",
+                  "path": "RGV_O15.6-PATIENT.9-PATIENT_VISIT.2-PV2",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.6-PATIENT.9-PATIENT_VISIT.3-PRT",
+                  "path": "RGV_O15.6-PATIENT.9-PATIENT_VISIT.3-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.6-PATIENT.9-PATIENT_VISIT.4-ARV",
+                  "path": "RGV_O15.6-PATIENT.9-PATIENT_VISIT.4-ARV",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RGV_O15.7-ORDER",
+          "path": "RGV_O15.7-ORDER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RGV_O15.7-ORDER.1-ORC",
+              "path": "RGV_O15.7-ORDER.1-ORC",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RGV_O15.7-ORDER.2-PRT",
+              "path": "RGV_O15.7-ORDER.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RGV_O15.7-ORDER.3-TIMING",
+              "path": "RGV_O15.7-ORDER.3-TIMING",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.3-TIMING.1-TQ1",
+                  "path": "RGV_O15.7-ORDER.3-TIMING.1-TQ1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.3-TIMING.2-TQ2",
+                  "path": "RGV_O15.7-ORDER.3-TIMING.2-TQ2",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RGV_O15.7-ORDER.4-ORDER_DETAIL",
+              "path": "RGV_O15.7-ORDER.4-ORDER_DETAIL",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.4-ORDER_DETAIL.1-RXO",
+                  "path": "RGV_O15.7-ORDER.4-ORDER_DETAIL.1-RXO",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXO"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.4-ORDER_DETAIL.2-PRT",
+                  "path": "RGV_O15.7-ORDER.4-ORDER_DETAIL.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT",
+                  "path": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.1-NTE",
+                      "path": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.1-NTE",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.2-RXR",
+                      "path": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.2-RXR",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS",
+                      "path": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS.1-RXC",
+                          "path": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS.1-RXC",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS.2-NTE",
+                          "path": "RGV_O15.7-ORDER.4-ORDER_DETAIL.3-ORDER_DETAIL_SUPPLEMENT.3-COMPONENTS.2-NTE",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RGV_O15.7-ORDER.5-ENCODING",
+              "path": "RGV_O15.7-ORDER.5-ENCODING",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.5-ENCODING.1-RXE",
+                  "path": "RGV_O15.7-ORDER.5-ENCODING.1-RXE",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.5-ENCODING.2-PRT",
+                  "path": "RGV_O15.7-ORDER.5-ENCODING.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.5-ENCODING.3-NTE",
+                  "path": "RGV_O15.7-ORDER.5-ENCODING.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.5-ENCODING.4-TIMING_ENCODED",
+                  "path": "RGV_O15.7-ORDER.5-ENCODING.4-TIMING_ENCODED",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RGV_O15.7-ORDER.5-ENCODING.4-TIMING_ENCODED.1-TQ1",
+                      "path": "RGV_O15.7-ORDER.5-ENCODING.4-TIMING_ENCODED.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RGV_O15.7-ORDER.5-ENCODING.4-TIMING_ENCODED.2-TQ2",
+                      "path": "RGV_O15.7-ORDER.5-ENCODING.4-TIMING_ENCODED.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.5-ENCODING.5-RXR",
+                  "path": "RGV_O15.7-ORDER.5-ENCODING.5-RXR",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.5-ENCODING.6-RXC",
+                  "path": "RGV_O15.7-ORDER.5-ENCODING.6-RXC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RGV_O15.7-ORDER.6-GIVE",
+              "path": "RGV_O15.7-ORDER.6-GIVE",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.6-GIVE.1-RXG",
+                  "path": "RGV_O15.7-ORDER.6-GIVE.1-RXG",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXG"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.6-GIVE.2-PRT",
+                  "path": "RGV_O15.7-ORDER.6-GIVE.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.6-GIVE.3-TIMING_GIVE",
+                  "path": "RGV_O15.7-ORDER.6-GIVE.3-TIMING_GIVE",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RGV_O15.7-ORDER.6-GIVE.3-TIMING_GIVE.1-TQ1",
+                      "path": "RGV_O15.7-ORDER.6-GIVE.3-TIMING_GIVE.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RGV_O15.7-ORDER.6-GIVE.3-TIMING_GIVE.2-TQ2",
+                      "path": "RGV_O15.7-ORDER.6-GIVE.3-TIMING_GIVE.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.6-GIVE.4-RXR",
+                  "path": "RGV_O15.7-ORDER.6-GIVE.4-RXR",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.6-GIVE.5-RXC",
+                  "path": "RGV_O15.7-ORDER.6-GIVE.5-RXC",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RXC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.6-GIVE.6-CDO",
+                  "path": "RGV_O15.7-ORDER.6-GIVE.6-CDO",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CDO"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RGV_O15.7-ORDER.6-GIVE.7-OBSERVATION",
+                  "path": "RGV_O15.7-ORDER.6-GIVE.7-OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "RGV_O15.7-ORDER.6-GIVE.7-OBSERVATION.1-OBX",
+                      "path": "RGV_O15.7-ORDER.6-GIVE.7-OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RGV_O15.7-ORDER.6-GIVE.7-OBSERVATION.2-PRT",
+                      "path": "RGV_O15.7-ORDER.6-GIVE.7-OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "RGV_O15.7-ORDER.6-GIVE.7-OBSERVATION.3-NTE",
+                      "path": "RGV_O15.7-ORDER.6-GIVE.7-OBSERVATION.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 RGV_O15 Segment Definition",
+  "name": "RGV_O15",
+  "type": "http://hl7.org/v2/StructureDefinition/RGV_O15"
+}

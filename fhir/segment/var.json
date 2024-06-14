@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/VAR",
+  "id": "VAR",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "VAR.1",
         "path": "VAR.1",
-        "short": " - VAR",
+        "short": "- VAR.1 - ",
         "definition": "Definition: This field contains the unique identifier of the specific variance record.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "VAR.2",
         "path": "VAR.2",
-        "short": " - VAR",
+        "short": "- VAR.2 - ",
         "definition": "Definition: This field contains the time stamp that identifies the timed occurrence of the variance documentation.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -68,7 +70,7 @@
       {
         "id": "VAR.3",
         "path": "VAR.3",
-        "short": " - VAR",
+        "short": "- VAR.3 - ",
         "definition": "Definition: This field contains the time stamp that identifies a stated time of the variance which may be different than the time it was documented.",
         "description": null,
         "code": [
@@ -81,7 +83,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "VAR.4",
         "path": "VAR.4",
-        "short": " - VAR",
+        "short": "- VAR.4 - ",
         "definition": "Definition: This field contains the originator (person or system) documenting the variance.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -120,7 +122,7 @@
       {
         "id": "VAR.5",
         "path": "VAR.5",
-        "short": " - VAR",
+        "short": "- VAR.5 - ",
         "definition": "Definition: This field identifies a categorical set of variances. Classification may be used by applications for presentation and processing functions.",
         "description": null,
         "code": [
@@ -133,7 +135,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -146,7 +148,7 @@
       {
         "id": "VAR.6",
         "path": "VAR.6",
-        "short": " - VAR",
+        "short": "- VAR.6 - ",
         "definition": "Definition: This field specifies the details of a variance. The content of the field is a string with optional formatting.",
         "description": null,
         "code": [
@@ -159,7 +161,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -184,9 +186,7 @@
       }
     ]
   },
-  "id": "VAR",
   "title": "HL7 v2 VAR Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/VAR",
   "name": "VAR",
-  "type": "http://hl7.org/v2/StructureDefinition/VAR"
+  "type": "VAR"
 }

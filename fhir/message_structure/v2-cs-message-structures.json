@@ -1,0 +1,1680 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://hl7.org/v2/CodeSystem/MessageStructures",
+  "status": "active",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A01-A",
+      "display": "ADT_A01-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A01-B",
+      "display": "ADT_A01-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A01-C",
+      "display": "ADT_A01-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A01-D",
+      "display": "ADT_A01-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-A",
+      "display": "ACK-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-B",
+      "display": "ACK-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-C",
+      "display": "ACK-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-D",
+      "display": "ACK-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-E",
+      "display": "ACK-E"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-F",
+      "display": "ACK-F"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-G",
+      "display": "ACK-G"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-H",
+      "display": "ACK-H"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-I",
+      "display": "ACK-I"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-J",
+      "display": "ACK-J"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-K",
+      "display": "ACK-K"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-L",
+      "display": "ACK-L"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-M",
+      "display": "ACK-M"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-N",
+      "display": "ACK-N"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-O",
+      "display": "ACK-O"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-P",
+      "display": "ACK-P"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-Q",
+      "display": "ACK-Q"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-R",
+      "display": "ACK-R"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-S",
+      "display": "ACK-S"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-T",
+      "display": "ACK-T"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-U",
+      "display": "ACK-U"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-V",
+      "display": "ACK-V"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-W",
+      "display": "ACK-W"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-X",
+      "display": "ACK-X"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-Y",
+      "display": "ACK-Y"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-Z",
+      "display": "ACK-Z"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AA",
+      "display": "ACK-AA"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AB",
+      "display": "ACK-AB"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AC",
+      "display": "ACK-AC"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AD",
+      "display": "ACK-AD"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AE",
+      "display": "ACK-AE"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AF",
+      "display": "ACK-AF"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AG",
+      "display": "ACK-AG"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AH",
+      "display": "ACK-AH"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AI",
+      "display": "ACK-AI"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AJ",
+      "display": "ACK-AJ"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AK",
+      "display": "ACK-AK"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AL",
+      "display": "ACK-AL"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AM",
+      "display": "ACK-AM"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AN",
+      "display": "ACK-AN"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AO",
+      "display": "ACK-AO"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AP",
+      "display": "ACK-AP"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AQ",
+      "display": "ACK-AQ"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AR",
+      "display": "ACK-AR"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AS",
+      "display": "ACK-AS"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AT",
+      "display": "ACK-AT"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AU",
+      "display": "ACK-AU"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AV",
+      "display": "ACK-AV"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AW",
+      "display": "ACK-AW"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AX",
+      "display": "ACK-AX"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AY",
+      "display": "ACK-AY"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-AZ",
+      "display": "ACK-AZ"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BA",
+      "display": "ACK-BA"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BB",
+      "display": "ACK-BB"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BC",
+      "display": "ACK-BC"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BD",
+      "display": "ACK-BD"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BE",
+      "display": "ACK-BE"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BF",
+      "display": "ACK-BF"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BG",
+      "display": "ACK-BG"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BH",
+      "display": "ACK-BH"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BI",
+      "display": "ACK-BI"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BJ",
+      "display": "ACK-BJ"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BK",
+      "display": "ACK-BK"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BL",
+      "display": "ACK-BL"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BM",
+      "display": "ACK-BM"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BN",
+      "display": "ACK-BN"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BO",
+      "display": "ACK-BO"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BP",
+      "display": "ACK-BP"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BQ",
+      "display": "ACK-BQ"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BR",
+      "display": "ACK-BR"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BS",
+      "display": "ACK-BS"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BT",
+      "display": "ACK-BT"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BU",
+      "display": "ACK-BU"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BV",
+      "display": "ACK-BV"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BW",
+      "display": "ACK-BW"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BX",
+      "display": "ACK-BX"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BY",
+      "display": "ACK-BY"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-BZ",
+      "display": "ACK-BZ"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CA",
+      "display": "ACK-CA"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CB",
+      "display": "ACK-CB"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CC",
+      "display": "ACK-CC"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CD",
+      "display": "ACK-CD"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CE",
+      "display": "ACK-CE"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CF",
+      "display": "ACK-CF"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CG",
+      "display": "ACK-CG"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CH",
+      "display": "ACK-CH"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CI",
+      "display": "ACK-CI"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CJ",
+      "display": "ACK-CJ"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CK",
+      "display": "ACK-CK"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CL",
+      "display": "ACK-CL"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CM",
+      "display": "ACK-CM"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CN",
+      "display": "ACK-CN"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CO",
+      "display": "ACK-CO"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CP",
+      "display": "ACK-CP"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CQ",
+      "display": "ACK-CQ"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CR",
+      "display": "ACK-CR"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CS",
+      "display": "ACK-CS"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CT",
+      "display": "ACK-CT"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CU",
+      "display": "ACK-CU"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CV",
+      "display": "ACK-CV"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CW",
+      "display": "ACK-CW"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CX",
+      "display": "ACK-CX"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CY",
+      "display": "ACK-CY"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-CZ",
+      "display": "ACK-CZ"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DA",
+      "display": "ACK-DA"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DB",
+      "display": "ACK-DB"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DC",
+      "display": "ACK-DC"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DD",
+      "display": "ACK-DD"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DE",
+      "display": "ACK-DE"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DF",
+      "display": "ACK-DF"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DG",
+      "display": "ACK-DG"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DH",
+      "display": "ACK-DH"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DI",
+      "display": "ACK-DI"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DJ",
+      "display": "ACK-DJ"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ACK-DK",
+      "display": "ACK-DK"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A02",
+      "display": "ADT_A02"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A03",
+      "display": "ADT_A03"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A05-A",
+      "display": "ADT_A05-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A05-B",
+      "display": "ADT_A05-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A05-C",
+      "display": "ADT_A05-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A05-D",
+      "display": "ADT_A05-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A06-A",
+      "display": "ADT_A06-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A06-B",
+      "display": "ADT_A06-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A09-A",
+      "display": "ADT_A09-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A09-B",
+      "display": "ADT_A09-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A09-C",
+      "display": "ADT_A09-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A12",
+      "display": "ADT_A12"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A15",
+      "display": "ADT_A15"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A16",
+      "display": "ADT_A16"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A17",
+      "display": "ADT_A17"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A20",
+      "display": "ADT_A20"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A21-A",
+      "display": "ADT_A21-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A21-B",
+      "display": "ADT_A21-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A21-C",
+      "display": "ADT_A21-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A21-D",
+      "display": "ADT_A21-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A21-E",
+      "display": "ADT_A21-E"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A21-F",
+      "display": "ADT_A21-F"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A21-G",
+      "display": "ADT_A21-G"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A21-H",
+      "display": "ADT_A21-H"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A21-I",
+      "display": "ADT_A21-I"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A24",
+      "display": "ADT_A24"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A37",
+      "display": "ADT_A37"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A38",
+      "display": "ADT_A38"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A39-A",
+      "display": "ADT_A39-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A39-B",
+      "display": "ADT_A39-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A39-C",
+      "display": "ADT_A39-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A43-A",
+      "display": "ADT_A43-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A43-B",
+      "display": "ADT_A43-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A44-A",
+      "display": "ADT_A44-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A44-B",
+      "display": "ADT_A44-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A45",
+      "display": "ADT_A45"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A50-A",
+      "display": "ADT_A50-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A50-B",
+      "display": "ADT_A50-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A52-A",
+      "display": "ADT_A52-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A52-B",
+      "display": "ADT_A52-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A54-A",
+      "display": "ADT_A54-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A54-B",
+      "display": "ADT_A54-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q21-A",
+      "display": "QBP_Q21-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q21-B",
+      "display": "QBP_Q21-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q21-C",
+      "display": "QBP_Q21-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q21-D",
+      "display": "QBP_Q21-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q21-E",
+      "display": "QBP_Q21-E"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q21-F",
+      "display": "QBP_Q21-F"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_K21",
+      "display": "RSP_K21"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_K22",
+      "display": "RSP_K22"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_K23-A",
+      "display": "RSP_K23-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_K23-B",
+      "display": "RSP_K23-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A60",
+      "display": "ADT_A60"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A61-A",
+      "display": "ADT_A61-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ADT_A61-B",
+      "display": "ADT_A61-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_K32",
+      "display": "RSP_K32"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OMG_O19",
+      "display": "OMG_O19"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORG_O20",
+      "display": "ORG_O20"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OML_O21",
+      "display": "OML_O21"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORL_O22",
+      "display": "ORL_O22"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORL_O53",
+      "display": "ORL_O53"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OML_O33",
+      "display": "OML_O33"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORL_O34",
+      "display": "ORL_O34"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORL_O54",
+      "display": "ORL_O54"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OML_O35",
+      "display": "OML_O35"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORL_O36",
+      "display": "ORL_O36"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORL_O55",
+      "display": "ORL_O55"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OML_O39",
+      "display": "OML_O39"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORL_O40",
+      "display": "ORL_O40"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORL_O56",
+      "display": "ORL_O56"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OMI_O23",
+      "display": "OMI_O23"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORI_O24",
+      "display": "ORI_O24"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OPL_O37",
+      "display": "OPL_O37"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OPR_O38",
+      "display": "OPR_O38"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OSU_O51",
+      "display": "OSU_O51"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OSU_O52",
+      "display": "OSU_O52"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OMQ_O57",
+      "display": "OMQ_O57"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORX_O58",
+      "display": "ORX_O58"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OML_O59",
+      "display": "OML_O59"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Z73",
+      "display": "QBP_Z73"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RTB_Z74",
+      "display": "RTB_Z74"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OMD_O03",
+      "display": "OMD_O03"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORD_O04",
+      "display": "ORD_O04"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OMS_O05",
+      "display": "OMS_O05"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORS_O06",
+      "display": "ORS_O06"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OMN_O07",
+      "display": "OMN_O07"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORN_O08",
+      "display": "ORN_O08"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OMB_O27",
+      "display": "OMB_O27"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORB_O28",
+      "display": "ORB_O28"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BPS_O29",
+      "display": "BPS_O29"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BRP_O30",
+      "display": "BRP_O30"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BTS_O31",
+      "display": "BTS_O31"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BRT_O32",
+      "display": "BRT_O32"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DBC_O41",
+      "display": "DBC_O41"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DBC_O42",
+      "display": "DBC_O42"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_O33",
+      "display": "QBP_O33"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_O33",
+      "display": "RSP_O33"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_O34",
+      "display": "QBP_O34"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_O34",
+      "display": "RSP_O34"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DRG_O43",
+      "display": "DRG_O43"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DER_O44",
+      "display": "DER_O44"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DEO_O45",
+      "display": "DEO_O45"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DEL_O46",
+      "display": "DEL_O46"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DRC_O47",
+      "display": "DRC_O47"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DPR_O48",
+      "display": "DPR_O48"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OMP_O09",
+      "display": "OMP_O09"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORP_O10",
+      "display": "ORP_O10"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDE_O11-A",
+      "display": "RDE_O11-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDE_O11-B",
+      "display": "RDE_O11-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RRE_O12-A",
+      "display": "RRE_O12-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RRE_O12-B",
+      "display": "RRE_O12-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDS_O13",
+      "display": "RDS_O13"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RRD_O14",
+      "display": "RRD_O14"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RGV_O15",
+      "display": "RGV_O15"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RRG_O16",
+      "display": "RRG_O16"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RAS_O17",
+      "display": "RAS_O17"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RRA_O18",
+      "display": "RRA_O18"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q11-A",
+      "display": "QBP_Q11-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q11-B",
+      "display": "QBP_Q11-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q11-C",
+      "display": "QBP_Q11-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q11-D",
+      "display": "QBP_Q11-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q11-E",
+      "display": "QBP_Q11-E"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_K31",
+      "display": "RSP_K31"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDE_O49",
+      "display": "RDE_O49"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RRE_O50",
+      "display": "RRE_O50"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RCV_O59",
+      "display": "RCV_O59"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/VXU_V04",
+      "display": "VXU_V04"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q13",
+      "display": "QBP_Q13"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_Z84",
+      "display": "RSP_Z84"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Qnn",
+      "display": "QBP_Qnn"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RTB_Knn",
+      "display": "RTB_Knn"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDY_K15-A",
+      "display": "RDY_K15-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDY_K15-B",
+      "display": "RDY_K15-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDY_K15-C",
+      "display": "RDY_K15-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDY_K15-D",
+      "display": "RDY_K15-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RTB_K13-A",
+      "display": "RTB_K13-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RTB_K13-B",
+      "display": "RTB_K13-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RTB_K13-C",
+      "display": "RTB_K13-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RTB_K13-D",
+      "display": "RTB_K13-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RTB_K13-E",
+      "display": "RTB_K13-E"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RTB_K13-F",
+      "display": "RTB_K13-F"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RTB_K13-G",
+      "display": "RTB_K13-G"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_Znn",
+      "display": "RSP_Znn"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_K11",
+      "display": "RSP_K11"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_Q15",
+      "display": "QBP_Q15"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QSB_Q16-A",
+      "display": "QSB_Q16-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QSB_Q16-B",
+      "display": "QSB_Q16-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QVR_Q17",
+      "display": "QVR_Q17"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QCN_J01-A",
+      "display": "QCN_J01-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QCN_J01-B",
+      "display": "QCN_J01-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_Z82",
+      "display": "RSP_Z82"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_Z86",
+      "display": "RSP_Z86"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_Z88",
+      "display": "RSP_Z88"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_Z90",
+      "display": "RSP_Z90"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RDY_Z80",
+      "display": "RDY_Z80"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BAR_P01",
+      "display": "BAR_P01"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BAR_P02",
+      "display": "BAR_P02"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DFT_P03",
+      "display": "DFT_P03"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BAR_P05",
+      "display": "BAR_P05"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BAR_P06",
+      "display": "BAR_P06"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BAR_P10",
+      "display": "BAR_P10"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/DFT_P11",
+      "display": "DFT_P11"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/BAR_P12",
+      "display": "BAR_P12"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORU_R01-A",
+      "display": "ORU_R01-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORU_R01-B",
+      "display": "ORU_R01-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORU_R01-C",
+      "display": "ORU_R01-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORU_R01-D",
+      "display": "ORU_R01-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORU_R30-A",
+      "display": "ORU_R30-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORU_R30-B",
+      "display": "ORU_R30-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORU_R30-C",
+      "display": "ORU_R30-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORA_R33",
+      "display": "ORA_R33"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OUL_R22",
+      "display": "OUL_R22"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OUL_R23",
+      "display": "OUL_R23"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OUL_R24",
+      "display": "OUL_R24"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OPU_R25",
+      "display": "OPU_R25"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ORA_R41",
+      "display": "ORA_R41"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CRM_C01",
+      "display": "CRM_C01"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CSU_C09",
+      "display": "CSU_C09"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PEX_P07",
+      "display": "PEX_P07"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/OSM_R26",
+      "display": "OSM_R26"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M13",
+      "display": "MFN_M13"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-A",
+      "display": "MFK_M01-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-B",
+      "display": "MFK_M01-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-C",
+      "display": "MFK_M01-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-D",
+      "display": "MFK_M01-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-E",
+      "display": "MFK_M01-E"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-F",
+      "display": "MFK_M01-F"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-G",
+      "display": "MFK_M01-G"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-H",
+      "display": "MFK_M01-H"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-I",
+      "display": "MFK_M01-I"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-J",
+      "display": "MFK_M01-J"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-K",
+      "display": "MFK_M01-K"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-L",
+      "display": "MFK_M01-L"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-M",
+      "display": "MFK_M01-M"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-N",
+      "display": "MFK_M01-N"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-O",
+      "display": "MFK_M01-O"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFK_M01-P",
+      "display": "MFK_M01-P"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_Znn",
+      "display": "MFN_Znn"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M02",
+      "display": "MFN_M02"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M08",
+      "display": "MFN_M08"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M09",
+      "display": "MFN_M09"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M10",
+      "display": "MFN_M10"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M11",
+      "display": "MFN_M11"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M12",
+      "display": "MFN_M12"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M18",
+      "display": "MFN_M18"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M05",
+      "display": "MFN_M05"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M04",
+      "display": "MFN_M04"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M06",
+      "display": "MFN_M06"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M07",
+      "display": "MFN_M07"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M15",
+      "display": "MFN_M15"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M16",
+      "display": "MFN_M16"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M17",
+      "display": "MFN_M17"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MFN_M19",
+      "display": "MFN_M19"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T01-A",
+      "display": "MDM_T01-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T01-B",
+      "display": "MDM_T01-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T01-C",
+      "display": "MDM_T01-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T01-D",
+      "display": "MDM_T01-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T01-E",
+      "display": "MDM_T01-E"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T01-F",
+      "display": "MDM_T01-F"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T02-A",
+      "display": "MDM_T02-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T02-B",
+      "display": "MDM_T02-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T02-C",
+      "display": "MDM_T02-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T02-D",
+      "display": "MDM_T02-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/MDM_T02-E",
+      "display": "MDM_T02-E"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SRM_S01",
+      "display": "SRM_S01"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SRR_S01",
+      "display": "SRR_S01"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SIU_S12",
+      "display": "SIU_S12"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RQI_I01-A",
+      "display": "RQI_I01-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RQI_I01-B",
+      "display": "RQI_I01-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RQI_I01-C",
+      "display": "RQI_I01-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RQI_I01-D",
+      "display": "RQI_I01-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RPI_I01",
+      "display": "RPI_I01"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RPL_I02",
+      "display": "RPL_I02"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RPR_I03",
+      "display": "RPR_I03"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RQP_I04",
+      "display": "RQP_I04"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RPI_I04",
+      "display": "RPI_I04"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RQA_I08",
+      "display": "RQA_I08"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RPA_I08",
+      "display": "RPA_I08"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/REF_I12",
+      "display": "REF_I12"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RRI_I12",
+      "display": "RRI_I12"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CCM_I21",
+      "display": "CCM_I21"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CCR_I16",
+      "display": "CCR_I16"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CCU_I20",
+      "display": "CCU_I20"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CCQ_I19",
+      "display": "CCQ_I19"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CQU_I19",
+      "display": "CQU_I19"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CCF_I22",
+      "display": "CCF_I22"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/CCI_I22",
+      "display": "CCI_I22"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PGL_PC6",
+      "display": "PGL_PC6"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PPR_PC1",
+      "display": "PPR_PC1"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PPP_PCB",
+      "display": "PPP_PCB"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PPG_PCG",
+      "display": "PPG_PCG"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ESU_U01",
+      "display": "ESU_U01"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/ESR_U02",
+      "display": "ESR_U02"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SSU_U03",
+      "display": "SSU_U03"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SSR_U04",
+      "display": "SSR_U04"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/INU_U05",
+      "display": "INU_U05"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/INR_U06",
+      "display": "INR_U06"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EAC_U07",
+      "display": "EAC_U07"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EAR_U08",
+      "display": "EAR_U08"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EAN_U09",
+      "display": "EAN_U09"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/TCU_U10-A",
+      "display": "TCU_U10-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/TCU_U10-B",
+      "display": "TCU_U10-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/LSU_U12-A",
+      "display": "LSU_U12-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/LSU_U12-B",
+      "display": "LSU_U12-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/INR_U14",
+      "display": "INR_U14"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/NMD_N02",
+      "display": "NMD_N02"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PMU_B01-A",
+      "display": "PMU_B01-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PMU_B01-B",
+      "display": "PMU_B01-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PMU_B03",
+      "display": "PMU_B03"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PMU_B04-A",
+      "display": "PMU_B04-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PMU_B04-B",
+      "display": "PMU_B04-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PMU_B04-C",
+      "display": "PMU_B04-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_K25",
+      "display": "RSP_K25"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PMU_B07",
+      "display": "PMU_B07"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/PMU_B08",
+      "display": "PMU_B08"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EHC_E01",
+      "display": "EHC_E01"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EHC_E02",
+      "display": "EHC_E02"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_E03",
+      "display": "QBP_E03"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_E03",
+      "display": "RSP_E03"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EHC_E04",
+      "display": "EHC_E04"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EHC_E10",
+      "display": "EHC_E10"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EHC_E12",
+      "display": "EHC_E12"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EHC_E13",
+      "display": "EHC_E13"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EHC_E15",
+      "display": "EHC_E15"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EHC_E20",
+      "display": "EHC_E20"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EHC_E21",
+      "display": "EHC_E21"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/QBP_E22",
+      "display": "QBP_E22"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/RSP_E22",
+      "display": "RSP_E22"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/EHC_E24",
+      "display": "EHC_E24"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SLR_S28-A",
+      "display": "SLR_S28-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SLR_S28-B",
+      "display": "SLR_S28-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SLR_S28-C",
+      "display": "SLR_S28-C"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SLR_S28-D",
+      "display": "SLR_S28-D"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SLR_S28-E",
+      "display": "SLR_S28-E"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SDR_S31-A",
+      "display": "SDR_S31-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SDR_S31-B",
+      "display": "SDR_S31-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SDR_S32-A",
+      "display": "SDR_S32-A"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/SDR_S32-B",
+      "display": "SDR_S32-B"
+    },
+    {
+      "code": "http://hl7.org/v2/StructureDefinition/STC_S33",
+      "display": "STC_S33"
+    }
+  ]
+}

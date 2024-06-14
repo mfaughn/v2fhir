@@ -1,0 +1,955 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PPP_PCB",
+  "id": "PPP_PCB",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "PPP_PCB.1-MSH",
+          "path": "PPP_PCB.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPP_PCB.2-SFT",
+          "path": "PPP_PCB.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPP_PCB.3-UAC",
+          "path": "PPP_PCB.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPP_PCB.4-PID",
+          "path": "PPP_PCB.4-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPP_PCB.5-GSP",
+          "path": "PPP_PCB.5-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPP_PCB.6-GSR",
+          "path": "PPP_PCB.6-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPP_PCB.7-GSC",
+          "path": "PPP_PCB.7-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PPP_PCB.8-PROVIDER",
+          "path": "PPP_PCB.8-PROVIDER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PPP_PCB.8-PROVIDER.1-PRD",
+              "path": "PPP_PCB.8-PROVIDER.1-PRD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PPP_PCB.8-PROVIDER.2-CTD",
+              "path": "PPP_PCB.8-PROVIDER.2-CTD",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "PPP_PCB.9-PATIENT_VISIT",
+          "path": "PPP_PCB.9-PATIENT_VISIT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PPP_PCB.9-PATIENT_VISIT.1-PV1",
+              "path": "PPP_PCB.9-PATIENT_VISIT.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PPP_PCB.9-PATIENT_VISIT.2-PV2",
+              "path": "PPP_PCB.9-PATIENT_VISIT.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "PPP_PCB.10-PATHWAY",
+          "path": "PPP_PCB.10-PATHWAY",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PPP_PCB.10-PATHWAY.1-PTH",
+              "path": "PPP_PCB.10-PATHWAY.1-PTH",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PTH"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PPP_PCB.10-PATHWAY.2-NTE",
+              "path": "PPP_PCB.10-PATHWAY.2-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PPP_PCB.10-PATHWAY.3-VAR",
+              "path": "PPP_PCB.10-PATHWAY.3-VAR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PPP_PCB.10-PATHWAY.4-PATHWAY_PARTICIPATION",
+              "path": "PPP_PCB.10-PATHWAY.4-PATHWAY_PARTICIPATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "PPP_PCB.10-PATHWAY.4-PATHWAY_PARTICIPATION.1-ROL",
+                  "path": "PPP_PCB.10-PATHWAY.4-PATHWAY_PARTICIPATION.1-ROL",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PPP_PCB.10-PATHWAY.4-PATHWAY_PARTICIPATION.2-PRT",
+                  "path": "PPP_PCB.10-PATHWAY.4-PATHWAY_PARTICIPATION.2-PRT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PPP_PCB.10-PATHWAY.4-PATHWAY_PARTICIPATION.3-VAR",
+                  "path": "PPP_PCB.10-PATHWAY.4-PATHWAY_PARTICIPATION.3-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "PPP_PCB.10-PATHWAY.5-PROBLEM",
+              "path": "PPP_PCB.10-PATHWAY.5-PROBLEM",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.1-PRB",
+                  "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.1-PRB",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRB"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.2-NTE",
+                  "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.3-VAR",
+                  "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.3-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.4-PROBLEM_PARTICIPATION",
+                  "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.4-PROBLEM_PARTICIPATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.4-PROBLEM_PARTICIPATION.1-ROL",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.4-PROBLEM_PARTICIPATION.1-ROL",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.4-PROBLEM_PARTICIPATION.2-PRT",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.4-PROBLEM_PARTICIPATION.2-PRT",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.4-PROBLEM_PARTICIPATION.3-VAR",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.4-PROBLEM_PARTICIPATION.3-VAR",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.5-PROBLEM_OBSERVATION",
+                  "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.5-PROBLEM_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.5-PROBLEM_OBSERVATION.1-OBX",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.5-PROBLEM_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.5-PROBLEM_OBSERVATION.2-PRT",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.5-PROBLEM_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.5-PROBLEM_OBSERVATION.3-NTE",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.5-PROBLEM_OBSERVATION.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL",
+                  "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.1-GOL",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.1-GOL",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/GOL"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.2-NTE",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.2-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.3-VAR",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.3-VAR",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.4-GOAL_PARTICIPATION",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.4-GOAL_PARTICIPATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.4-GOAL_PARTICIPATION.1-ROL",
+                          "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.4-GOAL_PARTICIPATION.1-ROL",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.4-GOAL_PARTICIPATION.2-PRT",
+                          "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.4-GOAL_PARTICIPATION.2-PRT",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.4-GOAL_PARTICIPATION.3-VAR",
+                          "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.4-GOAL_PARTICIPATION.3-VAR",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.5-GOAL_OBSERVATION",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.5-GOAL_OBSERVATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.5-GOAL_OBSERVATION.1-OBX",
+                          "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.5-GOAL_OBSERVATION.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.5-GOAL_OBSERVATION.2-PRT",
+                          "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.5-GOAL_OBSERVATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.5-GOAL_OBSERVATION.3-NTE",
+                          "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.6-GOAL.5-GOAL_OBSERVATION.3-NTE",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER",
+                  "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.1-ORC",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.1-ORC",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL",
+                      "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.1-CHOICE",
+                          "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.1-CHOICE",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.1-CHOICE.1",
+                              "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.1-CHOICE.1",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "BackboneElement"
+                                }
+                              ]
+                            },
+                            [
+                              [
+                                {
+                                  "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.1-CHOICE.1.1-OBR",
+                                  "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.1-CHOICE.1.1-OBR",
+                                  "min": 0,
+                                  "max": "1",
+                                  "definition": "1",
+                                  "short": "1",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          ],
+                          [
+                            {
+                              "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.1-CHOICE.2",
+                              "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.1-CHOICE.2",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "BackboneElement"
+                                }
+                              ]
+                            },
+                            [
+                              [
+                                {
+                                  "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.1-CHOICE.2.1-Hxx",
+                                  "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.1-CHOICE.2.1-Hxx",
+                                  "min": 0,
+                                  "max": "1",
+                                  "definition": "1",
+                                  "short": "1",
+                                  "type": [
+                                    {
+                                      "code": "http://hl7.org/v2/StructureDefinition/Hxx"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.2-NTE",
+                          "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.2-NTE",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.3-VAR",
+                          "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.3-VAR",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION",
+                          "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.1-OBX",
+                              "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.1-OBX",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.2-PRT",
+                              "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.2-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.3-NTE",
+                              "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.3-NTE",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.4-VAR",
+                              "path": "PPP_PCB.10-PATHWAY.5-PROBLEM.7-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.4-VAR",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 PPP_PCB Segment Definition",
+  "name": "PPP_PCB",
+  "type": "http://hl7.org/v2/StructureDefinition/PPP_PCB"
+}

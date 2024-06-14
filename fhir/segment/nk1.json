@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/NK1",
+  "id": "NK1",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "NK1.1",
         "path": "NK1.1",
-        "short": " - NK1",
+        "short": "- NK1.1 - ",
         "definition": "Definition: This field contains the number that identifies this transaction. For the first occurrence of the segment, the sequence number shall be one, for the second occurrence, the sequence number shall be two, etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "NK1.2",
         "path": "NK1.2",
-        "short": " - NK1",
+        "short": "- NK1.2 - ",
         "definition": "Definition: This field contains one or more of the names of the next of kin or associated party. The _XPN.7 Name Type Code_, and not the order, conveys how the name should be interpreted. As of v 2.7 Name Type Code is required. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70200[_HL7 Table 0200 - Name Type_] in Chapter 2C, Code Tables, for valid values. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "NK1.3",
         "path": "NK1.3",
-        "short": " - NK1",
+        "short": "- NK1.3 - ",
         "definition": "Definition: This field contains the actual personal relationship that the next of kin/associated party has to the patient. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70063[_User-defined Table 0063 - Relationship_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -115,7 +117,7 @@
       {
         "id": "NK1.4",
         "path": "NK1.4",
-        "short": " - NK1",
+        "short": "- NK1.4 - ",
         "definition": "Definition: This field contains the address of the next of kin/associated party. Multiple addresses are allowed for the same person. As of v2.7 the \"primary mailing address\" constraint as the first sequence has been removed. Primary Mailing Address is not an entry in either _XAD.7 – Address Type_ or in _XAD.18 – Address Usage_.",
         "description": null,
         "code": [
@@ -128,7 +130,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -141,7 +143,7 @@
       {
         "id": "NK1.5",
         "path": "NK1.5",
-        "short": " - NK1",
+        "short": "- NK1.5 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -152,7 +154,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -165,7 +167,7 @@
       {
         "id": "NK1.6",
         "path": "NK1.6",
-        "short": " - NK1",
+        "short": "- NK1.6 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -176,7 +178,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -189,7 +191,7 @@
       {
         "id": "NK1.7",
         "path": "NK1.7",
-        "short": " - NK1",
+        "short": "- NK1.7 - ",
         "definition": "Definition: This field indicates the specific relationship role. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70131[_User-defined Table 0131 - Contact Role_] in Chapter 2C, Code Tables, for suggested values. This field specifies the role that the next of kin/associated parties plays with regard to the patient.",
         "description": null,
         "code": [
@@ -202,7 +204,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -219,7 +221,7 @@
       {
         "id": "NK1.8",
         "path": "NK1.8",
-        "short": " - NK1",
+        "short": "- NK1.8 - ",
         "definition": "Definition: This field contains the start date of the contact role.",
         "description": null,
         "code": [
@@ -232,7 +234,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -245,7 +247,7 @@
       {
         "id": "NK1.9",
         "path": "NK1.9",
-        "short": " - NK1",
+        "short": "- NK1.9 - ",
         "definition": "Definition: This field contains the end date of the contact role.",
         "description": null,
         "code": [
@@ -258,7 +260,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -271,7 +273,7 @@
       {
         "id": "NK1.10",
         "path": "NK1.10",
-        "short": " - NK1",
+        "short": "- NK1.10 - ",
         "definition": "Definition: This field contains the title of the next of kin/associated parties at their place of employment. However, if the contact role is the patient's employer, this field contains the job title of the patient at their place of employment.",
         "description": null,
         "code": [
@@ -284,7 +286,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -310,7 +312,7 @@
       {
         "id": "NK1.11",
         "path": "NK1.11",
-        "short": " - NK1",
+        "short": "- NK1.11 - ",
         "definition": "Definition: This field contains the employer's job code and the employee classification used for the next of kin/associated parties at their place of employment. However, if the contact role is the patient's employer, this field contains the job code/class of the patient at their place of employment.",
         "description": null,
         "code": [
@@ -323,7 +325,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/JCC"
+            "code": "JCC"
           }
         ],
         "extension": [
@@ -336,7 +338,7 @@
       {
         "id": "NK1.12",
         "path": "NK1.12",
-        "short": " - NK1",
+        "short": "- NK1.12 - ",
         "definition": "Definition: For backward compatibility, the ST data type can be sent; however, HL7 recommends that the CX data type be used for new implementations. This field contains the number that the employer assigns to the employee that is acting as next of kin/associated parties. However, if the contact role is the patient's employer, this field contains the employee number of the patient at their place of employment. The assigning authority and identifier type codes are strongly recommended for all CX data types.",
         "description": null,
         "code": [
@@ -349,7 +351,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -362,7 +364,7 @@
       {
         "id": "NK1.13",
         "path": "NK1.13",
-        "short": " - NK1",
+        "short": "- NK1.13 - ",
         "definition": "Definition: This field contains the name of the organization that serves as a next of kin/associated party or as the next of kin of the patient. This field may also be used to communicate the name of the organization at which the associated party works. Multiple names for the same organization may be sent. If multiple names are sent, the legal name must be sent in the first sequence. If the legal name is not sent, then a repeat delimiter must be sent in the first sequence.",
         "description": null,
         "code": [
@@ -375,7 +377,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -388,7 +390,7 @@
       {
         "id": "NK1.14",
         "path": "NK1.14",
-        "short": " - NK1",
+        "short": "- NK1.14 - ",
         "definition": "Definition: This field contains the next of kin/associated party's marital status. Refer to _E:\\\\V2\\\\v2.9 final Nov from Frank\\\\V29_CH02C_Tables.docx#HL70002[User-defined Table 0002 - Marital Status]_ in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -401,7 +403,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -418,7 +420,7 @@
       {
         "id": "NK1.15",
         "path": "NK1.15",
-        "short": " - NK1",
+        "short": "- NK1.15 - ",
         "definition": "Definition: This field contains the next of kin/associated party's sex. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70001[_User-defined Table 0001 - Administrative Sex_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -431,7 +433,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -448,7 +450,7 @@
       {
         "id": "NK1.16",
         "path": "NK1.16",
-        "short": " - NK1",
+        "short": "- NK1.16 - ",
         "definition": "Definition: This field contains the next of kin/associated party's birth date and time.",
         "description": null,
         "code": [
@@ -461,7 +463,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -474,7 +476,7 @@
       {
         "id": "NK1.17",
         "path": "NK1.17",
-        "short": " - NK1",
+        "short": "- NK1.17 - ",
         "definition": "Definition: This field identifies specific living conditions (e.g., spouse dependent on patient, walk-up) that are relevant to an evaluation of the patient's healthcare needs. This information can be used for discharge planning. Examples might include Spouse Dependent, Medical Supervision Required, Small Children Dependent. This field repeats because, for example, \"spouse dependent\" and \"medical supervision required\" can apply at the same time. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70223[_User-defined Table 0223 - Living Dependency_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -487,7 +489,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -504,7 +506,7 @@
       {
         "id": "NK1.18",
         "path": "NK1.18",
-        "short": " - NK1",
+        "short": "- NK1.18 - ",
         "definition": "Definition: This field identifies the transient rate of mobility for the next of kin/associated party. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70009[_User-defined Table 0009 - Ambulatory Status_] in Chapter 2C, Code Tables for suggested values.",
         "description": null,
         "code": [
@@ -517,7 +519,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -534,7 +536,7 @@
       {
         "id": "NK1.19",
         "path": "NK1.19",
-        "short": " - NK1",
+        "short": "- NK1.19 - ",
         "definition": "Definition: This field contains the code to identify the next of kin/associated party's citizenship. HL7 recommends using ISO 3166 as the suggested values in file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70171[_User-defined Table 0171 - Citizenship_] in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -547,7 +549,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -564,7 +566,7 @@
       {
         "id": "NK1.20",
         "path": "NK1.20",
-        "short": " - NK1",
+        "short": "- NK1.20 - ",
         "definition": "Definition: This field identifies the next of kin/associated party's primary speaking language. HL7 recommends using ISO 639 as the suggested values in file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70296[_User-defined Table 0296 - Language_] in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -577,7 +579,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -594,7 +596,7 @@
       {
         "id": "NK1.21",
         "path": "NK1.21",
-        "short": " - NK1",
+        "short": "- NK1.21 - ",
         "definition": "Definition: This field identifies the situation that the associated party lives in at his/her residential address. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70220[_User-defined Table 0220 - Living Arrangement_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -607,7 +609,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -624,7 +626,7 @@
       {
         "id": "NK1.22",
         "path": "NK1.22",
-        "short": " - NK1",
+        "short": "- NK1.22 - ",
         "definition": "Definition: This field indicates what level of publicity is allowed (e.g., No Publicity, Family Only) for the next of kin/associated party. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70215[_User-defined Table 0215 - Publicity Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -637,7 +639,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -654,7 +656,7 @@
       {
         "id": "NK1.23",
         "path": "NK1.23",
-        "short": " - NK1",
+        "short": "- NK1.23 - ",
         "definition": "Definition: This field identifies that next of kin/associated party's protection that determines, in turn, whether access to information about this person should be kept from users who do not have adequate authority. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/No Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -667,7 +669,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -697,7 +699,7 @@
       {
         "id": "NK1.24",
         "path": "NK1.24",
-        "short": " - NK1",
+        "short": "- NK1.24 - ",
         "definition": "Definition: This field identifies whether the next of kin/associated party is currently a student or not, and whether the next of kin/associated party is a full- or a part-time student. This field does not indicate the degree (high school, college) of the student or the field of study. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70231[_User-defined Table 0231 - Student Status_] in chapter 2C, for suggested values.",
         "description": null,
         "code": [
@@ -710,7 +712,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -727,7 +729,7 @@
       {
         "id": "NK1.25",
         "path": "NK1.25",
-        "short": " - NK1",
+        "short": "- NK1.25 - ",
         "definition": "Definition: This field indicates the type of religion practiced by the next of kin/associated party. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70006[_User-defined Table 0006 - Religion_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -740,7 +742,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -757,7 +759,7 @@
       {
         "id": "NK1.26",
         "path": "NK1.26",
-        "short": " - NK1",
+        "short": "- NK1.26 - ",
         "definition": "Definition: This field indicates the maiden name of the next of kin/associated party's mother.",
         "description": null,
         "code": [
@@ -770,7 +772,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -783,7 +785,7 @@
       {
         "id": "NK1.27",
         "path": "NK1.27",
-        "short": " - NK1",
+        "short": "- NK1.27 - ",
         "definition": "Definition: This field identifies the nation or national group to which the next of kin/associated party belongs. This information may be different than the person's citizenship in countries in which multiple nationalities are recognized (e.g., Spain: Basque, Catalan, etc.). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70212[_User-defined Table 0212 - Nationality_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -796,7 +798,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -813,7 +815,7 @@
       {
         "id": "NK1.28",
         "path": "NK1.28",
-        "short": " - NK1",
+        "short": "- NK1.28 - ",
         "definition": "Definition: This field contains the next of kin/associated party's ethnic group. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70189[_User-defined Table 0189 - Ethnic Group_] in Chapter 2C, Code Tables, for suggested values. The second triplet of the CWE data type for ethnic group (alternate identifier, alternate text, and name of alternate coding system) is reserved for governmentally assigned codes. In the US, a current use is to report ethnicity in line with US federal standards for Hispanic origin.",
         "description": null,
         "code": [
@@ -826,7 +828,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -843,7 +845,7 @@
       {
         "id": "NK1.29",
         "path": "NK1.29",
-        "short": " - NK1",
+        "short": "- NK1.29 - ",
         "definition": "Definition: This field identifies how the contact should be used (e.g., contact employer if patient is unable to work). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70222[_User-defined Table 0222 - Contact Reason_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -856,7 +858,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -873,7 +875,7 @@
       {
         "id": "NK1.30",
         "path": "NK1.30",
-        "short": " - NK1",
+        "short": "- NK1.30 - ",
         "definition": "Definition: This field contains one or more of the names of the person to contact, depending on the value of the relationship defined in _NK1-3 - Relationship_. This field is typically needed when the NK1 is an organization. The _XPN.7 Name Type Code_, and not the order, conveys how the name should be interpreted. As of v2.7, Name Type Code is required. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70200[_HL7 Table 0200 - Name Type_] in Chapter 2C, Code Tables, for valid values. Specification of meaning based on sequence is deprecated.",
         "description": null,
         "code": [
@@ -886,7 +888,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "binding": {
@@ -903,7 +905,7 @@
       {
         "id": "NK1.31",
         "path": "NK1.31",
-        "short": " - NK1",
+        "short": "- NK1.31 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -914,7 +916,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -927,7 +929,7 @@
       {
         "id": "NK1.32",
         "path": "NK1.32",
-        "short": " - NK1",
+        "short": "- NK1.32 - ",
         "definition": "Definition: This field contains the addresses of the contact person depending on the value of the relationship defined in _NK1-3 - Relationship_. This field is typically used when the NK1 is an organization. As of v2.7, the \"primary mailing address\" constraint as the first sequence has been removed. Primary Mailing Address is not an entry in either _XAD.7 – Address Type_ or in _XAD.18 – Address Usage_.",
         "description": null,
         "code": [
@@ -940,7 +942,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -953,7 +955,7 @@
       {
         "id": "NK1.33",
         "path": "NK1.33",
-        "short": " - NK1",
+        "short": "- NK1.33 - ",
         "definition": "Definition: This field contains the identifiers for the next of kin/associated party, for example, Social Security Number, driver's license, etc. The assigning authority and identifier type code are strongly recommended for all CX data types.",
         "description": null,
         "code": [
@@ -966,7 +968,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "extension": [
@@ -979,7 +981,7 @@
       {
         "id": "NK1.34",
         "path": "NK1.34",
-        "short": " - NK1",
+        "short": "- NK1.34 - ",
         "definition": "Definition: This field identifies the next of kin/associated party's job status. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70311[_User-defined Table 0311 - Job Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -992,7 +994,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1009,7 +1011,7 @@
       {
         "id": "NK1.35",
         "path": "NK1.35",
-        "short": " - NK1",
+        "short": "- NK1.35 - ",
         "definition": "Definition: This field identifies the race of the next of kin/associated party. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70005[_User-defined Table 0005 - Race_] in Chapter 2C, Code Tables, for suggested values. The second triplet of the CWE data type for race (alternate identifier, alternate text, and name of alternate coding system) is reserved for governmentally assigned codes.",
         "description": null,
         "code": [
@@ -1022,7 +1024,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1039,7 +1041,7 @@
       {
         "id": "NK1.36",
         "path": "NK1.36",
-        "short": " - NK1",
+        "short": "- NK1.36 - ",
         "definition": "Definition: This field contains the code that describes an associated party's disability. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70295[_User-defined Table 0295 - Handicap_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1052,7 +1054,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1069,7 +1071,7 @@
       {
         "id": "NK1.37",
         "path": "NK1.37",
-        "short": " - NK1",
+        "short": "- NK1.37 - ",
         "definition": "Definition: In the US, this field contains the contact person's social security number. This number may also be a RR retirement number. For the Social Security number of the associated party, see _NK1-33 - Next of Kin/Associated Party's identifiers_.",
         "description": null,
         "code": [
@@ -1082,7 +1084,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -1108,7 +1110,7 @@
       {
         "id": "NK1.38",
         "path": "NK1.38",
-        "short": " - NK1",
+        "short": "- NK1.38 - ",
         "definition": "Definition: This field indicates the location of the next-of-kin's birth; for example, \"St. Francis Community Hospital of Lower South Side.\" The actual address is reported in _NK1-4 - Address_ with an identifier of \"N\".",
         "description": null,
         "code": [
@@ -1121,7 +1123,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -1147,7 +1149,7 @@
       {
         "id": "NK1.39",
         "path": "NK1.39",
-        "short": " - NK1",
+        "short": "- NK1.39 - ",
         "definition": "Definition: This field identifies the type of VIP for the next-of-kin. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70099[_User-defined Table 0099 – VIP Indicator_] in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -1160,7 +1162,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1177,7 +1179,7 @@
       {
         "id": "NK1.40",
         "path": "NK1.40",
-        "short": " - NK1",
+        "short": "- NK1.40 - ",
         "definition": "Definition: This field contains the next of kin’s telecommunication contact information. This field replaces _NK1-5 – Phone Number_ and _NK1-6 – Business Phone Number_ with the intention that the components of the XTN data type be used to identify phone usage (Telecommunication use code) and type of equipment (telecommunication equipment type). Jointly, these components will describe the nature of the telecommunication data contained in this field.",
         "description": null,
         "code": [
@@ -1190,7 +1192,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -1203,7 +1205,7 @@
       {
         "id": "NK1.41",
         "path": "NK1.41",
-        "short": " - NK1",
+        "short": "- NK1.41 - ",
         "definition": "Definition: This field contains the contact person’s telecommunication contact information. This field replaces _NK1-31 – Contact Person’s Telephone Number_ with the intention that the components of the XTN data type be used to identify phone usage (Telecommunication use code) and type of equipment (telecommunication equipment type). Jointly, these components will describe the nature of the telecommunication data contained in this field.",
         "description": null,
         "code": [
@@ -1216,7 +1218,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -1228,9 +1230,7 @@
       }
     ]
   },
-  "id": "NK1",
   "title": "HL7 v2 NK1 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/NK1",
   "name": "NK1",
-  "type": "http://hl7.org/v2/StructureDefinition/NK1"
+  "type": "NK1"
 }

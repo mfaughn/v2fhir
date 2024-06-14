@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/TQ2",
+  "id": "TQ2",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "TQ2.1",
         "path": "TQ2.1",
-        "short": " - TQ2",
+        "short": "- TQ2.1 - ",
         "definition": "Definition: For the first timing specification transmitted, the sequence number shall be 1; for the second timing specification, it shall be 2; and so on.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "TQ2.2",
         "path": "TQ2.2",
-        "short": " - TQ2",
+        "short": "- TQ2.2 - ",
         "definition": "Definition: This flag defines the sequencing relationship between the current service request, and the related service request(s) specified in this TQ2 segment. See file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70503[HL7 Table 0503 – Sequence/Results Flag] in Chapter 2C, Code Tables, for values. If not value is present, the S - Sequential is the default value.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -98,7 +100,7 @@
       {
         "id": "TQ2.3",
         "path": "TQ2.3",
-        "short": " - TQ2",
+        "short": "- TQ2.3 - ",
         "definition": "Definition: The placer numbers of the service request(s) to which this TQ2 segment links the current service request. This field should be populated with the appropriate \"Placer number\" from the current service request. For orders, the Placer Order Number from ORC-2 is the appropriate \"Placer number\". Repeats of this field indicate the current service request is related to multiple service requests.",
         "description": null,
         "code": [
@@ -111,7 +113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -124,7 +126,7 @@
       {
         "id": "TQ2.4",
         "path": "TQ2.4",
-        "short": " - TQ2",
+        "short": "- TQ2.4 - ",
         "definition": "Definition: The filler numbers of the service request(s) to which this TQ2 segment links the current service request. This field should be populated with the appropriate \"Filler number\" from the current service request. For orders, the Filler Order Number from ORC-3 is the appropriate \"Filler number\". Repeats of this field indicate the current service request is related to multiple service requests.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -150,7 +152,7 @@
       {
         "id": "TQ2.5",
         "path": "TQ2.5",
-        "short": " - TQ2",
+        "short": "- TQ2.5 - ",
         "definition": "Definition: The placer group numbers of the service request(s) to which this TQ2 segment links the current service request. This field should be populated with the appropriate \"Placer group number\" from the current service request. For orders, the Placer Group Number from ORC-4 is the appropriate \"Placer group number\". Repeats of this field indicate that the current service request is related to multiple groups of service requests.",
         "description": null,
         "code": [
@@ -163,7 +165,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -176,7 +178,7 @@
       {
         "id": "TQ2.6",
         "path": "TQ2.6",
-        "short": " - TQ2",
+        "short": "- TQ2.6 - ",
         "definition": "Definition: Defines the relationship between the start/end of the related service request(s) (from TQ2-3, TQ2-4, or TQ2-5) and the current service request from ORC-2, 3 or 4. See file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70504[HL7 Table 0504 – Sequence Condition Code] in Chapter 2C Code Tables, for allowed values.",
         "description": null,
         "code": [
@@ -189,7 +191,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -219,7 +221,7 @@
       {
         "id": "TQ2.7",
         "path": "TQ2.7",
-        "short": " - TQ2",
+        "short": "- TQ2.7 - ",
         "definition": "Definition: Indicates if this service request is the first, last, service request in a cyclic series of service requests. If null or not present, this field indicates that the current service request is neither the first or last service request in a cyclic series of service requests. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70505[HL7 Table 0505 – Cyclic Entry/Exit Indicator] in Chapter 2C, Code Tables, for allowed values.",
         "description": null,
         "code": [
@@ -232,7 +234,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -262,7 +264,7 @@
       {
         "id": "TQ2.8",
         "path": "TQ2.8",
-        "short": " - TQ2",
+        "short": "- TQ2.8 - ",
         "definition": "Definition: Defines the interval of time between the start/end of the related service request(s) and the start/end of the current service request. The unit's component is constrained to units of time. If this field is not populated, then there should be no interruption between start/ending the current service request, and the related service request(s).",
         "description": null,
         "code": [
@@ -275,7 +277,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -288,7 +290,7 @@
       {
         "id": "TQ2.9",
         "path": "TQ2.9",
-        "short": " - TQ2",
+        "short": "- TQ2.9 - ",
         "definition": "Definition: The maximum number of repeats for a cyclic group.",
         "description": null,
         "code": [
@@ -301,7 +303,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -327,7 +329,7 @@
       {
         "id": "TQ2.10",
         "path": "TQ2.10",
-        "short": " - TQ2",
+        "short": "- TQ2.10 - ",
         "definition": "Definition: This defines an additional or alternate relationship between this service request and other service requests. Its primary intended use is for Pharmacy administration service requests, but it may be useful for other domains. See file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70506[HL7 Table 0506 – Service Request Relationship] in Chapter 2C, Code Tables, for allowed values.",
         "description": null,
         "code": [
@@ -340,7 +342,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -369,9 +371,7 @@
       }
     ]
   },
-  "id": "TQ2",
   "title": "HL7 v2 TQ2 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/TQ2",
   "name": "TQ2",
-  "type": "http://hl7.org/v2/StructureDefinition/TQ2"
+  "type": "TQ2"
 }

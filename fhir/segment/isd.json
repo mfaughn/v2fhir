@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ISD",
+  "id": "ISD",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ISD.1",
         "path": "ISD.1",
-        "short": " - ISD",
+        "short": "- ISD.1 - ",
         "definition": "Definition: This number uniquely identifies the interaction. If the interaction is performed as the result of a previous command, then the Reference Command Number should be used. (See _13.3.5.1_, \"_ECD-1 Reference Command Number (NM) 01390_.\")",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "ISD.2",
         "path": "ISD.2",
-        "short": " - ISD",
+        "short": "- ISD.2 - ",
         "definition": "Definition: This field specifies the type of interaction. If the interaction is performed as the result of a previous command, then the interaction type as specified in file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70368[_User-defined Table 0368 - Remote Control command_] should be used.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -72,7 +74,7 @@
       {
         "id": "ISD.3",
         "path": "ISD.3",
-        "short": " - ISD",
+        "short": "- ISD.3 - ",
         "definition": "Definition: This field transfers the state of the interaction. If the interaction is performed as the result of a previous command, then the interaction state should be one of the Command Responses (Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70387[_User-defined Table 0387 – Command Response_]). If the interaction is not performed as a result of a command (e.g., periodically time triggered automatic maintenance) then this state is interaction specific, and should refer to either the LECIS state transitions for interactions or a user or equipment specific table.",
         "description": null,
         "code": [
@@ -85,7 +87,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -101,9 +103,7 @@
       }
     ]
   },
-  "id": "ISD",
   "title": "HL7 v2 ISD Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ISD",
   "name": "ISD",
-  "type": "http://hl7.org/v2/StructureDefinition/ISD"
+  "type": "ISD"
 }

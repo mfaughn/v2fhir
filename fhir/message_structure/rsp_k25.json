@@ -1,0 +1,402 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RSP_K25",
+  "id": "RSP_K25",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RSP_K25.1-MSH",
+          "path": "RSP_K25.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K25.2-SFT",
+          "path": "RSP_K25.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K25.3-UAC",
+          "path": "RSP_K25.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K25.4-MSA",
+          "path": "RSP_K25.4-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K25.5-ERR",
+          "path": "RSP_K25.5-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K25.6-QAK",
+          "path": "RSP_K25.6-QAK",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QAK"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K25.7-QPD",
+          "path": "RSP_K25.7-QPD",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/QPD"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K25.8-RCP",
+          "path": "RSP_K25.8-RCP",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/RCP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RSP_K25.9-STAFF",
+          "path": "RSP_K25.9-STAFF",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RSP_K25.9-STAFF.1-STF",
+              "path": "RSP_K25.9-STAFF.1-STF",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/STF"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.2-GSP",
+              "path": "RSP_K25.9-STAFF.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.3-GSR",
+              "path": "RSP_K25.9-STAFF.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.4-PRA",
+              "path": "RSP_K25.9-STAFF.4-PRA",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRA"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.5-ORG",
+              "path": "RSP_K25.9-STAFF.5-ORG",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORG"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.6-AFF",
+              "path": "RSP_K25.9-STAFF.6-AFF",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AFF"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.7-LAN",
+              "path": "RSP_K25.9-STAFF.7-LAN",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/LAN"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.8-EDU",
+              "path": "RSP_K25.9-STAFF.8-EDU",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/EDU"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.9-CER",
+              "path": "RSP_K25.9-STAFF.9-CER",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CER"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.10-NEXT_OF_KIN",
+              "path": "RSP_K25.9-STAFF.10-NEXT_OF_KIN",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RSP_K25.9-STAFF.10-NEXT_OF_KIN.1-NK1",
+                  "path": "RSP_K25.9-STAFF.10-NEXT_OF_KIN.1-NK1",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_K25.9-STAFF.10-NEXT_OF_KIN.2-GSP",
+                  "path": "RSP_K25.9-STAFF.10-NEXT_OF_KIN.2-GSP",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RSP_K25.9-STAFF.10-NEXT_OF_KIN.3-GSR",
+                  "path": "RSP_K25.9-STAFF.10-NEXT_OF_KIN.3-GSR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.11-PRT",
+              "path": "RSP_K25.9-STAFF.11-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RSP_K25.9-STAFF.12-ROL",
+              "path": "RSP_K25.9-STAFF.12-ROL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RSP_K25.10-DSC",
+          "path": "RSP_K25.10-DSC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DSC"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 RSP_K25 Segment Definition",
+  "name": "RSP_K25",
+  "type": "http://hl7.org/v2/StructureDefinition/RSP_K25"
+}

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OM5",
+  "id": "OM5",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "OM5.1",
         "path": "OM5.1",
-        "short": " - OM5",
+        "short": "- OM5.1 - ",
         "definition": "Definition: This field contains the same value as the sequence number of the associated OM1 segment.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "OM5.2",
         "path": "OM5.2",
-        "short": " - OM5",
+        "short": "- OM5.2 - ",
         "definition": "Definition: This field contains the codes and names of all tests/observations included within a single battery (nature code P, as described in _OM1-18 - Nature of Service/Test/Observation_), a single functional procedure (nature code F), or a given superset (nature code S). When a segment includes a list of component elements, the sending system should be sure that the segments defining all of the components are sent before the segment that references them. An entry in this list can itself be a battery. Refer to Table 0662 - Test/Observations Included Within an Ordered Test Battery in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "OM5.3",
         "path": "OM5.3",
-        "short": " - OM5",
+        "short": "- OM5.3 - ",
         "definition": "Definition: This field contains the tests or procedures that produce a type which uses observation ID suffixes following the service/test/observation ID code. This field lists the possible options. For example, a chest X-ray may use the suffixes IMP, REC, DEV, or others. Each of the expected suffixes should be listed here.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -110,9 +112,7 @@
       }
     ]
   },
-  "id": "OM5",
   "title": "HL7 v2 OM5 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/OM5",
   "name": "OM5",
-  "type": "http://hl7.org/v2/StructureDefinition/OM5"
+  "type": "OM5"
 }

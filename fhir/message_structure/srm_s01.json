@@ -1,0 +1,562 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SRM_S01",
+  "id": "SRM_S01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "SRM_S01.1-MSH",
+          "path": "SRM_S01.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SRM_S01.2-ARQ",
+          "path": "SRM_S01.2-ARQ",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARQ"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SRM_S01.3-APR",
+          "path": "SRM_S01.3-APR",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/APR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SRM_S01.4-NTE",
+          "path": "SRM_S01.4-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "SRM_S01.5-PATIENT",
+          "path": "SRM_S01.5-PATIENT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "SRM_S01.5-PATIENT.1-PID",
+              "path": "SRM_S01.5-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRM_S01.5-PATIENT.2-GSP",
+              "path": "SRM_S01.5-PATIENT.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRM_S01.5-PATIENT.3-GSR",
+              "path": "SRM_S01.5-PATIENT.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRM_S01.5-PATIENT.4-GSC",
+              "path": "SRM_S01.5-PATIENT.4-GSC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRM_S01.5-PATIENT.5-PRT",
+              "path": "SRM_S01.5-PATIENT.5-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRM_S01.5-PATIENT.6-PV1",
+              "path": "SRM_S01.5-PATIENT.6-PV1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRM_S01.5-PATIENT.7-PV2",
+              "path": "SRM_S01.5-PATIENT.7-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRM_S01.5-PATIENT.8-PRT",
+              "path": "SRM_S01.5-PATIENT.8-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRM_S01.5-PATIENT.9-FIXME",
+              "path": "SRM_S01.5-PATIENT.9-FIXME",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SRM_S01.5-PATIENT.9-FIXME.1-OBX",
+                  "path": "SRM_S01.5-PATIENT.9-FIXME.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRM_S01.5-PATIENT.9-FIXME.2-PRT",
+                  "path": "SRM_S01.5-PATIENT.9-FIXME.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "SRM_S01.5-PATIENT.10-DG1",
+              "path": "SRM_S01.5-PATIENT.10-DG1",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/DG1"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "SRM_S01.6-RESOURCES",
+          "path": "SRM_S01.6-RESOURCES",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "SRM_S01.6-RESOURCES.1-RGS",
+              "path": "SRM_S01.6-RESOURCES.1-RGS",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/RGS"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "SRM_S01.6-RESOURCES.2-SERVICE",
+              "path": "SRM_S01.6-RESOURCES.2-SERVICE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.2-SERVICE.1-AIS",
+                  "path": "SRM_S01.6-RESOURCES.2-SERVICE.1-AIS",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AIS"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.2-SERVICE.2-APR",
+                  "path": "SRM_S01.6-RESOURCES.2-SERVICE.2-APR",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/APR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.2-SERVICE.3-NTE",
+                  "path": "SRM_S01.6-RESOURCES.2-SERVICE.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "SRM_S01.6-RESOURCES.3-GENERAL_RESOURCE",
+              "path": "SRM_S01.6-RESOURCES.3-GENERAL_RESOURCE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.3-GENERAL_RESOURCE.1-AIG",
+                  "path": "SRM_S01.6-RESOURCES.3-GENERAL_RESOURCE.1-AIG",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AIG"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.3-GENERAL_RESOURCE.2-APR",
+                  "path": "SRM_S01.6-RESOURCES.3-GENERAL_RESOURCE.2-APR",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/APR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.3-GENERAL_RESOURCE.3-NTE",
+                  "path": "SRM_S01.6-RESOURCES.3-GENERAL_RESOURCE.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "SRM_S01.6-RESOURCES.4-LOCATION_RESOURCE",
+              "path": "SRM_S01.6-RESOURCES.4-LOCATION_RESOURCE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.4-LOCATION_RESOURCE.1-AIL",
+                  "path": "SRM_S01.6-RESOURCES.4-LOCATION_RESOURCE.1-AIL",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AIL"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.4-LOCATION_RESOURCE.2-APR",
+                  "path": "SRM_S01.6-RESOURCES.4-LOCATION_RESOURCE.2-APR",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/APR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.4-LOCATION_RESOURCE.3-NTE",
+                  "path": "SRM_S01.6-RESOURCES.4-LOCATION_RESOURCE.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "SRM_S01.6-RESOURCES.5-PERSONNEL_RESOURCE",
+              "path": "SRM_S01.6-RESOURCES.5-PERSONNEL_RESOURCE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.5-PERSONNEL_RESOURCE.1-AIP",
+                  "path": "SRM_S01.6-RESOURCES.5-PERSONNEL_RESOURCE.1-AIP",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AIP"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.5-PERSONNEL_RESOURCE.2-APR",
+                  "path": "SRM_S01.6-RESOURCES.5-PERSONNEL_RESOURCE.2-APR",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/APR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "SRM_S01.6-RESOURCES.5-PERSONNEL_RESOURCE.3-NTE",
+                  "path": "SRM_S01.6-RESOURCES.5-PERSONNEL_RESOURCE.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 SRM_S01 Segment Definition",
+  "name": "SRM_S01",
+  "type": "http://hl7.org/v2/StructureDefinition/SRM_S01"
+}

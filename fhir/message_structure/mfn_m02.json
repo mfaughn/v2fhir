@@ -1,0 +1,265 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MFN_M02",
+  "id": "MFN_M02",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "MFN_M02.1-MSH",
+          "path": "MFN_M02.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M02.2-SFT",
+          "path": "MFN_M02.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M02.3-UAC",
+          "path": "MFN_M02.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M02.4-MFI",
+          "path": "MFN_M02.4-MFI",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MFI"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M02.5-MF_STAFF",
+          "path": "MFN_M02.5-MF_STAFF",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.1-MFE",
+              "path": "MFN_M02.5-MF_STAFF.1-MFE",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/MFE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.2-STF",
+              "path": "MFN_M02.5-MF_STAFF.2-STF",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/STF"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.3-GSP",
+              "path": "MFN_M02.5-MF_STAFF.3-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.4-GSR",
+              "path": "MFN_M02.5-MF_STAFF.4-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.5-PRA",
+              "path": "MFN_M02.5-MF_STAFF.5-PRA",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRA"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.6-ORG",
+              "path": "MFN_M02.5-MF_STAFF.6-ORG",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ORG"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.7-AFF",
+              "path": "MFN_M02.5-MF_STAFF.7-AFF",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AFF"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.8-LAN",
+              "path": "MFN_M02.5-MF_STAFF.8-LAN",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/LAN"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.9-EDU",
+              "path": "MFN_M02.5-MF_STAFF.9-EDU",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/EDU"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.10-CER",
+              "path": "MFN_M02.5-MF_STAFF.10-CER",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CER"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M02.5-MF_STAFF.11-NTE",
+              "path": "MFN_M02.5-MF_STAFF.11-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 MFN_M02 Segment Definition",
+  "name": "MFN_M02",
+  "type": "http://hl7.org/v2/StructureDefinition/MFN_M02"
+}

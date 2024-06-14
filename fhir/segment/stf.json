@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/STF",
+  "id": "STF",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "STF.1",
         "path": "STF.1",
-        "short": " - STF",
+        "short": "- STF.1 - ",
         "definition": "Definition: For MFN Master File Notification, this field is required and must match _MFE-4 Primary Key Value_ to identify which entry is being referenced. For all other messages, this field should not be used. Refer to Table 0786 - Primary Key Value – STF in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "STF.2",
         "path": "STF.2",
-        "short": " - STF",
+        "short": "- STF.2 - ",
         "definition": "Definition: This field contains the list of identifiers (one or more) used by the institution to identify this person. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70061[_HL7 Table 0061 - Check Digit Scheme_] (component 2), file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70203[_User-defined Table 0203 - Identifier Type_] (component 5) and file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70363[_User-defined Table 0363 - Assigning Authority_] (component 4) for valid values (see Chapter 2A). If a Staff Member has institution identifiers that are valid only in specific organization units, that Staff identifier should be recorded in the _ORG Practitioner Organization Unit_ segment.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CX"
+            "code": "CX"
           }
         ],
         "binding": {
@@ -76,7 +78,7 @@
       {
         "id": "STF.3",
         "path": "STF.3",
-        "short": " - STF",
+        "short": "- STF.3 - ",
         "definition": "Definition: This field contains the staff person's name. This field may repeat to transmit multiple names for the same person.",
         "description": null,
         "code": [
@@ -89,7 +91,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XPN"
+            "code": "XPN"
           }
         ],
         "extension": [
@@ -102,7 +104,7 @@
       {
         "id": "STF.4",
         "path": "STF.4",
-        "short": " - STF",
+        "short": "- STF.4 - ",
         "definition": "Definition: This field contains a code identifying what type of staff. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70182[_User-defined Table 0182 - Staff type_] in Chapter 2C, Code Tables, for suggested values. This table contains no suggested values. Values may include codes for staff, practitioner, referral agent or agency, etc. This field may repeat to allow for staff to be assigned multiple types.",
         "description": null,
         "code": [
@@ -115,7 +117,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -132,7 +134,7 @@
       {
         "id": "STF.5",
         "path": "STF.5",
-        "short": " - STF",
+        "short": "- STF.5 - ",
         "definition": "Definition: This field contains the staff person's sex. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70001[_User-defined Table 0001 – Administrative Sex_] for suggested values.",
         "description": null,
         "code": [
@@ -145,7 +147,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -162,7 +164,7 @@
       {
         "id": "STF.6",
         "path": "STF.6",
-        "short": " - STF",
+        "short": "- STF.6 - ",
         "definition": "Definition: This field contains a staff member's date and time of birth.",
         "description": null,
         "code": [
@@ -175,7 +177,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -188,7 +190,7 @@
       {
         "id": "STF.7",
         "path": "STF.7",
-        "short": " - STF",
+        "short": "- STF.7 - ",
         "definition": "Definition: This field indicates whether person is currently a valid staff member. Refer to _file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70183[HL7 Table 0183 - Active/Inactive]_ in Chapter 2C, Code Tables, for valid values. This table contains values for active or inactive.",
         "description": null,
         "code": [
@@ -201,7 +203,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -231,7 +233,7 @@
       {
         "id": "STF.8",
         "path": "STF.8",
-        "short": " - STF",
+        "short": "- STF.8 - ",
         "definition": "Definition: This field contains the institution department to which this person reports or belongs. Refer to _file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70184[User-defined Table 0184 - Departmen]t_ in Chapter 2C, Code Tables, for suggested values. This table contains no suggested values.",
         "description": null,
         "code": [
@@ -244,7 +246,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -261,7 +263,7 @@
       {
         "id": "STF.9",
         "path": "STF.9",
-        "short": " - STF",
+        "short": "- STF.9 - ",
         "definition": "Definition: This field contains the hospital or ancillary service with which this staff person is associated. Refer to E:\\\\V2\\\\v2.9 final Nov from Frank\\\\V29_CH02C_Tables.docx#HL70069[_User-defined Table 0069 - Hospital Service_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -274,7 +276,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -291,7 +293,7 @@
       {
         "id": "STF.10",
         "path": "STF.10",
-        "short": " - STF",
+        "short": "- STF.10 - ",
         "definition": "Definition: This field contains the staff person's phone number. This is a repeating field with a component for indicating which phone number is which.",
         "description": null,
         "code": [
@@ -304,7 +306,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -317,7 +319,7 @@
       {
         "id": "STF.11",
         "path": "STF.11",
-        "short": " - STF",
+        "short": "- STF.11 - ",
         "definition": "Definition: This field contains the office, and home address and/or place of birth of the staff person. This is a repeating field. The address type identifies the usage.",
         "description": null,
         "code": [
@@ -330,7 +332,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -343,7 +345,7 @@
       {
         "id": "STF.12",
         "path": "STF.12",
-        "short": " - STF",
+        "short": "- STF.12 - ",
         "definition": "Definition: This field contains the date when staff became active for an institution. This is a repeating field. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70537[_User-defined Table 0537 - Institution_] in Chapter 2C, Code Tables, for valid values. This table contains no suggested values.",
         "description": null,
         "code": [
@@ -356,7 +358,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DIN"
+            "code": "DIN"
           }
         ],
         "binding": {
@@ -373,7 +375,7 @@
       {
         "id": "STF.13",
         "path": "STF.13",
-        "short": " - STF",
+        "short": "- STF.13 - ",
         "definition": "Definition: This field contains the date when staff became inactive for an institution. This is a repeating field. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70537[_HL7 Table 0537 - Institution_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -386,7 +388,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DIN"
+            "code": "DIN"
           }
         ],
         "binding": {
@@ -403,7 +405,7 @@
       {
         "id": "STF.14",
         "path": "STF.14",
-        "short": " - STF",
+        "short": "- STF.14 - ",
         "definition": "Definition: This field contains the _MFE-4 Primary Key Value_ of the master file entry that corresponds to the designated backup person for this staff person.",
         "description": null,
         "code": [
@@ -416,7 +418,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -429,7 +431,7 @@
       {
         "id": "STF.15",
         "path": "STF.15",
-        "short": " - STF",
+        "short": "- STF.15 - ",
         "definition": "Definition: *_This field has been retained for backward compatibility._* (It is now present in the fourth component of _STF-10 Phone_).",
         "description": null,
         "code": [
@@ -442,7 +444,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -468,7 +470,7 @@
       {
         "id": "STF.16",
         "path": "STF.16",
-        "short": " - STF",
+        "short": "- STF.16 - ",
         "definition": "Definition: This field indicates which of a group of multiple phone numbers is the preferred method of contact for this person. Note that all values of this code refer to this segment's phone field, except for the value \"E,\" which refers to the E-mail address field. If more than one phone number of the preferred type exists in _STF-10-phone_, this field refers to the first such instance. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70185[_HL7 Table_ _0185 - Preferred Method of Contact_] in Chapter 2C, Code Tables, for valid values. This table contains values for beeper, cell phone etc.",
         "description": null,
         "code": [
@@ -481,7 +483,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -498,7 +500,7 @@
       {
         "id": "STF.17",
         "path": "STF.17",
-        "short": " - STF",
+        "short": "- STF.17 - ",
         "definition": "Definition: This field contains the staff member's marital status. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70002[_User-defined Table 0002 - Marital Status_] in Chapter 2C, Code Tables, for suggested values. Same values as those for _PID-16 Marital Status_.",
         "description": null,
         "code": [
@@ -511,7 +513,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -528,7 +530,7 @@
       {
         "id": "STF.18",
         "path": "STF.18",
-        "short": " - STF",
+        "short": "- STF.18 - ",
         "definition": "Definition: This field contains a descriptive name of the staff member's occupation (e.g., Sr. Systems Analyst, Sr. Accountant).",
         "description": null,
         "code": [
@@ -541,7 +543,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -567,7 +569,7 @@
       {
         "id": "STF.19",
         "path": "STF.19",
-        "short": " - STF",
+        "short": "- STF.19 - ",
         "definition": "Definition: This field contains the staff member's job code and employee classification. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70327[_User-defined Table 0327 - Job Code_] and file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70328[_User-defined Table 0328 - Employee Classification_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -580,7 +582,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/JCC"
+            "code": "JCC"
           }
         ],
         "binding": {
@@ -597,7 +599,7 @@
       {
         "id": "STF.20",
         "path": "STF.20",
-        "short": " - STF",
+        "short": "- STF.20 - ",
         "definition": "Definition: This field contains the code that indicates the staff member's employment status, e.g., full-time, part-time, self-employed, etc. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70066[_User-defined Table 0066 - Employment Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -610,7 +612,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -627,7 +629,7 @@
       {
         "id": "STF.21",
         "path": "STF.21",
-        "short": " - STF",
+        "short": "- STF.21 - ",
         "definition": "Definition: This field contains an indicator for whether the present institution is named as an additional insured on the staff member's auto insurance, especially for use when staff is a driver for the institution. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -640,7 +642,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -670,7 +672,7 @@
       {
         "id": "STF.22",
         "path": "STF.22",
-        "short": " - STF",
+        "short": "- STF.22 - ",
         "definition": "Definition: This field contains the driver's license information of staff, especially for use when staff is a driver for the institution. For state or province refer to official postal codes for that country; for country refer to ISO 3166 for codes.",
         "description": null,
         "code": [
@@ -683,7 +685,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DLN"
+            "code": "DLN"
           }
         ],
         "extension": [
@@ -696,7 +698,7 @@
       {
         "id": "STF.23",
         "path": "STF.23",
-        "short": " - STF",
+        "short": "- STF.23 - ",
         "definition": "Definition: This field contains an indicator for whether the institution has on file a copy of the staff member's auto insurance, especially for use when staff is a driver for the institution. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -709,7 +711,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -739,7 +741,7 @@
       {
         "id": "STF.24",
         "path": "STF.24",
-        "short": " - STF",
+        "short": "- STF.24 - ",
         "definition": "Definition: This field contains the date on which the staff member's driver's license expires, especially for use when staff is a driver for the institution.",
         "description": null,
         "code": [
@@ -752,7 +754,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -765,7 +767,7 @@
       {
         "id": "STF.25",
         "path": "STF.25",
-        "short": " - STF",
+        "short": "- STF.25 - ",
         "definition": "Definition: This field contains the date of the staff member's most recent Department of Motor Vehicles review, especially for use when staff is a driver for the institution.",
         "description": null,
         "code": [
@@ -778,7 +780,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -791,7 +793,7 @@
       {
         "id": "STF.26",
         "path": "STF.26",
-        "short": " - STF",
+        "short": "- STF.26 - ",
         "definition": "Definition: This field contains the date of the staff member's next Department of Motor Vehicles review, especially for use when staff is a driver for the institution.",
         "description": null,
         "code": [
@@ -804,7 +806,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -817,7 +819,7 @@
       {
         "id": "STF.27",
         "path": "STF.27",
-        "short": " - STF",
+        "short": "- STF.27 - ",
         "definition": "Definition: This field refers to the person's race. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70005[_User-defined Table 0005 - Race_] in Chapter 2C, Code Tables, for suggested values. The second triplet of the CWE data type for race (alternate identifier, alternate text, and name of alternate coding system) is reserved for governmentally assigned codes.",
         "description": null,
         "code": [
@@ -830,7 +832,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -847,7 +849,7 @@
       {
         "id": "STF.28",
         "path": "STF.28",
-        "short": " - STF",
+        "short": "- STF.28 - ",
         "definition": "Definition: This field further defines the person's ancestry. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70189[_User-defined Table 0189 - Ethnic Group_] in Chapter 2C, Code Tables, for suggested values. The second couplet of the CWE data type for ethnic group (alternate identifier, alternate text, and name of alternate coding system) is reserved for governmentally assigned codes. In the United States, a current use is to report ethnicity in line with US federal standards for Hispanic origin.",
         "description": null,
         "code": [
@@ -860,7 +862,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -877,7 +879,7 @@
       {
         "id": "STF.29",
         "path": "STF.29",
-        "short": " - STF",
+        "short": "- STF.29 - ",
         "definition": "Definition: This field contains an indicator for whether the re-activation of this record requires special approval. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -890,7 +892,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -920,7 +922,7 @@
       {
         "id": "STF.30",
         "path": "STF.30",
-        "short": " - STF",
+        "short": "- STF.30 - ",
         "definition": "Definition: This field contains the staff person's current country of citizenship. HL7 recommends using ISO table 3166 as the suggested values in file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70171[_User-defined Table 0171 - Citizenship_] (in Chapter 2C, Code Tables).",
         "description": null,
         "code": [
@@ -933,7 +935,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -950,7 +952,7 @@
       {
         "id": "STF.31",
         "path": "STF.31",
-        "short": " - STF",
+        "short": "- STF.31 - ",
         "definition": "Definition: This field contains the date and time at which the staff person death occurred.",
         "description": null,
         "code": [
@@ -963,7 +965,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -976,7 +978,7 @@
       {
         "id": "STF.32",
         "path": "STF.32",
-        "short": " - STF",
+        "short": "- STF.32 - ",
         "definition": "Definition: This field indicates whether the staff person is deceased. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -989,7 +991,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -1019,7 +1021,7 @@
       {
         "id": "STF.33",
         "path": "STF.33",
-        "short": " - STF",
+        "short": "- STF.33 - ",
         "definition": "Definition: This field specifies the relationship the staff person has with the institution for whom he/she provides services. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70538[_User–defined Table 0538 – Institution Relationship Type_] in Chapter 2C, Code Tables, for suggested values. This table contains values for employee, volunteer, etc.",
         "description": null,
         "code": [
@@ -1032,7 +1034,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1049,7 +1051,7 @@
       {
         "id": "STF.34",
         "path": "STF.34",
-        "short": " - STF",
+        "short": "- STF.34 - ",
         "definition": "Definition: This field contains the period during which the staff person started and ended the relationship specified in _STF-33 Institution Relationship Type Code_.",
         "description": null,
         "code": [
@@ -1062,7 +1064,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DR"
+            "code": "DR"
           }
         ],
         "extension": [
@@ -1075,7 +1077,7 @@
       {
         "id": "STF.35",
         "path": "STF.35",
-        "short": " - STF",
+        "short": "- STF.35 - ",
         "definition": "Definition: This field contains the date on which an inactive staff member expects to return to work.",
         "description": null,
         "code": [
@@ -1088,7 +1090,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -1101,7 +1103,7 @@
       {
         "id": "STF.36",
         "path": "STF.36",
-        "short": " - STF",
+        "short": "- STF.36 - ",
         "definition": "Definition: This field describes the organization unit in the General Ledger to which the staff member is currently assigned. It is sometimes referred to as the \"home\" cost center because it is the organization unit to which the staff member's regular costs are accrued. Refer to _file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70539[User-defined Table 0539 – Cost Center Code]_ in Chapter 2C, Code Tables, for valid values. This table contains no suggested values.",
         "description": null,
         "code": [
@@ -1114,7 +1116,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1131,7 +1133,7 @@
       {
         "id": "STF.37",
         "path": "STF.37",
-        "short": " - STF",
+        "short": "- STF.37 - ",
         "definition": "Definition: This field describes whether or not this STF record represents an identifiable (i.e., real) human being or is a \"placeholder\" for one whose identity is not yet known. For example, work schedules may need to be created before the actual staff member has been hired, or appointments may be made with a floating resource who is not specifically known until the actual appointment date/time. Because these functions require a Staff Member ID code, it is important to distinguish whether or not the Staff Member is a real human resource or not. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] for valid values.",
         "description": null,
         "code": [
@@ -1144,7 +1146,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -1174,7 +1176,7 @@
       {
         "id": "STF.38",
         "path": "STF.38",
-        "short": " - STF",
+        "short": "- STF.38 - ",
         "definition": "Definition: This field contains the reason that the staff member is inactive. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70540[_User-defined Table 0540 – Inactive Reason Code_] in Chapter 2C, Code Tables, for suggested values. This table contains values for leave of absence, terminated, etc.",
         "description": null,
         "code": [
@@ -1187,7 +1189,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1204,7 +1206,7 @@
       {
         "id": "STF.39",
         "path": "STF.39",
-        "short": " - STF",
+        "short": "- STF.39 - ",
         "definition": "Definition: This field transmits a code that represents a high level categorization of resources. This is a companion field for the _STF-4 Staff Type_ and allows an institution or enterprise to impose [line-through]#a# one or more super category levels. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70771[_User-defined Table 0771 – Resource Type or Category_] in Chapter 2C, Code Tables, for suggested values. This table contains no suggested values.",
         "description": null,
         "code": [
@@ -1217,7 +1219,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1234,7 +1236,7 @@
       {
         "id": "STF.40",
         "path": "STF.40",
-        "short": " - STF",
+        "short": "- STF.40 - ",
         "definition": "Definition: This field contains the staff member's religion. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70006[_User-defined Table 0006 - Religion_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1247,7 +1249,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1264,7 +1266,7 @@
       {
         "id": "STF.41",
         "path": "STF.41",
-        "short": " - STF",
+        "short": "- STF.41 - ",
         "definition": "Definition: Digital Signature of the staff member. The Digital Signature includes a seal concept and is verifiable.",
         "description": null,
         "code": [
@@ -1277,7 +1279,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ED"
+            "code": "ED"
           }
         ],
         "extension": [
@@ -1289,9 +1291,7 @@
       }
     ]
   },
-  "id": "STF",
   "title": "HL7 v2 STF Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/STF",
   "name": "STF",
-  "type": "http://hl7.org/v2/StructureDefinition/STF"
+  "type": "STF"
 }

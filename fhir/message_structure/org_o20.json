@@ -1,0 +1,440 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ORG_O20",
+  "id": "ORG_O20",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "ORG_O20.1-MSH",
+          "path": "ORG_O20.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORG_O20.2-MSA",
+          "path": "ORG_O20.2-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORG_O20.3-ARV",
+          "path": "ORG_O20.3-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORG_O20.4-ERR",
+          "path": "ORG_O20.4-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORG_O20.5-SFT",
+          "path": "ORG_O20.5-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORG_O20.6-UAC",
+          "path": "ORG_O20.6-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORG_O20.7-NTE",
+          "path": "ORG_O20.7-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ORG_O20.8-RESPONSE",
+          "path": "ORG_O20.8-RESPONSE",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ORG_O20.8-RESPONSE.1-PATIENT",
+              "path": "ORG_O20.8-RESPONSE.1-PATIENT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ORG_O20.8-RESPONSE.1-PATIENT.1-PID",
+                  "path": "ORG_O20.8-RESPONSE.1-PATIENT.1-PID",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PID"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORG_O20.8-RESPONSE.1-PATIENT.2-NTE",
+                  "path": "ORG_O20.8-RESPONSE.1-PATIENT.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORG_O20.8-RESPONSE.1-PATIENT.3-PRT",
+                  "path": "ORG_O20.8-RESPONSE.1-PATIENT.3-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORG_O20.8-RESPONSE.1-PATIENT.4-ARV",
+                  "path": "ORG_O20.8-RESPONSE.1-PATIENT.4-ARV",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "ORG_O20.8-RESPONSE.2-ORDER",
+              "path": "ORG_O20.8-RESPONSE.2-ORDER",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ORG_O20.8-RESPONSE.2-ORDER.1-ORC",
+                  "path": "ORG_O20.8-RESPONSE.2-ORDER.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORG_O20.8-RESPONSE.2-ORDER.2-PRT",
+                  "path": "ORG_O20.8-RESPONSE.2-ORDER.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORG_O20.8-RESPONSE.2-ORDER.3-TIMING",
+                  "path": "ORG_O20.8-RESPONSE.2-ORDER.3-TIMING",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORG_O20.8-RESPONSE.2-ORDER.3-TIMING.1-TQ1",
+                      "path": "ORG_O20.8-RESPONSE.2-ORDER.3-TIMING.1-TQ1",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORG_O20.8-RESPONSE.2-ORDER.3-TIMING.2-TQ2",
+                      "path": "ORG_O20.8-RESPONSE.2-ORDER.3-TIMING.2-TQ2",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORG_O20.8-RESPONSE.2-ORDER.4-OBSERVATION_GROUP",
+                  "path": "ORG_O20.8-RESPONSE.2-ORDER.4-OBSERVATION_GROUP",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORG_O20.8-RESPONSE.2-ORDER.4-OBSERVATION_GROUP.1-OBR",
+                      "path": "ORG_O20.8-RESPONSE.2-ORDER.4-OBSERVATION_GROUP.1-OBR",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORG_O20.8-RESPONSE.2-ORDER.4-OBSERVATION_GROUP.2-PRT",
+                      "path": "ORG_O20.8-RESPONSE.2-ORDER.4-OBSERVATION_GROUP.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORG_O20.8-RESPONSE.2-ORDER.4-OBSERVATION_GROUP.3-NTE",
+                      "path": "ORG_O20.8-RESPONSE.2-ORDER.4-OBSERVATION_GROUP.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "ORG_O20.8-RESPONSE.2-ORDER.5-CTI",
+                  "path": "ORG_O20.8-RESPONSE.2-ORDER.5-CTI",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CTI"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ORG_O20.8-RESPONSE.2-ORDER.6-SPECIMEN",
+                  "path": "ORG_O20.8-RESPONSE.2-ORDER.6-SPECIMEN",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "ORG_O20.8-RESPONSE.2-ORDER.6-SPECIMEN.1-SPM",
+                      "path": "ORG_O20.8-RESPONSE.2-ORDER.6-SPECIMEN.1-SPM",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/SPM"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "ORG_O20.8-RESPONSE.2-ORDER.6-SPECIMEN.2-SAC",
+                      "path": "ORG_O20.8-RESPONSE.2-ORDER.6-SPECIMEN.2-SAC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/SAC"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 ORG_O20 Segment Definition",
+  "name": "ORG_O20",
+  "type": "http://hl7.org/v2/StructureDefinition/ORG_O20"
+}

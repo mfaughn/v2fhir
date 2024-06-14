@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CSS",
+  "id": "CSS",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "CSS.1",
         "path": "CSS.1",
-        "short": " - CSS",
+        "short": "- CSS.1 - ",
         "definition": "Definition: This field contains the time point for which some instance of data for the clinical trial was scheduled. The time point may be expressed in any coded format. Some examples of time point values are: *Prestudy, Pretreatment, 4 times/day, Weekly, Every 3 days, Every course, At Relapse, At Off Study.* Alternatively, frequency values from Section 2.A.81.2, \"Interval component (RI),\" (the Interval component of the TQ Timing/Quantity data type could be used; however, note that as of version 2.5, the TQ data type is retained only for backward compatibility). Time point naming conventions and usage must be specified by implementers. Refer to Table 0595 - Study Scheduled Time Point in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -46,7 +48,7 @@
       {
         "id": "CSS.2",
         "path": "CSS.2",
-        "short": " - CSS",
+        "short": "- CSS.2 - ",
         "definition": "Definition: This field contains the date/time that the scheduled time point should occur for this patient. The date/time may be used for a reference in reviewing the actual dates on which scheduled items that follow in OBR segments occur for the patient. The time component is optional.",
         "description": null,
         "code": [
@@ -59,7 +61,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -72,7 +74,7 @@
       {
         "id": "CSS.3",
         "path": "CSS.3",
-        "short": " - CSS",
+        "short": "- CSS.3 - ",
         "definition": "Definition: In clinical settings, the *actual* date of a treatment or procedure may vary considerably from the *due* date. Various coding systems may be used to evaluate the adherence to the schedule or acceptability of the data. Coding systems will vary among trials. Refer to Table 0596 - Study Quality Control Codes in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -85,7 +87,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -101,9 +103,7 @@
       }
     ]
   },
-  "id": "CSS",
   "title": "HL7 v2 CSS Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/CSS",
   "name": "CSS",
-  "type": "http://hl7.org/v2/StructureDefinition/CSS"
+  "type": "CSS"
 }

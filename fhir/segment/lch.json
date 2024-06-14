@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/LCH",
+  "id": "LCH",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "LCH.1",
         "path": "LCH.1",
-        "short": " - LCH",
+        "short": "- LCH.1 - ",
         "definition": "Definition: This field contains the institution's identification code for the location. The identifying key value. This field has the same components as the patient location fields in the PV1 segment (except that bed status is not included here). At least the first component of this field is required. The contents of this field must exactly match the content of its preceding MFE (link:++#mfe-4-primary-key-value---mfe-varies-00667++[MFE-4 - Primary Key Value - MFE]), its preceding LOC (_LOC-1 - Primary Key Value - LOC_), and its preceding LDP (_LDP-1 - Primary Key Value - LDP_).",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "LCH.2",
         "path": "LCH.2",
-        "short": " - LCH",
+        "short": "- LCH.2 - ",
         "definition": "Definition: This field indicates whether this repetition of the segment is being added, changed or deleted. The action code adds a validation check to indicate, from the point of view of the sending system, whether this repetition of a segment is being added, changed or deleted. This and the following field are used to implement the \"unique key\" mode of updating repeating segments. (See Chapter 2, section 2.10.4.2, \"Action code/unique identifier mode update definition.\") Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[HL7 Table 0206 - Segment Action Code] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "LCH.3",
         "path": "LCH.3",
-        "short": " - LCH",
+        "short": "- LCH.3 - ",
         "definition": "Definition: This field contains a unique identifier for one of the multiple repetitions of this segment, to be used in conjunction with the preceding field. Each of the repetitions of the segment will be uniquely identified by this unique key field for the purposes of updates.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "LCH.4",
         "path": "LCH.4",
-        "short": " - LCH",
+        "short": "- LCH.4 - ",
         "definition": "Definition: This field contains an identifier code to show WHICH characteristic is being communicated with this segment. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70324[User-defined Table 0324 - Location Characteristic ID] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -141,7 +143,7 @@
       {
         "id": "LCH.5",
         "path": "LCH.5",
-        "short": " - LCH",
+        "short": "- LCH.5 - ",
         "definition": "Definition: This field contains the value of the above field's characteristic. The expected coded values for this field will depend upon the previous field. For example, if the previous field is SMK, IMP, INF, the values would be \"Y\" or \"N\".",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -170,9 +172,7 @@
       }
     ]
   },
-  "id": "LCH",
   "title": "HL7 v2 LCH Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/LCH",
   "name": "LCH",
-  "type": "http://hl7.org/v2/StructureDefinition/LCH"
+  "type": "LCH"
 }

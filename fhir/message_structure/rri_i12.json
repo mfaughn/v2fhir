@@ -1,0 +1,577 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RRI_I12",
+  "id": "RRI_I12",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "RRI_I12.1-MSH",
+          "path": "RRI_I12.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.2-SFT",
+          "path": "RRI_I12.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.3-UAC",
+          "path": "RRI_I12.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.4-MSA",
+          "path": "RRI_I12.4-MSA",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.5-RF1",
+          "path": "RRI_I12.5-RF1",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/RF1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.6-AUTHORIZATION_CONTACT2",
+          "path": "RRI_I12.6-AUTHORIZATION_CONTACT2",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RRI_I12.6-AUTHORIZATION_CONTACT2.1-AUT",
+              "path": "RRI_I12.6-AUTHORIZATION_CONTACT2.1-AUT",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/AUT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RRI_I12.6-AUTHORIZATION_CONTACT2.2-CTD",
+              "path": "RRI_I12.6-AUTHORIZATION_CONTACT2.2-CTD",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RRI_I12.7-PROVIDER_CONTACT",
+          "path": "RRI_I12.7-PROVIDER_CONTACT",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RRI_I12.7-PROVIDER_CONTACT.1-PRD",
+              "path": "RRI_I12.7-PROVIDER_CONTACT.1-PRD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RRI_I12.7-PROVIDER_CONTACT.2-CTD",
+              "path": "RRI_I12.7-PROVIDER_CONTACT.2-CTD",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RRI_I12.8-PID",
+          "path": "RRI_I12.8-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.9-GSP",
+          "path": "RRI_I12.9-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.10-GSR",
+          "path": "RRI_I12.10-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.11-GSC",
+          "path": "RRI_I12.11-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.12-ACC",
+          "path": "RRI_I12.12-ACC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ACC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.13-DG1",
+          "path": "RRI_I12.13-DG1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DG1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.14-DRG",
+          "path": "RRI_I12.14-DRG",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DRG"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.15-AL1",
+          "path": "RRI_I12.15-AL1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/AL1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "RRI_I12.16-PROCEDURE",
+          "path": "RRI_I12.16-PROCEDURE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RRI_I12.16-PROCEDURE.1-PR1",
+              "path": "RRI_I12.16-PROCEDURE.1-PR1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PR1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RRI_I12.16-PROCEDURE.2-AUTHORIZATION_CONTACT2",
+              "path": "RRI_I12.16-PROCEDURE.2-AUTHORIZATION_CONTACT2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RRI_I12.16-PROCEDURE.2-AUTHORIZATION_CONTACT2.1-AUT",
+                  "path": "RRI_I12.16-PROCEDURE.2-AUTHORIZATION_CONTACT2.1-AUT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AUT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRI_I12.16-PROCEDURE.2-AUTHORIZATION_CONTACT2.2-CTD",
+                  "path": "RRI_I12.16-PROCEDURE.2-AUTHORIZATION_CONTACT2.2-CTD",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RRI_I12.17-OBSERVATION",
+          "path": "RRI_I12.17-OBSERVATION",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RRI_I12.17-OBSERVATION.1-OBR",
+              "path": "RRI_I12.17-OBSERVATION.1-OBR",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RRI_I12.17-OBSERVATION.2-PRT",
+              "path": "RRI_I12.17-OBSERVATION.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RRI_I12.17-OBSERVATION.3-NTE",
+              "path": "RRI_I12.17-OBSERVATION.3-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RRI_I12.17-OBSERVATION.4-RESULTS_NOTES",
+              "path": "RRI_I12.17-OBSERVATION.4-RESULTS_NOTES",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "RRI_I12.17-OBSERVATION.4-RESULTS_NOTES.1-OBX",
+                  "path": "RRI_I12.17-OBSERVATION.4-RESULTS_NOTES.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRI_I12.17-OBSERVATION.4-RESULTS_NOTES.2-PRT",
+                  "path": "RRI_I12.17-OBSERVATION.4-RESULTS_NOTES.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "RRI_I12.17-OBSERVATION.4-RESULTS_NOTES.3-NTE",
+                  "path": "RRI_I12.17-OBSERVATION.4-RESULTS_NOTES.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RRI_I12.18-PATIENT_VISIT",
+          "path": "RRI_I12.18-PATIENT_VISIT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "RRI_I12.18-PATIENT_VISIT.1-PV1",
+              "path": "RRI_I12.18-PATIENT_VISIT.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "RRI_I12.18-PATIENT_VISIT.2-PV2",
+              "path": "RRI_I12.18-PATIENT_VISIT.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "RRI_I12.19-NTE",
+          "path": "RRI_I12.19-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 RRI_I12 Segment Definition",
+  "name": "RRI_I12",
+  "type": "http://hl7.org/v2/StructureDefinition/RRI_I12"
+}

@@ -1,0 +1,192 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/MFN_M12",
+  "id": "MFN_M12",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "MFN_M12.1-MSH",
+          "path": "MFN_M12.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M12.2-SFT",
+          "path": "MFN_M12.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M12.3-UAC",
+          "path": "MFN_M12.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M12.4-MFI",
+          "path": "MFN_M12.4-MFI",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MFI"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "MFN_M12.5-MF_OBS_ATTRIBUTES",
+          "path": "MFN_M12.5-MF_OBS_ATTRIBUTES",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "MFN_M12.5-MF_OBS_ATTRIBUTES.1-MFE",
+              "path": "MFN_M12.5-MF_OBS_ATTRIBUTES.1-MFE",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/MFE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M12.5-MF_OBS_ATTRIBUTES.2-OM1",
+              "path": "MFN_M12.5-MF_OBS_ATTRIBUTES.2-OM1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OM1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M12.5-MF_OBS_ATTRIBUTES.3-PRT",
+              "path": "MFN_M12.5-MF_OBS_ATTRIBUTES.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "MFN_M12.5-MF_OBS_ATTRIBUTES.4-MF_OBS_OTHER_ATTRIBUTES",
+              "path": "MFN_M12.5-MF_OBS_ATTRIBUTES.4-MF_OBS_OTHER_ATTRIBUTES",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "MFN_M12.5-MF_OBS_ATTRIBUTES.4-MF_OBS_OTHER_ATTRIBUTES.1-OM7",
+                  "path": "MFN_M12.5-MF_OBS_ATTRIBUTES.4-MF_OBS_OTHER_ATTRIBUTES.1-OM7",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OM7"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "MFN_M12.5-MF_OBS_ATTRIBUTES.4-MF_OBS_OTHER_ATTRIBUTES.2-PRT",
+                  "path": "MFN_M12.5-MF_OBS_ATTRIBUTES.4-MF_OBS_OTHER_ATTRIBUTES.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 MFN_M12 Segment Definition",
+  "name": "MFN_M12",
+  "type": "http://hl7.org/v2/StructureDefinition/MFN_M12"
+}

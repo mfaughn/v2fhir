@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/GSP",
+  "id": "GSP",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "GSP.1",
         "path": "GSP.1",
-        "short": " - GSP",
+        "short": "- GSP.1 - ",
         "definition": "Definition: This field contains the sequence number used to identify the GSP segment instances in a message.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "GSP.2",
         "path": "GSP.2",
-        "short": " - GSP",
+        "short": "- GSP.2 - ",
         "definition": "Definition: This field contains a code defining the action to be taken for this segment.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "GSP.3",
         "path": "GSP.3",
-        "short": " - GSP",
+        "short": "- GSP.3 - ",
         "definition": "Definition: This field contains the value that uniquely identifies a single GSP declaration for an individual. This field is conditionally required when the Action Code in GSP-2 indicates data is not being sent in Snapshot Mode (valued “S”).",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "GSP.4",
         "path": "GSP.4",
-        "short": " - GSP",
+        "short": "- GSP.4 - ",
         "definition": "Definition: This field contains an identifer for the SOGI related concept being asserted (eg. Gender Identity, or Personal Pronouns). Refer to User-defined Table HL7 Table 0820 - Gender Harmony Concepts in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -141,7 +143,7 @@
       {
         "id": "GSP.5",
         "path": "GSP.5",
-        "short": " - GSP",
+        "short": "- GSP.5 - ",
         "definition": "Definition: This field contains the value asserted for the concept conveyed in GSP-4. The appropriate value set to use will vary with the concept being communicated (i.e. the valid list of concepts for Gender Identity will be different than the valid list of concepts for Sexual Orientation).",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -171,7 +173,7 @@
       {
         "id": "GSP.6",
         "path": "GSP.6",
-        "short": " - GSP",
+        "short": "- GSP.6 - ",
         "definition": "Definition: This field asserts the time frame during which the value in GSP-5 applies to the individual. This field may contain values for both the Start Date/Time and End Date/Time for values known to no longer be in use. Alternatively, the field may be populated with just a Start Date/Time which indicates that the value is still currently in use. *Note that the Start Date/Time for the Validitity Period may be different than the date on which the data was collected and/or entered.*",
         "description": null,
         "code": [
@@ -184,7 +186,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DR"
+            "code": "DR"
           }
         ],
         "extension": [
@@ -197,7 +199,7 @@
       {
         "id": "GSP.7",
         "path": "GSP.7",
-        "short": " - GSP",
+        "short": "- GSP.7 - ",
         "definition": "Definition: This field contains a free text comment pertaining to the value conveyed in GSP-5.",
         "description": null,
         "code": [
@@ -210,7 +212,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -222,9 +224,7 @@
       }
     ]
   },
-  "id": "GSP",
   "title": "HL7 v2 GSP Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/GSP",
   "name": "GSP",
-  "type": "http://hl7.org/v2/StructureDefinition/GSP"
+  "type": "GSP"
 }

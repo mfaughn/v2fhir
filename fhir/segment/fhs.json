@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/FHS",
+  "id": "FHS",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "FHS.1",
         "path": "FHS.1",
-        "short": " - FHS",
+        "short": "- FHS.1 - ",
         "definition": "Definition: This field has the same definition as the corresponding field in the MSH segment.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "FHS.2",
         "path": "FHS.2",
-        "short": " - FHS",
+        "short": "- FHS.2 - ",
         "definition": "Definition: This field has the same definition as the corresponding field in the MSH segment.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -94,7 +96,7 @@
       {
         "id": "FHS.3",
         "path": "FHS.3",
-        "short": " - FHS",
+        "short": "- FHS.3 - ",
         "definition": "Definition: This field has the same definition as the corresponding field in the MSH segment.",
         "description": null,
         "code": [
@@ -107,7 +109,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/HD"
+            "code": "HD"
           }
         ],
         "extension": [
@@ -120,7 +122,7 @@
       {
         "id": "FHS.4",
         "path": "FHS.4",
-        "short": " - FHS",
+        "short": "- FHS.4 - ",
         "definition": "Definition: This field has the same definition as the corresponding field in the MSH segment.",
         "description": null,
         "code": [
@@ -133,7 +135,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/HD"
+            "code": "HD"
           }
         ],
         "extension": [
@@ -146,7 +148,7 @@
       {
         "id": "FHS.5",
         "path": "FHS.5",
-        "short": " - FHS",
+        "short": "- FHS.5 - ",
         "definition": "Definition: This field has the same definition as the corresponding field in the MSH segment.",
         "description": null,
         "code": [
@@ -159,7 +161,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/HD"
+            "code": "HD"
           }
         ],
         "extension": [
@@ -172,7 +174,7 @@
       {
         "id": "FHS.6",
         "path": "FHS.6",
-        "short": " - FHS",
+        "short": "- FHS.6 - ",
         "definition": "Definition: This field has the same definition as the corresponding field in the MSH segment.",
         "description": null,
         "code": [
@@ -185,7 +187,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/HD"
+            "code": "HD"
           }
         ],
         "extension": [
@@ -198,7 +200,7 @@
       {
         "id": "FHS.7",
         "path": "FHS.7",
-        "short": " - FHS",
+        "short": "- FHS.7 - ",
         "definition": "Definition: This field has the same definition as the corresponding field in the MSH segment.",
         "description": null,
         "code": [
@@ -211,7 +213,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -224,7 +226,7 @@
       {
         "id": "FHS.8",
         "path": "FHS.8",
-        "short": " - FHS",
+        "short": "- FHS.8 - ",
         "definition": "Definition: This field has the same definition as the corresponding field in the MSH segment.",
         "description": null,
         "code": [
@@ -237,7 +239,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -263,7 +265,7 @@
       {
         "id": "FHS.9",
         "path": "FHS.9",
-        "short": " - FHS",
+        "short": "- FHS.9 - ",
         "definition": "Definition: This field can be used by the application processing file. Its use is not further specified.",
         "description": null,
         "code": [
@@ -276,7 +278,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -302,7 +304,7 @@
       {
         "id": "FHS.10",
         "path": "FHS.10",
-        "short": " - FHS",
+        "short": "- FHS.10 - ",
         "definition": "Definition: This field contains the free text field, the use of which is not further specified.",
         "description": null,
         "code": [
@@ -315,7 +317,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -341,7 +343,7 @@
       {
         "id": "FHS.11",
         "path": "FHS.11",
-        "short": " - FHS",
+        "short": "- FHS.11 - ",
         "definition": "Definition: This field is used to identify a particular file uniquely. It can be echoed back in FHS-12-reference file control ID.",
         "description": null,
         "code": [
@@ -354,7 +356,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -380,7 +382,7 @@
       {
         "id": "FHS.12",
         "path": "FHS.12",
-        "short": " - FHS",
+        "short": "- FHS.12 - ",
         "definition": "Definition: This field contains the value of FHS-11-file control ID when this file was originally transmitted. Not present if this file is being transmitted for the first time.",
         "description": null,
         "code": [
@@ -393,7 +395,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -419,7 +421,7 @@
       {
         "id": "FHS.13",
         "path": "FHS.13",
-        "short": " - FHS",
+        "short": "- FHS.13 - ",
         "definition": "Definition: Identifier of the network location the message was transmitted from. Identified by an OID or text string (e.g., URI). The reader is referred to the \"Report from the Joint W3C/IETF URI Planning Interest Group: Uniform Resource Identifiers (URIs), URLs, and Uniform Resource Names (URNs): Clarifications and Recommendations\".footnote:[The URI is: http://www.ietf.org/rfc/rfc3305.txt. Note: All IETF documents are available online, and RFCs are available through URIs using this format.]",
         "description": null,
         "code": [
@@ -432,7 +434,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/HD"
+            "code": "HD"
           }
         ],
         "extension": [
@@ -445,7 +447,7 @@
       {
         "id": "FHS.14",
         "path": "FHS.14",
-        "short": " - FHS",
+        "short": "- FHS.14 - ",
         "definition": "Definition: Identifier of the network location the message was transmitted to. Identified by an OID or text string. (e.g., URL).",
         "description": null,
         "code": [
@@ -458,7 +460,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/HD"
+            "code": "HD"
           }
         ],
         "extension": [
@@ -471,7 +473,7 @@
       {
         "id": "FHS.15",
         "path": "FHS.15",
-        "short": " - FHS",
+        "short": "- FHS.15 - ",
         "definition": "Definition: This field defines the security classification (as defined by ISO/IEC 2382-8:1998(E/F)/ T-REC-X.812-1995) of an IT resource, in this case the message, which MAY be used to make access control decisions. It is conditionally required when MSH-27 or MSH-28 are used.",
         "description": null,
         "code": [
@@ -484,7 +486,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -501,7 +503,7 @@
       {
         "id": "FHS.16",
         "path": "FHS.16",
-        "short": " - FHS",
+        "short": "- FHS.16 - ",
         "definition": "Definition: This field is repeatable and conveys instructions to users and receivers for secure distribution, transmission, and storage; dictate obligations or mandated actions; specify any action prohibited by refrain policy such as dissemination controls; and stipulate the permissible purpose of use of an IT resource.",
         "description": null,
         "code": [
@@ -514,7 +516,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -531,7 +533,7 @@
       {
         "id": "FHS.17",
         "path": "FHS.17",
-        "short": " - FHS",
+        "short": "- FHS.17 - ",
         "definition": "Definition: Used to convey specific instructions about the protection of the patient's data , which must be rendered to end users in accordance with patient consent directive, organizational policy, or jurisdictional law. For example, in US law 42 CFR Part 2, disclosed information made with patient consent must include a renderable “Prohibition on re-disclosure” warning (§ 2.32[multiblock footnote omitted]) In addition, organizational policy might require that some or all of the ARV field privacy tag values be rendered to end users, e.g., marking a consult note with “Restricted Confidentiality” or with sensitivity tags such as “VIP” or “EMP” for employee of the organization.",
         "description": null,
         "code": [
@@ -544,7 +546,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -556,9 +558,7 @@
       }
     ]
   },
-  "id": "FHS",
   "title": "HL7 v2 FHS Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/FHS",
   "name": "FHS",
-  "type": "http://hl7.org/v2/StructureDefinition/FHS"
+  "type": "FHS"
 }

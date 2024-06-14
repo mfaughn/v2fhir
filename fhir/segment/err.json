@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ERR",
+  "id": "ERR",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "ERR.1",
         "path": "ERR.1",
-        "short": " - ERR",
+        "short": "- ERR.1 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -35,7 +37,7 @@
       {
         "id": "ERR.2",
         "path": "ERR.2",
-        "short": " - ERR",
+        "short": "- ERR.2 - ",
         "definition": "Definition: Identifies the location in a message related to the identified error, warning or message. If multiple repetitions are present, the error results from the values in a combination of places.",
         "description": null,
         "code": [
@@ -48,7 +50,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ERL"
+            "code": "ERL"
           }
         ],
         "extension": [
@@ -61,7 +63,7 @@
       {
         "id": "ERR.3",
         "path": "ERR.3",
-        "short": " - ERR",
+        "short": "- ERR.3 - ",
         "definition": "Definition: Identifies the HL7 (communications) error code. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70357[_HL7_ _Tabl__e_ _0357 – Message Error Condition Codes_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -74,7 +76,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -91,7 +93,7 @@
       {
         "id": "ERR.4",
         "path": "ERR.4",
-        "short": " - ERR",
+        "short": "- ERR.4 - ",
         "definition": "Definition: Identifies the severity of an application error. Knowing if something is Error, Warning or Information is intrinsic to how an application handles the content. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70516[_HL7 Table 0516 - Error Severity_] in Chapter 2C, Code Tables, for valid values. If ERR-3 has a value of \"0\", ERR-4 will have a value of \"I\".",
         "description": null,
         "code": [
@@ -104,7 +106,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -134,7 +136,7 @@
       {
         "id": "ERR.5",
         "path": "ERR.5",
-        "short": " - ERR",
+        "short": "- ERR.5 - ",
         "definition": "Definition: Application specific code identifying the specific error that occurred. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70533[_User-Defined Table 0533 – Application Error Cod__e_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -147,7 +149,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -164,7 +166,7 @@
       {
         "id": "ERR.6",
         "path": "ERR.6",
-        "short": " - ERR",
+        "short": "- ERR.6 - ",
         "definition": "Definition: Additional information to be used, together with the Application Error Code, to understand a particular error condition/warning/etc. This field can repeat to allow for up to 10 parameters.",
         "description": null,
         "code": [
@@ -177,7 +179,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -203,7 +205,7 @@
       {
         "id": "ERR.7",
         "path": "ERR.7",
-        "short": " - ERR",
+        "short": "- ERR.7 - ",
         "definition": "Definition: Information that MAY be used by help desk or other support personnel to diagnose a problem.",
         "description": null,
         "code": [
@@ -216,7 +218,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -242,7 +244,7 @@
       {
         "id": "ERR.8",
         "path": "ERR.8",
-        "short": " - ERR",
+        "short": "- ERR.8 - ",
         "definition": "Definition: The text message to be displayed to the application user.",
         "description": null,
         "code": [
@@ -255,7 +257,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -281,7 +283,7 @@
       {
         "id": "ERR.9",
         "path": "ERR.9",
-        "short": " - ERR",
+        "short": "- ERR.9 - ",
         "definition": "Definition: A code to indicate who (if anyone) SHOULD be informed of the error. This field MAY also be used to indicate that a particular person SHOULD NOT be informed of the error (e.g., Do not inform patient). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70517[_User-defined table 0517- Inform Person Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -294,7 +296,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -311,7 +313,7 @@
       {
         "id": "ERR.10",
         "path": "ERR.10",
-        "short": " - ERR",
+        "short": "- ERR.10 - ",
         "definition": "Definition: Identifies what type of override can be used to override the specific error identified. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70518[_User-defined Table 0518 - Override Type_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -324,7 +326,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -341,7 +343,7 @@
       {
         "id": "ERR.11",
         "path": "ERR.11",
-        "short": " - ERR",
+        "short": "- ERR.11 - ",
         "definition": "Definition: Provides a list of potential override codes that can be used to override enforcement of the application rule that generated the error. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70519[_User-defined table 0519 – Override Reason_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -354,7 +356,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -371,7 +373,7 @@
       {
         "id": "ERR.12",
         "path": "ERR.12",
-        "short": " - ERR",
+        "short": "- ERR.12 - ",
         "definition": "Definition: Lists phone, e-mail, fax, and other relevant numbers for helpdesk support related to the specified error.",
         "description": null,
         "code": [
@@ -384,7 +386,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -396,9 +398,7 @@
       }
     ]
   },
-  "id": "ERR",
   "title": "HL7 v2 ERR Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/ERR",
   "name": "ERR",
-  "type": "http://hl7.org/v2/StructureDefinition/ERR"
+  "type": "ERR"
 }

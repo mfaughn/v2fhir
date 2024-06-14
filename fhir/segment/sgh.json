@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/SGH",
+  "id": "SGH",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "SGH.1",
         "path": "SGH.1",
-        "short": " - SGH",
+        "short": "- SGH.1 - ",
         "definition": "Definition: For the first segment group transmitted, the sequence number SHALL be 1; for the second , it SHALL be 2; and so on.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "SGH.2",
         "path": "SGH.2",
-        "short": " - SGH",
+        "short": "- SGH.2 - ",
         "definition": "Definition: This field contains the name of the segment group.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -93,9 +95,7 @@
       }
     ]
   },
-  "id": "SGH",
   "title": "HL7 v2 SGH Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/SGH",
   "name": "SGH",
-  "type": "http://hl7.org/v2/StructureDefinition/SGH"
+  "type": "SGH"
 }

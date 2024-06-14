@@ -1,0 +1,658 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/CSU_C09",
+  "id": "CSU_C09",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "CSU_C09.1-MSH",
+          "path": "CSU_C09.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CSU_C09.2-ARV",
+          "path": "CSU_C09.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CSU_C09.3-SFT",
+          "path": "CSU_C09.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CSU_C09.4-UAC",
+          "path": "CSU_C09.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "CSU_C09.5-PATIENT",
+          "path": "CSU_C09.5-PATIENT",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.1-PID",
+              "path": "CSU_C09.5-PATIENT.1-PID",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PID"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.2-PD1",
+              "path": "CSU_C09.5-PATIENT.2-PD1",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PD1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.3-GSP",
+              "path": "CSU_C09.5-PATIENT.3-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.4-GSR",
+              "path": "CSU_C09.5-PATIENT.4-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.5-GSC",
+              "path": "CSU_C09.5-PATIENT.5-GSC",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSC"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.6-PRT",
+              "path": "CSU_C09.5-PATIENT.6-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.7-ARV",
+              "path": "CSU_C09.5-PATIENT.7-ARV",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.8-NTE",
+              "path": "CSU_C09.5-PATIENT.8-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.9-VISIT",
+              "path": "CSU_C09.5-PATIENT.9-VISIT",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CSU_C09.5-PATIENT.9-VISIT.1-PV1",
+                  "path": "CSU_C09.5-PATIENT.9-VISIT.1-PV1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CSU_C09.5-PATIENT.9-VISIT.2-PV2",
+                  "path": "CSU_C09.5-PATIENT.9-VISIT.2-PV2",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CSU_C09.5-PATIENT.9-VISIT.3-PRT",
+                  "path": "CSU_C09.5-PATIENT.9-VISIT.3-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.10-CSR",
+              "path": "CSU_C09.5-PATIENT.10-CSR",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE",
+              "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.1-CSP",
+                  "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.1-CSP",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/CSP"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE",
+                  "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.1-CSS",
+                      "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.1-CSS",
+                      "min": 1,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/CSS"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION",
+                      "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.1-FIXME",
+                          "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.1-FIXME",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.1-FIXME.1-ORC",
+                              "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.1-FIXME.1-ORC",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.1-FIXME.2-PRT",
+                              "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.1-FIXME.2-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.2-OBR",
+                          "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.2-OBR",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.3-PRT",
+                          "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.3-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.4-TIMING_QTY",
+                          "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.4-TIMING_QTY",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.4-TIMING_QTY.1-TQ1",
+                              "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.4-TIMING_QTY.1-TQ1",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.4-TIMING_QTY.2-TQ2",
+                              "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.4-TIMING_QTY.2-TQ2",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.5-OBX",
+                          "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.5-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.6-PRT",
+                          "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.2-STUDY_OBSERVATION.6-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM",
+                      "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM",
+                      "min": 0,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.1-COMMON_ORDER",
+                          "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.1-COMMON_ORDER",
+                          "min": 1,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.1-COMMON_ORDER.1-ORC",
+                              "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.1-COMMON_ORDER.1-ORC",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.1-COMMON_ORDER.2-PRT",
+                              "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.1-COMMON_ORDER.2-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.2-RX_ADMIN",
+                          "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.2-RX_ADMIN",
+                          "min": 0,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.2-RX_ADMIN.1-RXA",
+                              "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.2-RX_ADMIN.1-RXA",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/RXA"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.2-RX_ADMIN.2-RXR",
+                              "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.2-RX_ADMIN.2-RXR",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/RXR"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "id": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.2-RX_ADMIN.3-PRT",
+                              "path": "CSU_C09.5-PATIENT.11-STUDY_PHASE.2-STUDY_SCHEDULE.3-STUDY_PHARM.2-RX_ADMIN.3-PRT",
+                              "min": 1,
+                              "max": "*",
+                              "definition": "*",
+                              "short": "*",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 CSU_C09 Segment Definition",
+  "name": "CSU_C09",
+  "type": "http://hl7.org/v2/StructureDefinition/CSU_C09"
+}

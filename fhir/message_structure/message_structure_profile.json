@@ -1,0 +1,46 @@
+{
+  "resourceType" : "StructureDefinition",
+  "url" : "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile",
+  "version" : "0.0.1",
+  "name" : "V2MessageStructureProfile",
+  "title" : "V2 Message Structure Profile",
+  "status" : "active",
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "StructureDefinition",
+  "description" : "Rules that are true for all HL7 v2 MessageStructures (= Abstract Syntax Tree)",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "StructureDefinition.kind",
+        "path" : "StructureDefinition.kind",
+        "fixedCode" : "logical"
+      },
+      {
+        "id" : "StructureDefinition.abstract",
+        "path" : "StructureDefinition.abstract",
+        "fixedBoolean" : false
+      },
+      {
+        "id" : "StructureDefinition.type",
+        "path" : "StructureDefinition.type",
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "http://hl7.org/v2/ValueSet/MessageStructures"
+        }
+      },
+      {
+        "id" : "StructureDefinition.baseDefinition",
+        "path" : "StructureDefinition.baseDefinition",
+        "fixedCanonical" : "http://hl7.org/v2/StructureDefinition/MessageStructure"
+      },
+      {
+        "id" : "StructureDefinition.derivation",
+        "path" : "StructureDefinition.derivation",
+        "fixedCode" : "specialization"
+      }
+    ]
+  }
+}

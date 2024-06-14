@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OH2",
+  "id": "OH2",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "OH2.1",
         "path": "OH2.1",
-        "short": " - OH2",
+        "short": "- OH2.1 - ",
         "definition": "Definition: This field contains the number that identifies the OH2 segment instances in message structures where the OH2 segment repeats. For the first occurrence of the segment, the sequence number shall be one, for the second occurrence, the sequence number shall be two, etc. If the subject of the OH2 segment changes (e.g. Patient vs Next of Kin) the Set ID sequence will be reset.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "OH2.2",
         "path": "OH2.2",
-        "short": " - OH2",
+        "short": "- OH2.2 - ",
         "definition": "Definition: This field contains a code defining the action to be taken for this segment. It allows this segment to be sent to delete or update, for example, previously sent information. Refer to file:///D:\\Eigene%20Dateien\\2018\\HL7\\Standards\\v2.9%20Jan%202019\\v29%20CH2C%20Table%200206[*_HL7 Table 0206 – Segment Action Code_*] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "OH2.3",
         "path": "OH2.3",
-        "short": " - OH2",
+        "short": "- OH2.3 - ",
         "definition": "Definition: This field records the date that the information was entered into the patient record.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "OH2.4",
         "path": "OH2.4",
-        "short": " - OH2",
+        "short": "- OH2.4 - ",
         "definition": "Definition: This field contains a code defining the occupation in which an individual is engaged in for the job recorded in this segment, regardless of duration. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70958[_HL7 Table 0958 – Occupation Code_] in Chapter 2C, Code Tables, for suggested values. In the US, this field should use the Occupation CDC Census 2010 codes published at https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -141,7 +143,7 @@
       {
         "id": "OH2.5",
         "path": "OH2.5",
-        "short": " - OH2",
+        "short": "- OH2.5 - ",
         "definition": "Definition: This field contains a code defining the industry in which an individual is engaged for the job recorded in this segment, regardless of duration. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70955[_HL7 Table 0955 – Industry Code_] in Chapter 2C, Code Tables, for suggested values. In the US, this field should use the Industry CDC Census 2010 codes published at https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7187",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -171,7 +173,7 @@
       {
         "id": "OH2.6",
         "path": "OH2.6",
-        "short": " - OH2",
+        "short": "- OH2.6 - ",
         "definition": "Definition: This field contains a code defining the work classification associated with the job of a person recorded in this segment. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70959[_HL7 Table 0959 – Work Classification Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -184,7 +186,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -201,7 +203,7 @@
       {
         "id": "OH2.7",
         "path": "OH2.7",
-        "short": " - OH2",
+        "short": "- OH2.7 - ",
         "definition": "Definition: This field asserts when the job began.",
         "description": null,
         "code": [
@@ -214,7 +216,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -240,7 +242,7 @@
       {
         "id": "OH2.8",
         "path": "OH2.8",
-        "short": " - OH2",
+        "short": "- OH2.8 - ",
         "definition": "Definition: This field asserts when the job ended. If the job is current, Job End Date shall be empty.",
         "description": null,
         "code": [
@@ -253,7 +255,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DT"
+            "code": "DT"
           }
         ],
         "extension": [
@@ -279,7 +281,7 @@
       {
         "id": "OH2.9",
         "path": "OH2.9",
-        "short": " - OH2",
+        "short": "- OH2.9 - ",
         "definition": "Definition: This field contains a code defining the work schedule associated with the job of a person recorded in this segment. Describes an individual's typical arrangement of working hours for a job. For example, work schedule may capture that an individual typically works a regular day shift, evening shift, or night shift. It can also specify if an individual has another type of schedule such as a rotating shift, split shift, etc. In healthcare settings, knowledge of a patient's typical work schedule may assist in diagnosis of healthcare issues related to irregular work hours or sleep patterns. It may also assist in determining appropriate treatment and prevention plans that will coordinate with the patient's work schedule. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70954[_HL7 Table 0954 – Work Schedule Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -292,7 +294,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -309,7 +311,7 @@
       {
         "id": "OH2.10",
         "path": "OH2.10",
-        "short": " - OH2",
+        "short": "- OH2.10 - ",
         "definition": "Definition: This field asserts the average hours worked per day for the job of a person recorded in this segment.",
         "description": null,
         "code": [
@@ -322,7 +324,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -335,7 +337,7 @@
       {
         "id": "OH2.11",
         "path": "OH2.11",
-        "short": " - OH2",
+        "short": "- OH2.11 - ",
         "definition": "Definition: This field asserts the average days worked per week for the job of a person recorded in this segment.",
         "description": null,
         "code": [
@@ -348,7 +350,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -361,7 +363,7 @@
       {
         "id": "OH2.12",
         "path": "OH2.12",
-        "short": " - OH2",
+        "short": "- OH2.12 - ",
         "definition": "Definition: This field asserts the name and or identifier of the employer organization for the job of a person recorded in this segment.",
         "description": null,
         "code": [
@@ -374,7 +376,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -400,7 +402,7 @@
       {
         "id": "OH2.13",
         "path": "OH2.13",
-        "short": " - OH2",
+        "short": "- OH2.13 - ",
         "definition": "Definition: This field asserts the address of the employer organization for the job of a person recorded in this segment. This field shall be populated with the address of the employer rather than the site that the employee works.",
         "description": null,
         "code": [
@@ -413,7 +415,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -439,7 +441,7 @@
       {
         "id": "OH2.14",
         "path": "OH2.14",
-        "short": " - OH2",
+        "short": "- OH2.14 - ",
         "definition": "Definition: This field contains a code defining the supervisory level associated with the job of a person recorded in this segment. Supervisory Level reflects the amount of supervisory or management responsibilities for an individual’s job. For example, in the US, in the military, this is the person’s pay grade, which serves as a proxy for supervisory level and can be interpreted across branches. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70956[_HL7 Table 0956 – Supervisory Level Code_] in Chapter 2C, Code Tables, for suggested values. In the US, this field should use the Job Supervisory Level or Pay Grade (ODH)codes published at https://phinvads.cdc.gov/vads/ViewCodeSystem.action?oid=2.16.840.1.114222.4.11.7613",
         "description": null,
         "code": [
@@ -452,7 +454,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -469,7 +471,7 @@
       {
         "id": "OH2.15",
         "path": "OH2.15",
-        "short": " - OH2",
+        "short": "- OH2.15 - ",
         "definition": "Definition: This field lists the regular actions performed at work. For example, a person may have the occupation of “construction laborer” and his specific job duties are to carry construction supplies. Specific job information is important in the healthcare setting because it provides information regarding hazards to which a person may have been exposed, which is pertinent to treatment and prevention. This field may repeat to list multiple job duties, or the job duties may be compiled as a single narrative.",
         "description": null,
         "code": [
@@ -482,7 +484,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -508,7 +510,7 @@
       {
         "id": "OH2.16",
         "path": "OH2.16",
-        "short": " - OH2",
+        "short": "- OH2.16 - ",
         "definition": "Definition: This field lists the hazard(s) associated with a person’s job. Job hazards are a source of potential harm to an individual’s physical or mental health. Hazards may be biological, physical, psychological, chemical, or radiological in nature. An occupational hazard is one that is specific to the work or work environment of an individual. This field may repeat to list multiple occupational hazards, or the occupational hazards may be compiled as a single narrative.",
         "description": null,
         "code": [
@@ -521,7 +523,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/FT"
+            "code": "FT"
           }
         ],
         "extension": [
@@ -547,7 +549,7 @@
       {
         "id": "OH2.17",
         "path": "OH2.17",
-        "short": " - OH2",
+        "short": "- OH2.17 - ",
         "definition": "Definition: This field contains a value the uniquely identifies a single job for a person.",
         "description": null,
         "code": [
@@ -560,7 +562,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -573,7 +575,7 @@
       {
         "id": "OH2.18",
         "path": "OH2.18",
-        "short": " - OH2",
+        "short": "- OH2.18 - ",
         "definition": "Definition: This field defines a flag indicating if this is the person’s current job (at the time the record was last updated) using 'Yes', when current and 'No' when not. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 – Yes/no_] _Indicator_ in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -586,7 +588,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -602,9 +604,7 @@
       }
     ]
   },
-  "id": "OH2",
   "title": "HL7 v2 OH2 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/OH2",
   "name": "OH2",
-  "type": "http://hl7.org/v2/StructureDefinition/OH2"
+  "type": "OH2"
 }

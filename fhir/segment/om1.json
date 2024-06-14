@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OM1",
+  "id": "OM1",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "OM1.1",
         "path": "OM1.1",
-        "short": " - OM1",
+        "short": "- OM1.1 - ",
         "definition": "Definition: This field contains the first OM1 segment in a message and is described as 1, the second as 2, and so on.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "OM1.2",
         "path": "OM1.2",
-        "short": " - OM1",
+        "short": "- OM1.2 - ",
         "definition": "Definition: This field contains the producer's usual or preferred identification of the test or observation. Only three components should be included: <ID code>^<service text name/description>^<source list of code>. All components should be non-null. Refer to Table 0630 - Producer's Service/Test/Observation ID in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "OM1.3",
         "path": "OM1.3",
-        "short": " - OM1",
+        "short": "- OM1.3 - ",
         "definition": "Definition: This field contains the allowed data type(s) for this observation. The codes are the same as those listed for OBX (a given observation may, under different circumstances, take on different data types). Indeed, under limited circumstances, an observation can consist of one or more fragments of different data types. When an observation may have more than one data type, e.g., coded (CWE) and numeric (NM) the allowable data types should be separated by repeat delimiters. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70125[HL7 Table 0125 – Value Type] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -128,7 +130,7 @@
       {
         "id": "OM1.4",
         "path": "OM1.4",
-        "short": " - OM1",
+        "short": "- OM1.4 - ",
         "definition": "Definition: This field contains a flag indicating whether or not at least one specimen is required for the service/test/observation. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[HL7 Table 0136 - Yes/no Indicator] as defined in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -141,7 +143,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -171,7 +173,7 @@
       {
         "id": "OM1.5",
         "path": "OM1.5",
-        "short": " - OM1",
+        "short": "- OM1.5 - ",
         "definition": "Definition: This field uniquely identifies the service producing the observation described in this segment. Three components should be included: an identifying code, the name of the producer, and the identity of the coding system (e.g., 323-5678^Acme Special Lab^MC). The identity of the coding system will usually be MC (Medicare provider number or HIBCC site codes) in the United States. Each country may want to specify its preferred coding system and define a coding system ID to identify it. Refer to Table 0631 - Producer ID in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -184,7 +186,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -201,7 +203,7 @@
       {
         "id": "OM1.6",
         "path": "OM1.6",
-        "short": " - OM1",
+        "short": "- OM1.6 - ",
         "definition": "Definition: This field contains a text description of this observation.",
         "description": null,
         "code": [
@@ -214,7 +216,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -240,7 +242,7 @@
       {
         "id": "OM1.7",
         "path": "OM1.7",
-        "short": " - OM1",
+        "short": "- OM1.7 - ",
         "definition": "Definition: This field contains all alias codes/identifiers for this observation. If more than one alias code needs to be specified, multiple three-component, CWE-format entries (<code 1>^<name 1>^<code system 1>) may be given, separated by repeat delimiters. An observation may have as many names/codes as are applicable (e.g., ICD9, ACR-NEMA, SNOMED, and READ). We encourage the inclusion of as many different codes as may apply to assist cross-system mapping of terminology. All components of each triplet should be non-null (that is, names and coding system IDs within the CWE data type are required in addition to codes). Refer to Table 0632 - Other Service/Test/Observation IDs for the Observation in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -253,7 +255,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -270,7 +272,7 @@
       {
         "id": "OM1.8",
         "path": "OM1.8",
-        "short": " - OM1",
+        "short": "- OM1.8 - ",
         "definition": "Definition: This field contains any test aliases or synonyms for the name in the context of the ordering service. These are alternative names, not associated with a particular coding system, by which the battery, test, or observation (e.g., measurement, test, diagnostic study, treatment, etc.) is known to users of the system. Multiple names in this list are separated by repeat delimiters.",
         "description": null,
         "code": [
@@ -283,7 +285,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -309,7 +311,7 @@
       {
         "id": "OM1.9",
         "path": "OM1.9",
-        "short": " - OM1",
+        "short": "- OM1.9 - ",
         "definition": "Definition: This field contains the preferred name for reporting the observation or battery. The name can contain up to 30 characters (including blanks). It is the preferred name for columnar reports that require a maximum name size.",
         "description": null,
         "code": [
@@ -322,7 +324,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -348,7 +350,7 @@
       {
         "id": "OM1.10",
         "path": "OM1.10",
-        "short": " - OM1",
+        "short": "- OM1.10 - ",
         "definition": "Definition: This field contains the name that can be used in space-limited reports (e.g., specimen labels) to identify the observation for the convenience of human readers. The name can contain up to eight characters.",
         "description": null,
         "code": [
@@ -361,7 +363,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -387,7 +389,7 @@
       {
         "id": "OM1.11",
         "path": "OM1.11",
-        "short": " - OM1",
+        "short": "- OM1.11 - ",
         "definition": "Definition: This field contains the fully-specified name for the observation or battery. It may include the full (unabbreviated) multiple-word names and contain up to 200 characters. It should be as scientifically precise as possible.",
         "description": null,
         "code": [
@@ -400,7 +402,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -426,7 +428,7 @@
       {
         "id": "OM1.12",
         "path": "OM1.12",
-        "short": " - OM1",
+        "short": "- OM1.12 - ",
         "definition": "Definition: This field indicates whether or not a service/test/observation is an orderable code. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[HL7 Table 0136 - Yes/no Indicator] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -439,7 +441,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -469,7 +471,7 @@
       {
         "id": "OM1.13",
         "path": "OM1.13",
-        "short": " - OM1",
+        "short": "- OM1.13 - ",
         "definition": "Definition: When applicable, this field identifies the instrument or device that is used to generate this observation or battery. Examples are the automated instrument in the laboratory, the imaging device and model number in radiology, and the automatic blood pressure machine on the ward. The instrument is specified as a coded entry in anticipation that these identifiers could be specified as codes. Initially, we expect that most of the information about devices will be transmitted as text in the second component of the CWE identifier. If more than one kind of instrument is used, all of them can be listed, separated by repeat delimiters. Refer to Table 0633 - Identity of Instrument Used to Perform this Study in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -482,7 +484,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -499,7 +501,7 @@
       {
         "id": "OM1.14",
         "path": "OM1.14",
-        "short": " - OM1",
+        "short": "- OM1.14 - ",
         "definition": "Definition: This field contains the method(s) used to produce the observation and should be recorded in a computer-understandable (coded) form here. This field should report the same method(s) reported in narrative in the following field. More than one method may be listed, but only if they produce results that are clinically indistinguishable. Multiple methods must be separated by repeat delimiters. Refer to Table 0635 - Coded Representation of Method in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -512,7 +514,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -529,7 +531,7 @@
       {
         "id": "OM1.15",
         "path": "OM1.15",
-        "short": " - OM1",
+        "short": "- OM1.15 - ",
         "definition": "Definition: This field indicates whether or not a portable device may be used for the service/test/observation. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[HL7 Table 0136 - Yes/no Indicator] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -542,7 +544,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -572,7 +574,7 @@
       {
         "id": "OM1.16",
         "path": "OM1.16",
-        "short": " - OM1",
+        "short": "- OM1.16 - ",
         "definition": "Definition: This field permits the sorting of observation orders and values by the providing service's department/section. It provides \"source oriented\" reporting when required. Free text may be used instead of these codes, but in that case, they should be recorded as the second \"component\" of the field to distinguish them from the standard codes. Multiple codes in this field are separated by repeat delimiters. Refer to Table 0636 - Observation Producing Department/Section in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -585,7 +587,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -602,7 +604,7 @@
       {
         "id": "OM1.17",
         "path": "OM1.17",
-        "short": " - OM1",
+        "short": "- OM1.17 - ",
         "definition": "Definition: This field contains the telephone number for calling responsible parties in this section to ask results or advice about the use of this test.",
         "description": null,
         "code": [
@@ -615,7 +617,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -628,7 +630,7 @@
       {
         "id": "OM1.18",
         "path": "OM1.18",
-        "short": " - OM1",
+        "short": "- OM1.18 - ",
         "definition": "Definition: This field indicates whether the definition entry identifies a test battery, an entire functional procedure or study, a single test value (observation), multiple test batteries or functional procedures as an orderable unit (profile), or a single test value (observation) calculated from other independent observations. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70174[User-defined Table 0174 - Nature of Service/Test/Observation] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -641,7 +643,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -671,7 +673,7 @@
       {
         "id": "OM1.19",
         "path": "OM1.19",
-        "short": " - OM1",
+        "short": "- OM1.19 - ",
         "definition": "Definition: This field contains an optional string that defines the preferred header under which this observation should be listed on a standard display. For example, if the test is hemoglobin, this string might be \"Complete blood count.\" It is represented as a coded data type so that a battery can be a header. Only the description part of the string may be included in case the subheader does not have an associated code. When a series of observations is displayed according to the sort order given below, the subheader that groups those observations is presented whenever the subheader changes. Refer to Table 0637 - Report Subheader in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -684,7 +686,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -701,7 +703,7 @@
       {
         "id": "OM1.20",
         "path": "OM1.20",
-        "short": " - OM1",
+        "short": "- OM1.20 - ",
         "definition": "Definition: This field contains an optional string that defines the sort order in which this observation is presented in a standard report or display that contains the many observations.",
         "description": null,
         "code": [
@@ -714,7 +716,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -740,7 +742,7 @@
       {
         "id": "OM1.21",
         "path": "OM1.21",
-        "short": " - OM1",
+        "short": "- OM1.21 - ",
         "definition": "Definition: This field contains the date and time that the last of any field change was made and in the host's record corresponding to the OM1 segment.",
         "description": null,
         "code": [
@@ -753,7 +755,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -766,7 +768,7 @@
       {
         "id": "OM1.22",
         "path": "OM1.22",
-        "short": " - OM1",
+        "short": "- OM1.22 - ",
         "definition": "Definition: This field contains the date and time of the last change in the test procedure that would make previous results incompatible with new results, e.g., the last time that normal reference range or units changed for a numeric test/observation.",
         "description": null,
         "code": [
@@ -779,7 +781,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -792,7 +794,7 @@
       {
         "id": "OM1.23",
         "path": "OM1.23",
-        "short": " - OM1",
+        "short": "- OM1.23 - ",
         "definition": "Definition: This field contains the typical processing time for single test/observation. This field indicates the time from the delivery of a specimen or transport of a patient to a diagnostic service and the completion of the study. It includes the usual waiting time. The units are measured in minutes.",
         "description": null,
         "code": [
@@ -805,7 +807,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -818,7 +820,7 @@
       {
         "id": "OM1.24",
         "path": "OM1.24",
-        "short": " - OM1",
+        "short": "- OM1.24 - ",
         "definition": "Definition: This field contains the usual length of time (in minutes) between the start of a test process and its completion.",
         "description": null,
         "code": [
@@ -831,7 +833,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -844,7 +846,7 @@
       {
         "id": "OM1.25",
         "path": "OM1.25",
-        "short": " - OM1",
+        "short": "- OM1.25 - ",
         "definition": "Definition: This field contains one or more available priorities for performing the observation or test. This is the priority that can be placed in _TQ1-9 - Priority_. Multiple priorities may be given, separated by repeat delimiters. For example, S~A~R~P~T indicates that the test may be ordered using codes S, A, R, P, or T. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70168[HL7 Table 0168 - Processing Priority] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -857,7 +859,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -887,7 +889,7 @@
       {
         "id": "OM1.26",
         "path": "OM1.26",
-        "short": " - OM1",
+        "short": "- OM1.26 - ",
         "definition": "Definition: This field contains the available priorities reporting the test results when the user is asked to specify the reporting priority independent of the processing priority. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70169[HL7 Table 0169 - Reporting Priority] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -900,7 +902,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -930,7 +932,7 @@
       {
         "id": "OM1.27",
         "path": "OM1.27",
-        "short": " - OM1",
+        "short": "- OM1.27 - ",
         "definition": "Definition: This field contains the identification(s) of the outside service(s) that produce(s) the observation. The format of this CWE field uses the producer ID (as defined in _OM1-5 - Producer ID_) and the name of the service separated by component delimiters. An example is ...|39221^ACME lab^MC|... If multiple services are used, they should be separated by repeat delimiter(s). Refer to Table 0638 - Outside Site(s) Where Observation May Be Performed in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -943,7 +945,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -960,7 +962,7 @@
       {
         "id": "OM1.28",
         "path": "OM1.28",
-        "short": " - OM1",
+        "short": "- OM1.28 - ",
         "definition": "Definition: This field contains the address of the outside services listed in _OM1-28 - Address of Outside Site(s)_ where observation may be performed. If multiple services are recorded in that field, their addresses should be separated by repeat delimiters, and the addresses should appear in the same order in which the services appear in the preceding field.",
         "description": null,
         "code": [
@@ -973,7 +975,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -986,7 +988,7 @@
       {
         "id": "OM1.29",
         "path": "OM1.29",
-        "short": " - OM1",
+        "short": "- OM1.29 - ",
         "definition": "Definition: This field contains the telephone number of the outside site.",
         "description": null,
         "code": [
@@ -999,7 +1001,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -1012,7 +1014,7 @@
       {
         "id": "OM1.30",
         "path": "OM1.30",
-        "short": " - OM1",
+        "short": "- OM1.30 - ",
         "definition": "Definition: This field contains the degree to which special confidentiality protection should be applied to the observation. For example, a tighter control may be applied to an HIV test than to a CBC. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70177[User-defined Table 0177 - Confidentiality Code] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -1025,7 +1027,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1042,7 +1044,7 @@
       {
         "id": "OM1.31",
         "path": "OM1.31",
-        "short": " - OM1",
+        "short": "- OM1.31 - ",
         "definition": "Definition: This field contains the list of variables that the diagnostic service needs to interpret the results of an ordered study. The observations specified here should be sent to the diagnostic service as OBX segments along with the order (OBR) segment. Separate multiple items by repeat delimiters. Refer to Table 0639 - Observations Required to Interpret this Observation in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -1055,7 +1057,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1072,7 +1074,7 @@
       {
         "id": "OM1.32",
         "path": "OM1.32",
-        "short": " - OM1",
+        "short": "- OM1.32 - ",
         "definition": "Definition: This field contains the clinical information about interpreting test results. Examples are the conditions (drugs) that may cause false abnormals, and the information about the sensitivity and specificity of the test for diagnoses.",
         "description": null,
         "code": [
@@ -1085,7 +1087,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -1098,7 +1100,7 @@
       {
         "id": "OM1.33",
         "path": "OM1.33",
-        "short": " - OM1",
+        "short": "- OM1.33 - ",
         "definition": "Definition: This field contains the diagnosis or problem for which the test is a contraindication or of possible danger (e.g., pacemaker, pregnancy, diabetes). For example, if the test identified in OM1 was an intravenous pyelogram, this field would include warnings about the use of contrast media in diabetes. The contraindication diagnoses should be separated by repeat delimiters. Refer to Table 0640 - Contraindications to Observations in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -1111,7 +1113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1128,7 +1130,7 @@
       {
         "id": "OM1.34",
         "path": "OM1.34",
-        "short": " - OM1",
+        "short": "- OM1.34 - ",
         "definition": "Definition: This field contains the test names as type CWE (i.e., <code>^<text name>^<coding system>) that may be ordered automatically by the diagnostic service, depending on the results obtained from the ordered battery. A screening CBC might trigger a reticulocyte count if the Hgb is less than 12. Multiple reflex tests are separated by repeat delimiters. Refer to Table 0641 - Reflex Tests/Observations in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -1141,7 +1143,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1158,7 +1160,7 @@
       {
         "id": "OM1.35",
         "path": "OM1.35",
-        "short": " - OM1",
+        "short": "- OM1.35 - ",
         "definition": "Definition: This field contains the rules that trigger the reflex tests listed above. If multiple reflex tests are listed in _OM1-34 - Reflex Text/Observations_ separated by repeat delimiters, a set of corresponding rules will be included in this section. The first rule will apply to the first test, the second to the second test, and so on.",
         "description": null,
         "code": [
@@ -1171,7 +1173,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -1184,7 +1186,7 @@
       {
         "id": "OM1.36",
         "path": "OM1.36",
-        "short": " - OM1",
+        "short": "- OM1.36 - ",
         "definition": "Definition: This field contains the codes and a fixed text message that is always associated with an abbreviation. The field may include multiple messages separated by repeat delimiters. Refer to Table 0643 - Fixed Canned Message in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -1197,7 +1199,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1214,7 +1216,7 @@
       {
         "id": "OM1.37",
         "path": "OM1.37",
-        "short": " - OM1",
+        "short": "- OM1.37 - ",
         "definition": "Definition: This field contains the tests or observations that require special patient preparation, diet, or medications. For GI contrast studies, this field would contain the pretest diet, e.g., low residue for two days, NPO before study, and the preferred purgatives. Each separate med, diet, or preparation should be delimited by a repeat delimiter. Separate each requirement by a repeat delimiter. Example for a sigmoidectomy:",
         "description": null,
         "code": [
@@ -1227,7 +1229,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -1253,7 +1255,7 @@
       {
         "id": "OM1.38",
         "path": "OM1.38",
-        "short": " - OM1",
+        "short": "- OM1.38 - ",
         "definition": "Definition: This field contains the treatments that may be needed as part of the procedure. Examples are radioactive iodine for a thyroid screen, and methacholine for a methacholine spirometry challenge. This field should be identified as a CWE data type. Refer to Table 0644 - Procedure Medication in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -1266,7 +1268,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1283,7 +1285,7 @@
       {
         "id": "OM1.39",
         "path": "OM1.39",
-        "short": " - OM1",
+        "short": "- OM1.39 - ",
         "definition": "Definition: This field contains the text description of the foods, diagnoses, drugs, or other conditions that may influence the interpretation of the observation. Information about the direction of the effect, and any recommendation about altering the diet, conditions, or drug before initiating the test observation.",
         "description": null,
         "code": [
@@ -1296,7 +1298,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -1322,7 +1324,7 @@
       {
         "id": "OM1.40",
         "path": "OM1.40",
-        "short": " - OM1",
+        "short": "- OM1.40 - ",
         "definition": "Definition: This field contains the diagnostic studies/tests that are performed only at certain times during the course of a work day or work week. This field indicates the maximum interval between successive test performances (the test may actually be performed more frequently). The format given in Chapter 4, Section 4.3.2.1, \"Repeat Pattern,\" should be used. If necessary, multiple codes may be given, separated by repeat delimiters. The use of multiple codes indicates that the test is performed at multiple concurrent intervals. For example, Q6H indicates that the test is performed at least once every 6 hours around the clock. QJ1 indicates that the test is performed at least every week on Mondays. QAM~QPM indicates that the test is performed at least once every morning and every evening. QJ1~QJ3~QJ5 indicates that the test is performed at least every week on Mondays, Wednesdays, and Fridays. C indicates that the test is performed continuously, 7 days per week.",
         "description": null,
         "code": [
@@ -1335,7 +1337,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -1361,7 +1363,7 @@
       {
         "id": "OM1.41",
         "path": "OM1.41",
-        "short": " - OM1",
+        "short": "- OM1.41 - ",
         "definition": "Definition: This field contains the text description of the methods used to perform the text and generate the observations. Bibliographic citations may be included.",
         "description": null,
         "code": [
@@ -1374,7 +1376,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -1387,7 +1389,7 @@
       {
         "id": "OM1.42",
         "path": "OM1.42",
-        "short": " - OM1",
+        "short": "- OM1.42 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -1398,7 +1400,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1415,7 +1417,7 @@
       {
         "id": "OM1.43",
         "path": "OM1.43",
-        "short": " - OM1",
+        "short": "- OM1.43 - ",
         "definition": "Definition: This optional attribute allows master files to classify observations as measuring the patient's state at a point in time (e.g., spot urines, random urines, serum potassium), or averaged over an interval of time (e.g., concentration, total amount, or clearance over a 24-hour collection). Interval measures most often apply to urine and stool specimens (e.g., 24-hour urines, 3-day stool fats). They also apply to clinical measurements such as urine outputs, which are reported as shift totals and 24-hour totals, and event counts on physiologic monitors such as the number of PVCs on a 24-hour Holter monitor.",
         "description": null,
         "code": [
@@ -1428,7 +1430,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1445,7 +1447,7 @@
       {
         "id": "OM1.44",
         "path": "OM1.44",
-        "short": " - OM1",
+        "short": "- OM1.44 - ",
         "definition": "Definition: This optional attribute provides information for classifying observations by the challenge component of the test, if a challenge does speciate the observation. For example, distinguishing tests that have a challenge component in database. There co-ascribes the physiologic or drug challenge that is intrinsic to the measurement. To identify, for example, tests that include a glucose challenge.",
         "description": null,
         "code": [
@@ -1458,7 +1460,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "binding": {
@@ -1488,7 +1490,7 @@
       {
         "id": "OM1.45",
         "path": "OM1.45",
-        "short": " - OM1",
+        "short": "- OM1.45 - ",
         "definition": "Definition: This optional attribute provides a mechanism for classifying observations according to the subject, in relation to the patient whose results might be stored with as \"patient\" data. It is standard practice, for example, to report values for controls, donors, and blood product units as well as the patient's own values, and store them in the patient's record. (This may not be the best way to model such information, but it is the way it is usually reported.) This should be valued when two values (e.g., one for patient and one for a blood product unit) could otherwise be confused.",
         "description": null,
         "code": [
@@ -1501,7 +1503,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1518,7 +1520,7 @@
       {
         "id": "OM1.46",
         "path": "OM1.46",
-        "short": " - OM1",
+        "short": "- OM1.46 - ",
         "definition": "Definition: This optional attribute formally indicates the site of the observation (to make it easy for a system to find all tests related to one anatomic site). It can be used to classify the observation by target site of the examination. For example, \"heart\" might be recorded as the target of the electrocardiogram, cardiac echo, and thallium exercise test. This attribute would be applicable to most imaging and electro-physiologic examinations. The SNOMED topology axis is an example of a coding system for anatomic sites. User-defined tables may also apply here. Refer to Table 0645 - Target Anatomic Site Of Test in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -1531,7 +1533,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1548,7 +1550,7 @@
       {
         "id": "OM1.47",
         "path": "OM1.47",
-        "short": " - OM1",
+        "short": "- OM1.47 - ",
         "definition": "Definition: This optional attribute describes the modality used to acquire the observation data, e.g., radiograph, ultrasound, CT scan, MR, etc. This attribute is especially important for imaging studies. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70910[External Table 0910 – Acquisition Modality] in Chapter 2C, Code Tables, for the defined value set, which may be repalce or extended with local codes. If the DICOM codes are used, the coding system ID is DCM.",
         "description": null,
         "code": [
@@ -1561,7 +1563,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1578,7 +1580,7 @@
       {
         "id": "OM1.48",
         "path": "OM1.48",
-        "short": " - OM1",
+        "short": "- OM1.48 - ",
         "definition": "Definition: This field defines if this test should be a specific event with no other tests to be performed with this test. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70919[HL7 Table 0919 – Exclusive Test] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -1591,7 +1593,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -1621,7 +1623,7 @@
       {
         "id": "OM1.49",
         "path": "OM1.49",
-        "short": " - OM1",
+        "short": "- OM1.49 - ",
         "definition": "Definition: This field is the section of the diagnostic service where the observation was performed. If the study was performed by an outside service, the identification of that service should be recorded here. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70074[HL7 Table 0074 – Diagnostic Service Section ID] in Chapter 2C, Code Tables, for valid entries. Same as OBR-24.",
         "description": null,
         "code": [
@@ -1634,7 +1636,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -1664,7 +1666,7 @@
       {
         "id": "OM1.50",
         "path": "OM1.50",
-        "short": " - OM1",
+        "short": "- OM1.50 - ",
         "definition": "Definition: The species of living organism. This may include the common or scientific name, based on the coding system(s) used. SNOMED is the recommended coding system. If this field is not valued, a human is assumed. Refer to Table 0661 - Taxonomic Classification Code in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -1677,7 +1679,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1694,7 +1696,7 @@
       {
         "id": "OM1.51",
         "path": "OM1.51",
-        "short": " - OM1",
+        "short": "- OM1.51 - ",
         "definition": "Definition: This field contains any test aliases or synonyms for the name in the context of the ordering service. These are alternative names, not associated with a particular coding system, by which the battery, test, or observation (e.g., measurement, test, diagnostic study, treatment, etc.) is known to users of the system. Multiple names in this list are separated by repeat delimiters.",
         "description": null,
         "code": [
@@ -1707,7 +1709,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -1733,7 +1735,7 @@
       {
         "id": "OM1.52",
         "path": "OM1.52",
-        "short": " - OM1",
+        "short": "- OM1.52 - ",
         "definition": "Definition: This field is used in conjunction with a MFE-1 Record-Level Event Code 'MDC' defined as: \"Deactivate: discontinue using record in master file, but do not delete from database\", in conjunction with an OM1 segment providing detail for the deactivate code. When the OM1-2 Producer's Service/Test/Observation ID is being deactivated, use OM1-52 to indicate the producer's replacement test or observation code(s), as it was defined in the OM1-2 Producer's Service/Test/Observation ID when the new/replacement code was added. Refer to Table 0646 - Replacement Producer's Service/Test/Observation ID in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -1746,7 +1748,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1763,7 +1765,7 @@
       {
         "id": "OM1.53",
         "path": "OM1.53",
-        "short": " - OM1",
+        "short": "- OM1.53 - ",
         "definition": "Definition: This field is used to indicate when the test in OM1-2 Producer's Service/Test/Observation ID is ordered, prior results should accompany the order (OML^O21^OML_O21: Laboratory Order Message). For example, when ordering a Thyroid FNA (Fine Needle Aspiration) Evaluation, send the prior results of Ultrasound Findings. The instructions may also indicate a timeframe; for example, send the prior results of CBC in past 60 days.",
         "description": null,
         "code": [
@@ -1776,7 +1778,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -1789,7 +1791,7 @@
       {
         "id": "OM1.54",
         "path": "OM1.54",
-        "short": " - OM1",
+        "short": "- OM1.54 - ",
         "definition": "Definition: This field is used to convey special instructions for the test, for example: \"Chain-of-custody documentation is required for samples submitted for pre-employment, random employee testing, and forensic purposes. For other applications, use the standard request form.\" (Note: this is for toxicology testing); \"If reflex test is performed, additional charges/CPT code(s) may apply.\"; \"Please direct any questions regarding this test to Oncology Customer Service\"; \"Please include tentative diagnosis/treatment on the request form. This is necessary for proper culturing and result interpretation.\" (Note: this is for chromosome analysis.)",
         "description": null,
         "code": [
@@ -1802,7 +1804,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -1815,7 +1817,7 @@
       {
         "id": "OM1.55",
         "path": "OM1.55",
-        "short": " - OM1",
+        "short": "- OM1.55 - ",
         "definition": "Definition: This field may be used to organize tests for display or other user defined purpose. For example, tests might be categorized by disease state, such as molecular tests for solid tumors; example categories are: breast, colorectal, lung, and melanoma.",
         "description": null,
         "code": [
@@ -1828,7 +1830,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -1841,7 +1843,7 @@
       {
         "id": "OM1.56",
         "path": "OM1.56",
-        "short": " - OM1",
+        "short": "- OM1.56 - ",
         "definition": "Definition: This field contains the code for resulted tests, which are associated with the Producer’s Service/Test/Observation ID code in OM1-2 and will appear in OBX-3 Observation Identifier in a result message. Refer to Table 0647 - Observation/Identifier associated with Producer’s Service/Test/Observation ID in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -1854,7 +1856,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1871,7 +1873,7 @@
       {
         "id": "OM1.57",
         "path": "OM1.57",
-        "short": " - OM1",
+        "short": "- OM1.57 - ",
         "definition": "Definition: This field contains the typical processing time for single test/observation. This field indicates the time from delivery of a specimen or transport of a patient to a diagnostic service and the completion of the study. It includes the usual waiting time.",
         "description": null,
         "code": [
@@ -1884,7 +1886,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -1897,7 +1899,7 @@
       {
         "id": "OM1.58",
         "path": "OM1.58",
-        "short": " - OM1",
+        "short": "- OM1.58 - ",
         "definition": "Definition: This field is used to convey gender restrictions for ordering the test specified in OM1-2 Producer's Service/Test/Observation ID. If there are no restrictions the field is left empty. If the test is restricted to order for certain gender(s), the restricted genders are listed. For example, a Prostate Specific AG (PSA) test is typically ordered only for male patients, thus for PSA the field would be valued 'M' for Male.",
         "description": null,
         "code": [
@@ -1910,7 +1912,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1927,7 +1929,7 @@
       {
         "id": "OM1.59",
         "path": "OM1.59",
-        "short": " - OM1",
+        "short": "- OM1.59 - ",
         "definition": "Definition: This field is used to convey age restrictions for ordering the test specified in OM1-2 Producer's Service/Test/Observation ID. If there are no restrictions the field is left empty. If the test is restricted to order for certain age(s), the age range restriction(s) are listed in years. For example, newborn tests are typically restricted to age 1 year or below, thus for newborn tests the field would be valued 0^1.",
         "description": null,
         "code": [
@@ -1940,7 +1942,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NR"
+            "code": "NR"
           }
         ],
         "extension": [
@@ -1952,9 +1954,7 @@
       }
     ]
   },
-  "id": "OM1",
   "title": "HL7 v2 OM1 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/OM1",
   "name": "OM1",
-  "type": "http://hl7.org/v2/StructureDefinition/OM1"
+  "type": "OM1"
 }

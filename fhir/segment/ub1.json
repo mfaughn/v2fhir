@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/UB1",
+  "id": "UB1",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "UB1.1",
         "path": "UB1.1",
-        "short": " - UB1",
+        "short": "- UB1.1 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -27,7 +29,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -40,7 +42,7 @@
       {
         "id": "UB1.2",
         "path": "UB1.2",
-        "short": " - UB1",
+        "short": "- UB1.2 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -59,7 +61,7 @@
       {
         "id": "UB1.3",
         "path": "UB1.3",
-        "short": " - UB1",
+        "short": "- UB1.3 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -78,7 +80,7 @@
       {
         "id": "UB1.4",
         "path": "UB1.4",
-        "short": " - UB1",
+        "short": "- UB1.4 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -97,7 +99,7 @@
       {
         "id": "UB1.5",
         "path": "UB1.5",
-        "short": " - UB1",
+        "short": "- UB1.5 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -116,7 +118,7 @@
       {
         "id": "UB1.6",
         "path": "UB1.6",
-        "short": " - UB1",
+        "short": "- UB1.6 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -135,7 +137,7 @@
       {
         "id": "UB1.7",
         "path": "UB1.7",
-        "short": " - UB1",
+        "short": "- UB1.7 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -154,7 +156,7 @@
       {
         "id": "UB1.8",
         "path": "UB1.8",
-        "short": " - UB1",
+        "short": "- UB1.8 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -173,7 +175,7 @@
       {
         "id": "UB1.9",
         "path": "UB1.9",
-        "short": " - UB1",
+        "short": "- UB1.9 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -192,7 +194,7 @@
       {
         "id": "UB1.10",
         "path": "UB1.10",
-        "short": " - UB1",
+        "short": "- UB1.10 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -211,7 +213,7 @@
       {
         "id": "UB1.11",
         "path": "UB1.11",
-        "short": " - UB1",
+        "short": "- UB1.11 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -230,7 +232,7 @@
       {
         "id": "UB1.12",
         "path": "UB1.12",
-        "short": " - UB1",
+        "short": "- UB1.12 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -249,7 +251,7 @@
       {
         "id": "UB1.13",
         "path": "UB1.13",
-        "short": " - UB1",
+        "short": "- UB1.13 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -268,7 +270,7 @@
       {
         "id": "UB1.14",
         "path": "UB1.14",
-        "short": " - UB1",
+        "short": "- UB1.14 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -287,7 +289,7 @@
       {
         "id": "UB1.15",
         "path": "UB1.15",
-        "short": " - UB1",
+        "short": "- UB1.15 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -306,7 +308,7 @@
       {
         "id": "UB1.16",
         "path": "UB1.16",
-        "short": " - UB1",
+        "short": "- UB1.16 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -325,7 +327,7 @@
       {
         "id": "UB1.17",
         "path": "UB1.17",
-        "short": " - UB1",
+        "short": "- UB1.17 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -344,7 +346,7 @@
       {
         "id": "UB1.18",
         "path": "UB1.18",
-        "short": " - UB1",
+        "short": "- UB1.18 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -363,7 +365,7 @@
       {
         "id": "UB1.19",
         "path": "UB1.19",
-        "short": " - UB1",
+        "short": "- UB1.19 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -382,7 +384,7 @@
       {
         "id": "UB1.20",
         "path": "UB1.20",
-        "short": " - UB1",
+        "short": "- UB1.20 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -401,7 +403,7 @@
       {
         "id": "UB1.21",
         "path": "UB1.21",
-        "short": " - UB1",
+        "short": "- UB1.21 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -420,7 +422,7 @@
       {
         "id": "UB1.22",
         "path": "UB1.22",
-        "short": " - UB1",
+        "short": "- UB1.22 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -439,7 +441,7 @@
       {
         "id": "UB1.23",
         "path": "UB1.23",
-        "short": " - UB1",
+        "short": "- UB1.23 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -457,9 +459,7 @@
       }
     ]
   },
-  "id": "UB1",
   "title": "HL7 v2 UB1 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/UB1",
   "name": "UB1",
-  "type": "http://hl7.org/v2/StructureDefinition/UB1"
+  "type": "UB1"
 }

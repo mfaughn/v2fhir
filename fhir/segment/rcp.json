@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RCP",
+  "id": "RCP",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "RCP.1",
         "path": "RCP.1",
-        "short": " - RCP",
+        "short": "- RCP.1 - ",
         "definition": "Definition: This field contains the time frame in which the response is expected. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70091[_HL7 Table 0091 – Query priority_] in Chapter 2C, Code Tables, for valid values. Table values and subsequent fields specify time frames for response.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -59,7 +61,7 @@
       {
         "id": "RCP.2",
         "path": "RCP.2",
-        "short": " - RCP",
+        "short": "- RCP.2 - ",
         "definition": "Definition: This field contains the maximum length of the response that can be accepted by the requesting system. Valid entries are numerical values (in the first component) given in the units specified in the second component. Default is LI (lines).",
         "description": null,
         "code": [
@@ -72,7 +74,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "binding": {
@@ -89,7 +91,7 @@
       {
         "id": "RCP.3",
         "path": "RCP.3",
-        "short": " - RCP",
+        "short": "- RCP.3 - ",
         "definition": "Definition: This field specifies the timing and grouping of the response message(s). Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70394[_HL7 Table 0394 – Response modality_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -102,7 +104,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -119,7 +121,7 @@
       {
         "id": "RCP.4",
         "path": "RCP.4",
-        "short": " - RCP",
+        "short": "- RCP.4 - ",
         "definition": "Definition: Specifies the time the response is to be returned. This field is only valued when _RCP-1-Query priority_ contains the value *D* (Deferred).",
         "description": null,
         "code": [
@@ -132,7 +134,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -145,7 +147,7 @@
       {
         "id": "RCP.5",
         "path": "RCP.5",
-        "short": " - RCP",
+        "short": "- RCP.5 - ",
         "definition": "Definition: This field specifies whether the subscription is new or is being modified. Refer to _file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70395[HL7 Table 0395 – Modify indicator]_ in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -158,7 +160,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -188,7 +190,7 @@
       {
         "id": "RCP.6",
         "path": "RCP.6",
-        "short": " - RCP",
+        "short": "- RCP.6 - ",
         "definition": "Definition: For queries requesting a tabular response, this field specifies by which fields the response is to be sorted, and the order(s) in which sorting is to be performed. When the QSC variant is not in use, the values specified for the first component in this field are derived from the ColName field of the Output Specification and Commentary; see section _5.3.3.1_, \"_Query Profile template for query with tabular response_.\" When the QSC variant is used, the values are derived from the ColName field of the Input/Output Specification and Commentary; see section _5.9.4.1_, \"_Pharmacy example_\" for an example.",
         "description": null,
         "code": [
@@ -201,7 +203,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SRT"
+            "code": "SRT"
           }
         ],
         "extension": [
@@ -214,7 +216,7 @@
       {
         "id": "RCP.7",
         "path": "RCP.7",
-        "short": " - RCP",
+        "short": "- RCP.7 - ",
         "definition": "Definition: Specifies those optional segment groups which are to be included in the response. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70391[_HL7 Table 0391—Segment group_] in Chapter 2C, Code Tables, for values for Segment Group. This is a repeating field, to accommodate inclusion of multiple segment groups. The default for this field, not present, means that all relevant groups are included.",
         "description": null,
         "code": [
@@ -227,7 +229,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -256,9 +258,7 @@
       }
     ]
   },
-  "id": "RCP",
   "title": "HL7 v2 RCP Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/RCP",
   "name": "RCP",
-  "type": "http://hl7.org/v2/StructureDefinition/RCP"
+  "type": "RCP"
 }

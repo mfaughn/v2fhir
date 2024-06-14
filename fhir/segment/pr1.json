@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PR1",
+  "id": "PR1",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "PR1.1",
         "path": "PR1.1",
-        "short": " - PR1",
+        "short": "- PR1.1 - ",
         "definition": "Definition: This field contains the number that identifies this transaction. For the first occurrence of the segment the sequence number shall be 1, for the second occurrence it shall be 2, etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "PR1.2",
         "path": "PR1.2",
-        "short": " - PR1",
+        "short": "- PR1.2 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -74,7 +76,7 @@
       {
         "id": "PR1.3",
         "path": "PR1.3",
-        "short": " - PR1",
+        "short": "- PR1.3 - ",
         "definition": "Definition: This field contains a unique identifier assigned to the procedure. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70088[_Externally-defined Table 0088 - Procedure Code_] in Chapter 2C, Code Tables, for suggested values. This field is a CNE data type for compatibility with clinical and ancillary systems.",
         "description": null,
         "code": [
@@ -87,7 +89,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -104,7 +106,7 @@
       {
         "id": "PR1.4",
         "path": "PR1.4",
-        "short": " - PR1",
+        "short": "- PR1.4 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -123,7 +125,7 @@
       {
         "id": "PR1.5",
         "path": "PR1.5",
-        "short": " - PR1",
+        "short": "- PR1.5 - ",
         "definition": "Definition: This field contains the date/time that the procedure was performed.",
         "description": null,
         "code": [
@@ -136,7 +138,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -149,7 +151,7 @@
       {
         "id": "PR1.6",
         "path": "PR1.6",
-        "short": " - PR1",
+        "short": "- PR1.6 - ",
         "definition": "Definition: This field contains the optional code that further defines the type of procedure. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70230[_User-defined Table 0230 - Procedure Functional Type_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -162,7 +164,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -179,7 +181,7 @@
       {
         "id": "PR1.7",
         "path": "PR1.7",
-        "short": " - PR1",
+        "short": "- PR1.7 - ",
         "definition": "Definition: This field indicates the length of time in whole minutes that the procedure took to complete. The duration starts with the point in time in PR1-5.",
         "description": null,
         "code": [
@@ -192,7 +194,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -218,7 +220,7 @@
       {
         "id": "PR1.8",
         "path": "PR1.8",
-        "short": " - PR1",
+        "short": "- PR1.8 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -237,7 +239,7 @@
       {
         "id": "PR1.9",
         "path": "PR1.9",
-        "short": " - PR1",
+        "short": "- PR1.9 - ",
         "definition": "Definition: This field contains a unique identifier of the anesthesia used during the procedure. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70019[_User-defined Table 0019 - Anesthesia Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -250,7 +252,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -267,7 +269,7 @@
       {
         "id": "PR1.10",
         "path": "PR1.10",
-        "short": " - PR1",
+        "short": "- PR1.10 - ",
         "definition": "Definition: This field contains the length of time in minutes that the anesthesia was administered.",
         "description": null,
         "code": [
@@ -280,7 +282,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -306,7 +308,7 @@
       {
         "id": "PR1.11",
         "path": "PR1.11",
-        "short": " - PR1",
+        "short": "- PR1.11 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -325,7 +327,7 @@
       {
         "id": "PR1.12",
         "path": "PR1.12",
-        "short": " - PR1",
+        "short": "- PR1.12 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -344,7 +346,7 @@
       {
         "id": "PR1.13",
         "path": "PR1.13",
-        "short": " - PR1",
+        "short": "- PR1.13 - ",
         "definition": "Definition: This field contains the type of consent that was obtained for permission to treat the patient. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70059[_User-defined Table 0059 - Consent Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -357,7 +359,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -374,7 +376,7 @@
       {
         "id": "PR1.14",
         "path": "PR1.14",
-        "short": " - PR1",
+        "short": "- PR1.14 - ",
         "definition": "Definition: This field contains a number that identifies the significance or priority of the procedure code. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70418[_HL7 Table 0418 - Procedure Priority_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -387,7 +389,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "binding": {
@@ -417,7 +419,7 @@
       {
         "id": "PR1.15",
         "path": "PR1.15",
-        "short": " - PR1",
+        "short": "- PR1.15 - ",
         "definition": "Definition: This field contains the diagnosis that is the primary reason this procedure was performed, e.g., in the US, Medicare wants to know for which diagnosis this procedure is submitted for inclusion on CMS 1500 form. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70051[_User-defined Table 0051 - Diagnosis Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -430,7 +432,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -447,7 +449,7 @@
       {
         "id": "PR1.16",
         "path": "PR1.16",
-        "short": " - PR1",
+        "short": "- PR1.16 - ",
         "definition": "Definition: This field contains the procedure code modifier to the procedure code reported in field 3, when applicable. Procedure code modifiers are defined by regulatory agencies such as CMS and the AMA. Multiple modifiers may be reported. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70340[_Externally-defined Table 0340 - Procedure Code Modifier_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -460,7 +462,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -477,7 +479,7 @@
       {
         "id": "PR1.17",
         "path": "PR1.17",
-        "short": " - PR1",
+        "short": "- PR1.17 - ",
         "definition": "Definition: This field indicates a procedure's priority ranking relative to its DRG. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70416[_User-defined Table 0416 - Procedure DRG Type_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -490,7 +492,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -507,7 +509,7 @@
       {
         "id": "PR1.18",
         "path": "PR1.18",
-        "short": " - PR1",
+        "short": "- PR1.18 - ",
         "definition": "Definition: Code representing type of tissue removed from a patient during this procedure. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70417[_User-defined Table 0417 - Tissue Type Code_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -520,7 +522,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -537,7 +539,7 @@
       {
         "id": "PR1.19",
         "path": "PR1.19",
-        "short": " - PR1",
+        "short": "- PR1.19 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -548,7 +550,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -561,7 +563,7 @@
       {
         "id": "PR1.20",
         "path": "PR1.20",
-        "short": " - PR1",
+        "short": "- PR1.20 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -572,7 +574,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -602,7 +604,7 @@
       {
         "id": "PR1.21",
         "path": "PR1.21",
-        "short": " - PR1",
+        "short": "- PR1.21 - ",
         "definition": "Definition: This field contains the status of the use of this particular procedure for the DRG determination. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70761[_User-defined Table 0761 – DRG Procedure Determination Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -615,7 +617,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -632,7 +634,7 @@
       {
         "id": "PR1.22",
         "path": "PR1.22",
-        "short": " - PR1",
+        "short": "- PR1.22 - ",
         "definition": "Definition: This field contains the relevance of this particular procedure for the DRG determination. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70763[_User-defined Table 0763 – DRG Procedure Relevance_] in Chapter 2C, code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -645,7 +647,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -662,7 +664,7 @@
       {
         "id": "PR1.23",
         "path": "PR1.23",
-        "short": " - PR1",
+        "short": "- PR1.23 - ",
         "definition": "Definition: This field contains information about the organizational unit that has performed the procedure.",
         "description": null,
         "code": [
@@ -675,7 +677,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -688,7 +690,7 @@
       {
         "id": "PR1.24",
         "path": "PR1.24",
-        "short": " - PR1",
+        "short": "- PR1.24 - ",
         "definition": "Definition: This field indicates whether or not a respiratory procedure has occurred during a surgery. This field is optional and only needs to be valued for respiratory procedures. Refer to file:///E:\\V2\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no Indicator_] in Chapter 2C, Code TableS, for valid values.",
         "description": null,
         "code": [
@@ -701,7 +703,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -731,7 +733,7 @@
       {
         "id": "PR1.25",
         "path": "PR1.25",
-        "short": " - PR1",
+        "short": "- PR1.25 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -742,7 +744,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -754,9 +756,7 @@
       }
     ]
   },
-  "id": "PR1",
   "title": "HL7 v2 PR1 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/PR1",
   "name": "PR1",
-  "type": "http://hl7.org/v2/StructureDefinition/PR1"
+  "type": "PR1"
 }

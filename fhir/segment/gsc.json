@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/GSC",
+  "id": "GSC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "GSC.1",
         "path": "GSC.1",
-        "short": " - GSC",
+        "short": "- GSC.1 - ",
         "definition": "Definition: This field contains the sequence number used to identify the GSC segment instances in a message.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "GSC.2",
         "path": "GSC.2",
-        "short": " - GSC",
+        "short": "- GSC.2 - ",
         "definition": "Definition: This field contains a code defining the action to be taken for this segment.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "GSC.3",
         "path": "GSC.3",
-        "short": " - GSC",
+        "short": "- GSC.3 - ",
         "definition": "Definition: This field contains the value that uniquely identifies a single GSC declaration for an individual. This field is conditionally required when the Action Code in GSC-2 indicates data is not being sent in Snapshot Mode (valued “S”).",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "GSC.4",
         "path": "GSC.4",
-        "short": " - GSC",
+        "short": "- GSC.4 - ",
         "definition": "Definition: This field asserts the context-specific categorization of a patient's sex for the purpose of clinical use. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70001[_HL7-defined Table 0828 -_] _Sex Parameter for Clinical Use_ in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -141,7 +143,7 @@
       {
         "id": "GSC.5",
         "path": "GSC.5",
-        "short": " - GSC",
+        "short": "- GSC.5 - ",
         "definition": "Definition: This field asserts the time frame during which this value applies to the patient context. May be just an initial dateTime.",
         "description": null,
         "code": [
@@ -154,7 +156,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DR"
+            "code": "DR"
           }
         ],
         "extension": [
@@ -167,7 +169,7 @@
       {
         "id": "GSC.6",
         "path": "GSC.6",
-        "short": " - GSC",
+        "short": "- GSC.6 - ",
         "definition": "Definition: This field asserts the clinical context(s) relevant for the declared Sex Parameter for Clinical Use value. The ERL data type is used to specify a location in the message which carries the clinical context. For example, GSC-6 may point to procedure (PR1) or order (ORC) segment within the message. This field is allowed to repeat to allow a single declared Sex Parameter for Clinical Use value to be applied to multiple contexts within the message. As well, the GSC segment is allowed to repeat within a message as an individual may have different Sex Parameter for Clinical Use values for different contexts within a single message. The GSC-6 field is required as any Sex Parameter for Clinical Use value declared within a message must relate to at least one context within the same message.",
         "description": null,
         "code": [
@@ -180,7 +182,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ERL"
+            "code": "ERL"
           }
         ],
         "extension": [
@@ -193,7 +195,7 @@
       {
         "id": "GSC.7",
         "path": "GSC.7",
-        "short": " - GSC",
+        "short": "- GSC.7 - ",
         "definition": "Definition: This field asserts clinical data (e.g. observations, diagnoses) that are used to determine the Sex Parameter for Clinical Use value. The linked information should clearly align with the chosen Sex Parameter for Clinical Use value. This field is allowed to repeat as multiple pieces of clinical data may contribute to the chosen Sex Parameter for Clinical Use value.",
         "description": null,
         "code": [
@@ -206,7 +208,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ERL"
+            "code": "ERL"
           }
         ],
         "extension": [
@@ -219,7 +221,7 @@
       {
         "id": "GSC.8",
         "path": "GSC.8",
-        "short": " - GSC",
+        "short": "- GSC.8 - ",
         "definition": "Definition: This field contains a free text comment pertaining to the Sex Parameter for Clinical Use.",
         "description": null,
         "code": [
@@ -232,7 +234,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -244,9 +246,7 @@
       }
     ]
   },
-  "id": "GSC",
   "title": "HL7 v2 GSC Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/GSC",
   "name": "GSC",
-  "type": "http://hl7.org/v2/StructureDefinition/GSC"
+  "type": "GSC"
 }

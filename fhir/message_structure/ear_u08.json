@@ -1,0 +1,192 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/EAR_U08",
+  "id": "EAR_U08",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "EAR_U08.1-MSH",
+          "path": "EAR_U08.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EAR_U08.2-SFT",
+          "path": "EAR_U08.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EAR_U08.3-UAC",
+          "path": "EAR_U08.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EAR_U08.4-EQU",
+          "path": "EAR_U08.4-EQU",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EQU"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "EAR_U08.5-COMMAND_RESPONSE",
+          "path": "EAR_U08.5-COMMAND_RESPONSE",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "EAR_U08.5-COMMAND_RESPONSE.1-ECD",
+              "path": "EAR_U08.5-COMMAND_RESPONSE.1-ECD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ECD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "EAR_U08.5-COMMAND_RESPONSE.2-SPECIMEN_CONTAINER",
+              "path": "EAR_U08.5-COMMAND_RESPONSE.2-SPECIMEN_CONTAINER",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "EAR_U08.5-COMMAND_RESPONSE.2-SPECIMEN_CONTAINER.1-SAC",
+                  "path": "EAR_U08.5-COMMAND_RESPONSE.2-SPECIMEN_CONTAINER.1-SAC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/SAC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "EAR_U08.5-COMMAND_RESPONSE.2-SPECIMEN_CONTAINER.2-SPM",
+                  "path": "EAR_U08.5-COMMAND_RESPONSE.2-SPECIMEN_CONTAINER.2-SPM",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/SPM"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "EAR_U08.5-COMMAND_RESPONSE.3-ECR",
+              "path": "EAR_U08.5-COMMAND_RESPONSE.3-ECR",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ECR"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "EAR_U08.6-ROL",
+          "path": "EAR_U08.6-ROL",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 EAR_U08 Segment Definition",
+  "name": "EAR_U08",
+  "type": "http://hl7.org/v2/StructureDefinition/EAR_U08"
+}

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OM7",
+  "id": "OM7",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "OM7.1",
         "path": "OM7.1",
-        "short": " - OM7",
+        "short": "- OM7.1 - ",
         "definition": "Definition: This field contains the same value as the sequence number of the associated OM1 segment.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "OM7.2",
         "path": "OM7.2",
-        "short": " - OM7",
+        "short": "- OM7.2 - ",
         "definition": "Definition: This field contains the producer's usual or preferred identification of the test or service.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -81,7 +83,7 @@
       {
         "id": "OM7.3",
         "path": "OM7.3",
-        "short": " - OM7",
+        "short": "- OM7.3 - ",
         "definition": "Definition: This field contains the category name (term given to a group of service items for the purpose of classification). Examples: Laboratory, Pharmacy, Diagnostic Imaging, etc. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70412[User-defined Table 0412 - Category Identifier] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -94,7 +96,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -111,7 +113,7 @@
       {
         "id": "OM7.4",
         "path": "OM7.4",
-        "short": " - OM7",
+        "short": "- OM7.4 - ",
         "definition": "Definition: This field contains a text description for the category of the test/service item.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/TX"
+            "code": "TX"
           }
         ],
         "extension": [
@@ -150,7 +152,7 @@
       {
         "id": "OM7.5",
         "path": "OM7.5",
-        "short": " - OM7",
+        "short": "- OM7.5 - ",
         "definition": "Definition: This field contains an alternate name(s) for the category of the test/service. Example: The category \"Radiology\" is a synonym name for the category \"Diagnostic Imaging\".",
         "description": null,
         "code": [
@@ -163,7 +165,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -189,7 +191,7 @@
       {
         "id": "OM7.6",
         "path": "OM7.6",
-        "short": " - OM7",
+        "short": "- OM7.6 - ",
         "definition": "Definition: This field contains the date and time that the service item is available to be ordered, performed, etc.",
         "description": null,
         "code": [
@@ -202,7 +204,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -215,7 +217,7 @@
       {
         "id": "OM7.7",
         "path": "OM7.7",
-        "short": " - OM7",
+        "short": "- OM7.7 - ",
         "definition": "Definition: This field contains the date and time that the service item is no longer authorized to be ordered, performed, etc.",
         "description": null,
         "code": [
@@ -228,7 +230,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -241,7 +243,7 @@
       {
         "id": "OM7.8",
         "path": "OM7.8",
-        "short": " - OM7",
+        "short": "- OM7.8 - ",
         "definition": "Definition: This field indicates the default duration quantity for the service.",
         "description": null,
         "code": [
@@ -254,7 +256,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -280,7 +282,7 @@
       {
         "id": "OM7.9",
         "path": "OM7.9",
-        "short": " - OM7",
+        "short": "- OM7.9 - ",
         "definition": "Definition: This field indicates the default duration units for the service. Refer to Table 0663 - Test/Service Default Duration Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -293,7 +295,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -310,7 +312,7 @@
       {
         "id": "OM7.10",
         "path": "OM7.10",
-        "short": " - OM7",
+        "short": "- OM7.10 - ",
         "definition": "Definition: This field indicates the default frequency (how often) the service would be ordered for or performed on.",
         "description": null,
         "code": [
@@ -323,7 +325,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -349,7 +351,7 @@
       {
         "id": "OM7.11",
         "path": "OM7.11",
-        "short": " - OM7",
+        "short": "- OM7.11 - ",
         "definition": "Definition: This field indicates if a consent is needed for the service item. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[HL7 Table 0136 - Yes/no Indicator] in Chapter 2C, Code Tables.",
         "description": null,
         "code": [
@@ -362,7 +364,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -392,7 +394,7 @@
       {
         "id": "OM7.12",
         "path": "OM7.12",
-        "short": " - OM7",
+        "short": "- OM7.12 - ",
         "definition": "Definition: This field contains the identifier for the consent specified for the service item. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70413[User-defined Table 0413 - Consent Identifier] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -405,7 +407,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -422,7 +424,7 @@
       {
         "id": "OM7.13",
         "path": "OM7.13",
-        "short": " - OM7",
+        "short": "- OM7.13 - ",
         "definition": "Definition: This field contains the date and time the consent is valid for the service item.",
         "description": null,
         "code": [
@@ -435,7 +437,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -448,7 +450,7 @@
       {
         "id": "OM7.14",
         "path": "OM7.14",
-        "short": " - OM7",
+        "short": "- OM7.14 - ",
         "definition": "Definition: This field contains the date and time the consent is no longer valid for the test/service.",
         "description": null,
         "code": [
@@ -461,7 +463,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -474,7 +476,7 @@
       {
         "id": "OM7.15",
         "path": "OM7.15",
-        "short": " - OM7",
+        "short": "- OM7.15 - ",
         "definition": "Definition: This field specifies the period of time for which a consent is valid for a specific service item.",
         "description": null,
         "code": [
@@ -487,7 +489,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -513,7 +515,7 @@
       {
         "id": "OM7.16",
         "path": "OM7.16",
-        "short": " - OM7",
+        "short": "- OM7.16 - ",
         "definition": "Definition: This field specifies the unit of time for _OM7-15 - Consent Interval Quantity_. Refer to link:\\\\\\\\vmware-host\\\\Shared Folders\\\\Standards\\\\HL7\\\\Labs - US Realm\\\\Archives\\\\eDOS Past Ballots\\\\V281_CH02C_CodeTables.doc#HL70414[User-defined Table 0414 - Units of Time] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -526,7 +528,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -543,7 +545,7 @@
       {
         "id": "OM7.17",
         "path": "OM7.17",
-        "short": " - OM7",
+        "short": "- OM7.17 - ",
         "definition": "Definition: This field contains the time period between the time the consent is signed and the procedure can be performed.",
         "description": null,
         "code": [
@@ -556,7 +558,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -582,7 +584,7 @@
       {
         "id": "OM7.18",
         "path": "OM7.18",
-        "short": " - OM7",
+        "short": "- OM7.18 - ",
         "definition": "Definition: This field specifies the unit of time for _OM7-17 - Consent Waiting Period Quantity_. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70414[User-defined Table 0414 - Units of time] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -595,7 +597,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -612,7 +614,7 @@
       {
         "id": "OM7.19",
         "path": "OM7.19",
-        "short": " - OM7",
+        "short": "- OM7.19 - ",
         "definition": "Definition: This field contains the date and time of the last change in the test procedure that would make previous results incompatible with new results.",
         "description": null,
         "code": [
@@ -625,7 +627,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -638,7 +640,7 @@
       {
         "id": "OM7.20",
         "path": "OM7.20",
-        "short": " - OM7",
+        "short": "- OM7.20 - ",
         "definition": "Definition: This field contains the identity of the person who actually keyed the service item into the application. It provides an audit trail in case the request is entered incorrectly and the ancillary department needs to clarify the request.",
         "description": null,
         "code": [
@@ -651,7 +653,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -664,7 +666,7 @@
       {
         "id": "OM7.21",
         "path": "OM7.21",
-        "short": " - OM7",
+        "short": "- OM7.21 - ",
         "definition": "Definition: This field contains the location(s) where the test/service can be ordered.",
         "description": null,
         "code": [
@@ -677,7 +679,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -690,7 +692,7 @@
       {
         "id": "OM7.22",
         "path": "OM7.22",
-        "short": " - OM7",
+        "short": "- OM7.22 - ",
         "definition": "Definition: This field indicates whether or not the service (pharmaceutical) is in the formulary. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70473[User-defined Table 0473 - Formulary Status] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -703,7 +705,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -733,7 +735,7 @@
       {
         "id": "OM7.23",
         "path": "OM7.23",
-        "short": " - OM7",
+        "short": "- OM7.23 - ",
         "definition": "Definition: This field indicates whether or not the service (pharmaceutical) is a special order. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[HL7 Table 0136 - Yes/no Indicator] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -746,7 +748,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -776,7 +778,7 @@
       {
         "id": "OM7.24",
         "path": "OM7.24",
-        "short": " - OM7",
+        "short": "- OM7.24 - ",
         "definition": "Definition: Allows the ability to associate a Service/Test/Observation item with a CIM (charge item master). This field contains the corresponding value of CDM-1 for the CIM being linked to. It is possible to allow multiple charge items to a single Service/Test/Observation item.",
         "description": null,
         "code": [
@@ -789,7 +791,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -801,9 +803,7 @@
       }
     ]
   },
-  "id": "OM7",
   "title": "HL7 v2 OM7 Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/OM7",
   "name": "OM7",
-  "type": "http://hl7.org/v2/StructureDefinition/OM7"
+  "type": "OM7"
 }

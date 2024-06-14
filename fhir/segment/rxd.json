@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/RXD",
+  "id": "RXD",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "RXD.1",
         "path": "RXD.1",
-        "short": " - RXD",
+        "short": "- RXD.1 - ",
         "definition": "Definition: This field starts with 1 the first time that medication/treatment is delivered/dispensed for this order. Increments by one with each additional issuance.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "RXD.2",
         "path": "RXD.2",
-        "short": " - RXD",
+        "short": "- RXD.2 - ",
         "definition": "Definition: This field identifies the medical substance or treatment ordered to be given to the patient; it is equivalent to _OBR-4-Universal Service ID_. See the RXE segment for a complete definition of the _RXE-2-give code_. If the substance dispensed is a vaccine, CVX codes may be used to code this field (see file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70292[_HL7 Table 0292 - Vaccines Administered_] in Chapter 2C, Code Tables).",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -85,7 +87,7 @@
       {
         "id": "RXD.3",
         "path": "RXD.3",
-        "short": " - RXD",
+        "short": "- RXD.3 - ",
         "definition": "Definition: This field indicates when the pharmaceutical/treatment is dispensed from the pharmacy or treatment supplier. Use the time stamp format.",
         "description": null,
         "code": [
@@ -98,7 +100,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -111,7 +113,7 @@
       {
         "id": "RXD.4",
         "path": "RXD.4",
-        "short": " - RXD",
+        "short": "- RXD.4 - ",
         "definition": "Definition: This field indicates the amount dispensed.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -137,7 +139,7 @@
       {
         "id": "RXD.5",
         "path": "RXD.5",
-        "short": " - RXD",
+        "short": "- RXD.5 - ",
         "definition": "Definition: This field indicates the units dispensed. Site-defined table. This field is required if the units are not implied by the actual dispense code. If present, it overrides units implied by the actual dispense code. This must be in simple units that reflect the actual quantity of the substance dispensed. It does not include compound units. Refer to Table 0704 - Actual Dispense Units in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -150,7 +152,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -167,7 +169,7 @@
       {
         "id": "RXD.6",
         "path": "RXD.6",
-        "short": " - RXD",
+        "short": "- RXD.6 - ",
         "definition": "Definition: The dosage form indicates the manner in which the medication/treatment is aggregated for dispensing, e.g., tablets, capsules, suppositories. In some cases, this information is implied by the dispense/give code in _RXD-2-dispense/give code._ Use this field when the give code and the dispense code do not specify the dosage form. Refer to Table 0705 - Actual Dosage Form in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -180,7 +182,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -197,7 +199,7 @@
       {
         "id": "RXD.7",
         "path": "RXD.7",
-        "short": " - RXD",
+        "short": "- RXD.7 - ",
         "definition": "Definition: This field is equivalent in uniqueness to the pharmacy/treatment supplier filler order number. At some sites, this may be the pharmacy/treatment supplier (internal) sequential form. At other sites, this may be an external number.",
         "description": null,
         "code": [
@@ -210,7 +212,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -236,7 +238,7 @@
       {
         "id": "RXD.8",
         "path": "RXD.8",
-        "short": " - RXD",
+        "short": "- RXD.8 - ",
         "definition": "Definition: This field is conditional because it is required when a prescription is dispensed to an outpatient. It is not relevant to inpatient treatment orders.",
         "description": null,
         "code": [
@@ -249,7 +251,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -262,7 +264,7 @@
       {
         "id": "RXD.9",
         "path": "RXD.9",
-        "short": " - RXD",
+        "short": "- RXD.9 - ",
         "definition": "Definition: This field contains free text notes to the person dispensing the medication/treatment (may include the ordering provider's original notes, as well as any notes from the formulary or the pharmacy or treatment supplier). This may contain free text describing a custom IV, mixture, or salve for example.",
         "description": null,
         "code": [
@@ -275,7 +277,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -301,7 +303,7 @@
       {
         "id": "RXD.10",
         "path": "RXD.10",
-        "short": " - RXD",
+        "short": "- RXD.10 - ",
         "definition": "Definition: *_This field is retained for backward compatibility only as of v 27._* The reader is referred to the PRT segment described in Chapter.7.",
         "description": null,
         "code": [
@@ -314,7 +316,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -327,7 +329,7 @@
       {
         "id": "RXD.11",
         "path": "RXD.11",
-        "short": " - RXD",
+        "short": "- RXD.11 - ",
         "definition": "Definition: Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70167[_HL7 Table 0167 - Substitution Status_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -340,7 +342,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -370,7 +372,7 @@
       {
         "id": "RXD.12",
         "path": "RXD.12",
-        "short": " - RXD",
+        "short": "- RXD.12 - ",
         "definition": "Definition: This field contains the total daily dose being dispensed as expressed in terms of the actual dispense units.",
         "description": null,
         "code": [
@@ -383,7 +385,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CQ"
+            "code": "CQ"
           }
         ],
         "extension": [
@@ -396,7 +398,7 @@
       {
         "id": "RXD.13",
         "path": "RXD.13",
-        "short": " - RXD",
+        "short": "- RXD.13 - ",
         "definition": "Definition: *_This field is retained for backward compatibility only as of v 2.6 and withdrawn from the standard as of v 2.8_*. The reader is referred toRXD-30 and RXD-31.",
         "description": null,
         "code": [
@@ -417,7 +419,7 @@
       {
         "id": "RXD.14",
         "path": "RXD.14",
-        "short": " - RXD",
+        "short": "- RXD.14 - ",
         "definition": "Definition: Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70136[_HL7 Table 0136 - Yes/no indicator_] for valid values. The values have the following meaning for this field:",
         "description": null,
         "code": [
@@ -430,7 +432,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -460,7 +462,7 @@
       {
         "id": "RXD.15",
         "path": "RXD.15",
-        "short": " - RXD",
+        "short": "- RXD.15 - ",
         "definition": "Definition: This field contains pharmacy or treatment supplier-generated special instructions to the provider dispensing/administering the order. Refer to Table 0706 - Special Dispensing Instructions in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -473,7 +475,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -490,7 +492,7 @@
       {
         "id": "RXD.16",
         "path": "RXD.16",
-        "short": " - RXD",
+        "short": "- RXD.16 - ",
         "definition": "Definition: Use when _RXD-2-Dispense/Give Code_ does not specify the strength. This is the numeric part of the strength, of a single dosage unit of the dispensed product, used in combination with _RXD-17-actual strength unit_.",
         "description": null,
         "code": [
@@ -503,7 +505,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -516,7 +518,7 @@
       {
         "id": "RXD.17",
         "path": "RXD.17",
-        "short": " - RXD",
+        "short": "- RXD.17 - ",
         "definition": "Definition: Use when _RXD-2-Dispense/Give Code_ does not specify the strength. This is the unit of the strength, of a single dosage unit of the dispensed product, used in combination with _RXD-16-actual strength_. Refer to Table 0707 - Actual Strength Unit in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -529,7 +531,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -546,7 +548,7 @@
       {
         "id": "RXD.18",
         "path": "RXD.18",
-        "short": " - RXD",
+        "short": "- RXD.18 - ",
         "definition": "Definition: This field contains the lot number of the medical substance administered.",
         "description": null,
         "code": [
@@ -559,7 +561,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -585,7 +587,7 @@
       {
         "id": "RXD.19",
         "path": "RXD.19",
-        "short": " - RXD",
+        "short": "- RXD.19 - ",
         "definition": "Definition: This field contains the expiration date of the medical substance administered.",
         "description": null,
         "code": [
@@ -598,7 +600,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -611,7 +613,7 @@
       {
         "id": "RXD.20",
         "path": "RXD.20",
-        "short": " - RXD",
+        "short": "- RXD.20 - ",
         "definition": "Definition: This field contains the manufacturer of the medical substance administered when it is a manufactured substance.",
         "description": null,
         "code": [
@@ -624,7 +626,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -637,7 +639,7 @@
       {
         "id": "RXD.21",
         "path": "RXD.21",
-        "short": " - RXD",
+        "short": "- RXD.21 - ",
         "definition": "Definition: This field contains the identifier of the condition or problem for which the drug/treatment was prescribed. May repeat if multiple indications are relevant. Refer to Table 0708 - Indication in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -650,7 +652,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -667,7 +669,7 @@
       {
         "id": "RXD.22",
         "path": "RXD.22",
-        "short": " - RXD",
+        "short": "- RXD.22 - ",
         "definition": "Definition: This field contains the size of package to be dispensed. Units are transmitted in _RXD-23-dispense package size unit._",
         "description": null,
         "code": [
@@ -680,7 +682,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -693,7 +695,7 @@
       {
         "id": "RXD.23",
         "path": "RXD.23",
-        "short": " - RXD",
+        "short": "- RXD.23 - ",
         "definition": "Definition: This field contains the units in which _RXE-28-dispense package size_ is denominated. The advertised number of units in the manufacturer's package, i.e., the package as it comes from the supplier. Refer to Table 0709 - Dispense Package Size Unit in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -706,7 +708,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -723,7 +725,7 @@
       {
         "id": "RXD.24",
         "path": "RXD.24",
-        "short": " - RXD",
+        "short": "- RXD.24 - ",
         "definition": "Definition: This field contains the method by which treatment is dispensed. Refer To file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70321[_HL7 Table 0321 - Dispense Method_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -736,7 +738,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -766,7 +768,7 @@
       {
         "id": "RXD.25",
         "path": "RXD.25",
-        "short": " - RXD",
+        "short": "- RXD.25 - ",
         "definition": "Definition: This field accommodates the identification of any codes that might be associated with the pharmaceutical substance. Common codes include: the Generic Product Identifier (GPI), Generic Code Number_Sequence Number (GCN_SEQNO), National Drug Code (NDC**)_._** *_Refer to Table 0710 - Supplementary Code in Chapter 2C for valid values._*",
         "description": null,
         "code": [
@@ -779,7 +781,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -796,7 +798,7 @@
       {
         "id": "RXD.26",
         "path": "RXD.26",
-        "short": " - RXD",
+        "short": "- RXD.26 - ",
         "definition": "Definition: This field identifies the pharmacy or other treatment dispensing service (e.g., respiratory) that received the initial request. Refer to Table 0711 - Initiating Location in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -809,7 +811,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -826,7 +828,7 @@
       {
         "id": "RXD.27",
         "path": "RXD.27",
-        "short": " - RXD",
+        "short": "- RXD.27 - ",
         "definition": "Definition: This field identifies the pharmacy which packaged/assembled request. Refer to Table 0712 - Packaging/Assembly Location in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -839,7 +841,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -856,7 +858,7 @@
       {
         "id": "RXD.28",
         "path": "RXD.28",
-        "short": " - RXD",
+        "short": "- RXD.28 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -867,7 +869,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -893,7 +895,7 @@
       {
         "id": "RXD.29",
         "path": "RXD.29",
-        "short": " - RXD",
+        "short": "- RXD.29 - ",
         "code": [
           {
             "system": "http://hl7.org/v2/CodeSystem/DataElements",
@@ -904,7 +906,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -921,7 +923,7 @@
       {
         "id": "RXD.30",
         "path": "RXD.30",
-        "short": " - RXD",
+        "short": "- RXD.30 - ",
         "definition": "Definition: *_This field is retained for backward compatibility only as of v 27._* The information formerly communicated using this field should now be communicated using the PRT segment. The reader is referred to chapter 7 for a description of that segment. Refer to Table 0714 - Dispense to Pharmacy in Chapter 2C for valid values.",
         "description": null,
         "code": [
@@ -934,7 +936,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -951,7 +953,7 @@
       {
         "id": "RXD.31",
         "path": "RXD.31",
-        "short": " - RXD",
+        "short": "- RXD.31 - ",
         "definition": "Definition: *_This field is retained for backward compatibility only as of v 27._* The information formerly communicated using this field should now be communicated using the PRT segment. The reader is referred to chapter 7 for a description of that segment.",
         "description": null,
         "code": [
@@ -964,7 +966,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -977,7 +979,7 @@
       {
         "id": "RXD.32",
         "path": "RXD.32",
-        "short": " - RXD",
+        "short": "- RXD.32 - ",
         "definition": "Definition: The Pharmacy Order Type field defines the general category of pharmacy order which may be used to determine the processing path the order will take. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70480[_HL7 Table 0480 - Pharmacy Order Types_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -990,7 +992,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -1020,7 +1022,7 @@
       {
         "id": "RXD.33",
         "path": "RXD.33",
-        "short": " - RXD",
+        "short": "- RXD.33 - ",
         "definition": "Definition: This is the type of dispensing event that occurred. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70484[_User-defined Table 0484 – Dispense Type_] for suggested values.",
         "description": null,
         "code": [
@@ -1033,7 +1035,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -1050,7 +1052,7 @@
       {
         "id": "RXD.34",
         "path": "RXD.34",
-        "short": " - RXD",
+        "short": "- RXD.34 - ",
         "definition": "Definition: This field contains the telecommunication contact information for the pharmacy. Repetitions may be supplied for various device types or use codes, or multiple instances of the same type or use. This concept also exists as RXO-36 and RXE-45 to support pharmacy contact information in the context of the order, the encoded order and the dispense.",
         "description": null,
         "code": [
@@ -1063,7 +1065,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -1076,7 +1078,7 @@
       {
         "id": "RXD.35",
         "path": "RXD.35",
-        "short": " - RXD",
+        "short": "- RXD.35 - ",
         "definition": "Definition: This field contains an identifier for the individual product instance for the dispense occurrence. This may represent a barcode, RFID or other means of automatically-readable product instance. Repetitions represent the same instance where more than one barcode, RFID or other identification is present.",
         "description": null,
         "code": [
@@ -1089,7 +1091,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -1101,9 +1103,7 @@
       }
     ]
   },
-  "id": "RXD",
   "title": "HL7 v2 RXD Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/RXD",
   "name": "RXD",
-  "type": "http://hl7.org/v2/StructureDefinition/RXD"
+  "type": "RXD"
 }

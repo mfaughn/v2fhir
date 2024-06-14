@@ -1,0 +1,935 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/ADT_A05-B",
+  "id": "ADT_A05-B",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "ADT_A05-B.1-MSH",
+          "path": "ADT_A05-B.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.2-ARV",
+          "path": "ADT_A05-B.2-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.3-SFT",
+          "path": "ADT_A05-B.3-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.4-UAC",
+          "path": "ADT_A05-B.4-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.5-EVN",
+          "path": "ADT_A05-B.5-EVN",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EVN"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.6-PID",
+          "path": "ADT_A05-B.6-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.7-PD1",
+          "path": "ADT_A05-B.7-PD1",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PD1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.8-GSP",
+          "path": "ADT_A05-B.8-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.9-GSR",
+          "path": "ADT_A05-B.9-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.10-GSC",
+          "path": "ADT_A05-B.10-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.11-OH1",
+          "path": "ADT_A05-B.11-OH1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/OH1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.12-OH2",
+          "path": "ADT_A05-B.12-OH2",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/OH2"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.13-OH3",
+          "path": "ADT_A05-B.13-OH3",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/OH3"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.14-OH4",
+          "path": "ADT_A05-B.14-OH4",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/OH4"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.15-ARV",
+          "path": "ADT_A05-B.15-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.16-ROL",
+          "path": "ADT_A05-B.16-ROL",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.17-PRT",
+          "path": "ADT_A05-B.17-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.18-NEXT_OF_KIN",
+          "path": "ADT_A05-B.18-NEXT_OF_KIN",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ADT_A05-B.18-NEXT_OF_KIN.1-NK1",
+              "path": "ADT_A05-B.18-NEXT_OF_KIN.1-NK1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.18-NEXT_OF_KIN.2-GSP",
+              "path": "ADT_A05-B.18-NEXT_OF_KIN.2-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.18-NEXT_OF_KIN.3-GSR",
+              "path": "ADT_A05-B.18-NEXT_OF_KIN.3-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.18-NEXT_OF_KIN.4-OH2",
+              "path": "ADT_A05-B.18-NEXT_OF_KIN.4-OH2",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OH2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.18-NEXT_OF_KIN.5-OH3",
+              "path": "ADT_A05-B.18-NEXT_OF_KIN.5-OH3",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OH3"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "ADT_A05-B.19-PV1",
+          "path": "ADT_A05-B.19-PV1",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PV1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.20-PV2",
+          "path": "ADT_A05-B.20-PV2",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PV2"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.21-ARV",
+          "path": "ADT_A05-B.21-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.22-ROL",
+          "path": "ADT_A05-B.22-ROL",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ROL"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.23-PRT",
+          "path": "ADT_A05-B.23-PRT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.24-DB1",
+          "path": "ADT_A05-B.24-DB1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DB1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.25-OBSERVATION",
+          "path": "ADT_A05-B.25-OBSERVATION",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ADT_A05-B.25-OBSERVATION.1-OBX",
+              "path": "ADT_A05-B.25-OBSERVATION.1-OBX",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.25-OBSERVATION.2-PRT",
+              "path": "ADT_A05-B.25-OBSERVATION.2-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "ADT_A05-B.26-AL1",
+          "path": "ADT_A05-B.26-AL1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/AL1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.27-IAM",
+          "path": "ADT_A05-B.27-IAM",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/IAM"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.28-DG1",
+          "path": "ADT_A05-B.28-DG1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DG1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.29-DRG",
+          "path": "ADT_A05-B.29-DRG",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/DRG"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.30-PROCEDURE",
+          "path": "ADT_A05-B.30-PROCEDURE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ADT_A05-B.30-PROCEDURE.1-PR1",
+              "path": "ADT_A05-B.30-PROCEDURE.1-PR1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PR1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.30-PROCEDURE.2-ROL",
+              "path": "ADT_A05-B.30-PROCEDURE.2-ROL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.30-PROCEDURE.3-PRT",
+              "path": "ADT_A05-B.30-PROCEDURE.3-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "ADT_A05-B.31-GT1",
+          "path": "ADT_A05-B.31-GT1",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GT1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.32-GSP",
+          "path": "ADT_A05-B.32-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.33-GSR",
+          "path": "ADT_A05-B.33-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.34-INSURANCE",
+          "path": "ADT_A05-B.34-INSURANCE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "ADT_A05-B.34-INSURANCE.1-IN1",
+              "path": "ADT_A05-B.34-INSURANCE.1-IN1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.34-INSURANCE.2-IN2",
+              "path": "ADT_A05-B.34-INSURANCE.2-IN2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN2"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.34-INSURANCE.3-IN3",
+              "path": "ADT_A05-B.34-INSURANCE.3-IN3",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/IN3"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.34-INSURANCE.4-GSP",
+              "path": "ADT_A05-B.34-INSURANCE.4-GSP",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSP"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.34-INSURANCE.5-GSR",
+              "path": "ADT_A05-B.34-INSURANCE.5-GSR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GSR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.34-INSURANCE.6-ROL",
+              "path": "ADT_A05-B.34-INSURANCE.6-ROL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.34-INSURANCE.7-PRT",
+              "path": "ADT_A05-B.34-INSURANCE.7-PRT",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "ADT_A05-B.34-INSURANCE.8-AUTHORIZATION",
+              "path": "ADT_A05-B.34-INSURANCE.8-AUTHORIZATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ADT_A05-B.34-INSURANCE.8-AUTHORIZATION.1-AUT",
+                  "path": "ADT_A05-B.34-INSURANCE.8-AUTHORIZATION.1-AUT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/AUT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ADT_A05-B.34-INSURANCE.8-AUTHORIZATION.2-PRT",
+                  "path": "ADT_A05-B.34-INSURANCE.8-AUTHORIZATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "ADT_A05-B.34-INSURANCE.9-REFERRAL",
+              "path": "ADT_A05-B.34-INSURANCE.9-REFERRAL",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "ADT_A05-B.34-INSURANCE.9-REFERRAL.1-RF1",
+                  "path": "ADT_A05-B.34-INSURANCE.9-REFERRAL.1-RF1",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/RF1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "ADT_A05-B.34-INSURANCE.9-REFERRAL.2-PRT",
+                  "path": "ADT_A05-B.34-INSURANCE.9-REFERRAL.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "ADT_A05-B.35-ACC",
+          "path": "ADT_A05-B.35-ACC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ACC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.36-UB1",
+          "path": "ADT_A05-B.36-UB1",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UB1"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "ADT_A05-B.37-UB2",
+          "path": "ADT_A05-B.37-UB2",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UB2"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 ADT_A05-B Segment Definition",
+  "name": "ADT_A05-B",
+  "type": "http://hl7.org/v2/StructureDefinition/ADT_A05-B"
+}

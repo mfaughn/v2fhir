@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/LOC",
+  "id": "LOC",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "LOC.1",
         "path": "LOC.1",
-        "short": " - LOC",
+        "short": "- LOC.1 - ",
         "definition": "Definition: This field contains the institution's identification code for the location. The identifying key value. Must match _MFE-4 -Primary Key Value - MFE_. This field has the same components as the patient location fields in the PV1 segment (except that bed status is not included here).",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/PL"
+            "code": "PL"
           }
         ],
         "extension": [
@@ -42,7 +44,7 @@
       {
         "id": "LOC.2",
         "path": "LOC.2",
-        "short": " - LOC",
+        "short": "- LOC.2 - ",
         "definition": "Definition: This field contains the optional free text description of the location, to elaborate upon LOC primary key value.",
         "description": null,
         "code": [
@@ -55,7 +57,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -81,7 +83,7 @@
       {
         "id": "LOC.3",
         "path": "LOC.3",
-        "short": " - LOC",
+        "short": "- LOC.3 - ",
         "definition": "Definition: This field contains the code identifying what type of location this is. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70260[User-defined Table 0260 - Patient Location Type] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -94,7 +96,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -124,7 +126,7 @@
       {
         "id": "LOC.4",
         "path": "LOC.4",
-        "short": " - LOC",
+        "short": "- LOC.4 - ",
         "definition": "Definition: This field contains the organization(s) of which this location is a part. For inpatient locations, this can be the hospital or institution name. For outpatient locations, this can be the clinic or office name.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -150,7 +152,7 @@
       {
         "id": "LOC.5",
         "path": "LOC.5",
-        "short": " - LOC",
+        "short": "- LOC.5 - ",
         "definition": "Definition: This field contains the address of the patient location, especially for use for outpatient clinic or office locations.",
         "description": null,
         "code": [
@@ -163,7 +165,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -176,7 +178,7 @@
       {
         "id": "LOC.6",
         "path": "LOC.6",
-        "short": " - LOC",
+        "short": "- LOC.6 - ",
         "definition": "Definition: This field contains the phone number within the patient location, if any. For example, the room or bed phone for use by the patient.",
         "description": null,
         "code": [
@@ -189,7 +191,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XTN"
+            "code": "XTN"
           }
         ],
         "extension": [
@@ -202,7 +204,7 @@
       {
         "id": "LOC.7",
         "path": "LOC.7",
-        "short": " - LOC",
+        "short": "- LOC.7 - ",
         "definition": "Definition: This field contains the multiple license numbers for the facility. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70461[User-defined Table 0461 - License Number] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -215,7 +217,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -232,7 +234,7 @@
       {
         "id": "LOC.8",
         "path": "LOC.8",
-        "short": " - LOC",
+        "short": "- LOC.8 - ",
         "definition": "Definition: This repeating field indicates what types of equipment are built in. Applies only to room or bed locations. If _LOC-3 - Location Type_ indicates that this is a room, this will be the equipment in the room which can be used by more than one bed. If _LOC-3 - Location Type_ indicates this is a bed, this will be the bedside devices available to this bed. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70261[User-defined Table 0261 - Location Equipment] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -245,7 +247,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -275,7 +277,7 @@
       {
         "id": "LOC.9",
         "path": "LOC.9",
-        "short": " - LOC",
+        "short": "- LOC.9 - ",
         "definition": "Definition: This field categorizes the types of services provided by the location. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70442[User-defined Table 0442 - Location Service Code] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -288,7 +290,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -317,9 +319,7 @@
       }
     ]
   },
-  "id": "LOC",
   "title": "HL7 v2 LOC Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/LOC",
   "name": "LOC",
-  "type": "http://hl7.org/v2/StructureDefinition/LOC"
+  "type": "LOC"
 }

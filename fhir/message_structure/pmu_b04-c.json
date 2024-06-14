@@ -1,0 +1,128 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PMU_B04-C",
+  "id": "PMU_B04-C",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "PMU_B04-C.1-MSH",
+          "path": "PMU_B04-C.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B04-C.2-SFT",
+          "path": "PMU_B04-C.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B04-C.3-UAC",
+          "path": "PMU_B04-C.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B04-C.4-EVN",
+          "path": "PMU_B04-C.4-EVN",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/EVN"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B04-C.5-STF",
+          "path": "PMU_B04-C.5-STF",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/STF"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B04-C.6-PRA",
+          "path": "PMU_B04-C.6-PRA",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PRA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PMU_B04-C.7-ORG",
+          "path": "PMU_B04-C.7-ORG",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ORG"
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  "title": "HL7 v2 PMU_B04-C Segment Definition",
+  "name": "PMU_B04-C",
+  "type": "http://hl7.org/v2/StructureDefinition/PMU_B04-C"
+}

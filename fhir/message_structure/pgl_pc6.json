@@ -1,0 +1,878 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/PGL_PC6",
+  "id": "PGL_PC6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "PGL_PC6.1-MSH",
+          "path": "PGL_PC6.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PGL_PC6.2-SFT",
+          "path": "PGL_PC6.2-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PGL_PC6.3-UAC",
+          "path": "PGL_PC6.3-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PGL_PC6.4-PID",
+          "path": "PGL_PC6.4-PID",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/PID"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PGL_PC6.5-GSP",
+          "path": "PGL_PC6.5-GSP",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSP"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PGL_PC6.6-GSR",
+          "path": "PGL_PC6.6-GSR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PGL_PC6.7-GSC",
+          "path": "PGL_PC6.7-GSC",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/GSC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "PGL_PC6.8-PROVIDER",
+          "path": "PGL_PC6.8-PROVIDER",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PGL_PC6.8-PROVIDER.1-PRD",
+              "path": "PGL_PC6.8-PROVIDER.1-PRD",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PRD"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PGL_PC6.8-PROVIDER.2-CTD",
+              "path": "PGL_PC6.8-PROVIDER.2-CTD",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/CTD"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "PGL_PC6.9-PATIENT_VISIT",
+          "path": "PGL_PC6.9-PATIENT_VISIT",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PGL_PC6.9-PATIENT_VISIT.1-PV1",
+              "path": "PGL_PC6.9-PATIENT_VISIT.1-PV1",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV1"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PGL_PC6.9-PATIENT_VISIT.2-PV2",
+              "path": "PGL_PC6.9-PATIENT_VISIT.2-PV2",
+              "min": 1,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/PV2"
+                }
+              ]
+            }
+          ]
+        ]
+      ],
+      [
+        {
+          "id": "PGL_PC6.10-GOAL",
+          "path": "PGL_PC6.10-GOAL",
+          "min": 0,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "PGL_PC6.10-GOAL.1-GOL",
+              "path": "PGL_PC6.10-GOAL.1-GOL",
+              "min": 0,
+              "max": "1",
+              "definition": "1",
+              "short": "1",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/GOL"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PGL_PC6.10-GOAL.2-NTE",
+              "path": "PGL_PC6.10-GOAL.2-NTE",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PGL_PC6.10-GOAL.3-VAR",
+              "path": "PGL_PC6.10-GOAL.3-VAR",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "id": "PGL_PC6.10-GOAL.4-GOAL_PARTICIPATION",
+              "path": "PGL_PC6.10-GOAL.4-GOAL_PARTICIPATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.4-GOAL_PARTICIPATION.1-ROL",
+                  "path": "PGL_PC6.10-GOAL.4-GOAL_PARTICIPATION.1-ROL",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.4-GOAL_PARTICIPATION.2-PRT",
+                  "path": "PGL_PC6.10-GOAL.4-GOAL_PARTICIPATION.2-PRT",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.4-GOAL_PARTICIPATION.3-VAR",
+                  "path": "PGL_PC6.10-GOAL.4-GOAL_PARTICIPATION.3-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "PGL_PC6.10-GOAL.5-PATHWAY",
+              "path": "PGL_PC6.10-GOAL.5-PATHWAY",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.5-PATHWAY.1-PTH",
+                  "path": "PGL_PC6.10-GOAL.5-PATHWAY.1-PTH",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PTH"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.5-PATHWAY.2-VAR",
+                  "path": "PGL_PC6.10-GOAL.5-PATHWAY.2-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "PGL_PC6.10-GOAL.6-OBSERVATION",
+              "path": "PGL_PC6.10-GOAL.6-OBSERVATION",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.6-OBSERVATION.1-OBX",
+                  "path": "PGL_PC6.10-GOAL.6-OBSERVATION.1-OBX",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.6-OBSERVATION.2-PRT",
+                  "path": "PGL_PC6.10-GOAL.6-OBSERVATION.2-PRT",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.6-OBSERVATION.3-NTE",
+                  "path": "PGL_PC6.10-GOAL.6-OBSERVATION.3-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "PGL_PC6.10-GOAL.7-PROBLEM",
+              "path": "PGL_PC6.10-GOAL.7-PROBLEM",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.7-PROBLEM.1-PRB",
+                  "path": "PGL_PC6.10-GOAL.7-PROBLEM.1-PRB",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/PRB"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.7-PROBLEM.2-NTE",
+                  "path": "PGL_PC6.10-GOAL.7-PROBLEM.2-NTE",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.7-PROBLEM.3-VAR",
+                  "path": "PGL_PC6.10-GOAL.7-PROBLEM.3-VAR",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.7-PROBLEM.4-PROBLEM_PARTICIPATION",
+                  "path": "PGL_PC6.10-GOAL.7-PROBLEM.4-PROBLEM_PARTICIPATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PGL_PC6.10-GOAL.7-PROBLEM.4-PROBLEM_PARTICIPATION.1-ROL",
+                      "path": "PGL_PC6.10-GOAL.7-PROBLEM.4-PROBLEM_PARTICIPATION.1-ROL",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/ROL"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PGL_PC6.10-GOAL.7-PROBLEM.4-PROBLEM_PARTICIPATION.2-PRT",
+                      "path": "PGL_PC6.10-GOAL.7-PROBLEM.4-PROBLEM_PARTICIPATION.2-PRT",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PGL_PC6.10-GOAL.7-PROBLEM.4-PROBLEM_PARTICIPATION.3-VAR",
+                      "path": "PGL_PC6.10-GOAL.7-PROBLEM.4-PROBLEM_PARTICIPATION.3-VAR",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.7-PROBLEM.5-PROBLEM_OBSERVATION",
+                  "path": "PGL_PC6.10-GOAL.7-PROBLEM.5-PROBLEM_OBSERVATION",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PGL_PC6.10-GOAL.7-PROBLEM.5-PROBLEM_OBSERVATION.1-OBX",
+                      "path": "PGL_PC6.10-GOAL.7-PROBLEM.5-PROBLEM_OBSERVATION.1-OBX",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PGL_PC6.10-GOAL.7-PROBLEM.5-PROBLEM_OBSERVATION.2-PRT",
+                      "path": "PGL_PC6.10-GOAL.7-PROBLEM.5-PROBLEM_OBSERVATION.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PGL_PC6.10-GOAL.7-PROBLEM.5-PROBLEM_OBSERVATION.3-NTE",
+                      "path": "PGL_PC6.10-GOAL.7-PROBLEM.5-PROBLEM_OBSERVATION.3-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            {
+              "id": "PGL_PC6.10-GOAL.8-ORDER",
+              "path": "PGL_PC6.10-GOAL.8-ORDER",
+              "min": 1,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.8-ORDER.1-ORC",
+                  "path": "PGL_PC6.10-GOAL.8-ORDER.1-ORC",
+                  "min": 0,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL",
+                  "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.1-CHOICE",
+                      "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.1-CHOICE",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.1-CHOICE.1",
+                          "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.1-CHOICE.1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.1-CHOICE.1.1-OBR",
+                              "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.1-CHOICE.1.1-OBR",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ],
+                      [
+                        {
+                          "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.1-CHOICE.2",
+                          "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.1-CHOICE.2",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "BackboneElement"
+                            }
+                          ]
+                        },
+                        [
+                          [
+                            {
+                              "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.1-CHOICE.2.1-Hxx",
+                              "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.1-CHOICE.2.1-Hxx",
+                              "min": 0,
+                              "max": "1",
+                              "definition": "1",
+                              "short": "1",
+                              "type": [
+                                {
+                                  "code": "http://hl7.org/v2/StructureDefinition/Hxx"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.2-NTE",
+                      "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.2-NTE",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.3-VAR",
+                      "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.3-VAR",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION",
+                      "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.1-OBX",
+                          "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.2-PRT",
+                          "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.3-NTE",
+                          "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.3-NTE",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.4-VAR",
+                          "path": "PGL_PC6.10-GOAL.8-ORDER.2-ORDER_DETAIL.4-ORDER_OBSERVATION.4-VAR",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/VAR"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 PGL_PC6 Segment Definition",
+  "name": "PGL_PC6",
+  "type": "http://hl7.org/v2/StructureDefinition/PGL_PC6"
+}

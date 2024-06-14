@@ -1,0 +1,457 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/OPR_O38",
+  "id": "OPR_O38",
+  "meta": {
+    "profile": [
+      "http://hl7.org/v2/StructureDefinition/MessageStructure-Profile"
+    ]
+  },
+  "version": "0.0.1",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "baseDefinition": "http://hl7.org/v2/StructureDefinition/MessageStructure",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      [
+        {
+          "id": "OPR_O38.1-MSH",
+          "path": "OPR_O38.1-MSH",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSH"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OPR_O38.2-MSA",
+          "path": "OPR_O38.2-MSA",
+          "min": 0,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/MSA"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OPR_O38.3-ARV",
+          "path": "OPR_O38.3-ARV",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ARV"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OPR_O38.4-ERR",
+          "path": "OPR_O38.4-ERR",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/ERR"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OPR_O38.5-SFT",
+          "path": "OPR_O38.5-SFT",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/SFT"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OPR_O38.6-UAC",
+          "path": "OPR_O38.6-UAC",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/UAC"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OPR_O38.7-NTE",
+          "path": "OPR_O38.7-NTE",
+          "min": 1,
+          "max": "*",
+          "definition": "*",
+          "short": "*",
+          "type": [
+            {
+              "code": "http://hl7.org/v2/StructureDefinition/NTE"
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "OPR_O38.8-RESPONSE",
+          "path": "OPR_O38.8-RESPONSE",
+          "min": 1,
+          "max": "1",
+          "definition": "1",
+          "short": "1",
+          "type": [
+            {
+              "code": "BackboneElement"
+            }
+          ]
+        },
+        [
+          [
+            {
+              "id": "OPR_O38.8-RESPONSE.1-ORDER",
+              "path": "OPR_O38.8-RESPONSE.1-ORDER",
+              "min": 0,
+              "max": "*",
+              "definition": "*",
+              "short": "*",
+              "type": [
+                {
+                  "code": "BackboneElement"
+                }
+              ]
+            },
+            [
+              [
+                {
+                  "id": "OPR_O38.8-RESPONSE.1-ORDER.1-NK1",
+                  "path": "OPR_O38.8-RESPONSE.1-ORDER.1-NK1",
+                  "min": 0,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "http://hl7.org/v2/StructureDefinition/NK1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "id": "OPR_O38.8-RESPONSE.1-ORDER.2-PATIENT",
+                  "path": "OPR_O38.8-RESPONSE.1-ORDER.2-PATIENT",
+                  "min": 1,
+                  "max": "1",
+                  "definition": "1",
+                  "short": "1",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "OPR_O38.8-RESPONSE.1-ORDER.2-PATIENT.1-PID",
+                      "path": "OPR_O38.8-RESPONSE.1-ORDER.2-PATIENT.1-PID",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PID"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OPR_O38.8-RESPONSE.1-ORDER.2-PATIENT.2-PRT",
+                      "path": "OPR_O38.8-RESPONSE.1-ORDER.2-PATIENT.2-PRT",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OPR_O38.8-RESPONSE.1-ORDER.2-PATIENT.3-ARV",
+                      "path": "OPR_O38.8-RESPONSE.1-ORDER.2-PATIENT.3-ARV",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/ARV"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              ],
+              [
+                {
+                  "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN",
+                  "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN",
+                  "min": 1,
+                  "max": "*",
+                  "definition": "*",
+                  "short": "*",
+                  "type": [
+                    {
+                      "code": "BackboneElement"
+                    }
+                  ]
+                },
+                [
+                  [
+                    {
+                      "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.1-SPM",
+                      "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.1-SPM",
+                      "min": 0,
+                      "max": "1",
+                      "definition": "1",
+                      "short": "1",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/SPM"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.2-SPECIMEN_OBSERVATION",
+                      "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.2-SPECIMEN_OBSERVATION",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.2-SPECIMEN_OBSERVATION.1-OBX",
+                          "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.2-SPECIMEN_OBSERVATION.1-OBX",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBX"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.2-SPECIMEN_OBSERVATION.2-PRT",
+                          "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.2-SPECIMEN_OBSERVATION.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.3-SAC",
+                      "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.3-SAC",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "http://hl7.org/v2/StructureDefinition/SAC"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.4-OBSERVATION_REQUEST",
+                      "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.4-OBSERVATION_REQUEST",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.4-OBSERVATION_REQUEST.1-ORC",
+                          "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.4-OBSERVATION_REQUEST.1-ORC",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/ORC"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.4-OBSERVATION_REQUEST.2-PRT",
+                          "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.4-OBSERVATION_REQUEST.2-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.4-OBSERVATION_REQUEST.3-OBR",
+                          "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.4-OBSERVATION_REQUEST.3-OBR",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/OBR"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.4-OBSERVATION_REQUEST.4-PRT",
+                          "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.4-OBSERVATION_REQUEST.4-PRT",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/PRT"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ],
+                  [
+                    {
+                      "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.5-TIMING",
+                      "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.5-TIMING",
+                      "min": 1,
+                      "max": "*",
+                      "definition": "*",
+                      "short": "*",
+                      "type": [
+                        {
+                          "code": "BackboneElement"
+                        }
+                      ]
+                    },
+                    [
+                      [
+                        {
+                          "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.5-TIMING.1-TQ1",
+                          "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.5-TIMING.1-TQ1",
+                          "min": 0,
+                          "max": "1",
+                          "definition": "1",
+                          "short": "1",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/TQ1"
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {
+                          "id": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.5-TIMING.2-TQ2",
+                          "path": "OPR_O38.8-RESPONSE.1-ORDER.3-SPECIMEN.5-TIMING.2-TQ2",
+                          "min": 1,
+                          "max": "*",
+                          "definition": "*",
+                          "short": "*",
+                          "type": [
+                            {
+                              "code": "http://hl7.org/v2/StructureDefinition/TQ2"
+                            }
+                          ]
+                        }
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  "title": "HL7 v2 OPR_O38 Segment Definition",
+  "name": "OPR_O38",
+  "type": "http://hl7.org/v2/StructureDefinition/OPR_O38"
+}

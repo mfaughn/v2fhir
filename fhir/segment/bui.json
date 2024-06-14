@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/BUI",
+  "id": "BUI",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "BUI.1",
         "path": "BUI.1",
-        "short": " - BUI",
+        "short": "- BUI.1 - ",
         "definition": "Definition: This field contains a sequence number. When multiple BUI segments are included in the same segment group, this number differentiates between them.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "BUI.2",
         "path": "BUI.2",
-        "short": " - BUI",
+        "short": "- BUI.2 - ",
         "definition": "Definition: The blood unit identifier is a unique identifier assigned to the particular blood unit in a container.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/EI"
+            "code": "EI"
           }
         ],
         "extension": [
@@ -81,7 +83,7 @@
       {
         "id": "BUI.3",
         "path": "BUI.3",
-        "short": " - BUI",
+        "short": "- BUI.3 - ",
         "definition": "Definition: The type of blood unit. For donations, this is the type blood unit being described. This element defines which of the types from the referenced table are being described. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70566[HL7-Defined Table 0566 – Blood Unit Type] in Chapter 2C, Code Tables, for valid entries.",
         "description": null,
         "code": [
@@ -94,7 +96,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -111,7 +113,7 @@
       {
         "id": "BUI.4",
         "path": "BUI.4",
-        "short": " - BUI",
+        "short": "- BUI.4 - ",
         "definition": "Definition: The weight of the blood unit collected, not including the weight of the container.",
         "description": null,
         "code": [
@@ -124,7 +126,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -137,7 +139,7 @@
       {
         "id": "BUI.5",
         "path": "BUI.5",
-        "short": " - BUI",
+        "short": "- BUI.5 - ",
         "definition": "Definition: The unit of measure for the weight of the blood unit. Concepts are pulled from the UCUM code system (_http://www.unitsofmeasure.org[www.unitsofmeasure.org])._ Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70929[_HL7-Defined Table 0929 – Weight Units_] in Chapter 2C, Code Tables, for valid entries.",
         "description": null,
         "code": [
@@ -150,7 +152,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -167,7 +169,7 @@
       {
         "id": "BUI.6",
         "path": "BUI.6",
-        "short": " - BUI",
+        "short": "- BUI.6 - ",
         "definition": "Definition: The volume of the blood unit collected.",
         "description": null,
         "code": [
@@ -180,7 +182,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -193,7 +195,7 @@
       {
         "id": "BUI.7",
         "path": "BUI.7",
-        "short": " - BUI",
+        "short": "- BUI.7 - ",
         "definition": "Definition: The unit of measure for the volume of the blood unit. Concepts are pulled from the UCUM code system (_http://www.unitsofmeasure.org[www.unitsofmeasure.org])._ Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70930[HL7-Defined Table 0930 – Volume Units] in Chapter 2C, Code Tables, for valid entries.",
         "description": null,
         "code": [
@@ -206,7 +208,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -223,7 +225,7 @@
       {
         "id": "BUI.8",
         "path": "BUI.8",
-        "short": " - BUI",
+        "short": "- BUI.8 - ",
         "definition": "Definition: The string catalog number of the blood unit container, which includes a specific container code to identify a collection bag.",
         "description": null,
         "code": [
@@ -236,7 +238,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -249,7 +251,7 @@
       {
         "id": "BUI.9",
         "path": "BUI.9",
-        "short": " - BUI",
+        "short": "- BUI.9 - ",
         "definition": "Definition: The lot number for the collection bag container as assigned by the container manufacturer.",
         "description": null,
         "code": [
@@ -262,7 +264,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -275,7 +277,7 @@
       {
         "id": "BUI.10",
         "path": "BUI.10",
-        "short": " - BUI",
+        "short": "- BUI.10 - ",
         "definition": "Definition: The organization which manufactured the collection bag container.",
         "description": null,
         "code": [
@@ -288,7 +290,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -301,7 +303,7 @@
       {
         "id": "BUI.11",
         "path": "BUI.11",
-        "short": " - BUI",
+        "short": "- BUI.11 - ",
         "definition": "Definition: The temperature range between which the blood unit must be kept during transport.",
         "description": null,
         "code": [
@@ -314,7 +316,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NR"
+            "code": "NR"
           }
         ],
         "extension": [
@@ -327,7 +329,7 @@
       {
         "id": "BUI.12",
         "path": "BUI.12",
-        "short": " - BUI",
+        "short": "- BUI.12 - ",
         "definition": "Definition: The unit of measure of the transport temperature range. Concepts are pulled from the UCUM code system (_http://www.unitsofmeasure.org[www.unitsofmeasure.org])._ Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70931[HL7-Defined Table 0931 – Temperature Units] in Chapter 2C, Code Tables, for valid entries.",
         "description": null,
         "code": [
@@ -340,7 +342,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "binding": {
@@ -357,7 +359,7 @@
       {
         "id": "BUI.13",
         "path": "BUI.13",
-        "short": " - BUI",
+        "short": "- BUI.13 - ",
         "definition": "Definition: This field reveals the intent of the message. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[HL7 Table 0206 - Segment Action Code] for valid values.",
         "description": null,
         "code": [
@@ -370,7 +372,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -399,9 +401,7 @@
       }
     ]
   },
-  "id": "BUI",
   "title": "HL7 v2 BUI Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/BUI",
   "name": "BUI",
-  "type": "http://hl7.org/v2/StructureDefinition/BUI"
+  "type": "BUI"
 }

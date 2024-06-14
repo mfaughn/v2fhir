@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/FTS",
+  "id": "FTS",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "FTS.1",
         "path": "FTS.1",
-        "short": " - FTS",
+        "short": "- FTS.1 - ",
         "definition": "Definition: This field contains the number of batches contained in this file.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "FTS.2",
         "path": "FTS.2",
-        "short": " - FTS",
+        "short": "- FTS.2 - ",
         "definition": "Definition: The use of this free text field is not further specified.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -93,9 +95,7 @@
       }
     ]
   },
-  "id": "FTS",
   "title": "HL7 v2 FTS Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/FTS",
   "name": "FTS",
-  "type": "http://hl7.org/v2/StructureDefinition/FTS"
+  "type": "FTS"
 }

@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/AFF",
+  "id": "AFF",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "AFF.1",
         "path": "AFF.1",
-        "short": " - AFF",
+        "short": "- AFF.1 - ",
         "definition": "Definition: This field contains the number that identifies this transaction. For the first occurrence of the segment, the sequence number shall be one; for the second occurrence, the sequence number shall be two; etc.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "AFF.2",
         "path": "AFF.2",
-        "short": " - AFF",
+        "short": "- AFF.2 - ",
         "definition": "Definition: This field contains the official name of the association promoting specific professional interests with which the staff member is affiliated.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XON"
+            "code": "XON"
           }
         ],
         "extension": [
@@ -81,7 +83,7 @@
       {
         "id": "AFF.3",
         "path": "AFF.3",
-        "short": " - AFF",
+        "short": "- AFF.3 - ",
         "definition": "Definition: This field contains the postal address of the professional organization with which the Staff Member is associated.",
         "description": null,
         "code": [
@@ -94,7 +96,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XAD"
+            "code": "XAD"
           }
         ],
         "extension": [
@@ -107,7 +109,7 @@
       {
         "id": "AFF.4",
         "path": "AFF.4",
-        "short": " - AFF",
+        "short": "- AFF.4 - ",
         "definition": "Definition: This field contains the period the staff member started and ended membership in the professional organization.",
         "description": null,
         "code": [
@@ -120,7 +122,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DR"
+            "code": "DR"
           }
         ],
         "extension": [
@@ -133,7 +135,7 @@
       {
         "id": "AFF.5",
         "path": "AFF.5",
-        "short": " - AFF",
+        "short": "- AFF.5 - ",
         "definition": "Definition: This field contains miscellaneous additional information related to the staff member's membership in the professional organization.",
         "description": null,
         "code": [
@@ -146,7 +148,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ST"
+            "code": "ST"
           }
         ],
         "extension": [
@@ -171,9 +173,7 @@
       }
     ]
   },
-  "id": "AFF",
   "title": "HL7 v2 AFF Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/AFF",
   "name": "AFF",
-  "type": "http://hl7.org/v2/StructureDefinition/AFF"
+  "type": "AFF"
 }

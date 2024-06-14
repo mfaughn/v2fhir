@@ -1,10 +1,12 @@
 {
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.org/v2/StructureDefinition/AIP",
+  "id": "AIP",
   "meta": {
     "profile": [
       "http://hl7.org/v2/StructureDefinition/Segment-Profile"
     ]
   },
-  "resourceType": "StructureDefinition",
   "version": "0.0.1",
   "status": "active",
   "kind": "logical",
@@ -16,7 +18,7 @@
       {
         "id": "AIP.1",
         "path": "AIP.1",
-        "short": " - AIP",
+        "short": "- AIP.1 - ",
         "definition": "Definition: This field contains a number that uniquely identifies the information represented by this segment in this transaction for the purposes of addition, change or deletion.",
         "description": null,
         "code": [
@@ -29,7 +31,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/SI"
+            "code": "SI"
           }
         ],
         "extension": [
@@ -55,7 +57,7 @@
       {
         "id": "AIP.2",
         "path": "AIP.2",
-        "short": " - AIP",
+        "short": "- AIP.2 - ",
         "definition": "Definition: This field contains the action to be taken when updating or modifying information in this segment from previously sent interface transactions. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70206[_HL7 Table 0206 - Segment Action Code_] in Chapter 2C, Code Tables, for valid values.",
         "description": null,
         "code": [
@@ -68,7 +70,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/ID"
+            "code": "ID"
           }
         ],
         "binding": {
@@ -98,7 +100,7 @@
       {
         "id": "AIP.3",
         "path": "AIP.3",
-        "short": " - AIP",
+        "short": "- AIP.3 - ",
         "definition": "Definition: This field contains the ID number and name of the person being requested or scheduled for an appointment. This field is used to identify a specific person being requested, or a specific person who has been scheduled as a resource for an appointment. If the specific person is not known, but the type of resource is, _AIP-4 Resource Type_ is used to identify the type of personnel resource required or scheduled. At a minimum, the ID number component should be supplied to identify either the specific person being requested or the specific person who has been scheduled. For inter-enterprise communications, for which a shared ID number may not be available, the minimum components needed to uniquely identify a person may be defined by site-specific negotiations.",
         "description": null,
         "code": [
@@ -111,7 +113,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/XCN"
+            "code": "XCN"
           }
         ],
         "extension": [
@@ -124,7 +126,7 @@
       {
         "id": "AIP.4",
         "path": "AIP.4",
-        "short": " - AIP",
+        "short": "- AIP.4 - ",
         "definition": "Definition: This field identifies the type of the personnel requested/scheduled for an appointment. For all messages, this field is conditionally required if a specific location is not identified in _AIP-3 Personnel Resource ID_. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70182[_HL7 Table 0182 - Staff Type_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -137,7 +139,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -154,7 +156,7 @@
       {
         "id": "AIP.5",
         "path": "AIP.5",
-        "short": " - AIP",
+        "short": "- AIP.5 - ",
         "definition": "Definition: This field identifies the requested resource as a member of the indicated group. If, in a Schedule Request Message (SRM), no specific resource is requested, but an _AIP-4 Resource Type_ is requested, the _AIP-5 Resource Group_ field can be used to further qualify the type of resource being requested.",
         "description": null,
         "code": [
@@ -167,7 +169,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "extension": [
@@ -180,7 +182,7 @@
       {
         "id": "AIP.6",
         "path": "AIP.6",
-        "short": " - AIP",
+        "short": "- AIP.6 - ",
         "definition": "Definition: This field contains the date and time this service needs for the appointment. This field allows the application to identify that the service is required for the appointment at a different time than the appointment's start date/time.",
         "description": null,
         "code": [
@@ -193,7 +195,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/DTM"
+            "code": "DTM"
           }
         ],
         "extension": [
@@ -206,7 +208,7 @@
       {
         "id": "AIP.7",
         "path": "AIP.7",
-        "short": " - AIP",
+        "short": "- AIP.7 - ",
         "definition": "Definition: This field contains the offset this resource needs for the appointment, expressed in units of time relative to the scheduled start date/time. This field indicates to the application that the resource is required for the appointment at a different time than the appointment's start date/time. The first component contains the offset amount. An offset of zero (0), or an unvalued field, indicates that the resource is required at the start date/time of the appointment.",
         "description": null,
         "code": [
@@ -219,7 +221,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -232,7 +234,7 @@
       {
         "id": "AIP.8",
         "path": "AIP.8",
-        "short": " - AIP",
+        "short": "- AIP.8 - ",
         "definition": "Definition: This field contains a code describing the units of time used for expressing _AIP-7 Start Date/Time Offset_. This field should be valued according to the recommendations made in Chapters 2 and 7. If this field is not valued, the ISO base unit of seconds (code \"_s_\") is assumed. Refer to Chapter 7, Figures 7-6 through 7-9, for a list of ISO+ and ANS+ unit codes.",
         "description": null,
         "code": [
@@ -245,7 +247,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "extension": [
@@ -258,7 +260,7 @@
       {
         "id": "AIP.9",
         "path": "AIP.9",
-        "short": " - AIP",
+        "short": "- AIP.9 - ",
         "definition": "Definition: This field contains the duration for which the resource is requested/scheduled for an appointment, if different from the overall duration of the requested/scheduled appointment. This field indicates to the application that a resource is required for a different amount of time than the appointment's overall duration. An unvalued duration indicates that the resource is required from its start date/time offset (specified in the previous two fields) until the end of the appointment. If no start date/time offset is specified, then the resource is required for the full duration of the appointment.",
         "description": null,
         "code": [
@@ -271,7 +273,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/NM"
+            "code": "NM"
           }
         ],
         "extension": [
@@ -284,7 +286,7 @@
       {
         "id": "AIP.10",
         "path": "AIP.10",
-        "short": " - AIP",
+        "short": "- AIP.10 - ",
         "definition": "Definition: This field contains a code describing the units of time used associated with _AIP-9 Duration_. This field should be valued according to the recommendations made in Chapters 2 and 7. If this field is not valued, the ISO base unit of seconds (code \"_s_\") will be assumed. Refer to Chapter 7, Figures 7-6 through 7-9, for a list of ISO+ and ANS+ unit codes.",
         "description": null,
         "code": [
@@ -297,7 +299,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CNE"
+            "code": "CNE"
           }
         ],
         "extension": [
@@ -310,7 +312,7 @@
       {
         "id": "AIP.11",
         "path": "AIP.11",
-        "short": " - AIP",
+        "short": "- AIP.11 - ",
         "definition": "Definition: This field contains a code indicating whether the identified personnel resource can be replaced with an equivalent substitute personnel resource by the filler application. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70279[_User-Defined Table 0279 - Allow Substitution Codes_] in Chapter 2C, Code Tables, for suggested values.",
         "description": null,
         "code": [
@@ -323,7 +325,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -340,7 +342,7 @@
       {
         "id": "AIP.12",
         "path": "AIP.12",
-        "short": " - AIP",
+        "short": "- AIP.12 - ",
         "definition": "Definition: This field contains a code that describes the requested/scheduled status of the personnel resource, from the point of view of the filler application. Refer to file:///E:\\V2\\v2.9%20final%20Nov%20from%20Frank\\V29_CH02C_Tables.docx#HL70278[_User-Defined Table 0278 - Filler Status Codes_] in Chapter 2C, Code Tables, for suggested codes.",
         "description": null,
         "code": [
@@ -353,7 +355,7 @@
         "max": "*",
         "type": [
           {
-            "code": "http://hl7.org/v2/StructureDefinition/CWE"
+            "code": "CWE"
           }
         ],
         "binding": {
@@ -369,9 +371,7 @@
       }
     ]
   },
-  "id": "AIP",
   "title": "HL7 v2 AIP Segment Definition",
-  "url": "http://hl7.org/v2/StructureDefinition/AIP",
   "name": "AIP",
-  "type": "http://hl7.org/v2/StructureDefinition/AIP"
+  "type": "AIP"
 }
