@@ -15,3 +15,4 @@ This is a work in progress.  There are many, many questions to be answered.
 - Go through all TODO and FIXME flags in Ruby code and address each
 - Capture status of segments within MessageStructures
 - Address instances of choice groups that have only a single choice.  Do we really mean this? e.g., 16.3.1
+- make path values adhere to [eld-20](https://build.fhir.org/elementdefinition-definitions.html#ElementDefinition.path)
